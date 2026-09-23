@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\Users\Andreyka\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\Andreyka\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\Andreyka\sberindex-clustering\sbercluster\cli.py", line 132, in <module>
+    main()
+  File "C:\Users\Andreyka\sberindex-clustering\sbercluster\cli.py", line 127, in main
+    result = run(cfg, args.root, args.execute_clustering)
+  File "C:\Users\Andreyka\sberindex-clustering\sbercluster\cli.py", line 39, in run
+    require_execution(cfg, execute)
+  File "C:\Users\Andreyka\sberindex-clustering\sbercluster\models.py", line 8, in require_execution
+    raise PermissionError("Clustering disabled. A future explicit instruction, --execute-clustering and allow_clustering=true are required.")
+PermissionError: Clustering disabled. A future explicit instruction, --execute-clustering and allow_clustering=true are required.

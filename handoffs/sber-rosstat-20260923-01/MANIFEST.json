@@ -1,0 +1,37 @@
+{
+  "task_id": "sber-rosstat-20260923-01",
+  "request_sha256": "ef6732931569507357f5d62453dacda8cbef312c73862544bfc4d4b74595254e",
+  "created_at": "2026-09-23 Europe/Moscow",
+  "requested_model": "не задана",
+  "observed_model": "unverified",
+  "mode": "информированная проверка",
+  "project_version": "preparation snapshot, uncommitted 2026-09-23",
+  "status": "prepared_not_sent",
+  "files": [
+    {
+      "path": "inputs/DATA_SOURCES.md",
+      "bytes": 7467,
+      "sha256": "54737024806abeffba1635163ad9782ddf7a5b2ceb6d271957046093785f3625"
+    },
+    {
+      "path": "inputs/ROSSTAT_STATUS.md",
+      "bytes": 1735,
+      "sha256": "6bd8f4295bc53d12c198fe3b5c1a3a2f9fdcaee5cab275e41b80730f2b9fb55a"
+    },
+    {
+      "path": "inputs/territories.csv",
+      "bytes": 265215,
+      "sha256": "59a50fca4c33aaeda18617c330ad255f462b7f384aaefeb057646e00b7dbb78a"
+    },
+    {
+      "path": "REQUEST.md",
+      "bytes": 5839,
+      "sha256": "ef6732931569507357f5d62453dacda8cbef312c73862544bfc4d4b74595254e"
+    },
+    {
+      "path": "RETURN.template.md",
+      "bytes": 3289,
+      "sha256": "6287c85b9e8264ca689490ee7dc8aad19b3ffac83100001eaf1441a635c98449"
+    }
+  ]
+}

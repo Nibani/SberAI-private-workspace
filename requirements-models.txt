@@ -1,0 +1,4 @@
+-r requirements.txt
+# Optional, only needed for a subsequently authorised clustering run.
+igraph==0.11.8
+leidenalg==0.10.2
