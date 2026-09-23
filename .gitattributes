@@ -1,0 +1,7 @@
+# Preserve snapshot bytes: source and handoff hashes must survive checkout.
+* -text
+*.zip binary
+*.parquet binary
+*.gpkg binary
+*.xlsx binary
+*.pdf binary
