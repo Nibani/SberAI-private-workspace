@@ -18,6 +18,7 @@ PowerShell, из этой папки:
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\scripts\download_sources.ps1
 .\.venv\Scripts\python.exe scripts/prepare.py
 .\.venv\Scripts\python.exe scripts/prepare_graphs.py
 .\.venv\Scripts\python.exe scripts/build_dashboard.py
@@ -42,6 +43,7 @@ python -m venv .venv
 - [Точные конвенции метрик](docs/METRICS.md)
 - [Приёмка и критерии конкурса](docs/ACCEPTANCE.md)
 - [Следующий запуск и протокол сравнения](docs/EXPERIMENT_PLAN.md)
+- [Оценка времени и ожидаемые результаты](docs/RUNTIME_AND_RESULTS.md)
 - [Продолжение работы](CONTINUE.md)
 
 Репозиторий назначения: https://github.com/Nibani/SberAI . Локальный код подготовлен; отправка на GitHub пока не выполнена из-за отсутствия рабочей авторизации Git.
