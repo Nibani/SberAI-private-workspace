@@ -6,9 +6,7 @@
   "panel_sha256": "a175b7646a528e900d61dd4ade8d84fb4549ffcbb977d845340107b4f3b3c0fa",
   "graph_count": 24,
   "model_fitting_executed": false,
-  "browser_visual_QA": "unavailable: Chrome and iab not exposed by CUA",
-  "git_https": "authentication_failed",
-  "git_ssh": "publickey_denied",
+  "browser_visual_QA": "not_completed",
   "dashboard_js_syntax": true,
   "disabled_cli_created_no_run": true,
   "source_unpack_smoke": true

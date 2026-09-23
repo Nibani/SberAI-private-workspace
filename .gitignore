@@ -7,7 +7,7 @@
 /artifacts/
 /runs/
 /web/index.html
-/handoffs/*/inputs/
+/.local/
 *.zip
 __pycache__/
 *.pyc

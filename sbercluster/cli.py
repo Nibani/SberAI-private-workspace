@@ -23,14 +23,14 @@ def plan(cfg, root):
     except ValueError as exc:
         blockers.append(str(exc))
     if not cfg["execution"]["allow_clustering"]:
-        blockers.append("User instruction: no clustering/training in this preparation stage")
+        blockers.append("Clustering is disabled in the current configuration")
     if cfg["data_contract"]["stable_territories_verified"] is not True:
         blockers.append("Temporal coupling: boundary review required (annual registry, Chechnya caveat, 2024 coverage)")
     if cfg["validation"]["mq_definition"] is None:
         blockers.append("MQ definition unavailable; cannot claim all required metrics complete")
     return {"status": "prepared_not_run", "model_training_executed": False, "blockers": blockers,
             "methods": cfg["clustering"]["methods"], "seed": cfg["seed"],
-            "next": "Resolve data contract and obtain explicit user instruction before a small pilot",
+            "next": "Review the data requirements and experiment plan before enabling the pilot configuration",
             "full_comparison_plan": "configs/comparison_plan.json"}
 
 

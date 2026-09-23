@@ -77,10 +77,10 @@
 </head>
 <body>
   <header class="top"><div class="wrap">
-    <div class="eyebrow">СберИндекс · исследовательский паспорт</div>
-    <h1>Муниципальные ряды расходов</h1>
-    <p class="lede">Средние безналичные расходы жителей муниципальных образований за 2023–2024 годы. Выберите территорию, чтобы изучить пять категорий и общий итог, сравнить их с медианой набора и посмотреть подготовленную сеть экономического сходства.</p>
-    <div class="status">Подготовка: кластеризация не запускалась</div>
+    <div class="eyebrow">СберИндекс · 2023–2024</div>
+    <h1>Экономические соседи</h1>
+    <p class="lede">Выберите муниципалитет, посмотрите, как менялись расходы его жителей, и найдите территории с похожим потребительским профилем.</p>
+    <div class="status">Данные и сеть готовы · сравнение кластеров впереди</div>
   </div></header>
   <main class="wrap">
     <div class="stats" id="stats" aria-label="Краткая сводка"></div>
@@ -97,9 +97,9 @@
       <p class="hint" style="margin-top:9px">Медиана вычислена отдельно для каждого месяца и показателя среди территорий этой панели. Это описательная медиана набора, не показатель «средней России». Пять категорий не исчерпывают общий итог, поэтому их доли не следует складывать до 100%.</p>
       <div id="minis" class="mini-grid" aria-label="Все шесть категорий"></div>
     </section>
-    <section class="card" aria-labelledby="neighbors-title"><div class="section-head"><div><h2 id="neighbors-title">Экономические соседи</h2><p class="muted">До 15 самых сильных связей выбранной территории в подготовленной сети за декабрь 2024 года.</p></div><span class="hint">Декабрь 2024</span></div><p class="hint" style="margin-bottom:14px">Близость рассчитана по соотношениям пяти категорий к общему итогу; абсолютный уровень расходов не участвует. Вес ребра показывает сходство признаков, а не поток средств, доказанный тип или кластер. Обучение и кластеризация не запускались.</p><div class="table-wrap"><table><thead><tr><th>№</th><th>Территория</th><th>Регион</th><th class="num">Вес связи</th></tr></thead><tbody id="neighbors-body"></tbody></table></div></section>
+    <section class="card" aria-labelledby="neighbors-title"><div class="section-head"><div><h2 id="neighbors-title">Экономические соседи</h2><p class="muted">До 15 самых сильных связей выбранной территории в подготовленной сети за декабрь 2024 года.</p></div><span class="hint">Декабрь 2024</span></div><p class="hint" style="margin-bottom:14px">Близость рассчитана по соотношениям пяти категорий к общему итогу; абсолютный уровень расходов не участвует. Чем выше вес связи, тем ближе профили. Это список похожих территорий; кластеризация будет добавлена после сравнения методов.</p><div class="table-wrap"><table><thead><tr><th>№</th><th>Территория</th><th>Регион</th><th class="num">Вес связи</th></tr></thead><tbody id="neighbors-body"></tbody></table></div></section>
     <section class="card" aria-labelledby="values-title"><div class="section-head"><div><h2 id="values-title">Точные значения</h2><p class="muted">Помесячная таблица для выбранной категории.</p></div></div><div class="table-wrap"><table><thead><tr><th>Месяц</th><th class="num">Выбранное МО, руб.</th><th class="num">Медиана набора, руб.</th><th class="num">Число строк для медианы</th></tr></thead><tbody id="values-body"></tbody></table></div></section>
-    <section class="card" aria-labelledby="audit-title"><div class="section-head"><div><h2 id="audit-title">Полнота и конфликты</h2><p class="muted">Показатели панели и сохранённого аудита подготовки. Конфликты имён относятся к плоскому CSV; в основной панели они устранены использованием исходных ID.</p></div></div><div class="table-wrap"><table class="audit-table"><thead><tr><th>Показатель</th><th class="num">Значение</th></tr></thead><tbody id="audit-body"></tbody></table></div><details><summary>Полный JSON аудита</summary><pre id="audit-json"></pre></details></section>
+    <section class="card" aria-labelledby="audit-title"><div class="section-head"><div><h2 id="audit-title">Полнота и конфликты</h2><p class="muted">В CSV встречаются одинаковые названия разных территорий. Здесь используются официальные идентификаторы, которые позволяют их различить.</p></div></div><div class="table-wrap"><table class="audit-table"><thead><tr><th>Показатель</th><th class="num">Значение</th></tr></thead><tbody id="audit-body"></tbody></table></div><details><summary>Полный JSON аудита</summary><pre id="audit-json"></pre></details></section>
   </main>
   <footer><div class="wrap">Источник: <a href="https://sberindex.ru/ru/research/data-sense-opisanie-nabora-dannikh-khakatona-sberindeksa-po-munitsipalnim-dannim" target="_blank" rel="noopener noreferrer">СберИндекс, «Потребительские безналичные расходы на уровне муниципальных образований»</a>, получено 23.09.2026. Данные расходов и производные от них — <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ru" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. Условия публикации отдельного справочника и геометрии ещё уточняются; этот прототип предназначен для локального просмотра. Переходы границ и интерпретация сходства требуют дополнительной проверки.</div></footer>
   <script>

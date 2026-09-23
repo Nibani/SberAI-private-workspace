@@ -2,7 +2,7 @@
   "status": "prepared_not_run",
   "model_training_executed": false,
   "blockers": [
-    "User instruction: no clustering/training in this preparation stage",
+    "Clustering is disabled in the current configuration",
     "Temporal coupling: boundary review required (annual registry, Chechnya caveat, 2024 coverage)",
     "MQ definition unavailable; cannot claim all required metrics complete"
   ],
@@ -12,6 +12,6 @@
     "leiden_static"
   ],
   "seed": 1729,
-  "next": "Resolve data contract and obtain explicit user instruction before a small pilot",
+  "next": "Review the data requirements and experiment plan before enabling the pilot configuration",
   "full_comparison_plan": "configs/comparison_plan.json"
 }

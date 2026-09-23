@@ -1,4 +1,4 @@
-# Preserve snapshot bytes: source and handoff hashes must survive checkout.
+# Preserve source bytes so checksums remain consistent across checkouts.
 * -text
 *.zip binary
 *.parquet binary

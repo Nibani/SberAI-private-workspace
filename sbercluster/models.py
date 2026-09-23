@@ -5,7 +5,7 @@ import numpy as np
 
 def require_execution(cfg, execute=False):
     if not execute or cfg.get("execution", {}).get("allow_clustering") is not True:
-        raise PermissionError("Clustering disabled. A future explicit instruction, --execute-clustering and allow_clustering=true are required.")
+        raise PermissionError("Clustering disabled. Both --execute-clustering and execution.allow_clustering=true are required.")
 
 
 def _igraph(a, ids):
