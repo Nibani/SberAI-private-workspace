@@ -10,7 +10,8 @@
     "openpyxl": "3.1.5",
     "igraph": "0.11.8",
     "leidenalg": "0.10.2",
-    "texttable": "1.7.0"
+    "texttable": "1.7.0",
+    "psutil": "6.1.0"
   },
-  "model_fitting_executed": false
+  "model_fitting_executed": true
 }

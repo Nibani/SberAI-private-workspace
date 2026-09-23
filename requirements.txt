@@ -6,3 +6,4 @@ scikit-learn==1.5.2
 networkx==3.4.2
 polars==1.35.2
 openpyxl==3.1.5
+psutil==6.1.0

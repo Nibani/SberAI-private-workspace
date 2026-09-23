@@ -13,5 +13,6 @@
   ],
   "seed": 1729,
   "next": "Review the data requirements and experiment plan before enabling the pilot configuration",
-  "full_comparison_plan": "configs/comparison_plan.json"
+  "full_comparison_plan": "configs/comparison_plan.json",
+  "scope": "Default disabled configuration only; completed experiments are in reports/experiments/2026-09-23"
 }

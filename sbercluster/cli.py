@@ -2,6 +2,7 @@ from __future__ import annotations
 import argparse
 import json
 import subprocess
+from time import perf_counter
 from datetime import datetime, timezone
 from pathlib import Path
 import numpy as np
@@ -37,6 +38,7 @@ def plan(cfg, root):
 def run(cfg, root, execute):
     # First operation, before reading data or importing optional fit backends.
     require_execution(cfg, execute)
+    started = perf_counter()
     validate_contract(cfg)
     if "leiden_temporal" in cfg["clustering"]["methods"] and not cfg["data_contract"]["stable_territories_verified"]:
         raise ValueError("Remove temporal method for static pilot, or complete boundary review before executing any fit")
@@ -70,7 +72,7 @@ def run(cfg, root, execute):
     code_files = list((root / "sbercluster").glob("*.py"))
     write_json(out / "provenance.json", {"config": cfg, "panel_sha256": sha256(panel_path), "scaler": scaler,
          "git_commit": commit, "source_hashes": {p.name: sha256(p) for p in code_files}, "started_at": run_id})
-    graphs, graph_info = [], []
+    graphs, graph_info, timings = [], [], []
     labels_by_method = {m: [] for m in cfg["clustering"]["methods"]}
     for period, ids, x in slices:
         a, info = knn_graph(x, cfg["graph"]["k"], cfg["graph"]["symmetry"])
@@ -81,18 +83,23 @@ def run(cfg, root, execute):
         np.save(out / f"features_{period}.npy", x, allow_pickle=False)
         for method in labels_by_method:
             if method != "leiden_temporal":
+                fit_started = perf_counter()
                 labels_by_method[method].append(fit_static(method, x, a, ids, cfg, execute=True))
+                timings.append({"method": method, "period": period, "stage": "fit", "seconds": perf_counter() - fit_started})
+                print(json.dumps({"stage": "fit_completed", **timings[-1]}), flush=True)
     if "leiden_temporal" in labels_by_method:
         labels_by_method["leiden_temporal"], temporal_info = fit_temporal(slices, graphs, cfg, execute=True)
         write_json(out / "temporal_metadata.json", temporal_info)
     metrics, partitions, change = [], [], []
     for method, label_slices in labels_by_method.items():
         for index, ((period, ids, x), a, labels) in enumerate(zip(slices, graphs, label_slices)):
+            metric_started = perf_counter()
             try:
                 metric = all_metrics(x, labels, a)
             except ValueError as exc:
                 metric = {"status": "undefined", "reason": str(exc)}
             metrics.append({"method": method, "period": period, **metric})
+            timings.append({"method": method, "period": period, "stage": "metrics", "seconds": perf_counter() - metric_started})
             partitions.extend({"method": method, "period": period, "entity_id": entity, "cluster": int(label)} for entity, label in zip(ids, labels))
             if index:
                 change.append({"method": method, "from_period": slices[index-1][0], "to_period": period,
@@ -100,6 +107,7 @@ def run(cfg, root, execute):
     write_json(out / "metrics.json", metrics)
     write_json(out / "transitions.json", change)
     write_json(out / "graphs.json", graph_info)
+    write_json(out / "timings.json", {"stages": timings, "total_seconds": perf_counter() - started})
     pd.DataFrame(partitions).to_csv(out / "partitions.csv", index=False)
     write_json(out / "status.json", {"status": "completed", "MQ_complete": False,
         "economic_interpretation_verified": False, "competition_ready": False})
