@@ -68,5 +68,6 @@ jobs:
           retention-days: 30
           path: |
             artifacts/jury-check/
+            !artifacts/jury-check/**/tmp/**
             artifacts/ci-rebuild/
             artifacts/ui/

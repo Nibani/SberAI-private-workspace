@@ -30,6 +30,28 @@ const expectedNeighbors = (index, excluded) => {
   return data.entities.map((b,i) => ({i, d: i === index ? Infinity : Math.sqrt(a.v12_features.reduce((sum,v,j) => sum + (j === excluded ? 0 : (v-b.v12_features[j])**2), 0))}))
     .sort((a,b) => a.d-b.d || a.i-b.i).slice(0,15).map(x => data.entities[x.i].id);
 };
+async function observePrimaryRoute(page) {
+  return page.evaluate(()=>{
+    const start=document.querySelector('.hero'),end=document.getElementById('main-limitations');
+    const startY=start.getBoundingClientRect().top+scrollY,endY=end.getBoundingClientRect().bottom+scrollY;
+    const inspect=node=>{
+      const r=node.getBoundingClientRect(),style=getComputedStyle(node);
+      const rendered=r.width>1&&r.height>1&&style.visibility!=='hidden'&&style.display!=='none'&&Number(style.opacity)>0&&!node.closest('.sr,[hidden],[inert]');
+      const inViewport=rendered&&r.bottom>0&&r.top<innerHeight&&r.right>0&&r.left<innerWidth;
+      const label=node.getAttribute('aria-label')||node.labels?.[0]?.textContent||node.selectedOptions?.[0]?.textContent||node.textContent;
+      return{id:node.id||null,tag:node.tagName,label:String(label||'').replace(/\s+/g,' ').trim(),value:node.value??null,selectedLabel:node.selectedOptions?.[0]?.textContent?.trim()??null,
+        rendered,inViewport,fullyInViewport:inViewport&&r.top>=0&&r.left>=0&&r.bottom<=innerHeight&&r.right<=innerWidth,
+        rect:{x:r.x,y:r.y,width:r.width,height:r.height,documentTop:r.top+scrollY,documentBottom:r.bottom+scrollY}};
+    };
+    const controls=[...document.querySelectorAll('.hero a,.atlas-workspace input,.atlas-workspace select,.atlas-workspace button,.atlas-workspace summary')].map(inspect).filter(item=>item.rendered);
+    const essentials=['h1','#finding-title','.proof-main','.proof-caveat','#territory-title','#search','#quick','.workspace-tabs','#territory-map','#territory-inspector','#read-title','#main-limitations'].map(selector=>({selector,...inspect(document.querySelector(selector))}));
+    return{url:location.href,ready:window.__ATLAS_READY__===true,fonts:document.fonts.status,epochMs:Date.now(),scrollX,scrollY,
+      viewport:{width:innerWidth,height:innerHeight,devicePixelRatio},
+      activeView:document.querySelector('[role="tab"][aria-selected="true"]').id,
+      primaryRoute:{start:'.hero',end:'#main-limitations',startY,endY,cssPx:endY-startY,viewportHeights:(endY-startY)/innerHeight},
+      controls,controlsInFirstScreen:controls.filter(item=>item.inViewport),essentials};
+  });
+}
 async function checkLayout(page, label) {
   const issues = await page.evaluate(() => {
     const issues = [], visible = node => { const r=node.getBoundingClientRect(); return r.width>0&&r.height>0; };
@@ -78,6 +100,13 @@ async function runViewports(browser) {
     await context.route('**/*',route=>{if(new URL(route.request().url()).origin===base.origin)return route.continue();record.blockedRequests.push({url:route.request().url(),reason:'outside authorized origin'});return route.abort()});
     const page=await context.newPage();
     const activate=locator=>mobile?locator.tap():locator.click();
+    record.userPath={goal:'search territory → 15 analogs → exclude category → selected month',unit:'semantic input operation; not assertion count or physical tap count',status:'NOT_STARTED',entries:[],attempted:0,completed:0};
+    const userAction=async(stage,input,target,operation)=>{
+      const entry={number:record.userPath.entries.length+1,stage,input,target,status:'RUNNING',startedUtc:new Date().toISOString()};
+      record.userPath.entries.push(entry);record.userPath.status='RUNNING';record.userPath.attempted=record.userPath.entries.length;save();
+      try{await operation();entry.status='COMPLETED'}catch(error){entry.status='FAILED';entry.error=String(error);throw error}
+      finally{entry.finishedUtc=new Date().toISOString();record.userPath.completed=record.userPath.entries.filter(item=>item.status==='COMPLETED').length;save()}
+    };
     page.on('pageerror',error=>{record.pageErrors.push(error.message);record.errors.push(error.message)});
     page.on('console',message=>{if(message.type()==='error'){record.consoleErrors.push({text:message.text(),location:message.location()});record.errors.push(message.text())}});
     page.on('response',response=>{if(response.status()>=400)record.httpErrors.push({url:response.url(),status:response.status(),statusText:response.statusText()})});
@@ -89,6 +118,16 @@ async function runViewports(browser) {
     });
     try {
       await page.goto(base.href,{waitUntil:'load'});await page.waitForFunction(()=>window.__ATLAS_READY__===true);await page.evaluate(()=>document.fonts.ready);
+      await context.tracing.group(`first-screen-${viewport.width}`);
+      try{
+        const observation=await observePrimaryRoute(page),name=`first-screen-${viewport.width}.png`;
+        record.firstScreen={...observation,screenshot:name,htmlSha256:report.htmlSha256,dataAssetSha256:report.dataAssetSha256,userPathActionsBeforeCapture:record.userPath.attempted};
+        const pixels=await page.screenshot({path:path.join(output,name),fullPage:false,animations:'allow'});record.screenshots.push(name);
+        record.firstScreen.screenshotSha256=hash(pixels);record.firstScreen.scrollAfterCapture=await page.evaluate(()=>({x:scrollX,y:scrollY}));save();
+        assert.equal(observation.ready,true);assert.equal(observation.fonts,'loaded');assert.equal(observation.scrollY,0);assert.equal(observation.scrollX,0);
+        assert.deepEqual(record.firstScreen.scrollAfterCapture,{x:0,y:0});assert.equal(record.firstScreen.userPathActionsBeforeCapture,0);
+      }finally{await context.tracing.groupEnd()}
+
       const links=await page.locator('a[href]').evaluateAll(anchors=>anchors.map(a=>({href:a.getAttribute('href'),resolved:a.href})).filter(link=>link.href&&!link.href.startsWith('#')));
       assert.equal(links.filter(link=>link.href.startsWith('https://github.com/Nibani/SberAI/blob/main/')).length,0,'Included scientific files use the current kit paths');
       record.includedLocalLinks=[];
@@ -112,16 +151,18 @@ async function runViewports(browser) {
       const visibleVersions=await page.evaluate(()=>/v1\.[12]/i.test(document.body.innerText.replace(/(?:reports|data|scripts)[^\s]*/g,'')));
       assert.equal(visibleVersions,false,'The interface names models by meaning');
       await checkTerritory(page);record.actions.push('initial finding, main model and full geometry');
-      await activate(page.locator('.hero-links [data-focus-search]'));await page.waitForFunction(()=>document.activeElement.id==='search');
-      const target=data.entities[250];await page.locator('#search').fill(target.name);await page.locator('#search').press('Enter');
+      await userAction('selection',mobile?'tap':'click','hero-search',()=>activate(page.locator('.hero-links [data-focus-search]')));await page.waitForFunction(()=>document.activeElement.id==='search');
+      const target=data.entities[250];await userAction('selection','fill','#search',()=>page.locator('#search').fill(target.name));await userAction('selection','press Enter','#search',()=>page.locator('#search').press('Enter'));
       assert((await page.locator('#identity').textContent()).includes(target.name));await checkTerritory(page);record.actions.push('search and immediate territory card');
-      await activate(page.locator('#view-analogs'));await page.locator('#exclude').selectOption('1');await checkTerritory(page,1);
+      await userAction('analogs',mobile?'tap':'click','#view-analogs',()=>activate(page.locator('#view-analogs')));await userAction('analogs','native selectOption 1','#exclude',()=>page.locator('#exclude').selectOption('1'));await checkTerritory(page,1);
       assert((await page.locator('#preserved').textContent()).includes('из 15'));await checkLayout(page,'analogs');record.actions.push('exact 15NN and excluded-category ordering');
-      await activate(page.locator('#view-dynamics'));await page.locator('#month').selectOption('5');await page.locator('#series').selectOption('total');
+      await userAction('dynamics',mobile?'tap':'click','#view-dynamics',()=>activate(page.locator('#view-dynamics')));await userAction('dynamics','native selectOption 5','#month',()=>page.locator('#month').selectOption('5'));await page.locator('#series').selectOption('total');
       const index=+await page.locator('#quick').inputValue(),peers=expectedNeighbors(index,1).map(id=>data.entities.find(e=>e.id===id));
       const median=peers.map(e=>e.totals[5]).sort((a,b)=>a-b)[7],fmt=new Intl.NumberFormat('ru-RU',{maximumFractionDigits:2});
       const month=await page.locator('#month-summary').textContent();assert(month.includes(data.periods[5].slice(0,7)));assert(month.includes(fmt.format(data.entities[index].totals[5])));assert(month.includes(fmt.format(median)));
       assert.equal(await page.locator('#monthly-membership .cluster-strip span').count(),24);await checkLayout(page,'dynamics');record.actions.push('month values, peer median and monthly groups');
+      record.userPath.status='COMPLETE';record.userPath.finalState=await retainedState(page);
+      record.userPath.routeAtGoal=await observePrimaryRoute(page);record.userPath.byStage=Object.fromEntries(['selection','analogs','dynamics'].map(stage=>[stage,record.userPath.entries.filter(item=>item.stage===stage&&item.status==='COMPLETED').length]));save();
       await activate(page.locator('#view-map'));await page.locator('#map-year').selectOption('2024');await activate(page.locator('.map-options > summary'));
       await page.locator('#map-transitions').check();for(const mode of ['raw','relative']){await page.locator('#map-mode').selectOption(mode);assert.equal(await page.locator('#territory-map path.map-shape.changed').count(),data.contest.map_models.v12_types.dynamics[mode].changed)}
       const preserved=await retainedState(page);await activate(page.locator('.hero-links a[href="#evidence-title"]'));await activate(page.locator('#main-appendices > summary'));
@@ -159,7 +200,7 @@ async function runViewports(browser) {
       const deepLink=new URL(base.href);deepLink.hash='network-title';await page.goto(deepLink.href,{waitUntil:'load'});await page.waitForFunction(()=>window.__ATLAS_READY__===true);assert(await page.locator('#network-title').isVisible());
       assert.equal(await page.locator('#proof-model').evaluate(n=>n.open),true);assert.equal(await page.locator('#archive-v11').evaluate(n=>n.open),true);record.actions.push('direct deep evidence anchor');
       assert.deepEqual(record.errors,[]);assert.deepEqual(record.httpErrors,[]);assert.deepEqual(record.failedRequests,[]);assert.deepEqual(record.blockedRequests,[]);record.status='PASS';save();
-    } catch(error) {record.status='FAIL';record.failure=String(error.stack||error);const name=`failure-${viewport.width}.png`;await page.screenshot({path:path.join(output,name),fullPage:true,animations:'disabled'}).then(()=>record.screenshots.push(name)).catch(error=>record.screenshotError=String(error));save();throw error}
+    } catch(error) {record.status='FAIL';if(record.userPath?.status==='RUNNING')record.userPath.status='INCOMPLETE';record.failure=String(error.stack||error);const name=`failure-${viewport.width}.png`;await page.screenshot({path:path.join(output,name),fullPage:true,animations:'disabled'}).then(()=>record.screenshots.push(name)).catch(error=>record.screenshotError=String(error));save();throw error}
     finally {const name=`trace-${viewport.width}.zip`;await context.tracing.stop({path:path.join(output,name)}).then(()=>record.trace=name).catch(error=>record.traceError=String(error));save();await context.close()}
   }
 }

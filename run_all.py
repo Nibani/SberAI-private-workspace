@@ -433,6 +433,9 @@ class ResourceGuard:
         self.strict_gpu = strict_gpu
         self.gpu_unavailable_samples = 0
         self.gpu_errors = set()
+        self.worker_io_samples = 0
+        self.worker_io_unavailable_samples = 0
+        self.worker_io_errors = set()
         self.monitor = monitor or LoadMonitor(psutil)
         self.stream, self.last, self.next_sample = stream, {}, 0.0
         self.cpu = psutil.Process().cpu_affinity()[-1]
@@ -478,11 +481,31 @@ class ResourceGuard:
     def coverage(self):
         known = bool(self.last.get("gpu_available") and self.last.get("gpus"))
         missing = getattr(self, "gpu_unavailable_samples", 0)
-        return {"status": "COMPLETE" if known and missing == 0 else "PARTIAL", "gpu_available": known,
+        io_samples = getattr(self, "worker_io_samples", 0)
+        io_missing = getattr(self, "worker_io_unavailable_samples", 0)
+        io_status = "PARTIAL" if io_missing else ("COMPLETE" if io_samples else "UNVERIFIED")
+        return {"status": "COMPLETE" if known and missing == 0 and io_status == "COMPLETE" else "PARTIAL", "gpu_available": known,
                 "gpu_source": self.last.get("gpu_source"), "gpu_error": self.last.get("gpu_error"),
                 "gpus": self.last.get("gpus"), "strict_gpu_required": self.strict_gpu,
                 "gpu_unavailable_samples": missing, "gpu_errors": sorted(getattr(self, "gpu_errors", set())),
-                "scope": "CPU, RAM and every physical disk; GPU and VRAM only when readings are available"}
+                "worker_io": {"status": io_status, "samples": io_samples, "unavailable_samples": io_missing,
+                              "errors": sorted(getattr(self, "worker_io_errors", set()))},
+                "scope": "CPU, RAM and every physical disk; GPU/VRAM and sampled worker IO only when readings are available"}
+
+    def worker_io(self, process):
+        # Per-worker counters can be denied while mandatory system load and limits remain available.
+        try:
+            counters = process.io_counters()._asdict()
+        except self.psutil.AccessDenied as error:
+            message = f"psutil.AccessDenied reading io_counters (pid={process.pid}): {error}"
+            if error.__context__ is not None:
+                message += "; " + str(error.__context__)
+            self.worker_io_unavailable_samples += 1
+            self.worker_io_errors.add(message)
+            self.worker_io_samples += 1
+            return {"io_available": False, "io_bytes": None, "io_error": message}
+        self.worker_io_samples += 1
+        return {"io_available": True, "io_bytes": counters, "io_error": None}
 
     def before_io(self):
         if self.high():
@@ -507,7 +530,7 @@ class ResourceGuard:
                         self.stream.write(json.dumps({"event": "worker_limits", "time_utc": utc_now(),
                             "pid": process.pid, "cpu_affinity": process.cpu_affinity(),
                             "priority": process.nice(), "io_priority": str(process.ionice()),
-                            "os_threads": process.num_threads(), "io_bytes": process.io_counters()._asdict(),
+                            "os_threads": process.num_threads(), **self.worker_io(process),
                             "throttled": high}) + "\n")
                     except self.psutil.NoSuchProcess:
                         pass
@@ -832,8 +855,16 @@ def main(argv=None):
         report(f"Полный лог: {output / 'run.log'}\nИтог JSON: {output / 'summary.json'}")
         if summary.get("resource_coverage", {}).get("status") == "PARTIAL":
             coverage = summary["resource_coverage"]
-            reason = "; ".join(coverage.get("gpu_errors", [])) or coverage.get("gpu_error") or "нет показаний"
-            report("Контроль ресурсов: PARTIAL. Не все показания GPU и VRAM доступны: " + reason)
+            reasons = []
+            if not coverage.get("gpu_available") or coverage.get("gpu_unavailable_samples", 0):
+                reason = "; ".join(coverage.get("gpu_errors", [])) or coverage.get("gpu_error") or "нет показаний"
+                reasons.append("Не все показания GPU и VRAM доступны: " + reason)
+            worker_io = coverage.get("worker_io", {})
+            if worker_io.get("status") == "PARTIAL":
+                reasons.append("Не все показания IO отдельных процессов доступны: " + "; ".join(worker_io["errors"]))
+            elif worker_io.get("status") == "UNVERIFIED":
+                reasons.append("Показания IO отдельных процессов не получены")
+            report("Контроль ресурсов: PARTIAL. " + "; ".join(reasons))
         for note in LIMITATIONS:
             report(note)
     return code

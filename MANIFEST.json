@@ -1,7 +1,7 @@
 {
   "kind": "NEW_PRIVATE_REPOSITORY_AND_JURY_MAIN_MODEL",
   "state": "BYTE_AND_DEPENDENCY_VERIFIED_COPY; acceptance separate",
-  "created_at_utc": "2026-10-08T23:13:30.445926+00:00",
+  "created_at_utc": "2026-10-08T23:40:15.662487+00:00",
   "base_commit": "78601123c891f313f049bdf9a89ebd4de92906a2",
   "files": {
     ".dockerignore": {
@@ -17,8 +17,8 @@
       "source_kind": "CURRENT_WORKTREE"
     },
     ".github/workflows/tests.yml": {
-      "bytes": 2896,
-      "sha256": "8a308723a1a3bbb0ef8755dcd732dc3e8a4411f40136035faa7f91a0f93106dd",
+      "bytes": 2940,
+      "sha256": "27d1fdf84265b6cfa90f83d836a0678a92763a8a939de53b47180634ccbebdb3",
       "scientific_pin": false,
       "source_kind": "NEW_PRIVATE_CI"
     },
@@ -2225,8 +2225,8 @@
       "source_kind": "CURRENT_WORKTREE"
     },
     "run_all.py": {
-      "bytes": 48216,
-      "sha256": "c60773493dd7b54a9873e760e2f430f683fe3b54a84a3368e484afff5ffbac7c",
+      "bytes": 50194,
+      "sha256": "685cd0c0a7c1ed1576c1bc04d60308761b68a6ea0922ebf63164c41f492ad1f4",
       "scientific_pin": false,
       "source_kind": "CURRENT_WORKTREE"
     },
@@ -2939,8 +2939,8 @@
       "source_kind": "CURRENT_WORKTREE"
     },
     "tests/browser/main_model_regressions.cjs": {
-      "bytes": 21216,
-      "sha256": "94991f1e40a027fc9e2430a6d8d7b5f2e5641e2be4548e101bc69734ab9f57b2",
+      "bytes": 26118,
+      "sha256": "c3daf10992ec7d7c7cfdd0a755f5d6494615b463207a9590253c4274c16034fc",
       "scientific_pin": false,
       "source_kind": "CURRENT_WORKTREE"
     },
@@ -3035,8 +3035,8 @@
       "source_kind": "CURRENT_WORKTREE"
     },
     "tests/test_run_all.py": {
-      "bytes": 31505,
-      "sha256": "982d44733109fbc4ee7a06c4e75b249b7af7e005a1ddfb3fe40ff20af8811b1d",
+      "bytes": 37030,
+      "sha256": "319ec915c3b6c6304a936ec632ad619a93491f453af339809967eb77004e8473",
       "scientific_pin": false,
       "source_kind": "CURRENT_WORKTREE"
     },
@@ -3150,18 +3150,20 @@
     }
   },
   "file_count": 524,
-  "total_bytes": 43607702,
+  "total_bytes": 43620151,
   "scientific_pin_count": 132,
   "all_pins_match": true,
   "source_stable": true,
   "source_overrides": [
     {
       "destination": ".github/workflows/tests.yml",
-      "source_sha256": "8a308723a1a3bbb0ef8755dcd732dc3e8a4411f40136035faa7f91a0f93106dd",
+      "source_sha256": "27d1fdf84265b6cfa90f83d836a0678a92763a8a939de53b47180634ccbebdb3",
       "old_live_sha256": "a7bdcf280bfbec5fc938a6071eb7e8da28facbd3c6c7af1967347edb91f19e6f",
       "source_kind": "NEW_PRIVATE_CI",
       "scientific_pin": false,
-      "live_repository_change": false
+      "live_repository_change": false,
+      "root_inputs_ready": true,
+      "root_input_receipt_sha256": "556e8b50bc9edb6962a48150241cc04cfe9aeb482051f8aeda210e94375707ac"
     }
   ],
   "workflow_included": true,
@@ -6466,7 +6468,9 @@
       "matches_owner_link_record": true
     }
   ],
-  "archive_scope": "Separate named recovery ZIPs and complete historical science archive outside primary tree",
+  "archive_scope": "Separate exact C3 science/recovery ZIPs outside primary tree; C4 runtime and UI checks are distinct",
+  "root_input_receipt_sha256": "556e8b50bc9edb6962a48150241cc04cfe9aeb482051f8aeda210e94375707ac",
+  "previous_c3_allowlist_sha256": "91396ff63be338a7582f166a487890dfaf41a19e05810bc0f3f741e268004ea1",
   "scientific_checks_executed_by_exporter": false,
   "actual_ui_ci": "NOT_RUN_BY_EXPORTER",
   "manifest_self_sha": "Held outside kit; MANIFEST does not hash itself",

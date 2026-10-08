@@ -420,6 +420,98 @@ class JuryRunnerTests(unittest.TestCase):
             self.assertIn((name, "suspend"), events)
             self.assertIn((name, "resume"), events)
 
+    def test_worker_io_denial_keeps_fast_process_pass_and_records_partial(self):
+        import psutil
+
+        class Monitor:
+            def sample(self):
+                return {"time_utc": "fixture sample", "cpu_percent": 1, "ram_percent": 40,
+                        "disk_active_percent": {"fixture disk": 1}, "gpu_available": True,
+                        "gpus": [{"gpu_percent": 1, "vram_percent": 10}], "gpu_error": None}
+
+            def close(self):
+                pass
+
+        stream = io.StringIO()
+        guard = runner.ResourceGuard(stream, monitor=Monitor())
+        self.addCleanup(guard.close)
+        phase = self.command("node_version", "import time; print('v22.23.3',flush=True); time.sleep(0.15)")
+        summary = {"mode": "full", "phases": []}
+        with patch.object(psutil.Process, "io_counters", side_effect=psutil.AccessDenied(pid=2130)):
+            code = runner.execute([phase], self.root, self.output, runner.thread_environment(),
+                                  guard, summary, self.messages.append)
+        self.assertEqual(code, 0)
+        self.assertEqual(summary["phases"][0]["status"], "PASS")
+        samples = [json.loads(line) for line in stream.getvalue().splitlines()]
+        worker = next(item for item in samples if item.get("event") == "worker_limits")
+        self.assertFalse(worker["io_available"])
+        self.assertIsNone(worker["io_bytes"])
+        self.assertIn("AccessDenied", worker["io_error"])
+        self.assertEqual(len(worker["cpu_affinity"]), 1)
+        coverage = guard.coverage()
+        self.assertTrue(coverage["gpu_available"])
+        self.assertEqual(coverage["status"], "PARTIAL")
+        self.assertEqual(coverage["worker_io"]["status"], "PARTIAL")
+        denied_samples = [item for item in samples if item.get("event") == "worker_limits"
+                          and item.get("io_available") is False]
+        self.assertGreaterEqual(len(denied_samples), 1)
+        self.assertEqual(coverage["worker_io"]["unavailable_samples"], len(denied_samples))
+        self.assertTrue(coverage["worker_io"]["errors"])
+
+    def test_worker_io_recovery_cannot_hide_prior_denial(self):
+        import psutil
+        guard = object.__new__(runner.ResourceGuard)
+        guard.psutil = psutil
+        guard.strict_gpu = False
+        guard.worker_io_samples, guard.worker_io_unavailable_samples = 0, 0
+        guard.worker_io_errors = set()
+        guard.last = {"gpu_available": True, "gpus": [{"gpu_percent": 1, "vram_percent": 10}]}
+        denied = type("Denied", (), {"pid": 2130, "io_counters": staticmethod(
+            lambda: (_ for _ in ()).throw(psutil.AccessDenied(pid=2130)))})()
+        good = type("Good", (), {"pid": 2131, "io_counters": staticmethod(
+            lambda: type("Counters", (), {"_asdict": staticmethod(lambda: {"read_bytes": 7, "write_bytes": 11})})())})()
+        self.assertIsNone(guard.worker_io(denied)["io_bytes"])
+        self.assertEqual(guard.worker_io(good)["io_bytes"], {"read_bytes": 7, "write_bytes": 11})
+        self.assertEqual(guard.coverage()["worker_io"]["samples"], 2)
+        self.assertEqual(guard.coverage()["status"], "PARTIAL")
+
+    def test_worker_io_partial_is_reported_without_false_gpu_failure(self):
+        class PartialIOGuard(QuietGuard):
+            def coverage(self):
+                return {"status": "PARTIAL", "gpu_available": True, "gpu_unavailable_samples": 0,
+                        "worker_io": {"status": "PARTIAL", "errors": ["psutil.AccessDenied reading io_counters"]}}
+
+        captured = io.StringIO()
+        with patch.object(runner, "ROOT", self.root), \
+             patch.object(runner, "dependencies", return_value={"node_executable": "unused"}), \
+             patch.object(runner, "ResourceGuard", return_value=PartialIOGuard()), \
+             patch.object(runner, "provenance_inputs", return_value=(self.expected, [], {"historical_code_sha256": {}})), \
+             patch.object(runner, "snapshot_inputs", return_value=self.expected.copy()), \
+             patch.object(runner, "phases", return_value=[self.command("checked", "print('harmless check')")]), \
+             contextlib.redirect_stdout(captured):
+            code = runner.main(["--output", str(self.output)])
+        self.assertEqual(code, 0)
+        summary = json.loads(next(self.output.glob("*/summary.json")).read_text(encoding="utf-8"))
+        self.assertEqual(summary["status"], "PASS")
+        self.assertEqual(summary["resource_coverage"]["status"], "PARTIAL")
+        self.assertIn("IO отдельных процессов", captured.getvalue())
+        self.assertNotIn("Не все показания GPU", captured.getvalue())
+
+    def test_worker_io_fix_does_not_hide_mandatory_configure_denial(self):
+        import psutil
+        guard = object.__new__(runner.ResourceGuard)
+        guard.psutil = psutil
+        guard.configure = lambda process, idle: (_ for _ in ()).throw(psutil.AccessDenied(pid=process.pid))
+        guard.high = lambda: False
+        phase = self.command("must_fail", "import time; time.sleep(0.15)")
+        summary = {"mode": "full", "phases": []}
+        code = runner.execute([phase], self.root, self.output, runner.thread_environment(),
+                              guard, summary, self.messages.append)
+        self.assertEqual(code, 1)
+        self.assertEqual(summary["phases"][0]["status"], "FAIL")
+        self.assertIn("error", summary["phases"][0])
+        self.assertIn("psutil.AccessDenied", (self.output / "run.log").read_text(encoding="utf-8"))
+
     def test_gpu_and_vram_pressure_use_the_same_guard_threshold(self):
         guard = object.__new__(runner.ResourceGuard)
         guard.strict_gpu = False
