@@ -1,0 +1,31 @@
+{
+  "slot": "perf-1",
+  "argv": [
+    "C:/Program Files/nodejs/node.exe",
+    "--single-threaded",
+    "--v8-pool-size=1",
+    "--max-old-space-size=512",
+    "scripts/competition_performance.cjs",
+    "measure",
+    "reports/competition-enhancement/delivery/performance-new/plan.json"
+  ],
+  "cwd": "C:\\Users\\Andreyka\\Documents\\Codex\\2026-10-08\\goal-goal-c-users-andreyka-documents-2\\work\\repo",
+  "threads": 1,
+  "cpu_affinity": [
+    3
+  ],
+  "started_at_utc": "2026-10-08T21:22:01.380207+00:00",
+  "initial_priority": "BelowNormal",
+  "monitor_sha256": "e434464f3d96e48d01d16f4b75fc70dbfd8a8ce64e8e6db50f57f750defa9643",
+  "resource_policy": "CPU/GPU/RAM >=95: suspend; disk >=95: Idle and 0.10s backoff every sample; Node heap cap 512 MiB",
+  "cpu_gpu_ram_pause_count": 0,
+  "disk_backoff_count": 24,
+  "pid": 90396,
+  "priority_verified": true,
+  "affinity_verified": true,
+  "exit": 0,
+  "elapsed_seconds": 30.64000000001397,
+  "finished_at_utc": "2026-10-08T21:22:32.030342+00:00",
+  "stdout_sha256": "41158752408eb97d3ede264f1a7cb361b7b4c776009558ea98ac3cf32fdf3604",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

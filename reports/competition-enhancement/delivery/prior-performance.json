@@ -1,0 +1,44 @@
+{
+  "performance-metrics.json": {
+    "sha256": "44a3121e73531f6bb4db101dc67e7a083e3d28100352342d95c991cc8409e1c7",
+    "bytes": 197
+  },
+  "performance-decode.cjs": {
+    "sha256": "2073d5dbec12a4e30b20ed00372903a303edda07012734584850f411cb4c480f",
+    "bytes": 2595
+  },
+  "performance-atlas.md": {
+    "sha256": "6340fb8ba4c9c90a1aac18c9565272e29d966e76bff13499e6cc2ee6c9f8583e",
+    "bytes": 7353
+  },
+  "performance-ci.md": {
+    "sha256": "662b08b85119614928dce84a9b749f53c7b750d187a02afd481471dbb9ee125a",
+    "bytes": 5486
+  },
+  "browser-ci/chromium-after.json": {
+    "sha256": "4e6c050ddc5d1092e76feadbfb8df74738a00a9175feda3b2a06ed421004fb98",
+    "bytes": 5319
+  },
+  "corrected_metrics": {
+    "decode": {
+      "before": 254.24575000000004,
+      "after": 8.589500000000044
+    },
+    "decode_decompress_parse": {
+      "before": 399.01065000000017,
+      "after": 134.81835000000024
+    }
+  },
+  "browser_ci": {
+    "browser": "chromium",
+    "baseline": false,
+    "errors": [],
+    "local_load_to_map_ms": 814,
+    "passed": true
+  },
+  "performance-decode-paused.log": {
+    "sha256": "1f95be0a5f7d53a52e2892c54319364be8da8143a6f7f8b517318f5620835eda",
+    "bytes": 1433
+  },
+  "measurement_origin": "Existing saved measurements; no new timing run"
+}

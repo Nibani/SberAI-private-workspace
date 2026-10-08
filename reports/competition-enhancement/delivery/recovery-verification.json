@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "source_commit": "78601123c891f313f049bdf9a89ebd4de92906a2",
+  "archive": "C:\\Users\\Andreyka\\Documents\\Codex\\2026-09-23\\gh\\work\\SberAI\\.swarm\\atlas-competition-20261008-v2\\agents\\delivery_audit\\recovery\\SberAI-recovery-previews-7860112.zip",
+  "archive_bytes": 578646,
+  "archive_sha256": "90a5fae119fc2c16d389f1bb6abd67628152da456e5a5f3cc01771f86a7d5e6c",
+  "manifest_sha256": "f8675bd64779e6283bbb46a9ba69153802c4346ea86c0ab98c1100c3332d3cb5",
+  "files": {
+    "docs/images/atlas-preview.png": {
+      "bytes": 385486,
+      "sha256": "84ae412e19da89f0a766bf3aa3fbe4a1f19fe5abbdd1558fbd8e506fb71063ce"
+    },
+    "docs/images/network-preview.png": {
+      "bytes": 199753,
+      "sha256": "bf73477bf7b63cc868fa54975ffbeb252c72e52587c8762a9dba64cb667b283b"
+    }
+  },
+  "crc": true,
+  "byte_equality": true
+}

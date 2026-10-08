@@ -1,0 +1,4 @@
+better,baseline,n,unit,mae_difference_pp,ci_low,ci_high
+network_analogues,random_same_region,2016,percentage_point,-0.21503811776741119,-0.33036817369094212,-0.095520148190157611
+network_analogues,national_median,2016,percentage_point,-0.53994230823521627,-0.67650542516439593,-0.39082522734991276
+network_analogues,region_median_leave_one_out,2016,percentage_point,-0.14143091482443834,-0.23856408939727791,-0.037478177479938986

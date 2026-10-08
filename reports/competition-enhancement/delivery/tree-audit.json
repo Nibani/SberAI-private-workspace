@@ -1,0 +1,4075 @@
+{
+  "checked_at_utc": "2026-10-08T20:14:43.758491+00:00",
+  "base_commit": "78601123c891f313f049bdf9a89ebd4de92906a2",
+  "status": "",
+  "tracked_files": 1598,
+  "git_blob_bytes": 114103737,
+  "checkout_bytes": 114103737,
+  "pinned_files": 132,
+  "pin_mismatches": [],
+  "directories": {
+    ".dockerignore": {
+      "files": 1,
+      "git_blob_bytes": 91,
+      "checkout_bytes": 91
+    },
+    ".gitattributes": {
+      "files": 1,
+      "git_blob_bytes": 779,
+      "checkout_bytes": 779
+    },
+    ".github": {
+      "files": 2,
+      "git_blob_bytes": 9047,
+      "checkout_bytes": 9047
+    },
+    ".github/workflows": {
+      "files": 2,
+      "git_blob_bytes": 9047,
+      "checkout_bytes": 9047
+    },
+    ".gitignore": {
+      "files": 1,
+      "git_blob_bytes": 241,
+      "checkout_bytes": 241
+    },
+    "Dockerfile": {
+      "files": 1,
+      "git_blob_bytes": 487,
+      "checkout_bytes": 487
+    },
+    "EXPERIMENTS.md": {
+      "files": 1,
+      "git_blob_bytes": 21317,
+      "checkout_bytes": 21317
+    },
+    "README.md": {
+      "files": 1,
+      "git_blob_bytes": 12108,
+      "checkout_bytes": 12108
+    },
+    "configs": {
+      "files": 28,
+      "git_blob_bytes": 60421,
+      "checkout_bytes": 60421
+    },
+    "configs/comparison_plan.json": {
+      "files": 1,
+      "git_blob_bytes": 1873,
+      "checkout_bytes": 1873
+    },
+    "configs/contest_full.json": {
+      "files": 1,
+      "git_blob_bytes": 1637,
+      "checkout_bytes": 1637
+    },
+    "configs/contest_pilot.json": {
+      "files": 1,
+      "git_blob_bytes": 1639,
+      "checkout_bytes": 1639
+    },
+    "configs/development_check_bounded.json": {
+      "files": 1,
+      "git_blob_bytes": 1208,
+      "checkout_bytes": 1208
+    },
+    "configs/dmon_plateau.json": {
+      "files": 1,
+      "git_blob_bytes": 2488,
+      "checkout_bytes": 2488
+    },
+    "configs/followup_joint.json": {
+      "files": 1,
+      "git_blob_bytes": 1780,
+      "checkout_bytes": 1780
+    },
+    "configs/followup_small_k.json": {
+      "files": 1,
+      "git_blob_bytes": 1531,
+      "checkout_bytes": 1531
+    },
+    "configs/followup_stability.json": {
+      "files": 1,
+      "git_blob_bytes": 2206,
+      "checkout_bytes": 2206
+    },
+    "configs/followup_temporal.json": {
+      "files": 1,
+      "git_blob_bytes": 1990,
+      "checkout_bytes": 1990
+    },
+    "configs/followup_temporal_pilot.json": {
+      "files": 1,
+      "git_blob_bytes": 1772,
+      "checkout_bytes": 1772
+    },
+    "configs/model_frontier_20261003.json": {
+      "files": 1,
+      "git_blob_bytes": 3234,
+      "checkout_bytes": 3234
+    },
+    "configs/pilot.json": {
+      "files": 1,
+      "git_blob_bytes": 1243,
+      "checkout_bytes": 1243
+    },
+    "configs/pilot_bounded.json": {
+      "files": 1,
+      "git_blob_bytes": 1190,
+      "checkout_bytes": 1190
+    },
+    "configs/reproduce_kmeans4.json": {
+      "files": 1,
+      "git_blob_bytes": 1384,
+      "checkout_bytes": 1384
+    },
+    "configs/research_annual.json": {
+      "files": 1,
+      "git_blob_bytes": 3861,
+      "checkout_bytes": 3861
+    },
+    "configs/research_months.json": {
+      "files": 1,
+      "git_blob_bytes": 3900,
+      "checkout_bytes": 3900
+    },
+    "configs/research_screen.json": {
+      "files": 1,
+      "git_blob_bytes": 3921,
+      "checkout_bytes": 3921
+    },
+    "configs/research_smoke.json": {
+      "files": 1,
+      "git_blob_bytes": 1988,
+      "checkout_bytes": 1988
+    },
+    "configs/research_stability.json": {
+      "files": 1,
+      "git_blob_bytes": 1787,
+      "checkout_bytes": 1787
+    },
+    "configs/research_validation.json": {
+      "files": 1,
+      "git_blob_bytes": 1373,
+      "checkout_bytes": 1373
+    },
+    "configs/round2_dmon.json": {
+      "files": 1,
+      "git_blob_bytes": 2411,
+      "checkout_bytes": 2411
+    },
+    "configs/round2_dmon_pilot.json": {
+      "files": 1,
+      "git_blob_bytes": 2380,
+      "checkout_bytes": 2380
+    },
+    "configs/round2_region_control.json": {
+      "files": 1,
+      "git_blob_bytes": 2256,
+      "checkout_bytes": 2256
+    },
+    "configs/round2_temporal_grid.json": {
+      "files": 1,
+      "git_blob_bytes": 2663,
+      "checkout_bytes": 2663
+    },
+    "configs/round2_temporal_pilot.json": {
+      "files": 1,
+      "git_blob_bytes": 2392,
+      "checkout_bytes": 2392
+    },
+    "configs/selection_frozen_20260923.json": {
+      "files": 1,
+      "git_blob_bytes": 2100,
+      "checkout_bytes": 2100
+    },
+    "configs/temporal.json": {
+      "files": 1,
+      "git_blob_bytes": 1225,
+      "checkout_bytes": 1225
+    },
+    "configs/v12.json": {
+      "files": 1,
+      "git_blob_bytes": 2989,
+      "checkout_bytes": 2989
+    },
+    "data": {
+      "files": 2,
+      "git_blob_bytes": 1559856,
+      "checkout_bytes": 1559856
+    },
+    "data/v12": {
+      "files": 2,
+      "git_blob_bytes": 1559856,
+      "checkout_bytes": 1559856
+    },
+    "docs": {
+      "files": 46,
+      "git_blob_bytes": 8822682,
+      "checkout_bytes": 8822682
+    },
+    "docs/.nojekyll": {
+      "files": 1,
+      "git_blob_bytes": 0,
+      "checkout_bytes": 0
+    },
+    "docs/ACCEPTANCE.md": {
+      "files": 1,
+      "git_blob_bytes": 4479,
+      "checkout_bytes": 4479
+    },
+    "docs/ARCHIVE_V11.md": {
+      "files": 1,
+      "git_blob_bytes": 4517,
+      "checkout_bytes": 4517
+    },
+    "docs/CHANGELOG.md": {
+      "files": 1,
+      "git_blob_bytes": 6785,
+      "checkout_bytes": 6785
+    },
+    "docs/CONTINUOUS_CORE.md": {
+      "files": 1,
+      "git_blob_bytes": 10069,
+      "checkout_bytes": 10069
+    },
+    "docs/DATA_SOURCES.md": {
+      "files": 1,
+      "git_blob_bytes": 14382,
+      "checkout_bytes": 14382
+    },
+    "docs/DMON_REFERENCE.md": {
+      "files": 1,
+      "git_blob_bytes": 25408,
+      "checkout_bytes": 25408
+    },
+    "docs/ECONOMIC_CASES.md": {
+      "files": 1,
+      "git_blob_bytes": 14118,
+      "checkout_bytes": 14118
+    },
+    "docs/ECONOMIC_GENERALIZATION.md": {
+      "files": 1,
+      "git_blob_bytes": 21304,
+      "checkout_bytes": 21304
+    },
+    "docs/EVIDENCE.md": {
+      "files": 1,
+      "git_blob_bytes": 15879,
+      "checkout_bytes": 15879
+    },
+    "docs/EXPERIMENT_PLAN.md": {
+      "files": 1,
+      "git_blob_bytes": 10873,
+      "checkout_bytes": 10873
+    },
+    "docs/FUTURE_OUTCOME_VALIDATION.md": {
+      "files": 1,
+      "git_blob_bytes": 13273,
+      "checkout_bytes": 13273
+    },
+    "docs/MAP_QA.md": {
+      "files": 1,
+      "git_blob_bytes": 5928,
+      "checkout_bytes": 5928
+    },
+    "docs/METHODOLOGY_RU.md": {
+      "files": 1,
+      "git_blob_bytes": 26048,
+      "checkout_bytes": 26048
+    },
+    "docs/METRICS.md": {
+      "files": 1,
+      "git_blob_bytes": 14543,
+      "checkout_bytes": 14543
+    },
+    "docs/MODEL_FRONTIER.md": {
+      "files": 1,
+      "git_blob_bytes": 17087,
+      "checkout_bytes": 17087
+    },
+    "docs/NETWORK_TYPOLOGY.md": {
+      "files": 1,
+      "git_blob_bytes": 29316,
+      "checkout_bytes": 29316
+    },
+    "docs/REPORT_RU.md": {
+      "files": 1,
+      "git_blob_bytes": 19252,
+      "checkout_bytes": 19252
+    },
+    "docs/REPRODUCE.md": {
+      "files": 1,
+      "git_blob_bytes": 40317,
+      "checkout_bytes": 40317
+    },
+    "docs/RESOURCE_LIMITS.md": {
+      "files": 1,
+      "git_blob_bytes": 4869,
+      "checkout_bytes": 4869
+    },
+    "docs/ROSSTAT_STATUS.md": {
+      "files": 1,
+      "git_blob_bytes": 2310,
+      "checkout_bytes": 2310
+    },
+    "docs/ROUND2_RESULTS.md": {
+      "files": 1,
+      "git_blob_bytes": 9163,
+      "checkout_bytes": 9163
+    },
+    "docs/TECHNICAL_ACCEPTANCE.md": {
+      "files": 1,
+      "git_blob_bytes": 10293,
+      "checkout_bytes": 10293
+    },
+    "docs/TEMPORAL_CORE.md": {
+      "files": 1,
+      "git_blob_bytes": 19490,
+      "checkout_bytes": 19490
+    },
+    "docs/archive": {
+      "files": 1,
+      "git_blob_bytes": 17920,
+      "checkout_bytes": 17920
+    },
+    "docs/assets": {
+      "files": 1,
+      "git_blob_bytes": 5407198,
+      "checkout_bytes": 5407198
+    },
+    "docs/images": {
+      "files": 19,
+      "git_blob_bytes": 2574553,
+      "checkout_bytes": 2574553
+    },
+    "docs/index.html": {
+      "files": 1,
+      "git_blob_bytes": 483308,
+      "checkout_bytes": 483308
+    },
+    "models": {
+      "files": 1,
+      "git_blob_bytes": 41766,
+      "checkout_bytes": 41766
+    },
+    "models/continuous_atlas.json": {
+      "files": 1,
+      "git_blob_bytes": 41766,
+      "checkout_bytes": 41766
+    },
+    "reports": {
+      "files": 1327,
+      "git_blob_bytes": 101254285,
+      "checkout_bytes": 101254285
+    },
+    "reports/README.md": {
+      "files": 1,
+      "git_blob_bytes": 3909,
+      "checkout_bytes": 3909
+    },
+    "reports/ambiguous_names.csv": {
+      "files": 1,
+      "git_blob_bytes": 3529,
+      "checkout_bytes": 3529
+    },
+    "reports/cluster-stability-2026-10-07": {
+      "files": 6,
+      "git_blob_bytes": 589537,
+      "checkout_bytes": 589537
+    },
+    "reports/contest-v3": {
+      "files": 14,
+      "git_blob_bytes": 10205246,
+      "checkout_bytes": 10205246
+    },
+    "reports/continuous-core-2026-10-06": {
+      "files": 27,
+      "git_blob_bytes": 1023698,
+      "checkout_bytes": 1023698
+    },
+    "reports/core-round3-review-2026-10-03": {
+      "files": 28,
+      "git_blob_bytes": 174109,
+      "checkout_bytes": 174109
+    },
+    "reports/data_audit.json": {
+      "files": 1,
+      "git_blob_bytes": 2525,
+      "checkout_bytes": 2525
+    },
+    "reports/dmon-plateau-2026-09-25": {
+      "files": 68,
+      "git_blob_bytes": 2496384,
+      "checkout_bytes": 2496384
+    },
+    "reports/economic-generalization-2026-10-03": {
+      "files": 326,
+      "git_blob_bytes": 19138135,
+      "checkout_bytes": 19138135
+    },
+    "reports/environment.json": {
+      "files": 1,
+      "git_blob_bytes": 424,
+      "checkout_bytes": 424
+    },
+    "reports/excluded_names.csv": {
+      "files": 1,
+      "git_blob_bytes": 18943,
+      "checkout_bytes": 18943
+    },
+    "reports/excluded_territories.csv": {
+      "files": 1,
+      "git_blob_bytes": 9099,
+      "checkout_bytes": 9099
+    },
+    "reports/execution_plan.json": {
+      "files": 1,
+      "git_blob_bytes": 681,
+      "checkout_bytes": 681
+    },
+    "reports/experiments": {
+      "files": 93,
+      "git_blob_bytes": 5934499,
+      "checkout_bytes": 5934499
+    },
+    "reports/external": {
+      "files": 5,
+      "git_blob_bytes": 63307,
+      "checkout_bytes": 63307
+    },
+    "reports/external-national-2026-10-03": {
+      "files": 20,
+      "git_blob_bytes": 37813759,
+      "checkout_bytes": 37813759
+    },
+    "reports/external-round2": {
+      "files": 7,
+      "git_blob_bytes": 64649,
+      "checkout_bytes": 64649
+    },
+    "reports/external-v4": {
+      "files": 7,
+      "git_blob_bytes": 372195,
+      "checkout_bytes": 372195
+    },
+    "reports/future-outcome-2026-10-04": {
+      "files": 7,
+      "git_blob_bytes": 1809360,
+      "checkout_bytes": 1809360
+    },
+    "reports/graph_preparation.json": {
+      "files": 1,
+      "git_blob_bytes": 8959,
+      "checkout_bytes": 8959
+    },
+    "reports/graphs": {
+      "files": 2,
+      "git_blob_bytes": 165083,
+      "checkout_bytes": 165083
+    },
+    "reports/icvi-2026-10-07": {
+      "files": 2,
+      "git_blob_bytes": 19916,
+      "checkout_bytes": 19916
+    },
+    "reports/metric_source_check.json": {
+      "files": 1,
+      "git_blob_bytes": 517,
+      "checkout_bytes": 517
+    },
+    "reports/model-frontier-2026-10-03": {
+      "files": 202,
+      "git_blob_bytes": 2893305,
+      "checkout_bytes": 2893305
+    },
+    "reports/practical-cases-2026-10-07": {
+      "files": 4,
+      "git_blob_bytes": 31818,
+      "checkout_bytes": 31818
+    },
+    "reports/review-2026-09-24": {
+      "files": 107,
+      "git_blob_bytes": 2178348,
+      "checkout_bytes": 2178348
+    },
+    "reports/round2-2026-09-24": {
+      "files": 117,
+      "git_blob_bytes": 5808752,
+      "checkout_bytes": 5808752
+    },
+    "reports/round2-cases": {
+      "files": 3,
+      "git_blob_bytes": 47350,
+      "checkout_bytes": 47350
+    },
+    "reports/source_alignment.json": {
+      "files": 1,
+      "git_blob_bytes": 486,
+      "checkout_bytes": 486
+    },
+    "reports/source_manifest.json": {
+      "files": 1,
+      "git_blob_bytes": 2342,
+      "checkout_bytes": 2342
+    },
+    "reports/technical-acceptance-2026-10-04": {
+      "files": 20,
+      "git_blob_bytes": 147502,
+      "checkout_bytes": 147502
+    },
+    "reports/technical-core-2026-10-03": {
+      "files": 72,
+      "git_blob_bytes": 1087604,
+      "checkout_bytes": 1087604
+    },
+    "reports/temporal-core-2026-10-03": {
+      "files": 58,
+      "git_blob_bytes": 801249,
+      "checkout_bytes": 801249
+    },
+    "reports/v1.2": {
+      "files": 106,
+      "git_blob_bytes": 5993220,
+      "checkout_bytes": 5993220
+    },
+    "reports/v1.2-added-value": {
+      "files": 9,
+      "git_blob_bytes": 2298957,
+      "checkout_bytes": 2298957
+    },
+    "reports/v1.2-method-ties": {
+      "files": 5,
+      "git_blob_bytes": 44268,
+      "checkout_bytes": 44268
+    },
+    "reports/verification.json": {
+      "files": 1,
+      "git_blob_bytes": 621,
+      "checkout_bytes": 621
+    },
+    "requirements-dmon.txt": {
+      "files": 1,
+      "git_blob_bytes": 179,
+      "checkout_bytes": 179
+    },
+    "requirements-models.txt": {
+      "files": 1,
+      "git_blob_bytes": 96,
+      "checkout_bytes": 96
+    },
+    "requirements-monitor.txt": {
+      "files": 1,
+      "git_blob_bytes": 14,
+      "checkout_bytes": 14
+    },
+    "requirements-visuals.txt": {
+      "files": 1,
+      "git_blob_bytes": 57,
+      "checkout_bytes": 57
+    },
+    "requirements.txt": {
+      "files": 1,
+      "git_blob_bytes": 192,
+      "checkout_bytes": 192
+    },
+    "sbercluster": {
+      "files": 41,
+      "git_blob_bytes": 380905,
+      "checkout_bytes": 380905
+    },
+    "sbercluster/__init__.py": {
+      "files": 1,
+      "git_blob_bytes": 97,
+      "checkout_bytes": 97
+    },
+    "sbercluster/attributed.py": {
+      "files": 1,
+      "git_blob_bytes": 9655,
+      "checkout_bytes": 9655
+    },
+    "sbercluster/canonical.py": {
+      "files": 1,
+      "git_blob_bytes": 11861,
+      "checkout_bytes": 11861
+    },
+    "sbercluster/centroids.py": {
+      "files": 1,
+      "git_blob_bytes": 3034,
+      "checkout_bytes": 3034
+    },
+    "sbercluster/cli.py": {
+      "files": 1,
+      "git_blob_bytes": 8652,
+      "checkout_bytes": 8652
+    },
+    "sbercluster/contest.py": {
+      "files": 1,
+      "git_blob_bytes": 13462,
+      "checkout_bytes": 13462
+    },
+    "sbercluster/contest_analysis.py": {
+      "files": 1,
+      "git_blob_bytes": 6541,
+      "checkout_bytes": 6541
+    },
+    "sbercluster/contest_graphs.py": {
+      "files": 1,
+      "git_blob_bytes": 6797,
+      "checkout_bytes": 6797
+    },
+    "sbercluster/continuous_atlas.py": {
+      "files": 1,
+      "git_blob_bytes": 11312,
+      "checkout_bytes": 11312
+    },
+    "sbercluster/continuous_geometry.py": {
+      "files": 1,
+      "git_blob_bytes": 4685,
+      "checkout_bytes": 4685
+    },
+    "sbercluster/data.py": {
+      "files": 1,
+      "git_blob_bytes": 9308,
+      "checkout_bytes": 9308
+    },
+    "sbercluster/dmon.py": {
+      "files": 1,
+      "git_blob_bytes": 15467,
+      "checkout_bytes": 15467
+    },
+    "sbercluster/dual_profiles.py": {
+      "files": 1,
+      "git_blob_bytes": 22117,
+      "checkout_bytes": 22117
+    },
+    "sbercluster/dynamics.py": {
+      "files": 1,
+      "git_blob_bytes": 2192,
+      "checkout_bytes": 2192
+    },
+    "sbercluster/economic_generalization.py": {
+      "files": 1,
+      "git_blob_bytes": 11227,
+      "checkout_bytes": 11227
+    },
+    "sbercluster/economic_sector_bounds.py": {
+      "files": 1,
+      "git_blob_bytes": 3368,
+      "checkout_bytes": 3368
+    },
+    "sbercluster/edges.py": {
+      "files": 1,
+      "git_blob_bytes": 8610,
+      "checkout_bytes": 8610
+    },
+    "sbercluster/external_national.py": {
+      "files": 1,
+      "git_blob_bytes": 10409,
+      "checkout_bytes": 10409
+    },
+    "sbercluster/features.py": {
+      "files": 1,
+      "git_blob_bytes": 7430,
+      "checkout_bytes": 7430
+    },
+    "sbercluster/followup.py": {
+      "files": 1,
+      "git_blob_bytes": 21199,
+      "checkout_bytes": 21199
+    },
+    "sbercluster/future_outcome_validation.py": {
+      "files": 1,
+      "git_blob_bytes": 24823,
+      "checkout_bytes": 24823
+    },
+    "sbercluster/graph.py": {
+      "files": 1,
+      "git_blob_bytes": 1945,
+      "checkout_bytes": 1945
+    },
+    "sbercluster/inference.py": {
+      "files": 1,
+      "git_blob_bytes": 7539,
+      "checkout_bytes": 7539
+    },
+    "sbercluster/input_contracts.py": {
+      "files": 1,
+      "git_blob_bytes": 2548,
+      "checkout_bytes": 2548
+    },
+    "sbercluster/io.py": {
+      "files": 1,
+      "git_blob_bytes": 4362,
+      "checkout_bytes": 4362
+    },
+    "sbercluster/joint.py": {
+      "files": 1,
+      "git_blob_bytes": 6394,
+      "checkout_bytes": 6394
+    },
+    "sbercluster/metrics.py": {
+      "files": 1,
+      "git_blob_bytes": 13124,
+      "checkout_bytes": 13124
+    },
+    "sbercluster/models.py": {
+      "files": 1,
+      "git_blob_bytes": 9454,
+      "checkout_bytes": 9454
+    },
+    "sbercluster/panel.py": {
+      "files": 1,
+      "git_blob_bytes": 6728,
+      "checkout_bytes": 6728
+    },
+    "sbercluster/published_inputs.py": {
+      "files": 1,
+      "git_blob_bytes": 4194,
+      "checkout_bytes": 4194
+    },
+    "sbercluster/research.py": {
+      "files": 1,
+      "git_blob_bytes": 15248,
+      "checkout_bytes": 15248
+    },
+    "sbercluster/research_validation.py": {
+      "files": 1,
+      "git_blob_bytes": 15179,
+      "checkout_bytes": 15179
+    },
+    "sbercluster/resources.py": {
+      "files": 1,
+      "git_blob_bytes": 13607,
+      "checkout_bytes": 13607
+    },
+    "sbercluster/round2.py": {
+      "files": 1,
+      "git_blob_bytes": 21199,
+      "checkout_bytes": 21199
+    },
+    "sbercluster/selection_artifacts.py": {
+      "files": 1,
+      "git_blob_bytes": 5267,
+      "checkout_bytes": 5267
+    },
+    "sbercluster/selection_contrasts.py": {
+      "files": 1,
+      "git_blob_bytes": 3121,
+      "checkout_bytes": 3121
+    },
+    "sbercluster/selection_frontier.py": {
+      "files": 1,
+      "git_blob_bytes": 10967,
+      "checkout_bytes": 10967
+    },
+    "sbercluster/temporal_profiles.py": {
+      "files": 1,
+      "git_blob_bytes": 13638,
+      "checkout_bytes": 13638
+    },
+    "sbercluster/tracking.py": {
+      "files": 1,
+      "git_blob_bytes": 6591,
+      "checkout_bytes": 6591
+    },
+    "sbercluster/typology.py": {
+      "files": 1,
+      "git_blob_bytes": 5603,
+      "checkout_bytes": 5603
+    },
+    "sbercluster/validation.py": {
+      "files": 1,
+      "git_blob_bytes": 1951,
+      "checkout_bytes": 1951
+    },
+    "scripts": {
+      "files": 71,
+      "git_blob_bytes": 925386,
+      "checkout_bytes": 925386
+    },
+    "scripts/atlas_payload.py": {
+      "files": 1,
+      "git_blob_bytes": 2528,
+      "checkout_bytes": 2528
+    },
+    "scripts/benchmark_contrasts.py": {
+      "files": 1,
+      "git_blob_bytes": 12102,
+      "checkout_bytes": 12102
+    },
+    "scripts/benchmark_dual_profiles.py": {
+      "files": 1,
+      "git_blob_bytes": 9839,
+      "checkout_bytes": 9839
+    },
+    "scripts/benchmark_forward.py": {
+      "files": 1,
+      "git_blob_bytes": 7845,
+      "checkout_bytes": 7845
+    },
+    "scripts/benchmark_frontier.py": {
+      "files": 1,
+      "git_blob_bytes": 16217,
+      "checkout_bytes": 16217
+    },
+    "scripts/benchmark_temporal_profiles.py": {
+      "files": 1,
+      "git_blob_bytes": 15076,
+      "checkout_bytes": 15076
+    },
+    "scripts/build_dashboard.py": {
+      "files": 1,
+      "git_blob_bytes": 9736,
+      "checkout_bytes": 9736
+    },
+    "scripts/build_dmon_plateau.py": {
+      "files": 1,
+      "git_blob_bytes": 4430,
+      "checkout_bytes": 4430
+    },
+    "scripts/build_map.py": {
+      "files": 1,
+      "git_blob_bytes": 9011,
+      "checkout_bytes": 9011
+    },
+    "scripts/build_practical_cases.py": {
+      "files": 1,
+      "git_blob_bytes": 35506,
+      "checkout_bytes": 35506
+    },
+    "scripts/build_research_atlas.py": {
+      "files": 1,
+      "git_blob_bytes": 27211,
+      "checkout_bytes": 27211
+    },
+    "scripts/build_research_figures.py": {
+      "files": 1,
+      "git_blob_bytes": 8589,
+      "checkout_bytes": 8589
+    },
+    "scripts/build_review_extension.py": {
+      "files": 1,
+      "git_blob_bytes": 8645,
+      "checkout_bytes": 8645
+    },
+    "scripts/build_review_figures.py": {
+      "files": 1,
+      "git_blob_bytes": 4833,
+      "checkout_bytes": 4833
+    },
+    "scripts/build_round2_figures.py": {
+      "files": 1,
+      "git_blob_bytes": 6101,
+      "checkout_bytes": 6101
+    },
+    "scripts/build_v12_doc_tables.py": {
+      "files": 1,
+      "git_blob_bytes": 35386,
+      "checkout_bytes": 35386
+    },
+    "scripts/build_v12_figures.py": {
+      "files": 1,
+      "git_blob_bytes": 73375,
+      "checkout_bytes": 73375
+    },
+    "scripts/build_v12_web.py": {
+      "files": 1,
+      "git_blob_bytes": 106221,
+      "checkout_bytes": 106221
+    },
+    "scripts/check_added_value.py": {
+      "files": 1,
+      "git_blob_bytes": 59528,
+      "checkout_bytes": 59528
+    },
+    "scripts/check_external_national_sources.py": {
+      "files": 1,
+      "git_blob_bytes": 5440,
+      "checkout_bytes": 5440
+    },
+    "scripts/check_method_ties.py": {
+      "files": 1,
+      "git_blob_bytes": 18580,
+      "checkout_bytes": 18580
+    },
+    "scripts/check_wage_level.py": {
+      "files": 1,
+      "git_blob_bytes": 2418,
+      "checkout_bytes": 2418
+    },
+    "scripts/describe_frozen.py": {
+      "files": 1,
+      "git_blob_bytes": 3887,
+      "checkout_bytes": 3887
+    },
+    "scripts/download_external_national.py": {
+      "files": 1,
+      "git_blob_bytes": 6293,
+      "checkout_bytes": 6293
+    },
+    "scripts/download_external_national_archive.py": {
+      "files": 1,
+      "git_blob_bytes": 3671,
+      "checkout_bytes": 3671
+    },
+    "scripts/download_external_round2.py": {
+      "files": 1,
+      "git_blob_bytes": 5378,
+      "checkout_bytes": 5378
+    },
+    "scripts/download_sources.ps1": {
+      "files": 1,
+      "git_blob_bytes": 1788,
+      "checkout_bytes": 1788
+    },
+    "scripts/download_sources.py": {
+      "files": 1,
+      "git_blob_bytes": 4228,
+      "checkout_bytes": 4228
+    },
+    "scripts/evaluate_published.py": {
+      "files": 1,
+      "git_blob_bytes": 2693,
+      "checkout_bytes": 2693
+    },
+    "scripts/export_followup.py": {
+      "files": 1,
+      "git_blob_bytes": 8509,
+      "checkout_bytes": 8509
+    },
+    "scripts/export_frontier.py": {
+      "files": 1,
+      "git_blob_bytes": 5027,
+      "checkout_bytes": 5027
+    },
+    "scripts/export_icvi_summary.py": {
+      "files": 1,
+      "git_blob_bytes": 9667,
+      "checkout_bytes": 9667
+    },
+    "scripts/export_panel.py": {
+      "files": 1,
+      "git_blob_bytes": 4561,
+      "checkout_bytes": 4561
+    },
+    "scripts/export_research_results.py": {
+      "files": 1,
+      "git_blob_bytes": 6003,
+      "checkout_bytes": 6003
+    },
+    "scripts/export_round2.py": {
+      "files": 1,
+      "git_blob_bytes": 6308,
+      "checkout_bytes": 6308
+    },
+    "scripts/extend_atlas_v12.py": {
+      "files": 1,
+      "git_blob_bytes": 12956,
+      "checkout_bytes": 12956
+    },
+    "scripts/extend_round2_atlas.py": {
+      "files": 1,
+      "git_blob_bytes": 4605,
+      "checkout_bytes": 4605
+    },
+    "scripts/external_validation_v4.py": {
+      "files": 1,
+      "git_blob_bytes": 12799,
+      "checkout_bytes": 12799
+    },
+    "scripts/import_csv.py": {
+      "files": 1,
+      "git_blob_bytes": 785,
+      "checkout_bytes": 785
+    },
+    "scripts/parse_external_altai.py": {
+      "files": 1,
+      "git_blob_bytes": 15824,
+      "checkout_bytes": 15824
+    },
+    "scripts/predict_continuous.py": {
+      "files": 1,
+      "git_blob_bytes": 4309,
+      "checkout_bytes": 4309
+    },
+    "scripts/predict_dual.py": {
+      "files": 1,
+      "git_blob_bytes": 4847,
+      "checkout_bytes": 4847
+    },
+    "scripts/predict_frontier.py": {
+      "files": 1,
+      "git_blob_bytes": 2381,
+      "checkout_bytes": 2381
+    },
+    "scripts/predict_frozen.py": {
+      "files": 1,
+      "git_blob_bytes": 5457,
+      "checkout_bytes": 5457
+    },
+    "scripts/predict_temporal.py": {
+      "files": 1,
+      "git_blob_bytes": 2310,
+      "checkout_bytes": 2310
+    },
+    "scripts/prepare.py": {
+      "files": 1,
+      "git_blob_bytes": 598,
+      "checkout_bytes": 598
+    },
+    "scripts/prepare_external_national.py": {
+      "files": 1,
+      "git_blob_bytes": 11226,
+      "checkout_bytes": 11226
+    },
+    "scripts/prepare_external_round2.py": {
+      "files": 1,
+      "git_blob_bytes": 30550,
+      "checkout_bytes": 30550
+    },
+    "scripts/prepare_graphs.py": {
+      "files": 1,
+      "git_blob_bytes": 2216,
+      "checkout_bytes": 2216
+    },
+    "scripts/render_saved_atlas.py": {
+      "files": 1,
+      "git_blob_bytes": 2145,
+      "checkout_bytes": 2145
+    },
+    "scripts/report_cluster_stability.py": {
+      "files": 1,
+      "git_blob_bytes": 14762,
+      "checkout_bytes": 14762
+    },
+    "scripts/run_bounded.py": {
+      "files": 1,
+      "git_blob_bytes": 16642,
+      "checkout_bytes": 16642
+    },
+    "scripts/run_contest.py": {
+      "files": 1,
+      "git_blob_bytes": 2288,
+      "checkout_bytes": 2288
+    },
+    "scripts/run_research.py": {
+      "files": 1,
+      "git_blob_bytes": 5364,
+      "checkout_bytes": 5364
+    },
+    "scripts/run_round2_stage.py": {
+      "files": 1,
+      "git_blob_bytes": 5393,
+      "checkout_bytes": 5393
+    },
+    "scripts/run_v12.py": {
+      "files": 1,
+      "git_blob_bytes": 45784,
+      "checkout_bytes": 45784
+    },
+    "scripts/summarize_external_national.py": {
+      "files": 1,
+      "git_blob_bytes": 19446,
+      "checkout_bytes": 19446
+    },
+    "scripts/unpack_sources.py": {
+      "files": 1,
+      "git_blob_bytes": 1474,
+      "checkout_bytes": 1474
+    },
+    "scripts/validate_economic_generalization.py": {
+      "files": 1,
+      "git_blob_bytes": 16262,
+      "checkout_bytes": 16262
+    },
+    "scripts/validate_economic_sector_generalization.py": {
+      "files": 1,
+      "git_blob_bytes": 12793,
+      "checkout_bytes": 12793
+    },
+    "scripts/validate_external_national.py": {
+      "files": 1,
+      "git_blob_bytes": 16814,
+      "checkout_bytes": 16814
+    },
+    "scripts/validate_external_national_robustness.py": {
+      "files": 1,
+      "git_blob_bytes": 7965,
+      "checkout_bytes": 7965
+    },
+    "scripts/validate_future_outcome.py": {
+      "files": 1,
+      "git_blob_bytes": 4187,
+      "checkout_bytes": 4187
+    },
+    "scripts/validate_v12_findings.py": {
+      "files": 1,
+      "git_blob_bytes": 31027,
+      "checkout_bytes": 31027
+    },
+    "scripts/verify_analogue_case.py": {
+      "files": 1,
+      "git_blob_bytes": 2713,
+      "checkout_bytes": 2713
+    },
+    "scripts/verify_continuous_core.py": {
+      "files": 1,
+      "git_blob_bytes": 6109,
+      "checkout_bytes": 6109
+    },
+    "scripts/verify_frontier_geometry.py": {
+      "files": 1,
+      "git_blob_bytes": 5728,
+      "checkout_bytes": 5728
+    },
+    "scripts/verify_frozen_inference.py": {
+      "files": 1,
+      "git_blob_bytes": 4585,
+      "checkout_bytes": 4585
+    },
+    "scripts/verify_joint_refinement.py": {
+      "files": 1,
+      "git_blob_bytes": 13759,
+      "checkout_bytes": 13759
+    },
+    "scripts/verify_metric_reference.py": {
+      "files": 1,
+      "git_blob_bytes": 9098,
+      "checkout_bytes": 9098
+    },
+    "scripts/verify_technical_core.py": {
+      "files": 1,
+      "git_blob_bytes": 23555,
+      "checkout_bytes": 23555
+    },
+    "tests": {
+      "files": 57,
+      "git_blob_bytes": 377028,
+      "checkout_bytes": 377028
+    },
+    "tests/browser": {
+      "files": 4,
+      "git_blob_bytes": 34362,
+      "checkout_bytes": 34362
+    },
+    "tests/test_added_value.py": {
+      "files": 1,
+      "git_blob_bytes": 11691,
+      "checkout_bytes": 11691
+    },
+    "tests/test_artifact_integrity.py": {
+      "files": 1,
+      "git_blob_bytes": 2200,
+      "checkout_bytes": 2200
+    },
+    "tests/test_atlas_bundle.py": {
+      "files": 1,
+      "git_blob_bytes": 8775,
+      "checkout_bytes": 8775
+    },
+    "tests/test_cluster_stability.py": {
+      "files": 1,
+      "git_blob_bytes": 6179,
+      "checkout_bytes": 6179
+    },
+    "tests/test_contest_dynamics.py": {
+      "files": 1,
+      "git_blob_bytes": 3401,
+      "checkout_bytes": 3401
+    },
+    "tests/test_contest_graphs.py": {
+      "files": 1,
+      "git_blob_bytes": 3694,
+      "checkout_bytes": 3694
+    },
+    "tests/test_contest_payload.py": {
+      "files": 1,
+      "git_blob_bytes": 1761,
+      "checkout_bytes": 1761
+    },
+    "tests/test_continuous_atlas.py": {
+      "files": 1,
+      "git_blob_bytes": 11786,
+      "checkout_bytes": 11786
+    },
+    "tests/test_contracts.py": {
+      "files": 1,
+      "git_blob_bytes": 6071,
+      "checkout_bytes": 6071
+    },
+    "tests/test_dmon.py": {
+      "files": 1,
+      "git_blob_bytes": 11085,
+      "checkout_bytes": 11085
+    },
+    "tests/test_dual_profiles.py": {
+      "files": 1,
+      "git_blob_bytes": 11785,
+      "checkout_bytes": 11785
+    },
+    "tests/test_economic_generalization.py": {
+      "files": 1,
+      "git_blob_bytes": 5827,
+      "checkout_bytes": 5827
+    },
+    "tests/test_economic_sector_bounds.py": {
+      "files": 1,
+      "git_blob_bytes": 3114,
+      "checkout_bytes": 3114
+    },
+    "tests/test_external_altai.py": {
+      "files": 1,
+      "git_blob_bytes": 6524,
+      "checkout_bytes": 6524
+    },
+    "tests/test_external_national.py": {
+      "files": 1,
+      "git_blob_bytes": 12168,
+      "checkout_bytes": 12168
+    },
+    "tests/test_external_validation_v4.py": {
+      "files": 1,
+      "git_blob_bytes": 6242,
+      "checkout_bytes": 6242
+    },
+    "tests/test_feature_contracts.py": {
+      "files": 1,
+      "git_blob_bytes": 4038,
+      "checkout_bytes": 4038
+    },
+    "tests/test_followup.py": {
+      "files": 1,
+      "git_blob_bytes": 9344,
+      "checkout_bytes": 9344
+    },
+    "tests/test_future_outcome_validation.py": {
+      "files": 1,
+      "git_blob_bytes": 27325,
+      "checkout_bytes": 27325
+    },
+    "tests/test_icvi_summary.py": {
+      "files": 1,
+      "git_blob_bytes": 1999,
+      "checkout_bytes": 1999
+    },
+    "tests/test_inference.py": {
+      "files": 1,
+      "git_blob_bytes": 8325,
+      "checkout_bytes": 8325
+    },
+    "tests/test_joint.py": {
+      "files": 1,
+      "git_blob_bytes": 8735,
+      "checkout_bytes": 8735
+    },
+    "tests/test_map_geometry.py": {
+      "files": 1,
+      "git_blob_bytes": 2400,
+      "checkout_bytes": 2400
+    },
+    "tests/test_method_ties.py": {
+      "files": 1,
+      "git_blob_bytes": 2948,
+      "checkout_bytes": 2948
+    },
+    "tests/test_metric_reference.py": {
+      "files": 1,
+      "git_blob_bytes": 1914,
+      "checkout_bytes": 1914
+    },
+    "tests/test_metric_variants.py": {
+      "files": 1,
+      "git_blob_bytes": 5598,
+      "checkout_bytes": 5598
+    },
+    "tests/test_model_contracts.py": {
+      "files": 1,
+      "git_blob_bytes": 9107,
+      "checkout_bytes": 9107
+    },
+    "tests/test_network_conventions.py": {
+      "files": 1,
+      "git_blob_bytes": 2939,
+      "checkout_bytes": 2939
+    },
+    "tests/test_pause_monitor.py": {
+      "files": 1,
+      "git_blob_bytes": 1706,
+      "checkout_bytes": 1706
+    },
+    "tests/test_peer_atlas_coverage.py": {
+      "files": 1,
+      "git_blob_bytes": 1471,
+      "checkout_bytes": 1471
+    },
+    "tests/test_plateau_evidence.py": {
+      "files": 1,
+      "git_blob_bytes": 2285,
+      "checkout_bytes": 2285
+    },
+    "tests/test_practical_cases.py": {
+      "files": 1,
+      "git_blob_bytes": 7316,
+      "checkout_bytes": 7316
+    },
+    "tests/test_preparation_transaction.py": {
+      "files": 1,
+      "git_blob_bytes": 13136,
+      "checkout_bytes": 13136
+    },
+    "tests/test_published_round2.py": {
+      "files": 1,
+      "git_blob_bytes": 10632,
+      "checkout_bytes": 10632
+    },
+    "tests/test_render_saved_atlas.py": {
+      "files": 1,
+      "git_blob_bytes": 2068,
+      "checkout_bytes": 2068
+    },
+    "tests/test_research.py": {
+      "files": 1,
+      "git_blob_bytes": 2085,
+      "checkout_bytes": 2085
+    },
+    "tests/test_research_atlas.py": {
+      "files": 1,
+      "git_blob_bytes": 5268,
+      "checkout_bytes": 5268
+    },
+    "tests/test_research_entrypoint.py": {
+      "files": 1,
+      "git_blob_bytes": 9409,
+      "checkout_bytes": 9409
+    },
+    "tests/test_research_validation.py": {
+      "files": 1,
+      "git_blob_bytes": 1709,
+      "checkout_bytes": 1709
+    },
+    "tests/test_resources.py": {
+      "files": 1,
+      "git_blob_bytes": 2202,
+      "checkout_bytes": 2202
+    },
+    "tests/test_round2.py": {
+      "files": 1,
+      "git_blob_bytes": 12676,
+      "checkout_bytes": 12676
+    },
+    "tests/test_sdbw_diagnostics.py": {
+      "files": 1,
+      "git_blob_bytes": 1005,
+      "checkout_bytes": 1005
+    },
+    "tests/test_selection_artifacts.py": {
+      "files": 1,
+      "git_blob_bytes": 4595,
+      "checkout_bytes": 4595
+    },
+    "tests/test_selection_contrasts.py": {
+      "files": 1,
+      "git_blob_bytes": 2309,
+      "checkout_bytes": 2309
+    },
+    "tests/test_selection_frontier.py": {
+      "files": 1,
+      "git_blob_bytes": 2922,
+      "checkout_bytes": 2922
+    },
+    "tests/test_technical_acceptance.py": {
+      "files": 1,
+      "git_blob_bytes": 13581,
+      "checkout_bytes": 13581
+    },
+    "tests/test_temporal_profiles.py": {
+      "files": 1,
+      "git_blob_bytes": 8310,
+      "checkout_bytes": 8310
+    },
+    "tests/test_v12_atlas.py": {
+      "files": 1,
+      "git_blob_bytes": 14493,
+      "checkout_bytes": 14493
+    },
+    "tests/test_v12_core.py": {
+      "files": 1,
+      "git_blob_bytes": 8044,
+      "checkout_bytes": 8044
+    },
+    "tests/test_v12_edges.py": {
+      "files": 1,
+      "git_blob_bytes": 4221,
+      "checkout_bytes": 4221
+    },
+    "tests/test_v12_figures.py": {
+      "files": 1,
+      "git_blob_bytes": 3750,
+      "checkout_bytes": 3750
+    },
+    "tests/test_v12_findings.py": {
+      "files": 1,
+      "git_blob_bytes": 5588,
+      "checkout_bytes": 5588
+    },
+    "tests/test_v12_results.py": {
+      "files": 1,
+      "git_blob_bytes": 4910,
+      "checkout_bytes": 4910
+    },
+    "web": {
+      "files": 12,
+      "git_blob_bytes": 636800,
+      "checkout_bytes": 636800
+    },
+    "web/accepted_results.html": {
+      "files": 1,
+      "git_blob_bytes": 5909,
+      "checkout_bytes": 5909
+    },
+    "web/archive_results.html": {
+      "files": 1,
+      "git_blob_bytes": 9614,
+      "checkout_bytes": 9614
+    },
+    "web/atlas_fonts.css": {
+      "files": 1,
+      "git_blob_bytes": 307892,
+      "checkout_bytes": 307892
+    },
+    "web/atlas_map.css": {
+      "files": 1,
+      "git_blob_bytes": 1492,
+      "checkout_bytes": 1492
+    },
+    "web/atlas_theme.css": {
+      "files": 1,
+      "git_blob_bytes": 30111,
+      "checkout_bytes": 30111
+    },
+    "web/cluster_stability.html": {
+      "files": 1,
+      "git_blob_bytes": 4490,
+      "checkout_bytes": 4490
+    },
+    "web/font_licenses.html": {
+      "files": 1,
+      "git_blob_bytes": 10084,
+      "checkout_bytes": 10084
+    },
+    "web/icvi_results.html": {
+      "files": 1,
+      "git_blob_bytes": 3833,
+      "checkout_bytes": 3833
+    },
+    "web/practical_cases.html": {
+      "files": 1,
+      "git_blob_bytes": 5710,
+      "checkout_bytes": 5710
+    },
+    "web/research_template.html": {
+      "files": 1,
+      "git_blob_bytes": 104076,
+      "checkout_bytes": 104076
+    },
+    "web/template.html": {
+      "files": 1,
+      "git_blob_bytes": 26339,
+      "checkout_bytes": 26339
+    },
+    "web/v12_sections.html": {
+      "files": 1,
+      "git_blob_bytes": 127250,
+      "checkout_bytes": 127250
+    }
+  },
+  "top_files": [
+    {
+      "path": "reports/external-national-2026-10-03/join-audit-2023.csv",
+      "git_blob": "3e82fd6dd7a29c6a8cce95e34cf3e6e00e485fad",
+      "git_blob_bytes": 17639702,
+      "checkout_bytes": 17639702,
+      "sha256": "08ea9369c99b50bb08e89e3995f1b3ccd1601529ea031326d80bd33a27403deb",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/external-national-2026-10-03/join-audit-2024.csv",
+      "git_blob": "82af6d7d16eb21e900e7723a0d466498ce223da4",
+      "git_blob_bytes": 14105031,
+      "checkout_bytes": 14105031,
+      "sha256": "3dc716d6b5f6402a91e7e2d81b8ab1deb335b9eb797c75baed1a7e59897e6bbc",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/contest-v3/municipal_map.json",
+      "git_blob": "13d175dd91bb52dd54d5595f53c18c6e7643d5b6",
+      "git_blob_bytes": 9799634,
+      "checkout_bytes": 9799634,
+      "sha256": "c33dc9b59990d23282ab7def4fa34dfb01f43e7947af8f7c1fabeaf1fa889beb",
+      "scientific_pin": true,
+      "pin_matches": true
+    },
+    {
+      "path": "docs/assets/payload-f9d4a73c4edb9e7d5e0f2121183a87df5be296b43e73d510215ed7d00f34c75c.js",
+      "git_blob": "a8c695ba72f55bb4d89e4dff1a967041f5f15f60",
+      "git_blob_bytes": 5407198,
+      "checkout_bytes": 5407198,
+      "sha256": "f9d4a73c4edb9e7d5e0f2121183a87df5be296b43e73d510215ed7d00f34c75c",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/economic-generalization-2026-10-03/sectors/fold-probe-metadata.jsonl",
+      "git_blob": "144446d0dcf1b569ce0aedf0d2e35e07f08c325e",
+      "git_blob_bytes": 3682015,
+      "checkout_bytes": 3682015,
+      "sha256": "b97af8fdd02648af74e8b95095ad4fa226349981f9ef55aeb21e9010958f2864",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/external-national-2026-10-03/blocked-predictions.csv",
+      "git_blob": "11eb193e6357ec8c5194f7011402a73aa2151f38",
+      "git_blob_bytes": 2933477,
+      "checkout_bytes": 2933477,
+      "sha256": "12ccf0291597eaa4f5ee5623b6cdc92d0a5640f3616145a225cdadf77a6353f4",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/experiments/2026-09-23-v2/validation/monthly_assignments.csv",
+      "git_blob": "43a7123e0a7c31e49d3c7df2f1fdf138426dc8c6",
+      "git_blob_bytes": 2038732,
+      "checkout_bytes": 2038732,
+      "sha256": "af97e247246052ca118c353b034f8b288504fa4a99b9f5b7e10630d657ffc41e",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/v1.2-added-value/predictions.csv",
+      "git_blob": "3d8991356df47d0a56335465111d121c151327db",
+      "git_blob_bytes": 1945564,
+      "checkout_bytes": 1945564,
+      "sha256": "c15e313ed44343cf59126394efb759fc8b4fd33ca7f63994847848eb0a0e54ab",
+      "scientific_pin": true,
+      "pin_matches": true
+    },
+    {
+      "path": "reports/experiments/2026-09-23-v2/validation/consensus_neighbors.csv",
+      "git_blob": "77ca91bb25c2a48daa8fa2f66b357495b61e7db3",
+      "git_blob_bytes": 1925407,
+      "checkout_bytes": 1925407,
+      "sha256": "3ce4a1f41062c1527be569d8f4b6201174158c1aa0415546fb7c085f5ce5abdc",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/v1.2/strict-region-validation/strict_predictions.csv",
+      "git_blob": "1c336c7c197c92d43bfa1dcaca7d8c3a95ef4c81",
+      "git_blob_bytes": 1794151,
+      "checkout_bytes": 1794151,
+      "sha256": "4ff351f29368b17d55741d82cccac4a83756252436bb29109949e63824cfa90b",
+      "scientific_pin": true,
+      "pin_matches": true
+    },
+    {
+      "path": "reports/v1.2/analogue_predictions.csv",
+      "git_blob": "29210ceeb621c309d2bbb25b1e738039556a47c9",
+      "git_blob_bytes": 1600864,
+      "checkout_bytes": 1600864,
+      "sha256": "9b3cd3a4d2b9b4cc8b2ba6e56853449940f93bb0dfe369f5e6b84d1f7fb02f99",
+      "scientific_pin": true,
+      "pin_matches": true
+    },
+    {
+      "path": "data/v12/panel.csv.gz",
+      "git_blob": "1c22fd6cb2ddae06a65e4142812cf56185cf9652",
+      "git_blob_bytes": 1558745,
+      "checkout_bytes": 1558745,
+      "sha256": "953ba39d152f0f4192ebbabc8edfa0684683c3a4a3d8c147f0978cf6f1798784",
+      "scientific_pin": true,
+      "pin_matches": true
+    },
+    {
+      "path": "reports/round2-2026-09-24/round2-20260924-temporal_grid/transition_events.csv",
+      "git_blob": "4d0cb8e4168067bc788e4bd54f708fe293c7c0ce",
+      "git_blob_bytes": 1441208,
+      "checkout_bytes": 1441208,
+      "sha256": "1caf8328edf4f2a48a296f0114533a05a9f9d8b170e0834f6ee9cc16ef27d8a7",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/review-2026-09-24/atlas_extension.json",
+      "git_blob": "45d3926e8ed89927b09cd96b5608d8d8d724e79a",
+      "git_blob_bytes": 1313577,
+      "checkout_bytes": 1313577,
+      "sha256": "f9325e4400324b39521eda6f99848a814e2fa5cc58bcb6ba8d56727125e278e5",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/v1.2/strict-region-validation/original_regression_only_predictions.csv",
+      "git_blob": "c7214c12b528ab15d726ca269a1a838fad1c95f8",
+      "git_blob_bytes": 1291535,
+      "checkout_bytes": 1291535,
+      "sha256": "29ad7fa37319475138e26756ca65c0bb52f805a533ea339187a0cdf5b8d15c1f",
+      "scientific_pin": true,
+      "pin_matches": true
+    },
+    {
+      "path": "reports/external-national-2026-10-03/cohort-2023.csv",
+      "git_blob": "97b2024040a17dd49fe27aa9c7a021bbea3e58c5",
+      "git_blob_bytes": 1276642,
+      "checkout_bytes": 1276642,
+      "sha256": "dcfcf2ac0af503d696f9492bc8c1bc4e38977cc2bd1b6c12da66463f761d9c62",
+      "scientific_pin": true,
+      "pin_matches": true
+    },
+    {
+      "path": "reports/future-outcome-2026-10-04/context/source-metadata.csv",
+      "git_blob": "1a4a0329ef47193cf7d9bb42cff6518d1cd697ed",
+      "git_blob_bytes": 1259016,
+      "checkout_bytes": 1259016,
+      "sha256": "9c261179f371436b4c876c088ade343dc2830c64d85395cda39b40e07fa55289",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/round2-2026-09-24/round2-20260924-dmon/metrics.json",
+      "git_blob": "2559aa4284a41b8b5fdea330782c9f3151858de7",
+      "git_blob_bytes": 1208140,
+      "checkout_bytes": 1208140,
+      "sha256": "fbd15d239208f8a4a7b7911e14991669dd1da09e4f884419856dac2985c79ce3",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/external-national-2026-10-03/cohort-2024.csv",
+      "git_blob": "f4fafb978d1d6b6533d94060fd943714da9052e1",
+      "git_blob_bytes": 1186426,
+      "checkout_bytes": 1186426,
+      "sha256": "0c26468eb64f2ed21d16d71faef998f9cdb3a9e69960a7c016737d402b262a07",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/economic-generalization-2026-10-03/sectors/results.json",
+      "git_blob": "7f91556910b9b5e72c1fa8e4471ef77eef22a952",
+      "git_blob_bytes": 1141533,
+      "checkout_bytes": 1141533,
+      "sha256": "d24b76cb9428f3915d93f816d23e5674e6888e8d9a3dc58aa8f3a3814d71cb3f",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/economic-generalization-2026-10-03/sectors/all-eligible-oof-predictions.csv",
+      "git_blob": "3612809782e1fa3a61b008bc705cab51b309366f",
+      "git_blob_bytes": 792127,
+      "checkout_bytes": 792127,
+      "sha256": "bb3bf4c99bc5babfb855bc7ab113ed964cfad60db471244ec2dfd6b1f19a7f58",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/experiments/2026-09-23-v2/screen_partitions.csv.gz",
+      "git_blob": "a5fdc94a409c921f538d517a6873eb1d1e0cca93",
+      "git_blob_bytes": 592874,
+      "checkout_bytes": 592874,
+      "sha256": "cc05185c7bd09778e4873707027dd501a098ff8c84769d9b76711653ca594d28",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/experiments/2026-09-23/partitions.csv",
+      "git_blob": "28f01ef69cca733d2613d2cc2ea7a6a8a78d656c",
+      "git_blob_bytes": 550086,
+      "checkout_bytes": 550086,
+      "sha256": "0102bd6fc94d3c83c3116913f082463e4c6f155e2222bb098c1731543744044d",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/future-outcome-2026-10-04/context/membership.json",
+      "git_blob": "3540366389ef561a276b81cf46cb32e4fa80e6c2",
+      "git_blob_bytes": 541248,
+      "checkout_bytes": 541248,
+      "sha256": "dccf766a1166312ceb29212aa6f0a0631c098257da39a39246ca2af297ea86b6",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/economic-generalization-2026-10-03/wage/all-oof-predictions.csv",
+      "git_blob": "80f396bb3f4e4400c73b4b07136347f72087d3ae",
+      "git_blob_bytes": 493379,
+      "checkout_bytes": 493379,
+      "sha256": "e3cb45292e9090cd0416a5f2eb6e1d1cfa3e3213c2a144ecd2e387557e286e32",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/continuous-core-2026-10-06/research/economic_screen/all_oof_predictions.csv",
+      "git_blob": "d3c27d68ffcfeafbbf55ef6eed97233083ae4007",
+      "git_blob_bytes": 491638,
+      "checkout_bytes": 491638,
+      "sha256": "62ef35fbb371b729ec2bf3f6b95184ca27d3f5d12071594a8e73658c458f7ef1",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "docs/index.html",
+      "git_blob": "901d126dcfd010383e8b0b4ba78b1413a1987521",
+      "git_blob_bytes": 483308,
+      "checkout_bytes": 483308,
+      "sha256": "89a87aae9bfe467c3587cb392abadaa2fac44761109f0ada5acb281f5beb0bad",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/cluster-stability-2026-10-07/entities.csv",
+      "git_blob": "62082f0d3d20ca77ebc807da186a8ddf7b1f5ee3",
+      "git_blob_bytes": 425642,
+      "checkout_bytes": 425642,
+      "sha256": "7d3dcc02f95581599d13ed5067ed81a18dc712ceb211cdbdcf25025daa9d2f29",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "docs/images/atlas-preview.png",
+      "git_blob": "3b49e2ffc3692c2fb53d5cb948eb8eaaa9f77c4b",
+      "git_blob_bytes": 385486,
+      "checkout_bytes": 385486,
+      "sha256": "84ae412e19da89f0a766bf3aa3fbe4a1f19fe5abbdd1558fbd8e506fb71063ce",
+      "scientific_pin": false,
+      "pin_matches": null
+    },
+    {
+      "path": "reports/continuous-core-2026-10-06/research/spatial_stress/all_oof_predictions.csv",
+      "git_blob": "ddcb5494324df47bf3525b88f8a6289ef563269b",
+      "git_blob_bytes": 360019,
+      "checkout_bytes": 360019,
+      "sha256": "6f82e25ffe1d334f8cf8e7a9776320a609d946e9d79f915541a63e56aebc3ecc",
+      "scientific_pin": false,
+      "pin_matches": null
+    }
+  ],
+  "git_count_objects": "count: 2358\nsize: 106468\nin-pack: 661\npacks: 2\nsize-pack: 33478\nprune-packable: 53\ngarbage: 0\nsize-garbage: 0\n",
+  "references": {
+    "reports/external-national-2026-10-03/join-audit-2023.csv": {
+      "exact": [
+        {
+          "file": "reports/external-national-2026-10-03/manifest.json",
+          "line": 108
+        }
+      ],
+      "basename": [
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/control-cohort-audit.json",
+          "line": 22
+        },
+        {
+          "file": "reports/external-national-2026-10-03/README.md",
+          "line": 15
+        },
+        {
+          "file": "scripts/summarize_external_national.py",
+          "line": 49
+        }
+      ]
+    },
+    "reports/external-national-2026-10-03/join-audit-2024.csv": {
+      "exact": [
+        {
+          "file": "reports/external-national-2026-10-03/manifest.json",
+          "line": 113
+        }
+      ],
+      "basename": [
+        {
+          "file": "reports/external-national-2026-10-03/README.md",
+          "line": 15
+        },
+        {
+          "file": "scripts/summarize_external_national.py",
+          "line": 49
+        }
+      ]
+    },
+    "reports/contest-v3/municipal_map.json": {
+      "exact": [
+        {
+          "file": ".github/workflows/tests.yml",
+          "line": 75
+        },
+        {
+          "file": ".github/workflows/tests.yml",
+          "line": 76
+        },
+        {
+          "file": "configs/v12.json",
+          "line": 11
+        },
+        {
+          "file": "docs/MAP_QA.md",
+          "line": 19
+        },
+        {
+          "file": "docs/REPRODUCE.md",
+          "line": 22
+        },
+        {
+          "file": "reports/v1.2/findings_provenance.json",
+          "line": 13
+        },
+        {
+          "file": "reports/v1.2/findings_provenance.json",
+          "line": 93
+        },
+        {
+          "file": "reports/v1.2/provenance.json",
+          "line": 13
+        },
+        {
+          "file": "reports/v1.2/summary.json",
+          "line": 25
+        },
+        {
+          "file": "scripts/build_map.py",
+          "line": 173
+        },
+        {
+          "file": "scripts/build_v12_figures.py",
+          "line": 1383
+        },
+        {
+          "file": "tests/test_atlas_bundle.py",
+          "line": 159
+        },
+        {
+          "file": "tests/test_v12_figures.py",
+          "line": 16
+        }
+      ],
+      "basename": [
+        {
+          "file": "reports/contest-v3/README.md",
+          "line": 59
+        },
+        {
+          "file": "reports/contest-v3/SHA256.json",
+          "line": 9
+        }
+      ]
+    },
+    "docs/assets/payload-f9d4a73c4edb9e7d5e0f2121183a87df5be296b43e73d510215ed7d00f34c75c.js": {
+      "exact": [],
+      "basename": [
+        {
+          "file": "docs/index.html",
+          "line": 833
+        }
+      ]
+    },
+    "reports/economic-generalization-2026-10-03/sectors/fold-probe-metadata.jsonl": {
+      "exact": [
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 122
+        }
+      ],
+      "basename": [
+        {
+          "file": "reports/core-round3-review-2026-10-03/oracles/verify_sector_evidence.py",
+          "line": 30
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/verify_sector_evidence.py",
+          "line": 30
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/sectors/source/scripts/validate_economic_sector_generalization.py",
+          "line": 125
+        },
+        {
+          "file": "scripts/validate_economic_sector_generalization.py",
+          "line": 125
+        }
+      ]
+    },
+    "reports/external-national-2026-10-03/blocked-predictions.csv": {
+      "exact": [
+        {
+          "file": "reports/external-national-2026-10-03/manifest.json",
+          "line": 73
+        }
+      ],
+      "basename": [
+        {
+          "file": "reports/external-national-2026-10-03/README.md",
+          "line": 86
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/frontier-review/external-independent-stat-review.json",
+          "line": 76
+        },
+        {
+          "file": "scripts/summarize_external_national.py",
+          "line": 87
+        },
+        {
+          "file": "scripts/validate_external_national.py",
+          "line": 263
+        }
+      ]
+    },
+    "reports/experiments/2026-09-23-v2/validation/monthly_assignments.csv": {
+      "exact": [],
+      "basename": [
+        {
+          "file": "reports/experiments/2026-09-23-v2/README.md",
+          "line": 99
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/SHA256.json",
+          "line": 82
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123427735210Z/implementation_snapshot/sbercluster/research_validation.py",
+          "line": 199
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123523157700Z/implementation_snapshot/sbercluster/research_validation.py",
+          "line": 199
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123755575253Z/implementation_snapshot/sbercluster/research_validation.py",
+          "line": 199
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T132832891346Z/implementation_snapshot/sbercluster/research_validation.py",
+          "line": 199
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/continuation/source_objects/533add0ab54a7aa35efcb79ba4bb377507d791d559fde7ab7e82db534969e085.py",
+          "line": 30
+        },
+        {
+          "file": "sbercluster/research_validation.py",
+          "line": 190
+        },
+        {
+          "file": "scripts/build_research_atlas.py",
+          "line": 31
+        },
+        {
+          "file": "scripts/build_research_atlas.py",
+          "line": 169
+        },
+        {
+          "file": "scripts/build_research_atlas.py",
+          "line": 170
+        },
+        {
+          "file": "scripts/verify_frozen_inference.py",
+          "line": 30
+        }
+      ]
+    },
+    "reports/v1.2-added-value/predictions.csv": {
+      "exact": [],
+      "basename": [
+        {
+          "file": "docs/FUTURE_OUTCOME_VALIDATION.md",
+          "line": 30
+        },
+        {
+          "file": "reports/continuous-core-2026-10-06/manifest.json",
+          "line": 65
+        },
+        {
+          "file": "reports/continuous-core-2026-10-06/manifest.json",
+          "line": 85
+        },
+        {
+          "file": "reports/continuous-core-2026-10-06/research/economic_screen/config.json",
+          "line": 42
+        },
+        {
+          "file": "reports/continuous-core-2026-10-06/research/spatial_stress/config.json",
+          "line": 38
+        },
+        {
+          "file": "reports/core-round3-review-2026-10-03/oracles/verify_economic_evidence.py",
+          "line": 40
+        },
+        {
+          "file": "reports/core-round3-review-2026-10-03/oracles/verify_economic_evidence.py",
+          "line": 73
+        },
+        {
+          "file": "reports/core-round3-review-2026-10-03/oracles/verify_economic_evidence.py",
+          "line": 109
+        },
+        {
+          "file": "reports/core-round3-review-2026-10-03/oracles/verify_economic_evidence.py",
+          "line": 118
+        },
+        {
+          "file": "reports/core-round3-review-2026-10-03/oracles/verify_economic_evidence.py",
+          "line": 195
+        },
+        {
+          "file": "reports/core-round3-review-2026-10-03/oracles/verify_sector_evidence.py",
+          "line": 18
+        },
+        {
+          "file": "reports/core-round3-review-2026-10-03/oracles/verify_sector_evidence.py",
+          "line": 25
+        },
+        {
+          "file": "reports/core-round3-review-2026-10-03/oracles/verify_sector_evidence.py",
+          "line": 87
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/verify_economic_evidence.py",
+          "line": 40
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/verify_economic_evidence.py",
+          "line": 73
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/verify_economic_evidence.py",
+          "line": 109
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/verify_economic_evidence.py",
+          "line": 118
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/verify_economic_evidence.py",
+          "line": 195
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/verify_sector_evidence.py",
+          "line": 18
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/verify_sector_evidence.py",
+          "line": 25
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/verify_sector_evidence.py",
+          "line": 87
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 117
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 177
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 182
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 202
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 222
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 242
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 262
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 282
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 302
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 322
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 342
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 362
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 382
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 402
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 422
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 442
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 462
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 482
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 502
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 522
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 542
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 562
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 582
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 602
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 622
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 642
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 662
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 682
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 702
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 722
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 742
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 762
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 782
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 802
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 822
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 842
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 862
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 882
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 902
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 922
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 942
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 962
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 982
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1002
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1022
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1042
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1062
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1082
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1102
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1122
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1142
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1162
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1182
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1202
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1222
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1242
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1262
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1282
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1302
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1322
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1342
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1362
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1382
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1402
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1422
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1442
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1462
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1482
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1502
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1522
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1542
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1562
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1582
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1602
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/sectors/source/scripts/validate_economic_generalization.py",
+          "line": 183
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/sectors/source/scripts/validate_economic_generalization.py",
+          "line": 221
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/sectors/source/scripts/validate_economic_generalization.py",
+          "line": 226
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/sectors/source/scripts/validate_economic_sector_generalization.py",
+          "line": 124
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/sectors/source/scripts/validate_economic_sector_generalization.py",
+          "line": 153
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/wage/source/scripts/validate_economic_generalization.py",
+          "line": 182
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/wage/source/scripts/validate_economic_generalization.py",
+          "line": 220
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/wage/source/scripts/validate_economic_generalization.py",
+          "line": 225
+        },
+        {
+          "file": "reports/external-national-2026-10-03/README.md",
+          "line": 86
+        },
+        {
+          "file": "reports/external-national-2026-10-03/manifest.json",
+          "line": 73
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/frontier-review/external-independent-stat-review.json",
+          "line": 76
+        },
+        {
+          "file": "reports/v1.2/README.md",
+          "line": 5
+        },
+        {
+          "file": "reports/v1.2/findings_provenance.json",
+          "line": 135
+        },
+        {
+          "file": "reports/v1.2/summary.json",
+          "line": 1468
+        },
+        {
+          "file": "reports/v1.2/wage_level_comparison.json",
+          "line": 13
+        },
+        {
+          "file": "scripts/check_added_value.py",
+          "line": 750
+        },
+        {
+          "file": "scripts/check_wage_level.py",
+          "line": 13
+        },
+        {
+          "file": "scripts/run_v12.py",
+          "line": 503
+        },
+        {
+          "file": "scripts/summarize_external_national.py",
+          "line": 87
+        },
+        {
+          "file": "scripts/validate_economic_generalization.py",
+          "line": 183
+        },
+        {
+          "file": "scripts/validate_economic_generalization.py",
+          "line": 221
+        },
+        {
+          "file": "scripts/validate_economic_generalization.py",
+          "line": 226
+        },
+        {
+          "file": "scripts/validate_economic_sector_generalization.py",
+          "line": 124
+        },
+        {
+          "file": "scripts/validate_economic_sector_generalization.py",
+          "line": 153
+        },
+        {
+          "file": "scripts/validate_external_national.py",
+          "line": 263
+        },
+        {
+          "file": "scripts/validate_v12_findings.py",
+          "line": 164
+        },
+        {
+          "file": "scripts/validate_v12_findings.py",
+          "line": 235
+        },
+        {
+          "file": "scripts/validate_v12_findings.py",
+          "line": 362
+        },
+        {
+          "file": "scripts/validate_v12_findings.py",
+          "line": 392
+        },
+        {
+          "file": "scripts/validate_v12_findings.py",
+          "line": 394
+        },
+        {
+          "file": "tests/test_added_value.py",
+          "line": 125
+        },
+        {
+          "file": "tests/test_future_outcome_validation.py",
+          "line": 233
+        },
+        {
+          "file": "tests/test_future_outcome_validation.py",
+          "line": 281
+        },
+        {
+          "file": "tests/test_future_outcome_validation.py",
+          "line": 389
+        },
+        {
+          "file": "tests/test_v12_findings.py",
+          "line": 48
+        },
+        {
+          "file": "tests/test_v12_findings.py",
+          "line": 71
+        },
+        {
+          "file": "tests/test_v12_findings.py",
+          "line": 87
+        }
+      ]
+    },
+    "reports/experiments/2026-09-23-v2/validation/consensus_neighbors.csv": {
+      "exact": [],
+      "basename": [
+        {
+          "file": "reports/experiments/2026-09-23-v2/SHA256.json",
+          "line": 79
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123427735210Z/implementation_snapshot/sbercluster/research_validation.py",
+          "line": 258
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123523157700Z/implementation_snapshot/sbercluster/research_validation.py",
+          "line": 258
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123755575253Z/implementation_snapshot/sbercluster/research_validation.py",
+          "line": 260
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T132832891346Z/implementation_snapshot/sbercluster/research_validation.py",
+          "line": 260
+        },
+        {
+          "file": "sbercluster/research_validation.py",
+          "line": 251
+        },
+        {
+          "file": "scripts/build_research_atlas.py",
+          "line": 32
+        },
+        {
+          "file": "scripts/build_research_atlas.py",
+          "line": 186
+        },
+        {
+          "file": "scripts/build_research_atlas.py",
+          "line": 187
+        }
+      ]
+    },
+    "reports/v1.2/strict-region-validation/strict_predictions.csv": {
+      "exact": [
+        {
+          "file": "reports/v1.2/wage_level_comparison.json",
+          "line": 13
+        },
+        {
+          "file": "scripts/check_wage_level.py",
+          "line": 13
+        }
+      ],
+      "basename": [
+        {
+          "file": "reports/v1.2/summary.json",
+          "line": 1468
+        },
+        {
+          "file": "scripts/validate_v12_findings.py",
+          "line": 235
+        },
+        {
+          "file": "scripts/validate_v12_findings.py",
+          "line": 362
+        },
+        {
+          "file": "scripts/validate_v12_findings.py",
+          "line": 394
+        },
+        {
+          "file": "tests/test_v12_findings.py",
+          "line": 71
+        },
+        {
+          "file": "tests/test_v12_findings.py",
+          "line": 87
+        }
+      ]
+    },
+    "reports/v1.2/analogue_predictions.csv": {
+      "exact": [],
+      "basename": [
+        {
+          "file": "reports/v1.2/README.md",
+          "line": 5
+        },
+        {
+          "file": "reports/v1.2/findings_provenance.json",
+          "line": 135
+        },
+        {
+          "file": "scripts/run_v12.py",
+          "line": 503
+        },
+        {
+          "file": "scripts/validate_v12_findings.py",
+          "line": 392
+        },
+        {
+          "file": "tests/test_v12_findings.py",
+          "line": 48
+        }
+      ]
+    },
+    "data/v12/panel.csv.gz": {
+      "exact": [
+        {
+          "file": "configs/v12.json",
+          "line": 6
+        },
+        {
+          "file": "docs/REPRODUCE.md",
+          "line": 277
+        },
+        {
+          "file": "reports/v1.2-added-value/summary.json",
+          "line": 183
+        },
+        {
+          "file": "reports/v1.2-added-value/windows-state-verification.json",
+          "line": 17
+        },
+        {
+          "file": "reports/v1.2-method-ties/summary.json",
+          "line": 17
+        },
+        {
+          "file": "reports/v1.2/findings_provenance.json",
+          "line": 8
+        },
+        {
+          "file": "reports/v1.2/findings_provenance.json",
+          "line": 88
+        },
+        {
+          "file": "reports/v1.2/provenance.json",
+          "line": 8
+        },
+        {
+          "file": "reports/v1.2/strict-region-validation/summary.json",
+          "line": 5
+        },
+        {
+          "file": "reports/v1.2/summary.json",
+          "line": 5
+        },
+        {
+          "file": "reports/v1.2/wage_level_comparison.json",
+          "line": 12
+        },
+        {
+          "file": "scripts/check_added_value.py",
+          "line": 757
+        },
+        {
+          "file": "scripts/check_method_ties.py",
+          "line": 294
+        },
+        {
+          "file": "scripts/check_wage_level.py",
+          "line": 13
+        },
+        {
+          "file": "scripts/export_panel.py",
+          "line": 9
+        },
+        {
+          "file": "scripts/export_panel.py",
+          "line": 67
+        },
+        {
+          "file": "tests/test_v12_atlas.py",
+          "line": 122
+        },
+        {
+          "file": "tests/test_v12_findings.py",
+          "line": 20
+        },
+        {
+          "file": "tests/test_v12_findings.py",
+          "line": 44
+        },
+        {
+          "file": "tests/test_v12_results.py",
+          "line": 34
+        },
+        {
+          "file": "tests/test_v12_results.py",
+          "line": 41
+        }
+      ],
+      "basename": [
+        {
+          "file": "data/v12/panel.manifest.json",
+          "line": 2
+        },
+        {
+          "file": "tests/test_v12_core.py",
+          "line": 31
+        }
+      ]
+    },
+    "reports/round2-2026-09-24/round2-20260924-temporal_grid/transition_events.csv": {
+      "exact": [],
+      "basename": [
+        {
+          "file": "reports/dmon-plateau-2026-09-25/source_objects/b5c68ff6bc262dd23eb2ff202ed7a016f63aeb7c882248af4fb40761bd4ddda5.py",
+          "line": 260
+        },
+        {
+          "file": "reports/round2-2026-09-24/round2-20260924-temporal_grid/manifest.json",
+          "line": 25
+        },
+        {
+          "file": "reports/round2-2026-09-24/round2-20260924-temporal_grid/manifest.json",
+          "line": 49
+        },
+        {
+          "file": "reports/round2-2026-09-24/round2-20260924-temporal_pilot/manifest.json",
+          "line": 13
+        },
+        {
+          "file": "reports/round2-2026-09-24/round2-20260924-temporal_pilot/manifest.json",
+          "line": 25
+        },
+        {
+          "file": "reports/round2-2026-09-24/source_objects/616a5aac84070739715f3622aff489beb8a2712926f55079fa83c0d3546ed413.py",
+          "line": 260
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/joint-refinement/source_objects/daadbac96279be263e9794bb62468696baaa6cde9f833fcdf2c87d75eba591c3.py",
+          "line": 275
+        },
+        {
+          "file": "sbercluster/round2.py",
+          "line": 275
+        },
+        {
+          "file": "scripts/export_round2.py",
+          "line": 20
+        },
+        {
+          "file": "scripts/export_round2.py",
+          "line": 71
+        },
+        {
+          "file": "tests/test_published_round2.py",
+          "line": 147
+        }
+      ]
+    },
+    "reports/review-2026-09-24/atlas_extension.json": {
+      "exact": [
+        {
+          "file": ".github/workflows/tests.yml",
+          "line": 75
+        },
+        {
+          "file": ".github/workflows/tests.yml",
+          "line": 76
+        },
+        {
+          "file": "docs/REPRODUCE.md",
+          "line": 22
+        },
+        {
+          "file": "reports/cluster-stability-2026-10-07/README.md",
+          "line": 24
+        },
+        {
+          "file": "reports/cluster-stability-2026-10-07/summary.json",
+          "line": 218
+        },
+        {
+          "file": "scripts/build_review_extension.py",
+          "line": 118
+        },
+        {
+          "file": "scripts/report_cluster_stability.py",
+          "line": 183
+        }
+      ],
+      "basename": [
+        {
+          "file": "reports/contest-v3/SHA256.json",
+          "line": 14
+        },
+        {
+          "file": "reports/review-2026-09-24/README.md",
+          "line": 9
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/continuation/source_objects/07aa29036a11e44ab6743b3f80b11fd6a0cb4422bb0eb0377d1bf4335bd97bb4.py",
+          "line": 198
+        },
+        {
+          "file": "sbercluster/contest.py",
+          "line": 198
+        },
+        {
+          "file": "scripts/build_research_atlas.py",
+          "line": 307
+        },
+        {
+          "file": "scripts/build_review_extension.py",
+          "line": 20
+        }
+      ]
+    },
+    "reports/v1.2/strict-region-validation/original_regression_only_predictions.csv": {
+      "exact": [],
+      "basename": [
+        {
+          "file": "scripts/validate_v12_findings.py",
+          "line": 164
+        }
+      ]
+    },
+    "reports/external-national-2026-10-03/cohort-2023.csv": {
+      "exact": [
+        {
+          "file": "configs/v12.json",
+          "line": 7
+        },
+        {
+          "file": "docs/ECONOMIC_GENERALIZATION.md",
+          "line": 75
+        },
+        {
+          "file": "reports/continuous-core-2026-10-06/research/economic_screen/config.json",
+          "line": 39
+        },
+        {
+          "file": "reports/continuous-core-2026-10-06/research/spatial_stress/config.json",
+          "line": 35
+        },
+        {
+          "file": "reports/core-round3-review-2026-10-03/oracles/verify_sector_evidence.py",
+          "line": 22
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/verify_sector_evidence.py",
+          "line": 22
+        },
+        {
+          "file": "reports/external-national-2026-10-03/manifest.json",
+          "line": 83
+        },
+        {
+          "file": "reports/practical-cases-2026-10-07/provenance.json",
+          "line": 15
+        },
+        {
+          "file": "reports/v1.2-added-value/summary.json",
+          "line": 184
+        },
+        {
+          "file": "reports/v1.2/findings_provenance.json",
+          "line": 9
+        },
+        {
+          "file": "reports/v1.2/findings_provenance.json",
+          "line": 89
+        },
+        {
+          "file": "reports/v1.2/provenance.json",
+          "line": 9
+        },
+        {
+          "file": "reports/v1.2/strict-region-validation/summary.json",
+          "line": 6
+        },
+        {
+          "file": "reports/v1.2/summary.json",
+          "line": 9
+        },
+        {
+          "file": "scripts/build_practical_cases.py",
+          "line": 261
+        },
+        {
+          "file": "scripts/check_added_value.py",
+          "line": 757
+        },
+        {
+          "file": "tests/test_practical_cases.py",
+          "line": 18
+        }
+      ],
+      "basename": [
+        {
+          "file": "docs/REPRODUCE.md",
+          "line": 254
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/control-cohort-audit.json",
+          "line": 21
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 19
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/sectors/protocol.json",
+          "line": 1913
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/sectors/source/scripts/validate_economic_generalization.py",
+          "line": 46
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/sectors/source/scripts/validate_economic_generalization.py",
+          "line": 78
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/sectors/source/scripts/validate_economic_sector_generalization.py",
+          "line": 63
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/wage/protocol.json",
+          "line": 49
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/wage/source/scripts/validate_economic_generalization.py",
+          "line": 45
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/wage/source/scripts/validate_economic_generalization.py",
+          "line": 77
+        },
+        {
+          "file": "reports/external-national-2026-10-03/README.md",
+          "line": 86
+        },
+        {
+          "file": "reports/external-national-2026-10-03/nonlinear-robustness.json",
+          "line": 12
+        },
+        {
+          "file": "reports/external-national-2026-10-03/results.json",
+          "line": 20
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/frontier-review/external-independent-stat-review.json",
+          "line": 79
+        },
+        {
+          "file": "scripts/build_v12_figures.py",
+          "line": 404
+        },
+        {
+          "file": "scripts/check_external_national_sources.py",
+          "line": 30
+        },
+        {
+          "file": "scripts/summarize_external_national.py",
+          "line": 87
+        },
+        {
+          "file": "scripts/validate_economic_generalization.py",
+          "line": 46
+        },
+        {
+          "file": "scripts/validate_economic_generalization.py",
+          "line": 78
+        },
+        {
+          "file": "scripts/validate_economic_sector_generalization.py",
+          "line": 63
+        },
+        {
+          "file": "scripts/validate_external_national.py",
+          "line": 266
+        },
+        {
+          "file": "scripts/validate_external_national_robustness.py",
+          "line": 109
+        }
+      ]
+    },
+    "reports/future-outcome-2026-10-04/context/source-metadata.csv": {
+      "exact": [
+        {
+          "file": "reports/technical-acceptance-2026-10-04/WHITESPACE_POLICY.json",
+          "line": 3
+        }
+      ],
+      "basename": [
+        {
+          "file": "docs/FUTURE_OUTCOME_VALIDATION.md",
+          "line": 11
+        },
+        {
+          "file": "docs/FUTURE_OUTCOME_VALIDATION.md",
+          "line": 30
+        },
+        {
+          "file": "reports/future-outcome-2026-10-04/README.md",
+          "line": 5
+        },
+        {
+          "file": "reports/future-outcome-2026-10-04/manifest.json",
+          "line": 13
+        }
+      ]
+    },
+    "reports/round2-2026-09-24/round2-20260924-dmon/metrics.json": {
+      "exact": [],
+      "basename": [
+        {
+          "file": ".github/workflows/tests.yml",
+          "line": 105
+        },
+        {
+          "file": "docs/REPRODUCE.md",
+          "line": 46
+        },
+        {
+          "file": "docs/ROUND2_RESULTS.md",
+          "line": 23
+        },
+        {
+          "file": "docs/index.html",
+          "line": 608
+        },
+        {
+          "file": "reports/contest-v3/README.md",
+          "line": 82
+        },
+        {
+          "file": "reports/contest-v3/SHA256.json",
+          "line": 11
+        },
+        {
+          "file": "reports/dmon-plateau-2026-09-25/dmon-plateau-20260925/manifest.json",
+          "line": 45
+        },
+        {
+          "file": "reports/dmon-plateau-2026-09-25/dmon-plateau-20260925/manifest.json",
+          "line": 90
+        },
+        {
+          "file": "reports/dmon-plateau-2026-09-25/source_objects/62675a7557fed94989f57b4f360eb56289a26214d9f6a7b0e65d09986cc79afd.py",
+          "line": 191
+        },
+        {
+          "file": "reports/dmon-plateau-2026-09-25/source_objects/62675a7557fed94989f57b4f360eb56289a26214d9f6a7b0e65d09986cc79afd.py",
+          "line": 244
+        },
+        {
+          "file": "reports/dmon-plateau-2026-09-25/source_objects/b5c68ff6bc262dd23eb2ff202ed7a016f63aeb7c882248af4fb40761bd4ddda5.py",
+          "line": 204
+        },
+        {
+          "file": "reports/dmon-plateau-2026-09-25/source_objects/e68fe157e0db40e59ad1731607c347b293e0f079f9359fbae982cc88089a76dc.py",
+          "line": 194
+        },
+        {
+          "file": "reports/dmon-plateau-2026-09-25/source_objects/e68fe157e0db40e59ad1731607c347b293e0f079f9359fbae982cc88089a76dc.py",
+          "line": 196
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/README.md",
+          "line": 37
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/README.md",
+          "line": 99
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/SHA256.json",
+          "line": 69
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/SHA256.json",
+          "line": 71
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/SHA256.json",
+          "line": 77
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123427735210Z/implementation_snapshot/sbercluster/cli.py",
+          "line": 107
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123427735210Z/implementation_snapshot/sbercluster/research.py",
+          "line": 188
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123427735210Z/implementation_snapshot/sbercluster/research.py",
+          "line": 241
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123427735210Z/implementation_snapshot/sbercluster/research_validation.py",
+          "line": 193
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123523157700Z/implementation_snapshot/sbercluster/cli.py",
+          "line": 107
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123523157700Z/implementation_snapshot/sbercluster/research.py",
+          "line": 188
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123523157700Z/implementation_snapshot/sbercluster/research.py",
+          "line": 241
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123523157700Z/implementation_snapshot/sbercluster/research_validation.py",
+          "line": 193
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123755575253Z/implementation_snapshot/sbercluster/cli.py",
+          "line": 107
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123755575253Z/implementation_snapshot/sbercluster/research.py",
+          "line": 193
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123755575253Z/implementation_snapshot/sbercluster/research.py",
+          "line": 246
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T123755575253Z/implementation_snapshot/sbercluster/research_validation.py",
+          "line": 193
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T132832891346Z/implementation_snapshot/sbercluster/cli.py",
+          "line": 107
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T132832891346Z/implementation_snapshot/sbercluster/research.py",
+          "line": 193
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T132832891346Z/implementation_snapshot/sbercluster/research.py",
+          "line": 246
+        },
+        {
+          "file": "reports/experiments/2026-09-23-v2/provenance/research-20260923T132832891346Z/implementation_snapshot/sbercluster/research_validation.py",
+          "line": 193
+        },
+        {
+          "file": "reports/experiments/2026-09-23/README.md",
+          "line": 17
+        },
+        {
+          "file": "reports/experiments/2026-09-23/SHA256.json",
+          "line": 3
+        },
+        {
+          "file": "reports/icvi-2026-10-07/README.md",
+          "line": 27
+        },
+        {
+          "file": "reports/icvi-2026-10-07/summary.json",
+          "line": 2
+        },
+        {
+          "file": "reports/model-frontier-2026-10-03/constrained/source/sbercluster/research.py",
+          "line": 212
+        },
+        {
+          "file": "reports/model-frontier-2026-10-03/constrained/source/sbercluster/research.py",
+          "line": 265
+        },
+        {
+          "file": "reports/model-frontier-2026-10-03/screen/source/sbercluster/research.py",
+          "line": 212
+        },
+        {
+          "file": "reports/model-frontier-2026-10-03/screen/source/sbercluster/research.py",
+          "line": 265
+        },
+        {
+          "file": "reports/model-frontier-2026-10-03/validation/source/sbercluster/research.py",
+          "line": 212
+        },
+        {
+          "file": "reports/model-frontier-2026-10-03/validation/source/sbercluster/research.py",
+          "line": 265
+        },
+        {
+          "file": "reports/review-2026-09-24/atlas_extension.json",
+          "line": 50282
+        },
+        {
+          "file": "reports/review-2026-09-24/atlas_extension.json",
+          "line": 50283
+        },
+        {
+          "file": "reports/review-2026-09-24/atlas_extension.json",
+          "line": 50287
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-joint-stability/implementation_snapshot/sbercluster/followup.py",
+          "line": 194
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-joint-stability/implementation_snapshot/sbercluster/followup.py",
+          "line": 196
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-joint-stability/implementation_snapshot/sbercluster/research.py",
+          "line": 191
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-joint-stability/implementation_snapshot/sbercluster/research.py",
+          "line": 244
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-joint-stability/manifest.json",
+          "line": 12
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-joint-stability/manifest.json",
+          "line": 14
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-joint-stability/manifest.json",
+          "line": 40
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-joint-stability/manifest.json",
+          "line": 41
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-joint/implementation_snapshot/sbercluster/followup.py",
+          "line": 122
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-joint/implementation_snapshot/sbercluster/followup.py",
+          "line": 124
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-joint/implementation_snapshot/sbercluster/research.py",
+          "line": 193
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-joint/implementation_snapshot/sbercluster/research.py",
+          "line": 246
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-joint/manifest.json",
+          "line": 12
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-joint/manifest.json",
+          "line": 14
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-joint/manifest.json",
+          "line": 46
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-joint/manifest.json",
+          "line": 47
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-small-k/implementation_snapshot/sbercluster/followup.py",
+          "line": 122
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-small-k/implementation_snapshot/sbercluster/followup.py",
+          "line": 124
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-small-k/implementation_snapshot/sbercluster/research.py",
+          "line": 193
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-small-k/implementation_snapshot/sbercluster/research.py",
+          "line": 246
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-small-k/manifest.json",
+          "line": 12
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-small-k/manifest.json",
+          "line": 14
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-small-k/manifest.json",
+          "line": 40
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-small-k/manifest.json",
+          "line": 41
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-temporal-pilot/implementation_snapshot/sbercluster/followup.py",
+          "line": 121
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-temporal-pilot/implementation_snapshot/sbercluster/followup.py",
+          "line": 123
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-temporal-pilot/implementation_snapshot/sbercluster/research.py",
+          "line": 191
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-temporal-pilot/implementation_snapshot/sbercluster/research.py",
+          "line": 244
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-temporal/implementation_snapshot/sbercluster/followup.py",
+          "line": 121
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-temporal/implementation_snapshot/sbercluster/followup.py",
+          "line": 123
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-temporal/implementation_snapshot/sbercluster/research.py",
+          "line": 191
+        },
+        {
+          "file": "reports/review-2026-09-24/review-20260924-temporal/implementation_snapshot/sbercluster/research.py",
+          "line": 244
+        },
+        {
+          "file": "reports/round2-2026-09-24/round2-20260924-dmon/manifest.json",
+          "line": 39
+        },
+        {
+          "file": "reports/round2-2026-09-24/round2-20260924-dmon/manifest.json",
+          "line": 78
+        },
+        {
+          "file": "reports/round2-2026-09-24/round2-20260924-dmon_pilot/manifest.json",
+          "line": 14
+        },
+        {
+          "file": "reports/round2-2026-09-24/round2-20260924-dmon_pilot/manifest.json",
+          "line": 28
+        },
+        {
+          "file": "reports/round2-2026-09-24/round2-20260924-region_control/manifest.json",
+          "line": 9
+        },
+        {
+          "file": "reports/round2-2026-09-24/round2-20260924-region_control/manifest.json",
+          "line": 19
+        },
+        {
+          "file": "reports/round2-2026-09-24/source_objects/616a5aac84070739715f3622aff489beb8a2712926f55079fa83c0d3546ed413.py",
+          "line": 204
+        },
+        {
+          "file": "reports/round2-2026-09-24/source_objects/62675a7557fed94989f57b4f360eb56289a26214d9f6a7b0e65d09986cc79afd.py",
+          "line": 191
+        },
+        {
+          "file": "reports/round2-2026-09-24/source_objects/62675a7557fed94989f57b4f360eb56289a26214d9f6a7b0e65d09986cc79afd.py",
+          "line": 244
+        },
+        {
+          "file": "reports/round2-2026-09-24/source_objects/e68fe157e0db40e59ad1731607c347b293e0f079f9359fbae982cc88089a76dc.py",
+          "line": 194
+        },
+        {
+          "file": "reports/round2-2026-09-24/source_objects/e68fe157e0db40e59ad1731607c347b293e0f079f9359fbae982cc88089a76dc.py",
+          "line": 196
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/continuation/source_objects/0648f97e526837ab03428b47e01ede325b35b59ac88221bd09d7a28e5104c452.py",
+          "line": 128
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/continuation/source_objects/07aa29036a11e44ab6743b3f80b11fd6a0cb4422bb0eb0377d1bf4335bd97bb4.py",
+          "line": 113
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/continuation/source_objects/07aa29036a11e44ab6743b3f80b11fd6a0cb4422bb0eb0377d1bf4335bd97bb4.py",
+          "line": 124
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/continuation/source_objects/59db94da886dfca2157cecabaddef2bae75e45fcb9b3a0a9cd2cfd89706dbd5c.py",
+          "line": 48
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/continuation/source_objects/ac3a70f5262467c364b05dbd7f58049ad4ed29ebdfa487b306790305b4bddda7.py",
+          "line": 210
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/continuation/source_objects/ac3a70f5262467c364b05dbd7f58049ad4ed29ebdfa487b306790305b4bddda7.py",
+          "line": 212
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/joint-refinement/source_objects/04d8d28fd702753f72d62df0141415fb99f0d559ff5b9961641f13104a378340.py",
+          "line": 210
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/joint-refinement/source_objects/04d8d28fd702753f72d62df0141415fb99f0d559ff5b9961641f13104a378340.py",
+          "line": 212
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/joint-refinement/source_objects/daadbac96279be263e9794bb62468696baaa6cde9f833fcdf2c87d75eba591c3.py",
+          "line": 219
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/joint-refinement/source_objects/e0aca39f6bb1be86e75774654fa413a760c474006af579281395fc7c29f18e9c.py",
+          "line": 212
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/joint-refinement/source_objects/e0aca39f6bb1be86e75774654fa413a760c474006af579281395fc7c29f18e9c.py",
+          "line": 265
+        },
+        {
+          "file": "sbercluster/cli.py",
+          "line": 128
+        },
+        {
+          "file": "sbercluster/contest.py",
+          "line": 113
+        },
+        {
+          "file": "sbercluster/contest.py",
+          "line": 124
+        },
+        {
+          "file": "sbercluster/followup.py",
+          "line": 210
+        },
+        {
+          "file": "sbercluster/followup.py",
+          "line": 212
+        },
+        {
+          "file": "sbercluster/research.py",
+          "line": 212
+        },
+        {
+          "file": "sbercluster/research.py",
+          "line": 265
+        },
+        {
+          "file": "sbercluster/research_validation.py",
+          "line": 184
+        },
+        {
+          "file": "sbercluster/round2.py",
+          "line": 219
+        },
+        {
+          "file": "scripts/build_dmon_plateau.py",
+          "line": 18
+        },
+        {
+          "file": "scripts/build_research_atlas.py",
+          "line": 33
+        },
+        {
+          "file": "scripts/build_research_atlas.py",
+          "line": 208
+        },
+        {
+          "file": "scripts/build_research_atlas.py",
+          "line": 255
+        },
+        {
+          "file": "scripts/build_research_atlas.py",
+          "line": 257
+        },
+        {
+          "file": "scripts/build_research_atlas.py",
+          "line": 457
+        },
+        {
+          "file": "scripts/build_research_figures.py",
+          "line": 33
+        },
+        {
+          "file": "scripts/build_review_extension.py",
+          "line": 24
+        },
+        {
+          "file": "scripts/build_review_extension.py",
+          "line": 99
+        },
+        {
+          "file": "scripts/build_review_extension.py",
+          "line": 104
+        },
+        {
+          "file": "scripts/build_review_extension.py",
+          "line": 108
+        },
+        {
+          "file": "scripts/build_review_figures.py",
+          "line": 19
+        },
+        {
+          "file": "scripts/build_round2_figures.py",
+          "line": 10
+        },
+        {
+          "file": "scripts/build_round2_figures.py",
+          "line": 24
+        },
+        {
+          "file": "scripts/describe_frozen.py",
+          "line": 48
+        },
+        {
+          "file": "scripts/evaluate_published.py",
+          "line": 41
+        },
+        {
+          "file": "scripts/export_followup.py",
+          "line": 101
+        },
+        {
+          "file": "scripts/export_followup.py",
+          "line": 139
+        },
+        {
+          "file": "scripts/export_followup.py",
+          "line": 140
+        },
+        {
+          "file": "scripts/export_followup.py",
+          "line": 143
+        },
+        {
+          "file": "scripts/export_icvi_summary.py",
+          "line": 118
+        },
+        {
+          "file": "scripts/export_icvi_summary.py",
+          "line": 126
+        },
+        {
+          "file": "scripts/export_research_results.py",
+          "line": 54
+        },
+        {
+          "file": "scripts/export_research_results.py",
+          "line": 57
+        },
+        {
+          "file": "scripts/export_research_results.py",
+          "line": 59
+        },
+        {
+          "file": "scripts/export_research_results.py",
+          "line": 66
+        },
+        {
+          "file": "scripts/export_round2.py",
+          "line": 13
+        },
+        {
+          "file": "scripts/export_round2.py",
+          "line": 69
+        },
+        {
+          "file": "scripts/export_round2.py",
+          "line": 78
+        },
+        {
+          "file": "scripts/extend_round2_atlas.py",
+          "line": 18
+        },
+        {
+          "file": "scripts/extend_round2_atlas.py",
+          "line": 35
+        },
+        {
+          "file": "tests/test_followup.py",
+          "line": 116
+        },
+        {
+          "file": "tests/test_icvi_summary.py",
+          "line": 13
+        },
+        {
+          "file": "tests/test_published_round2.py",
+          "line": 61
+        },
+        {
+          "file": "tests/test_research_atlas.py",
+          "line": 16
+        },
+        {
+          "file": "web/icvi_results.html",
+          "line": 6
+        }
+      ]
+    },
+    "reports/external-national-2026-10-03/cohort-2024.csv": {
+      "exact": [
+        {
+          "file": "reports/continuous-core-2026-10-06/research/economic_screen/config.json",
+          "line": 40
+        },
+        {
+          "file": "reports/continuous-core-2026-10-06/research/spatial_stress/config.json",
+          "line": 36
+        },
+        {
+          "file": "reports/external-national-2026-10-03/manifest.json",
+          "line": 88
+        }
+      ],
+      "basename": [
+        {
+          "file": "docs/ECONOMIC_GENERALIZATION.md",
+          "line": 75
+        },
+        {
+          "file": "docs/REPRODUCE.md",
+          "line": 254
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 20
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/sectors/protocol.json",
+          "line": 1914
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/sectors/source/scripts/validate_economic_generalization.py",
+          "line": 47
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/sectors/source/scripts/validate_economic_generalization.py",
+          "line": 78
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/wage/protocol.json",
+          "line": 50
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/wage/source/scripts/validate_economic_generalization.py",
+          "line": 46
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/wage/source/scripts/validate_economic_generalization.py",
+          "line": 77
+        },
+        {
+          "file": "reports/external-national-2026-10-03/README.md",
+          "line": 86
+        },
+        {
+          "file": "reports/external-national-2026-10-03/nonlinear-robustness.json",
+          "line": 13
+        },
+        {
+          "file": "reports/external-national-2026-10-03/results.json",
+          "line": 21
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/frontier-review/external-independent-stat-review.json",
+          "line": 80
+        },
+        {
+          "file": "scripts/summarize_external_national.py",
+          "line": 87
+        },
+        {
+          "file": "scripts/validate_economic_generalization.py",
+          "line": 47
+        },
+        {
+          "file": "scripts/validate_economic_generalization.py",
+          "line": 78
+        },
+        {
+          "file": "scripts/validate_external_national.py",
+          "line": 266
+        },
+        {
+          "file": "scripts/validate_external_national_robustness.py",
+          "line": 109
+        }
+      ]
+    },
+    "reports/economic-generalization-2026-10-03/sectors/results.json": {
+      "exact": [
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 142
+        },
+        {
+          "file": "reports/practical-cases-2026-10-07/provenance.json",
+          "line": 30
+        },
+        {
+          "file": "scripts/build_practical_cases.py",
+          "line": 264
+        }
+      ],
+      "basename": [
+        {
+          "file": "EXPERIMENTS.md",
+          "line": 47
+        },
+        {
+          "file": "docs/DATA_SOURCES.md",
+          "line": 57
+        },
+        {
+          "file": "docs/EVIDENCE.md",
+          "line": 30
+        },
+        {
+          "file": "docs/REPRODUCE.md",
+          "line": 83
+        },
+        {
+          "file": "docs/REPRODUCE.md",
+          "line": 86
+        },
+        {
+          "file": "reports/core-round3-review-2026-10-03/oracles/verify_economic_evidence.py",
+          "line": 37
+        },
+        {
+          "file": "reports/core-round3-review-2026-10-03/oracles/verify_economic_evidence.py",
+          "line": 39
+        },
+        {
+          "file": "reports/core-round3-review-2026-10-03/oracles/verify_economic_evidence.py",
+          "line": 195
+        },
+        {
+          "file": "reports/core-round3-review-2026-10-03/oracles/verify_sector_evidence.py",
+          "line": 15
+        },
+        {
+          "file": "reports/core-round3-review-2026-10-03/oracles/verify_sector_evidence.py",
+          "line": 17
+        },
+        {
+          "file": "reports/core-round3-review-2026-10-03/oracles/verify_sector_evidence.py",
+          "line": 86
+        },
+        {
+          "file": "reports/dmon-plateau-2026-09-25/source_objects/d160269340576bbac90f7bb3c451625c77789e1578e1988887caf5956a52516e.py",
+          "line": 173
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/verify_economic_evidence.py",
+          "line": 37
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/verify_economic_evidence.py",
+          "line": 39
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/verify_economic_evidence.py",
+          "line": 195
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/verify_sector_evidence.py",
+          "line": 15
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/verify_sector_evidence.py",
+          "line": 17
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/acceptance/verify_sector_evidence.py",
+          "line": 86
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/manifest.json",
+          "line": 1627
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/sectors/source/scripts/validate_economic_generalization.py",
+          "line": 222
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/sectors/source/scripts/validate_economic_generalization.py",
+          "line": 226
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/sectors/source/scripts/validate_economic_sector_generalization.py",
+          "line": 147
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/sectors/source/scripts/validate_economic_sector_generalization.py",
+          "line": 153
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/wage/source/scripts/validate_economic_generalization.py",
+          "line": 221
+        },
+        {
+          "file": "reports/economic-generalization-2026-10-03/wage/source/scripts/validate_economic_generalization.py",
+          "line": 225
+        },
+        {
+          "file": "reports/external-national-2026-10-03/README.md",
+          "line": 86
+        },
+        {
+          "file": "reports/external-national-2026-10-03/manifest.json",
+          "line": 148
+        },
+        {
+          "file": "reports/external-national-2026-10-03/nonlinear-robustness.json",
+          "line": 9
+        },
+        {
+          "file": "reports/external-round2/README.md",
+          "line": 23
+        },
+        {
+          "file": "reports/external-round2/README.md",
+          "line": 32
+        },
+        {
+          "file": "reports/model-frontier-2026-10-03/README.md",
+          "line": 33
+        },
+        {
+          "file": "reports/model-frontier-2026-10-03/forward/manifest.json",
+          "line": 7
+        },
+        {
+          "file": "reports/model-frontier-2026-10-03/forward/source/scripts/benchmark_forward.py",
+          "line": 86
+        },
+        {
+          "file": "reports/model-frontier-2026-10-03/manifest.json",
+          "line": 42
+        },
+        {
+          "file": "reports/model-frontier-2026-10-03/source/scripts/benchmark_forward.py",
+          "line": 86
+        },
+        {
+          "file": "reports/review-2026-09-24/atlas_extension.json",
+          "line": 50286
+        },
+        {
+          "file": "reports/round2-2026-09-24/source_objects/d160269340576bbac90f7bb3c451625c77789e1578e1988887caf5956a52516e.py",
+          "line": 173
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/frontier-review/external-independent-stat-review.json",
+          "line": 75
+        },
+        {
+          "file": "reports/technical-core-2026-10-03/joint-refinement/source_objects/de61afd03397c6cb37b5591a9798e2b59aa4899a7c0d05e81fda28518248da49.py",
+          "line": 209
+        },
+        {
+          "file": "scripts/benchmark_forward.py",
+          "line": 86
+        },
+        {
+          "file": "scripts/build_review_extension.py",
+          "line": 119
+        },
+        {
+          "file": "scripts/build_review_figures.py",
+          "line": 13
+        },
+        {
+          "file": "scripts/external_validation_v4.py",
+          "line": 209
+        },
+        {
+          "file": "scripts/prepare_external_round2.py",
+          "line": 580
+        },
+        {
+          "file": "scripts/summarize_external_national.py",
+          "line": 24
+        },
+        {
+          "file": "scripts/summarize_external_national.py",
+          "line": 87
+        },
+        {
+          "file": "scripts/validate_economic_generalization.py",
+          "line": 222
+        },
+        {
+          "file": "scripts/validate_economic_generalization.py",
+          "line": 226
+        },
+        {
+          "file": "scripts/validate_economic_sector_generalization.py",
+          "line": 147
+        },
+        {
+          "file": "scripts/validate_economic_sector_generalization.py",
+          "line": 153
+        },
+        {
+          "file": "scripts/validate_external_national.py",
+          "line": 272
+        },
+        {
+          "file": "scripts/validate_external_national_robustness.py",
+          "line": 109
+        }
+      ]
+    },
+    "docs/images/atlas-cover.svg": {
+      "exact": [
+        {
+          "file": "README.md",
+          "line": 3
+        }
+      ],
+      "basename": []
+    },
+    "docs/images/atlas-preview.png": {
+      "exact": [],
+      "basename": []
+    },
+    "docs/images/cluster-profiles.png": {
+      "exact": [
+        {
+          "file": "reports/experiments/2026-09-23-v2/README.md",
+          "line": 101
+        }
+      ],
+      "basename": []
+    },
+    "docs/images/cluster-profiles.svg": {
+      "exact": [],
+      "basename": []
+    },
+    "docs/images/dmon-plateau.png": {
+      "exact": [
+        {
+          "file": "scripts/build_dmon_plateau.py",
+          "line": 52
+        }
+      ],
+      "basename": []
+    },
+    "docs/images/external-controls.png": {
+      "exact": [],
+      "basename": [
+        {
+          "file": "scripts/build_review_figures.py",
+          "line": 48
+        }
+      ]
+    },
+    "docs/images/joint-tradeoff.png": {
+      "exact": [],
+      "basename": [
+        {
+          "file": "scripts/build_review_figures.py",
+          "line": 28
+        }
+      ]
+    },
+    "docs/images/marketplace-shift.png": {
+      "exact": [],
+      "basename": [
+        {
+          "file": "scripts/build_review_figures.py",
+          "line": 40
+        }
+      ]
+    },
+    "docs/images/model-comparison.png": {
+      "exact": [
+        {
+          "file": "reports/experiments/2026-09-23-v2/README.md",
+          "line": 39
+        }
+      ],
+      "basename": []
+    },
+    "docs/images/model-comparison.svg": {
+      "exact": [],
+      "basename": []
+    },
+    "docs/images/network-preview.png": {
+      "exact": [],
+      "basename": []
+    },
+    "docs/images/peer-validation.png": {
+      "exact": [
+        {
+          "file": "reports/experiments/2026-09-23-v2/README.md",
+          "line": 91
+        }
+      ],
+      "basename": []
+    },
+    "docs/images/peer-validation.svg": {
+      "exact": [],
+      "basename": []
+    },
+    "docs/images/round2-dmon-traces.png": {
+      "exact": [],
+      "basename": [
+        {
+          "file": "scripts/build_round2_figures.py",
+          "line": 44
+        }
+      ]
+    },
+    "docs/images/round2-dmon.png": {
+      "exact": [],
+      "basename": [
+        {
+          "file": "scripts/build_round2_figures.py",
+          "line": 34
+        }
+      ]
+    },
+    "docs/images/round2-region-control.png": {
+      "exact": [],
+      "basename": [
+        {
+          "file": "docs/ROUND2_RESULTS.md",
+          "line": 15
+        },
+        {
+          "file": "scripts/build_round2_figures.py",
+          "line": 22
+        }
+      ]
+    },
+    "docs/images/round2-temporal.png": {
+      "exact": [],
+      "basename": [
+        {
+          "file": "docs/ROUND2_RESULTS.md",
+          "line": 37
+        },
+        {
+          "file": "scripts/build_round2_figures.py",
+          "line": 53
+        }
+      ]
+    },
+    "docs/images/stability.png": {
+      "exact": [
+        {
+          "file": "reports/experiments/2026-09-23-v2/README.md",
+          "line": 56
+        }
+      ],
+      "basename": []
+    },
+    "docs/images/stability.svg": {
+      "exact": [],
+      "basename": []
+    }
+  }
+}

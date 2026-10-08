@@ -1,0 +1,3057 @@
+{
+ "version": "1.2",
+ "inputs": {
+  "panel": {
+   "path": "data/v12/panel.csv.gz",
+   "sha256": "953ba39d152f0f4192ebbabc8edfa0684683c3a4a3d8c147f0978cf6f1798784"
+  },
+  "rosstat_cohort": {
+   "path": "reports/external-national-2026-10-03/cohort-2023.csv",
+   "sha256": "dcfcf2ac0af503d696f9492bc8c1bc4e38977cc2bd1b6c12da66463f761d9c62"
+  },
+  "market_access": {
+   "path": "reports/external-v4/municipality_bridge.csv",
+   "sha256": "3898c2201a871cbcc1fca4b5c1f09a7be5ed68583b12338e8bf55cc91e9b5bc5"
+  },
+  "road_graph": {
+   "path": "reports/graphs/road_2024_2016.npz",
+   "sha256": "71d169deded54dbe36fb8c0bdd63573b9c073defef41be97acda582d081f1c0a"
+  },
+  "road_graph_ids": {
+   "path": "reports/experiments/2026-09-23-v2/validation/frozen_prototypes.json",
+   "sha256": "95cd20e1fc4239b4d762826708e35a5af4610eb17a909c25cb85f7f78d1b1308"
+  },
+  "map": {
+   "path": "reports/contest-v3/municipal_map.json",
+   "sha256": "c33dc9b59990d23282ab7def4fa34dfb01f43e7947af8f7c1fabeaf1fa889beb"
+  }
+ },
+ "panel": {
+  "entities": 2016,
+  "months": 24,
+  "regions": 73
+ },
+ "scaler": {
+  "structure_center": [
+   -2.9956744752263464,
+   -2.179543994190547,
+   -3.6614288935094406,
+   -0.7820032470468238,
+   -2.827368930976543
+  ],
+  "scale": [
+   0.27186406095838045,
+   0.44939951355390506,
+   1.065099217840498,
+   0.20212500554914004,
+   0.3371095240871971,
+   0.43848572290003185
+  ],
+  "development_months": 12,
+  "features": [
+   "health",
+   "marketplaces",
+   "horeca",
+   "food",
+   "transport",
+   "level"
+  ],
+  "level_center": [
+   9.934622781173207,
+   10.001339948592358,
+   10.084078382994607,
+   9.996772956332798,
+   10.024199626716506,
+   10.032628022051055,
+   10.07615852322385,
+   10.084307975367825,
+   10.013440006820023,
+   10.04975005858141,
+   10.071435457438582,
+   10.247821629877585,
+   9.984260762292728,
+   10.094913367470749,
+   10.191144621862762,
+   10.16855968569282,
+   10.180039095665466,
+   10.197853449099975,
+   10.226512637259905,
+   10.239280935666628,
+   10.161959636158208,
+   10.211652166629193,
+   10.210291865530232,
+   10.388887670092537
+  ]
+ },
+ "centroids": {
+  "calibration_points": 1774,
+  "median_km_to_admin_center": 12.980755,
+  "p90_km_to_admin_center": 37.979331
+ },
+ "feature_spaces": [
+  {
+   "space": "structure5_v11",
+   "label": "5 долей категорий (пространство v1.1)",
+   "attributes": 5,
+   "min_size": 127,
+   "SW": 0.240237,
+   "CH": 779.827105,
+   "S_Dbw": 0.995987,
+   "AVI": 0.884719,
+   "AVU": 0.529635,
+   "MQ": 0.568989,
+   "TurboMQ": 3.538875,
+   "eta2_log_wage": 0.349691,
+   "partial_r2_within_region_log_wage": 0.145313,
+   "eta2_mean": 0.207667,
+   "partial_r2_within_region_mean": 0.125503,
+   "month_bootstrap_ari_mean": 0.865213,
+   "month_bootstrap_ari_p10": 0.677301,
+   "territory_subsample_ari_mean": 0.960668,
+   "territory_subsample_ari_p10": 0.939521,
+   "ari_with_profile6": 0.752459
+  },
+  {
+   "space": "profile6",
+   "label": "5 долей + уровень, размах месячных значений (выбрано)",
+   "attributes": 6,
+   "min_size": 126,
+   "SW": 0.252782,
+   "CH": 815.845337,
+   "S_Dbw": 0.842592,
+   "AVI": 0.89864,
+   "AVU": 0.53762,
+   "MQ": 0.565457,
+   "TurboMQ": 3.59456,
+   "eta2_log_wage": 0.459813,
+   "partial_r2_within_region_log_wage": 0.165142,
+   "eta2_mean": 0.23859,
+   "partial_r2_within_region_mean": 0.140664,
+   "month_bootstrap_ari_mean": 0.916202,
+   "month_bootstrap_ari_p10": 0.881961,
+   "territory_subsample_ari_mean": 0.984436,
+   "territory_subsample_ari_p10": 0.973916,
+   "ari_with_profile6": 1.0
+  },
+  {
+   "space": "profile6_annual_iqr",
+   "label": "5 долей + уровень, размах годовых профилей",
+   "attributes": 6,
+   "min_size": 123,
+   "SW": 0.24393,
+   "CH": 764.45139,
+   "S_Dbw": 1.002734,
+   "AVI": 0.883634,
+   "AVU": 0.547495,
+   "MQ": 0.576015,
+   "TurboMQ": 3.534536,
+   "eta2_log_wage": 0.412921,
+   "partial_r2_within_region_log_wage": 0.174106,
+   "eta2_mean": 0.215067,
+   "partial_r2_within_region_mean": 0.12447,
+   "month_bootstrap_ari_mean": 0.542279,
+   "month_bootstrap_ari_p10": 0.316104,
+   "territory_subsample_ari_mean": 0.631145,
+   "territory_subsample_ari_p10": 0.316349,
+   "ari_with_profile6": 0.321486
+  },
+  {
+   "space": "profile6_relative",
+   "label": "5 долей + уровень относительно медианы месяца",
+   "attributes": 6,
+   "min_size": 123,
+   "SW": 0.263966,
+   "CH": 860.586443,
+   "S_Dbw": 0.815996,
+   "AVI": 0.896472,
+   "AVU": 0.535459,
+   "MQ": 0.559553,
+   "TurboMQ": 3.585887,
+   "eta2_log_wage": 0.468526,
+   "partial_r2_within_region_log_wage": 0.17019,
+   "eta2_mean": 0.244431,
+   "partial_r2_within_region_mean": 0.144705,
+   "month_bootstrap_ari_mean": 0.928147,
+   "month_bootstrap_ari_p10": 0.905435,
+   "territory_subsample_ari_mean": 0.968007,
+   "territory_subsample_ari_p10": 0.950903,
+   "ari_with_profile6": 0.924376
+  }
+ ],
+ "network": {
+  "chosen_rule": "euclid_profile",
+  "lead_lag": {
+   "edges_in_both_years": 1171,
+   "share_nonzero_best_lag_2023": 0.611453,
+   "same_direction_share_when_both_nonzero": 0.671498,
+   "pairs_with_nonzero_lag_both_years": 207
+  },
+  "rules": [
+   {
+    "rule": "euclid_structure",
+    "label": "Евклидово расстояние: структура расходов (5 признаков)",
+    "static": false,
+    "edges": 20479,
+    "same_region_share": 0.175839,
+    "stability_jaccard": 0.276729,
+    "overlap_with_reference": 0.576461,
+    "assort_log_wage": 0.612875,
+    "assort_within_region_log_wage": 0.262765,
+    "assort_agri_share": 0.202739,
+    "assort_within_region_agri_share": 0.128805,
+    "assort_manuf_share": 0.238547,
+    "assort_within_region_manuf_share": 0.118591,
+    "assort_mining_share": 0.377094,
+    "assort_within_region_mining_share": 0.131705,
+    "assort_public_share": 0.371144,
+    "assort_within_region_public_share": 0.236305,
+    "assort_log_pop": 0.677341,
+    "assort_within_region_log_pop": 0.532615,
+    "assort_log_jobs_per_res": 0.349577,
+    "assort_within_region_log_jobs_per_res": 0.190129,
+    "assort_market_access": 0.659674,
+    "assort_within_region_market_access": 0.107677,
+    "assort_mean": 0.436124,
+    "assort_within_region_mean": 0.213574,
+    "components": 1,
+    "geography_dominated": false,
+    "copeland": 4.0
+   },
+   {
+    "rule": "euclid_profile",
+    "label": "Евклидово расстояние: структура + уровень (6 признаков)",
+    "static": false,
+    "edges": 20736,
+    "same_region_share": 0.214217,
+    "stability_jaccard": 0.318695,
+    "overlap_with_reference": 1.0,
+    "assort_log_wage": 0.734749,
+    "assort_within_region_log_wage": 0.274459,
+    "assort_agri_share": 0.210487,
+    "assort_within_region_agri_share": 0.129401,
+    "assort_manuf_share": 0.266363,
+    "assort_within_region_manuf_share": 0.129295,
+    "assort_mining_share": 0.351675,
+    "assort_within_region_mining_share": 0.111563,
+    "assort_public_share": 0.416414,
+    "assort_within_region_public_share": 0.248257,
+    "assort_log_pop": 0.678403,
+    "assort_within_region_log_pop": 0.541131,
+    "assort_log_jobs_per_res": 0.403306,
+    "assort_within_region_log_jobs_per_res": 0.195113,
+    "assort_market_access": 0.722077,
+    "assort_within_region_market_access": 0.146638,
+    "assort_mean": 0.472934,
+    "assort_within_region_mean": 0.221982,
+    "components": 1,
+    "geography_dominated": false,
+    "copeland": 6.0
+   },
+   {
+    "rule": "cosine_spending",
+    "label": "Косинусное сходство векторов расходов в рублях",
+    "static": false,
+    "edges": 19752,
+    "same_region_share": 0.163781,
+    "stability_jaccard": 0.208479,
+    "overlap_with_reference": 0.265092,
+    "assort_log_wage": 0.528167,
+    "assort_within_region_log_wage": 0.254811,
+    "assort_agri_share": 0.179325,
+    "assort_within_region_agri_share": 0.111983,
+    "assort_manuf_share": 0.165779,
+    "assort_within_region_manuf_share": 0.100575,
+    "assort_mining_share": 0.301584,
+    "assort_within_region_mining_share": 0.090826,
+    "assort_public_share": 0.358925,
+    "assort_within_region_public_share": 0.236887,
+    "assort_log_pop": 0.65727,
+    "assort_within_region_log_pop": 0.536669,
+    "assort_log_jobs_per_res": 0.291478,
+    "assort_within_region_log_jobs_per_res": 0.183579,
+    "assort_market_access": 0.619234,
+    "assort_within_region_market_access": 0.129393,
+    "assort_mean": 0.38772,
+    "assort_within_region_mean": 0.20559,
+    "components": 1,
+    "geography_dominated": false,
+    "copeland": 2.0
+   },
+   {
+    "rule": "corr_total",
+    "label": "Корреляция месячных рядов уровня расходов",
+    "static": false,
+    "edges": 23621,
+    "same_region_share": 0.180263,
+    "stability_jaccard": 0.039447,
+    "overlap_with_reference": 0.036911,
+    "assort_log_wage": 0.382981,
+    "assort_within_region_log_wage": 0.14856,
+    "assort_agri_share": 0.137848,
+    "assort_within_region_agri_share": 0.065215,
+    "assort_manuf_share": 0.240248,
+    "assort_within_region_manuf_share": 0.084861,
+    "assort_mining_share": 0.314765,
+    "assort_within_region_mining_share": 0.060589,
+    "assort_public_share": 0.240079,
+    "assort_within_region_public_share": 0.122457,
+    "assort_log_pop": 0.520397,
+    "assort_within_region_log_pop": 0.341792,
+    "assort_log_jobs_per_res": 0.199573,
+    "assort_within_region_log_jobs_per_res": 0.071577,
+    "assort_market_access": 0.654085,
+    "assort_within_region_market_access": 0.09106,
+    "assort_mean": 0.336247,
+    "assort_within_region_mean": 0.123264,
+    "components": 1,
+    "geography_dominated": false,
+    "copeland": -2.0
+   },
+   {
+    "rule": "corr_multivariate",
+    "label": "Корреляция многомерных рядов (6 признаков)",
+    "static": false,
+    "edges": 24111,
+    "same_region_share": 0.264568,
+    "stability_jaccard": 0.090877,
+    "overlap_with_reference": 0.067024,
+    "assort_log_wage": 0.58601,
+    "assort_within_region_log_wage": 0.198288,
+    "assort_agri_share": 0.228674,
+    "assort_within_region_agri_share": 0.132865,
+    "assort_manuf_share": 0.291945,
+    "assort_within_region_manuf_share": 0.108289,
+    "assort_mining_share": 0.36249,
+    "assort_within_region_mining_share": 0.097807,
+    "assort_public_share": 0.305532,
+    "assort_within_region_public_share": 0.177774,
+    "assort_log_pop": 0.56246,
+    "assort_within_region_log_pop": 0.452503,
+    "assort_log_jobs_per_res": 0.298309,
+    "assort_within_region_log_jobs_per_res": 0.142099,
+    "assort_market_access": 0.694046,
+    "assort_within_region_market_access": 0.113124,
+    "assort_mean": 0.416183,
+    "assort_within_region_mean": 0.177844,
+    "components": 1,
+    "geography_dominated": false,
+    "copeland": 0.0
+   },
+   {
+    "rule": "lagged_corr_total",
+    "label": "Лаговая корреляция (опережение до 2 мес.)",
+    "static": false,
+    "edges": 23732,
+    "same_region_share": 0.146048,
+    "stability_jaccard": 0.026241,
+    "overlap_with_reference": 0.030616,
+    "assort_log_wage": 0.321015,
+    "assort_within_region_log_wage": 0.104689,
+    "assort_agri_share": 0.097939,
+    "assort_within_region_agri_share": 0.061277,
+    "assort_manuf_share": 0.197258,
+    "assort_within_region_manuf_share": 0.063941,
+    "assort_mining_share": 0.244884,
+    "assort_within_region_mining_share": 0.06183,
+    "assort_public_share": 0.157537,
+    "assort_within_region_public_share": 0.074564,
+    "assort_log_pop": 0.431077,
+    "assort_within_region_log_pop": 0.293764,
+    "assort_log_jobs_per_res": 0.146915,
+    "assort_within_region_log_jobs_per_res": 0.051754,
+    "assort_market_access": 0.563926,
+    "assort_within_region_market_access": 0.074692,
+    "assort_mean": 0.270069,
+    "assort_within_region_mean": 0.098314,
+    "components": 1,
+    "geography_dominated": false,
+    "copeland": -6.0
+   },
+   {
+    "rule": "dtw_total",
+    "label": "Динамическое выравнивание рядов (DTW)",
+    "static": false,
+    "edges": 22902,
+    "same_region_share": 0.154441,
+    "stability_jaccard": 0.026556,
+    "overlap_with_reference": 0.03168,
+    "assort_log_wage": 0.338429,
+    "assort_within_region_log_wage": 0.138542,
+    "assort_agri_share": 0.121116,
+    "assort_within_region_agri_share": 0.068551,
+    "assort_manuf_share": 0.189374,
+    "assort_within_region_manuf_share": 0.069932,
+    "assort_mining_share": 0.273357,
+    "assort_within_region_mining_share": 0.090603,
+    "assort_public_share": 0.225804,
+    "assort_within_region_public_share": 0.129236,
+    "assort_log_pop": 0.488076,
+    "assort_within_region_log_pop": 0.323328,
+    "assort_log_jobs_per_res": 0.174137,
+    "assort_within_region_log_jobs_per_res": 0.05564,
+    "assort_market_access": 0.600068,
+    "assort_within_region_market_access": 0.083336,
+    "assort_mean": 0.301295,
+    "assort_within_region_mean": 0.119896,
+    "components": 1,
+    "geography_dominated": false,
+    "copeland": -4.0
+   },
+   {
+    "rule": "geographic",
+    "label": "Географическое расстояние между центроидами",
+    "static": true,
+    "edges": 18029,
+    "same_region_share": 0.70015,
+    "stability_jaccard": null,
+    "overlap_with_reference": 0.064651,
+    "assort_log_wage": 0.705955,
+    "assort_within_region_log_wage": 0.088204,
+    "assort_agri_share": 0.182705,
+    "assort_within_region_agri_share": -0.028634,
+    "assort_manuf_share": 0.274883,
+    "assort_within_region_manuf_share": 0.017402,
+    "assort_mining_share": 0.308036,
+    "assort_within_region_mining_share": 0.011679,
+    "assort_public_share": 0.241049,
+    "assort_within_region_public_share": 0.054093,
+    "assort_log_pop": 0.233725,
+    "assort_within_region_log_pop": 0.037261,
+    "assort_log_jobs_per_res": 0.358816,
+    "assort_within_region_log_jobs_per_res": 0.092183,
+    "assort_market_access": 0.906295,
+    "assort_within_region_market_access": 0.078375,
+    "assort_mean": 0.401433,
+    "assort_within_region_mean": 0.04382,
+    "components": 2,
+    "geography_dominated": true,
+    "copeland": null
+   },
+   {
+    "rule": "road",
+    "label": "Дорожное расстояние (СберИндекс)",
+    "static": true,
+    "edges": 18673,
+    "same_region_share": 0.717292,
+    "stability_jaccard": null,
+    "overlap_with_reference": 0.061436,
+    "assort_log_wage": 0.674999,
+    "assort_within_region_log_wage": 0.068779,
+    "assort_agri_share": 0.180737,
+    "assort_within_region_agri_share": -0.027385,
+    "assort_manuf_share": 0.274732,
+    "assort_within_region_manuf_share": 0.00819,
+    "assort_mining_share": 0.316382,
+    "assort_within_region_mining_share": 0.013538,
+    "assort_public_share": 0.219569,
+    "assort_within_region_public_share": 0.041588,
+    "assort_log_pop": 0.178079,
+    "assort_within_region_log_pop": 0.00402,
+    "assort_log_jobs_per_res": 0.328538,
+    "assort_within_region_log_jobs_per_res": 0.096426,
+    "assort_market_access": 0.89178,
+    "assort_within_region_market_access": 0.053905,
+    "assort_mean": 0.383102,
+    "assort_within_region_mean": 0.032383,
+    "components": 12,
+    "geography_dominated": true,
+    "copeland": null
+   }
+  ],
+  "lead_lag_source": {
+   "edges_2023": 23732,
+   "edges_2024": 22063,
+   "edges_in_both_years": 1171,
+   "pairs_with_nonzero_lag_both_years": 207,
+   "same_direction_count": 139,
+   "same_direction_share": 0.6714975845410628,
+   "interpretation": "Пересечение лаговых графов с ненулевым лагом в оба года; причинность не проверена."
+  }
+ },
+ "k_selection": {
+  "chosen_k": 4,
+  "k4_vs_k5": [
+   [
+    469,
+    0,
+    0,
+    465,
+    1
+   ],
+   [
+    35,
+    0,
+    1,
+    107,
+    462
+   ],
+   [
+    1,
+    0,
+    122,
+    2,
+    1
+   ],
+   [
+    0,
+    333,
+    0,
+    0,
+    17
+   ]
+  ],
+  "table": [
+   {
+    "k": 3,
+    "min_size": 136,
+    "SW": 0.385832,
+    "CH": 907.859194,
+    "S_Dbw": 0.943376,
+    "AVI": 0.914806,
+    "AVU": 0.666667,
+    "MQ": 0.419089,
+    "TurboMQ": 2.744417,
+    "eta2_mean": 0.208432,
+    "partial_r2_within_region_mean": 0.125551,
+    "month_bootstrap_ari_mean": 0.860073,
+    "month_bootstrap_ari_p10": 0.530277,
+    "territory_subsample_ari_mean": 0.917919,
+    "territory_subsample_ari_p10": 0.557159,
+    "stability_score": 0.888996
+   },
+   {
+    "k": 4,
+    "min_size": 126,
+    "SW": 0.252782,
+    "CH": 815.845337,
+    "S_Dbw": 0.842592,
+    "AVI": 0.89864,
+    "AVU": 0.53762,
+    "MQ": 0.565457,
+    "TurboMQ": 3.59456,
+    "eta2_mean": 0.23859,
+    "partial_r2_within_region_mean": 0.140664,
+    "month_bootstrap_ari_mean": 0.899744,
+    "month_bootstrap_ari_p10": 0.886175,
+    "territory_subsample_ari_mean": 0.982734,
+    "territory_subsample_ari_p10": 0.968506,
+    "stability_score": 0.941239
+   },
+   {
+    "k": 5,
+    "min_size": 123,
+    "SW": 0.224468,
+    "CH": 749.257692,
+    "S_Dbw": 0.865614,
+    "AVI": 0.869276,
+    "AVU": 0.51586,
+    "MQ": 0.631118,
+    "TurboMQ": 4.346378,
+    "eta2_mean": 0.260153,
+    "partial_r2_within_region_mean": 0.157288,
+    "month_bootstrap_ari_mean": 0.832997,
+    "month_bootstrap_ari_p10": 0.77399,
+    "territory_subsample_ari_mean": 0.961602,
+    "territory_subsample_ari_p10": 0.921907,
+    "stability_score": 0.897299
+   },
+   {
+    "k": 6,
+    "min_size": 99,
+    "SW": 0.227275,
+    "CH": 698.418673,
+    "S_Dbw": 0.77061,
+    "AVI": 0.843234,
+    "AVU": 0.50475,
+    "MQ": 0.656574,
+    "TurboMQ": 5.059402,
+    "eta2_mean": 0.267434,
+    "partial_r2_within_region_mean": 0.167023,
+    "month_bootstrap_ari_mean": 0.82604,
+    "month_bootstrap_ari_p10": 0.787877,
+    "territory_subsample_ari_mean": 0.918617,
+    "territory_subsample_ari_p10": 0.887653,
+    "stability_score": 0.872329
+   },
+   {
+    "k": 7,
+    "min_size": 91,
+    "SW": 0.217109,
+    "CH": 641.418953,
+    "S_Dbw": null,
+    "AVI": 0.819908,
+    "AVU": 0.514827,
+    "MQ": 0.662106,
+    "TurboMQ": 5.739356,
+    "eta2_mean": 0.294532,
+    "partial_r2_within_region_mean": 0.175753,
+    "month_bootstrap_ari_mean": 0.778669,
+    "month_bootstrap_ari_p10": 0.721574,
+    "territory_subsample_ari_mean": 0.849343,
+    "territory_subsample_ari_p10": 0.752592,
+    "stability_score": 0.814006
+   },
+   {
+    "k": 8,
+    "min_size": 90,
+    "SW": 0.210338,
+    "CH": 596.146504,
+    "S_Dbw": null,
+    "AVI": 0.809245,
+    "AVU": 0.524234,
+    "MQ": 0.674951,
+    "TurboMQ": 6.473961,
+    "eta2_mean": 0.313538,
+    "partial_r2_within_region_mean": 0.189575,
+    "month_bootstrap_ari_mean": 0.759274,
+    "month_bootstrap_ari_p10": 0.704256,
+    "territory_subsample_ari_mean": 0.819616,
+    "territory_subsample_ari_p10": 0.718948,
+    "stability_score": 0.789445
+   }
+  ]
+ },
+ "methods": {
+  "chosen": "joint_0.5",
+  "fit": {
+   "alpha": 0.5,
+   "converged": true,
+   "convergence_status": "coordinate_fixed_point",
+   "sweeps": 6,
+   "moves_per_sweep": [
+    33,
+    21,
+    4,
+    4,
+    1,
+    0
+   ],
+   "objective": 0.48414,
+   "attribute_SSE_over_TSS": 0.452707,
+   "graph_cut_fraction": 0.062866
+  },
+  "ari_final_vs_kmeans": 0.913133,
+  "moved_vs_kmeans_share": 0.029266,
+  "table": [
+   {
+    "method": "kmeans",
+    "label": "KMeans",
+    "family": "признаки",
+    "k": 4,
+    "min_size_2023": 126,
+    "SW_2023": 0.252782,
+    "CH_2023": 815.845337,
+    "S_Dbw_2023": 0.842592,
+    "AVI_2023": 0.89864,
+    "AVU_2023": 0.53762,
+    "MQ_2023": 0.565457,
+    "TurboMQ_2023": 3.59456,
+    "min_size_2024": 83,
+    "SW_2024": 0.286673,
+    "CH_2024": 973.108238,
+    "S_Dbw_2024": 0.804266,
+    "AVI_2024": 0.887191,
+    "AVU_2024": 0.528876,
+    "MQ_2024": 0.55219,
+    "TurboMQ_2024": 3.548763,
+    "kept_type_2024": 0.925099,
+    "ari_with_kmeans": 1.0,
+    "eta2_mean": 0.23859,
+    "partial_r2_within_region_mean": 0.140664,
+    "eta2_log_wage": 0.459813,
+    "month_bootstrap_ari_mean": 0.927082,
+    "month_bootstrap_ari_p10": 0.89454,
+    "territory_subsample_ari_mean": 0.983429,
+    "territory_subsample_ari_p10": 0.969529,
+    "eligible": true,
+    "copeland_all_2023": 0,
+    "copeland_2023": -4.0,
+    "copeland_2024": -3.0,
+    "copeland_total": -7.0
+   },
+   {
+    "method": "ward",
+    "label": "Ward",
+    "family": "признаки",
+    "k": 4,
+    "min_size_2023": 117,
+    "SW_2023": 0.211747,
+    "CH_2023": 723.731979,
+    "S_Dbw_2023": 1.009014,
+    "AVI_2023": 0.865915,
+    "AVU_2023": 0.546249,
+    "MQ_2023": 0.552041,
+    "TurboMQ_2023": 3.463658,
+    "min_size_2024": 78,
+    "SW_2024": 0.241676,
+    "CH_2024": 891.823067,
+    "S_Dbw_2024": 0.841797,
+    "AVI_2024": 0.871774,
+    "AVU_2024": 0.536204,
+    "MQ_2024": 0.56657,
+    "TurboMQ_2024": 3.487097,
+    "kept_type_2024": 0.84375,
+    "ari_with_kmeans": 0.388974,
+    "eta2_mean": 0.212742,
+    "partial_r2_within_region_mean": 0.11858,
+    "eta2_log_wage": 0.407005,
+    "month_bootstrap_ari_mean": 0.360412,
+    "month_bootstrap_ari_p10": 0.306417,
+    "territory_subsample_ari_mean": 0.408467,
+    "territory_subsample_ari_p10": 0.339276,
+    "eligible": false,
+    "copeland_all_2023": -4,
+    "copeland_2023": null,
+    "copeland_2024": null,
+    "copeland_total": null
+   },
+   {
+    "method": "gmm",
+    "label": "Гауссова смесь",
+    "family": "признаки",
+    "k": 4,
+    "min_size_2023": 253,
+    "SW_2023": 0.192965,
+    "CH_2023": 546.255946,
+    "S_Dbw_2023": 0.972759,
+    "AVI_2023": 0.83171,
+    "AVU_2023": 0.535341,
+    "MQ_2023": 0.515879,
+    "TurboMQ_2023": 3.32684,
+    "min_size_2024": 160,
+    "SW_2024": 0.27455,
+    "CH_2024": 924.622617,
+    "S_Dbw_2024": 0.866695,
+    "AVI_2024": 0.865651,
+    "AVU_2024": 0.54407,
+    "MQ_2024": 0.543843,
+    "TurboMQ_2024": 3.462603,
+    "kept_type_2024": 0.829365,
+    "ari_with_kmeans": 0.527908,
+    "eta2_mean": 0.266801,
+    "partial_r2_within_region_mean": 0.147141,
+    "eta2_log_wage": 0.469266,
+    "month_bootstrap_ari_mean": 0.859513,
+    "month_bootstrap_ari_p10": 0.77429,
+    "territory_subsample_ari_mean": 0.633725,
+    "territory_subsample_ari_p10": 0.605062,
+    "eligible": false,
+    "copeland_all_2023": -6,
+    "copeland_2023": null,
+    "copeland_2024": null,
+    "copeland_total": null
+   },
+   {
+    "method": "spectral_graph",
+    "label": "Спектральная (граф)",
+    "family": "сеть",
+    "k": 4,
+    "min_size_2023": 18,
+    "SW_2023": 0.257227,
+    "CH_2023": 533.005387,
+    "S_Dbw_2023": 0.959561,
+    "AVI_2023": 0.813876,
+    "AVU_2023": 0.501776,
+    "MQ_2023": 0.446611,
+    "TurboMQ_2023": 3.255503,
+    "min_size_2024": 30,
+    "SW_2024": 0.311485,
+    "CH_2024": 858.401855,
+    "S_Dbw_2024": 0.724722,
+    "AVI_2024": 0.856384,
+    "AVU_2024": 0.512575,
+    "MQ_2024": 0.471218,
+    "TurboMQ_2024": 3.425535,
+    "kept_type_2024": 0.880952,
+    "ari_with_kmeans": 0.466066,
+    "eta2_mean": 0.191479,
+    "partial_r2_within_region_mean": 0.134751,
+    "eta2_log_wage": 0.456721,
+    "month_bootstrap_ari_mean": 0.682645,
+    "month_bootstrap_ari_p10": 0.443978,
+    "territory_subsample_ari_mean": 0.730085,
+    "territory_subsample_ari_p10": 0.561904,
+    "eligible": false,
+    "copeland_all_2023": -5,
+    "copeland_2023": null,
+    "copeland_2024": null,
+    "copeland_total": null
+   },
+   {
+    "method": "leiden_graph",
+    "label": "Leiden (граф)",
+    "family": "сеть",
+    "k": 4,
+    "min_size_2023": 3,
+    "SW_2023": 0.350146,
+    "CH_2023": 438.446787,
+    "S_Dbw_2023": 1.168552,
+    "AVI_2023": 0.610188,
+    "AVU_2023": 0.502828,
+    "MQ_2023": 0.375866,
+    "TurboMQ_2023": 2.440753,
+    "min_size_2024": 2,
+    "SW_2024": 0.403693,
+    "CH_2024": 630.34942,
+    "S_Dbw_2024": null,
+    "AVI_2024": 0.634605,
+    "AVU_2024": 0.503197,
+    "MQ_2024": 0.387814,
+    "TurboMQ_2024": 2.538422,
+    "kept_type_2024": 0.949405,
+    "ari_with_kmeans": 0.385889,
+    "eta2_mean": 0.159579,
+    "partial_r2_within_region_mean": 0.122893,
+    "eta2_log_wage": 0.308106,
+    "month_bootstrap_ari_mean": 0.566668,
+    "month_bootstrap_ari_p10": 0.435869,
+    "territory_subsample_ari_mean": 0.571917,
+    "territory_subsample_ari_p10": 0.484731,
+    "eligible": false,
+    "copeland_all_2023": -9,
+    "copeland_2023": null,
+    "copeland_2024": null,
+    "copeland_total": null
+   },
+   {
+    "method": "kefrin",
+    "label": "KEFRiN-подобный K-means (признаки + строки смежности)",
+    "family": "признаки + сеть",
+    "k": 4,
+    "min_size_2023": 127,
+    "SW_2023": 0.252835,
+    "CH_2023": 815.711139,
+    "S_Dbw_2023": 0.840993,
+    "AVI_2023": 0.900236,
+    "AVU_2023": 0.536921,
+    "MQ_2023": 0.567086,
+    "TurboMQ_2023": 3.600943,
+    "min_size_2024": 83,
+    "SW_2024": 0.286553,
+    "CH_2024": 973.139257,
+    "S_Dbw_2024": 0.803468,
+    "AVI_2024": 0.887623,
+    "AVU_2024": 0.529026,
+    "MQ_2024": 0.553092,
+    "TurboMQ_2024": 3.550493,
+    "kept_type_2024": 0.924107,
+    "ari_with_kmeans": 0.994405,
+    "eta2_mean": 0.238973,
+    "partial_r2_within_region_mean": 0.140322,
+    "eta2_log_wage": 0.459698,
+    "month_bootstrap_ari_mean": 0.926497,
+    "month_bootstrap_ari_p10": 0.901684,
+    "territory_subsample_ari_mean": 0.981642,
+    "territory_subsample_ari_p10": 0.968479,
+    "eligible": true,
+    "copeland_all_2023": 2,
+    "copeland_2023": -2.0,
+    "copeland_2024": 0.0,
+    "copeland_total": -2.0
+   },
+   {
+    "method": "joint_0.1",
+    "label": "Совместная модель α=0,1",
+    "family": "признаки + сеть",
+    "k": 4,
+    "min_size_2023": 127,
+    "SW_2023": 0.254286,
+    "CH_2023": 814.939126,
+    "S_Dbw_2023": 0.819338,
+    "AVI_2023": 0.903362,
+    "AVU_2023": 0.538017,
+    "MQ_2023": 0.569196,
+    "TurboMQ_2023": 3.613448,
+    "min_size_2024": 84,
+    "SW_2024": 0.287278,
+    "CH_2024": 974.778999,
+    "S_Dbw_2024": 0.796082,
+    "AVI_2024": 0.887402,
+    "AVU_2024": 0.529315,
+    "MQ_2024": 0.552494,
+    "TurboMQ_2024": 3.549607,
+    "kept_type_2024": 0.917659,
+    "ari_with_kmeans": 0.966922,
+    "eta2_mean": 0.234912,
+    "partial_r2_within_region_mean": 0.135267,
+    "eta2_log_wage": 0.459428,
+    "month_bootstrap_ari_mean": 0.916618,
+    "month_bootstrap_ari_p10": 0.891276,
+    "territory_subsample_ari_mean": 0.965603,
+    "territory_subsample_ari_p10": 0.955815,
+    "eligible": true,
+    "copeland_all_2023": 8,
+    "copeland_2023": 4.0,
+    "copeland_2024": 0.0,
+    "copeland_total": 4.0
+   },
+   {
+    "method": "joint_0.25",
+    "label": "Совместная модель α=0,25",
+    "family": "признаки + сеть",
+    "k": 4,
+    "min_size_2023": 128,
+    "SW_2023": 0.254966,
+    "CH_2023": 812.951182,
+    "S_Dbw_2023": 0.835448,
+    "AVI_2023": 0.906505,
+    "AVU_2023": 0.539298,
+    "MQ_2023": 0.570154,
+    "TurboMQ_2023": 3.62602,
+    "min_size_2024": 83,
+    "SW_2024": 0.287795,
+    "CH_2024": 972.905372,
+    "S_Dbw_2024": 0.805502,
+    "AVI_2024": 0.888721,
+    "AVU_2024": 0.52838,
+    "MQ_2024": 0.552074,
+    "TurboMQ_2024": 3.554884,
+    "kept_type_2024": 0.916667,
+    "ari_with_kmeans": 0.936578,
+    "eta2_mean": 0.238565,
+    "partial_r2_within_region_mean": 0.137186,
+    "eta2_log_wage": 0.459205,
+    "month_bootstrap_ari_mean": 0.911322,
+    "month_bootstrap_ari_p10": 0.876202,
+    "territory_subsample_ari_mean": 0.942887,
+    "territory_subsample_ari_p10": 0.933968,
+    "eligible": true,
+    "copeland_all_2023": 6,
+    "copeland_2023": 2.0,
+    "copeland_2024": -2.0,
+    "copeland_total": 0.0
+   },
+   {
+    "method": "joint_0.5",
+    "label": "Совместная модель α=0,5",
+    "family": "признаки + сеть",
+    "k": 4,
+    "min_size_2023": 127,
+    "SW_2023": 0.255477,
+    "CH_2023": 810.793499,
+    "S_Dbw_2023": 0.826809,
+    "AVI_2023": 0.908368,
+    "AVU_2023": 0.539649,
+    "MQ_2023": 0.569137,
+    "TurboMQ_2023": 3.633474,
+    "min_size_2024": 83,
+    "SW_2024": 0.289574,
+    "CH_2024": 973.520726,
+    "S_Dbw_2024": 0.774252,
+    "AVI_2024": 0.88896,
+    "AVU_2024": 0.527179,
+    "MQ_2024": 0.550259,
+    "TurboMQ_2024": 3.555839,
+    "kept_type_2024": 0.916171,
+    "ari_with_kmeans": 0.913133,
+    "eta2_mean": 0.240023,
+    "partial_r2_within_region_mean": 0.137194,
+    "eta2_log_wage": 0.462739,
+    "month_bootstrap_ari_mean": 0.908325,
+    "month_bootstrap_ari_p10": 0.878473,
+    "territory_subsample_ari_mean": 0.925288,
+    "territory_subsample_ari_p10": 0.914377,
+    "eligible": true,
+    "copeland_all_2023": 6,
+    "copeland_2023": 2.0,
+    "copeland_2024": 5.0,
+    "copeland_total": 7.0
+   },
+   {
+    "method": "joint_1.0",
+    "label": "Совместная модель α=1",
+    "family": "признаки + сеть",
+    "k": 4,
+    "min_size_2023": 126,
+    "SW_2023": 0.257074,
+    "CH_2023": 806.804683,
+    "S_Dbw_2023": 0.830161,
+    "AVI_2023": 0.909383,
+    "AVU_2023": 0.54335,
+    "MQ_2023": 0.564624,
+    "TurboMQ_2023": 3.637532,
+    "min_size_2024": 83,
+    "SW_2024": 0.290248,
+    "CH_2024": 972.943011,
+    "S_Dbw_2024": 0.807149,
+    "AVI_2024": 0.889004,
+    "AVU_2024": 0.528333,
+    "MQ_2024": 0.547939,
+    "TurboMQ_2024": 3.556016,
+    "kept_type_2024": 0.918155,
+    "ari_with_kmeans": 0.85654,
+    "eta2_mean": 0.241057,
+    "partial_r2_within_region_mean": 0.136712,
+    "eta2_log_wage": 0.464362,
+    "month_bootstrap_ari_mean": 0.900874,
+    "month_bootstrap_ari_p10": 0.842029,
+    "territory_subsample_ari_mean": 0.89349,
+    "territory_subsample_ari_p10": 0.874405,
+    "eligible": true,
+    "copeland_all_2023": 2,
+    "copeland_2023": -2.0,
+    "copeland_2024": 0.0,
+    "copeland_total": -2.0
+   }
+  ],
+  "selection_audit": {
+   "chosen_2023_only": "joint_0.1",
+   "retained_method": "joint_0.5",
+   "copeland_2023": [
+    {
+     "method": "kmeans",
+     "copeland_2023_recomputed": -4
+    },
+    {
+     "method": "kefrin",
+     "copeland_2023_recomputed": -2
+    },
+    {
+     "method": "joint_0.1",
+     "copeland_2023_recomputed": 4
+    },
+    {
+     "method": "joint_0.25",
+     "copeland_2023_recomputed": 2
+    },
+    {
+     "method": "joint_0.5",
+     "copeland_2023_recomputed": 2
+    },
+    {
+     "method": "joint_1.0",
+     "copeland_2023_recomputed": -2
+    }
+   ],
+   "ari_2023_only_vs_retained": 0.9447418660757539,
+   "changed_n": 37,
+   "entities": 2016,
+   "status": "Диагностика по сохранённой сетке; сеть и её исторический выбор не переоценивались."
+  }
+ },
+ "types": {
+  "names": {
+   "0": "Высокие расходы и услуги",
+   "1": "Средние расходы",
+   "2": "Низкие расходы и повседневные покупки",
+   "3": "Низкая доля маркетплейсов"
+  },
+  "keys": [
+   "metro",
+   "industrial",
+   "periphery",
+   "remote"
+  ],
+  "sizes": [
+   338,
+   580,
+   971,
+   127
+  ],
+  "validity": {
+   "eta2_log_wage": 0.462739,
+   "partial_r2_within_region_log_wage": 0.160663,
+   "eta2_agri_share": 0.157698,
+   "partial_r2_within_region_agri_share": 0.10377,
+   "eta2_manuf_share": 0.02304,
+   "partial_r2_within_region_manuf_share": 0.036062,
+   "eta2_mining_share": 0.176398,
+   "partial_r2_within_region_mining_share": 0.120827,
+   "eta2_public_share": 0.102091,
+   "partial_r2_within_region_public_share": 0.088922,
+   "eta2_log_pop": 0.427127,
+   "partial_r2_within_region_log_pop": 0.442574,
+   "eta2_log_jobs_per_res": 0.129101,
+   "partial_r2_within_region_log_jobs_per_res": 0.058345,
+   "eta2_market_access": 0.441989,
+   "partial_r2_within_region_market_access": 0.086391,
+   "eta2_mean": 0.240023,
+   "partial_r2_within_region_mean": 0.137194
+  },
+  "profiles": [
+   {
+    "type": 0,
+    "key": "metro",
+    "name": "Высокие расходы и услуги",
+    "n": 338,
+    "share": 0.167659,
+    "population_share_observed": 0.413409,
+    "population_coverage": 0.54142,
+    "spending_rub_median": 41492.2,
+    "health_pct_median": 5.79174,
+    "marketplaces_pct_median": 9.50752,
+    "horeca_pct_median": 7.20806,
+    "food_pct_median": 34.2043,
+    "transport_pct_median": 7.43388,
+    "log_wage_median": 11.3805,
+    "log_wage_coverage": 0.544379,
+    "agri_share_median": 0.00853832,
+    "agri_share_coverage": 0.204142,
+    "manuf_share_median": 0.155326,
+    "manuf_share_coverage": 0.461538,
+    "mining_share_median": 0.00496812,
+    "mining_share_coverage": 0.115385,
+    "public_share_median": 0.330018,
+    "public_share_coverage": 0.473373,
+    "log_pop_median": 11.3874,
+    "log_pop_coverage": 0.54142,
+    "log_jobs_per_res_median": -1.5515,
+    "log_jobs_per_res_coverage": 0.54142,
+    "market_access_median": 453.4,
+    "market_access_coverage": 0.997041,
+    "wage_rub_median": 87595.3,
+    "latitude_median": 55.858,
+    "composition_муниципальный район": 0.0414201,
+    "composition_муниципальный округ": 0.0118343,
+    "composition_городской округ": 0.248521,
+    "composition_внутригородская территория города федерального значения": 0.698225,
+    "moscow_petersburg_share": 0.698225,
+    "top_regions": "Москва (139); Санкт-Петербург (97); Московская область (32)",
+    "representatives": "внутригородская территория города федерального значения муниципальный округ Чертаново Центральное (Москва); внутригородская территория города федерального значения поселок Парголово (Санкт-Петербург); внутригородская территория города федерального значения муниципальный округ Невская застава (Санкт-Петербург)",
+    "largest_by_population": "городской округ город Новосибирск (Новосибирская область); городской округ город Екатеринбург (Свердловская область); городской округ город Казань (Республика Татарстан)"
+   },
+   {
+    "type": 1,
+    "key": "industrial",
+    "name": "Средние расходы",
+    "n": 580,
+    "share": 0.287698,
+    "population_share_observed": 0.368992,
+    "population_coverage": 0.927586,
+    "spending_rub_median": 25934.5,
+    "health_pct_median": 4.88812,
+    "marketplaces_pct_median": 9.9372,
+    "horeca_pct_median": 3.67272,
+    "food_pct_median": 43.2292,
+    "transport_pct_median": 6.39355,
+    "log_wage_median": 10.9133,
+    "log_wage_coverage": 0.967241,
+    "agri_share_median": 0.0372263,
+    "agri_share_coverage": 0.575862,
+    "manuf_share_median": 0.169345,
+    "manuf_share_coverage": 0.736207,
+    "mining_share_median": 0.135247,
+    "mining_share_coverage": 0.243103,
+    "public_share_median": 0.402566,
+    "public_share_coverage": 0.922414,
+    "log_pop_median": 10.6454,
+    "log_pop_coverage": 0.927586,
+    "log_jobs_per_res_median": -1.68623,
+    "log_jobs_per_res_coverage": 0.927586,
+    "market_access_median": 309.1,
+    "market_access_coverage": 1.0,
+    "wage_rub_median": 54901.7,
+    "latitude_median": 55.2652,
+    "composition_муниципальный район": 0.455172,
+    "composition_муниципальный округ": 0.124138,
+    "composition_городской округ": 0.410345,
+    "composition_внутригородская территория города федерального значения": 0.0103448,
+    "moscow_petersburg_share": 0.0103448,
+    "top_regions": "Республика Башкортостан (53); Свердловская область (34); Республика Татарстан (32)",
+    "representatives": "городской округ город Черногорск (Республика Хакасия); городской округ Красноуфимск (Свердловская область); городской округ город Рубцовск (Алтайский край)",
+    "largest_by_population": "городской округ город Ульяновск (Ульяновская область); городской округ город Ярославль (Ярославская область); городской округ город Оренбург (Оренбургская область)"
+   },
+   {
+    "type": 2,
+    "key": "periphery",
+    "name": "Низкие расходы и повседневные покупки",
+    "n": 971,
+    "share": 0.481647,
+    "population_share_observed": 0.186946,
+    "population_coverage": 0.979403,
+    "spending_rub_median": 19961.0,
+    "health_pct_median": 4.86573,
+    "marketplaces_pct_median": 12.21,
+    "horeca_pct_median": 1.60129,
+    "food_pct_median": 49.0072,
+    "transport_pct_median": 5.30143,
+    "log_wage_median": 10.6772,
+    "log_wage_coverage": 0.986612,
+    "agri_share_median": 0.108217,
+    "agri_share_coverage": 0.572606,
+    "manuf_share_median": 0.125106,
+    "manuf_share_coverage": 0.377961,
+    "mining_share_median": 0.0811307,
+    "mining_share_coverage": 0.0679712,
+    "public_share_median": 0.519889,
+    "public_share_coverage": 0.841401,
+    "log_pop_median": 9.6632,
+    "log_pop_coverage": 0.979403,
+    "log_jobs_per_res_median": -1.83968,
+    "log_jobs_per_res_coverage": 0.979403,
+    "market_access_median": 321.8,
+    "market_access_coverage": 1.0,
+    "wage_rub_median": 43355.1,
+    "latitude_median": 55.0504,
+    "composition_муниципальный район": 0.710608,
+    "composition_муниципальный округ": 0.186406,
+    "composition_городской округ": 0.102987,
+    "composition_внутригородская территория города федерального значения": 0.0,
+    "moscow_petersburg_share": 0.0,
+    "top_regions": "Алтайский край (52); Нижегородская область (39); Кировская область (35)",
+    "representatives": "Ельнинский муниципальный район (Смоленская область); Починковский муниципальный район (Смоленская область); Камско-Устьинский муниципальный район (Республика Татарстан)",
+    "largest_by_population": "Изобильненский муниципальный округ (Ставропольский край); Кочубеевский муниципальный округ (Ставропольский край); Киреевский муниципальный район (Тульская область)"
+   },
+   {
+    "type": 3,
+    "key": "remote",
+    "name": "Низкая доля маркетплейсов",
+    "n": 127,
+    "share": 0.062996,
+    "population_share_observed": 0.0306537,
+    "population_coverage": 0.984252,
+    "spending_rub_median": 33060.5,
+    "health_pct_median": 3.94569,
+    "marketplaces_pct_median": 4.60404,
+    "horeca_pct_median": 2.91519,
+    "food_pct_median": 47.1319,
+    "transport_pct_median": 5.09664,
+    "log_wage_median": 11.4102,
+    "log_wage_coverage": 1.0,
+    "agri_share_median": 0.0290549,
+    "agri_share_coverage": 0.732283,
+    "manuf_share_median": 0.0389725,
+    "manuf_share_coverage": 0.354331,
+    "mining_share_median": 0.244759,
+    "mining_share_coverage": 0.346457,
+    "public_share_median": 0.452521,
+    "public_share_coverage": 0.905512,
+    "log_pop_median": 9.45164,
+    "log_pop_coverage": 0.984252,
+    "log_jobs_per_res_median": -1.24527,
+    "log_jobs_per_res_coverage": 0.984252,
+    "market_access_median": 138.1,
+    "market_access_coverage": 0.913386,
+    "wage_rub_median": 90235.4,
+    "latitude_median": 53.6083,
+    "composition_муниципальный район": 0.606299,
+    "composition_муниципальный округ": 0.204724,
+    "composition_городской округ": 0.188976,
+    "composition_внутригородская территория города федерального значения": 0.0,
+    "moscow_petersburg_share": 0.0,
+    "top_regions": "Республика Саха (Якутия) (27); Сахалинская область (16); Амурская область (15)",
+    "representatives": "городской округ Углегорский (Сахалинская область); городской округ Холмский (Сахалинская область); городской округ Поронайский (Сахалинская область)",
+    "largest_by_population": "городской округ город Якутск (Республика Саха (Якутия)); городской округ город Комсомольск-на-Амуре (Хабаровский край); городской округ город Норильск (Красноярский край)"
+   }
+  ],
+  "leave_one_region_out": [
+   {
+    "indicator": "log_wage",
+    "n": 1830,
+    "regions": 73,
+    "types": 0.43023490138697784,
+    "types_mae": 0.19985721040184048,
+    "municipal_type": 0.18882904242429255,
+    "municipal_type_mae": 0.2430759964449938,
+    "municipal_type_and_types": 0.46298953009484944,
+    "municipal_type_and_types_mae": 0.19450070320856186,
+    "municipal_type_original_zero": 0.18882904242429255,
+    "unseen_admin_category_n": 0
+   },
+   {
+    "indicator": "agri_share",
+    "n": 1052,
+    "regions": 71,
+    "types": 0.13689697861679107,
+    "types_mae": 0.06785695194253819,
+    "municipal_type": 0.06751441978380857,
+    "municipal_type_mae": 0.07222063294280406,
+    "municipal_type_and_types": 0.1467205239106879,
+    "municipal_type_and_types_mae": 0.06723788275228754,
+    "municipal_type_original_zero": 0.06913937740303322,
+    "unseen_admin_category_n": 2
+   },
+   {
+    "indicator": "manuf_share",
+    "n": 995,
+    "regions": 72,
+    "types": 0.0030092025598739136,
+    "types_mae": 0.11212117843756236,
+    "municipal_type": 0.03480444435028507,
+    "municipal_type_mae": 0.11090679206142606,
+    "municipal_type_and_types": 0.042037860471841326,
+    "municipal_type_and_types_mae": 0.1103523679994956,
+    "municipal_type_original_zero": 0.03480444435028507,
+    "unseen_admin_category_n": 0
+   },
+   {
+    "indicator": "public_share",
+    "n": 1627,
+    "regions": 73,
+    "types": 0.08628636903940634,
+    "types_mae": 0.12453611624717505,
+    "municipal_type": 0.09359692841847989,
+    "municipal_type_mae": 0.12409142389655638,
+    "municipal_type_and_types": 0.1123797827596239,
+    "municipal_type_and_types_mae": 0.12194498655874861,
+    "municipal_type_original_zero": 0.09359692841847989,
+    "unseen_admin_category_n": 0
+   },
+   {
+    "indicator": "log_pop",
+    "n": 1797,
+    "regions": 72,
+    "types": 0.36897551040089427,
+    "types_mae": 0.6205930652265038,
+    "municipal_type": 0.25033118431501966,
+    "municipal_type_mae": 0.6759747149942339,
+    "municipal_type_and_types": 0.505636668382744,
+    "municipal_type_and_types_mae": 0.5610003182426021,
+    "municipal_type_original_zero": 0.25033118431501966,
+    "unseen_admin_category_n": 0
+   },
+   {
+    "indicator": "log_jobs_per_res",
+    "n": 1797,
+    "regions": 72,
+    "types": 0.11174223143649131,
+    "types_mae": 0.3249609514143026,
+    "municipal_type": -0.012219778178201635,
+    "municipal_type_mae": 0.32823788381069,
+    "municipal_type_and_types": 0.08600453741895386,
+    "municipal_type_and_types_mae": 0.31761733212506454,
+    "municipal_type_original_zero": -0.012219778178201635,
+    "unseen_admin_category_n": 0
+   },
+   {
+    "indicator": "market_access",
+    "n": 2004,
+    "regions": 73,
+    "types": 0.19076258290333536,
+    "types_mae": 74.81878112078458,
+    "municipal_type": 0.05493901483785746,
+    "municipal_type_mae": 85.12751541067018,
+    "municipal_type_and_types": 0.15266797861038373,
+    "municipal_type_and_types_mae": 77.33509722709023,
+    "municipal_type_original_zero": 0.05493901483785746,
+    "unseen_admin_category_n": 0
+   },
+   {
+    "indicator": "mining_share",
+    "n": 290,
+    "regions": 48,
+    "types": 0.11255938299367707,
+    "types_mae": 0.11324724963761516,
+    "municipal_type": -0.04763199935070528,
+    "municipal_type_mae": 0.13314424536051803,
+    "municipal_type_and_types": 0.08392208803884416,
+    "municipal_type_and_types_mae": 0.11559489206165283,
+    "municipal_type_original_zero": -0.04116584722970784,
+    "unseen_admin_category_n": 2
+   }
+  ],
+  "missing_outcomes": "Внешние связи рассчитаны только на наблюдаемых исходах; верхняя граница для всей панели не установлена.",
+  "strict_leave_one_region_out": {
+   "recipe": {
+    "alpha": 0.5,
+    "K": 4,
+    "graph_k": 15,
+    "seed": 1729,
+    "kmeans_n_init": 50,
+    "max_sweeps": 200,
+    "heldout_assignment": "nearest train centroid; no heldout graph",
+    "months": "2023-01..2023-12",
+    "selection_status": "fixed historical globally selected recipe; not nested selection"
+   },
+   "metrics": [
+    {
+     "indicator": "log_wage",
+     "n": 1830,
+     "regions": 73,
+     "types": 0.43023490138697784,
+     "types_mae": 0.19985721040184048,
+     "municipal_type": 0.18882904242429255,
+     "municipal_type_mae": 0.2430759964449938,
+     "municipal_type_and_types": 0.46298953009484944,
+     "municipal_type_and_types_mae": 0.19450070320856186,
+     "municipal_type_original_zero": 0.18882904242429255,
+     "unseen_admin_category_n": 0
+    },
+    {
+     "indicator": "agri_share",
+     "n": 1052,
+     "regions": 71,
+     "types": 0.13689697861679107,
+     "types_mae": 0.06785695194253819,
+     "municipal_type": 0.06751441978380857,
+     "municipal_type_mae": 0.07222063294280406,
+     "municipal_type_and_types": 0.1467205239106879,
+     "municipal_type_and_types_mae": 0.06723788275228754,
+     "municipal_type_original_zero": 0.06913937740303322,
+     "unseen_admin_category_n": 2
+    },
+    {
+     "indicator": "manuf_share",
+     "n": 995,
+     "regions": 72,
+     "types": 0.0030092025598739136,
+     "types_mae": 0.11212117843756236,
+     "municipal_type": 0.03480444435028507,
+     "municipal_type_mae": 0.11090679206142606,
+     "municipal_type_and_types": 0.042037860471841326,
+     "municipal_type_and_types_mae": 0.1103523679994956,
+     "municipal_type_original_zero": 0.03480444435028507,
+     "unseen_admin_category_n": 0
+    },
+    {
+     "indicator": "public_share",
+     "n": 1627,
+     "regions": 73,
+     "types": 0.08628636903940634,
+     "types_mae": 0.12453611624717505,
+     "municipal_type": 0.09359692841847989,
+     "municipal_type_mae": 0.12409142389655638,
+     "municipal_type_and_types": 0.1123797827596239,
+     "municipal_type_and_types_mae": 0.12194498655874861,
+     "municipal_type_original_zero": 0.09359692841847989,
+     "unseen_admin_category_n": 0
+    },
+    {
+     "indicator": "log_pop",
+     "n": 1797,
+     "regions": 72,
+     "types": 0.36897551040089427,
+     "types_mae": 0.6205930652265038,
+     "municipal_type": 0.25033118431501966,
+     "municipal_type_mae": 0.6759747149942339,
+     "municipal_type_and_types": 0.505636668382744,
+     "municipal_type_and_types_mae": 0.5610003182426021,
+     "municipal_type_original_zero": 0.25033118431501966,
+     "unseen_admin_category_n": 0
+    },
+    {
+     "indicator": "log_jobs_per_res",
+     "n": 1797,
+     "regions": 72,
+     "types": 0.11174223143649131,
+     "types_mae": 0.3249609514143026,
+     "municipal_type": -0.012219778178201635,
+     "municipal_type_mae": 0.32823788381069,
+     "municipal_type_and_types": 0.08600453741895386,
+     "municipal_type_and_types_mae": 0.31761733212506454,
+     "municipal_type_original_zero": -0.012219778178201635,
+     "unseen_admin_category_n": 0
+    },
+    {
+     "indicator": "market_access",
+     "n": 2004,
+     "regions": 73,
+     "types": 0.19076258290333536,
+     "types_mae": 74.81878112078458,
+     "municipal_type": 0.05493901483785746,
+     "municipal_type_mae": 85.12751541067018,
+     "municipal_type_and_types": 0.15266797861038373,
+     "municipal_type_and_types_mae": 77.33509722709023,
+     "municipal_type_original_zero": 0.05493901483785746,
+     "unseen_admin_category_n": 0
+    },
+    {
+     "indicator": "mining_share",
+     "n": 290,
+     "regions": 48,
+     "types": 0.11255938299367707,
+     "types_mae": 0.11324724963761516,
+     "municipal_type": -0.04763199935070528,
+     "municipal_type_mae": 0.13314424536051803,
+     "municipal_type_and_types": 0.08392208803884416,
+     "municipal_type_and_types_mae": 0.11559489206165283,
+     "municipal_type_original_zero": -0.04116584722970784,
+     "unseen_admin_category_n": 2
+    }
+   ],
+   "limitations": [
+    "Hyperparameters historically selected using global data, including 2024 criteria; no nested selection performed",
+    "External outcome complete-case cohorts differ by indicator; mining is sparse",
+    "One-worker deterministic fixed recipe; no uncertainty intervals recomputed",
+    "All 24 months are parsed by panel reader, then only 2023 enters fitting; no 2025 data read"
+   ],
+   "prediction_file": "strict-region-validation/strict_predictions.csv",
+   "converged_folds": 73,
+   "ari_with_global_labels": 0.9156572971085263,
+   "agreement_with_global_labels": 0.970734126984127,
+   "agreement_interpretation": "Agreement of inductive nearest-centroid heldout assignment with full-panel graph labels; assignment rule also differs, so this is not pure retraining stability.",
+   "admin_baseline": "same finite-outcome cohort; OLS train fit; unseen category uses train outcome mean. Original zero prediction is retained separately. Combined model uses type-only prediction for unseen administrative category."
+  }
+ },
+ "tracking": {
+  "persistence": {
+   "constant_share": 0.690476,
+   "mean_switches": 1.053075,
+   "months_in_annual_type_share": 0.916935,
+   "persistent_change_window_months": 6,
+   "persistent_changes": 109
+  },
+  "persistence_absolute": {
+   "constant_share": 0.543651,
+   "mean_switches": 1.559524,
+   "months_in_annual_type_share": 0.880084,
+   "persistent_change_window_months": 6,
+   "persistent_changes": 107
+  },
+  "markov": {
+   "counts": [
+    [
+     8033,
+     156,
+     0,
+     22
+    ],
+    [
+     230,
+     12114,
+     664,
+     111
+    ],
+    [
+     0,
+     632,
+     21934,
+     66
+    ],
+    [
+     23,
+     133,
+     86,
+     2164
+    ]
+   ],
+   "matrix": [
+    [
+     0.978322,
+     0.018999,
+     0.0,
+     0.002679
+    ],
+    [
+     0.017532,
+     0.923394,
+     0.050614,
+     0.008461
+    ],
+    [
+     0.0,
+     0.027925,
+     0.969159,
+     0.002916
+    ],
+    [
+     0.009559,
+     0.055278,
+     0.035744,
+     0.899418
+    ]
+   ],
+   "stationary": [
+    0.227431,
+    0.258586,
+    0.472474,
+    0.041509
+   ],
+   "expected_months_in_type": [
+    46.129213,
+    13.053731,
+    32.424069,
+    9.942149
+   ]
+  },
+  "annual_transitions": [
+   [
+    336,
+    2,
+    0,
+    0
+   ],
+   [
+    28,
+    496,
+    55,
+    1
+   ],
+   [
+    0,
+    38,
+    933,
+    0
+   ],
+   [
+    0,
+    22,
+    23,
+    82
+   ]
+  ],
+  "annual_transitions_absolute": [
+   [
+    337,
+    1,
+    0,
+    0
+   ],
+   [
+    30,
+    418,
+    132,
+    0
+   ],
+   [
+    0,
+    15,
+    956,
+    0
+   ],
+   [
+    2,
+    47,
+    42,
+    36
+   ]
+  ],
+  "persistent_change_matrix": [
+   [
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    14,
+    0,
+    38,
+    0
+   ],
+   [
+    0,
+    28,
+    0,
+    0
+   ],
+   [
+    0,
+    12,
+    17,
+    0
+   ]
+  ],
+  "free_reclustering": {
+   "events": [
+    {
+     "type": 0,
+     "year": "2023",
+     "survival_months": 12,
+     "absorption_months": 0,
+     "split_months": 0,
+     "disappearance_months": 0,
+     "median_jaccard_with_base": 0.934906,
+     "min_jaccard_with_base": 0.72885
+    },
+    {
+     "type": 0,
+     "year": "2024",
+     "survival_months": 12,
+     "absorption_months": 0,
+     "split_months": 0,
+     "disappearance_months": 0,
+     "median_jaccard_with_base": 0.901882,
+     "min_jaccard_with_base": 0.860825
+    },
+    {
+     "type": 1,
+     "year": "2023",
+     "survival_months": 10,
+     "absorption_months": 0,
+     "split_months": 1,
+     "disappearance_months": 1,
+     "median_jaccard_with_base": 0.767951,
+     "min_jaccard_with_base": 0.266738
+    },
+    {
+     "type": 1,
+     "year": "2024",
+     "survival_months": 12,
+     "absorption_months": 0,
+     "split_months": 0,
+     "disappearance_months": 0,
+     "median_jaccard_with_base": 0.642222,
+     "min_jaccard_with_base": 0.562232
+    },
+    {
+     "type": 2,
+     "year": "2023",
+     "survival_months": 12,
+     "absorption_months": 0,
+     "split_months": 0,
+     "disappearance_months": 0,
+     "median_jaccard_with_base": 0.880072,
+     "min_jaccard_with_base": 0.523285
+    },
+    {
+     "type": 2,
+     "year": "2024",
+     "survival_months": 9,
+     "absorption_months": 2,
+     "split_months": 1,
+     "disappearance_months": 0,
+     "median_jaccard_with_base": 0.569677,
+     "min_jaccard_with_base": 0.431608
+    },
+    {
+     "type": 3,
+     "year": "2023",
+     "survival_months": 10,
+     "absorption_months": 2,
+     "split_months": 0,
+     "disappearance_months": 0,
+     "median_jaccard_with_base": 0.815512,
+     "min_jaccard_with_base": 0.178174
+    },
+    {
+     "type": 3,
+     "year": "2024",
+     "survival_months": 0,
+     "absorption_months": 12,
+     "split_months": 0,
+     "disappearance_months": 0,
+     "median_jaccard_with_base": 0.08913,
+     "min_jaccard_with_base": 0.047872
+    }
+   ],
+   "months": [
+    {
+     "month": 0,
+     "sizes": [
+      456,
+      509,
+      816,
+      235
+     ],
+     "jaccard_with_base": [
+      0.737418,
+      0.308894,
+      0.633455,
+      0.288256
+     ],
+     "kept_share": [
+      0.997041,
+      0.443103,
+      0.713697,
+      0.637795
+     ],
+     "jaccard_with_previous_month": null,
+     "events": [
+      "survival",
+      "disappearance",
+      "survival",
+      "absorption"
+     ]
+    },
+    {
+     "month": 1,
+     "sizes": [
+      459,
+      612,
+      828,
+      117
+     ],
+     "jaccard_with_base": [
+      0.72885,
+      0.266738,
+      0.523285,
+      0.848485
+     ],
+     "kept_share": [
+      0.994083,
+      0.432759,
+      0.636457,
+      0.88189
+     ],
+     "jaccard_with_previous_month": [
+      0.89441,
+      0.071702,
+      0.381513,
+      0.266187
+     ],
+     "events": [
+      "survival",
+      "split",
+      "survival",
+      "survival"
+     ]
+    },
+    {
+     "month": 2,
+     "sizes": [
+      368,
+      746,
+      788,
+      114
+     ],
+     "jaccard_with_base": [
+      0.902965,
+      0.653367,
+      0.769618,
+      0.839695
+     ],
+     "kept_share": [
+      0.991124,
+      0.903448,
+      0.787848,
+      0.866142
+     ],
+     "jaccard_with_previous_month": [
+      0.793926,
+      0.347222,
+      0.488029,
+      0.878049
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "survival"
+     ]
+    },
+    {
+     "month": 3,
+     "sizes": [
+      341,
+      673,
+      896,
+      106
+     ],
+     "jaccard_with_base": [
+      0.962428,
+      0.782361,
+      0.87827,
+      0.738806
+     ],
+     "kept_share": [
+      0.985207,
+      0.948276,
+      0.899073,
+      0.779528
+     ],
+     "jaccard_with_previous_month": [
+      0.905914,
+      0.677305,
+      0.767051,
+      0.803279
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "survival"
+     ]
+    },
+    {
+     "month": 4,
+     "sizes": [
+      379,
+      658,
+      877,
+      102
+     ],
+     "jaccard_with_base": [
+      0.891821,
+      0.753541,
+      0.881874,
+      0.761538
+     ],
+     "kept_share": [
+      1.0,
+      0.917241,
+      0.891864,
+      0.779528
+     ],
+     "jaccard_with_previous_month": [
+      0.894737,
+      0.825789,
+      0.908504,
+      0.840708
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "survival"
+     ]
+    },
+    {
+     "month": 5,
+     "sizes": [
+      359,
+      630,
+      917,
+      110
+     ],
+     "jaccard_with_base": [
+      0.936111,
+      0.803279,
+      0.903226,
+      0.823077
+     ],
+     "kept_share": [
+      0.997041,
+      0.92931,
+      0.92276,
+      0.84252
+     ],
+     "jaccard_with_previous_month": [
+      0.937008,
+      0.816643,
+      0.896406,
+      0.892857
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "survival"
+     ]
+    },
+    {
+     "month": 6,
+     "sizes": [
+      360,
+      585,
+      960,
+      111
+     ],
+     "jaccard_with_base": [
+      0.938889,
+      0.828885,
+      0.911881,
+      0.844961
+     ],
+     "kept_share": [
+      1.0,
+      0.910345,
+      0.948507,
+      0.858268
+     ],
+     "jaccard_with_previous_month": [
+      0.959128,
+      0.849315,
+      0.919223,
+      0.841667
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "survival"
+     ]
+    },
+    {
+     "month": 7,
+     "sizes": [
+      350,
+      549,
+      971,
+      146
+     ],
+     "jaccard_with_base": [
+      0.954545,
+      0.794913,
+      0.900196,
+      0.807947
+     ],
+     "kept_share": [
+      0.994083,
+      0.862069,
+      0.947477,
+      0.96063
+     ],
+     "jaccard_with_previous_month": [
+      0.961326,
+      0.852941,
+      0.938755,
+      0.736486
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "survival"
+     ]
+    },
+    {
+     "month": 8,
+     "sizes": [
+      349,
+      550,
+      975,
+      142
+     ],
+     "jaccard_with_base": [
+      0.957265,
+      0.802233,
+      0.894839,
+      0.868056
+     ],
+     "kept_share": [
+      0.994083,
+      0.867241,
+      0.946447,
+      0.984252
+     ],
+     "jaccard_with_previous_month": [
+      0.957983,
+      0.853288,
+      0.928642,
+      0.822785
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "survival"
+     ]
+    },
+    {
+     "month": 9,
+     "sizes": [
+      362,
+      559,
+      964,
+      131
+     ],
+     "jaccard_with_base": [
+      0.933702,
+      0.79653,
+      0.900786,
+      0.856115
+     ],
+     "kept_share": [
+      1.0,
+      0.87069,
+      0.944387,
+      0.937008
+     ],
+     "jaccard_with_previous_month": [
+      0.947945,
+      0.818033,
+      0.910345,
+      0.857143
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "survival"
+     ]
+    },
+    {
+     "month": 10,
+     "sizes": [
+      353,
+      493,
+      768,
+      402
+     ],
+     "jaccard_with_base": [
+      0.941011,
+      0.679186,
+      0.640566,
+      0.178174
+     ],
+     "kept_share": [
+      0.991124,
+      0.748276,
+      0.699279,
+      0.629921
+     ],
+     "jaccard_with_previous_month": [
+      0.948229,
+      0.696774,
+      0.649524,
+      0.189732
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "absorption"
+     ]
+    },
+    {
+     "month": 11,
+     "sizes": [
+      388,
+      626,
+      916,
+      86
+     ],
+     "jaccard_with_base": [
+      0.866324,
+      0.715505,
+      0.870168,
+      0.651163
+     ],
+     "kept_share": [
+      0.997041,
+      0.867241,
+      0.904222,
+      0.661417
+     ],
+     "jaccard_with_previous_month": [
+      0.895141,
+      0.617052,
+      0.641326,
+      0.134884
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "survival"
+     ]
+    },
+    {
+     "month": 12,
+     "sizes": [
+      379,
+      535,
+      685,
+      417
+     ],
+     "jaccard_with_base": [
+      0.891821,
+      0.637298,
+      0.563739,
+      0.092369
+     ],
+     "kept_share": [
+      1.0,
+      0.748276,
+      0.61483,
+      0.362205
+     ],
+     "jaccard_with_previous_month": [
+      0.936869,
+      0.672911,
+      0.571148,
+      0.074786
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "absorption"
+     ]
+    },
+    {
+     "month": 13,
+     "sizes": [
+      371,
+      545,
+      696,
+      404
+     ],
+     "jaccard_with_base": [
+      0.905914,
+      0.647145,
+      0.575614,
+      0.08589
+     ],
+     "kept_share": [
+      0.997041,
+      0.762069,
+      0.627188,
+      0.330709
+     ],
+     "jaccard_with_previous_month": [
+      0.963351,
+      0.878261,
+      0.838881,
+      0.75803
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "absorption"
+     ]
+    },
+    {
+     "month": 14,
+     "sizes": [
+      379,
+      534,
+      639,
+      464
+     ],
+     "jaccard_with_base": [
+      0.886842,
+      0.600575,
+      0.50608,
+      0.047872
+     ],
+     "kept_share": [
+      0.997041,
+      0.72069,
+      0.557158,
+      0.212598
+     ],
+     "jaccard_with_previous_month": [
+      0.953125,
+      0.847603,
+      0.789544,
+      0.69863
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "absorption"
+     ]
+    },
+    {
+     "month": 15,
+     "sizes": [
+      348,
+      533,
+      732,
+      403
+     ],
+     "jaccard_with_base": [
+      0.932394,
+      0.696646,
+      0.640655,
+      0.164835
+     ],
+     "kept_share": [
+      0.97929,
+      0.787931,
+      0.684861,
+      0.590551
+     ],
+     "jaccard_with_previous_month": [
+      0.903141,
+      0.699045,
+      0.720201,
+      0.579235
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "absorption"
+     ]
+    },
+    {
+     "month": 16,
+     "sizes": [
+      359,
+      542,
+      876,
+      239
+     ],
+     "jaccard_with_base": [
+      0.925414,
+      0.739535,
+      0.805474,
+      0.355556
+     ],
+     "kept_share": [
+      0.991124,
+      0.822414,
+      0.84861,
+      0.755906
+     ],
+     "jaccard_with_previous_month": [
+      0.958449,
+      0.782753,
+      0.732759,
+      0.410989
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "absorption"
+     ]
+    },
+    {
+     "month": 17,
+     "sizes": [
+      346,
+      534,
+      681,
+      455
+     ],
+     "jaccard_with_base": [
+      0.937677,
+      0.721793,
+      0.588462,
+      0.164
+     ],
+     "kept_share": [
+      0.97929,
+      0.805172,
+      0.630278,
+      0.645669
+     ],
+     "jaccard_with_previous_month": [
+      0.947514,
+      0.799331,
+      0.685065,
+      0.399194
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "absorption"
+     ]
+    },
+    {
+     "month": 18,
+     "sizes": [
+      376,
+      527,
+      578,
+      535
+     ],
+     "jaccard_with_base": [
+      0.888889,
+      0.613703,
+      0.431608,
+      0.055821
+     ],
+     "kept_share": [
+      0.994083,
+      0.725862,
+      0.480947,
+      0.275591
+     ],
+     "jaccard_with_previous_month": [
+      0.915119,
+      0.739344,
+      0.678667,
+      0.58147
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "split",
+      "absorption"
+     ]
+    },
+    {
+     "month": 19,
+     "sizes": [
+      368,
+      546,
+      593,
+      509
+     ],
+     "jaccard_with_base": [
+      0.897849,
+      0.610873,
+      0.452182,
+      0.05124
+     ],
+     "kept_share": [
+      0.988166,
+      0.736207,
+      0.501545,
+      0.244094
+     ],
+     "jaccard_with_previous_month": [
+      0.952756,
+      0.885764,
+      0.752994,
+      0.731343
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "absorption",
+      "absorption"
+     ]
+    },
+    {
+     "month": 20,
+     "sizes": [
+      388,
+      512,
+      615,
+      501
+     ],
+     "jaccard_with_base": [
+      0.861538,
+      0.562232,
+      0.44313,
+      0.050167
+     ],
+     "kept_share": [
+      0.994083,
+      0.677586,
+      0.501545,
+      0.23622
+     ],
+     "jaccard_with_previous_month": [
+      0.928571,
+      0.84,
+      0.723252,
+      0.683333
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "absorption",
+      "absorption"
+     ]
+    },
+    {
+     "month": 21,
+     "sizes": [
+      342,
+      543,
+      780,
+      351
+     ],
+     "jaccard_with_base": [
+      0.926346,
+      0.693816,
+      0.678811,
+      0.216285
+     ],
+     "kept_share": [
+      0.967456,
+      0.793103,
+      0.729145,
+      0.669291
+     ],
+     "jaccard_with_previous_month": [
+      0.881443,
+      0.635659,
+      0.597938,
+      0.417637
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "absorption"
+     ]
+    },
+    {
+     "month": 22,
+     "sizes": [
+      349,
+      519,
+      736,
+      412
+     ],
+     "jaccard_with_base": [
+      0.929775,
+      0.665152,
+      0.614948,
+      0.164147
+     ],
+     "kept_share": [
+      0.97929,
+      0.756897,
+      0.669413,
+      0.598425
+     ],
+     "jaccard_with_previous_month": [
+      0.957507,
+      0.859895,
+      0.824308,
+      0.706935
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "absorption"
+     ]
+    },
+    {
+     "month": 23,
+     "sizes": [
+      384,
+      543,
+      649,
+      440
+     ],
+     "jaccard_with_base": [
+      0.860825,
+      0.59517,
+      0.526861,
+      0.075901
+     ],
+     "kept_share": [
+      0.988166,
+      0.722414,
+      0.575695,
+      0.314961
+     ],
+     "jaccard_with_previous_month": [
+      0.889175,
+      0.743842,
+      0.789406,
+      0.632184
+     ],
+     "events": [
+      "survival",
+      "survival",
+      "survival",
+      "absorption"
+     ]
+    }
+   ],
+   "annual_2024_overlap": [
+    [
+     333,
+     5,
+     0,
+     0
+    ],
+    [
+     11,
+     456,
+     39,
+     74
+    ],
+    [
+     0,
+     32,
+     828,
+     111
+    ],
+    [
+     1,
+     16,
+     10,
+     100
+    ]
+   ],
+   "annual_2024_profiles": [
+    {
+     "group": 0,
+     "n": 345,
+     "spending_rub_median": 48439.0,
+     "health_pct_median": 5.699075,
+     "marketplaces_pct_median": 12.600958,
+     "horeca_pct_median": 7.476726,
+     "food_pct_median": 32.719994,
+     "transport_pct_median": 7.29127,
+     "latitude_median": 55.866061,
+     "wage_rub_median": 87595.275861,
+     "top_regions": "Москва (139); Санкт-Петербург (97); Московская область (33)"
+    },
+    {
+     "group": 1,
+     "n": 509,
+     "spending_rub_median": 30298.5,
+     "health_pct_median": 4.868461,
+     "marketplaces_pct_median": 14.163948,
+     "horeca_pct_median": 3.761802,
+     "food_pct_median": 41.692321,
+     "transport_pct_median": 6.380428,
+     "latitude_median": 54.802826,
+     "wage_rub_median": 53855.197827,
+     "top_regions": "Республика Башкортостан (48); Кемеровская область (23); Свердловская область (22)"
+    },
+    {
+     "group": 2,
+     "n": 877,
+     "spending_rub_median": 22435.5,
+     "health_pct_median": 4.725654,
+     "marketplaces_pct_median": 17.2815,
+     "horeca_pct_median": 1.487406,
+     "food_pct_median": 47.655309,
+     "transport_pct_median": 4.9054,
+     "latitude_median": 54.828018,
+     "wage_rub_median": 42645.197669,
+     "top_regions": "Алтайский край (52); Кировская область (38); Нижегородская область (37)"
+    },
+    {
+     "group": 3,
+     "n": 285,
+     "spending_rub_median": 31206.0,
+     "health_pct_median": 3.796708,
+     "marketplaces_pct_median": 14.462874,
+     "horeca_pct_median": 2.832571,
+     "food_pct_median": 45.194939,
+     "transport_pct_median": 4.351871,
+     "latitude_median": 58.522357,
+     "wage_rub_median": 71489.906736,
+     "top_regions": "Свердловская область (24); Республика Саха (Якутия) (22); Сахалинская область (15)"
+    }
+   ]
+  },
+  "national_component": {
+   "periods": [
+    "2023-01-01",
+    "2023-02-01",
+    "2023-03-01",
+    "2023-04-01",
+    "2023-05-01",
+    "2023-06-01",
+    "2023-07-01",
+    "2023-08-01",
+    "2023-09-01",
+    "2023-10-01",
+    "2023-11-01",
+    "2023-12-01",
+    "2024-01-01",
+    "2024-02-01",
+    "2024-03-01",
+    "2024-04-01",
+    "2024-05-01",
+    "2024-06-01",
+    "2024-07-01",
+    "2024-08-01",
+    "2024-09-01",
+    "2024-10-01",
+    "2024-11-01",
+    "2024-12-01"
+   ],
+   "median_share_pct": [
+    [
+     5.711141,
+     9.288838,
+     2.815143,
+     45.287517,
+     6.550143
+    ],
+    [
+     5.761706,
+     9.912387,
+     2.587361,
+     44.938859,
+     6.109023
+    ],
+    [
+     5.596653,
+     10.181614,
+     2.637028,
+     44.898804,
+     5.715197
+    ],
+    [
+     5.050472,
+     9.969475,
+     2.369136,
+     47.142682,
+     5.711785
+    ],
+    [
+     4.719461,
+     10.006669,
+     2.399816,
+     47.277189,
+     5.711452
+    ],
+    [
+     4.468574,
+     10.148026,
+     2.653138,
+     47.832679,
+     5.84771
+    ],
+    [
+     4.301431,
+     10.502792,
+     2.95033,
+     47.198389,
+     6.197246
+    ],
+    [
+     4.640057,
+     11.066821,
+     2.945072,
+     45.613746,
+     6.294408
+    ],
+    [
+     5.060459,
+     12.130588,
+     2.666296,
+     45.546956,
+     6.143655
+    ],
+    [
+     5.121463,
+     13.463605,
+     2.470891,
+     44.752269,
+     5.915026
+    ],
+    [
+     5.072438,
+     16.143656,
+     2.303786,
+     43.955464,
+     5.582242
+    ],
+    [
+     4.546025,
+     15.431848,
+     1.990583,
+     46.012829,
+     5.008744
+    ],
+    [
+     5.524275,
+     13.56577,
+     2.437114,
+     45.736368,
+     5.852841
+    ],
+    [
+     5.382079,
+     14.833092,
+     2.289258,
+     44.833714,
+     5.307235
+    ],
+    [
+     5.063016,
+     14.813779,
+     2.423229,
+     44.803547,
+     5.112885
+    ],
+    [
+     4.906327,
+     14.775822,
+     2.390099,
+     45.08292,
+     5.310798
+    ],
+    [
+     4.543643,
+     14.370083,
+     2.516392,
+     46.327396,
+     5.414867
+    ],
+    [
+     4.174481,
+     14.409599,
+     2.802753,
+     46.033078,
+     5.552008
+    ],
+    [
+     4.246548,
+     14.645791,
+     3.049992,
+     45.606236,
+     5.934
+    ],
+    [
+     4.282316,
+     15.831167,
+     3.050896,
+     42.40868,
+     5.883257
+    ],
+    [
+     4.993459,
+     16.454875,
+     2.776712,
+     42.52591,
+     5.893272
+    ],
+    [
+     5.104328,
+     17.532829,
+     2.650127,
+     41.825767,
+     5.747797
+    ],
+    [
+     4.892593,
+     19.099062,
+     2.42392,
+     41.390521,
+     5.410693
+    ],
+    [
+     4.226579,
+     19.237793,
+     2.111599,
+     42.429862,
+     4.879873
+    ]
+   ],
+   "median_spending_rub": [
+    20632.5,
+    22056.0,
+    23958.5,
+    21955.5,
+    22566.0,
+    22757.0,
+    23769.5,
+    23964.0,
+    22324.5,
+    23150.0,
+    23657.5,
+    28221.0,
+    21682.5,
+    24219.5,
+    26666.0,
+    26070.5,
+    26371.5,
+    26845.5,
+    27626.0,
+    27981.0,
+    25899.0,
+    27218.5,
+    27181.5,
+    32496.5
+   ]
+  }
+ },
+ "practical": {
+  "analogues": [
+   {
+    "predictor": "network_analogues",
+    "n": 2016,
+    "unit": "percentage_point",
+    "mae_pp": 2.4862427544748,
+    "median_ae_pp": 1.8363000255436255
+   },
+   {
+    "predictor": "random_same_region",
+    "n": 2016,
+    "unit": "percentage_point",
+    "mae_pp": 2.701280872242211,
+    "median_ae_pp": 2.0752286016561214
+   },
+   {
+    "predictor": "region_median_leave_one_out",
+    "n": 2016,
+    "unit": "percentage_point",
+    "mae_pp": 2.627673669299238,
+    "median_ae_pp": 2.0065216200401794
+   },
+   {
+    "predictor": "national_median",
+    "n": 2016,
+    "unit": "percentage_point",
+    "mae_pp": 3.026185062710016,
+    "median_ae_pp": 2.418769427727452
+   }
+  ],
+  "analogue_comparisons": [
+   {
+    "better": "network_analogues",
+    "baseline": "random_same_region",
+    "n": 2016,
+    "unit": "percentage_point",
+    "mae_difference_pp": -0.2150381177674112,
+    "ci_low": -0.3303681736909421,
+    "ci_high": -0.09552014819015761
+   },
+   {
+    "better": "network_analogues",
+    "baseline": "national_median",
+    "n": 2016,
+    "unit": "percentage_point",
+    "mae_difference_pp": -0.5399423082352163,
+    "ci_low": -0.6765054251643959,
+    "ci_high": -0.39082522734991276
+   },
+   {
+    "better": "network_analogues",
+    "baseline": "region_median_leave_one_out",
+    "n": 2016,
+    "unit": "percentage_point",
+    "mae_difference_pp": -0.14143091482443834,
+    "ci_low": -0.2385640893972779,
+    "ci_high": -0.037478177479938986
+   }
+  ],
+  "type_dynamics": [
+   {
+    "type": 0,
+    "key": "metro",
+    "name": "Высокие расходы и услуги",
+    "n": 338,
+    "marketplaces_pct_2023": 9.507523,
+    "marketplaces_pct_2024": 12.593898,
+    "marketplaces_ratio_2024_to_2023": 1.3246245105060486,
+    "marketplaces_change_pp_median": 3.1036382499999986,
+    "marketplaces_change_ci_low": 2.933256499999999,
+    "marketplaces_change_ci_high": 3.6675395,
+    "nominal_growth_mean_pct": 17.037996593379766,
+    "nominal_growth_ci_low_pct": 16.54048019498797,
+    "nominal_growth_ci_high_pct": 17.265502886391527,
+    "relative_level_change_log": 0.014226983009585978,
+    "relative_level_change_ci_low": 0.009532319143269555,
+    "relative_level_change_ci_high": 0.016908080265344537,
+    "left_type_2024_adjusted_share": 0.005917159763313609,
+    "left_type_2024_absolute_share": 0.0029585798816568047
+   },
+   {
+    "type": 1,
+    "key": "industrial",
+    "name": "Средние расходы",
+    "n": 580,
+    "marketplaces_pct_2023": 9.937199249999999,
+    "marketplaces_pct_2024": 14.23644625,
+    "marketplaces_ratio_2024_to_2023": 1.4326417224652108,
+    "marketplaces_change_pp_median": 4.148674749999999,
+    "marketplaces_change_ci_low": 4.0067396375,
+    "marketplaces_change_ci_high": 4.306607000000001,
+    "nominal_growth_mean_pct": 15.983485440129485,
+    "nominal_growth_ci_low_pct": 15.24998733674796,
+    "nominal_growth_ci_high_pct": 16.850882646332387,
+    "relative_level_change_log": 0.00967867571088526,
+    "relative_level_change_ci_low": 0.003402217482305373,
+    "relative_level_change_ci_high": 0.016986194769091474,
+    "left_type_2024_adjusted_share": 0.14482758620689656,
+    "left_type_2024_absolute_share": 0.2793103448275862
+   },
+   {
+    "type": 2,
+    "key": "periphery",
+    "name": "Низкие расходы и повседневные покупки",
+    "n": 971,
+    "marketplaces_pct_2023": 12.2099745,
+    "marketplaces_pct_2024": 17.2501805,
+    "marketplaces_ratio_2024_to_2023": 1.4127941462940812,
+    "marketplaces_change_pp_median": 5.001828,
+    "marketplaces_change_ci_low": 4.8483872125,
+    "marketplaces_change_ci_high": 5.173079999999999,
+    "nominal_growth_mean_pct": 13.556375135127707,
+    "nominal_growth_ci_low_pct": 13.030010276766024,
+    "nominal_growth_ci_high_pct": 14.050825031567783,
+    "relative_level_change_log": -0.009485468216292665,
+    "relative_level_change_ci_low": -0.013832873723495462,
+    "relative_level_change_ci_high": -0.005069424604142256,
+    "left_type_2024_adjusted_share": 0.03913491246138002,
+    "left_type_2024_absolute_share": 0.015447991761071062
+   },
+   {
+    "type": 3,
+    "key": "remote",
+    "name": "Низкая доля маркетплейсов",
+    "n": 127,
+    "marketplaces_pct_2023": 4.604039,
+    "marketplaces_pct_2024": 9.865789999999999,
+    "marketplaces_ratio_2024_to_2023": 2.142855436281056,
+    "marketplaces_change_pp_median": 4.3756200000000005,
+    "marketplaces_change_ci_low": 3.6742920000000003,
+    "marketplaces_change_ci_high": 5.150572937499995,
+    "nominal_growth_mean_pct": 11.972576198033313,
+    "nominal_growth_ci_low_pct": 10.065748461182821,
+    "nominal_growth_ci_high_pct": 13.98356317919558,
+    "relative_level_change_log": -0.028953001113979273,
+    "relative_level_change_ci_low": -0.047798854508974545,
+    "relative_level_change_ci_high": -0.0085243271973717,
+    "left_type_2024_adjusted_share": 0.3543307086614173,
+    "left_type_2024_absolute_share": 0.7165354330708661
+   }
+  ],
+  "gap": {
+   "metro_minus_periphery_relative_level_change_log": 0.023712451225878645,
+   "ci_low": 0.018625287149823058,
+   "ci_high": 0.028283344343251585,
+   "level_ratio_2023": 2.0827782595399005,
+   "level_ratio_2024": 2.1137986041085837
+  },
+  "persistent_changes": 109,
+  "analogues_diagnostic": [
+   {
+    "predictor": "network_analogues",
+    "n": 2011,
+    "unit": "percentage_point",
+    "mae_pp": 2.478148434475268,
+    "median_ae_pp": 1.8311445000945383
+   },
+   {
+    "predictor": "network_analogues_same_region",
+    "n": 2011,
+    "unit": "percentage_point",
+    "mae_pp": 2.4581064247102016,
+    "median_ae_pp": 1.8459322199230392
+   },
+   {
+    "predictor": "random_same_region",
+    "n": 2011,
+    "unit": "percentage_point",
+    "mae_pp": 2.6959957821914284,
+    "median_ae_pp": 2.071400364987431
+   },
+   {
+    "predictor": "region_median_leave_one_out",
+    "n": 2011,
+    "unit": "percentage_point",
+    "mae_pp": 2.622205567804042,
+    "median_ae_pp": 1.995274444839744
+   },
+   {
+    "predictor": "random_same_type",
+    "n": 2011,
+    "unit": "percentage_point",
+    "mae_pp": 2.7579880121053506,
+    "median_ae_pp": 1.9891060329016987
+   },
+   {
+    "predictor": "national_median",
+    "n": 2011,
+    "unit": "percentage_point",
+    "mae_pp": 3.0192632470582637,
+    "median_ae_pp": 2.4154707941080567
+   }
+  ],
+  "analogue_comparisons_diagnostic": [
+   {
+    "better": "network_analogues_same_region",
+    "baseline": "region_median_leave_one_out",
+    "n": 2011,
+    "unit": "percentage_point",
+    "mae_difference_pp": -0.16409914309384033,
+    "ci_low": -0.25260368422758495,
+    "ci_high": -0.08585362495300801
+   },
+   {
+    "better": "network_analogues",
+    "baseline": "random_same_type",
+    "n": 2011,
+    "unit": "percentage_point",
+    "mae_difference_pp": -0.2798395776300832,
+    "ci_low": -0.3855712979033782,
+    "ci_high": -0.1840044704829229
+   }
+  ],
+  "marketplace_gap_pp": {
+   "periphery_median_pct_2023": 12.2099745,
+   "remote_median_pct_2023": 4.604039,
+   "periphery_median_pct_2024": 17.2501805,
+   "remote_median_pct_2024": 9.865789999999999,
+   "gap_2023_pp": 7.605935499999999,
+   "gap_2024_pp": 7.3843905,
+   "change_pp": -0.221544999999999,
+   "conditional_region_ci_95_change_pp": [
+    -0.754228299999997,
+    0.8038172249999977
+   ],
+   "bootstrap_valid_draws": 2000,
+   "fixed_2023_types": true
+  },
+  "analogue_limitations": {
+   "unit": "percentage_point",
+   "growth": "100*(mean_total_2024/mean_total_2023-1)",
+   "evaluation": "Ретроспективное сравнение: исходы аналогов 2024 уже доступны; это не прогноз будущего года.",
+   "primary_common_entities": 2016,
+   "diagnostic_common_entities": 2011,
+   "resampling": "Парные различия ошибок, целые регионы с возвращением; среднее по МО, seed из config.",
+   "random_control": "Одна фиксированная выборка соседей; интервал не охватывает выбор случайных аналогов.",
+   "selection": "Типология и сеть исторически выбраны с использованием 2024; интервалы условны."
+  }
+ },
+ "validation": {
+  "year_2024": "Валидация, использованная при выборе сети и модели; независимым test не является.",
+  "year_2025": "Значения не открывались и не оценивались."
+ }
+}

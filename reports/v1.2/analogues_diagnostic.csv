@@ -1,0 +1,7 @@
+predictor,n,unit,mae_pp,median_ae_pp
+network_analogues,2011,percentage_point,2.4781484344752678,1.8311445000945383
+network_analogues_same_region,2011,percentage_point,2.4581064247102016,1.8459322199230392
+random_same_region,2011,percentage_point,2.6959957821914284,2.0714003649874311
+region_median_leave_one_out,2011,percentage_point,2.6222055678040421,1.9952744448397439
+random_same_type,2011,percentage_point,2.7579880121053506,1.9891060329016987
+national_median,2011,percentage_point,3.0192632470582637,2.4154707941080567

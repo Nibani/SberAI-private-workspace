@@ -1,0 +1,74 @@
+region,train_n,test_n,seconds,algorithm_revision,converged,convergence_status,sweeps,objective
+Алтайский край,1951,65,0.8991165000043111,exact_centroid_moves_v2,True,coordinate_fixed_point,5,0.48232966832380925
+Амурская область,1997,19,0.5380042000033427,exact_centroid_moves_v2,True,coordinate_fixed_point,7,0.4855465629323227
+Архангельская область,1994,22,0.49898259999463335,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.48346985131082526
+Астраханская область,2005,11,0.5268924999982119,exact_centroid_moves_v2,True,coordinate_fixed_point,7,0.484192291870973
+Владимирская область,1998,18,0.46106819999113213,exact_centroid_moves_v2,True,coordinate_fixed_point,5,0.4838167613262811
+Волгоградская область,1981,35,0.502185900011682,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.4834030037372896
+Вологодская область,1991,25,0.5206957000045804,exact_centroid_moves_v2,True,coordinate_fixed_point,7,0.48324986341140425
+Еврейская автономная область,2010,6,0.5124955999926897,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.4846801381348186
+Забайкальский край,1988,28,0.717721300010453,exact_centroid_moves_v2,True,coordinate_fixed_point,13,0.4792534254369048
+Ивановская область,1990,26,0.7369875000003958,exact_centroid_moves_v2,True,coordinate_fixed_point,13,0.4832137172739805
+Иркутская область,1977,39,0.46160759999474976,exact_centroid_moves_v2,True,coordinate_fixed_point,5,0.4835967203094785
+Кабардино-Балкарская Республика,2012,4,0.5701946999906795,exact_centroid_moves_v2,True,coordinate_fixed_point,8,0.4830914339353086
+Калининградская область,1997,19,0.4583022000006167,exact_centroid_moves_v2,True,coordinate_fixed_point,5,0.4808842747341055
+Калужская область,1991,25,0.4917081000021426,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.4850388010946528
+Камчатский край,2007,9,0.4705438000091817,exact_centroid_moves_v2,True,coordinate_fixed_point,4,0.48480585614225125
+Карачаево-Черкесская Республика,2008,8,0.5346997000015108,exact_centroid_moves_v2,True,coordinate_fixed_point,7,0.4815393131629239
+Кемеровская область,1986,30,0.461886000004597,exact_centroid_moves_v2,True,coordinate_fixed_point,5,0.4834057997453305
+Кировская область,1973,43,0.4588951000041561,exact_centroid_moves_v2,True,coordinate_fixed_point,5,0.48131527173113353
+Костромская область,1988,28,0.4950214999989839,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.4853802854726145
+Красноярский край,1965,51,0.4854421000054572,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.48285788604847923
+Курганская область,1992,24,0.4793599999975413,exact_centroid_moves_v2,True,coordinate_fixed_point,5,0.4833015999789535
+Ленинградская область,1998,18,0.4938084000023082,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.48145979176485254
+Липецкая область,1998,18,0.5940331000019796,exact_centroid_moves_v2,True,coordinate_fixed_point,9,0.484521721466635
+Магаданская область,2013,3,0.46753090000129305,exact_centroid_moves_v2,True,coordinate_fixed_point,5,0.4831520492590071
+Москва,1872,144,0.4620139000035124,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.5391728187426814
+Московская область,1964,52,0.5255684000003384,exact_centroid_moves_v2,True,coordinate_fixed_point,7,0.4795382546039102
+Мурманская область,2004,12,0.6221106000011787,exact_centroid_moves_v2,True,coordinate_fixed_point,10,0.4789192964447355
+Ненецкий автономный округ,2014,2,0.4675153999996837,exact_centroid_moves_v2,True,coordinate_fixed_point,5,0.48421331532218265
+Нижегородская область,1966,50,0.5477569000067888,exact_centroid_moves_v2,True,coordinate_fixed_point,8,0.48540333473843345
+Новгородская область,1995,21,0.5370250999985728,exact_centroid_moves_v2,True,coordinate_fixed_point,7,0.484791959864992
+Новосибирская область,1981,35,0.6479307999979937,exact_centroid_moves_v2,True,coordinate_fixed_point,11,0.4848032780323248
+Омская область,1983,33,0.4872232000052463,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.48416356621349543
+Оренбургская область,1977,39,0.41786110000975896,exact_centroid_moves_v2,True,coordinate_fixed_point,4,0.482629981334483
+Орловская область,1995,21,0.5151027999963844,exact_centroid_moves_v2,True,coordinate_fixed_point,7,0.4853001306358411
+Пензенская область,1991,25,0.5176890000002459,exact_centroid_moves_v2,True,coordinate_fixed_point,7,0.4834484671447529
+Пермский край,1974,42,0.57256430000416,exact_centroid_moves_v2,True,coordinate_fixed_point,9,0.48353624014435653
+Приморский край,1983,33,0.45180539999273606,exact_centroid_moves_v2,True,coordinate_fixed_point,5,0.48034600774326436
+Псковская область,1994,22,0.4556502999912482,exact_centroid_moves_v2,True,coordinate_fixed_point,5,0.4847526526225061
+Республика Адыгея,2007,9,0.4929050000064308,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.48314827240859926
+Республика Алтай,2005,11,0.49241440001060255,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.48274278901924705
+Республика Башкортостан,1955,61,0.5418643000011798,exact_centroid_moves_v2,True,coordinate_fixed_point,8,0.47691274138465023
+Республика Калмыкия,2011,5,0.49981760000810027,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.483305687747236
+Республика Карелия,1998,18,0.4860478999908082,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.48247003540598293
+Республика Коми,1996,20,0.48495919999550097,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.4811112179161892
+Республика Марий Эл,1999,17,0.45730189999449067,exact_centroid_moves_v2,True,coordinate_fixed_point,5,0.4838699733042694
+Республика Мордовия,1996,20,0.4869943000085186,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.4844444759420615
+Республика Саха (Якутия),1987,29,0.42296389999683015,exact_centroid_moves_v2,True,coordinate_fixed_point,4,0.4900629172180748
+Республика Северная Осетия — Алания,2009,7,0.4283829999912996,exact_centroid_moves_v2,True,coordinate_fixed_point,4,0.4826750840519592
+Республика Татарстан,1973,43,0.5086242000106722,exact_centroid_moves_v2,True,coordinate_fixed_point,7,0.4803667453799506
+Республика Тыва,2006,10,0.4948259999946458,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.480719473102346
+Республика Хакасия,2004,12,0.5040802000003168,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.4842618600569636
+Рязанская область,1990,26,0.5170498000079533,exact_centroid_moves_v2,True,coordinate_fixed_point,7,0.4854423496559649
+Самарская область,1980,36,0.5739115999895148,exact_centroid_moves_v2,True,coordinate_fixed_point,9,0.4851900622980891
+Санкт-Петербург,1918,98,0.5978985999972792,exact_centroid_moves_v2,True,coordinate_fixed_point,10,0.5153478933564041
+Саратовская область,1977,39,0.512092599994503,exact_centroid_moves_v2,True,coordinate_fixed_point,7,0.4841568110336555
+Сахалинская область,2000,16,0.4580719999939902,exact_centroid_moves_v2,True,coordinate_fixed_point,5,0.4881727223164506
+Свердловская область,1952,64,0.3997028000012506,exact_centroid_moves_v2,True,coordinate_fixed_point,4,0.48298528836345467
+Смоленская область,1989,27,0.45467310000094585,exact_centroid_moves_v2,True,coordinate_fixed_point,5,0.48567958706176073
+Ставропольский край,1983,33,0.44760929999756627,exact_centroid_moves_v2,True,coordinate_fixed_point,5,0.48104834364452537
+Тамбовская область,1992,24,0.6171494000009261,exact_centroid_moves_v2,True,coordinate_fixed_point,10,0.4840084751111439
+Тверская область,1979,37,0.5808336000045529,exact_centroid_moves_v2,True,coordinate_fixed_point,9,0.4845602603977982
+Томская область,1997,19,0.49068100001022685,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.4839976371314361
+Тульская область,1992,24,0.5809721999976318,exact_centroid_moves_v2,True,coordinate_fixed_point,9,0.48375019433234645
+Тюменская область,1992,24,0.5480570000072476,exact_centroid_moves_v2,True,coordinate_fixed_point,8,0.48338671982524617
+Удмуртская Республика,1989,27,0.4829584999970393,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.48056971056952114
+Ульяновская область,1995,21,0.5174019999976736,exact_centroid_moves_v2,True,coordinate_fixed_point,7,0.48469403836876224
+Хабаровский край,2000,16,0.5326196000096388,exact_centroid_moves_v2,True,coordinate_fixed_point,7,0.48615607924934234
+Ханты-Мансийский автономный округ — Югра,1994,22,0.6246331000002101,exact_centroid_moves_v2,True,coordinate_fixed_point,10,0.4784686569466398
+Челябинская область,1979,37,0.4487795000022743,exact_centroid_moves_v2,True,coordinate_fixed_point,5,0.4843873065253885
+Чувашская Республика,1993,23,0.423604499999783,exact_centroid_moves_v2,True,coordinate_fixed_point,4,0.4813684371202338
+Чукотский автономный округ,2012,4,0.4711217000003671,exact_centroid_moves_v2,True,coordinate_fixed_point,5,0.4846031092472749
+Ямало-Ненецкий автономный округ,2003,13,0.6177200999954948,exact_centroid_moves_v2,True,coordinate_fixed_point,10,0.48066964972114856
+Ярославская область,1997,19,0.4841756000096211,exact_centroid_moves_v2,True,coordinate_fixed_point,6,0.48399208383152886

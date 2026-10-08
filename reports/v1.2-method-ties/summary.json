@@ -1,0 +1,23 @@
+{
+  "chosen_full": "joint_0.5",
+  "chosen_2023_only_full": "joint_0.1",
+  "eligible": [
+    "kmeans",
+    "kefrin",
+    "joint_0.1",
+    "joint_0.25",
+    "joint_0.5",
+    "joint_1.0"
+  ],
+  "regions": 73,
+  "fraction": 0.8,
+  "draws": 500,
+  "seed": 1729,
+  "inputs_sha256": {
+    "data/v12/panel.csv.gz": "953ba39d152f0f4192ebbabc8edfa0684683c3a4a3d8c147f0978cf6f1798784",
+    "configs/v12.json": "68776f61ab2c6c24ae84b1de72d0945c49f1891572cf89634e58803f6b222151",
+    "reports/v1.2/methods.csv": "55bc4a3cea869a39d78b89c8b6b6959153522a00c9359b122c9e73f553ac6a3b",
+    "reports/v1.2/labels.csv": "394a681ebd0898dc41d1fe2479febbb36b7a5cc5d6449147aab14089279c0e71"
+  },
+  "command": "python -m scripts.check_method_ties"
+}

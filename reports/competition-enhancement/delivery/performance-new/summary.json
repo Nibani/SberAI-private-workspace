@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "completed_at_utc": "2026-10-08T21:22:31.907Z",
+  "plan_sha256": "074bb6a74557851b8ef663554f23ad608e23d19a8d20bbc27e674d09e17ab02b",
+  "raw_sha256": "509e7acee83c38c788b4389c6182d26913dd754e013d80d91430c48d699c2ce1",
+  "payload_sha256": "f9d4a73c4edb9e7d5e0f2121183a87df5be296b43e73d510215ed7d00f34c75c",
+  "node": "v24.21.0",
+  "process_memory_usage_bytes": {
+    "rss": 385294336,
+    "heapTotal": 194985984,
+    "heapUsed": 103657568,
+    "external": 106553590,
+    "arrayBuffers": 69087733
+  },
+  "correctness": {
+    "exhaustive_checks": 26208,
+    "synthetic_checks": 707,
+    "exact_distances": true,
+    "self_exclusion": true
+  },
+  "scenario": {
+    "sixNeighbors": {
+      "A_median_ms": 106.55545000000166,
+      "B_median_ms": 27.143050000000585,
+      "A_range_ms": [
+        96.97230000000127,
+        227.54119999999966
+      ],
+      "B_range_ms": [
+        26.223500000000058,
+        32.30550000000039
+      ],
+      "paired_relative_reduction_median": 0.7490222839564074,
+      "pairs_improved": 8,
+      "pairs": 8
+    },
+    "nearest": {
+      "A_median_ms": 106.89289999999892,
+      "B_median_ms": 18.240649999999732,
+      "A_range_ms": [
+        94.28429999999935,
+        219.85030000000188
+      ],
+      "B_range_ms": [
+        17.098599999997532,
+        141.84730000000127
+      ],
+      "paired_relative_reduction_median": 0.818852297594717,
+      "pairs_improved": 7,
+      "pairs": 8
+    }
+  },
+  "decode": {
+    "base64_ms": {
+      "A_median_ms": 415.91280000000006,
+      "B_median_ms": 9.420600000001286,
+      "A_range_ms": [
+        332.5800999999992,
+        705.8343999999997
+      ],
+      "B_range_ms": [
+        8.15860000000248,
+        14.765399999996589
+      ],
+      "paired_relative_reduction_median": 0.9772907917796114,
+      "pairs_improved": 8,
+      "pairs": 8
+    },
+    "gzip_utf8_ms": {
+      "A_median_ms": 130.229949999999,
+      "B_median_ms": 125.0910500000009,
+      "A_range_ms": [
+        107.05270000000019,
+        263.3588000000018
+      ],
+      "B_range_ms": [
+        117.8878999999979,
+        236.01480000000083
+      ],
+      "paired_relative_reduction_median": -0.06104708143961324,
+      "pairs_improved": 3,
+      "pairs": 8
+    },
+    "json_parse_ms": {
+      "A_median_ms": 50.442699999997785,
+      "B_median_ms": 53.2699500000017,
+      "A_range_ms": [
+        49.151300000001356,
+        90.67640000000029
+      ],
+      "B_range_ms": [
+        49.334500000000844,
+        63.03310000000056
+      ],
+      "paired_relative_reduction_median": -0.014620815603587412,
+      "pairs_improved": 3,
+      "pairs": 8
+    },
+    "total_ms": {
+      "A_median_ms": 658.9207500000011,
+      "B_median_ms": 187.8195999999989,
+      "A_range_ms": [
+        580.9984000000004,
+        870.4468000000015
+      ],
+      "B_range_ms": [
+        176.1847000000016,
+        307.5510000000031
+      ],
+      "paired_relative_reduction_median": 0.7066836386324,
+      "pairs_improved": 8,
+      "pairs": 8
+    }
+  },
+  "integration_rule_passed": false,
+  "html_bytes": {
+    "baseline": 107941,
+    "meaning": "Source template, not transferred HTML. Deployed HTML sizes are recorded after integration."
+  },
+  "unknown": [
+    "Browser map paint",
+    "DOM rendering",
+    "Cold/warm HTTPS transfer comparison",
+    "Paired CI wall time",
+    "Full offline build time improvement",
+    "Native fromBase64 timing: absent in this Node runtime"
+  ]
+}

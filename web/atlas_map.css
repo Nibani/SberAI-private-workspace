@@ -1,0 +1,71 @@
+#territory-map .map-shape {
+  stroke: #fff;
+  stroke-width: .75;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+  transition: opacity .15s, stroke-width .15s;
+}
+
+#territory-map.focus-transitions .map-shape:not(.changed) {
+  opacity: .19;
+}
+
+/* Focus follows the territory contour, including after a new selection. */
+#territory-map .map-shape,
+#territory-map .map-shape:focus,
+#territory-map .map-shape:focus-visible {
+  outline: none;
+}
+
+/* Interactive outlines are painted in the last SVG layer. */
+#territory-map .map-shape:hover,
+#territory-map .map-shape.selected,
+#territory-map .map-shape:focus-visible {
+  stroke: #fff;
+  stroke-width: .75;
+}
+
+#territory-map .map-shape.changed {
+  stroke: #111;
+  stroke-width: 1.7;
+}
+
+#territory-map .map-outline-layer,
+#territory-map .map-outline-layer path {
+  fill: none;
+  pointer-events: none;
+}
+
+#territory-map .map-outline-layer path {
+  vector-effect: non-scaling-stroke;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+#territory-map .map-outline-halo {
+  stroke: #fff;
+  stroke-width: 5;
+}
+
+#territory-map .map-outline-stroke {
+  stroke: #12241e;
+  stroke-width: 2.4;
+}
+
+#territory-map .map-outline-hover .map-outline-halo {
+  stroke-width: 4;
+}
+
+#territory-map .map-outline-hover .map-outline-stroke {
+  stroke-width: 1.8;
+}
+
+#territory-map .map-outline-focus .map-outline-halo {
+  stroke-width: 6;
+}
+
+#territory-map .map-outline-focus .map-outline-stroke {
+  stroke: #123e73;
+  stroke-width: 3;
+  stroke-dasharray: 6 3;
+}

@@ -1,0 +1,55 @@
+{
+  "status": "APPLIED_LOCAL_WORKTREE",
+  "removed_files": [
+    "docs/images/cluster-profiles.svg",
+    "docs/images/dmon-plateau.png",
+    "docs/images/external-controls.png",
+    "docs/images/joint-tradeoff.png",
+    "docs/images/marketplace-shift.png",
+    "docs/images/model-comparison.svg",
+    "docs/images/peer-validation.svg",
+    "docs/images/round2-dmon-traces.png",
+    "docs/images/round2-dmon.png",
+    "docs/images/stability.svg",
+    "reports/external-national-2026-10-03/join-audit-2023.csv",
+    "reports/external-national-2026-10-03/join-audit-2024.csv"
+  ],
+  "scientific_pins_verified": 132,
+  "recovery_zip_sha256": "e53a679b7d79f4cdf08677022d4f35b74dd8ac0552dbb3c13211f104caf370a9",
+  "recovery_crc_and_all_18_entries_byte_equal_verified_by_lead": true,
+  "logical_storage": {
+    "status": "PASS_LOGICAL_STORAGE_ONLY",
+    "logical_files_checked": 2,
+    "files": {
+      "reports/external-national-2026-10-03/join-audit-2023.csv": {
+        "physical_storage_path": "reports/external-national-2026-10-03/join-audit-2023.csv.gz",
+        "gzip_sha256": "b8e70122f51c540d3906a2ca245d35938fc697ee7eb710a33998004fdfd15c07",
+        "gzip_bytes": 968440,
+        "decoded_sha256": "08ea9369c99b50bb08e89e3995f1b3ccd1601529ea031326d80bd33a27403deb",
+        "decoded_bytes": 17639702,
+        "historical_manifest_sha_matches": true,
+        "raw_restoration_required": false,
+        "independent_control_sha_present": true,
+        "independent_control_sha_matches": true
+      },
+      "reports/external-national-2026-10-03/join-audit-2024.csv": {
+        "physical_storage_path": "reports/external-national-2026-10-03/join-audit-2024.csv.gz",
+        "gzip_sha256": "257e69aef06d692e4410688feabf84fd684770c10fddf71a16ca1e336a7b4bf4",
+        "gzip_bytes": 789238,
+        "decoded_sha256": "3dc716d6b5f6402a91e7e2d81b8ab1deb335b9eb797c75baed1a7e59897e6bbc",
+        "decoded_bytes": 14105031,
+        "historical_manifest_sha_matches": true,
+        "raw_restoration_required": false,
+        "independent_control_sha_present": false,
+        "independent_control_sha_matches": null
+      }
+    },
+    "scope": "Mapped logical payload only; not a scientific rerun or acceptance of other historical manifest entries",
+    "authoritative_manifest_rewritten": false
+  },
+  "historical_manifest_unchanged": true,
+  "removed_original_bytes": 32781264,
+  "new_gzip_bytes": 1757678,
+  "publication_performed": false,
+  "clone_size_measured": false
+}

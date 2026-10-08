@@ -1,0 +1,103 @@
+{
+  "command": "python -m scripts.run_v12",
+  "config": {
+    "version": "1.2",
+    "seed": 1729,
+    "output": "reports/v1.2",
+    "inputs": {
+      "panel": "data/v12/panel.csv.gz",
+      "rosstat_cohort": "reports/external-national-2026-10-03/cohort-2023.csv",
+      "market_access": "reports/external-v4/municipality_bridge.csv",
+      "road_graph": "reports/graphs/road_2024_2016.npz",
+      "road_graph_ids": "reports/experiments/2026-09-23-v2/validation/frozen_prototypes.json",
+      "map": "reports/contest-v3/municipal_map.json"
+    },
+    "features": {
+      "development_months": 12,
+      "attributes": [
+        "health",
+        "marketplaces",
+        "horeca",
+        "food",
+        "transport",
+        "level"
+      ]
+    },
+    "network": {
+      "k": 15,
+      "k_sensitivity": [
+        5,
+        10,
+        15,
+        20,
+        30
+      ],
+      "window_months": 12,
+      "max_lag_months": 2,
+      "dtw_band_months": 2,
+      "geography_filter": {
+        "max_same_region_share": 0.5,
+        "min_within_region_assortativity": 0.05
+      },
+      "selection_rule": "Отбросить правила, которые в основном повторяют административную географию (доля рёбер внутри региона > 0,5 и средняя внутрирегиональная ассортативность < 0,05). Среди остальных выбрать победителя по Коупленду по трём критериям: средняя ассортативность по независимым показателям, средняя ассортативность после вычета региональных средних, совпадение рёбер 2023 и 2024 годов."
+    },
+    "k_selection": {
+      "candidates": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "draws": 30,
+      "selection_rule": "Максимум показателя устойчивости: среднее из средних ARI при бутстрепе месяцев и на подвыборках 80% территорий. ICVI противоречат друг другу в выборе K, а внешняя валидность монотонно растёт с K, поэтому решает устойчивость."
+    },
+    "methods": {
+      "k": 4,
+      "list": [
+        "kmeans",
+        "ward",
+        "gmm",
+        "spectral_graph",
+        "leiden_graph",
+        "kefrin",
+        "joint_0.1",
+        "joint_0.25",
+        "joint_0.5",
+        "joint_1.0"
+      ],
+      "stability_draws": 20,
+      "eligibility": {
+        "min_type_share": 0.03,
+        "min_month_bootstrap_ari_p10": 0.8
+      },
+      "selection_rule": "Среди допустимых методов (минимальная группа не меньше 3% МО, 10-й перцентиль ARI при бутстрепе месяцев не ниже 0,8) максимизировать сумму баллов Коупленда по шести ICVI на 2023 году и на 2024 году (валидация, участвующая в выборе модели); при равенстве выбирать более простую модель."
+    },
+    "tracking": {
+      "persistent_window_months": 6,
+      "survival_jaccard": 0.5
+    },
+    "practical": {
+      "analogues": 15,
+      "bootstrap_draws": 2000
+    }
+  },
+  "python": "3.10.20",
+  "platform": "Linux-6.18.44-fc-v77-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.14.1",
+    "scikit-learn": "1.5.2",
+    "pandas": "2.2.3",
+    "networkx": "3.4.2",
+    "igraph": "0.11.8",
+    "leidenalg": "0.10.2"
+  },
+  "draws": {
+    "k_selection": 30,
+    "methods": 20,
+    "bootstrap": 2000
+  },
+  "correction_provenance": "findings_provenance.json"
+}

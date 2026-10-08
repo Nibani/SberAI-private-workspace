@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "new_timing_run": false,
+  "checks": {
+    "decode_before": {
+      "recomputed_median_ms": 254.24575000000004,
+      "stored_corrected_median_ms": 254.24575000000004
+    },
+    "decode_after": {
+      "recomputed_median_ms": 8.589500000000044,
+      "stored_corrected_median_ms": 8.589500000000044
+    },
+    "decode_decompress_parse_before": {
+      "recomputed_median_ms": 399.01065000000017,
+      "stored_corrected_median_ms": 399.01065000000017
+    },
+    "decode_decompress_parse_after": {
+      "recomputed_median_ms": 134.81835000000024,
+      "stored_corrected_median_ms": 134.81835000000024
+    }
+  }
+}

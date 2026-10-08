@@ -1,0 +1,195 @@
+{
+  "command": "python -m scripts.check_added_value",
+  "bootstrap_draws": 20000,
+  "seed": 1729,
+  "folds": 73,
+  "all_fold_states_verified": true,
+  "spline_knot_quantiles": [
+    0.05,
+    0.35,
+    0.65,
+    0.95
+  ],
+  "models": [
+    "groups",
+    "level",
+    "level_spline",
+    "level_groups",
+    "spline_groups",
+    "level_shares",
+    "spline_shares",
+    "spline_shares_groups"
+  ],
+  "contrasts": {
+    "groups_over_spline": {
+      "candidate": "spline_groups",
+      "baseline": "level_spline",
+      "role": "основное: группы сверх нелинейного уровня",
+      "status": "primary, defined before the first full run"
+    },
+    "shares_over_spline": {
+      "candidate": "spline_shares",
+      "baseline": "level_spline",
+      "role": "непрерывные доли сверх нелинейного уровня",
+      "status": "secondary, defined before the first full run"
+    },
+    "groups_vs_shares": {
+      "candidate": "spline_groups",
+      "baseline": "spline_shares",
+      "role": "группы против непрерывных долей (оба со сплайном)",
+      "status": "secondary, defined before the first full run"
+    },
+    "groups_over_shares": {
+      "candidate": "spline_shares_groups",
+      "baseline": "spline_shares",
+      "role": "группы сверх сплайна и непрерывных долей",
+      "status": "added after the first full run"
+    },
+    "groups_over_level": {
+      "candidate": "level_groups",
+      "baseline": "level",
+      "role": "справочно: группы сверх линейного уровня",
+      "status": "reference, defined before the first full run"
+    },
+    "spline_over_level": {
+      "candidate": "level_spline",
+      "baseline": "level",
+      "role": "справочно: нелинейность уровня",
+      "status": "reference, defined before the first full run"
+    }
+  },
+  "bootstrap": {
+    "unit": "region, drawn with replacement, R draws per replicate",
+    "weights": "each municipality weight 1; statistic = municipality-weighted mean over drawn regions",
+    "random_numbers": "one set of draws per indicator, shared by all contrasts",
+    "main": {
+      "method": "symmetric region-cluster bootstrap-t",
+      "se": "sqrt(R/(R-1)*sum_r (S_r - m n_r)^2)/N, recomputed in every replicate",
+      "p_value": "min(1, (1+#{|t*|>=|t|})/(B+1)); se=0 gives t=0, p=1",
+      "min_p": 4.999750012499375e-05,
+      "intervals": "m +/- q*se, q = quantile of |t*| at 0.95 or 1-0.05/8; R^2 interval = -interval/Var(y)"
+    },
+    "sensitivity": {
+      "method": "percentile",
+      "p_value": "min(1, 2*min(1+#{T*<=0}, 1+#{T*>=0})/(B+1)), T* = delta MSE; zeros in both tails",
+      "min_p": 9.99950002499875e-05,
+      "intervals": "equal-tailed percentile of delta R^2 with Var(y) recomputed per replicate"
+    }
+  },
+  "multiplicity": {
+    "family": "Holm within each contrast over 8 indicators (p_holm_family; percentile: p_pct_holm_family)",
+    "all": "Holm over all 48 tests (p_holm_all; percentile: p_pct_holm_all), sensitivity check",
+    "simultaneous_intervals": "Bonferroni within the family, 95%/8"
+  },
+  "state_verification": {
+    "compared_numeric": [
+      "structure_center",
+      "scale",
+      "level_center",
+      "monthly_log_total_center",
+      "centers",
+      "graph_sigma",
+      "graph_median_strength",
+      "objective"
+    ],
+    "compared_exact": [
+      "naming",
+      "graph_edges",
+      "graph_components",
+      "fit_sweeps",
+      "train_n"
+    ],
+    "rtol": 1e-10,
+    "atol": 1e-12,
+    "not_stored_in_fold_json": [
+      "training attributes x",
+      "graph CSR (indptr, indices, data)",
+      "training labels"
+    ],
+    "serialization": "fold JSON written by json.dumps: floats use the shortest repr that round-trips float64 exactly; reading back gives the identical float64, so zero deviation means bitwise equality",
+    "max_abs_by_component": {
+      "structure_center": 0.0,
+      "scale": 4.440892098500626e-16,
+      "level_center": 0.0,
+      "monthly_log_total_center": 0.0,
+      "centers": 1.2212453270876722e-15,
+      "graph_sigma": 2.7755575615628914e-16,
+      "graph_median_strength": 7.105427357601002e-15,
+      "objective": 1.6653345369377348e-16
+    },
+    "max_rel_by_component": {
+      "structure_center": 0.0,
+      "scale": 1.3293357414812104e-15,
+      "level_center": 0.0,
+      "monthly_log_total_center": 0.0,
+      "centers": 2.077475446109469e-15,
+      "graph_sigma": 5.655315652853924e-16,
+      "graph_median_strength": 6.514893362462786e-16,
+      "objective": 3.446372645074345e-16
+    },
+    "max_abs_over_components": 7.105427357601002e-15,
+    "folds_all_numeric_bitwise": 53,
+    "exact_components_equal_all_folds": true,
+    "heldout_assignments_equal_all_folds": true,
+    "full_state_sha256_equal_folds": 0,
+    "saved_hash_explained_by_int_width_folds": 0,
+    "cause_of_full_hash_difference": "not established",
+    "localisation_from_windows_protocol": {
+      "windows_full_hash_equal_folds": 73,
+      "component_hash_match_counts_vs_linux": {
+        "sha256_structure_center": 73,
+        "sha256_scale": 72,
+        "sha256_monthly_center": 73,
+        "sha256_x": 0,
+        "sha256_graph_csr": 0,
+        "sha256_labels": 73,
+        "sha256_centers": 61
+      }
+    },
+    "environment": {
+      "python": "3.10.20",
+      "platform": "Linux-6.18.44-fc-v80-x86_64-with-glibc2.39",
+      "machine": "x86_64",
+      "packages": {
+        "numpy": "2.2.6",
+        "scipy": "1.14.1",
+        "pandas": "2.2.3",
+        "scikit-learn": "1.5.2",
+        "threadpoolctl": "3.7.0"
+      },
+      "blas": [
+        {
+          "internal_api": "openblas",
+          "version": "0.3.27.dev",
+          "architecture": "Cooperlake",
+          "num_threads": 1
+        },
+        {
+          "internal_api": "openmp",
+          "version": null,
+          "architecture": null,
+          "num_threads": 1
+        },
+        {
+          "internal_api": "openblas",
+          "version": "0.3.29",
+          "architecture": "SkylakeX",
+          "num_threads": 1
+        }
+      ]
+    }
+  },
+  "inputs_sha256": {
+    "data/v12/panel.csv.gz": "953ba39d152f0f4192ebbabc8edfa0684683c3a4a3d8c147f0978cf6f1798784",
+    "reports/external-national-2026-10-03/cohort-2023.csv": "dcfcf2ac0af503d696f9492bc8c1bc4e38977cc2bd1b6c12da66463f761d9c62",
+    "reports/external-v4/municipality_bridge.csv": "3898c2201a871cbcc1fca4b5c1f09a7be5ed68583b12338e8bf55cc91e9b5bc5",
+    "reports/v1.2/strict-region-validation/strict_assignments.csv": "f7a2b37d4c273ec2bbc7835a141836f066b8331705e2cb86fa071b214430351e",
+    "configs/v12.json": "68776f61ab2c6c24ae84b1de72d0945c49f1891572cf89634e58803f6b222151"
+  },
+  "scope": [
+    "Retrospective 2023 outcomes; 2025 outcomes are not opened.",
+    "All eight indicators inspected together; positive results are exploratory.",
+    "Sector shares cover only municipalities with published Rosstat counts for that sector; conclusions are limited to that observed composition.",
+    "Groups come from consumption data; they are tested, not defined, by the indicators."
+  ]
+}
