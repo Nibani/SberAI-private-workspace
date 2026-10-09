@@ -39,7 +39,7 @@
     const measurements=entities.map(e=>[median(e.totals.slice(0,12)),...(e.annual_ratios || D.categories.map((_,j)=>median(e.ratios.slice(0,12).map(v=>v[j]))))]);
     const ranges=featureNames.map((_,j)=>{const values=measurements.map(v=>v[j]).filter(Number.isFinite);return {min:Math.min(...values),max:Math.max(...values)};});
     const histograms=ranges.map((r,j)=>{const bins=Array(48).fill(0);for(const values of measurements){if(Number.isFinite(values[j]))bins[Math.min(47,Math.floor(48*(values[j]-r.min)/(r.max-r.min||1)))]++;}return bins;});
-    let index=api.index(), step=0, current=[], target=[], raf=0, start=0, from=[], visible=true;
+    let index=api.index(), step=0, current=[], target=[], raf=0, visible=true, folio=null;
     let userReduced=false;try{userReduced=localStorage.getItem('sber-atlas-less-motion')==='1';}catch{}
     const media=matchMedia('(prefers-reduced-motion: reduce)'), mobile=matchMedia('(max-width: 760px)');
     const reduced=()=>userReduced||media.matches||mobile.matches;
@@ -136,10 +136,37 @@
       }
       host.append(labels);
     }
-    function mobileFrames(){if(!mobile.matches && !matchMedia('print').matches)return;chapters.forEach((article,s)=>{const host=article.querySelector('.story-mobile-frame');host.dataset.frameStep=String(s);host.replaceChildren();const c=node('canvas');c.setAttribute('aria-hidden','true');host.append(c);if(s!==1)draw(c,s,positions(s));mobileLabels(host,s);host.append(node('p',notes[s],'story-chart-note'));const details=node('details'),summary=node('summary','Числа и подписи'),body=node('div');details.append(summary,body);host.append(details);numeric(s,body);});}
+    function mobileFrames(){if(!mobile.matches && !matchMedia('print').matches)return;cancelMobile();chapters.forEach((article,s)=>{const host=article.querySelector('.story-mobile-frame');host.dataset.frameStep=String(s);host.replaceChildren();const c=node('canvas');c.setAttribute('aria-hidden','true');host.append(c);if(s!==1)draw(c,s,positions(s));mobileLabels(host,s);host.append(node('p',notes[s],'story-chart-note'));const details=node('details'),summary=node('summary','Числа и подписи'),body=node('div');details.append(summary,body);host.append(details);numeric(s,body);});}
     function sync(){root.dataset.storyActive=String(step);$('story-view-label').textContent=titles[step];$('story-chart-note').textContent=notes[step];$('story-entity-name').textContent=entities[index].name;$('story-entity-region').textContent=entities[index].region;$('story-progress').textContent=`${String(step+1).padStart(2,'0')} / 06`;$('story-prev').disabled=step===0;$('story-next').disabled=step===5;root.querySelectorAll('[data-story-target]').forEach(a=>{a.setAttribute('aria-current',+a.dataset.storyTarget===step?'step':'false');});chapters.forEach((a,s)=>a.classList.toggle('is-current',s===step));numeric(step,$('story-numeric'));$('story-motion').setAttribute('aria-pressed',String(userReduced));$('story-motion').textContent=userReduced?'Движение выключено':'Меньше движения';}
-    function settle(){cancelAnimationFrame(raf);raf=0;current=target.map(p=>({...p}));draw(canvas,step,current);root.dataset.storySettled='true';}
-    function activate(s,animate=true){step=clamp(s,0,5);sync();target=positions(step);cancelAnimationFrame(raf);raf=0;if(!current.length||reduced()||!visible||!animate){settle();return;}from=current.map(p=>({...p}));start=performance.now();function frame(time){const u=clamp((time-start)/520,0,1),t=1-Math.pow(1-u,3);current=target.map((p,i)=>({...p,x:from[i].x+(p.x-from[i].x)*t,y:from[i].y+(p.y-from[i].y)*t,r:from[i].r+(p.r-from[i].r)*t,opacity:from[i].opacity+(p.opacity-from[i].opacity)*t}));draw(canvas,step,current);if(u<1)raf=requestAnimationFrame(frame);else{raf=0;root.dataset.storySettled='true';}}root.dataset.storySettled='false';raf=requestAnimationFrame(frame);}
+    function copySheet(){const sheet=document.createElement('canvas');sheet.width=canvas.width;sheet.height=canvas.height;sheet.getContext('2d').drawImage(canvas,0,0);return sheet;}
+    function paintFolio(turn,t){
+      const ctx=scaleCanvas(canvas);if(!ctx)return;
+      ctx.clearRect(0,0,1000,600);ctx.drawImage(turn.after,0,0,1000,600);
+      const backwards=turn.backwards,edge=backwards?1000*t:1000*(1-t),lift=Math.sin(Math.PI*t),skew=24*lift;
+      const top=edge-skew,bottom=edge+skew,side=backwards?1000:0,sign=backwards?-1:1,curl=54*lift;
+      // A previous physical sheet is peeled away. Neither plot's entities move.
+      ctx.save();ctx.beginPath();ctx.moveTo(side,0);ctx.lineTo(top,0);ctx.lineTo(bottom,600);ctx.lineTo(side,600);ctx.closePath();ctx.clip();ctx.drawImage(turn.before,0,0,1000,600);ctx.restore();
+      if(curl>0.1){
+        const shadow=ctx.createLinearGradient(edge,0,edge+sign*(curl+28),0);shadow.addColorStop(0,'rgba(30,56,47,.18)');shadow.addColorStop(1,'rgba(30,56,47,0)');ctx.fillStyle=shadow;
+        ctx.beginPath();ctx.moveTo(top,0);ctx.lineTo(top+sign*(curl+28),0);ctx.lineTo(bottom+sign*(curl+28),600);ctx.lineTo(bottom,600);ctx.closePath();ctx.fill();
+        const light=ctx.createLinearGradient(edge,0,edge+sign*curl,0);light.addColorStop(0,'#d8d7ca');light.addColorStop(.25,'#fffef6');light.addColorStop(.75,paper);light.addColorStop(1,'#e6e3d6');ctx.fillStyle=light;
+        ctx.beginPath();ctx.moveTo(top,0);ctx.lineTo(top+sign*curl*.72,12*lift);ctx.lineTo(bottom+sign*curl,600-12*lift);ctx.lineTo(bottom,600);ctx.closePath();ctx.fill();
+        ctx.strokeStyle='rgba(96,114,107,.2)';ctx.lineWidth=.8;ctx.beginPath();ctx.moveTo(top,0);ctx.lineTo(bottom,600);ctx.stroke();
+      }
+    }
+    function settle(){cancelAnimationFrame(raf);raf=0;folio=null;current=target.map(p=>({...p}));draw(canvas,step,current);root.dataset.storySettled='true';}
+    function activate(s,animate=true){
+      const began=performance.now(),previous=step,next=clamp(s,0,5),hasSheet=current.length>0;
+      cancelAnimationFrame(raf);raf=0;
+      const before=hasSheet&&next!==previous&&!reduced()&&visible&&animate?copySheet():null;
+      step=next;sync();target=positions(step);current=target.map(p=>({...p}));
+      if(!before){settle();return;}
+      // Only the two complete drawings are composited; numbers and coordinates are final immediately.
+      draw(canvas,step,current);const turn={before,after:copySheet(),backwards:next<previous,start:began};folio=turn;
+      paintFolio(turn,0);root.dataset.storySettled='false';
+      function frame(time){if(folio!==turn)return;const u=clamp((time-turn.start)/520,0,1),t=u*u*(3-2*u);paintFolio(turn,t);if(u<1)raf=requestAnimationFrame(frame);else{raf=0;folio=null;const ctx=scaleCanvas(canvas);if(ctx){ctx.clearRect(0,0,1000,600);ctx.drawImage(turn.after,0,0,1000,600);}root.dataset.storySettled='true';}}
+      raf=requestAnimationFrame(frame);
+    }
     function go(s,animate=true){activate(s,animate);chapters[step].scrollIntoView({block:'center',behavior:'auto'});}
     root.querySelectorAll('[data-story-target]').forEach(a=>a.addEventListener('click',event=>activate(+a.dataset.storyTarget,event.detail!==0)));
     $('story-prev').addEventListener('click',event=>go(step-1,event.detail!==0));$('story-next').addEventListener('click',event=>go(step+1,event.detail!==0));
@@ -149,15 +176,16 @@
     window.addEventListener('atlas-selection',e=>{index=e.detail.index;graph();activate(step,false);mobileFrames();hero();});
     const chapterObserver=new IntersectionObserver(entries=>{if(mobile.matches)return;const candidates=entries.filter(e=>e.isIntersecting);if(candidates.length){const distance=entry=>Math.abs(entry.boundingClientRect.top+entry.boundingClientRect.height/2-innerHeight*.4);const best=candidates.sort((a,b)=>distance(a)-distance(b))[0];const s=+best.target.dataset.storyStep;if(s!==step)activate(s);}}, {rootMargin:'-25% 0px -35% 0px',threshold:0});chapters.forEach(c=>chapterObserver.observe(c));
     const seenMobile=new WeakSet(),mobileArrivals=new Set();
-    const mobileObserver=new IntersectionObserver(entries=>{if(!mobile.matches)return;for(const entry of entries){if(!entry.isIntersecting||seenMobile.has(entry.target))continue;seenMobile.add(entry.target);if(userReduced||media.matches)continue;const c=entry.target.querySelector('.story-mobile-frame canvas');if(c?.animate){const motion=c.animate([{transform:'translateY(6px)',opacity:.94},{transform:'translateY(0)',opacity:1}],{duration:160,easing:'cubic-bezier(.23,1,.32,1)'});mobileArrivals.add(motion);motion.finished.then(()=>mobileArrivals.delete(motion)).catch(()=>mobileArrivals.delete(motion));}}},{threshold:.15});chapters.forEach(c=>mobileObserver.observe(c));
-    const cancelMobile=()=>{for(const motion of mobileArrivals)motion.cancel();mobileArrivals.clear();};
+    const mobileObserver=new IntersectionObserver(entries=>{if(!mobile.matches)return;for(const entry of entries){if(!entry.isIntersecting){for(const arrival of mobileArrivals)if(arrival.article===entry.target){arrival.motion.cancel();arrival.cover.remove();mobileArrivals.delete(arrival);}continue;}if(seenMobile.has(entry.target))continue;seenMobile.add(entry.target);if(userReduced||media.matches||document.body.dataset.interaction==='keyboard')continue;const c=entry.target.querySelector('.story-mobile-frame canvas');if(c?.animate&&c.getBoundingClientRect().height){const cover=node('div',undefined,'story-mobile-leaf');cover.setAttribute('aria-hidden','true');cover.style.height=`${c.getBoundingClientRect().height}px`;c.parentElement.append(cover);const motion=cover.animate([{transform:'perspective(700px) rotateY(0deg)'},{transform:'perspective(700px) rotateY(-42deg)',offset:.6},{transform:'perspective(700px) rotateY(-90deg)'}],{duration:260,easing:'cubic-bezier(.23,1,.32,1)',fill:'forwards'});const arrival={motion,cover,article:entry.target};mobileArrivals.add(arrival);const finish=()=>{cover.remove();mobileArrivals.delete(arrival);};motion.finished.then(finish).catch(finish);}}},{threshold:.15});chapters.forEach(c=>mobileObserver.observe(c));
+    function cancelMobile(){for(const arrival of mobileArrivals){arrival.motion.cancel();arrival.cover.remove();}mobileArrivals.clear();}
     media.addEventListener('change',cancelMobile);$('story-motion').addEventListener('click',cancelMobile);
+    document.addEventListener('keydown',()=>{cancelMobile();if(raf)settle();},true);
     new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(!visible&&raf)settle();},{threshold:0}).observe(root);
-    document.addEventListener('visibilitychange',()=>{if(document.hidden&&raf)settle();});
-    new ResizeObserver(()=>{draw(canvas,step,current);mobileFrames();}).observe(canvas);
-    window.addEventListener('beforeprint',()=>{mobileFrames();settle();});
+    document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelMobile();if(raf)settle();}});
+    new ResizeObserver(()=>{if(raf)settle();else draw(canvas,step,current);mobileFrames();}).observe(canvas);
+    window.addEventListener('beforeprint',()=>{cancelMobile();mobileFrames();settle();});
     const hash=()=>{const s=chapters.findIndex(c=>`#${c.id}`===location.hash);if(s>=0)activate(s,false);};window.addEventListener('hashchange',hash);
-    canvas.addEventListener('click',event=>{if(step!==0&&step!==4&&step!==2&&step!==3)return;const rect=canvas.getBoundingClientRect(),x=(event.clientX-rect.left)*1000/rect.width,y=(event.clientY-rect.top)*600/rect.height;let nearest=-1,distance=20;current.forEach((p,i)=>{if(p.opacity<.1)return;const d=Math.hypot(x-p.x,y-p.y);if(d<distance){distance=d;nearest=i;}});if(nearest>=0)api.select(nearest);});
+    canvas.addEventListener('click',event=>{if(raf||step!==0&&step!==4&&step!==2&&step!==3)return;const rect=canvas.getBoundingClientRect(),x=(event.clientX-rect.left)*1000/rect.width,y=(event.clientY-rect.top)*600/rect.height;let nearest=-1,distance=20;current.forEach((p,i)=>{if(p.opacity<.1)return;const d=Math.hypot(x-p.x,y-p.y);if(d<distance){distance=d;nearest=i;}});if(nearest>=0)api.select(nearest);});
     if(globalLayout){titles[2]='Полная сеть · признаки 2023';notes[2]=`${fmt(entities.length)} территорий, ${fmt(edges.length)} связей. Выделены ${graphList.length} аналогов. Раскладка условная; связи заданы в шести измерениях.`;const article=chapters[2];article.querySelector('p').textContent='Тот же муниципалитет в полной сети 2 016 территорий. Выделены его 15 ближайших аналогов по шести признакам расходов 2023 года.';article.querySelector('.story-note').textContent='PCA2 проецирует признаки на плоскость только для рисунка. Рёбра определены в шести измерениях; это не потоки.';}
     activate(0,false);hash();mobileFrames();hero();
     if($('hero-canvas'))new ResizeObserver(hero).observe($('hero-canvas'));

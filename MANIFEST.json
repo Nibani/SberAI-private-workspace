@@ -122,7 +122,7 @@
     "PROVENANCE.json": {
       "bytes": 116375,
       "scientific_pin": false,
-      "sha256": "bd9dcd9dc382f05dd5c597df8cfd94547d17a2aea74136ac397258b4302f37b5",
+      "sha256": "28ac562420471c7ab672480d789bc54d811830ed826ae1cc79438e731c7ebdb6",
       "source_kind": "CURRENT_LIVE"
     },
     "README.md": {
@@ -606,9 +606,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "docs/index.html": {
-      "bytes": 551796,
+      "bytes": 555469,
       "scientific_pin": false,
-      "sha256": "8e0b3902626239d63d4dc33c6bad11370b949c0662116ad23cb70334ab0fe097",
+      "sha256": "299faa3840f56d6c3c45a287e41c3ff2b2a6bbd9e1233ebc86c2c56158858776",
       "source_kind": "CURRENT_LIVE"
     },
     "index.html": {
@@ -2604,15 +2604,15 @@
       "source_kind": "CURRENT_LIVE"
     },
     "web/atlas_story.js": {
-      "bytes": 25676,
+      "bytes": 28552,
       "scientific_pin": false,
-      "sha256": "e82ee32f61d60d806c5ed72773d15bcde8db2accfb041f1a43fb6f865899d1fe",
+      "sha256": "d3ac95b0055edfded44658dd79620c90168e4079f6f9b43294cd138c979025ec",
       "source_kind": "CURRENT_LIVE"
     },
     "web/atlas_theme.css": {
-      "bytes": 49367,
+      "bytes": 50174,
       "scientific_pin": false,
-      "sha256": "cacd60f0437b13723c9c3bc85e017bbf139397c72f28219ac3c0335f5e771880",
+      "sha256": "64eaefb30473a305f1985e160adcb241373e967591a2345cf73f0f80170b6489",
       "source_kind": "CURRENT_LIVE"
     },
     "web/cluster_stability.html": {
@@ -2640,9 +2640,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "web/research_template.html": {
-      "bytes": 127460,
+      "bytes": 127450,
       "scientific_pin": false,
-      "sha256": "f51253455117694d5a5b7723fb39e466b19a919df0718280028252d226025c41",
+      "sha256": "afc6a81df2a09a70409a6519176af16969cf641791e5baf1a692ee7b162ba214",
       "source_kind": "CURRENT_LIVE"
     },
     "web/v12_sections.html": {
@@ -2672,5 +2672,5 @@
   "scientific_pin_count": 132,
   "self_hash": "Excluded to avoid circular hashing; run_all receipt records validation separately",
   "state": "CURRENT_COMPACT_V4",
-  "total_bytes": 104599173
+  "total_bytes": 104606519
 }

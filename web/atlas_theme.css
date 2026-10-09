@@ -673,3 +673,10 @@ input,select,button { border-radius:4px; }
 .story-mobile-time-axis,.story-mobile-time-ticks { font-size:12px; margin-bottom:8px; }
 .story-mobile-time-ticks { display:flex; justify-content:space-between; }
 @media print { .story-mobile-profile-row { break-inside:avoid; } }
+/* Cartographic folio: the identity register stays fixed while drawing sheets turn. */
+.story-selection { position:relative; padding-left:18px; }
+.story-selection::before { content:""; position:absolute; left:0; top:23px; width:7px; height:7px; border:2px solid #b28a42; border-radius:50%; background:var(--ink); box-shadow:0 0 0 3px #faf8f1; }
+.story-mobile-frame { position:relative; }
+.story-mobile-leaf { position:absolute; z-index:1; top:0; left:0; width:100%; pointer-events:none; transform-origin:left center; background:linear-gradient(90deg,#faf8f1 0%,#faf8f1 88%,#fffef6 95%,#e3dfd1 100%); box-shadow:8px 0 14px rgb(30 56 47 / 16%); backface-visibility:hidden; }
+@media (prefers-reduced-motion:reduce) { .story-mobile-leaf { display:none; } }
+@media print { .story-mobile-leaf { display:none; } }
