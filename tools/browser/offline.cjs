@@ -32,9 +32,14 @@ const save = () => fs.writeFileSync(path.join(output,'result.json'),JSON.stringi
       }
       const ready_ms=Date.now()-start;
       assert.equal(await page.locator('#territory-map path.map-shape').count(),2016);
-      await page.locator('#search').fill('Москва');
-      assert((await page.locator('#quick option').count())>0,'Offline search works');
+      const selectedIndex=250;
+      const searchLabel=await page.locator('#territories option').nth(selectedIndex).getAttribute('value');
+      assert(searchLabel,'Offline search exposes a complete territory label');
+      await page.locator('#search').fill(searchLabel);
+      await page.locator('#search').press('Enter');
+      assert.equal(await page.locator('#quick').inputValue(),String(selectedIndex),'Offline search selects the requested territory');
       await page.locator('#view-analogs').click();
+      assert.equal(await page.locator('#view-analogs').getAttribute('aria-selected'),'true');
       assert.equal(await page.locator('#neighbors tr').count(),15);
       await page.locator('#exclude').selectOption('0');
       assert.equal(await page.locator('#neighbors tr').count(),15);

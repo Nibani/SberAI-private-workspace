@@ -6,7 +6,7 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-VERIFIERS = {"temporal": ("scripts.verify_temporal_changes", ()),
+VERIFIERS = {"temporal": ("scripts.verify_temporal_delivery", ()),
              "conditional": ("scripts.verify_conditional_profiles", ("--check",))}
 
 

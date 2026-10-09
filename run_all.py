@@ -38,7 +38,7 @@ RUNTIME_EXCLUDED = frozenset((".git", ".swarm", ".serena", ".local", "artifacts"
 SCIENCE_TESTS = ("test_v12_core", "test_v12_edges", "test_network_conventions",
                  "test_artifact_integrity", "test_v12_findings", "test_v12_results",
                  "test_added_value", "test_method_ties", "test_conditional_profiles",
-                 "test_temporal_changes", "test_logical_storage", "test_verify_delivery",
+                 "test_temporal_changes", "test_temporal_delivery", "test_logical_storage", "test_verify_delivery",
                  "test_run_all.JuryRunnerTests") + (("test_run_all.WindowsRunnerTests",) if os.name == "nt" else ())
 ATLAS_TESTS = ("test_atlas_bundle", "test_v12_atlas", "test_render_saved_atlas",
                "test_practical_cases", "test_peer_atlas_coverage",

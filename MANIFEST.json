@@ -75,7 +75,7 @@
     "reports/v1.2/strict-region-validation/fold_071.json",
     "reports/v1.2/strict-region-validation/fold_072.json"
   ],
-  "file_count": 427,
+  "file_count": 429,
   "files": {
     ".dockerignore": {
       "bytes": 111,
@@ -122,7 +122,7 @@
     "PROVENANCE.json": {
       "bytes": 116375,
       "scientific_pin": false,
-      "sha256": "8d3697b53ecd9e5a3a0aabfecbee64777934fd14601424306382f09dd940ff86",
+      "sha256": "65f9305cb7d0ea1ef650ea8b506e4defb5ed199c715103d899d5d154559aa00d",
       "source_kind": "CURRENT_LIVE"
     },
     "README.md": {
@@ -504,9 +504,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "docs/REPRODUCIBILITY.md": {
-      "bytes": 7605,
+      "bytes": 8065,
       "scientific_pin": false,
-      "sha256": "62b72cc390f7000562cee144f85caf9d345608a550af6105619d28b1df49c223",
+      "sha256": "77a0f9ac4124d90b6435c82b1845c2ddbe3228aad29eea839eb522c28e86fbcf",
       "source_kind": "CURRENT_LIVE"
     },
     "docs/RESOURCE_LIMITS.md": {
@@ -1536,9 +1536,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "run_all.py": {
-      "bytes": 56554,
+      "bytes": 56580,
       "scientific_pin": false,
-      "sha256": "e330c3be278fb4882cd114568ad4bfd99a6fd2bec8229dfa3700e6851a062957",
+      "sha256": "89a830076e903aaa8818768e24d524ed7d4796342b4f2a4f1131aee8c82dcd92",
       "source_kind": "CURRENT_LIVE"
     },
     "sbercluster/__init__.py": {
@@ -2280,9 +2280,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "scripts/verify_current_results.py": {
-      "bytes": 3129,
+      "bytes": 3130,
       "scientific_pin": false,
-      "sha256": "ca2fe76ed4738a1d296ba78cf5fcce2e13a8e84411886a772dbbbb5656face56",
+      "sha256": "55960d17731f8f41d5af5156443b367c78b3492ace25bced69c958d6cbfa827d",
       "source_kind": "CURRENT_LIVE"
     },
     "scripts/verify_delivery.py": {
@@ -2355,6 +2355,12 @@
       "bytes": 4047,
       "scientific_pin": false,
       "sha256": "19be85532e9cf1b80dc435b2f35afd09bc77670eaeca188139159895188e1ab0",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "scripts/verify_temporal_delivery.py": {
+      "bytes": 7368,
+      "scientific_pin": false,
+      "sha256": "1f076474b164c1616565de93b6b0c4b495d9d33b05dcc98307e78abe1d5ad6c7",
       "source_kind": "CURRENT_LIVE"
     },
     "tests/browser/final_atlas_checks.cjs": {
@@ -2507,6 +2513,12 @@
       "sha256": "7eca4d23bf2eee5cea100e4412b5cd516582b3c903dfb735595ad6f5f7c13ff8",
       "source_kind": "CURRENT_LIVE"
     },
+    "tests/test_temporal_delivery.py": {
+      "bytes": 2892,
+      "scientific_pin": false,
+      "sha256": "fd7a42bf44f0e4fffe9372120266c80c117ae5e91d3e5a63ebbfc1972136cbbd",
+      "source_kind": "CURRENT_LIVE"
+    },
     "tests/test_v12_atlas.py": {
       "bytes": 16042,
       "scientific_pin": false,
@@ -2550,9 +2562,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "tools/browser/offline.cjs": {
-      "bytes": 3053,
+      "bytes": 3462,
       "scientific_pin": false,
-      "sha256": "8daba0786f54810a4a27561806befce2f55a2166e3e4d2a6a88ace99cb588f20",
+      "sha256": "9271ee914d0d6fdcff2c2e2b31573fa5b2b5fc3ea1331563be0d351f4a302048",
       "source_kind": "CURRENT_LIVE"
     },
     "tools/browser/package-lock.json": {
@@ -2660,5 +2672,5 @@
   "scientific_pin_count": 132,
   "self_hash": "Excluded to avoid circular hashing; run_all receipt records validation separately",
   "state": "CURRENT_COMPACT_V4",
-  "total_bytes": 104583923
+  "total_bytes": 104595079
 }
