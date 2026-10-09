@@ -59,29 +59,14 @@ section[aria-labelledby], h2[id], h3[id] { scroll-margin-top: 96px; }
 .section-head > div { min-width: 0; }
 .section-head p { max-width: 98ch; margin: 0; }
 .tag { display: inline-block; flex-shrink: 0; padding: 6px 11px; color: var(--green); background: #eaf4db; border: 1px solid #cadfae; border-radius: 6px; font-size: 14px; line-height: 1.5; }
-.atlas-workspace { padding: 24px; border-radius: 22px; background: #fff; border: 1px solid #b7cfbd; border-top: 3px solid var(--green2); box-shadow: 0 3px 10px rgb(7 60 43 / 4%), 0 18px 48px rgb(7 60 43 / 8%); }
-.workspace-heading { display: flex; align-items: start; justify-content: space-between; gap: 24px; margin-bottom: 20px; }
-.workspace-heading .section-head { margin: 0; }
-.workspace-heading .status { max-width: 46ch; padding-top: 6px; font-size: 13px; }
-.workspace-search { padding-bottom: 22px; border-bottom: 1px solid var(--line); margin-bottom: 24px; }
-.workspace-search .section-head { margin-bottom: 18px; }
-.workspace-search h2 { font-size: 24px; }
-.workspace-search .section-head p { font-size: 16px; }
-.control-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 16px; }
-.workspace-map .section-head { margin-bottom: 18px; }
-.workspace-map .section-head h2 { font-size: 30px; }
-.workspace-map .section-head p { font-size: 16px; }
-.map-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 340px); gap: 20px; align-items: start; margin-top: 24px; }
 .map-frame { position: relative; overflow: hidden; border: 1px solid #c4d9cb; border-radius: 16px; background: radial-gradient(ellipse at 40% 35%, #fff, #eaf4ec); box-shadow: inset 0 1px 4px rgb(7 60 43 / 4%), 0 6px 18px rgb(7 60 43 / 5%); }
 .map-svg { display: block; width: 100%; height: auto; aspect-ratio: 1000 / 420; user-select: none; touch-action: pan-y pinch-zoom; }
 .map-svg.is-zoomed { touch-action: none; }
 .map-tools { position: absolute; z-index: 2; top: 12px; right: 12px; display: flex; gap: 4px; padding: 4px; border: 1px solid #b4cfbc; border-radius: 10px; background: #fff; box-shadow: 0 2px 4px rgb(7 60 43 / 8%), 0 8px 16px rgb(7 60 43 / 9%); }
 .map-tools button { width: 44px; height: 44px; padding: 0; border: 0; border-radius: 6px; background: var(--soft); color: var(--green); font-size: 18px; font-weight: 650; cursor: pointer; }
-.map-tools button:last-child { font-size: 14px; }@media (hover: hover) and (pointer: fine) { 
+.map-tools button:last-child { font-size: 14px; }@media (hover: hover) and (pointer: fine) {
 .map-tools button:hover { background: #d8edc0; } }
 .map-tooltip { position: absolute; z-index: 3; max-width: 280px; padding: 10px 12px; background: var(--green); color: #fff; border-radius: 10px; font-size: 14px; line-height: 1.5; pointer-events: none; user-select: none; box-shadow: var(--shadow); }
-.map-side { display: flex; flex-direction: column; gap: 16px; padding: 20px; background: #eef6ea; border: 1px solid #c8ddc2; border-radius: 16px; }
-.map-side .identity { order: 0; margin: 0; padding: 0 0 14px; border-bottom: 1px solid #bad2bb; font-weight: 600; }
 .map-side #map-selection { order: 1; padding: 0; border: 0; background: none; }
 .map-side .panel { order: 2; padding: 0; border: 0; background: none; }
 .map-side .panel h3 { font-size: 22px; }
@@ -100,7 +85,7 @@ input, select, button { font: inherit; }
 input, select { width: 100%; min-width: 0; min-height: 48px; padding: 10px 12px; color: var(--ink); background: #fff; border: 1px solid var(--control-line); border-radius: 10px; font-size: 16px; }
 button { min-height: 44px; padding: 10px 16px; border: 1px solid var(--control-line); border-radius: 10px; background: var(--soft); color: var(--green); font-weight: 600; cursor: pointer; }
 button:disabled { color: var(--muted); cursor: default; }
-input::placeholder { color: #385449; opacity: 1; }@media (hover: hover) and (pointer: fine) { 
+input::placeholder { color: #385449; opacity: 1; }@media (hover: hover) and (pointer: fine) {
 input:hover, select:hover { border-color: var(--green); } }
 select { cursor: pointer; }
 input:disabled, select:disabled { color: var(--muted); background: #edf2ed; opacity: 1; }
@@ -109,7 +94,6 @@ input[type="checkbox"] { width: 20px; height: 20px; min-height: 0; padding: 0; m
 input[type="range"] { padding: 0; border: 0; accent-color: var(--green); background: none; cursor: pointer; }
 .inline-controls { display: flex; flex-wrap: wrap; gap: 14px; align-items: end; padding: 18px; margin-bottom: 16px; background: var(--paper); border-radius: 12px; border: 1px solid var(--line); }
 .inline-controls > div { flex: 1 1 200px; min-width: 0; }
-.inline-controls > .main-model-control { flex-basis: 280px; }
 .check { display: flex; align-items: center; gap: 9px; margin: 0; padding: 9px 0; min-height: 44px; }
 .control-help { margin: 8px 0; color: var(--muted); font-size: 14px; }
 .neighbor-controls { display: flex; gap: 20px; align-items: end; flex-wrap: wrap; margin-bottom: 16px; }
@@ -169,7 +153,7 @@ table { border-collapse: collapse; width: 100%; font-size: 16px; line-height: 1.
 th, td { padding: 13px 15px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
 th { color: var(--green); background: #e8f1e3; font-size: 16px; font-weight: 600; }
 tr:last-child td { border-bottom: 0; }
-tbody tr:nth-child(even) { background: #f7faf5; }@media (hover: hover) and (pointer: fine) { 
+tbody tr:nth-child(even) { background: #f7faf5; }@media (hover: hover) and (pointer: fine) {
 tbody tr:hover { background: #eaf3e2; } }
 td.num { white-space: nowrap; }
 .table-link { display: inline; min-height: 32px; padding: 0; background: none; border: 0; color: var(--green); font-weight: 600; text-align: left; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
@@ -266,7 +250,7 @@ details > summary { color: var(--green); font-weight: 600; cursor: pointer; }
 .v12-svg .v12-bar-base { fill: #a9bdb1; }
 .v12-svg .v12-hollow { fill: #fff; stroke: var(--muted); stroke-width: 2; }
 .v12-svg .v12-hollow-type { fill: #fff; stroke-width: 2.5; }
-.v12-svg .v12-filled { fill: var(--muted); }@media (hover: hover) and (pointer: fine) { 
+.v12-svg .v12-filled { fill: var(--muted); }@media (hover: hover) and (pointer: fine) {
 .v12-svg path:hover, .v12-svg g:hover > rect { filter: brightness(.92); } }
 .v12-caption { margin: 22px 0 0; color: var(--muted); font-size: 14px; line-height: 1.55; max-width: 120ch; }
 .v12-caption + .table-scroll, .v12-caption + .table-wrap { margin-top: 10px; }
@@ -315,33 +299,37 @@ h3 { font-size: 21px; }
 section[aria-labelledby], h2[id], h3[id], details[id] { scroll-margin-top: 24px; }
 .skip-link { position: absolute; z-index: 20; top: 12px; left: 40px; padding: 12px 18px; background: #fff; border: 2px solid var(--green); transform: translateY(-160%); }
 .skip-link:focus { transform: none; }
-.hero { padding: 28px 0 24px; background: linear-gradient(110deg, #eef8ed, #f7faf3); border-top: 4px solid var(--green2); border-bottom: 1px solid var(--line); }
-.hero-layout { display: grid; grid-template-columns: minmax(0,1fr) minmax(360px,460px); gap: 36px; align-items: start; }
-.hero-copy { min-width: 0; }
+.hero { padding: 20px 0 18px; background: radial-gradient(ellipse at 15% 0%,#e6f2d8,transparent 55%),radial-gradient(ellipse at 88% 30%,#f4e5ed,transparent 48%),linear-gradient(120deg,#f9f3e5,#eef4ec); border-top: 4px solid var(--green2); border-bottom: 1px solid var(--line); }
+.hero-layout { display: grid; grid-template-columns: minmax(0,1fr); gap: 12px; }
+.hero-copy { min-width: 0; display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; column-gap: 32px; animation: hero-arrival 520ms var(--motion-out) both; }
+@keyframes hero-arrival { from { transform: translateY(16px); } to { transform: translateY(0); } }
+.hero-copy .eyebrow,.hero-copy h1 { grid-column: 1 / -1; }
+.hero h1 { color: #704965; }
 .eyebrow { color: var(--muted); font-size: 13px; font-weight: 600; letter-spacing: .04em; }
-.hero h1 { margin: 10px 0 12px; font-size: clamp(36px,3.1vw,44px); line-height: 1.15; letter-spacing: -.02em; color: var(--green); }
-.hero-copy > p { max-width: 62ch; margin: 0; font-size: 17px; }
+.hero h1 { margin: 6px 0 8px; font-size: clamp(36px,3.4vw,48px); line-height: 1.15; letter-spacing: -.02em; color: var(--green); }
+.hero-copy > p { max-width: 86ch; margin: 0; font-size: 16px; font-weight: 500; }
 .hero-links { display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center; }
 .hero-links a { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; text-decoration: none; font-weight: 600; padding: 8px 0; }
 .hero-links a:first-child { padding: 8px 14px; background: var(--green); border: 1px solid var(--green); border-radius: 9px; color: #fff; }
-.hero-proof { padding: 18px 20px; border: 1px solid #9abd9f; border-radius: 14px; background: #fff; box-shadow: 0 2px 5px rgb(7 60 43 / 4%), 0 10px 24px rgb(7 60 43 / 7%); }
-.hero-proof h2 { margin: 4px 0 12px; font-size: 20px; }
-.proof-kicker { margin: 0; color: var(--muted); font-size: 13px; }
-.proof-values { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 16px; align-items: start; }
-.proof-main { padding: 8px 12px; border-radius: 9px; background: var(--green); color: #fff; }
-.proof-main strong { display: block; font-family: var(--font); font-size: 32px; font-weight: 650; line-height: 1.15; font-variant-numeric: tabular-nums; }
-.proof-main span { display: block; margin-top: 4px; font-size: 13px; }
-.proof-baselines { margin: 0; padding-top: 2px; font-size: 13px; }
-.proof-baselines > div + div { margin-top: 8px; }
+.hero-proof { display: grid; grid-template-columns: auto minmax(0,1fr); align-items: center; gap: 6px 24px; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.hero-proof h2 { margin: 0; font-size: 16px; }
+.hero-proof h2 small { display: block; font-family: var(--font); color: var(--muted); font-size: 13px; }
+
+.proof-values { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; }
+.proof-main { display: flex; gap: 9px; align-items: baseline; padding: 0; color: var(--green); }
+.proof-main strong { font-family: var(--font); font-size: 28px; font-weight: 650; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.proof-main span { font-size: 13px; }
+.proof-baselines { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 0; font-size: 13px; }
+.proof-baselines > div { display: flex; gap: 8px; align-items: baseline; }
 .proof-baselines dt { color: var(--muted); }
-.proof-baselines dd { margin: 0; font-size: 17px; font-weight: 600; font-variant-numeric: tabular-nums; }
-.proof-caveat { margin: 12px 0 0; font-size: 13px; line-height: 1.45; color: var(--muted); }
-main { padding: 24px 0 40px; }
-.atlas-workspace { margin: 0; padding: 24px; border: 1px solid var(--line); border-radius: 18px; background: #fff; box-shadow: var(--shadow); }
+.proof-baselines dd { margin: 0; font-size: 17px; font-weight: 600; color: #704965; font-variant-numeric: tabular-nums; }
+.proof-caveat { grid-column: 1 / -1; margin: 0; font-size: 13px; line-height: 1.45; color: var(--muted); }
+main { padding: 18px 0 40px; }
+.atlas-workspace { margin: 0; padding: 20px; border: 1px solid var(--line); border-radius: 18px; background: #fff; box-shadow: var(--shadow); }
 .workspace-search { margin: 0; padding: 0; border: 0; }
-.workspace-search .section-head { align-items: start; margin-bottom: 14px; }
+.workspace-search .section-head { align-items: center; margin-bottom: 8px; }
 .workspace-search h2 { font-size: 26px; margin: 0 0 4px; }
-.workspace-search .section-head p { margin: 0; font-size: 14px; }
+.workspace-search .section-head p { margin: 0; font-size: 14px; font-weight: 500; }
 .control-grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 16px; }
 input, select, button { font: inherit; min-height: 44px; }
 input, select { min-width: 0; max-width: 100%; width: 100%; font-size: 16px; border-color: var(--control-line); }
@@ -349,7 +337,8 @@ button, input, select, summary, .table-link { touch-action: manipulation; }
 button, summary, .workspace-tabs { user-select: none; }
 button:active, .hero-links a:active, summary:active { background: var(--soft); color: var(--ink); }
 button:focus-visible, a:focus-visible, summary:focus-visible, [tabindex]:focus-visible { outline: 3px solid #087449; outline-offset: 3px; }
-.example-details { margin-top: 6px; font-size: 13px; }
+.workspace-search-tools { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 16px; }
+.example-details { margin: 0; font-size: 13px; }
 .example-details > summary { width: fit-content; min-height: 36px; padding-block: 8px; font-weight: 400; }
 .workspace-meta { display: flex; gap: 16px; flex-wrap: wrap; justify-content: space-between; align-items: center; margin: 8px 0 14px; }
 .facts { display: flex; flex-wrap: wrap; gap: 8px 20px; }
@@ -358,7 +347,7 @@ button:focus-visible, a:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .fact span { color: var(--muted); }
 .status { display: block; padding: 0; font-size: 12px; color: var(--muted); }
 .status[role="alert"] { color: #8a310b; font-weight: 600; }
-.workspace-tabs { --view-index: 0; position: relative; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); padding: 4px; max-width: 600px; gap: 0; border: 1px solid var(--line); border-radius: 11px; background: var(--soft); margin-bottom: 20px; }
+.workspace-tabs { --view-index: 0; position: relative; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); padding: 4px; max-width: 600px; gap: 0; border: 1px solid var(--line); border-radius: 11px; background: var(--soft); margin-bottom: 14px; }
 .workspace-tabs button { position: relative; min-width: 0; z-index: 1; padding: 8px; border: 0; border-radius: 7px; background: transparent; color: var(--muted); font-size: 16px; font-weight: 600; }
 .workspace-tabs button[aria-selected="true"] { color: var(--green); }
 .view-indicator { position: absolute; top: 4px; bottom: 4px; left: 4px; width: calc((100% - 8px) / 3); transform: translateX(calc(var(--view-index) * 100%)); border-radius: 7px; background: #fff; box-shadow: 0 1px 4px rgb(7 60 43 / 12%); transition: transform 200ms var(--motion-in-out); pointer-events: none; }
@@ -369,13 +358,14 @@ body[data-interaction="keyboard"] .view-indicator, body[data-interaction="initia
 .tab-panel[data-leaving] { position: absolute; top: 0; left: 0; width: 100%; pointer-events: none; }
 .tab-panel .section-head { margin-bottom: 12px; gap: 12px; }
 .tab-panel .section-head h2 { font-size: 24px; margin-bottom: 6px; }
-.tab-panel .section-head p { font-size: 14px; }
+.tab-panel .section-head p { font-size: 14px; font-weight: 500; }
 .tab-panel .inline-controls { gap: 10px; padding: 12px; background: #f4f8f3; }
 .tab-panel .inline-controls > div { flex: 1 1 180px; min-width: 0; }
 .tab-panel .inline-controls > .main-model-control { flex-basis: 260px; }
-.map-options { flex: 1 1 100%; min-width: 0; }
+.map-heading-tools { display: flex; align-items: center; gap: 14px; }
+.map-options { position: relative; min-width: 0; }
 .map-options > summary { min-height: 44px; padding: 10px 0; font-size: 14px; }
-.map-options .details-body { padding-top: 0; display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.map-options .details-body { position: absolute; top: 100%; right: 0; z-index: 5; width: min(310px,calc(100vw - 64px)); padding: 12px 16px; background: #fff; border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow); }
 .map-options .check { min-height: 44px; }
 .map-frame { border-radius: 12px; box-shadow: inset 0 0 0 1px var(--line); }
 .map-tools { gap: 4px; }
@@ -386,14 +376,22 @@ body[data-interaction="keyboard"] .view-indicator, body[data-interaction="initia
 .color-key { display: flex; gap: 6px 16px; flex-wrap: wrap; font-size: 13px; }
 .map-stat { font-size: 13px; }
 .map-side { display: block; padding: 18px; gap: 0; background: #f5f9f3; border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 2px 4px rgb(7 60 43 / 3%); }
-.map-side .identity { margin-bottom: 16px; padding-bottom: 14px; border-bottom: 1px solid var(--line); font-size: 16px; line-height: 1.5; font-weight: 600; }
+.map-side .identity { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--line); font-size: 16px; line-height: 1.4; font-weight: 600; }
+.identity strong,.identity-region,.identity-group,.identity-code { display: block; }
+.identity strong { font-size: 20px; }
+.identity-region,.identity-code { color: var(--muted); font-weight: 400; }
+.identity-group { margin-top: 8px; color: var(--plum); font-size: 14px; }
+.identity-code { margin-top: 4px; font-size: 12px; }
+.profile-help { margin-top: 10px; }
+.profile-help > summary { min-height: 44px; padding-block: 10px; font-size: 13px; }
+#search-feedback { margin: 6px 0 0; color: #704965; }
 .map-side .panel { padding: 0; background: transparent; border: 0; }
 .map-side .panel h3 { font-size: 21px; }
 .map-side .small { font-size: 13px; }
 .map-side #map-selection { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line); }
 .bar-row { grid-template-columns: minmax(95px,1.2fr) minmax(32px,1fr) 52px; gap: 8px; font-size: 13px; }
 .fill { transition: none; }
-.neighbor-controls { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 12px; }
+.neighbor-controls { display: grid; grid-template-columns: minmax(0,1fr); gap: 12px; }
 .neighbor-controls > .preserved { grid-column: 1 / -1; margin-top: 0; }
 .control-help { font-size: 13px; }
 .tab-panel .table-wrap { max-width: 100%; }
@@ -428,7 +426,9 @@ body[data-interaction="keyboard"] .view-indicator, body[data-interaction="initia
 }
 @media (max-width: 1100px) {
   .wrap { width: calc(100% - 40px); }
-  .hero-layout { grid-template-columns: minmax(0,1fr) minmax(320px,390px); gap: 24px; }
+  .hero-layout { gap: 12px; }
+  .hero-copy { grid-template-columns: minmax(0,1fr); }
+  .hero-proof { grid-template-columns: minmax(0,1fr); }
   .workspace-grid { grid-template-columns: minmax(0,1fr) 310px; gap: 16px; }
   .profiles, .v12-types { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .analysis-pair, .experiment-grid, .v12-split { grid-template-columns: minmax(0,1fr); }
@@ -445,12 +445,15 @@ body[data-interaction="keyboard"] .view-indicator, body[data-interaction="initia
 @media (max-width: 600px) {
   .wrap { width: calc(100% - 32px - env(safe-area-inset-left) - env(safe-area-inset-right)); }
   .hero { padding-top: max(20px,env(safe-area-inset-top)); padding-bottom: 20px; }
-  .hero-layout { gap: 18px; }
+  .hero-layout { gap: 14px; }
   .hero h1 { font-size: 34px; }
   .hero-copy > p { font-size: 16px; }
-  .hero-proof { padding: 16px; }
-  .proof-values { gap: 12px; }
-  .proof-main strong { font-size: 30px; }
+  .hero-links { gap: 6px 14px; }
+  .hero-links a { font-size: 14px; }
+  .hero-proof { padding: 0; }
+  .proof-values { display: block; }
+  .proof-baselines { margin-top: 8px; gap: 4px 16px; }
+  .proof-main strong { font-size: 28px; }
   main { padding-top: 16px; }
   .atlas-workspace { padding: 16px; border-radius: 14px; }
   .workspace-search .section-head { display: block; }
@@ -464,6 +467,7 @@ body[data-interaction="keyboard"] .view-indicator, body[data-interaction="initia
   .tab-panel .inline-controls > div { flex-basis: 100%; }
   .map-tools { position: static; width: fit-content; margin: 8px 8px 8px auto; }
   .map-side { padding: 16px; }
+  .map-heading-tools { flex-wrap: wrap; gap: 4px 12px; }
   .profiles, .v12-types { grid-template-columns: minmax(0,1fr); }
   .card, .feature-card, .proof-body .card { padding: 20px 16px; border-radius: 12px; }
   .proof-body .card h2 { font-size: 24px; }
@@ -575,27 +579,26 @@ body[data-interaction="keyboard"] .view-indicator, body[data-interaction="initia
 <header class="hero"><div class="wrap hero-layout"><div class="hero-copy">
   <div class="eyebrow">СберИндекс · муниципальные расходы</div>
   <h1>Экономические соседи</h1>
-  <p>15 аналогов по расходам помогают сравнить наблюдаемый рост. Найдите свою территорию и проверьте её профиль.</p>
+  <p>Четыре группы расходов и 15 ближайших аналогов. Найдите свою территорию, сравните профиль и наблюдаемый рост.</p>
   <div class="hero-links"><a href="#territory-title" data-focus-search>Найти территорию <span aria-hidden="true">→</span></a><a href="#evidence-title">Доказательства и данные</a></div>
 </div><aside class="hero-proof" aria-labelledby="finding-title">
-  <p class="proof-kicker">Рост расходов 2024 · панель 2 016 МО</p>
-  <h2 id="finding-title">MAE роста расходов 2024</h2>
+  <h2 id="finding-title" title="Средняя абсолютная ошибка, п.п.">Ошибка роста расходов 2024 <small>MAE · 2 016 МО</small></h2>
   <div class="proof-values"><div class="proof-main"><strong>2,486</strong><span>п.п. · 15 аналогов</span></div><dl class="proof-baselines"><div><dt>Медиана региона</dt><dd>2,628 п.п.</dd></div><div><dt>Случайные МО региона</dt><dd>2,701 п.п.</dd></div></dl></div>
-  <p class="proof-caveat">Признаки 2023 года. Рост 2024 участвовал в выборе модели: проверка ретроспективная, точность будущего прогноза не установлена. <a href="#v12-practice-title">Условия и интервалы</a>.</p>
+  <p class="proof-caveat">Признаки 2023 года. Данные 2024 года участвовали в выборе модели: проверка ретроспективная, точность будущего прогноза не установлена. <a href="#v12-practice-title">Условия и интервалы</a>.</p>
 </aside></div></header>
 <main class="wrap">
 <div class="atlas-workspace">
-  <section class="workspace-search" aria-labelledby="territory-title"><div class="section-head"><div><h2 id="territory-title">Выберите территорию</h2><p class="muted">Один выбор для карты, аналогов и динамики.</p></div><span class="tag">6 признаков · α=0,5</span></div>
-  <div class="control-grid"><div><label for="search">Название или регион</label><input id="search" list="territories" autocomplete="off" placeholder="Например, Майкоп или Республика Адыгея"><datalist id="territories"></datalist></div><div><label for="quick">Выбранная территория</label><select id="quick" aria-label="Выбранная территория"></select></div></div>
-  <details class="example-details"><summary>Как выбран стартовый пример</summary><p id="start-example-note" class="note small"></p></details></section>
+  <section class="workspace-search" aria-labelledby="territory-title"><div class="section-head"><div><h2 id="territory-title">Выберите территорию</h2><p class="muted">Один выбор для карты, аналогов и динамики.</p></div><div class="workspace-search-tools"><span class="tag">6 признаков · α=0,5</span><details class="example-details"><summary>Как выбран стартовый пример</summary><p id="start-example-note" class="note small"></p></details></div></div>
+  <div class="control-grid"><div><label for="search">Название или регион</label><input id="search" list="territories" autocomplete="off" aria-describedby="search-feedback" placeholder="Например, Майкоп или Республика Адыгея"><datalist id="territories"></datalist><p id="search-feedback" class="small" role="status" hidden></p></div><div><label for="quick">Выбранная территория</label><select id="quick" aria-label="Выбранная территория"></select></div></div>
+  </section>
   <div class="workspace-meta"><div class="facts" id="facts" aria-label="Факты о данных"></div><div class="status" id="status" role="status">Открываю данные 2 016 территорий…</div></div>
   <div class="workspace-tabs" role="tablist" aria-label="Представления выбранной территории"><span class="view-indicator" aria-hidden="true"></span><button id="view-map" type="button" role="tab" aria-controls="workspace-map" aria-selected="true" tabindex="0" data-view="map">Карта</button><button id="view-analogs" type="button" role="tab" aria-controls="workspace-analogs" aria-selected="false" tabindex="-1" data-view="analogs">15 аналогов</button><button id="view-dynamics" type="button" role="tab" aria-controls="workspace-dynamics" aria-selected="false" tabindex="-1" data-view="dynamics">Динамика</button></div>
   <div class="workspace-grid"><div class="workspace-views">
-  <section id="workspace-map" class="tab-panel" role="tabpanel" aria-labelledby="view-map" data-workspace-panel="map"><div id="map-section" class="contest-only" hidden><div class="section-head"><h2 id="map-title">Профили на карте</h2><span class="tag" id="map-coverage"></span></div>
-<div class="inline-controls"><div class="main-model-control"><label for="map-model">Модель</label><select id="map-model"></select></div><div><label for="map-year">Год</label><select id="map-year"><option value="2023">2023 · опорный профиль</option><option value="2024">2024 · наблюдённые значения</option></select></div><div><label for="map-mode">Сравнение с 2023 годом</label><select id="map-mode"><option value="raw">Без поправки</option><option value="relative">С поправкой по медианам панели</option></select></div><details class="map-options"><summary>Слои и подсказки</summary><div class="details-body"><label class="check" for="map-transitions"><input id="map-transitions" type="checkbox">Выделить сменившие профиль</label><label class="check" for="map-hover-tips"><input id="map-hover-tips" type="checkbox">Подсказки при наведении</label></div></details></div><div class="map-main"><div class="map-frame"><div class="map-tools" aria-label="Масштаб карты"><button id="map-zoom-in" type="button" aria-label="Приблизить">+</button><button id="map-zoom-out" type="button" aria-label="Отдалить">−</button><button id="map-zoom-reset" type="button" aria-label="Сбросить масштаб">1:1</button></div><div id="map-tooltip" class="map-tooltip" role="status" aria-hidden="true" hidden></div><svg id="territory-map" class="map-svg" role="group" aria-labelledby="map-title"></svg></div><div class="map-context"><p class="note small map-intro">Цвет показывает ближайший профиль. Контуром можно выделить территории, у которых назначение в 2024 году отличается от опорного 2023 года.</p><p id="map-model-note" class="note small"></p><div id="map-summary" class="map-stat"></div><div id="map-legend" class="color-key" aria-label="Легенда профилей"></div><p class="note small">Границы внутри 2024 года отдельно не проверены. Карта показывает ближайшие профили только для территорий, сопоставленных между годами. Смена цвета сама по себе не доказывает структурного перелома.</p></div></div></div></section>
-<section id="workspace-analogs" class="tab-panel" role="tabpanel" aria-labelledby="view-analogs" data-workspace-panel="analogs" hidden><div class="section-head"><div><h2 id="neighbors-title">Ближайшие аналоги</h2><p class="muted">Основные аналоги выбраны по пяти отношениям категорий и относительному уровню расходов 2023 года. Меньшее расстояние означает большее сходство шести признаков. Тип территории и производственная специализация из этого расстояния не следуют.</p></div><span class="tag">до 15 соседей</span></div><div class="neighbor-controls"><div><label for="method">Как выбирать аналоги</label><select id="method"><option value="profile">Пять отношений за год</option></select></div><div><label for="exclude">Исключить категорию из сравнения</label><select id="exclude"><option value="-1">Не исключать</option></select></div><div id="preserved" class="preserved" aria-live="polite"></div></div><p id="method-note" class="control-help"></p><p class="small"><a href="#proof-analogs">Как проверены эти 15 аналогов</a></p><p id="comparability-note" class="control-help"></p><p class="note small">Проверьте, сохранится ли список при исключении категории. Исходные профили сохраняются. Кластеры не переобучаются. В колонке различий показан признак с наибольшим стандартизованным отклонением, включая относительный уровень расходов в основной модели. Разность вычислена как значение соседа минус значение выбранной территории.</p><div id="neighbor-results" class="table-wrap" tabindex="0" aria-label="Таблица ближайших аналогов"><table><thead><tr><th>№</th><th>Территория</th><th>Регион</th><th>Тип территории</th><th class="num">Расходы к выбранной территории</th><th id="neighbor-profile-head">Группа</th><th class="frequency-col">Месяцев связи</th><th>Главное различие</th><th class="num" id="distance-head">Расстояние</th></tr></thead><tbody id="neighbors"></tbody></table></div></section>
+  <section id="workspace-map" class="tab-panel" role="tabpanel" aria-labelledby="view-map" data-workspace-panel="map"><div id="map-section" class="contest-only" hidden><div class="section-head"><h2 id="map-title">Профили на карте</h2><div class="map-heading-tools"><span class="tag" id="map-coverage"></span><details class="map-options"><summary>Слои и подсказки</summary><div class="details-body"><label class="check" for="map-transitions"><input id="map-transitions" type="checkbox">Выделить сменившие профиль</label><label class="check" for="map-hover-tips"><input id="map-hover-tips" type="checkbox">Подсказки при наведении</label></div></details></div></div>
+<div class="inline-controls"><div class="main-model-control" hidden><label for="map-model">Модель</label><select id="map-model"></select></div><div><label for="map-year">Год</label><select id="map-year"><option value="2023">2023 · опорный профиль</option><option value="2024">2024 · наблюдённые значения</option></select></div><div><label for="map-mode">Сравнение с 2023 годом</label><select id="map-mode"><option value="raw">Без поправки</option><option value="relative">С поправкой по медианам панели</option></select></div></div><div class="map-main"><div class="map-frame"><div class="map-tools" aria-label="Масштаб карты"><button id="map-zoom-in" type="button" aria-label="Приблизить">+</button><button id="map-zoom-out" type="button" aria-label="Отдалить">−</button><button id="map-zoom-reset" type="button" aria-label="Сбросить масштаб">1:1</button></div><div id="map-tooltip" class="map-tooltip" role="status" aria-hidden="true" hidden></div><svg id="territory-map" class="map-svg" role="group" aria-labelledby="map-title"></svg></div><div class="map-context"><p class="note small map-intro">Цвет показывает ближайший профиль. Контуром можно выделить территории, у которых назначение в 2024 году отличается от опорного 2023 года.</p><p id="map-model-note" class="note small"></p><div id="map-summary" class="map-stat"></div><div id="map-legend" class="color-key" aria-label="Легенда профилей"></div><p class="note small">Границы внутри 2024 года отдельно не проверены. Карта показывает ближайшие профили только для территорий, сопоставленных между годами. Смена цвета сама по себе не доказывает структурного перелома.</p></div></div></div></section>
+<section id="workspace-analogs" class="tab-panel" role="tabpanel" aria-labelledby="view-analogs" data-workspace-panel="analogs" hidden><div class="section-head"><div><h2 id="neighbors-title">Ближайшие аналоги</h2><p class="muted">Основные аналоги выбраны по пяти отношениям категорий и относительному уровню расходов 2023 года. Меньшее расстояние означает большее сходство шести признаков. Тип территории и производственная специализация из этого расстояния не следуют.</p></div><span class="tag">до 15 соседей</span></div><div class="neighbor-controls"><div hidden><label for="method">Как выбирать аналоги</label><select id="method"><option value="profile">Пять отношений за год</option></select></div><div><label for="exclude">Исключить категорию из сравнения</label><select id="exclude"><option value="-1">Не исключать</option></select></div><div id="preserved" class="preserved" aria-live="polite"></div></div><p id="method-note" class="control-help"></p><p class="small"><a href="#proof-analogs">Как проверены эти 15 аналогов</a></p><p id="comparability-note" class="control-help"></p><p class="note small">Проверьте, сохранится ли список при исключении категории. Исходные профили сохраняются. Кластеры не переобучаются. В колонке различий показан признак с наибольшим стандартизованным отклонением, включая относительный уровень расходов в основной модели. Разность вычислена как значение соседа минус значение выбранной территории.</p><div id="neighbor-results" class="table-wrap" tabindex="0" aria-label="Таблица ближайших аналогов"><table><thead><tr><th>№</th><th>Территория</th><th>Регион</th><th>Тип территории</th><th class="num">Расходы к выбранной территории</th><th id="neighbor-profile-head">Группа</th><th class="frequency-col">Месяцев связи</th><th>Главное различие</th><th class="num" id="distance-head">Расстояние</th></tr></thead><tbody id="neighbors"></tbody></table></div></section>
 <section id="workspace-dynamics" class="tab-panel" role="tabpanel" aria-labelledby="view-dynamics" data-workspace-panel="dynamics" hidden><div class="section-head"><div><h2 id="time-title">Динамика 2023–2024</h2><p class="muted">Исходные месячные значения. Можно смотреть общий показатель или отношение категории к нему.</p></div><span class="tag">24 месяца</span></div><div class="dynamic-controls"><div class="series-control"><label for="series">Показатель</label><select id="series"><option value="total">Все категории, руб.</option></select></div><div><label for="month">Месяц на графике</label><select id="month"></select></div></div><p id="month-summary" class="note small" aria-live="polite"></p><div class="legend"><span>Выбранная территория</span><span class="peer">Медиана текущих аналогов</span></div><p id="timeline-context" class="note small"></p><div class="chart-scroll" tabindex="0" role="region" aria-label="График динамики с горизонтальной прокруткой"><svg id="timeline" class="chart" viewBox="0 0 1000 340" role="img"></svg></div><div id="monthly-membership"></div></section>
-</div><aside id="territory-inspector" class="map-side" aria-label="Профиль выбранной территории"><div class="identity" id="identity" aria-live="polite"></div><div class="panel"><h3>Профиль расходов</h3><div class="muted small">Число справа показывает отношение категории к общему показателю в процентах, а не долю полного бюджета. Длина полосы помогает сравнить категории внутри выбранной территории. Эти пять полос показывают наблюдения 2023 года; шестой признак модели, относительный уровень расходов, приведён ниже.</div><div class="bars" id="profile"></div><p id="profile-level" class="note small"></p></div><div id="map-selection" class="map-stat" aria-live="polite"></div></aside></div></div>
+</div><aside id="territory-inspector" class="map-side" aria-label="Профиль выбранной территории"><div class="identity" id="identity" aria-live="polite"></div><div class="panel"><h3>Профиль расходов</h3><div class="bars" id="profile"></div><p id="profile-level" class="note small"></p><details class="profile-help"><summary>Как читать профиль</summary><div class="muted small">Число справа: отношение категории к общему показателю, %. Пять категорий не образуют полного бюджета. Длина полосы помогает сравнить категории внутри территории. Полосы показывают профиль 2023 года; относительный уровень расходов, шестой признак модели, приведён ниже.</div></details></div><div id="map-selection" class="map-stat" aria-live="polite"></div></aside></div></div>
 <section class="method-brief" aria-labelledby="read-title"><h2 id="read-title">Как читать результат</h2><div class="method-list"><div class="method"><b>Профиль</b>Пять логарифмических отношений категорий к общему показателю и относительный уровень расходов. Шкала и центры построены по 2023 году.</div><div class="method"><b>Группа</b><span id="group-method"></span> Номер группы не задаёт отраслевую специализацию.</div><div class="method"><b>Аналоги</b>15 ближайших территорий по шести признакам, в том числе из других регионов. Сходство расходов не устанавливает производственную схожесть или денежные потоки.</div></div>
 <p class="small"><a href="#main-appendices">Четыре группы и их признаки</a> · <a href="#v12-network-title">Как признаки связаны с сетью</a> · <a href="#v12-dynamics-title">Как меняются назначения</a></p>
 <p class="essential-limit">Сверх непрерывных отношений категорий выигрыш групп не подтверждён. После общей поправки на 48 проверок значимого прироста нет; добыча покрывает только 290 МО, 14,4% панели. <a href="#proof-added-value">Что именно проверено</a>.</p>
@@ -713,7 +716,7 @@ body[data-interaction="keyboard"] .view-indicator, body[data-interaction="initia
   <p class="note"><a href="#v12-methods-title">Выбор основной модели</a> · <a href="../docs/NETWORK_TYPOLOGY.md" data-source-href="https://github.com/Nibani/SberAI/blob/main/docs/NETWORK_TYPOLOGY.md" target="_blank" rel="noopener">Методика и границы выводов</a> · <a href="#archive-v11">Пять отношений: прежние модели и проверки</a>.</p>
 </section>
 <div id="six-feature-details"><div id="v12-content"></div></div></div></details>
-<details id="proof-sources" class="proof"><summary><span>Как воспроизвести и откуда данные?</span><small>Входы, лицензии и точные таблицы</small></summary><div class="proof-body"><p>Проверка сохранённой основной модели: <code>python -m scripts.validate_v12_findings --check</code>. Проверка добавочной пользы: <code>python -m scripts.check_added_value --check</code>. Условия и необходимые входы указаны в README проекта.</p><nav class="evidence-links" id="six-feature-links" hidden aria-label="Полные результаты"><a href="#v12-types-title">Внешние признаки</a><a href="#v12-network-title">Правила сходства</a><a href="#v12-methods-title">Сравнение моделей</a><a href="#v12-dynamics-title">Назначения</a><a href="#v12-practice-title">Проверка аналогов</a></nav><p>Выборки 1 774 и 2 016 МО отвечают разным условиям и не объединяются. MQ, Newman Q и TurboMQ имеют разные определения; оценка на оптимизируемом графе не служит независимой внешней проверкой.</p></div></details>
+<details id="proof-sources" class="proof"><summary><span>Как воспроизвести и откуда данные?</span><small>Входы, лицензии и точные таблицы</small></summary><div class="proof-body"><p>Проверить основной комплект: <code>python run_all.py</code>. Команда повторяет два основных научных расчёта и запускает технические тесты. Установка, входы и границы проверки указаны в README проекта.</p><nav class="evidence-links" id="six-feature-links" hidden aria-label="Полные результаты"><a href="#v12-types-title">Внешние признаки</a><a href="#v12-network-title">Правила сходства</a><a href="#v12-methods-title">Сравнение моделей</a><a href="#v12-dynamics-title">Назначения</a><a href="#v12-practice-title">Проверка аналогов</a></nav><p>Выборки 1 774 и 2 016 МО отвечают разным условиям и не объединяются. MQ, Newman Q и TurboMQ имеют разные определения; оценка на оптимизируемом графе не служит независимой внешней проверкой.</p></div></details>
 </section></main>
 <footer class="foot"><div class="wrap">Источник: <a href="https://sberindex.ru/ru/research/data-sense-opisanie-nabora-dannikh-khakatona-sberindeksa-po-munitsipalnim-dannim" target="_blank" rel="noopener">СберИндекс, потребительские безналичные расходы на уровне муниципальных образований</a>, получено 23.09.2026. Изменения: отбор полной панели, временное сопоставление, вычисление признаков, потребительских профилей и соседей. Данные и производные материалы: <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ru" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Основа географических сведений: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© участники OpenStreetMap</a>. Код проекта: <a href="https://github.com/Nibani/sber-public" target="_blank" rel="noopener">GitHub</a>.</div><div class="wrap"><details class="comparison-details small"><summary>Шрифт Cinzel RU и лицензия</summary><div class="details-body"><p>Cinzel, Natanael Gama. Кириллическая адаптация LYAJKA. Шрифт используется только в подзаголовках. Формат WOFF; состав символов сохранён.</p><p><a href="https://github.com/frz13/FACEIT-Font-Switcher/blob/main/cinzel_regular.ttf">Исходный файл шрифта</a></p><pre style="white-space:pre-wrap;overflow-wrap:anywhere">Copyright © 2012 Natanael Gama (www.ndiscovered.com), with Reserved Font Name “Cinzel”
 
@@ -994,7 +997,7 @@ function typicalExampleIndex(){
  indices.forEach(i=>D.entities[i].v12_features.forEach((value,j)=>mean[j]+=value/indices.length));
  const squaredDistance=i=>D.entities[i].v12_features.reduce((sum,value,j)=>sum+(value-mean[j])**2,0);
  const index=indices.slice().sort((a,b)=>squaredDistance(a)-squaredDistance(b)||(D.entities[a].id<D.entities[b].id?-1:D.entities[a].id>D.entities[b].id?1:0))[0];
- $("start-example-note").textContent=`Стартовый пример: ${label(D.entities[index])}. Я выбираю самую многочисленную группу 2023 года (${fmt.format(indices.length)} территорий), затем ближайшую территорию к среднему её шести координат. При равном расстоянии выбираю меньший id в строковом порядке. Экономические исходы и состав аналогов на выбор не влияют.`;
+ $("start-example-note").textContent=`Стартовый пример: ${label(D.entities[index])}. В крупнейшей группе 2023 года (${fmt.format(indices.length)} территорий) выбрана ближайшая к среднему её шести координат. При равном расстоянии выбирается меньший id в строковом порядке. Экономические исходы и состав аналогов на выбор не влияют.`;
  return index;
 }
 function nearestRows(rows,count,compare){
@@ -1072,7 +1075,7 @@ function renderMap(){
   paths[next]?.focus()
  };
  const e=D.entities[state.index],c=mapCluster(e.id),base=mapBase(e.id),selected=$("map-selection");
- clear(selected);selected.append(el("span",`${state.mapModel==="v12_types"?"Совместная модель α=0,5":state.mapModel.startsWith("v12_")?"Сравнение моделей 6 признаков":"Сравнения по пяти отношениям"} · ${state.mapYear}`,"small muted"),el("b",e.name),el("span",`${e.region} · ${c===null?"нет назначения":mapProfileName(c)}${state.mapYear==="2024"&&c!==base?" · профиль изменился":""}`));
+ clear(selected);selected.append(el("span",`${state.mapModel==="v12_types"?"Совместная модель α=0,5":state.mapModel.startsWith("v12_")?"Сравнение моделей 6 признаков":"Сравнения по пяти отношениям"} · ${state.mapYear}`,"small muted"),el("b",c===null?"Нет назначения":mapProfileName(c)),el("span",state.mapYear==="2024"?(c!==base?"Профиль изменился относительно 2023 года":"Совпадает с опорным профилем 2023 года"):"Опорный профиль 2023 года"));
  const dyn=state.mapModel==="frozen"?contest.dynamics?.[state.mapMode]:contest.map_models?.[state.mapModel]?.dynamics?.[state.mapMode],summary=$("map-summary");
  clear(summary);summary.append(el("span",state.mapYear==="2024"?"Смена назначения":"Покрытие карты","small muted"),el("b",state.mapYear==="2024"&&dyn?fmt.format(dyn.changed):fmt.format(map.matched??map.paths.length)),el("span",state.mapYear==="2024"&&dyn?`из ${fmt.format(map.paths.length)}${Number.isFinite(dyn.ari)?` · ARI ${metricValue(dyn.ari)}`:""}`:`из ${fmt.format(D.meta.entities)} территорий`));
  $("map-year").disabled=state.mapModel!=="frozen"&&!contest.map_models?.[state.mapModel]?.labels_2024;
@@ -1197,8 +1200,9 @@ function setup(){
   [["Территорий",D.meta.entities],["Наблюдений",D.meta.entities*D.meta.months],["Период","2023–2024"],[D.reference||D.validation?"Профилей потребления":"Пилотных групп",D.meta.groups]].forEach(([a,b])=>{const x=el("div",undefined,a==="Период"?"fact fact-period":"fact");x.append(el("strong",typeof b==="number"?fmt.format(b):b),el("span",a));$("facts").append(x)});
   D.entities.forEach((e,i)=>{const o=el("option",label(e));o.value=String(i);$("quick").append(o);const d=el("option");d.value=label(e);$("territories").append(d)});
   D.categories.forEach((name,i)=>{const o=el("option",name);o.value=String(i);$("exclude").append(o);const s=el("option",`${name}, % от итога`);s.value=String(i);$("series").append(s)});
-  $("quick").addEventListener("change",e=>choose(+e.target.value));$("search").addEventListener("change",e=>{const q=e.target.value.toLocaleLowerCase("ru"),i=D.entities.findIndex(x=>label(x).toLocaleLowerCase("ru")===q);if(i>=0)choose(i)});
-  $("search").addEventListener("keydown",e=>{if(e.key==="Enter"){const q=e.currentTarget.value.toLocaleLowerCase("ru"),i=D.entities.findIndex(x=>label(x).toLocaleLowerCase("ru").includes(q));if(i>=0)choose(i)}});
+  $("quick").addEventListener("change",e=>choose(+e.target.value));$("search").addEventListener("change",e=>resolveSearch(e.target.value));
+  $("search").addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();resolveSearch(e.currentTarget.value)}});
+  $("search").addEventListener("input",()=>{$("search-feedback").hidden=true});
   $("method").addEventListener("change",e=>selectPeerMethod(e.target.value));
   $("exclude").addEventListener("change",e=>{state.exclude=+e.target.value;renderNeighbors();renderTimeline();animatePanel("neighbor-results",180)});$("series").addEventListener("change",()=>{renderTimeline();animatePanel("timeline")});
   $("group-method").textContent=contest?.v12?"Четыре группы совместной модели α=0,5 в шести признаках 2023 года. Значения 2024 участвовали в выборе модели. ":D.reference||D.validation?"Четыре группы KMeans на медианном годовом профиле 2023. ":"Восемь групп декабрьского пилота KMeans 2023. ";
@@ -1248,11 +1252,19 @@ function syncNeighborControls(){
 function selectPeerMethod(method){state.method=contest?.v12?"v12":"profile";state.exclude=-1;$("exclude").value="-1";choose(state.index)}
 function animatePanel(id,duration=180,start=null){
  const target=$(id);if(!target?.animate)return;const active=target.getAnimations?.()||[],current=active.length?getComputedStyle(target):null;
- const from=start||{opacity:current?.opacity||.85,transform:current?.transform||"translateY(6px)"};for(const animation of active)animation.cancel();
+ const from=start||{opacity:current?.opacity||.72,transform:current?.transform||"translateY(12px)"};for(const animation of active)animation.cancel();
  if(!motionAllowed())return;target.animate([from,{opacity:1,transform:"translateY(0)"}],{duration,easing:"cubic-bezier(0.23,1,0.32,1)"});
 }
-function choose(index){state.index=index;syncNeighborControls();document.body.dataset.peerMethod=state.method;$("exclude").disabled=false;$("method-note").textContent=contest?.v12?"Пять отношений категорий и относительный уровень расходов, медианы 2023 года. При исключении категории уровень остаётся в расстоянии. Шкала уровня: IQR 2023 года.":"Годовой профиль по пяти отношениям категорий, 2023 год.";$("quick").value=String(index);$("search").value=label(D.entities[index]);renderIdentity();renderProfile();renderScatter();state.base=baseNeighbors(index);renderNeighbors();renderTimeline();renderEgo();if(contest)renderMap();animatePanel("territory-inspector",200)}
-function renderIdentity(){const e=D.entities[state.index];if(contest?.v12){const type=contest.v12.types[e.v12_type];$("identity").textContent=`${e.name} · ${e.region} · код территории ${e.tid} · ${type.name} · совместная модель α=0,5, 2023`;return}const cluster=D.validation?e.reference_cluster:D.reference?e.annual_cluster:e.pilot_cluster;$("identity").textContent=`${e.name} · ${e.region} · код территории ${e.tid} · ${D.validation||D.reference?"опорный":"пилотный"} профиль ${cluster+1}`}
+function choose(index){if($("search-feedback"))$("search-feedback").hidden=true;state.index=index;syncNeighborControls();document.body.dataset.peerMethod=state.method;$("exclude").disabled=false;$("method-note").textContent=contest?.v12?"Пять отношений категорий и относительный уровень расходов, медианы 2023 года. При исключении категории уровень остаётся в расстоянии. Шкала уровня: IQR 2023 года.":"Годовой профиль по пяти отношениям категорий, 2023 год.";$("quick").value=String(index);$("search").value=label(D.entities[index]);renderIdentity();renderProfile();renderScatter();state.base=baseNeighbors(index);renderNeighbors();renderTimeline();renderEgo();if(contest)renderMap();animatePanel("territory-inspector",200)}
+function resolveSearch(value){
+ const q=value.trim().toLocaleLowerCase("ru"),feedback=$("search-feedback");
+ const exact=D.entities.map((e,i)=>({e,i})).filter(({e})=>label(e).toLocaleLowerCase("ru")===q);
+ const matches=exact.length?exact:q?D.entities.map((e,i)=>({e,i})).filter(({e})=>label(e).toLocaleLowerCase("ru").includes(q)):[];
+ if(matches.length===1){feedback.hidden=true;choose(matches[0].i);return true}
+ feedback.textContent=matches.length?`Найдено ${matches.length} территорий. Уточните название или выберите полное название с регионом в подсказках.`:q?"Совпадений нет. Проверьте название или выберите территорию из списка справа.":"Введите название территории или региона.";
+ feedback.hidden=false;return false;
+}
+function renderIdentity(){const e=D.entities[state.index],box=$("identity");clear(box);box.append(el("strong",e.name),el("span",e.region,"identity-region"));const cluster=D.validation?e.reference_cluster:D.reference?e.annual_cluster:e.pilot_cluster;box.append(el("span",contest?.v12?contest.v12.types[e.v12_type].name:`${D.validation||D.reference?"Опорный":"Пилотный"} профиль ${cluster+1}`,"identity-group"),el("small",`Код ${e.tid} · ${contest?.v12?"α=0,5 · ":""}2023`,"identity-code"))}
 function renderProfile(){const box=$("profile"),e=D.entities[state.index],values=D.reference||D.validation?e.annual_ratios:e.ratios[D.periods.indexOf(D.meta.reference_period)],max=Math.max(...values);clear(box);D.categories.forEach((name,i)=>{const r=el("div",undefined,"bar-row");r.append(el("span",name,"bar-label"));const t=el("div",undefined,"track"),f=el("div",undefined,"fill");f.style.width=`${100*values[i]/max}%`;t.append(f);r.append(t,el("span",`${pct.format(values[i])}%`,"num"));box.append(r)});const level=$("profile-level"),expense=contest?.comparability?.[e.id]?.expense_2023;level.textContent=contest?.v12?`Уровень расходов: ${metricValue(expense,0)} руб. в месяц (медиана 2023). Относительный уровень в шкале модели: ${metricValue(e.v12_features[5],2)} IQR.`:""}
 function renderScatter(){const root=$("scatter"),xi=1,yi=2,p=D.periods.indexOf(D.meta.reference_period),pts=D.entities.map(e=>D.reference||D.validation?[e.annual_ratios[xi],e.annual_ratios[yi]]:[e.ratios[p][xi],e.ratios[p][yi]]),xs=pts.map(x=>x[0]),ys=pts.map(x=>x[1]),pad=50,w=520,h=300,minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys),X=x=>pad+(x-minX)/(maxX-minX)*(w-pad-15),Y=y=>h-pad-(y-minY)/(maxY-minY)*(h-pad-15);clear(root);for(let i=0;i<5;i++){const xx=pad+i*(w-pad-15)/4,yy=15+i*(h-pad-15)/4;root.append(svg("line",{x1:xx,x2:xx,y1:15,y2:h-pad,class:"grid"}),svg("line",{x1:pad,x2:w-15,y1:yy,y2:yy,class:"grid"}))}pts.forEach((v,i)=>root.append(svg("circle",{cx:X(v[0]),cy:Y(v[1]),r:i===state.index?6:2.2,fill:i===state.index?"#b26b20":"#77a99a",opacity:i===state.index?1:.45})));let tx=svg("text",{x:w/2,y:h-8,"text-anchor":"middle",class:"axis-text"});tx.textContent=`${D.categories[xi]}, %`;root.append(tx);let ty=svg("text",{x:14,y:h/2,transform:`rotate(-90 14 ${h/2})`,"text-anchor":"middle",class:"axis-text"});ty.textContent=`${D.categories[yi]}, %`;root.append(ty);root.setAttribute("aria-label",`Диаграмма: ${D.categories[xi]} и ${D.categories[yi]}. Выбрана ${label(D.entities[state.index])}`)}
 function mainDifference(other){const current=D.entities[state.index],six=state.method==="v12",af=six?current.v12_features:current.features,bf=six?other.v12_features:other.features,dims=(six?[0,1,2,3,4,5]:[0,1,2,3,4]).filter(j=>j!==state.exclude);const j=dims.sort((a,b)=>Math.abs(bf[b]-af[b])-Math.abs(bf[a]-af[a]))[0];if(j===5){const delta=bf[j]-af[j];return `Относительный уровень: ${delta>=0?"+":""}${pct.format(delta)} IQR`;}const p=D.periods.indexOf(D.meta.reference_period),a=D.reference||D.validation?current.annual_ratios:current.ratios[p],b=D.reference||D.validation?other.annual_ratios:other.ratios[p];const delta=b[j]-a[j];return `${D.categories[j]}: ${delta>=0?"+":""}${pct.format(delta)} п.п.`}
@@ -1289,13 +1301,14 @@ setup();
 setupWorkspace();
 normaliseVisibleLabels();
 normaliseLocalLinks();
+let anchorFrame=0;
 function revealAnchor(hash,scroll=false){
  let id;try{id=decodeURIComponent(hash.replace(/^#/,""))}catch{return}
  const target=$(id);if(!target)return;const panel=target.closest?.("[data-workspace-panel]");if(panel)setWorkspaceView(panel.dataset.workspacePanel,{animate:scroll});
  if(target.tagName==="DETAILS")target.open=true;for(let ancestor=target.parentElement;ancestor;ancestor=ancestor.parentElement)if(ancestor.tagName==="DETAILS")ancestor.open=true;
- if(scroll)requestAnimationFrame(()=>{target.scrollIntoView({behavior:"auto",block:"start"});if(!target.matches("input,select,button,a,summary"))target.setAttribute("tabindex","-1");target.focus({preventScroll:true});animatePanel(id,160)});
+ if(scroll){cancelAnimationFrame(anchorFrame);anchorFrame=requestAnimationFrame(()=>{anchorFrame=0;target.scrollIntoView({behavior:"auto",block:"start"});const focus=id==="territory-title"?$("search"):target;if(!focus.matches("input,select,button,a,summary"))focus.setAttribute("tabindex","-1");focus.focus({preventScroll:true});animatePanel(id,200)})}
 }
-document.addEventListener("click",event=>{const link=event.target.closest?.('a[href^="#"]');if(link){revealAnchor(link.hash,true);if(link.hasAttribute("data-focus-search"))requestAnimationFrame(()=>$("search").focus({preventScroll:true}))}});
+document.addEventListener("click",event=>{const link=event.target.closest?.('a[href^="#"]');if(link&&!event.defaultPrevented&&!event.metaKey&&!event.ctrlKey&&!event.shiftKey&&!event.altKey)revealAnchor(link.hash,true)});
 window.addEventListener("hashchange",()=>revealAnchor(location.hash,true));
 window.addEventListener("popstate",()=>revealAnchor(location.hash,true));
 revealAnchor(location.hash,true);

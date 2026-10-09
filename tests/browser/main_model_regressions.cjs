@@ -141,10 +141,13 @@ async function runViewports(browser) {
       await checkLayout(page,'initial');
       assert.equal(await page.locator('h1').textContent(),'Экономические соседи');
       for(const heading of await page.locator('h1,h2,h3').all()) {const style=await heading.evaluate(n=>{const s=getComputedStyle(n);return [s.fontFamily,s.fontWeight,s.fontSynthesis]});assert(style[0].includes('Cinzel RU'));assert.equal(style[1],'400');assert.equal(style[2],'none')}
-      assert((await page.locator('#finding-title').textContent()).includes('MAE роста расходов 2024'));
+      assert((await page.locator('#finding-title').textContent()).includes('Ошибка роста расходов 2024'));
       assert((await page.locator('.proof-caveat').textContent()).includes('ретроспективная'));
       assert((await page.locator('.hero-proof').textContent()).includes('2,486'));
       assert.equal(await page.locator('.hero-proof').evaluate(n=>getComputedStyle(n).opacity),'1');
+      assert.equal(await page.locator('.proof-main').evaluate(n=>getComputedStyle(n).backgroundColor),'rgba(0, 0, 0, 0)','MAE belongs to the shared text ribbon');
+      assert.equal(await page.locator('#map-model').isVisible(),false);assert.equal(await page.locator('#method').isVisible(),false,'Single-option rules do not promise a choice');
+      if(!mobile){const first=await page.locator('#territory-map').boundingBox();assert(first.y<viewport.height-180,'A useful part of the map is present on the first screen');const bars=await page.locator('#profile').boundingBox();assert(bars.y<viewport.height-120,'The inspector profile is visible on the first screen')}
       assert.equal(await page.locator('#archive-v11').getAttribute('open'),null);
       assert.equal(await page.locator('#main-appendices').getAttribute('open'),null);
       assert.equal(await page.locator('#archive-map-model,#archive-method').count(),0,'Comparisons cannot substitute the main model');
@@ -152,6 +155,12 @@ async function runViewports(browser) {
       assert.equal(visibleVersions,false,'The interface names models by meaning');
       await checkTerritory(page);record.actions.push('initial finding, main model and full geometry');
       await userAction('selection',mobile?'tap':'click','hero-search',()=>activate(page.locator('.hero-links [data-focus-search]')));await page.waitForFunction(()=>document.activeElement.id==='search');
+      const settleAnchor=()=>page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+      await settleAnchor();assert.equal(await page.evaluate(()=>document.activeElement.id),'search','Hash navigation does not steal search focus');
+      await page.goBack();await page.waitForURL(url=>url.hash!=='#territory-title');await page.goForward();await page.waitForURL(url=>url.hash==='#territory-title');await settleAnchor();assert.equal(await page.evaluate(()=>document.activeElement.id),'search');
+      const unchanged=await page.locator('#quick').inputValue();await page.locator('#search').fill('несуществующая территория 987654321');await page.locator('#search').press('Enter');assert.equal(await page.locator('#quick').inputValue(),unchanged);assert((await page.locator('#search-feedback').textContent()).includes('Совпадений нет'));
+      await page.locator('#search').fill(data.entities[0].region);await page.locator('#search').press('Enter');assert.equal(await page.locator('#quick').inputValue(),unchanged);assert((await page.locator('#search-feedback').textContent()).includes('Уточните'));
+      await page.locator('#search').fill(' ');await page.locator('#search').press('Enter');assert.equal(await page.locator('#quick').inputValue(),unchanged);assert((await page.locator('#search-feedback').textContent()).includes('Введите'));record.actions.push('stable anchor focus, browser Back/Forward and explicit ambiguous, empty and missing searches');
       const target=data.entities[250];await userAction('selection','fill','#search',()=>page.locator('#search').fill(target.name));await userAction('selection','press Enter','#search',()=>page.locator('#search').press('Enter'));
       assert((await page.locator('#identity').textContent()).includes(target.name));await checkTerritory(page);record.actions.push('search and immediate territory card');
       await userAction('analogs',mobile?'tap':'click','#view-analogs',()=>activate(page.locator('#view-analogs')));await userAction('analogs','native selectOption 1','#exclude',()=>page.locator('#exclude').selectOption('1'));await checkTerritory(page,1);

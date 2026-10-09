@@ -1,0 +1,64 @@
+{
+  "archive": {
+    "current_zip_bytes": "PASS_SHA256_AT_EXPORT",
+    "directory": "C:\\Users\\Andreyka\\Documents\\Codex\\2026-10-08\\goal-goal-c-users-andreyka-documents-2\\outputs\\delivery-c3",
+    "new_science_quality": "NOT_ASSESSED",
+    "physical_file_count": 1622,
+    "receipt_sha256": "2b2f31565e02b321cfc53342de85eb0c125e6a6278054dbd7d61492a7ddb401d",
+    "technical_offline_check": "PASS_ON_HISTORICAL_C3",
+    "zip_sha256": "3f4a07d80ff204c2dab83c9617a73c6440c3f6d7e0940a8e71dbdffbc2801a19"
+  },
+  "baseline_diff": {
+    "added": [],
+    "changed": {
+      "README.md": {
+        "c4_sha256": "c1d8d73761760256882f3c75223096d7966aa837a836cdfcc08d691fa1aa2d45",
+        "current_sha256": "643164d337b9888a76fb8e2037bd16310a4ef23f278b4c875948ffdc5de7d0e9"
+      },
+      "docs/index.html": {
+        "c4_sha256": "29dc2c6bcfecfef58ffe940cfd0305830b67ed0278d6b5bc6de66130b8f82389",
+        "current_sha256": "583974253850b023a631d23943aa6332d32db9380b6347b61e3cb4c1c77a61e9"
+      },
+      "tests/browser/main_model_regressions.cjs": {
+        "c4_sha256": "c3daf10992ec7d7c7cfdd0a755f5d6494615b463207a9590253c4274c16034fc",
+        "current_sha256": "67eae8c9dda5499a9bdcbb1d1bcd21ef202a94b1855c458104b05cbab02b412c"
+      },
+      "web/atlas_theme.css": {
+        "c4_sha256": "9ee02e69b6ed23ce86d8efb98decfff503adbafe10ca531b71918b8a70f611b9",
+        "current_sha256": "89857782ad38bd437f6a58bba30ee5f201467d1833febbaf9e8dc5e59227184e"
+      },
+      "web/research_template.html": {
+        "c4_sha256": "e65a3744eccb4142ea9d1a9b4bec090aaa791ad4916bb76212471e5d778ccca1",
+        "current_sha256": "f37ca63e44eace52a89670cfdd360e9bd22414e1a77a98b5520756a2bde39af6"
+      }
+    },
+    "new_files_scientific_acceptance": "UNVERIFIED",
+    "removed": [
+      "scripts/build_dashboard.py",
+      "web/template.html"
+    ],
+    "scientific_baseline_files_removed": []
+  },
+  "c4_manifest_sha256": "1f7dfba77acc497f3a1c77105c966e4be94f1f1adea48fe790be3340b7aebed2",
+  "checks": {
+    "current_desktop_mobile_browser": "UNVERIFIED",
+    "deterministic_current_rebuild": "UNVERIFIED",
+    "full_current_science": "UNVERIFIED",
+    "literal_links": "PASS",
+    "pin_bytes": "PASS",
+    "python_ast": "PASS"
+  },
+  "ci_old_live_sha256": "a7bdcf280bfbec5fc938a6071eb7e8da28facbd3c6c7af1967347edb91f19e6f",
+  "ci_override_sha256": "27d1fdf84265b6cfa90f83d836a0678a92763a8a939de53b47180634ccbebdb3",
+  "controller_certification": "NOT_REQUIRED; NO_ACCEPTED_CLAIM",
+  "exported_at_utc": "2026-10-09T00:39:40.323117+00:00",
+  "kind": "PRIVATE_NIBANI_SBER_PUBLIC",
+  "pages": "NOT_DEPLOYED_BY_EXPORTER",
+  "scientific_fitting_executed": false,
+  "selection_sha256": "ddafd18da5c79f1d4768b6dc261846e4c31bcca702d74405b2c86bf88b898e9a",
+  "sole_author": "Nibani",
+  "tools_sha256": {
+    "export_candidate.py": "8faf075e5c08ee19a069226b4c80f8aaab45cc4170bf890ba071b603b2d0787d",
+    "kit_links.py": "7f8a7cea177411c95a3e7c5c6b784bee27297667ae16eb3b80b6b1000e3671dd"
+  }
+}
