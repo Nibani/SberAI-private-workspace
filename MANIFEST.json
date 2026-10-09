@@ -1,5 +1,5 @@
 {
-  "file_count": 662,
+  "file_count": 671,
   "files": {
     ".dockerignore": {
       "bytes": 91,
@@ -14,9 +14,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     ".github/workflows/tests.yml": {
-      "bytes": 3265,
+      "bytes": 3393,
       "scientific_pin": false,
-      "sha256": "096a2b4a157d4be34a4d2134c6419a4883bba097f3448d4dc0dd058c82ec54ea",
+      "sha256": "c21219befc94f5916f95eea688b887ad930bda58c7745c50cf66c8a5a2f193b8",
       "source_kind": "NEW_PRIVATE_CI"
     },
     ".gitignore": {
@@ -38,15 +38,15 @@
       "source_kind": "CURRENT_LIVE"
     },
     "PROVENANCE.json": {
-      "bytes": 59212,
+      "bytes": 61673,
       "scientific_pin": false,
-      "sha256": "7cb220920f345ab60d74c25c11d523863e80e952a9fe041d9e7ce27a991f97fe",
+      "sha256": "f3eafc97d9d0c08e5cd1a6cdf35dc37b35a7b099188e6e72b19496fd14324750",
       "source_kind": "EXPORT_METADATA"
     },
     "README.md": {
-      "bytes": 16745,
+      "bytes": 16762,
       "scientific_pin": false,
-      "sha256": "6ff4962c13b85141a10d6553d8a78ac6dc5b2aa9fc9c5273606f681349f7fa59",
+      "sha256": "c2c138343640ce3eccdae806e8a53e165cf34a8d6f4d5c1b5f7e39e0416f8d36",
       "source_kind": "CURRENT_LIVE"
     },
     "SCIENTIFIC-SHA256.json": {
@@ -332,9 +332,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "docs/NETWORK_TYPOLOGY.md": {
-      "bytes": 31415,
+      "bytes": 36952,
       "scientific_pin": false,
-      "sha256": "39eb831d9cbf16baf7c8971a098d0e0bceaf1079f0298c17137498f6c590d4ba",
+      "sha256": "3753c39afb2291761fdd08e3102e61abfbd2f8b81c6eb143ae0afeabd6437ed2",
       "source_kind": "CURRENT_LIVE"
     },
     "docs/REPORT_RU.md": {
@@ -487,6 +487,24 @@
       "sha256": "ae91eea766d8f002a5912c87df1b487d12428b8043526fe94555d34e66a01e73",
       "source_kind": "CURRENT_LIVE"
     },
+    "reports/competition-enhancement/competitors/official/rubric-official.md": {
+      "bytes": 4038,
+      "scientific_pin": false,
+      "sha256": "9391b5527020d47cc05cc3ec7f7008f30e6587f883c583506164b9526d39bbe4",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/competitors/official/task-and-weights.md": {
+      "bytes": 6509,
+      "scientific_pin": false,
+      "sha256": "3e48ca186f135b12699ab4e325065e8fbc61733f2e37ea963e959a40465ccae6",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/competitors/public-head-readme-receipt.json": {
+      "bytes": 15279,
+      "scientific_pin": false,
+      "sha256": "d0cecb14e137f20ba1726276dd14ca514502a22851981e132c649f34b8ae10fd",
+      "source_kind": "CURRENT_LIVE"
+    },
     "reports/competition-enhancement/delivery/ACCESS_KIT.md": {
       "bytes": 8445,
       "scientific_pin": false,
@@ -515,6 +533,12 @@
       "bytes": 4462,
       "scientific_pin": false,
       "sha256": "db253868eb7a46057d5bfe77ddadc12d76fc5e7a27f5709a65160f79d331c3a9",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/delivery/archive-controls.json": {
+      "bytes": 2146,
+      "scientific_pin": false,
+      "sha256": "75e793058e076ecd7c2f56268696b9eb6591d39decec3f4268afb06e79d39faf",
       "source_kind": "CURRENT_LIVE"
     },
     "reports/competition-enhancement/delivery/build_access_kit.py": {
@@ -725,6 +749,12 @@
       "bytes": 868,
       "scientific_pin": false,
       "sha256": "78a2d8589cc49305ee730f81af1792d6044b4a5f4e4c96fb63a8ffcc75c4f24b",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/delivery/source-controls.json": {
+      "bytes": 733,
+      "scientific_pin": false,
+      "sha256": "86c4c8da3893176763c5ba48d3aa51c7d4bbb6a6e33457c29c114c690fc61216",
       "source_kind": "CURRENT_LIVE"
     },
     "reports/competition-enhancement/delivery/tracked-manifest.json": {
@@ -947,6 +977,30 @@
       "bytes": 2404,
       "scientific_pin": false,
       "sha256": "879e344cbe656520638d14834c048babcb64c415df5ef060884eb56e2e609768",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/kefrin/check_equations.py": {
+      "bytes": 20606,
+      "scientific_pin": false,
+      "sha256": "b687a1eb3d33fbc70bd61b1f3ec32a10cbee4e70272068faa72a362026fe78ca",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/kefrin/checks-v1/checks.json": {
+      "bytes": 48052,
+      "scientific_pin": false,
+      "sha256": "901cbee3121fd5fb32161fcb5b76deb80bc1e9ef2b883a5145390defd667fe00",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/kefrin/completed-scope.json": {
+      "bytes": 1244,
+      "scientific_pin": false,
+      "sha256": "195feb932fb9653153f922441348ba19f42f15c8b8f6253ffce6349c34122280",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/manifest.json": {
+      "bytes": 24319,
+      "scientific_pin": false,
+      "sha256": "fb28d468f1ba19e4121cfded11a43c5fe3b3d9d7756aa1bb0060b53b893d6d41",
       "source_kind": "CURRENT_LIVE"
     },
     "reports/competition-enhancement/mirkin-input.csv": {
@@ -3014,9 +3068,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "run_all.py": {
-      "bytes": 51826,
+      "bytes": 51837,
       "scientific_pin": false,
-      "sha256": "e1285ef17e82aad86dd11e0a89c1770033dbb2cbbee71e5e9d6e586600ff6c5c",
+      "sha256": "63f773a9828c3a116aa58d0ed8ec3b4fd45879ed004d354d5e090fdf7e434909",
       "source_kind": "CURRENT_LIVE"
     },
     "sbercluster/__init__.py": {
@@ -3716,9 +3770,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "scripts/verify_interpretation.py": {
-      "bytes": 7298,
+      "bytes": 7387,
       "scientific_pin": false,
-      "sha256": "7cff7b485996f29a9446bd15353111c609f81e4a95eac9e90778c2dd0f4e0c7d",
+      "sha256": "06880b3419dfc501a2463efa41ab4fe231a6b880ba6cf0bd9ffe7055f547ca8b",
       "source_kind": "CURRENT_LIVE"
     },
     "scripts/verify_joint_refinement.py": {
@@ -3978,5 +4032,5 @@
   "scientific_pin_count": 132,
   "self_hash": "External EXPORT proof; manifest does not hash itself",
   "state": "BYTE_EXACT_COPY; CURRENT_ACCEPTANCE_UNVERIFIED",
-  "total_bytes": 56848517
+  "total_bytes": 56979686
 }

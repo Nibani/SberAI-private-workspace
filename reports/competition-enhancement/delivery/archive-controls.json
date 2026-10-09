@@ -1,0 +1,60 @@
+{
+  "all_extracted_sha_before_and_after": "PASS",
+  "annual_exact_label_replay": {
+    "historical_kmeans4": 2016,
+    "sw_constrained_huber75": 2016,
+    "sw_constrained_ordinary": 2016
+  },
+  "archive_sha256": "3f4a07d80ff204c2dab83c9617a73c6440c3f6d7e0940a8e71dbdffbc2801a19",
+  "authoritative_receipt_sha256": "2b2f31565e02b321cfc53342de85eb0c125e6a6278054dbd7d61492a7ddb401d",
+  "cli_calls": 13,
+  "expected_cli_refusals": 2,
+  "external_archive": {
+    "artifact_name": "SberAI-scientific-archive-7860112-C3.zip",
+    "reason": "Excluded from working Git kit; preserved as a separate user output. Technical receipt is shipped here.",
+    "sha256": "3f4a07d80ff204c2dab83c9617a73c6440c3f6d7e0940a8e71dbdffbc2801a19",
+    "status": "UNAVAILABLE"
+  },
+  "extracted_bytes": 117329593,
+  "extracted_files": 1622,
+  "fitting_executed": false,
+  "four_package_integrity": [
+    {
+      "package": "reports/model-frontier-2026-10-03",
+      "payload_bytes": 2869299,
+      "payload_files": 201,
+      "status": "PASS"
+    },
+    {
+      "package": "reports/temporal-core-2026-10-03",
+      "payload_bytes": 794695,
+      "payload_files": 57,
+      "status": "PASS"
+    },
+    {
+      "package": "reports/economic-generalization-2026-10-03",
+      "payload_bytes": 19067822,
+      "payload_files": 325,
+      "status": "PASS"
+    },
+    {
+      "package": "reports/core-round3-review-2026-10-03",
+      "payload_bytes": 169773,
+      "payload_files": 27,
+      "status": "PASS"
+    }
+  ],
+  "omitted_metadata": "Workstation paths, private command/actor metadata and internal assessments",
+  "predict_scope": "saved-profile replay and synthetic CLI interoperability; not raw-data reconstruction",
+  "raw_data_used": false,
+  "schema_version": 1,
+  "science_evaluation": "NOT_ASSESSED",
+  "scientific_pin_count": 132,
+  "scope": "Completed historical C3 technical/offline replay; no new scientific fit or C7 acceptance.",
+  "separate_integrity_only_command": "NOT_RUN",
+  "shipped_reference_packets": 12,
+  "snapshot_stable": true,
+  "status": "PASS_ARCHIVE_OFFLINE_AND_EXACT_RESTORATION",
+  "successful_cli_calls": 11,
+  "synthetic_input_rows": 96
+}

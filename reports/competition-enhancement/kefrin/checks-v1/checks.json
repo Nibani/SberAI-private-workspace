@@ -1,0 +1,2026 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "all_7_bipartitions_rational_objectives_centers_assignments",
+      "status": "PASS"
+    },
+    {
+      "check": "50_starts_reach_tiny_enumerated_optimum_with_mean_centers",
+      "status": "PASS"
+    },
+    {
+      "check": "max_sum_seeding_and_counterexample_to_last_center_rule",
+      "status": "PASS"
+    },
+    {
+      "check": "same_initial_centers_match_sklearn_lloyd_objective_labels_centers",
+      "status": "PASS"
+    },
+    {
+      "check": "current_like20_and_fair_like50_tiny_comparison",
+      "status": "PASS"
+    },
+    {
+      "check": "signed_preprocessed_network_uses_squares_without_binarization",
+      "status": "PASS"
+    },
+    {
+      "check": "translation_beta_zero_degenerate_scatter_and_sparse_stored_zeros",
+      "status": "PASS"
+    },
+    {
+      "check": "duplicate_rows_empty_repair_and_exact_minimum_ties",
+      "status": "PASS"
+    },
+    {
+      "check": "iteration_cap_returns_means_and_explicit_unconverged_status",
+      "status": "PASS"
+    },
+    {
+      "check": "tuple_interface_json_diagnostics_local_rng_repeatability",
+      "status": "PASS"
+    },
+    {
+      "check": "invalid_inputs_and_overflow_rejected",
+      "status": "PASS"
+    }
+  ],
+  "exhaustive_partitions": [
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "F_exact": "106/9",
+      "SSE_Y_exact": "14/3",
+      "SSE_P_exact": "8/3"
+    },
+    {
+      "labels": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "F_exact": "14",
+      "SSE_Y_exact": "26/3",
+      "SSE_P_exact": "2"
+    },
+    {
+      "labels": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "F_exact": "9",
+      "SSE_Y_exact": "1",
+      "SSE_P_exact": "3"
+    },
+    {
+      "labels": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "F_exact": "14",
+      "SSE_Y_exact": "26/3",
+      "SSE_P_exact": "2"
+    },
+    {
+      "labels": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "F_exact": "35/3",
+      "SSE_Y_exact": "9",
+      "SSE_P_exact": "1"
+    },
+    {
+      "labels": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "F_exact": "18",
+      "SSE_Y_exact": "10",
+      "SSE_P_exact": "3"
+    },
+    {
+      "labels": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "F_exact": "106/9",
+      "SSE_Y_exact": "14/3",
+      "SSE_P_exact": "8/3"
+    }
+  ],
+  "exact_optimum": "9",
+  "normalization": {
+    "name": "binary_graph_grand_mean_equal_scatter",
+    "feature_centering": "column_means",
+    "graph_centering": "one_grand_mean_over_all_N_squared_entries_including_diagonal",
+    "binarization": "positive_canonical_weights",
+    "feature_origin": [
+      2.0
+    ],
+    "graph_grand_mean": 0.375,
+    "feature_tss": 10.0,
+    "graph_grand_scatter": 3.75,
+    "graph_column_centered_scatter": 3.5,
+    "graph_weight": 1.0,
+    "rho": 1.0,
+    "xi": 2.6666666666666665,
+    "positive_entries": 6,
+    "diagonal_positive_entries": 0,
+    "binary_symmetric": true
+  },
+  "seed_checks": [
+    {
+      "first": 0,
+      "indices": [
+        0,
+        3,
+        1
+      ]
+    },
+    {
+      "first": 1,
+      "indices": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "first": 2,
+      "indices": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "first": 3,
+      "indices": [
+        3,
+        0,
+        1
+      ]
+    }
+  ],
+  "shared_start_checks": [
+    {
+      "indices": [
+        0,
+        3
+      ],
+      "F": 9.0,
+      "ARI": 1.0,
+      "sklearn_iterations": 2,
+      "equation_iterations": 1
+    },
+    {
+      "indices": [
+        1,
+        2
+      ],
+      "F": 9.0,
+      "ARI": 1.0,
+      "sklearn_iterations": 2,
+      "equation_iterations": 1
+    },
+    {
+      "indices": [
+        2,
+        1
+      ],
+      "F": 9.0,
+      "ARI": 1.0,
+      "sklearn_iterations": 2,
+      "equation_iterations": 1
+    },
+    {
+      "indices": [
+        3,
+        0
+      ],
+      "F": 9.0,
+      "ARI": 1.0,
+      "sklearn_iterations": 2,
+      "equation_iterations": 1
+    }
+  ],
+  "comparison": [
+    {
+      "method": "current_like20",
+      "n_init": 20,
+      "labels": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "F": 9.0,
+      "normalized_F": 0.9,
+      "ARI_to_exact_tiny_partition": 1.0
+    },
+    {
+      "method": "equal_scatter_like50",
+      "n_init": 50,
+      "labels": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "F": 9.0,
+      "normalized_F": 0.9,
+      "ARI_to_exact_tiny_partition": 1.0
+    },
+    {
+      "method": "equations_max_sum50",
+      "n_init": 50,
+      "labels": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "F": 9.0,
+      "normalized_F": 0.9,
+      "ARI_to_exact_tiny_partition": 1.0
+    }
+  ],
+  "fit50_diagnostics": {
+    "algorithm_revision": "euclidean_equations_5_7_max_sum_v1",
+    "objective_definition": "rho*SSE_Y + xi*SSE_P; squared Euclidean",
+    "preprocessing": {
+      "name": "binary_graph_grand_mean_equal_scatter",
+      "feature_centering": "column_means",
+      "graph_centering": "one_grand_mean_over_all_N_squared_entries_including_diagonal",
+      "binarization": "positive_canonical_weights",
+      "feature_origin": [
+        2.0
+      ],
+      "graph_grand_mean": 0.375,
+      "feature_tss": 10.0,
+      "graph_grand_scatter": 3.75,
+      "graph_column_centered_scatter": 3.5,
+      "graph_weight": 1.0,
+      "rho": 1.0,
+      "xi": 2.6666666666666665,
+      "positive_entries": 6,
+      "diagonal_positive_entries": 0,
+      "binary_symmetric": true
+    },
+    "rho": 1.0,
+    "xi": 2.6666666666666665,
+    "seed": 1729,
+    "rng_rule": "local SeedSequence([seed,restart_id]); first point uniform",
+    "seeding": "first_uniform_then_argmax_sum_to_all_previous_seeds",
+    "assignment_ties": "retain_previous_exact_minimum_else_lowest_cluster_index",
+    "seeding_ties": "lowest_remaining_observation_index",
+    "empty_cluster_policy": "split_greatest_current_error_from_cluster_of_size_gt_one",
+    "stop_rule": "labels_fixed_point_against_returned_means_or_iteration_cap",
+    "max_iter": 300,
+    "n_init_requested": 50,
+    "n_init_actual": 50,
+    "best_restart": 0,
+    "iterations": 1,
+    "iterations_total": 50,
+    "converged": true,
+    "convergence_status": "labels_fixed_point",
+    "cap_reached": false,
+    "capped_restarts": 0,
+    "empty_repairs": 0,
+    "empty_repairs_total": 0,
+    "objective": 9.0,
+    "SSE_Y": 1.0,
+    "SSE_P": 3.0,
+    "weighted_SSE_Y": 1.0,
+    "weighted_SSE_P": 8.0,
+    "objective_monotone_all_restarts": true,
+    "minimum_cluster_size": 2,
+    "restarts": [
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          3,
+          0
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 0
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          1,
+          2
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 1
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          3,
+          0
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 2
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          2,
+          1
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 3
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          0,
+          3
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 4
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          2,
+          1
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 5
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          1,
+          2
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 6
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          0,
+          3
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 7
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          3,
+          0
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 8
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          0,
+          3
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 9
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          0,
+          3
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 10
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          1,
+          2
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 11
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          1,
+          2
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 12
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          0,
+          3
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 13
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          2,
+          1
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 14
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          0,
+          3
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 15
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          3,
+          0
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 16
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          1,
+          2
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 17
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          2,
+          1
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 18
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          1,
+          2
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 19
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          3,
+          0
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 20
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          3,
+          0
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 21
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          3,
+          0
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 22
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          2,
+          1
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 23
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          0,
+          3
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 24
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          2,
+          1
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 25
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          1,
+          2
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 26
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          2,
+          1
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 27
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          3,
+          0
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 28
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          2,
+          1
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 29
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          3,
+          0
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 30
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          3,
+          0
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 31
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          0,
+          3
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 32
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          0,
+          3
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 33
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          0,
+          3
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 34
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          3,
+          0
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 35
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          1,
+          2
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 36
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          2,
+          1
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 37
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          2,
+          1
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 38
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          0,
+          3
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 39
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          1,
+          2
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 40
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          0,
+          3
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 41
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          2,
+          1
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 42
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          2,
+          1
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 43
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          2,
+          1
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 44
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          2,
+          1
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 45
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          3,
+          0
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 46
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          3,
+          0
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 47
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          3,
+          0
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 48
+      },
+      {
+        "objective": 9.0,
+        "SSE_Y": 1.0,
+        "SSE_P": 3.0,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 9.0,
+            "SSE_Y": 1.0,
+            "SSE_P": 3.0,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          2,
+          1
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 49
+      }
+    ],
+    "objective_normalized_by_feature_tss": 0.9,
+    "degenerate_feature_tss": false
+  },
+  "signed_fit_diagnostics": {
+    "algorithm_revision": "euclidean_equations_5_7_max_sum_v1",
+    "objective_definition": "rho*SSE_Y + xi*SSE_P; squared Euclidean",
+    "preprocessing": "caller_supplied_Y_and_P",
+    "rho": 0.7,
+    "xi": 1.2,
+    "seed": 91,
+    "rng_rule": "local SeedSequence([seed,restart_id]); first point uniform",
+    "seeding": "first_uniform_then_argmax_sum_to_all_previous_seeds",
+    "assignment_ties": "retain_previous_exact_minimum_else_lowest_cluster_index",
+    "seeding_ties": "lowest_remaining_observation_index",
+    "empty_cluster_policy": "split_greatest_current_error_from_cluster_of_size_gt_one",
+    "stop_rule": "labels_fixed_point_against_returned_means_or_iteration_cap",
+    "max_iter": 300,
+    "n_init_requested": 3,
+    "n_init_actual": 3,
+    "best_restart": 0,
+    "iterations": 1,
+    "iterations_total": 3,
+    "converged": true,
+    "convergence_status": "labels_fixed_point",
+    "cap_reached": false,
+    "capped_restarts": 0,
+    "empty_repairs": 0,
+    "empty_repairs_total": 0,
+    "objective": 6.799999999999999,
+    "SSE_Y": 2.0,
+    "SSE_P": 4.5,
+    "weighted_SSE_Y": 1.4,
+    "weighted_SSE_P": 5.3999999999999995,
+    "objective_monotone_all_restarts": true,
+    "minimum_cluster_size": 2,
+    "restarts": [
+      {
+        "objective": 6.799999999999999,
+        "SSE_Y": 2.0,
+        "SSE_P": 4.5,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 6.799999999999999,
+            "SSE_Y": 2.0,
+            "SSE_P": 4.5,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          2,
+          1
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 0
+      },
+      {
+        "objective": 6.799999999999999,
+        "SSE_Y": 2.0,
+        "SSE_P": 4.5,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 6.799999999999999,
+            "SSE_Y": 2.0,
+            "SSE_P": 4.5,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          2,
+          1
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 1
+      },
+      {
+        "objective": 6.799999999999999,
+        "SSE_Y": 2.0,
+        "SSE_P": 4.5,
+        "iterations": 1,
+        "converged": true,
+        "convergence_status": "labels_fixed_point",
+        "cap_reached": false,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 6.799999999999999,
+            "SSE_Y": 2.0,
+            "SSE_P": 4.5,
+            "label_changes": 4,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          0,
+          3
+        ],
+        "final_counts": [
+          2,
+          2
+        ],
+        "restart": 2
+      }
+    ]
+  },
+  "cap_diagnostics": {
+    "algorithm_revision": "euclidean_equations_5_7_max_sum_v1",
+    "objective_definition": "rho*SSE_Y + xi*SSE_P; squared Euclidean",
+    "preprocessing": "caller_supplied_Y_and_P",
+    "rho": 1.0,
+    "xi": 0.0,
+    "seed": 0,
+    "rng_rule": "local SeedSequence([seed,restart_id]); first point uniform",
+    "seeding": "first_uniform_then_argmax_sum_to_all_previous_seeds",
+    "assignment_ties": "retain_previous_exact_minimum_else_lowest_cluster_index",
+    "seeding_ties": "lowest_remaining_observation_index",
+    "empty_cluster_policy": "split_greatest_current_error_from_cluster_of_size_gt_one",
+    "stop_rule": "labels_fixed_point_against_returned_means_or_iteration_cap",
+    "max_iter": 1,
+    "n_init_requested": 1,
+    "n_init_actual": 1,
+    "best_restart": 0,
+    "iterations": 1,
+    "iterations_total": 1,
+    "converged": false,
+    "convergence_status": "iteration_cap_reached",
+    "cap_reached": true,
+    "capped_restarts": 1,
+    "empty_repairs": 0,
+    "empty_repairs_total": 0,
+    "objective": 70.0,
+    "SSE_Y": 70.0,
+    "SSE_P": 0.0,
+    "weighted_SSE_Y": 70.0,
+    "weighted_SSE_P": 0.0,
+    "objective_monotone_all_restarts": true,
+    "minimum_cluster_size": 1,
+    "restarts": [
+      {
+        "objective": 70.0,
+        "SSE_Y": 70.0,
+        "SSE_P": 0.0,
+        "iterations": 1,
+        "converged": false,
+        "convergence_status": "iteration_cap_reached",
+        "cap_reached": true,
+        "empty_repairs": 0,
+        "trace": [
+          {
+            "iteration": 1,
+            "objective": 70.0,
+            "SSE_Y": 70.0,
+            "SSE_P": 0.0,
+            "label_changes": 6,
+            "empty_repairs": []
+          }
+        ],
+        "objective_monotone": true,
+        "initial_indices": [
+          0,
+          1
+        ],
+        "final_counts": [
+          1,
+          5
+        ],
+        "restart": 0
+      }
+    ]
+  },
+  "scope": "tiny mathematical verification only; no synthetic evaluation or real-data quality",
+  "started_utc": "2026-10-08T21:01:43.114185+00:00",
+  "finished_utc": "2026-10-08T21:01:45.293991+00:00",
+  "wall_seconds": 2.186141599988332,
+  "command": [
+    "C:\\Users\\Andreyka\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "reports/competition-enhancement/kefrin/check_equations.py",
+    "--output",
+    "C:\\Users\\Andreyka\\Documents\\Codex\\2026-10-08\\goal-goal-c-users-andreyka-documents-2\\work\\repo\\reports\\competition-enhancement\\kefrin\\checks-v1",
+    "--monitor-handshake"
+  ],
+  "source_sha256": {
+    "scripts/competition_kefrin.py": "9a0418ee59082675cd027ced879de08dba4e297b7cb03e29a1c6ee2c831c62c9",
+    "reports/competition-enhancement/kefrin/check_equations.py": "b687a1eb3d33fbc70bd61b1f3ec32a10cbee4e70272068faa72a362026fe78ca",
+    "sbercluster/attributed.py": "2c52bff34d8ee0a095a807475461bda50ba395c31020c07bfc67df9d4fbc4414"
+  }
+}

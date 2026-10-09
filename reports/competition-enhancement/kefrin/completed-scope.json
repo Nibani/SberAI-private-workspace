@@ -1,0 +1,21 @@
+{
+  "completed_scope": "Existing Euclidean formula implementation and 11 executed tiny formula/procedure controls; original registered synthetic comparison also executed.",
+  "external_author_code": {
+    "reason": "Permission/license for importing author code unverified; author code was not copied or executed.",
+    "status": "UNAVAILABLE"
+  },
+  "implementation_sha256": "9a0418ee59082675cd027ced879de08dba4e297b7cb03e29a1c6ee2c831c62c9",
+  "primary_reference": "https://doi.org/10.3390/e24050626",
+  "published_paper_tables": {
+    "reason": "Paper preprocessing/table reproduction was not executed; Euclidean implementation uses the stated main-compatible normalization.",
+    "status": "UNAVAILABLE"
+  },
+  "schema_version": 1,
+  "scientific_comparison_result": "Read the executed synthetic contrasts and limitations; no general superiority asserted.",
+  "status": "COMPLETED",
+  "synthetic_registration_sha256": "8a94e00e8bfe1fe8823c3411fcf48ce066de578da1142bceb579ced37d7f2415",
+  "tiny_control_checks": 11,
+  "tiny_control_scope": "tiny mathematical verification only; no synthetic evaluation or real-data quality",
+  "tiny_finished_utc": "2026-10-08T21:01:45.293991+00:00",
+  "tiny_started_utc": "2026-10-08T21:01:43.114185+00:00"
+}

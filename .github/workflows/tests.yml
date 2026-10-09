@@ -31,8 +31,10 @@ jobs:
       - name: Complete main scientific and unit checks
         run: python -B -X utf8 run_all.py --output artifacts/jury-check
       - name: Exercise the portable synthetic runner on two small fixtures
+        if: ${{ !cancelled() }}
         run: python -B -X utf8 -m scripts.reproduce_synthetic --output runs/synthetic-ci-fixture --fixture
       - name: Rebuild the exact current atlas
+        if: ${{ !cancelled() }}
         run: |
           python -B -X utf8 -m scripts.render_saved_atlas --output artifacts/ci-rebuild/index.html
           cmp artifacts/ci-rebuild/index.html docs/index.html
@@ -41,10 +43,12 @@ jobs:
           done
           git diff --exit-code
       - name: Install the pinned browser
+        if: ${{ !cancelled() }}
         run: |
           npm install --prefix artifacts/ci-node --no-save --package-lock=false playwright@1.62.1
           node artifacts/ci-node/node_modules/playwright/cli.js install --with-deps chromium
       - name: Real V3 interaction on a private runner
+        if: ${{ !cancelled() }}
         shell: bash
         env:
           TEST_BASE_URL: http://127.0.0.1:8765/docs/index.html

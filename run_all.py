@@ -588,7 +588,7 @@ def phases(root: Path, node: str, quick: bool, storage=None):
             Phase("science_units", "Математика, научные таблицы и происхождение данных", (*py, "-c", UNIT_RUNNER, *SCIENCE_TESTS)),
         ])
     result.extend([
-        Phase("interpretation", "Экономические кейсы, внешняя проверка и интервалы по сохранённым данным", (*py, "-m", "scripts.verify_interpretation")),
+        Phase("interpretation", "Экономические кейсы, внешняя проверка и интервалы по сохранённым данным", (*py, "-m", "scripts.verify_interpretation", "--check")),
         Phase("synthetic", "Синтетические режимы: все повторы, контрасты и интервалы", (*py, "-m", "scripts.verify_synthetic_results", "--check")),
         Phase("seed_stability", "Поддержка назначений в 20 повторах оптимизации на тех же данных", (*py, "-m", "scripts.verify_seed_stability")),
         Phase("atlas_units", "Пакет атласа, сохранённые входы и сценарии ошибок", (*py, "-c", UNIT_RUNNER, *(QUICK_TESTS if quick else ATLAS_TESTS))),

@@ -10,6 +10,11 @@
   },
   "baseline_diff": {
     "added": [
+      "reports/competition-enhancement/competitors/official/rubric-official.md",
+      "reports/competition-enhancement/competitors/official/task-and-weights.md",
+      "reports/competition-enhancement/competitors/public-head-readme-receipt.json",
+      "reports/competition-enhancement/delivery/archive-controls.json",
+      "reports/competition-enhancement/delivery/source-controls.json",
       "reports/competition-enhancement/economic_cases/analogue-preregistration.json",
       "reports/competition-enhancement/economic_cases/analogue-split.csv",
       "reports/competition-enhancement/economic_cases/analogue-test-bootstrap.csv",
@@ -45,6 +50,10 @@
       "reports/competition-enhancement/interpretation/provenance/prepared.json",
       "reports/competition-enhancement/interpretation/summary.json",
       "reports/competition-enhancement/interpretation/verification.json",
+      "reports/competition-enhancement/kefrin/check_equations.py",
+      "reports/competition-enhancement/kefrin/checks-v1/checks.json",
+      "reports/competition-enhancement/kefrin/completed-scope.json",
+      "reports/competition-enhancement/manifest.json",
       "reports/competition-enhancement/mirkin-input.csv",
       "reports/competition-enhancement/mirkin-summary.csv",
       "reports/competition-enhancement/mirkin/analysis-spec.json",
@@ -152,15 +161,15 @@
     "changed": {
       ".github/workflows/tests.yml": {
         "c4_sha256": "27d1fdf84265b6cfa90f83d836a0678a92763a8a939de53b47180634ccbebdb3",
-        "current_sha256": "096a2b4a157d4be34a4d2134c6419a4883bba097f3448d4dc0dd058c82ec54ea"
+        "current_sha256": "c21219befc94f5916f95eea688b887ad930bda58c7745c50cf66c8a5a2f193b8"
       },
       "README.md": {
         "c4_sha256": "c1d8d73761760256882f3c75223096d7966aa837a836cdfcc08d691fa1aa2d45",
-        "current_sha256": "6ff4962c13b85141a10d6553d8a78ac6dc5b2aa9fc9c5273606f681349f7fa59"
+        "current_sha256": "c2c138343640ce3eccdae806e8a53e165cf34a8d6f4d5c1b5f7e39e0416f8d36"
       },
       "docs/NETWORK_TYPOLOGY.md": {
         "c4_sha256": "1f82027cee56a3ef7e3e0453c69693723e5e7b290b9c5987c94a7e90eb7f94c7",
-        "current_sha256": "39eb831d9cbf16baf7c8971a098d0e0bceaf1079f0298c17137498f6c590d4ba"
+        "current_sha256": "3753c39afb2291761fdd08e3102e61abfbd2f8b81c6eb143ae0afeabd6437ed2"
       },
       "docs/index.html": {
         "c4_sha256": "29dc2c6bcfecfef58ffe940cfd0305830b67ed0278d6b5bc6de66130b8f82389",
@@ -172,7 +181,7 @@
       },
       "run_all.py": {
         "c4_sha256": "685cd0c0a7c1ed1576c1bc04d60308761b68a6ea0922ebf63164c41f492ad1f4",
-        "current_sha256": "e1285ef17e82aad86dd11e0a89c1770033dbb2cbbee71e5e9d6e586600ff6c5c"
+        "current_sha256": "63f773a9828c3a116aa58d0ed8ec3b4fd45879ed004d354d5e090fdf7e434909"
       },
       "scripts/build_research_atlas.py": {
         "c4_sha256": "710674532632980a9c9d11b5e9475c222e3af06abc090dbf171b79e5add165d3",
@@ -212,17 +221,25 @@
     "python_ast": "PASS"
   },
   "ci_old_live_sha256": "a7bdcf280bfbec5fc938a6071eb7e8da28facbd3c6c7af1967347edb91f19e6f",
-  "ci_override_sha256": "096a2b4a157d4be34a4d2134c6419a4883bba097f3448d4dc0dd058c82ec54ea",
+  "ci_override_sha256": "c21219befc94f5916f95eea688b887ad930bda58c7745c50cf66c8a5a2f193b8",
   "controller_certification": "NOT_REQUIRED; NO_ACCEPTED_CLAIM",
-  "exported_at_utc": "2026-10-09T01:18:52.080321+00:00",
+  "exported_at_utc": "2026-10-09T01:40:38.206968+00:00",
   "future_explicit_seed_rerun_limitation": "The original registered seed producer is unchanged and uses its historical Windows PDH guard. That producer does not implement the later VRAM gate; no future seed rerun resource guarantee is asserted. Saved seed verification does not fit models. The current synthetic reproduction wrapper has a separate guard revision.",
   "kind": "PRIVATE_NIBANI_SBER_PUBLIC",
   "owner_frozen_receipt": {
     "byte_check": "PASS",
-    "file_count": 275,
+    "file_count": 288,
     "files_sha256": {
       "configs/v12.json": "68776f61ab2c6c24ae84b1de72d0945c49f1891572cf89634e58803f6b222151",
       "data/v12/panel.csv.gz": "953ba39d152f0f4192ebbabc8edfa0684683c3a4a3d8c147f0978cf6f1798784",
+      "reports/competition-enhancement/competitors/official/rubric-official.md": "9391b5527020d47cc05cc3ec7f7008f30e6587f883c583506164b9526d39bbe4",
+      "reports/competition-enhancement/competitors/official/task-and-weights.md": "3e48ca186f135b12699ab4e325065e8fbc61733f2e37ea963e959a40465ccae6",
+      "reports/competition-enhancement/competitors/public-head-readme-receipt.json": "d0cecb14e137f20ba1726276dd14ca514502a22851981e132c649f34b8ae10fd",
+      "reports/competition-enhancement/delivery/archive-controls.json": "75e793058e076ecd7c2f56268696b9eb6591d39decec3f4268afb06e79d39faf",
+      "reports/competition-enhancement/delivery/cleanup-new/AUDIT.md": "261d43c871abf35f98a68238302214d94f3ee897731b7ff0d2fef412dc2d30b6",
+      "reports/competition-enhancement/delivery/cleanup-new/applied.json": "c127b4cc1c6e2f8594ccf179c488a577c62bd1d3103c28e47e4cdc32a583906e",
+      "reports/competition-enhancement/delivery/cleanup-new/prepared-storage.json": "21622e9df8b10edb544f4e4531e0ef9ed76da347ae428cf987c58339bd3cbff6",
+      "reports/competition-enhancement/delivery/source-controls.json": "86c4c8da3893176763c5ba48d3aa51c7d4bbb6a6e33457c29c114c690fc61216",
       "reports/competition-enhancement/economic_cases/analogue-preregistration.json": "5f9ec3bd9f1ac9fdbdcb0cfa8981919e75d511a6990fa77b0a6ca7b034971b2b",
       "reports/competition-enhancement/economic_cases/analogue-split.csv": "4ddc4b29a77fd91b2f4accf6868f95cd1e440eeb4c215a813b8d99374fc5b6e4",
       "reports/competition-enhancement/economic_cases/analogue-test-bootstrap.csv": "fc9b0ae3425030972a84d372c74f2c882e7e293bc8b7697a8703a063f75577bc",
@@ -258,6 +275,10 @@
       "reports/competition-enhancement/interpretation/provenance/prepared.json": "b9bd81d62e2723bd555a3b233cc04c6e7dbce6bb7c4141c8779d5e8414c12e9c",
       "reports/competition-enhancement/interpretation/summary.json": "68d24491dcd89c448fa6099f216b16467ab708538d70e25ec8bdc0019e4ef7c1",
       "reports/competition-enhancement/interpretation/verification.json": "879e344cbe656520638d14834c048babcb64c415df5ef060884eb56e2e609768",
+      "reports/competition-enhancement/kefrin/check_equations.py": "b687a1eb3d33fbc70bd61b1f3ec32a10cbee4e70272068faa72a362026fe78ca",
+      "reports/competition-enhancement/kefrin/checks-v1/checks.json": "901cbee3121fd5fb32161fcb5b76deb80bc1e9ef2b883a5145390defd667fe00",
+      "reports/competition-enhancement/kefrin/completed-scope.json": "195feb932fb9653153f922441348ba19f42f15c8b8f6253ffce6349c34122280",
+      "reports/competition-enhancement/manifest.json": "fb28d468f1ba19e4121cfded11a43c5fe3b3d9d7756aa1bb0060b53b893d6d41",
       "reports/competition-enhancement/mirkin-input.csv": "35f01668d7b6cc7295f3652ab822b7ec375e12d97eb13d1850aeb2eb3cb2dfda",
       "reports/competition-enhancement/mirkin-summary.csv": "49b131801e3f4031125bd6ee4da885f4016268fc8a20f4ed73186188acf97e41",
       "reports/competition-enhancement/mirkin/analysis-spec.json": "ddc35f6111a53ef8714d12596c4b4f1423e9f28e1002eb5e1ccedd0d195096b0",
@@ -492,7 +513,8 @@
       "scripts/run_v12.py": "a3ffa38b92a7cdd0683ab16dc04d4de14e27986ff8f3ef6c18017544d1217bd9",
       "scripts/science_portable_resources.py": "c456f5c2a016f7194c1780201f616111dfdc4b6272dcc12f82c3b534c4a37440",
       "scripts/validate_v12_findings.py": "fd22e625fda09436904e2f657fc8d31b6e06e43ce8dab165b129298261f10c58",
-      "scripts/verify_interpretation.py": "7cff7b485996f29a9446bd15353111c609f81e4a95eac9e90778c2dd0f4e0c7d",
+      "scripts/verify_interpretation.py": "06880b3419dfc501a2463efa41ab4fe231a6b880ba6cf0bd9ffe7055f547ca8b",
+      "scripts/verify_logical_storage.py": "c66a4ba449c3b2d178304dd53fcd6f849e7be4a642f0911454f18d7502640d06",
       "scripts/verify_seed_stability.py": "68f109fa80350df274914deae8d9c211c4c69144c89b7a127dfb9498bc41d8ea",
       "scripts/verify_synthetic_results.py": "ea50ad70d6fd0aebb9f8cd59769ee3d53c8f2438314ec156428312a070a6fe63",
       "tests/test_synthetic_resource_guards.py": "97d119804c4944177cb954347342997d3021370218ab55fc31922f9a42b9884e"
@@ -535,7 +557,7 @@
         "precompression_receipt_sha256": "516e63ace28d5384641978e2806699db317a56594ae8768cfcc950b508e64bb4"
       }
     ],
-    "receipt_sha256": "ce2220fc13f48c365864af958a5d0e14d84e39e2ef42412faf22704fc72a4be4",
+    "receipt_sha256": "177bb870a464b0a682b1518eae3bfc0a1daeab20f3dcbcd02f4510ea384b02a4",
     "scientific_acceptance": "UNVERIFIED; frozen bytes are not quality acceptance",
     "seed_lineage": {
       "lineage": {
@@ -578,10 +600,10 @@
   "pages": "NOT_DEPLOYED_BY_EXPORTER",
   "scientific_fitting_executed": false,
   "seed_lineage_review": "PASS_REPORTED_BY_ROOT; scientific quality acceptance separate",
-  "selection_sha256": "3987b5238b7656311c674c9c0665f800802b5f51daf562b9f7208fa9a4671166",
+  "selection_sha256": "876ed4fdc7bd405eb9e99243fac3a3ccef4188a50e3d20f0f49794bcf63cc4f6",
   "sole_author": "Nibani",
   "tools_sha256": {
-    "export_candidate.py": "a4740e10b7e8aebfd6b1bcb6405450e7eae395d5ead321547febe33e5ea5b94f",
+    "export_candidate.py": "917c09b30cfeabbc6a47d804f949389892587b4315d8ce9b05e3f490c58a7713",
     "kit_links.py": "7f8a7cea177411c95a3e7c5c6b784bee27297667ae16eb3b80b6b1000e3671dd"
   }
 }

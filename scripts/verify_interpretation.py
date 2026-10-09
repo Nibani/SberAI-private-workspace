@@ -1,9 +1,11 @@
 """Verify the first frozen interpretation run from delivered CSVs and hashes.
 
 Uses only the standard library; never fits a model, opens 2025 outcomes or
-repeats scientific execution. Run: python -B -X utf8 -m scripts.verify_interpretation
+repeats scientific execution or writes delivered artifacts. Results go to stdout.
+Run: python -B -X utf8 -m scripts.verify_interpretation --check
 """
 from __future__ import annotations
+import argparse
 import csv
 import hashlib
 import json
@@ -33,6 +35,9 @@ def quantile(values, p):
     return ordered[lower] if fraction == 0 else ordered[lower]*(1-fraction)+ordered[lower+1]*fraction
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--check', action='store_true', help='Verify and print results without writing the historical verification artifact.')
+    parser.parse_args()
     completed = json.loads((OUT/'interpretation/provenance/execute-completed.json').read_text('utf-8'))
     prepared = json.loads((OUT/'interpretation/provenance/prepared.json').read_text('utf-8'))
     assert completed['exit_code'] == 0
@@ -122,9 +127,6 @@ def main():
         'analogue_primary_summary':summary,'mobility_status':mobility['status'],
         'execute_completed_sha256':digest(OUT/'interpretation/provenance/execute-completed.json'),
         'verification_source_sha256':digest(Path(__file__))}
-    target = OUT/'interpretation/verification.json'
-    target.parent.mkdir(parents=True,exist_ok=True)
-    target.write_text(json.dumps(result,ensure_ascii=False,indent=2,allow_nan=False)+'\n',encoding='utf-8')
     print(json.dumps(result,ensure_ascii=False,indent=2))
     return 0
 
