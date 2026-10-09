@@ -978,7 +978,20 @@
       "scientific_acceptance": "UNVERIFIED; byte lineage does not assess scientific quality"
     }
   },
-  "pages": "NOT_DEPLOYED_BY_EXPORTER",
+  "pages": "PUBLICATION_AUTHORIZED; main root; actual deployment recorded separately",
+  "publication": {
+    "accepted_base_commit": "5fed1479eae188fee3530e2c22f084ded315f5b7",
+    "accepted_base_manifest_sha256": "8dd1c3bf652c720da6737d791264a85f7e154278222ad13c721acf093f22565b",
+    "authorized_at_utc": "2026-10-09T12:22:29.572726+00:00",
+    "repository": "https://github.com/Nibani/sber-public",
+    "scope": "Public access and root entry point; accepted atlas, assets, scientific code and results remain byte-identical.",
+    "site": "https://nibani.github.io/sber-public/",
+    "source": {
+      "branch": "main",
+      "path": "/"
+    },
+    "user_instruction": "Да, открывай репозиторий"
+  },
   "scientific_fitting_executed": false,
   "seed_lineage_review": "PASS_REPORTED_BY_ROOT; scientific quality acceptance separate",
   "selection_sha256": "5c56480ffcfc14ba716db9a13444f5db57a508cf98442cb4e8e5132f4fef8bad",

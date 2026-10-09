@@ -1,5 +1,5 @@
 {
-  "file_count": 671,
+  "file_count": 673,
   "files": {
     ".dockerignore": {
       "bytes": 91,
@@ -25,6 +25,12 @@
       "sha256": "18b123e21b7883978f2095dd0cef974ea31b7b8856fad5a6b673c722ccc876db",
       "source_kind": "CURRENT_LIVE"
     },
+    ".nojekyll": {
+      "bytes": 0,
+      "scientific_pin": false,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_kind": "PUBLICATION_DELTA"
+    },
     "Dockerfile": {
       "bytes": 487,
       "scientific_pin": false,
@@ -38,16 +44,16 @@
       "source_kind": "CURRENT_LIVE"
     },
     "PROVENANCE.json": {
-      "bytes": 106720,
+      "bytes": 107406,
       "scientific_pin": false,
-      "sha256": "08b8ed8447bbd87c76a35f28eecfb5392c6cf4ec9b8d521be66a5384b0ce5dc2",
-      "source_kind": "EXPORT_METADATA"
+      "sha256": "da8eb57248dca8997b7fa3b9d2b679b497d41c2d3afdf97350413e17b35760ce",
+      "source_kind": "PUBLICATION_DELTA"
     },
     "README.md": {
-      "bytes": 16762,
+      "bytes": 16968,
       "scientific_pin": false,
-      "sha256": "c2c138343640ce3eccdae806e8a53e165cf34a8d6f4d5c1b5f7e39e0416f8d36",
-      "source_kind": "CURRENT_LIVE"
+      "sha256": "2646d8a2e3d6e3edb5c6fa6710949beadc20131d80252f7e5149546583d47d63",
+      "source_kind": "PUBLICATION_DELTA"
     },
     "SCIENTIFIC-SHA256.json": {
       "bytes": 15807,
@@ -438,6 +444,12 @@
       "scientific_pin": false,
       "sha256": "e34a5addce52d359f505157deaebec678eca225cc51e393573dc305520605cd1",
       "source_kind": "CURRENT_LIVE"
+    },
+    "index.html": {
+      "bytes": 428,
+      "scientific_pin": false,
+      "sha256": "e0dc521af1db2b144d4050ffd62113f1bd6e0eb396d23e183403a99ed672f416",
+      "source_kind": "PUBLICATION_DELTA"
     },
     "models/continuous_atlas.json": {
       "bytes": 41766,
@@ -4031,6 +4043,6 @@
   "schema_version": 1,
   "scientific_pin_count": 132,
   "self_hash": "External EXPORT proof; manifest does not hash itself",
-  "state": "BYTE_EXACT_COPY; CURRENT_ACCEPTANCE_UNVERIFIED",
-  "total_bytes": 57024824
+  "state": "PUBLICATION_DELTA_FROM_ACCEPTED_C9; SCIENCE_AND_ATLAS_BYTES_UNCHANGED",
+  "total_bytes": 57026144
 }
