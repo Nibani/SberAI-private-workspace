@@ -25,7 +25,7 @@ class Target {
     this.active.push(animation); animations.push(animation); return animation;
   }
 }
-const nodes = Object.fromEntries(['method','map-model','map-year','method-note','quick','search','exclude','territory-inspector','neighbor-results'].map(id => [id, new Target(id)]));
+const nodes = Object.fromEntries(['method','map-model','map-year','method-note','quick','search','search-feedback','exclude','territory-inspector','neighbor-results'].map(id => [id, new Target(id)]));
 const panels = ['map','analogs','dynamics'].map(view => { const n = new Target('workspace-' + view); n.dataset.workspacePanel = view; nodes[n.id] = n; return n; });
 const tabs = ['map','analogs','dynamics'].map(view => { const n = new Target('view-' + view); n.dataset.view = view; nodes[n.id] = n; return n; });
 const tabbar = new Target('tabs');
@@ -92,6 +92,16 @@ for (const {event, identity, quick} of selectionEvents) {
   assert.equal(quick, String(event.detail.index), 'Selection event contains the current selected index');
 }
 cases.push('selection events expose current index after immediate facts in initial, rapid and reduced-motion paths');
+const beforeSearchEvents=selectionEvents.length,beforeSearchCalls=calls.length;
+nodes['search-feedback'].hidden=false;nodes.search.value=' ONE ';
+assert.equal(run("resolveSearch(' ONE ')"),true);
+assert.equal(nodes.search.value,'one');assert.equal(nodes['search-feedback'].hidden,true);
+assert.equal(selectionEvents.length,beforeSearchEvents);assert.equal(calls.length,beforeSearchCalls,'Repeated current search does not refresh facts or mobile frames');
+assert.equal(run("resolveSearch('two')"),true);assert.equal(context.state.index,1);
+assert.equal(selectionEvents.length,beforeSearchEvents+1,'A different territory still dispatches a real selection');
+const afterNewSearchCalls=calls.length;assert.equal(run("resolveSearch('TWO')"),true);
+assert.equal(selectionEvents.length,beforeSearchEvents+1);assert.equal(calls.length,afterNewSearchCalls,'Native change after successful Enter is idempotent');
+cases.push('Enter then native search change normalizes the label without repeating selection; a different territory still updates');
 const result = {status: 'PASS', scope: 'Extracted controller functions with deterministic Node DOM and animation mocks; no browser or pixels', cases, calls: calls.length, animations: animations.length};
 if (process.argv[3]) fs.writeFileSync(path.resolve(process.argv[3]), JSON.stringify(result, null, 2) + '\n');
 console.log(JSON.stringify(result));

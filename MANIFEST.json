@@ -90,9 +90,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     ".github/workflows/tests.yml": {
-      "bytes": 2321,
+      "bytes": 3104,
       "scientific_pin": false,
-      "sha256": "a047aba6526a5ab28782886c7e743c70f987f304a7f728804169fc8c3277a63a",
+      "sha256": "2ab5bb1bbfb6ce1e0cf8af39f575851115c39438621a0c93d2120401d7cd0cac",
       "source_kind": "CURRENT_LIVE"
     },
     ".gitignore": {
@@ -122,7 +122,7 @@
     "PROVENANCE.json": {
       "bytes": 116375,
       "scientific_pin": false,
-      "sha256": "65f9305cb7d0ea1ef650ea8b506e4defb5ed199c715103d899d5d154559aa00d",
+      "sha256": "bd9dcd9dc382f05dd5c597df8cfd94547d17a2aea74136ac397258b4302f37b5",
       "source_kind": "CURRENT_LIVE"
     },
     "README.md": {
@@ -606,9 +606,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "docs/index.html": {
-      "bytes": 551707,
+      "bytes": 551796,
       "scientific_pin": false,
-      "sha256": "12cb4006178b723efed6d93ca365edb9d147b899fa92da2313eba3338a51c11f",
+      "sha256": "8e0b3902626239d63d4dc33c6bad11370b949c0662116ad23cb70334ab0fe097",
       "source_kind": "CURRENT_LIVE"
     },
     "index.html": {
@@ -2370,9 +2370,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "tests/browser/main_model_controls.cjs": {
-      "bytes": 8541,
+      "bytes": 9594,
       "scientific_pin": false,
-      "sha256": "b083acda25c011a216e306a78f9fa2def35243888ec30de0ea9fde48b19a01ac",
+      "sha256": "7208147af5217ff404e082d7f56cd7c2e08ea955d2215e77bbe2e28664b98492",
       "source_kind": "CURRENT_LIVE"
     },
     "tests/browser/main_model_regressions.cjs": {
@@ -2562,9 +2562,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "tools/browser/offline.cjs": {
-      "bytes": 3462,
+      "bytes": 5542,
       "scientific_pin": false,
-      "sha256": "9271ee914d0d6fdcff2c2e2b31573fa5b2b5fc3ea1331563be0d351f4a302048",
+      "sha256": "43149c0a4379d5fcaa07da1146a28253e582874287b417795b71b22ded16a141",
       "source_kind": "CURRENT_LIVE"
     },
     "tools/browser/package-lock.json": {
@@ -2640,9 +2640,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "web/research_template.html": {
-      "bytes": 127371,
+      "bytes": 127460,
       "scientific_pin": false,
-      "sha256": "43b6b1ae28c165261d6c3ad785381c3f15c529df0d7ec35cb418639e666d3ddb",
+      "sha256": "f51253455117694d5a5b7723fb39e466b19a919df0718280028252d226025c41",
       "source_kind": "CURRENT_LIVE"
     },
     "web/v12_sections.html": {
@@ -2672,5 +2672,5 @@
   "scientific_pin_count": 132,
   "self_hash": "Excluded to avoid circular hashing; run_all receipt records validation separately",
   "state": "CURRENT_COMPACT_V4",
-  "total_bytes": 104595079
+  "total_bytes": 104599173
 }

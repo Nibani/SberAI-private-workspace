@@ -12,8 +12,8 @@
         "sha256": "5310933e84f7e40e5b3c0387fdcfede9f62b12b8b70f01467324cba928336e08"
       },
       "docs/index.html": {
-        "bytes": 551707,
-        "sha256": "12cb4006178b723efed6d93ca365edb9d147b899fa92da2313eba3338a51c11f"
+        "bytes": 551796,
+        "sha256": "8e0b3902626239d63d4dc33c6bad11370b949c0662116ad23cb70334ab0fe097"
       },
       "reports/conditional-v4/registration.json": {
         "bytes": 225921,
@@ -68,7 +68,7 @@
       "python_lock_platform_coverage": "provenance/jury-lock-platform-coverage.json",
       "python_lock_platform_coverage_status": "PASS_METADATA_COVERAGE_WINDOWS_LINUX_CPYTHON310_X86_64"
     },
-    "finalized_at_utc": "2026-10-09T17:30:55.168375+00:00",
+    "finalized_at_utc": "2026-10-09T17:47:59.164572+00:00",
     "fitting_scope": "New registered temporal and conditional producers only; historical experiments not refitted",
     "full_historical_training_repeated": false,
     "full_method_ties_refit_repeated": false,
