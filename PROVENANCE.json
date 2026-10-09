@@ -68,7 +68,7 @@
       "python_lock_platform_coverage": "provenance/jury-lock-platform-coverage.json",
       "python_lock_platform_coverage_status": "PASS_METADATA_COVERAGE_WINDOWS_LINUX_CPYTHON310_X86_64"
     },
-    "finalized_at_utc": "2026-10-09T17:02:19.581238+00:00",
+    "finalized_at_utc": "2026-10-09T17:11:10.825697+00:00",
     "fitting_scope": "New registered temporal and conditional producers only; historical experiments not refitted",
     "full_historical_training_repeated": false,
     "full_method_ties_refit_repeated": false,

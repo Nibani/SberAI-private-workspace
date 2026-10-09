@@ -90,9 +90,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     ".github/workflows/tests.yml": {
-      "bytes": 2309,
+      "bytes": 2321,
       "scientific_pin": false,
-      "sha256": "ff64030b6bf5f936e979dc5149a2c44e90f01c7902e001bbccf14fb4882ad1b6",
+      "sha256": "a047aba6526a5ab28782886c7e743c70f987f304a7f728804169fc8c3277a63a",
       "source_kind": "CURRENT_LIVE"
     },
     ".gitignore": {
@@ -122,7 +122,7 @@
     "PROVENANCE.json": {
       "bytes": 116375,
       "scientific_pin": false,
-      "sha256": "f3470e8c9cf4848beab44a6d64ee1dea07c33e1033fbbadd121f6da31dcdb0a0",
+      "sha256": "8d3697b53ecd9e5a3a0aabfecbee64777934fd14601424306382f09dd940ff86",
       "source_kind": "CURRENT_LIVE"
     },
     "README.md": {
@@ -2660,5 +2660,5 @@
   "scientific_pin_count": 132,
   "self_hash": "Excluded to avoid circular hashing; run_all receipt records validation separately",
   "state": "CURRENT_COMPACT_V4",
-  "total_bytes": 104583911
+  "total_bytes": 104583923
 }
