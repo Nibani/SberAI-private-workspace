@@ -1,0 +1,63 @@
+{
+  "status": "COMPLETED",
+  "spec_sha256": "ddc35f6111a53ef8714d12596c4b4f1423e9f28e1002eb5e1ccedd0d195096b0",
+  "details": {
+    "selected_ids": [
+      "tid_196",
+      "tid_616",
+      "tid_18"
+    ],
+    "network_analogues_same_15NN": true,
+    "analogue_test": {
+      "prereg_sha256": "5f9ec3bd9f1ac9fdbdcb0cfa8981919e75d511a6990fa77b0a6ca7b034971b2b",
+      "donor_regions": 37,
+      "evaluation_regions": 36,
+      "donor_entities": 1113,
+      "evaluation_entities": 903,
+      "outcome": "nominal mean-total-rub growth2024, percent",
+      "primary_weight": "equal evaluation-region weight",
+      "continuous15_region_mean_MAE_pp": 2.9905083097760476,
+      "type15_region_mean_MAE_pp": 3.001103324501044,
+      "relative_MAE_improvement": -0.0035428808842834078,
+      "relative_MAE_improvement_lower95": -0.033639877376113285,
+      "relative_MAE_improvement_upper95": 0.030421130992149138,
+      "operational_criterion_lower95_above_5percent": false,
+      "valid_bootstrap_draws": 9999,
+      "invalid_bootstrap_draws": 0,
+      "fallback_entities": 0,
+      "low_2023_marketplace_pct_cutoff": 8.175905791666665,
+      "low_observed2023_population_cutoff": 8656.1,
+      "no_formal_p_values": true,
+      "monetary_value_measured": false,
+      "prospective_validation": false,
+      "limitations": [
+        "globally selected historical groups and scaler use 2023–2024 spending",
+        "single fixed donor split",
+        "regional dependence accounted only across sampled evaluation regions; cross-region spillovers not removed",
+        "no multi-hop or extra outcomes executed"
+      ]
+    },
+    "controlled_description": "common cases, region and scale controlled, no formal p-values",
+    "future_claim": false
+  },
+  "files": {
+    "reports/competition-enhancement/economic_cases/analogue-preregistration.json": "5f9ec3bd9f1ac9fdbdcb0cfa8981919e75d511a6990fa77b0a6ca7b034971b2b",
+    "reports/competition-enhancement/economic_cases/analogue-split.csv": "4ddc4b29a77fd91b2f4accf6868f95cd1e440eeb4c215a813b8d99374fc5b6e4",
+    "reports/competition-enhancement/economic_cases/analogue-test-bootstrap.csv": "fc9b0ae3425030972a84d372c74f2c882e7e293bc8b7697a8703a063f75577bc",
+    "reports/competition-enhancement/economic_cases/analogue-test-by-region.csv": "e55620ed4d384c918f16bec28d4daede3b3c3103c94e17c9341d364e1d8ee535",
+    "reports/competition-enhancement/economic_cases/analogue-test-leave-one-region-out.csv": "1caea1464960c48af571faa389d9a9c06391ee22a3bd46f65cb327e9fb31ffdb",
+    "reports/competition-enhancement/economic_cases/analogue-test-predictions.csv": "25f0482fce79e35455e9afe7839b5b38253c0e35319e55641a015923df4773bd",
+    "reports/competition-enhancement/economic_cases/analogue-test-subsets.csv": "f0146d30265ccf84eb80e646e9b622641af750bc76f6f6bb5768903f1b6c6bda",
+    "reports/competition-enhancement/economic_cases/analogue-test-summary.json": "21f95af304d9746eb3b1ce0db5ff0e34ce0750d709b2f9d6f28d520f8a1cd790",
+    "reports/competition-enhancement/economic_cases/case-neighbors.csv": "423d0d6c3287a405f5b3797c3ec61256bf48cc13c0d8648dff062d0a9a61017c",
+    "reports/competition-enhancement/economic_cases/case-values.csv": "7864363169c79208799a206e2b5baed5855c9f02e2fdb35af92fec2c721631a4",
+    "reports/competition-enhancement/economic_cases/comparison-function.json": "a17e4134ab0359aa66c866c4eb13c2e880b7f3f6ea2f2be8d07f3c975902cf3f",
+    "reports/competition-enhancement/economic_cases/controlled-coverage.csv": "06c2145b7c8c579561c803cafc71e6ca444dde23dff83b8b4fd55067013f7a44",
+    "reports/competition-enhancement/economic_cases/controlled-description.csv": "62e73010c4978483d46778e3f85b6526057258839f3ae6a99b3242d95395a5d4",
+    "reports/competition-enhancement/economic_cases/controlled-leave-one-region-out.csv": "e91bd3d79c4048de216fb0ace7699a2b1bd05d12e67be302072192707680c9b7",
+    "reports/competition-enhancement/economic_cases/identity-predictions.csv": "85c4629dfba40472a36d1afdbbf011105ce5efae145b3edd351072c072485abd",
+    "reports/competition-enhancement/economic_cases/identity.json": "89e04f22713c5f9a6ce07e4e3cdc8f6d64f6ad83f9133417167b34b1f0e9de4e",
+    "reports/competition-enhancement/economic_cases/run-environment.json": "67a8b1291bbe48474bb5225eecb6acff0ea93947dffe28d8995288096646bc23",
+    "reports/competition-enhancement/economic_cases/selected-cases.csv": "72afd1414171f95a4fd0038b4b73da242737cb7d33502bc95418997a750af7b4"
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "schema_version": 2,
+  "status": "IMPLEMENTATION_SPEC_BEFORE_RUN",
+  "base_commit": "78601123c891f313f049bdf9a89ebd4de92906a2",
+  "prepared_utc": "2026-10-08T20:51:57.149856+00:00",
+  "requires": "Сохранённая готовая копия C и отдельный вычислительный слот лида",
+  "label_file": "reports/v1.2/labels.csv",
+  "label_column": "type_2023",
+  "label_values": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "baseline_hashes": "baseline-input-sha256.json",
+  "excluded_outcome_years": [
+    2025
+  ],
+  "resources": {
+    "compute_threads": 1,
+    "process_priority": "BelowNormal",
+    "bootstrap_draws": 2000,
+    "seed": 1729
+  },
+  "mirkin": {
+    "unit": "МО",
+    "feature_year": 2023,
+    "annual_aggregation": "arithmetic_mean_of_12_months",
+    "group_aggregation": "arithmetic_mean_of_observed_entity_values",
+    "global_aggregation": "arithmetic_mean_on_same_feature_coverage",
+    "zero_denominator_epsilon": 1e-12,
+    "display_threshold": 0.3,
+    "sensitivity_thresholds": [
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    "leave_one_region_out": true,
+    "minimum_region_n": 30,
+    "minimum_region_group_n": 10,
+    "primary_features": [
+      "total_rub",
+      "health_pct",
+      "marketplaces_pct",
+      "horeca_pct",
+      "food_pct",
+      "transport_pct"
+    ],
+    "additional_features": {
+      "wage_total": {
+        "year": 2023,
+        "unit": "rub"
+      },
+      "population_total": {
+        "year": 2023,
+        "unit": "residents"
+      },
+      "market_access": {
+        "year": 2024,
+        "unit": "points_0_1000",
+        "retrospective": true
+      },
+      "agriculture_share": {
+        "year": 2023,
+        "unit": "observed_jobs_fraction",
+        "numerator": "headcount_A",
+        "denominator": "headcount_total"
+      },
+      "manufacturing_share": {
+        "year": 2023,
+        "unit": "observed_jobs_fraction",
+        "numerator": "headcount_C",
+        "denominator": "headcount_total"
+      },
+      "mining_share": {
+        "year": 2023,
+        "unit": "observed_jobs_fraction",
+        "numerator": "headcount_B",
+        "denominator": "headcount_total"
+      },
+      "public_share": {
+        "year": 2023,
+        "unit": "observed_jobs_fraction",
+        "numerator": [
+          "headcount_O",
+          "headcount_P",
+          "headcount_Q"
+        ],
+        "denominator": "headcount_total"
+      }
+    },
+    "missing_value": "empty_csv_cell",
+    "never_use_archive_group_columns": true,
+    "small_mean_flags": {
+      "pct": 1,
+      "share": 0.01,
+      "total_rub": 100,
+      "wage_total": 100,
+      "population_total": 100,
+      "market_access": 1
+    },
+    "sector_ratio_policy": "Only finite nonnegative published numerators and finite positive denominator; missing stays missing; ratios over one flagged, not silently clipped",
+    "intervals": "2000 joint whole-region percentile bootstrap descriptions; no hypothesis p-values"
+  },
+  "mobility": {
+    "source": "https://sberindex.ru/api/dataset/v1/indeks-mobilnosti",
+    "source_2024_rows": 297,
+    "unjoined_input": "sources/mobility-2024-unjoined.csv",
+    "method_status": "UNVERIFIED",
+    "license_status": "UNVERIFIED",
+    "join_status": "UNAVAILABLE_AS_VALIDATED_JOIN; exact full-name candidates will be audited, never asserted as publisher IDs",
+    "source_geo_field": "ref_area",
+    "source_indicator_id_is": "series_id_not_municipality_id",
+    "source_freq": "Год",
+    "source_unit": "км",
+    "source_period_literal": "2024-12-30T21:00:00.000Z",
+    "outcome": "log1p(km)",
+    "required_controls": [
+      "log_spending_2023",
+      "log_population_2023",
+      "municipal_type",
+      "latitude",
+      "longitude",
+      "region"
+    ],
+    "models": [
+      "M0_controls",
+      "M1_controls_plus_groups",
+      "M2_controls_plus_continuous_structure",
+      "M3_controls_plus_continuous_structure_plus_groups"
+    ],
+    "inference_family": [
+      "M1-M0",
+      "M3-M2"
+    ],
+    "family_correction": "Holm",
+    "min_regions_for_formal_confirmation": 10,
+    "min_regions_per_group": 3,
+    "null_test": {
+      "statistic": "joint cluster-robust Wald on three group coefficients",
+      "bootstrap": "restricted-null wild regional Rademacher residual bootstrap, y_star=fit_reduced+residual_reduced*one_common_sign_per_region",
+      "family": [
+        "M1-M0",
+        "M3-M2"
+      ],
+      "correction": "Holm",
+      "partial_R2": "descriptive; bootstrap interval is not a null test",
+      "current_execution": "UNAVAILABLE; no mobility values enter runner"
+    },
+    "registry_original_sha256": "4150658c3298fbc87ed79838f503f3a5b9a28da33257ff803c7d9231ddb775d6",
+    "registry_source": "https://sberindex.ru/api/researches/v1/dataset-borders-and-changes-of-municipalities",
+    "source_raw_sha256": "8fef5f56244d7d577cd3136153cdeb61aa34290168b309c56882c7a7ee414a22"
+  },
+  "four_russias": {
+    "primary_variant": "R500-30",
+    "population_year": 2023,
+    "large_population": 500000,
+    "middle_population": 30000,
+    "large_sensitivity": [
+      250000,
+      500000,
+      1000000
+    ],
+    "middle_sensitivity": [
+      20000,
+      30000
+    ],
+    "fourth_region_codes": [
+      4,
+      5,
+      6,
+      7,
+      9,
+      15,
+      17,
+      20
+    ],
+    "fourth_sensitivity_add": [
+      1
+    ],
+    "priority": [
+      "Proxy_IV",
+      "Proxy_I",
+      "Proxy_II",
+      "Proxy_III",
+      "UNKNOWN"
+    ],
+    "intracity_policy": "UNKNOWN in primary when own population unavailable; no unverified parent-city population; exclude intracity sensitivity",
+    "industry_claim": "не подтверждается размером населения",
+    "municipal_population_is_not_city_population": true,
+    "metrics": [
+      "contingency_n",
+      "contingency_observed_population",
+      "Cramer_V",
+      "ARI"
+    ],
+    "interpretation": "сопряженность с муниципальным приближением, не точность разметки истины",
+    "urban_types": [
+      "городской округ",
+      "город федерального значения"
+    ],
+    "industrial_sensitivity": {
+      "sectors": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "require_all_observed": true,
+      "thresholds": [
+        0.2,
+        0.3,
+        0.4
+      ],
+      "missing": "UNKNOWN for size-qualified Proxy_II",
+      "threshold_is_author_operationalization": true
+    },
+    "formal_p_values": false
+  },
+  "economic_cases": {
+    "known_before_plan": true,
+    "fixed_ids": [
+      "tid_196",
+      "tid_616"
+    ],
+    "third_rule": "Exclude tid_196 and tid_616; minimum numeric territory_id among absolute change only with persistent_change=False; if empty minimum (second-smallest minus smallest squared Euclidean centroid distance) with numeric ID tie break",
+    "third_id": null,
+    "expense_factor": 1.25,
+    "expense_factor_sensitivity": [
+      1.1,
+      1.25,
+      1.5,
+      2
+    ],
+    "claim": "описательные случаи",
+    "comparison": "Euclidean distance in frozen six X23 attributes; nearest15 overall; same legal municipal type plus symmetric 2023 arithmetic mean spending factor <=1.25, nearest15; no fillers; self excluded; report all four factors",
+    "legacy_identity_tie_break": "Stable argsort on lexicographically sorted canonical panel IDs, exactly matching run_v12.py"
+  },
+  "additional_experiment": {
+    "status": "SUPERSEDED_BEFORE_RUN",
+    "reason": "The old marketplace and multi-hop family remains unexecuted. The lead proposed and this agent accepted one separate nominal-growth experiment before outcomes.",
+    "specification": "economic_cases/analogue-preregistration.json",
+    "multi_hop": "Not executed or claimed"
+  },
+  "input_sha256": {
+    "data/v12/panel.csv.gz": "953ba39d152f0f4192ebbabc8edfa0684683c3a4a3d8c147f0978cf6f1798784",
+    "reports/v1.2/labels.csv": "394a681ebd0898dc41d1fe2479febbb36b7a5cc5d6449147aab14089279c0e71",
+    "reports/v1.2/model.npz": "4dc64e6c98f8211f0a4add9421506e734287dd5750781b8ced040d9b8761aa19",
+    "reports/v1.2/types.csv": "b00b34525d5d8b5e18d8e544cf0969a3b3f9a925872ff59f6a83f951cf3a223c",
+    "reports/external-national-2026-10-03/cohort-2023.csv": "dcfcf2ac0af503d696f9492bc8c1bc4e38977cc2bd1b6c12da66463f761d9c62",
+    "reports/external-v4/municipality_bridge.csv": "3898c2201a871cbcc1fca4b5c1f09a7be5ed68583b12338e8bf55cc91e9b5bc5",
+    "reports/v1.2/analogue_predictions.csv": "9b3cd3a4d2b9b4cc8b2ba6e56853449940f93bb0dfe369f5e6b84d1f7fb02f99",
+    "configs/v12.json": "68776f61ab2c6c24ae84b1de72d0945c49f1891572cf89634e58803f6b222151",
+    "reports/competition-enhancement/mobility/registry-2024.csv": "935a72a65826c7da41d4d717ae59010c56b3f17282b7b293f6fb3d87c95c4fab",
+    "reports/competition-enhancement/mobility/source-names-2024.csv": "747d69b710bfe23da4e1dda0d3f380771a00c0775a07e03c12fc79253c5ffcab"
+  },
+  "conditional_description": {
+    "targets": [
+      "log_wage_total_2023",
+      "log1p_market_access_2024",
+      "agriculture_share",
+      "manufacturing_share",
+      "mining_share",
+      "public_share"
+    ],
+    "controls": [
+      "log_mean_total_rub_2023",
+      "log_population_total_2023",
+      "municipal_type",
+      "region_fixed_effects"
+    ],
+    "models": [
+      "M0_controls",
+      "M1_controls_plus_groups",
+      "M2_controls_plus_five_X23_structure",
+      "M3_controls_plus_five_X23_structure_plus_groups"
+    ],
+    "sample": "same complete cases across four models for each target; missing not imputed",
+    "contrasts": [
+      "M1-M0",
+      "M3-M2"
+    ],
+    "metrics": [
+      "descriptive_partial_R2",
+      "region_leave_one_out_range",
+      "complete_case_coverage_by_group_region"
+    ],
+    "formal_p_values": false,
+    "claim": "These known outcomes and global labels give conditional description, not a new validated independent source or predictive improvement"
+  }
+}

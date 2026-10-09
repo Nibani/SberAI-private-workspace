@@ -1,0 +1,4 @@
+entity_id,name,region_code,group_2023,group_name,group_2024_adjusted,group_2024_absolute,persistent_change,selection_rule,interpretation
+tid_196,Абазинский муниципальный район,9,0,Высокие расходы и услуги,0,0,False,fixed existing case before specification,descriptive; label and source values do not establish cause or industrial/rotational economy
+tid_616,Усть-Камчатский муниципальный район,41,3,Низкая доля маркетплейсов,3,1,False,fixed existing case before specification,descriptive; label and source values do not establish cause or industrial/rotational economy
+tid_18,Чемальский муниципальный район,4,1,Средние расходы,1,2,False,"minimum numeric ID, absolute change only, adjusted fixed and not persistent",descriptive; label and source values do not establish cause or industrial/rotational economy

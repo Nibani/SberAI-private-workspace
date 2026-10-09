@@ -1,5 +1,5 @@
 {
-  "file_count": 524,
+  "file_count": 662,
   "files": {
     ".dockerignore": {
       "bytes": 91,
@@ -14,9 +14,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     ".github/workflows/tests.yml": {
-      "bytes": 2940,
+      "bytes": 3265,
       "scientific_pin": false,
-      "sha256": "27d1fdf84265b6cfa90f83d836a0678a92763a8a939de53b47180634ccbebdb3",
+      "sha256": "096a2b4a157d4be34a4d2134c6419a4883bba097f3448d4dc0dd058c82ec54ea",
       "source_kind": "NEW_PRIVATE_CI"
     },
     ".gitignore": {
@@ -38,15 +38,15 @@
       "source_kind": "CURRENT_LIVE"
     },
     "PROVENANCE.json": {
-      "bytes": 2969,
+      "bytes": 59212,
       "scientific_pin": false,
-      "sha256": "1604b4d9fa62e565cd51d69cd5f33e7bac539a91b69ed7d6a8704abb9b3fb772",
+      "sha256": "7cb220920f345ab60d74c25c11d523863e80e952a9fe041d9e7ce27a991f97fe",
       "source_kind": "EXPORT_METADATA"
     },
     "README.md": {
-      "bytes": 13774,
+      "bytes": 16745,
       "scientific_pin": false,
-      "sha256": "643164d337b9888a76fb8e2037bd16310a4ef23f278b4c875948ffdc5de7d0e9",
+      "sha256": "6ff4962c13b85141a10d6553d8a78ac6dc5b2aa9fc9c5273606f681349f7fa59",
       "source_kind": "CURRENT_LIVE"
     },
     "SCIENTIFIC-SHA256.json": {
@@ -332,9 +332,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "docs/NETWORK_TYPOLOGY.md": {
-      "bytes": 29316,
+      "bytes": 31415,
       "scientific_pin": false,
-      "sha256": "1f82027cee56a3ef7e3e0453c69693723e5e7b290b9c5987c94a7e90eb7f94c7",
+      "sha256": "39eb831d9cbf16baf7c8971a098d0e0bceaf1079f0298c17137498f6c590d4ba",
       "source_kind": "CURRENT_LIVE"
     },
     "docs/REPORT_RU.md": {
@@ -434,9 +434,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "docs/index.html": {
-      "bytes": 499220,
+      "bytes": 499727,
       "scientific_pin": false,
-      "sha256": "583974253850b023a631d23943aa6332d32db9380b6347b61e3cb4c1c77a61e9",
+      "sha256": "f8265d900358b516ee93e69cc6aba4f3bd8341fe595ee2929512d54034772fa0",
       "source_kind": "CURRENT_LIVE"
     },
     "models/continuous_atlas.json": {
@@ -737,6 +737,786 @@
       "bytes": 119739,
       "scientific_pin": false,
       "sha256": "d25b7f5788c88575a03f6b6b51d5f26d385713215836ce07b5e9b483074e8a11",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/analogue-preregistration.json": {
+      "bytes": 3729,
+      "scientific_pin": false,
+      "sha256": "5f9ec3bd9f1ac9fdbdcb0cfa8981919e75d511a6990fa77b0a6ca7b034971b2b",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/analogue-split.csv": {
+      "bytes": 5900,
+      "scientific_pin": false,
+      "sha256": "4ddc4b29a77fd91b2f4accf6868f95cd1e440eeb4c215a813b8d99374fc5b6e4",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/analogue-test-bootstrap.csv": {
+      "bytes": 706509,
+      "scientific_pin": false,
+      "sha256": "fc9b0ae3425030972a84d372c74f2c882e7e293bc8b7697a8703a063f75577bc",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/analogue-test-by-region.csv": {
+      "bytes": 1750,
+      "scientific_pin": false,
+      "sha256": "e55620ed4d384c918f16bec28d4daede3b3c3103c94e17c9341d364e1d8ee535",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/analogue-test-leave-one-region-out.csv": {
+      "bytes": 2428,
+      "scientific_pin": false,
+      "sha256": "1caea1464960c48af571faa389d9a9c06391ee22a3bd46f65cb327e9fb31ffdb",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/analogue-test-predictions.csv": {
+      "bytes": 338852,
+      "scientific_pin": false,
+      "sha256": "25f0482fce79e35455e9afe7839b5b38253c0e35319e55641a015923df4773bd",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/analogue-test-subsets.csv": {
+      "bytes": 766,
+      "scientific_pin": false,
+      "sha256": "f0146d30265ccf84eb80e646e9b622641af750bc76f6f6bb5768903f1b6c6bda",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/analogue-test-summary.json": {
+      "bytes": 1268,
+      "scientific_pin": false,
+      "sha256": "21f95af304d9746eb3b1ce0db5ff0e34ce0750d709b2f9d6f28d520f8a1cd790",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/case-neighbors.csv": {
+      "bytes": 56279,
+      "scientific_pin": false,
+      "sha256": "423d0d6c3287a405f5b3797c3ec61256bf48cc13c0d8648dff062d0a9a61017c",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/case-values.csv": {
+      "bytes": 6912,
+      "scientific_pin": false,
+      "sha256": "7864363169c79208799a206e2b5baed5855c9f02e2fdb35af92fec2c721631a4",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/comparison-function.json": {
+      "bytes": 818,
+      "scientific_pin": false,
+      "sha256": "a17e4134ab0359aa66c866c4eb13c2e880b7f3f6ea2f2be8d07f3c975902cf3f",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/controlled-coverage.csv": {
+      "bytes": 49920,
+      "scientific_pin": false,
+      "sha256": "06c2145b7c8c579561c803cafc71e6ca444dde23dff83b8b4fd55067013f7a44",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/controlled-description.csv": {
+      "bytes": 1836,
+      "scientific_pin": false,
+      "sha256": "62e73010c4978483d46778e3f85b6526057258839f3ae6a99b3242d95395a5d4",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/controlled-leave-one-region-out.csv": {
+      "bytes": 43773,
+      "scientific_pin": false,
+      "sha256": "e91bd3d79c4048de216fb0ace7699a2b1bd05d12e67be302072192707680c9b7",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/identity-predictions.csv": {
+      "bytes": 370979,
+      "scientific_pin": false,
+      "sha256": "85c4629dfba40472a36d1afdbbf011105ce5efae145b3edd351072c072485abd",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/identity.json": {
+      "bytes": 435,
+      "scientific_pin": false,
+      "sha256": "89e04f22713c5f9a6ce07e4e3cdc8f6d64f6ad83f9133417167b34b1f0e9de4e",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/run-environment.json": {
+      "bytes": 1675,
+      "scientific_pin": false,
+      "sha256": "67a8b1291bbe48474bb5225eecb6acff0ea93947dffe28d8995288096646bc23",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/selected-cases.csv": {
+      "bytes": 957,
+      "scientific_pin": false,
+      "sha256": "72afd1414171f95a4fd0038b4b73da242737cb7d33502bc95418997a750af7b4",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/economic_cases/status.json": {
+      "bytes": 4475,
+      "scientific_pin": false,
+      "sha256": "186b1e52f9b4df8a22786e516ac5d23a9e960cb241edebfdaf52b0b03a6ecf99",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/four_russias/assignments.csv": {
+      "bytes": 2889390,
+      "scientific_pin": false,
+      "sha256": "e590e8e11667a173dfb9ee3f106877aa9015e2eb2cd8fbbfb5d706ef6cf86973",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/four_russias/contingency.csv": {
+      "bytes": 37836,
+      "scientific_pin": false,
+      "sha256": "1004f9a087d30ab4834d9c2dea8b5699b1b053e5f086274d408352f60c475111",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/four_russias/leave-one-region-out.csv": {
+      "bytes": 70434,
+      "scientific_pin": false,
+      "sha256": "45c098d10d65438d7aa3163e3fe5f2896160e0f7c7a815ee3073a9f4e9ac0913",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/four_russias/sensitivity.csv": {
+      "bytes": 1382,
+      "scientific_pin": false,
+      "sha256": "50a8c5cfa552dd51bdcad4e033c057437d82578ab786885951842d571b3dfb23",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/four_russias/source-and-limits.json": {
+      "bytes": 1787,
+      "scientific_pin": false,
+      "sha256": "feca0d1d91d5b15d4561354f4cbf033960b046c6c74d13fc5df985996f032f59",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/four_russias/status.json": {
+      "bytes": 1317,
+      "scientific_pin": false,
+      "sha256": "948f7c9b16b887f345b28a38408678a50d3996227342be6327cb0356be680391",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/interpretation/artifact-sha256.json": {
+      "bytes": 8197,
+      "scientific_pin": false,
+      "sha256": "5d45d68c3e63c18c4d1cf94c9125c02c3f39b87ba6639f7aef55a50991c31c01",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/interpretation/economic-findings.md": {
+      "bytes": 18874,
+      "scientific_pin": false,
+      "sha256": "e6c43daaefb0f46b239f62c225dfd5311325a84c3202e69e73d14c534280d2ea",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/interpretation/provenance/dependency-environment.json": {
+      "bytes": 611,
+      "scientific_pin": false,
+      "sha256": "35662550632233df2ecaea66e1e12210d54b57cc3ac0396e496d3490db9d6ec4",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/interpretation/provenance/execute-completed.json": {
+      "bytes": 7065,
+      "scientific_pin": false,
+      "sha256": "47eb8913844eb6d98e9923aab509e1536f8c2587db8b8a824c10e294c4b7031f",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/interpretation/provenance/execute-started.json": {
+      "bytes": 509,
+      "scientific_pin": false,
+      "sha256": "1030c56863baf47bc9b219597d8fb770067cbb2f5aeb2bc54ee0eff44ec68afc",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/interpretation/provenance/execute.log": {
+      "bytes": 1507,
+      "scientific_pin": false,
+      "sha256": "8f6d6de89f4aaedf1b90a3fa71221c30058e60d195dd93f8f79c45b6b909f51a",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/interpretation/provenance/monitor.jsonl": {
+      "bytes": 23648,
+      "scientific_pin": false,
+      "sha256": "8b1dc5908b21c9abd49ba1d4aa5b87b7fa0b0dd6947bbfa4bd962c4a2db2b384",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/interpretation/provenance/prepared.json": {
+      "bytes": 3555,
+      "scientific_pin": false,
+      "sha256": "b9bd81d62e2723bd555a3b233cc04c6e7dbce6bb7c4141c8779d5e8414c12e9c",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/interpretation/summary.json": {
+      "bytes": 19552,
+      "scientific_pin": false,
+      "sha256": "68d24491dcd89c448fa6099f216b16467ab708538d70e25ec8bdc0019e4ef7c1",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/interpretation/verification.json": {
+      "bytes": 2404,
+      "scientific_pin": false,
+      "sha256": "879e344cbe656520638d14834c048babcb64c415df5ef060884eb56e2e609768",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mirkin-input.csv": {
+      "bytes": 1040819,
+      "scientific_pin": false,
+      "sha256": "35f01668d7b6cc7295f3652ab822b7ec375e12d97eb13d1850aeb2eb3cb2dfda",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mirkin-summary.csv": {
+      "bytes": 4483,
+      "scientific_pin": false,
+      "sha256": "49b131801e3f4031125bd6ee4da885f4016268fc8a20f4ed73186188acf97e41",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mirkin/analysis-spec.json": {
+      "bytes": 10256,
+      "scientific_pin": false,
+      "sha256": "ddc35f6111a53ef8714d12596c4b4f1423e9f28e1002eb5e1ccedd0d195096b0",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mirkin/bootstrap-intervals.csv": {
+      "bytes": 3749,
+      "scientific_pin": false,
+      "sha256": "eb3e7958a7e5f05b072690b57e1653c902487cb0a3c5a7f90e7d1f16803ed5c5",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mirkin/coverage-by-region.csv": {
+      "bytes": 91318,
+      "scientific_pin": false,
+      "sha256": "637dd6f3f93034326de6a2cf22a537400169738b21f3eb5a1b67d05b7e1269f9",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mirkin/coverage.csv": {
+      "bytes": 8449,
+      "scientific_pin": false,
+      "sha256": "53f305b604af20cffdee2cf33a887b1878e0573bf7bdd38e75be9e1842b26562",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mirkin/equal-region-weighting.csv": {
+      "bytes": 4688,
+      "scientific_pin": false,
+      "sha256": "5dda07daf008c96e31826e03035e7500a061396bf449805fb83f01738e2192c6",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mirkin/leave-one-region-out.csv": {
+      "bytes": 186464,
+      "scientific_pin": false,
+      "sha256": "42dcc392a13c28b1993333b7e26e0b9851bcc9e581e0ea1edb37c6642acda160",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mirkin/regional-descriptions.csv": {
+      "bytes": 27953,
+      "scientific_pin": false,
+      "sha256": "0cbfcb0856c58518484f8d577c7487bb75c364aa596ee997a83cbad015dc065a",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mirkin/source-and-units.json": {
+      "bytes": 1212,
+      "scientific_pin": false,
+      "sha256": "083b1afafa37ffb9649a80a1f87b45bdec0e5792de7f59d8874d92ec45111d40",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mirkin/stability.csv": {
+      "bytes": 17679,
+      "scientific_pin": false,
+      "sha256": "6d8a43e2a5c3a3a8d7954e811a2476fa42e98b5718fe9961c3cc4facf501656c",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mirkin/status.json": {
+      "bytes": 2290,
+      "scientific_pin": false,
+      "sha256": "bb4855c1c2a2521c820f2d537e18560dcc4984b5db38ef78a4479e4afa12d3ea",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mirkin/thresholds.csv": {
+      "bytes": 12356,
+      "scientific_pin": false,
+      "sha256": "437e24465433b23b18cb37565a718f76b67972131886d80433e7b01da17cd459",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mobility/acquisition.json": {
+      "bytes": 1288,
+      "scientific_pin": false,
+      "sha256": "0a2dd5697354793b71a739b81585b36bca46cd4cfc188d15de19473c5334318d",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mobility/ambiguous.csv": {
+      "bytes": 2145,
+      "scientific_pin": false,
+      "sha256": "cbd742cfbbbaf5e50d157720977eebdc2d03b5f985b3b92b39a6847cf3f2db15",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mobility/join-audit.csv": {
+      "bytes": 127006,
+      "scientific_pin": false,
+      "sha256": "b65f09fafa78e12b52c3e0f7ed1e9247e2a281d3ce4312b985efa778955db6d0",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mobility/registry-2024.csv": {
+      "bytes": 487339,
+      "scientific_pin": false,
+      "sha256": "935a72a65826c7da41d4d717ae59010c56b3f17282b7b293f6fb3d87c95c4fab",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mobility/source-names-2024.csv": {
+      "bytes": 47316,
+      "scientific_pin": false,
+      "sha256": "747d69b710bfe23da4e1dda0d3f380771a00c0775a07e03c12fc79253c5ffcab",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mobility/status.json": {
+      "bytes": 1515,
+      "scientific_pin": false,
+      "sha256": "2ade471b7f698a7cf0da8e519da0ba9850560b2f7cad09d41076113f0b7bc31a",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/mobility/unmatched.csv": {
+      "bytes": 768,
+      "scientific_pin": false,
+      "sha256": "aaa1f5048bd0b10f25fc1e64be4e7488ba1e901dd61d93841dc6d37e8ac7d0f3",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/README.md": {
+      "bytes": 11145,
+      "scientific_pin": false,
+      "sha256": "ed652ec875b8752e58a2e049543f8403bd34578b06d5943efde3d7c5a5d08750",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/aligned_assignments.csv": {
+      "bytes": 104329,
+      "scientific_pin": false,
+      "sha256": "444bd07b203bbec00dfae153ef797909881efa7a0c84cab49176bf1c2d1a1189",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/artifact_sha256.json": {
+      "bytes": 1733,
+      "scientific_pin": false,
+      "sha256": "4b1041ed05f351c6ced532718696876342a2974bf6ec7d9e607da7c34d490090",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/assignments.csv": {
+      "bytes": 104329,
+      "scientific_pin": false,
+      "sha256": "3269b1acf90e193f9d07b917736d27f71fe2a494e1bbfe310503b63a4c273d9f",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/features_2023.npy": {
+      "bytes": 96896,
+      "scientific_pin": false,
+      "sha256": "916e501f91aec48d95d0b25a20b654ec61a4256d2f28b0d0dfc5948e2961ecb0",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/fits.json": {
+      "bytes": 68113,
+      "scientific_pin": false,
+      "sha256": "74019281df1f87ef34016f600bdc636bc84a30ae4f0296dcf714010aa0ff9a76",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/group_summary.csv": {
+      "bytes": 301,
+      "scientific_pin": false,
+      "sha256": "2f4f3f3b8571e3c3162cb8ff32517c41733ac99f7c975011d292a9016ace7cf6",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/input_state.json": {
+      "bytes": 1383,
+      "scientific_pin": false,
+      "sha256": "c2a589dc30a2fe0247023a8576973bdbee47213cda0390471ad43afb74d80a7f",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/municipality_support.csv": {
+      "bytes": 312743,
+      "scientific_pin": false,
+      "sha256": "ce3b9322157ea0240687e8894cb99f2b4f6032bf0f12717ec16c65dd9d718970",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/production_graph.npz": {
+      "bytes": 333773,
+      "scientific_pin": false,
+      "sha256": "3ef4a1f23fc87a0a5da9a4657a4e02eef166856ccae6262966cfba155207e0a2",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/provenance/historical-science-portable-resources.py": {
+      "bytes": 5791,
+      "scientific_pin": false,
+      "sha256": "97b1caecbb410933a35fd2dcae5a2a94a5a8e8c8cc75b530ba973ef8dfbbaed3",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/provenance/historical-verify-seed-stability.py": {
+      "bytes": 8196,
+      "scientific_pin": false,
+      "sha256": "c77343cb4f3cfd59a48a83eb5e81dee2633f862a45669ab76a52ff5d84243442",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/provenance/post-run-source-lineage.json": {
+      "bytes": 2225,
+      "scientific_pin": false,
+      "sha256": "7b234f81704a0710d82dac9d570e8893cd649da09ce40e7aa05293677d1de6f0",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/registration.json": {
+      "bytes": 2927,
+      "scientific_pin": false,
+      "sha256": "681e549dc885fb766e999fe9a479c9c0d306ca982e87e63906a7f6a01750a779",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/resource-monitor.jsonl": {
+      "bytes": 835,
+      "scientific_pin": false,
+      "sha256": "30e7fb4c8b617656fdfca6139baeb0e67e6c2c34a73d6b0baa6477b8eae4d6ee",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/resources.json": {
+      "bytes": 135,
+      "scientific_pin": false,
+      "sha256": "ab02849c1462e54f418ab7bf4d55ea180b089afed0cdb1454951c74c176353f6",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/seed_metrics.csv": {
+      "bytes": 1865,
+      "scientific_pin": false,
+      "sha256": "7e074220f0fdb1d5fca40da1e30336e03bc4508cfba1ddb42d00ce94ee6e7f9e",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/summary.json": {
+      "bytes": 2499,
+      "scientific_pin": false,
+      "sha256": "d5a45c8bedc43519681a2c39cab1cdd3c6c1dca498d826517030f1f3a9317f16",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/seed-stability/timing.json": {
+      "bytes": 236,
+      "scientific_pin": false,
+      "sha256": "d8f20f1c40a5f82d72f318f00b3fdc5dde309728448f9be66730387d2f9617fa",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/REPORT.md": {
+      "bytes": 10210,
+      "scientific_pin": false,
+      "sha256": "14305604f071824a9e5f009a8b7053956d47160c24b94372e7fe9d0592399946",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/TABLES.md": {
+      "bytes": 7667,
+      "scientific_pin": false,
+      "sha256": "54094e93db065be6f03d3c6aa0ae36080980890e77c5f2089d7e84271061d96e",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/diagnostics/diagnostics.json": {
+      "bytes": 2240,
+      "scientific_pin": false,
+      "sha256": "9bf7a8f08e40cfe16b2d29d144a6bf691b315e8070b1d17551f940b95eb7b4dc",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/diagnostics/exact-fixtures.json": {
+      "bytes": 3457,
+      "scientific_pin": false,
+      "sha256": "7cb628d04732c3f9d154817b4b61e42ec8837d395d2c10c7f4cdf92b4b2041eb",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/diagnostics/real-projection.csv": {
+      "bytes": 89486,
+      "scientific_pin": false,
+      "sha256": "417b18c00f8e06407f4e410f94b05ecfd8bd40883781e7f0b7f03c460734f8e3",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/diagnostics/resource-monitor.jsonl": {
+      "bytes": 1056,
+      "scientific_pin": false,
+      "sha256": "c6ca62dcdf4c1990dac21cf718d4c4863effbdefcd6c7d8ecce660b4ea3a5cea",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/dynamic-means.csv": {
+      "bytes": 151509,
+      "scientific_pin": false,
+      "sha256": "8a9e6e51bbfafba85ba7865b701dc851456c1f932bdb4f6eb01fa38be95bf37d",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/environment.json": {
+      "bytes": 1780,
+      "scientific_pin": false,
+      "sha256": "3588667594037978539b25fa5f4229be7386217d9293921edb2ab50fe4807514",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/evaluation/checkpoint.json": {
+      "bytes": 418,
+      "scientific_pin": false,
+      "sha256": "a2d7a85116bf13b810198460050ba71feaf1646881fb59fd512490f644773af0",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/evaluation/events.csv.gz": {
+      "bytes": 1292269,
+      "scientific_pin": false,
+      "sha256": "bd2e03d135941a7434069139074ffc5cbe70a5e8af6580a8f2e02b3a218f5626",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/evaluation/graph-diagnostics.csv": {
+      "bytes": 38996,
+      "scientific_pin": false,
+      "sha256": "d6e700bd2cadab2921443a289ccc272c728f5841fb9c778e6c45447e46272718",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/evaluation/static-metrics.csv": {
+      "bytes": 867142,
+      "scientific_pin": false,
+      "sha256": "ef711ac1d55b355f350aa3b5ef193fd22b23fd73cbf483306bf43e21b3752b91",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/evaluation/temporal-metrics.csv.gz": {
+      "bytes": 711525,
+      "scientific_pin": false,
+      "sha256": "a8ebc787ad8494b041b4d86d42c5fe3f6fd5eeabd1a56ed903c08cbb895aed51",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/report/confidence-intervals.csv": {
+      "bytes": 480,
+      "scientific_pin": false,
+      "sha256": "18ef3d4c34788aa5fb5873954a07b71546b7685ee9a2bea64f903d3c9924ad99",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/report/contrasts.csv": {
+      "bytes": 3011,
+      "scientific_pin": false,
+      "sha256": "e0c2582a102c8bcd00fc495711a8d3acbc32d62a7790068d3cb9f05a55cc41ca",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/report/mechanistic-comparisons.csv": {
+      "bytes": 3622,
+      "scientific_pin": false,
+      "sha256": "90bb7be5800249227a4044c0a5a102b02637a4328591aba8e2855151e89593a8",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/report/summary.csv.gz": {
+      "bytes": 145894,
+      "scientific_pin": false,
+      "sha256": "e2907c127e5b9a18c8281b75c404a6ce62d1f0de794dc2984babdd078166b958",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/resource-monitor.jsonl": {
+      "bytes": 84192,
+      "scientific_pin": false,
+      "sha256": "c2068698c90d919613d2619db2c8d85346680e69acb6bcbcae26f8e2be329993",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/result.json": {
+      "bytes": 2005,
+      "scientific_pin": false,
+      "sha256": "b81064069f535294e0bb4c6b5c047466884050e36370e41c7fcb0110061f3576",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/selected.json": {
+      "bytes": 823,
+      "scientific_pin": false,
+      "sha256": "e181a6ad053b63af0cbcb3999cd01273635d7bf0f9fdbd14b98ab7bd40a165cb",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/tune/checkpoint.json": {
+      "bytes": 130,
+      "scientific_pin": false,
+      "sha256": "ce0e24726cea06869f298a166cb1bee79c205b4902df753a51a5397c1cbe9c26",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/tune/graph-diagnostics.csv": {
+      "bytes": 6531,
+      "scientific_pin": false,
+      "sha256": "9b110d9561b788455c071d6eef7b099efb968938c523974a44ef22ffebb8614d",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/tune/static-metrics.csv": {
+      "bytes": 262852,
+      "scientific_pin": false,
+      "sha256": "9d144152e4d78ebb991c03964d1e2576353ad324afa45990f0c5e005baeafb85",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/validation.json": {
+      "bytes": 3457,
+      "scientific_pin": false,
+      "sha256": "7cb628d04732c3f9d154817b4b61e42ec8837d395d2c10c7f4cdf92b4b2041eb",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/manifest.json": {
+      "bytes": 8656,
+      "scientific_pin": false,
+      "sha256": "b992f778f1eff17aabbb9d53368825b5125ded1c4dc946f6ae7c0b8c8969c551",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/primary-dynamic-means.csv": {
+      "bytes": 1445,
+      "scientific_pin": false,
+      "sha256": "95e0d46fd64993fde04660ced88d6dcc1c2ef5de0f2ab64e3584329f8e7e1df8",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/EXECUTION-DECISION.md": {
+      "bytes": 2481,
+      "scientific_pin": false,
+      "sha256": "684656c61211fc6eb1ae0286863cb6232a56b1972e294d364d90889e45819650",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/PLAN-original.md": {
+      "bytes": 45721,
+      "scientific_pin": false,
+      "sha256": "73d98737ef8dea1a5e40a77ab9a501a84c56005ced6e68827838e2399121d217",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/PREREG-ADDENDUM.md": {
+      "bytes": 18153,
+      "scientific_pin": false,
+      "sha256": "74af61276728d01607de3bd6580193ceedd4826f3fb995f124c93396a1837de6",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/artifact-audit.json": {
+      "bytes": 863644,
+      "scientific_pin": false,
+      "sha256": "7b89ac54398e1c2bfaf0d976c02f98c99810eb349d16c88f95719a662eb794f7",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/design-original.json": {
+      "bytes": 4677,
+      "scientific_pin": false,
+      "sha256": "39132d0f10f00b74e4fc90c93343c5a2a503defcf8a09a8bba519cc730e6db27",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/diagnostics.stdout.txt": {
+      "bytes": 2345,
+      "scientific_pin": false,
+      "sha256": "a437ba96c62f5a6d573c623faecd7fc5b24096decc89fd57b71a2b13315ec1e9",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/execution-decision.json": {
+      "bytes": 23186,
+      "scientific_pin": false,
+      "sha256": "fdd3c4e321327155566118c787eeff113bbe3d69b63edb94242fcf2e78d65542",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/execution-ledger.json": {
+      "bytes": 4513,
+      "scientific_pin": false,
+      "sha256": "b6f98813acca19f0f6efac13d6592836bb1af634e9ccf914bce9eeaab13b5bea",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/full-run.stdout.txt": {
+      "bytes": 3717,
+      "scientific_pin": false,
+      "sha256": "0fef3ba90fb51519ac7a788ad10058520997229ca8c20e67e317ecdb66c65750",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/original-calibrate_timing.py": {
+      "bytes": 12691,
+      "scientific_pin": false,
+      "sha256": "1e480da019a50aeda47fd37c7a6871b1d4acdd2288896690d023ca2fb5953ba7",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/original-calibration-preregistration.json": {
+      "bytes": 2450,
+      "scientific_pin": false,
+      "sha256": "0ce9d26514f8f42f8b3e7bec4d9ffd53c42f43cccda6398e64340688993de984",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/original-launch_registered.py": {
+      "bytes": 1172,
+      "scientific_pin": false,
+      "sha256": "fbc826b89e66dc71a5ba88a4b4dccdb6db6fb16aae076e58d807e1f89a83d756",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/packaging-resource-monitor.jsonl": {
+      "bytes": 824,
+      "scientific_pin": false,
+      "sha256": "6d8be3af204e5e0a49a266b0e7623c5c0e24fc7f96ad66c9a83b09d914b99131",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/preflight-after-full.json": {
+      "bytes": 23252,
+      "scientific_pin": false,
+      "sha256": "224d263197185562b7449548f0db9b23d897104a26963b876a5cfe8ef11849c8",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/preflight-before-full.json": {
+      "bytes": 23252,
+      "scientific_pin": false,
+      "sha256": "9b46c707933ed664967d50d795dcab3b3533564bde7faaa75e666dc6030e4619",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/preflight-initial.json": {
+      "bytes": 23173,
+      "scientific_pin": false,
+      "sha256": "48cf27514330dbc01f1ef787c8872a3a44f0e67e26b3fab57012fbe5eb531d98",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/raw-manifest.json": {
+      "bytes": 263730,
+      "scientific_pin": false,
+      "sha256": "16cdf2d9d440afa3a707ea9571c78eff3a711b077ae4c6fd6eeabc4f2dce9525",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/registration.json": {
+      "bytes": 18741,
+      "scientific_pin": false,
+      "sha256": "8a94e00e8bfe1fe8823c3411fcf48ce066de578da1142bceb579ced37d7f2415",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/requirements-reproduction.txt": {
+      "bytes": 183,
+      "scientific_pin": false,
+      "sha256": "48d143a07d786ef813948930e542dda0c463e9a4005c6fb7033b4d385aaaa784",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/timing-only-v1.stdout.txt": {
+      "bytes": 246,
+      "scientific_pin": false,
+      "sha256": "d369098112cbfefafa7de9bf2584d22e3200147db2da99a4899dd1a6f7c52861",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/raw-archive.json": {
+      "bytes": 311,
+      "scientific_pin": false,
+      "sha256": "ea097526fbebe32ae1b156a98e27c7dc2186197978c2e7e0b3d94077a9e2dd42",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/static-ari-means.csv": {
+      "bytes": 2710,
+      "scientific_pin": false,
+      "sha256": "cc2f8f01ebabbc9f5469c0f38b4b2815fd809f861a918da266698086ef45d4e5",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/timing-only-v1/environment.json": {
+      "bytes": 704,
+      "scientific_pin": false,
+      "sha256": "b04d16ebb198c7e4fe02bd16485df6848062935f3f6e5385dd3868c2c1597d17",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/timing-only-v1/resource-monitor.jsonl": {
+      "bytes": 2872,
+      "scientific_pin": false,
+      "sha256": "35d109061396a0f05262c07c681a92259396f771010136e2bfda2a29ac80515a",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/timing-only-v1/result.json": {
+      "bytes": 23191,
+      "scientific_pin": false,
+      "sha256": "30e0de730893b171898a5bacd5950e4c937ae99744832311c7245d6eceee1ae8",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/timing-only-v1/timings.jsonl": {
+      "bytes": 122773,
+      "scientific_pin": false,
+      "sha256": "ab4afe10320b37f47a7bcf369bccbf16bba172b8398bc6da834bd2bf5baf4d7f",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/registered-v1/PLAN-original.md": {
+      "bytes": 45721,
+      "scientific_pin": false,
+      "sha256": "73d98737ef8dea1a5e40a77ab9a501a84c56005ced6e68827838e2399121d217",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/registered-v1/PREREG-ADDENDUM.md": {
+      "bytes": 18153,
+      "scientific_pin": false,
+      "sha256": "74af61276728d01607de3bd6580193ceedd4826f3fb995f124c93396a1837de6",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/registered-v1/design-original.json": {
+      "bytes": 4677,
+      "scientific_pin": false,
+      "sha256": "39132d0f10f00b74e4fc90c93343c5a2a503defcf8a09a8bba519cc730e6db27",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "reports/competition-enhancement/synthetic/registered-v1/registration.json": {
+      "bytes": 18741,
+      "scientific_pin": false,
+      "sha256": "8a94e00e8bfe1fe8823c3411fcf48ce066de578da1142bceb579ced37d7f2415",
       "source_kind": "CURRENT_LIVE"
     },
     "reports/contest-v3/README.md": {
@@ -1294,7 +2074,7 @@
     "reports/round2-cases/abazinsky.json": {
       "bytes": 27773,
       "scientific_pin": false,
-      "sha256": "6dcfbe28fbdfe26d90d5d63308ce49703f11b1ebb55e81653bd3c2368718555e",
+      "sha256": "a7df2d232e93bd171fb9d1b617d20f8f9bee0644716d1f9ad1a1233147a25d59",
       "source_kind": "CURRENT_LIVE"
     },
     "reports/source_alignment.json": {
@@ -2234,9 +3014,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "run_all.py": {
-      "bytes": 50194,
+      "bytes": 51826,
       "scientific_pin": false,
-      "sha256": "685cd0c0a7c1ed1576c1bc04d60308761b68a6ea0922ebf63164c41f492ad1f4",
+      "sha256": "e1285ef17e82aad86dd11e0a89c1770033dbb2cbbee71e5e9d6e586600ff6c5c",
       "source_kind": "CURRENT_LIVE"
     },
     "sbercluster/__init__.py": {
@@ -2527,6 +3307,12 @@
       "sha256": "0317bf0f893e94a288a58a9fdf6da1a07697cf233edf50e1a422f615aac6ddca",
       "source_kind": "CURRENT_LIVE"
     },
+    "scripts/build_interpretation_summary.py": {
+      "bytes": 7438,
+      "scientific_pin": false,
+      "sha256": "aaef6900ded3c15cb506a1e60791b942966b90c751e06c34f15557c570756843",
+      "source_kind": "CURRENT_LIVE"
+    },
     "scripts/build_map.py": {
       "bytes": 9011,
       "scientific_pin": false,
@@ -2540,9 +3326,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "scripts/build_research_atlas.py": {
-      "bytes": 28387,
+      "bytes": 28623,
       "scientific_pin": false,
-      "sha256": "710674532632980a9c9d11b5e9475c222e3af06abc090dbf171b79e5add165d3",
+      "sha256": "955d3c813afa0ad0b8bce6475fd6304aa1e2ddd95faca3f695c2e063b016e1f4",
       "source_kind": "CURRENT_LIVE"
     },
     "scripts/build_research_figures.py": {
@@ -2627,6 +3413,12 @@
       "bytes": 17584,
       "scientific_pin": false,
       "sha256": "44b5df75ddbaec554ae3a2ac4e5358be89b342ee7a58b8a45a02ead91adab47d",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "scripts/competition_seed_stability.py": {
+      "bytes": 12794,
+      "scientific_pin": false,
+      "sha256": "d01093e6fa2a1244da7dd1eef43c21280453ca7a84761b72b3bf3f06bedf9601",
       "source_kind": "CURRENT_LIVE"
     },
     "scripts/competition_synthetic.py": {
@@ -2809,6 +3601,12 @@
       "sha256": "101b8aa2c9f5e42ba7edc428822a4ed127b1b9a623d4f47fe33dfedc155a4e8b",
       "source_kind": "CURRENT_LIVE"
     },
+    "scripts/reproduce_synthetic.py": {
+      "bytes": 9426,
+      "scientific_pin": false,
+      "sha256": "3f782ba9629dc544383c325e478249a566b1d5f0e1da89dd6ca93551f0c162a2",
+      "source_kind": "CURRENT_LIVE"
+    },
     "scripts/run_bounded.py": {
       "bytes": 16642,
       "scientific_pin": false,
@@ -2837,6 +3635,12 @@
       "bytes": 45784,
       "scientific_pin": true,
       "sha256": "a3ffa38b92a7cdd0683ab16dc04d4de14e27986ff8f3ef6c18017544d1217bd9",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "scripts/science_portable_resources.py": {
+      "bytes": 7074,
+      "scientific_pin": false,
+      "sha256": "c456f5c2a016f7194c1780201f616111dfdc4b6272dcc12f82c3b534c4a37440",
       "source_kind": "CURRENT_LIVE"
     },
     "scripts/summarize_external_national.py": {
@@ -2911,6 +3715,12 @@
       "sha256": "533add0ab54a7aa35efcb79ba4bb377507d791d559fde7ab7e82db534969e085",
       "source_kind": "CURRENT_LIVE"
     },
+    "scripts/verify_interpretation.py": {
+      "bytes": 7298,
+      "scientific_pin": false,
+      "sha256": "7cff7b485996f29a9446bd15353111c609f81e4a95eac9e90778c2dd0f4e0c7d",
+      "source_kind": "CURRENT_LIVE"
+    },
     "scripts/verify_joint_refinement.py": {
       "bytes": 13759,
       "scientific_pin": false,
@@ -2929,6 +3739,18 @@
       "sha256": "02a22b5c2a66376744a69a57ab8ec22959079f4542e16fa7496b7659f1b5cc80",
       "source_kind": "CURRENT_LIVE"
     },
+    "scripts/verify_seed_stability.py": {
+      "bytes": 11659,
+      "scientific_pin": false,
+      "sha256": "68f109fa80350df274914deae8d9c211c4c69144c89b7a127dfb9498bc41d8ea",
+      "source_kind": "CURRENT_LIVE"
+    },
+    "scripts/verify_synthetic_results.py": {
+      "bytes": 15068,
+      "scientific_pin": false,
+      "sha256": "ea50ad70d6fd0aebb9f8cd59769ee3d53c8f2438314ec156428312a070a6fe63",
+      "source_kind": "CURRENT_LIVE"
+    },
     "scripts/verify_technical_core.py": {
       "bytes": 23555,
       "scientific_pin": false,
@@ -2942,9 +3764,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "tests/browser/main_model_regressions.cjs": {
-      "bytes": 28341,
+      "bytes": 28809,
       "scientific_pin": false,
-      "sha256": "67eae8c9dda5499a9bdcbb1d1bcd21ef202a94b1855c458104b05cbab02b412c",
+      "sha256": "b5af63f713d0b8b228c7bd9a21e0817f285b54b1462eb7b9f197167e6e390899",
       "source_kind": "CURRENT_LIVE"
     },
     "tests/browser/map_outline_regressions.cjs": {
@@ -2960,9 +3782,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "tests/browser/map_workspace_checks.cjs": {
-      "bytes": 20169,
+      "bytes": 20171,
       "scientific_pin": false,
-      "sha256": "f693a917b3a97e32701f6e0aa1e843164ef58645f73c398c42ae26c8aa692963",
+      "sha256": "3aa761256ab6f2d35f4db2ccd8514f23edad675da3059d5f32b745059b40b0c3",
       "source_kind": "CURRENT_LIVE"
     },
     "tests/browser/v12_regressions.cjs": {
@@ -3043,6 +3865,12 @@
       "sha256": "319ec915c3b6c6304a936ec632ad619a93491f453af339809967eb77004e8473",
       "source_kind": "CURRENT_LIVE"
     },
+    "tests/test_synthetic_resource_guards.py": {
+      "bytes": 3283,
+      "scientific_pin": false,
+      "sha256": "97d119804c4944177cb954347342997d3021370218ab55fc31922f9a42b9884e",
+      "source_kind": "CURRENT_LIVE"
+    },
     "tests/test_v12_atlas.py": {
       "bytes": 14493,
       "scientific_pin": false,
@@ -3104,9 +3932,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "web/atlas_theme.css": {
-      "bytes": 36153,
+      "bytes": 36088,
       "scientific_pin": false,
-      "sha256": "89857782ad38bd437f6a58bba30ee5f201467d1833febbaf9e8dc5e59227184e",
+      "sha256": "0b7eca3b776ec950bb103e4a97cedc36395923493654040389b3a15345c1296d",
       "source_kind": "CURRENT_LIVE"
     },
     "web/cluster_stability.html": {
@@ -3134,9 +3962,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "web/research_template.html": {
-      "bytes": 113453,
+      "bytes": 114261,
       "scientific_pin": false,
-      "sha256": "f37ca63e44eace52a89670cfdd360e9bd22414e1a77a98b5520756a2bde39af6",
+      "sha256": "f061c3692d7ff7f6186f9ee3de74630920a725558436b4b1c66a66c658aa178a",
       "source_kind": "CURRENT_LIVE"
     },
     "web/v12_sections.html": {
@@ -3150,5 +3978,5 @@
   "scientific_pin_count": 132,
   "self_hash": "External EXPORT proof; manifest does not hash itself",
   "state": "BYTE_EXACT_COPY; CURRENT_ACCEPTANCE_UNVERIFIED",
-  "total_bytes": 43604518
+  "total_bytes": 56848517
 }

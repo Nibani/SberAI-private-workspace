@@ -3,6 +3,7 @@ module.exports=async function checkMapWorkspace(page,data,record){
 const checks=[];record.mapChecks=checks;const add=(name,pass,details)=>{checks.push({name,pass:Boolean(pass),details});assert(pass,name)};
 const desktop=page.viewportSize().width>600;
 const activate=locator=>desktop?locator.click():locator.tap();
+async function selectQuick(value){const summary=page.locator('#territory-options > summary');await activate(summary);await page.selectOption('#quick',value);await activate(summary);await page.locator('#territory-map').scrollIntoViewIfNeeded()}
 const view=page=>page.locator('#territory-map').evaluate(e=>({box:[e.viewBox.baseVal.x,e.viewBox.baseVal.y,e.viewBox.baseVal.width,e.viewBox.baseVal.height],scale:e.getScreenCTM().a}));
 const selectedIndex=page=>page.locator('#territory-map .map-shape.selected').getAttribute('data-index');
 const outline=async(page,kind)=>page.locator('#territory-map').evaluate((root,kind)=>{
@@ -92,7 +93,7 @@ if(desktop){
     add('pointer_leave_removes_hover_contour',!(await outline(page,'hover')).visible);
   const beforeSearch=await view(page);
   const current=await page.locator('#quick').inputValue();
-  await page.selectOption('#quick',current==='0'?'1':'0');
+  await selectQuick(current==='0'?'1':'0');
   const afterSearch=await view(page);
   add('dropdown_selection_preserves_zoom',beforeSearch.box.every((v,i)=>Math.abs(v-afterSearch.box[i])<1e-7),{before:beforeSearch.box,after:afterSearch.box});
   await page.click('#map-zoom-reset');await page.click('#map-zoom-in');await page.click('#map-zoom-in');
@@ -159,7 +160,7 @@ await page.locator('#map-hover-tips').tap();
     await page.keyboard.press('Home');await page.keyboard.press('Enter');
     add('Home_and_Enter_select_first',await selectedIndex(page)===byId.get(sourcePaths.find(p=>byId.has(p.id)).id));
     const islands=sourcePaths.filter(p=>(p.d.match(/M/g)||[]).length>1).slice(0,3);
-    for(const item of islands){await page.selectOption('#quick',byId.get(item.id));await checkSelected(page,'multipart_selection_'+item.id)}
+    for(const item of islands){await selectQuick(byId.get(item.id));await checkSelected(page,'multipart_selection_'+item.id)}
     await activate(page.locator('#map-zoom-in'));
     await checkSelected(page,'zoom_preserves_complete_outline');
     await page.selectOption('#map-year','2024');await page.selectOption('#map-mode','relative');

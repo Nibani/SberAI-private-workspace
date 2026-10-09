@@ -1,0 +1,32 @@
+{
+  "schema": "seed_stability_post_run_guard_revision_v1",
+  "created_utc": "2026-10-09T01:13:04.440901+00:00",
+  "registration_sha256": "681e549dc885fb766e999fe9a479c9c0d306ca982e87e63906a7f6a01750a779",
+  "actual_run_adapter": "original_windows_pdh_guard",
+  "actual_run_adapter_source": "scripts/competition_synthetic.py:ResourceMonitor",
+  "actual_run_adapter_source_sha256": "f549c10b7ff5571795dda451fadcaa3e3e8eca43a0ae95220efdc76115b6d619",
+  "actual_branch_evidence": "Producer has os.name==nt branch importing ResourceMonitor; registration and resources.json report original_windows_pdh_guard, actual priority16384/affinity[0].",
+  "actual_run_portable_adapter_imported": false,
+  "scientific_outputs_changed": false,
+  "optimizer_fits_rerun": 0,
+  "review_request": "Root requested historical bytes preservation and separately reviewed current adapter lineage after independent acceptance detected source pin drift.",
+  "review_status": "PENDING_INDEPENDENT_LINEAGE_ACCEPTANCE",
+  "source_revisions": {
+    "scripts/science_portable_resources.py": {
+      "historical_snapshot": "provenance/historical-science-portable-resources.py",
+      "historical_sha256": "97b1caecbb410933a35fd2dcae5a2a94a5a8e8c8cc75b530ba973ef8dfbbaed3",
+      "current_sha256": "c456f5c2a016f7194c1780201f616111dfdc4b6272dcc12f82c3b534c4a37440",
+      "reason": "Post-run portable guard adds measured VRAM>=.95 gating and preserves driver unavailable/nonfinite as unknown.",
+      "actual_run_role": "Registered source not imported by the actual Windows branch.",
+      "scientific_fit_code_changed": false
+    },
+    "scripts/verify_seed_stability.py": {
+      "historical_snapshot": "provenance/historical-verify-seed-stability.py",
+      "historical_sha256": "c77343cb4f3cfd59a48a83eb5e81dee2633f862a45669ab76a52ff5d84243442",
+      "current_sha256": "68f109fa80350df274914deae8d9c211c4c69144c89b7a127dfb9498bc41d8ea",
+      "reason": "Post-run read-only verifier distinguishes immutable pre-outcome source pins from reviewed current guard/verifier revisions.",
+      "actual_run_role": "Historical acceptance helper; no scientific optimizer code.",
+      "scientific_fit_code_changed": false
+    }
+  }
+}

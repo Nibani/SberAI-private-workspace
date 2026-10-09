@@ -1,0 +1,23 @@
+{
+  "status": "UNAVAILABLE",
+  "spec_sha256": "ddc35f6111a53ef8714d12596c4b4f1423e9f28e1002eb5e1ccedd0d195096b0",
+  "details": {
+    "reason": "Не подтверждены методика и лицензия. Источник не публикует ID МО; проверены точные имена, но нет утверждённого перехода географии и границ. Статистика мобильности не выполнялась.",
+    "source_names": 297,
+    "decisions": {
+      "EXACT_NAME_CANDIDATE_NOT_APPROVED": 291,
+      "AMBIGUOUS": 5,
+      "UNMATCHED": 1
+    },
+    "approved_matches": 0,
+    "outcome_models_fitted": 0
+  },
+  "files": {
+    "reports/competition-enhancement/mobility/acquisition.json": "0a2dd5697354793b71a739b81585b36bca46cd4cfc188d15de19473c5334318d",
+    "reports/competition-enhancement/mobility/ambiguous.csv": "cbd742cfbbbaf5e50d157720977eebdc2d03b5f985b3b92b39a6847cf3f2db15",
+    "reports/competition-enhancement/mobility/join-audit.csv": "b65f09fafa78e12b52c3e0f7ed1e9247e2a281d3ce4312b985efa778955db6d0",
+    "reports/competition-enhancement/mobility/registry-2024.csv": "935a72a65826c7da41d4d717ae59010c56b3f17282b7b293f6fb3d87c95c4fab",
+    "reports/competition-enhancement/mobility/source-names-2024.csv": "747d69b710bfe23da4e1dda0d3f380771a00c0775a07e03c12fc79253c5ffcab",
+    "reports/competition-enhancement/mobility/unmatched.csv": "aaa1f5048bd0b10f25fc1e64be4e7488ba1e901dd61d93841dc6d37e8ac7d0f3"
+  }
+}

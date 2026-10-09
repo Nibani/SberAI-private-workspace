@@ -27,9 +27,11 @@ jobs:
         with:
           python-version: '3.10'
       - name: Install the scientific dependencies
-        run: python -m pip install -r requirements-models.txt
+        run: python -m pip install -r requirements-models.txt -r reports/competition-enhancement/synthetic/executed-20261009/provenance/requirements-reproduction.txt
       - name: Complete main scientific and unit checks
         run: python -B -X utf8 run_all.py --output artifacts/jury-check
+      - name: Exercise the portable synthetic runner on two small fixtures
+        run: python -B -X utf8 -m scripts.reproduce_synthetic --output runs/synthetic-ci-fixture --fixture
       - name: Rebuild the exact current atlas
         run: |
           python -B -X utf8 -m scripts.render_saved_atlas --output artifacts/ci-rebuild/index.html
@@ -71,3 +73,4 @@ jobs:
             !artifacts/jury-check/**/tmp/**
             artifacts/ci-rebuild/
             artifacts/ui/
+            runs/synthetic-ci-fixture/

@@ -383,6 +383,9 @@ def _render_packaged_atlas(template: str, payload: dict, encoded: str, *,
             content = source.read_text(encoding="utf-8")
             if placeholder == "/*__ATLAS_THEME__*/":
                 content += "\n" + (ROOT / "web/atlas_map.css").read_text(encoding="utf-8")
+                # Keep source formatting and comments; trim only line-edge whitespace in the bundle.
+                content = "\n".join(line.strip() for line in content.splitlines()
+                                    if line.strip())
             rendered = rendered.replace(placeholder, content)
     return rendered, assets
 

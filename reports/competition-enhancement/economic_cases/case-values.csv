@@ -1,0 +1,58 @@
+case_entity_id,feature,year,value,source,missing,aggregation
+tid_196,total_rub,2023,20535.916666666668,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_196,health_pct,2023,6.4471841666666672,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_196,marketplaces_pct,2023,13.392287916666668,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_196,horeca_pct,2023,5.8145116666666663,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_196,food_pct,2023,33.112728250000004,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_196,transport_pct,2023,8.7636784166666661,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_196,wage_total,2023,34211.400000000001,reports/external-national-2026-10-03/cohort-2023.csv,False,published joined annual value or observed headcount ratio
+tid_196,population_total,2023,17867,reports/external-national-2026-10-03/cohort-2023.csv,False,published joined annual value or observed headcount ratio
+tid_196,agriculture_share,2023,,reports/external-national-2026-10-03/cohort-2023.csv,True,published joined annual value or observed headcount ratio
+tid_196,manufacturing_share,2023,,reports/external-national-2026-10-03/cohort-2023.csv,True,published joined annual value or observed headcount ratio
+tid_196,mining_share,2023,,reports/external-national-2026-10-03/cohort-2023.csv,True,published joined annual value or observed headcount ratio
+tid_196,public_share,2023,,reports/external-national-2026-10-03/cohort-2023.csv,True,published joined annual value or observed headcount ratio
+tid_196,total_rub,2024,24266.166666666668,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_196,health_pct,2024,6.1760615833333317,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_196,marketplaces_pct,2024,18.916747416666666,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_196,horeca_pct,2024,6.2542407499999992,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_196,food_pct,2024,32.081646333333332,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_196,transport_pct,2024,8.5397717500000017,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_196,market_access,2024,324.69999999999999,reports/external-v4/municipality_bridge.csv,False,published joined annual value or observed headcount ratio
+tid_616,total_rub,2023,44379.25,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_616,health_pct,2023,3.6358437500000007,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_616,marketplaces_pct,2023,4.8593740833333339,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_616,horeca_pct,2023,3.2527385833333331,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_616,food_pct,2023,49.549068083333331,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_616,transport_pct,2023,4.8148019166666671,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_616,wage_total,2023,100644.7,reports/external-national-2026-10-03/cohort-2023.csv,False,published joined annual value or observed headcount ratio
+tid_616,population_total,2023,8744,reports/external-national-2026-10-03/cohort-2023.csv,False,published joined annual value or observed headcount ratio
+tid_616,agriculture_share,2023,0.045437189767086675,reports/external-national-2026-10-03/cohort-2023.csv,False,published joined annual value or observed headcount ratio
+tid_616,manufacturing_share,2023,,reports/external-national-2026-10-03/cohort-2023.csv,True,published joined annual value or observed headcount ratio
+tid_616,mining_share,2023,,reports/external-national-2026-10-03/cohort-2023.csv,True,published joined annual value or observed headcount ratio
+tid_616,public_share,2023,0.53608247422680411,reports/external-national-2026-10-03/cohort-2023.csv,False,published joined annual value or observed headcount ratio
+tid_616,total_rub,2024,51344.25,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_616,health_pct,2024,3.6075481666666671,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_616,marketplaces_pct,2024,10.160396666666665,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_616,horeca_pct,2024,4.0249270833333339,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_616,food_pct,2024,46.587110083333336,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_616,transport_pct,2024,4.6523867500000007,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_616,market_access,2024,123.7,reports/external-v4/municipality_bridge.csv,False,published joined annual value or observed headcount ratio
+tid_18,total_rub,2023,26238.75,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_18,health_pct,2023,4.1330721666666657,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_18,marketplaces_pct,2023,13.581317083333333,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_18,horeca_pct,2023,1.9460931666666668,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_18,food_pct,2023,45.767770249999998,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_18,transport_pct,2023,7.7874555000000001,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_18,wage_total,2023,51409.900000000001,reports/external-national-2026-10-03/cohort-2023.csv,False,published joined annual value or observed headcount ratio
+tid_18,population_total,2023,10394,reports/external-national-2026-10-03/cohort-2023.csv,False,published joined annual value or observed headcount ratio
+tid_18,agriculture_share,2023,,reports/external-national-2026-10-03/cohort-2023.csv,True,published joined annual value or observed headcount ratio
+tid_18,manufacturing_share,2023,,reports/external-national-2026-10-03/cohort-2023.csv,True,published joined annual value or observed headcount ratio
+tid_18,mining_share,2023,,reports/external-national-2026-10-03/cohort-2023.csv,True,published joined annual value or observed headcount ratio
+tid_18,public_share,2023,0.69923932124049148,reports/external-national-2026-10-03/cohort-2023.csv,False,published joined annual value or observed headcount ratio
+tid_18,total_rub,2024,30129,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_18,health_pct,2024,3.8717905833333335,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_18,marketplaces_pct,2024,18.949638666666665,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_18,horeca_pct,2024,2.1681348333333337,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_18,food_pct,2024,43.81982575,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_18,transport_pct,2024,6.8675178333333333,data/v12/panel.csv.gz,False,arithmetic mean twelve months
+tid_18,market_access,2024,207.59999999999999,reports/external-v4/municipality_bridge.csv,False,published joined annual value or observed headcount ratio

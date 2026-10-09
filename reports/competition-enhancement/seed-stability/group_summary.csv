@@ -1,0 +1,5 @@
+production_type,production_type_key,municipalities,mean_agreement,min_agreement,p10_agreement,median_agreement,all_runs_agree_n,below_0_8_agreement_n
+0,metro,338,1.0,1.0,1.0,1.0,338,0
+1,industrial,580,1.0,1.0,1.0,1.0,580,0
+2,periphery,971,1.0,1.0,1.0,1.0,971,0
+3,remote,127,1.0,1.0,1.0,1.0,127,0

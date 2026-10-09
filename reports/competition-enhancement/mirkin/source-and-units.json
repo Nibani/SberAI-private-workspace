@@ -1,0 +1,21 @@
+{
+  "source": "https://link.springer.com/article/10.1134/S1064562424602002",
+  "equations": "12–13",
+  "method_license": "CC BY 4.0",
+  "feature_units": {
+    "total_rub": "arithmetic mean monthly modeled cashless spending, rubles; already per resident estimate",
+    "*_pct": "percent of modeled category / modeled total; not asserted disjoint or additive",
+    "wage_total": "2023 mean organization wage, rubles; excludes small enterprises",
+    "population_total": "2023 source population on January1; municipal total, not city population",
+    "market_access": "2024 points0–1000; retrospective",
+    "*_share": "observed organization-sector headcount / observed organization total"
+  },
+  "external_origin": "Rosstat BД ПМО, distributed by Если быть точным; pinned cohort and join audit documented in reports/external-national-2026-10-03",
+  "limitations": [
+    "fixed joint labels are not independent economic validation",
+    "feature-specific observed samples and regional dependence",
+    "30% is a display threshold",
+    "no other category reconstructed from five dependent intensities",
+    "same global feature denominator including examined group"
+  ]
+}

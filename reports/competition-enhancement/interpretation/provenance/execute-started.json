@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-10-09T00:30:37.949777+00:00",
+  "slot_id": "teamlead-external-first-20261009",
+  "source_sha256": "7a16d37492c246fef4cc178c5514e24e1d4140de595e76e0c193b820e61ed0e9",
+  "prepared_manifest_sha256": "b9bd81d62e2723bd555a3b233cc04c6e7dbce6bb7c4141c8779d5e8414c12e9c",
+  "command": [
+    "C:\\Users\\Andreyka\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "-m",
+    "scripts.competition_interpretation",
+    "--execute"
+  ]
+}

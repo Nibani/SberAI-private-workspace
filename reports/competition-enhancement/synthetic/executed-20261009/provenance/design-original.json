@@ -1,0 +1,210 @@
+{
+  "task_id": "atlas-competition-20261008-v2",
+  "plan_version": "science-plan-v1",
+  "status": "DESIGN_ONLY_AWAITING_C_AND_LEAD_EXECUTION_BRIEF",
+  "base_commit": "78601123c891f313f049bdf9a89ebd4de92906a2",
+  "primary": {
+    "n": 160,
+    "k": 4,
+    "d": 6,
+    "undirected_edges": 1200,
+    "development_months": 12,
+    "total_months": 36,
+    "persistent_window": 6,
+    "graph_neighbors": 15,
+    "truth": "externally_generated_balanced_latent_labels",
+    "generators": [
+      "gaussian6",
+      "compositional_panel6"
+    ]
+  },
+  "seeds": {
+    "tune": [
+      11001,
+      11002,
+      11003,
+      11004,
+      11005,
+      11006,
+      11007,
+      11008
+    ],
+    "evaluation": [
+      22001,
+      22002,
+      22003,
+      22004,
+      22005,
+      22006,
+      22007,
+      22008,
+      22009,
+      22010,
+      22011,
+      22012,
+      22013,
+      22014,
+      22015,
+      22016,
+      22017,
+      22018,
+      22019,
+      22020,
+      22021,
+      22022,
+      22023,
+      22024,
+      22025,
+      22026,
+      22027,
+      22028,
+      22029,
+      22030,
+      22031,
+      22032
+    ],
+    "bootstrap": 33001,
+    "calibration": [
+      44001,
+      44002
+    ],
+    "namespace": {
+      "latent": 1,
+      "features": 2,
+      "graph": 3,
+      "events": 4,
+      "fit": 5
+    },
+    "initialization_rule": "SeedSequence([root_seed, generator_id, namespace_id, restart_id]); graph additionally family_id; shared X and KMeans across graph treatments"
+  },
+  "families": [
+    {
+      "id": "strong_noise",
+      "strength": "strong",
+      "graph": "uniform_fixed_m"
+    },
+    {
+      "id": "weak_independent",
+      "strength": "weak",
+      "graph": "latent_block_fixed_m_odds_10"
+    },
+    {
+      "id": "weak_derived",
+      "strength": "weak",
+      "graph": "main_knn_union_then_uniform_fixed_m"
+    },
+    {
+      "id": "weak_noise",
+      "strength": "weak",
+      "graph": "uniform_fixed_m"
+    },
+    {
+      "id": "weak_conflict",
+      "strength": "weak",
+      "graph": "independent_balanced_nuisance_block_fixed_m_odds_10"
+    },
+    {
+      "id": "strong_derived",
+      "strength": "strong",
+      "graph": "main_knn_union_then_uniform_fixed_m"
+    }
+  ],
+  "dynamic_regimes": [
+    {
+      "id": "stable",
+      "changed_fraction": 0,
+      "common_shift": false
+    },
+    {
+      "id": "common_shift",
+      "changed_fraction": 0,
+      "common_shift": true
+    },
+    {
+      "id": "persistent_transition",
+      "changed_fraction": 0.2,
+      "onset_month": 19,
+      "common_shift": false
+    },
+    {
+      "id": "transition_and_shift",
+      "changed_fraction": 0.2,
+      "onset_month": 19,
+      "common_shift": true
+    }
+  ],
+  "stress_cases": [
+    "late_permanent_onset_34_censored",
+    "broad_unbalanced_transition_0.6_onset_19"
+  ],
+  "methods": {
+    "fixed": [
+      "kmeans50",
+      "joint_zero_reuse",
+      "joint_alpha_0.5",
+      "kefrin_like_equal_scatter50",
+      "kefrine_equations_equal_scatter50"
+    ],
+    "research": [
+      "joint_tuned",
+      "kefrine_tuned"
+    ],
+    "graph_only": "spectral_fixedK_diagnostic_on_weak_families"
+  },
+  "budget": {
+    "n_init": 50,
+    "kmeans_max_iter": 300,
+    "kefrine_max_iter": 300,
+    "joint_max_sweeps": 200,
+    "joint_grid": [
+      0.1,
+      0.25,
+      0.5,
+      1
+    ],
+    "kefrine_grid": [
+      0.25,
+      0.5,
+      1,
+      2
+    ],
+    "candidate_count": 4,
+    "meta_tune_metric": "equal-weight mean ARI across both generators and all six families; ties within 1e-12 choose smaller graph weight; all seeds retained",
+    "bootstrap_draws": 10000
+  },
+  "confirmatory": {
+    "comparisons": 4,
+    "multiplicity": "Holm_alpha_0.05",
+    "primary_unit": "evaluation_root_seed",
+    "dynamic_primary_phase": "months_13_to_36",
+    "event_tolerance_months": 8,
+    "material_ARI_difference": 0.03,
+    "alarm_budget_fraction": 0.05,
+    "minimum_recall": 0.8,
+    "meaning": "thresholds are preregistered application targets, not measured properties"
+  },
+  "prohibited": [
+    "new_experiments_before_accepted_C",
+    "evaluation_truth_to_model",
+    "evaluation_based_tuning",
+    "2025_outcome_access",
+    "main_model_replacement",
+    "author_code_vendoring_without_verified_license",
+    "hidden_failed_seed_removal"
+  ],
+  "real_comparison": {
+    "enabled_automatically": false,
+    "entity_source": "reports/v1.2/labels.csv",
+    "N_expected": 2016,
+    "K": 4,
+    "baseline_months": "2023",
+    "retrospective_months": "2024",
+    "fixed_method_seeds": [
+      1729,
+      2718,
+      3141
+    ],
+    "no_tuning": true,
+    "notes": "separate execution brief; 2024 is already known; internal scores are descriptive"
+  }
+}

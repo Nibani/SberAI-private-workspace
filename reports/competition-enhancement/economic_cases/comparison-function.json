@@ -1,0 +1,16 @@
+{
+  "distance": "Euclidean in frozen six X23 coordinates: annual medians of the original standardized monthly five log intensities and relative spending level",
+  "formula": "sqrt(sum_j (X23_query_j-X23_candidate_j)^2)",
+  "scaler_source": "reports/v1.2/model.npz; no refit",
+  "order": "stable distance sorting in canonical lexicographic panel ID order",
+  "legal_and_expense_filter": "same municipal_district_type, max(mean_expense_j/mean_expense_i, mean_expense_i/mean_expense_j)<=factor; self excluded",
+  "factors": [
+    1.1,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "no_fillers": true,
+  "region": "reported, not filtered for this descriptive case function",
+  "source_limitation": "selection cases chosen before new outcomes; no monetary benefit, policy effect or treatment recommendation measured"
+}

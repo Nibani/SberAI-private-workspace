@@ -1,0 +1,75 @@
+{
+  "created_utc": "2026-10-09T01:07:10.240504+00:00",
+  "status": "REGISTERED_BEFORE_ANY_FIT",
+  "seeds": [
+    61001,
+    61002,
+    61003,
+    61004,
+    61005,
+    61006,
+    61007,
+    61008,
+    61009,
+    61010,
+    61011,
+    61012,
+    61013,
+    61014,
+    61015,
+    61016,
+    61017,
+    61018,
+    61019,
+    61020
+  ],
+  "selection": "consecutive new seeds fixed before any results; no replacement or filtering",
+  "recipe": {
+    "K": 4,
+    "features": [
+      "health",
+      "marketplaces",
+      "horeca",
+      "food",
+      "transport",
+      "level"
+    ],
+    "X23": "median of the 12 standardized 2023 monthly vectors",
+    "graph": "production weighted attribute kNN, deterministic union",
+    "graph_k": 15,
+    "alpha": 0.5,
+    "kmeans_n_init": 50,
+    "max_sweeps": 200,
+    "random_state": "each registered seed used for both KMeans and joint sweep ordering"
+  },
+  "matching": "SciPy linear_sum_assignment on negative 4x4 production/raw overlap counts, separately for every seed",
+  "forecast_policy": "time first registered seed; if 20*first_fit_seconds + setup_seconds >600 stop before seed 2, honestly partial",
+  "inputs_and_sources_sha256": {
+    "scripts/competition_seed_stability.py": "d01093e6fa2a1244da7dd1eef43c21280453ca7a84761b72b3bf3f06bedf9601",
+    "scripts/verify_seed_stability.py": "c77343cb4f3cfd59a48a83eb5e81dee2633f862a45669ab76a52ff5d84243442",
+    "scripts/validate_v12_findings.py": "fd22e625fda09436904e2f657fc8d31b6e06e43ce8dab165b129298261f10c58",
+    "sbercluster/panel.py": "e39bdd4eed13c106866b598cbbedfd79c42d3628798b930b06565230fa077383",
+    "sbercluster/graph.py": "b3b8a68077646b42c8bcb63a0a6b7679bd74504715aae6e4a5b06e7aa838dcd5",
+    "sbercluster/joint.py": "2114a56fce304a0af443bd5f3e284ef1aff16f0066e35b9203985e16e070ae6e",
+    "scripts/competition_synthetic.py": "f549c10b7ff5571795dda451fadcaa3e3e8eca43a0ae95220efdc76115b6d619",
+    "scripts/science_portable_resources.py": "97b1caecbb410933a35fd2dcae5a2a94a5a8e8c8cc75b530ba973ef8dfbbaed3",
+    "configs/v12.json": "68776f61ab2c6c24ae84b1de72d0945c49f1891572cf89634e58803f6b222151",
+    "data/v12/panel.csv.gz": "953ba39d152f0f4192ebbabc8edfa0684683c3a4a3d8c147f0978cf6f1798784",
+    "reports/v1.2/labels.csv": "394a681ebd0898dc41d1fe2479febbb36b7a5cc5d6449147aab14089279c0e71"
+  },
+  "python": "3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scikit-learn": "1.5.2",
+    "psutil": "6.1.0",
+    "threadpoolctl": "3.5.0"
+  },
+  "resource_adapter": "original_windows_pdh_guard",
+  "affinity": [
+    0
+  ],
+  "priority_at_start": 16384,
+  "data_scope": "2023 only for features and graph; physical panel contains 2023-2024, cropped before transformation; no 2024 model selection/outcomes or 2025 inputs"
+}

@@ -31,7 +31,7 @@ STORAGE_MANIFEST = "reports/external-national-2026-10-03/manifest.json"
 STORAGE_CONTROL = "reports/economic-generalization-2026-10-03/acceptance/control-cohort-audit.json"
 STORAGE_MANIFEST_SHA256 = "dc2c95cc0bcc41ec8f1c23c5cc18a0791d9b7371ecbb2a1a32cf4955f601f8f9"
 STORAGE_AUDITS = tuple(f"reports/external-national-2026-10-03/join-audit-{year}.csv" for year in (2023, 2024))
-RUNTIME_PHASES = frozenset(("findings", "added_value", "science_units", "atlas_units"))
+RUNTIME_PHASES = frozenset(("findings", "added_value", "science_units", "atlas_units", "interpretation"))
 RUNTIME_EXCLUDED = frozenset((".git", ".swarm", ".serena", ".local", "artifacts", "runs", ".venv", "venv"))
 SCIENCE_TESTS = ("test_v12_core", "test_v12_edges", "test_network_conventions",
                  "test_artifact_integrity", "test_v12_findings", "test_v12_results",
@@ -51,6 +51,8 @@ sys.exit(0 if result.wasSuccessful() and not result.skipped else 1)
 LIMITATIONS = [
     "Node проверяет код и переключатели на поддельном DOM; реальный браузер, карта, обрезание текста и скорость сети не проверены.",
     "Повторяется фиксированный научный рецепт и его проверки; сохранённые сетки выбора модели и все исторические эксперименты не пересчитываются.",
+    "Внешняя проверка повторно сверяется по сохранённым донорам, ошибкам, интервалам и хешам; она не становится независимым прогнозом будущего.",
+    "Синтетический опыт проверяется по всем сохранённым строкам, контрастам и интервалам; полный повтор обучения запускается отдельно.",
     "Проверка относится к сохранённым данным 2023–2024; внешние исходы 2025 не загружаются.",
 ]
 
@@ -202,6 +204,10 @@ def snapshot_inputs(root: Path, expected: dict, manifests, guard=None, storage=N
     needed += ["tests/" + name.split(".")[0] + ".py" for name in (*SCIENCE_TESTS, *ATLAS_TESTS)]
     needed += [p.relative_to(root).as_posix() for p in (root / "reports/v1.2/strict-region-validation").rglob("fold_*.json")]
     needed += (storage or logical_storage_scope(root))["files"]
+    for result_folder in ("interpretation", "economic_cases", "mirkin", "mobility", "four_russias", "synthetic/executed-20261009", "seed-stability"):
+        needed += [p.relative_to(root).as_posix() for p in (root / "reports/competition-enhancement" / result_folder).rglob("*")
+                   if p.is_file() and "__pycache__" not in p.parts and p.suffix != ".pyc"]
+    needed += ["reports/competition-enhancement/mirkin-input.csv", "reports/competition-enhancement/mirkin-summary.csv"]
     for name in sorted(set(needed) - observed.keys()):
         observed[name] = fingerprint(contained(root, name), guard)
     return observed
@@ -582,6 +588,9 @@ def phases(root: Path, node: str, quick: bool, storage=None):
             Phase("science_units", "Математика, научные таблицы и происхождение данных", (*py, "-c", UNIT_RUNNER, *SCIENCE_TESTS)),
         ])
     result.extend([
+        Phase("interpretation", "Экономические кейсы, внешняя проверка и интервалы по сохранённым данным", (*py, "-m", "scripts.verify_interpretation")),
+        Phase("synthetic", "Синтетические режимы: все повторы, контрасты и интервалы", (*py, "-m", "scripts.verify_synthetic_results", "--check")),
+        Phase("seed_stability", "Поддержка назначений в 20 повторах оптимизации на тех же данных", (*py, "-m", "scripts.verify_seed_stability")),
         Phase("atlas_units", "Пакет атласа, сохранённые входы и сценарии ошибок", (*py, "-c", UNIT_RUNNER, *(QUICK_TESTS if quick else ATLAS_TESTS))),
         Phase("node_controls", "Переключатели основной и архивной модели в Node (поддельный DOM)", (node, str(root / "tests/browser/main_model_controls.cjs"), str(root))),
     ])

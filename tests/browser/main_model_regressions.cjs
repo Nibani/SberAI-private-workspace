@@ -146,7 +146,7 @@ async function runViewports(browser) {
       assert((await page.locator('.hero-proof').textContent()).includes('2,486'));
       assert.equal(await page.locator('.hero-proof').evaluate(n=>getComputedStyle(n).opacity),'1');
       assert.equal(await page.locator('.proof-main').evaluate(n=>getComputedStyle(n).backgroundColor),'rgba(0, 0, 0, 0)','MAE belongs to the shared text ribbon');
-      assert.equal(await page.locator('#map-model').isVisible(),false);assert.equal(await page.locator('#method').isVisible(),false,'Single-option rules do not promise a choice');
+      assert.equal(await page.locator('#quick').isVisible(),false,'The full selector is available in the territory disclosure');assert.equal(await page.locator('#map-model').isVisible(),false);assert.equal(await page.locator('#method').isVisible(),false,'Single-option rules do not promise a choice');
       if(!mobile){const first=await page.locator('#territory-map').boundingBox();assert(first.y<viewport.height-180,'A useful part of the map is present on the first screen');const bars=await page.locator('#profile').boundingBox();assert(bars.y<viewport.height-120,'The inspector profile is visible on the first screen')}
       assert.equal(await page.locator('#archive-v11').getAttribute('open'),null);
       assert.equal(await page.locator('#main-appendices').getAttribute('open'),null);
@@ -198,7 +198,7 @@ async function runViewports(browser) {
       assert.equal(await page.locator('#view-analogs').getAttribute('aria-selected'),'true');assert(await page.locator('#workspace-analogs').isVisible());assert.equal(await page.locator('[data-leaving]').count(),0);
       await page.locator('#view-analogs').focus();await page.locator('#view-analogs').press('ArrowRight');assert.equal(await page.locator('#view-dynamics').getAttribute('aria-selected'),'true');assert.equal(await page.evaluate(()=>document.activeElement.id),'view-dynamics');
       assert.equal(await page.locator('#workspace-dynamics').evaluate(n=>n.getAnimations().length),0,'Keyboard navigation is immediate');record.actions.push('interrupted view transitions and keyboard tabs');
-      await page.emulateMedia({reducedMotion:'reduce'});await page.locator('#quick').selectOption('250');await activate(page.locator('#view-map'));
+      await page.emulateMedia({reducedMotion:'reduce'});await activate(page.locator('#territory-options > summary'));await page.locator('#quick').selectOption('250');await activate(page.locator('#territory-options > summary'));await activate(page.locator('#view-map'));
       assert.equal(await page.locator('#territory-inspector').evaluate(n=>n.getAnimations().length),0);assert.equal(await page.locator('.view-indicator').evaluate(n=>getComputedStyle(n).transitionDuration),'0s');
       const selected=page.locator('#territory-map path.map-shape.selected');await selected.focus();await selected.press('ArrowRight');
       assert.equal(await page.locator('#territory-map .map-outline-focus').evaluate(n=>getComputedStyle(n).display),'inline');
@@ -209,8 +209,9 @@ async function runViewports(browser) {
       const deepLink=new URL(base.href);deepLink.hash='network-title';await page.goto(deepLink.href,{waitUntil:'load'});await page.waitForFunction(()=>window.__ATLAS_READY__===true);assert(await page.locator('#network-title').isVisible());
       assert.equal(await page.locator('#proof-model').evaluate(n=>n.open),true);assert.equal(await page.locator('#archive-v11').evaluate(n=>n.open),true);record.actions.push('direct deep evidence anchor');
       assert.deepEqual(record.errors,[]);assert.deepEqual(record.httpErrors,[]);assert.deepEqual(record.failedRequests,[]);assert.deepEqual(record.blockedRequests,[]);record.status='PASS';save();
-    } catch(error) {record.status='FAIL';if(record.userPath?.status==='RUNNING')record.userPath.status='INCOMPLETE';record.failure=String(error.stack||error);const name=`failure-${viewport.width}.png`;await page.screenshot({path:path.join(output,name),fullPage:true,animations:'disabled'}).then(()=>record.screenshots.push(name)).catch(error=>record.screenshotError=String(error));save();throw error}
+    } catch(error) {record.status='FAIL';if(record.userPath?.status==='RUNNING')record.userPath.status='INCOMPLETE';record.failure=String(error.stack||error);const name=`failure-${viewport.width}.png`;await page.screenshot({path:path.join(output,name),fullPage:true,animations:'disabled'}).then(()=>record.screenshots.push(name)).catch(error=>record.screenshotError=String(error));save()}
     finally {const name=`trace-${viewport.width}.zip`;await context.tracing.stop({path:path.join(output,name)}).then(()=>record.trace=name).catch(error=>record.traceError=String(error));save();await context.close()}
   }
+  const failed=report.checks.filter(check=>check.status==='FAIL');if(failed.length)throw new Error('Browser acceptance failed at widths: '+failed.map(check=>check.viewport.width).join(', ')+'; exact failures preserved in result.json');
 }
 (async()=>{let browser;try{browser=await chromium.launch({headless:true});await runViewports(browser);report.status='PASS';save();console.log(JSON.stringify(report))}catch(error){report.status='FAIL';report.failure=String(error.stack||error);save();throw error}finally{if(browser)await browser.close()}})().catch(error=>{console.error(error);process.exitCode=1});

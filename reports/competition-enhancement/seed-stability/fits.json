@@ -1,0 +1,2393 @@
+[
+  {
+    "seed": 61001,
+    "mapping_raw_to_production": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "overlap": [
+      [
+        0,
+        0,
+        0,
+        338
+      ],
+      [
+        0,
+        0,
+        580,
+        0
+      ],
+      [
+        0,
+        971,
+        0,
+        0
+      ],
+      [
+        127,
+        0,
+        0,
+        0
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61001,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 7,
+      "moves_per_sweep": [
+        34,
+        10,
+        12,
+        8,
+        6,
+        1,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48585739175279385,
+          "attribute_SSE_over_TSS": 0.45205102780135686,
+          "graph_cut_fraction": 0.06761272790287393,
+          "SSE": 2733.8784709528177,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48530044756138974,
+          "attribute_SSE_over_TSS": 0.45214944322928874,
+          "graph_cut_fraction": 0.06630200866420198,
+          "SSE": 2734.473659998048,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48476744325549453,
+          "attribute_SSE_over_TSS": 0.45224562698092746,
+          "graph_cut_fraction": 0.06504363254913416,
+          "SSE": 2735.0553524878087,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4842431601339065,
+          "attribute_SSE_over_TSS": 0.4523274200065763,
+          "graph_cut_fraction": 0.06383148025466047,
+          "SSE": 2735.5500138825255,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4841522239050576,
+          "attribute_SSE_over_TSS": 0.452620811297259,
+          "graph_cut_fraction": 0.06306282521559714,
+          "SSE": 2737.3243625375076,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61002,
+    "mapping_raw_to_production": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "overlap": [
+      [
+        338,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        580
+      ],
+      [
+        0,
+        0,
+        971,
+        0
+      ],
+      [
+        0,
+        127,
+        0,
+        0
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61002,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 7,
+      "moves_per_sweep": [
+        33,
+        14,
+        8,
+        6,
+        5,
+        1,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4855565236650188,
+          "attribute_SSE_over_TSS": 0.4520422921506035,
+          "graph_cut_fraction": 0.06702846302883064,
+          "SSE": 2733.8256401747512,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484694059408266,
+          "attribute_SSE_over_TSS": 0.45231534625771713,
+          "graph_cut_fraction": 0.06475742630109775,
+          "SSE": 2735.4769952186143,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4843147155878401,
+          "attribute_SSE_over_TSS": 0.45233497559910796,
+          "graph_cut_fraction": 0.0639594799774643,
+          "SSE": 2735.595707997763,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48426494131812714,
+          "attribute_SSE_over_TSS": 0.4525095982673824,
+          "graph_cut_fraction": 0.06351068610148941,
+          "SSE": 2736.651777166896,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4841609295249426,
+          "attribute_SSE_over_TSS": 0.4527154535520476,
+          "graph_cut_fraction": 0.06289095194579003,
+          "SSE": 2737.8967324844743,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61003,
+    "mapping_raw_to_production": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "overlap": [
+      [
+        338,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        580
+      ],
+      [
+        0,
+        0,
+        971,
+        0
+      ],
+      [
+        0,
+        127,
+        0,
+        0
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61003,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 6,
+      "moves_per_sweep": [
+        40,
+        15,
+        4,
+        4,
+        2,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4852125847749805,
+          "attribute_SSE_over_TSS": 0.45206180066823365,
+          "graph_cut_fraction": 0.0663015682134938,
+          "SSE": 2733.9436222455115,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4843479059750608,
+          "attribute_SSE_over_TSS": 0.45234303987739116,
+          "graph_cut_fraction": 0.06400973219533923,
+          "SSE": 2735.644478502477,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48429310688120825,
+          "attribute_SSE_over_TSS": 0.452496505638815,
+          "graph_cut_fraction": 0.06359320248478655,
+          "SSE": 2736.5725966028285,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48417404967256056,
+          "attribute_SSE_over_TSS": 0.4526306645393087,
+          "graph_cut_fraction": 0.06308677026650363,
+          "SSE": 2737.3839521958694,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61004,
+    "mapping_raw_to_production": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "overlap": [
+      [
+        0,
+        0,
+        0,
+        338
+      ],
+      [
+        0,
+        580,
+        0,
+        0
+      ],
+      [
+        971,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        127,
+        0
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61004,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 6,
+      "moves_per_sweep": [
+        38,
+        15,
+        8,
+        3,
+        1,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4854326267332677,
+          "attribute_SSE_over_TSS": 0.4519954984480528,
+          "graph_cut_fraction": 0.06687425657042974,
+          "SSE": 2733.542644919544,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48447318349736923,
+          "attribute_SSE_over_TSS": 0.45219752236104954,
+          "graph_cut_fraction": 0.06455132227263934,
+          "SSE": 2734.764429170418,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48419055016728624,
+          "attribute_SSE_over_TSS": 0.4523975837951971,
+          "graph_cut_fraction": 0.06358593274417823,
+          "SSE": 2735.9743448968447,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4841522239050576,
+          "attribute_SSE_over_TSS": 0.452620811297259,
+          "graph_cut_fraction": 0.06306282521559714,
+          "SSE": 2737.3243625375076,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61005,
+    "mapping_raw_to_production": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "overlap": [
+      [
+        0,
+        0,
+        0,
+        338
+      ],
+      [
+        580,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        971,
+        0
+      ],
+      [
+        0,
+        127,
+        0,
+        0
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61005,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 6,
+      "moves_per_sweep": [
+        34,
+        20,
+        3,
+        7,
+        3,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48577009472805116,
+          "attribute_SSE_over_TSS": 0.45195624227897613,
+          "graph_cut_fraction": 0.06762770489815005,
+          "SSE": 2733.3052345634324,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48447635628033897,
+          "attribute_SSE_over_TSS": 0.45220960846257097,
+          "graph_cut_fraction": 0.06453349563553605,
+          "SSE": 2734.837522539784,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4843382176416367,
+          "attribute_SSE_over_TSS": 0.45226425077969756,
+          "graph_cut_fraction": 0.06414793372387825,
+          "SSE": 2735.167984025785,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48418119723560055,
+          "attribute_SSE_over_TSS": 0.4525012100279356,
+          "graph_cut_fraction": 0.06335997441532988,
+          "SSE": 2736.601047435466,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61006,
+    "mapping_raw_to_production": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "overlap": [
+      [
+        338,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        580,
+        0
+      ],
+      [
+        0,
+        971,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        127
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61006,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 6,
+      "moves_per_sweep": [
+        33,
+        14,
+        9,
+        6,
+        9,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4858314019524171,
+          "attribute_SSE_over_TSS": 0.4520122041252082,
+          "graph_cut_fraction": 0.06763839565441773,
+          "SSE": 2733.6436761932473,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48504914207968475,
+          "attribute_SSE_over_TSS": 0.4520860045693618,
+          "graph_cut_fraction": 0.06592627502064591,
+          "SSE": 2734.090000685417,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4846332715899009,
+          "attribute_SSE_over_TSS": 0.45217896254243567,
+          "graph_cut_fraction": 0.0649086180949304,
+          "SSE": 2734.6521845665734,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48430663225966153,
+          "attribute_SSE_over_TSS": 0.45232996612635235,
+          "graph_cut_fraction": 0.06395333226661837,
+          "SSE": 2735.5654121044345,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61007,
+    "mapping_raw_to_production": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "overlap": [
+      [
+        0,
+        0,
+        338,
+        0
+      ],
+      [
+        0,
+        580,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        971
+      ],
+      [
+        127,
+        0,
+        0,
+        0
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61007,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 8,
+      "moves_per_sweep": [
+        35,
+        9,
+        9,
+        7,
+        9,
+        1,
+        1,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4855849255194872,
+          "attribute_SSE_over_TSS": 0.45197921442466715,
+          "graph_cut_fraction": 0.06721142218964,
+          "SSE": 2733.4441636901765,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48507373915109,
+          "attribute_SSE_over_TSS": 0.4522424849129084,
+          "graph_cut_fraction": 0.0656625084763631,
+          "SSE": 2735.036350137226,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4846298204134664,
+          "attribute_SSE_over_TSS": 0.4524409588616095,
+          "graph_cut_fraction": 0.0643777231037138,
+          "SSE": 2736.236665194661,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4845417610911086,
+          "attribute_SSE_over_TSS": 0.4524640702336487,
+          "graph_cut_fraction": 0.06415538171491977,
+          "SSE": 2736.3764363235077,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48416547174104557,
+          "attribute_SSE_over_TSS": 0.45269841293716073,
+          "graph_cut_fraction": 0.0629341176077697,
+          "SSE": 2737.7936756008353,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4841609295249426,
+          "attribute_SSE_over_TSS": 0.4527154535520476,
+          "graph_cut_fraction": 0.06289095194579003,
+          "SSE": 2737.8967324844743,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61008,
+    "mapping_raw_to_production": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "overlap": [
+      [
+        338,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        580,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        971,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        127
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61008,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 6,
+      "moves_per_sweep": [
+        31,
+        15,
+        9,
+        4,
+        4,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48568662365843795,
+          "attribute_SSE_over_TSS": 0.4518467543212032,
+          "graph_cut_fraction": 0.06767973867446957,
+          "SSE": 2732.6430819475213,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4848810775321335,
+          "attribute_SSE_over_TSS": 0.45207489279082835,
+          "graph_cut_fraction": 0.0656123694826103,
+          "SSE": 2734.022799749597,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4842791255960759,
+          "attribute_SSE_over_TSS": 0.45236530048540513,
+          "graph_cut_fraction": 0.06382765022134157,
+          "SSE": 2735.7791044479054,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48418692932764495,
+          "attribute_SSE_over_TSS": 0.4524410353539672,
+          "graph_cut_fraction": 0.06349178794735552,
+          "SSE": 2736.2371277990947,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61009,
+    "mapping_raw_to_production": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "overlap": [
+      [
+        0,
+        338,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        580,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        971
+      ],
+      [
+        127,
+        0,
+        0,
+        0
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61009,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 6,
+      "moves_per_sweep": [
+        37,
+        12,
+        6,
+        6,
+        4,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4852700656732924,
+          "attribute_SSE_over_TSS": 0.4520654103223741,
+          "graph_cut_fraction": 0.06640931070183663,
+          "SSE": 2733.965452426476,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4845113319365235,
+          "attribute_SSE_over_TSS": 0.4521896277812146,
+          "graph_cut_fraction": 0.06464340831061789,
+          "SSE": 2734.716684954565,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4843382176416367,
+          "attribute_SSE_over_TSS": 0.45226425077969756,
+          "graph_cut_fraction": 0.06414793372387825,
+          "SSE": 2735.167984025785,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4842013992800962,
+          "attribute_SSE_over_TSS": 0.4525089797749891,
+          "graph_cut_fraction": 0.06338483901021419,
+          "SSE": 2736.648036697492,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61010,
+    "mapping_raw_to_production": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "overlap": [
+      [
+        0,
+        0,
+        338,
+        0
+      ],
+      [
+        0,
+        580,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        971
+      ],
+      [
+        127,
+        0,
+        0,
+        0
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61010,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 6,
+      "moves_per_sweep": [
+        33,
+        16,
+        10,
+        3,
+        3,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48567148220425405,
+          "attribute_SSE_over_TSS": 0.45189666835899517,
+          "graph_cut_fraction": 0.06754962769051773,
+          "SSE": 2732.944948119536,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48492117713370975,
+          "attribute_SSE_over_TSS": 0.4521374046508739,
+          "graph_cut_fraction": 0.0655675449656717,
+          "SSE": 2734.4008540351697,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48426494131812714,
+          "attribute_SSE_over_TSS": 0.4525095982673824,
+          "graph_cut_fraction": 0.06351068610148941,
+          "SSE": 2736.651777166896,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48419484253881495,
+          "attribute_SSE_over_TSS": 0.452639025108121,
+          "graph_cut_fraction": 0.06311163486138795,
+          "SSE": 2737.4345145830225,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61011,
+    "mapping_raw_to_production": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "overlap": [
+      [
+        0,
+        0,
+        338,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        580
+      ],
+      [
+        971,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        127,
+        0,
+        0
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61011,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 5,
+      "moves_per_sweep": [
+        33,
+        20,
+        9,
+        3,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4856695764371133,
+          "attribute_SSE_over_TSS": 0.4518892375245825,
+          "graph_cut_fraction": 0.0675606778250616,
+          "SSE": 2732.900008506588,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4845997357785693,
+          "attribute_SSE_over_TSS": 0.4523045889815005,
+          "graph_cut_fraction": 0.06459029359413755,
+          "SSE": 2735.4119382138824,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48418977796798013,
+          "attribute_SSE_over_TSS": 0.45259572739521875,
+          "graph_cut_fraction": 0.06318810114552278,
+          "SSE": 2737.17266209765,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61012,
+    "mapping_raw_to_production": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "overlap": [
+      [
+        0,
+        0,
+        338,
+        0
+      ],
+      [
+        0,
+        580,
+        0,
+        0
+      ],
+      [
+        971,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        127
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61012,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 4,
+      "moves_per_sweep": [
+        33,
+        20,
+        10,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4855708635714271,
+          "attribute_SSE_over_TSS": 0.45186676942948006,
+          "graph_cut_fraction": 0.06740818828389404,
+          "SSE": 2732.764127737148,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4845829013850653,
+          "attribute_SSE_over_TSS": 0.45228869946851324,
+          "graph_cut_fraction": 0.06458840383310416,
+          "SSE": 2735.3158428733163,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61013,
+    "mapping_raw_to_production": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "overlap": [
+      [
+        338,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        580,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        971
+      ],
+      [
+        0,
+        127,
+        0,
+        0
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61013,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 6,
+      "moves_per_sweep": [
+        34,
+        15,
+        9,
+        4,
+        3,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48856665687972817,
+          "attribute_SSE_over_TSS": 0.4511681502348831,
+          "graph_cut_fraction": 0.07479701328969017,
+          "SSE": 2728.5390737984535,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48558426072129846,
+          "attribute_SSE_over_TSS": 0.45195757963068056,
+          "graph_cut_fraction": 0.06725336218123575,
+          "SSE": 2733.3133224933517,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48462879295843214,
+          "attribute_SSE_over_TSS": 0.4522616399876362,
+          "graph_cut_fraction": 0.06473430594159188,
+          "SSE": 2735.152194683941,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4843579928175165,
+          "attribute_SSE_over_TSS": 0.45240303693956546,
+          "graph_cut_fraction": 0.06390991175590209,
+          "SSE": 2736.0073239922804,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4842118269852009,
+          "attribute_SSE_over_TSS": 0.4525188593812392,
+          "graph_cut_fraction": 0.06338593520792338,
+          "SSE": 2736.707785799181,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61014,
+    "mapping_raw_to_production": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "overlap": [
+      [
+        0,
+        0,
+        0,
+        338
+      ],
+      [
+        0,
+        580,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        971,
+        0
+      ],
+      [
+        127,
+        0,
+        0,
+        0
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61014,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 6,
+      "moves_per_sweep": [
+        36,
+        16,
+        9,
+        6,
+        2,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4856408445501365,
+          "attribute_SSE_over_TSS": 0.4520021334136617,
+          "graph_cut_fraction": 0.06727742227294967,
+          "SSE": 2733.582771340054,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4848511866136629,
+          "attribute_SSE_over_TSS": 0.45224365979396464,
+          "graph_cut_fraction": 0.06521505363939656,
+          "SSE": 2735.0434554900025,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48426362472414325,
+          "attribute_SSE_over_TSS": 0.45232795426430283,
+          "graph_cut_fraction": 0.06387134091968084,
+          "SSE": 2735.5532449241705,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4841529643736596,
+          "attribute_SSE_over_TSS": 0.4525174118577808,
+          "graph_cut_fraction": 0.0632711050317576,
+          "SSE": 2736.6990315812373,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61015,
+    "mapping_raw_to_production": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "overlap": [
+      [
+        0,
+        0,
+        0,
+        338
+      ],
+      [
+        0,
+        0,
+        580,
+        0
+      ],
+      [
+        0,
+        971,
+        0,
+        0
+      ],
+      [
+        127,
+        0,
+        0,
+        0
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61015,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 5,
+      "moves_per_sweep": [
+        37,
+        16,
+        8,
+        4,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48554835653761647,
+          "attribute_SSE_over_TSS": 0.4520221761964712,
+          "graph_cut_fraction": 0.0670523606822905,
+          "SSE": 2733.703984497532,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48457703843686445,
+          "attribute_SSE_over_TSS": 0.4522614364241804,
+          "graph_cut_fraction": 0.06463120402536814,
+          "SSE": 2735.1509635889647,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4842013992800962,
+          "attribute_SSE_over_TSS": 0.4525089797749891,
+          "graph_cut_fraction": 0.06338483901021419,
+          "SSE": 2736.648036697492,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61016,
+    "mapping_raw_to_production": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "overlap": [
+      [
+        0,
+        0,
+        338,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        580
+      ],
+      [
+        0,
+        971,
+        0,
+        0
+      ],
+      [
+        127,
+        0,
+        0,
+        0
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61016,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 6,
+      "moves_per_sweep": [
+        35,
+        10,
+        8,
+        9,
+        1,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48856665687972817,
+          "attribute_SSE_over_TSS": 0.4511681502348831,
+          "graph_cut_fraction": 0.07479701328969017,
+          "SSE": 2728.5390737984535,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48542207082385047,
+          "attribute_SSE_over_TSS": 0.45199947286008085,
+          "graph_cut_fraction": 0.06684519592753925,
+          "SSE": 2733.5666810544267,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48482553866467576,
+          "attribute_SSE_over_TSS": 0.4521100536939256,
+          "graph_cut_fraction": 0.06543096994150036,
+          "SSE": 2734.2354430798523,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48433395990511285,
+          "attribute_SSE_over_TSS": 0.45225857979827894,
+          "graph_cut_fraction": 0.0641507602136678,
+          "SSE": 2735.1336875126567,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48417459103306104,
+          "attribute_SSE_over_TSS": 0.45264424662897823,
+          "graph_cut_fraction": 0.0630606888081656,
+          "SSE": 2737.4660928840976,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61017,
+    "mapping_raw_to_production": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "overlap": [
+      [
+        0,
+        338,
+        0,
+        0
+      ],
+      [
+        580,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        971,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        127
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61017,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 5,
+      "moves_per_sweep": [
+        37,
+        13,
+        10,
+        3,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48553163108409403,
+          "attribute_SSE_over_TSS": 0.45206825834922726,
+          "graph_cut_fraction": 0.06692674546973348,
+          "SSE": 2733.98267649814,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4847088432488659,
+          "attribute_SSE_over_TSS": 0.45223844744255365,
+          "graph_cut_fraction": 0.0649407916126245,
+          "SSE": 2735.0119326431795,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48418977796798013,
+          "attribute_SSE_over_TSS": 0.45259572739521875,
+          "graph_cut_fraction": 0.06318810114552278,
+          "SSE": 2737.17266209765,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61018,
+    "mapping_raw_to_production": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "overlap": [
+      [
+        338,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        580
+      ],
+      [
+        0,
+        0,
+        971,
+        0
+      ],
+      [
+        0,
+        127,
+        0,
+        0
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61018,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 7,
+      "moves_per_sweep": [
+        37,
+        9,
+        7,
+        2,
+        7,
+        3,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4851427384168508,
+          "attribute_SSE_over_TSS": 0.4521564947195076,
+          "graph_cut_fraction": 0.06597248739468646,
+          "SSE": 2734.5163054431678,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4848013559741627,
+          "attribute_SSE_over_TSS": 0.4521786982329387,
+          "graph_cut_fraction": 0.06524531548244797,
+          "SSE": 2734.6505860964917,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48444178144040817,
+          "attribute_SSE_over_TSS": 0.45223159679195396,
+          "graph_cut_fraction": 0.06442036929690839,
+          "SSE": 2734.970501820032,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48433395990511285,
+          "attribute_SSE_over_TSS": 0.45225857979827894,
+          "graph_cut_fraction": 0.0641507602136678,
+          "SSE": 2735.1336875126567,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48417508097303413,
+          "attribute_SSE_over_TSS": 0.4525275559317021,
+          "graph_cut_fraction": 0.0632950500826641,
+          "SSE": 2736.760380109601,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61019,
+    "mapping_raw_to_production": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "overlap": [
+      [
+        0,
+        338,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        580
+      ],
+      [
+        0,
+        0,
+        971,
+        0
+      ],
+      [
+        127,
+        0,
+        0,
+        0
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61019,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 5,
+      "moves_per_sweep": [
+        37,
+        11,
+        6,
+        7,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4852166130270769,
+          "attribute_SSE_over_TSS": 0.4520279269839903,
+          "graph_cut_fraction": 0.06637737208617321,
+          "SSE": 2733.7387636556855,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48467796594712514,
+          "attribute_SSE_over_TSS": 0.4521812133609412,
+          "graph_cut_fraction": 0.06499350517236792,
+          "SSE": 2734.665796888802,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484275922438043,
+          "attribute_SSE_over_TSS": 0.4524222104549526,
+          "graph_cut_fraction": 0.06370742396618082,
+          "SSE": 2736.1232800629573,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  },
+  {
+    "seed": 61020,
+    "mapping_raw_to_production": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "overlap": [
+      [
+        0,
+        338,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        580
+      ],
+      [
+        971,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        127,
+        0
+      ]
+    ],
+    "fit": {
+      "algorithm": "potts_graph_regularized_kmeans",
+      "algorithm_revision": "exact_centroid_moves_v2",
+      "alpha": 0.5,
+      "initialization": "supplied_attribute_baseline",
+      "seed": 61020,
+      "max_sweeps": 200,
+      "converged": true,
+      "convergence_status": "coordinate_fixed_point",
+      "sweeps": 6,
+      "moves_per_sweep": [
+        34,
+        13,
+        9,
+        2,
+        1,
+        0
+      ],
+      "trace": [
+        {
+          "objective": 0.48883949801252197,
+          "attribute_SSE_over_TSS": 0.45116801282232477,
+          "graph_cut_fraction": 0.07534297038039438,
+          "SSE": 2728.538242765646,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4855567346979055,
+          "attribute_SSE_over_TSS": 0.45186961258735114,
+          "graph_cut_fraction": 0.06737424422110871,
+          "SSE": 2732.781322362567,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48479571660839155,
+          "attribute_SSE_over_TSS": 0.4522056142644726,
+          "graph_cut_fraction": 0.0651802046878379,
+          "SSE": 2734.813366744269,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.4843121429256827,
+          "attribute_SSE_over_TSS": 0.45245306635965465,
+          "graph_cut_fraction": 0.0637181531320561,
+          "SSE": 2736.309887964231,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.48414066465261796,
+          "attribute_SSE_over_TSS": 0.4526034810690849,
+          "graph_cut_fraction": 0.06307436716706619,
+          "SSE": 2737.219554153524,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        },
+        {
+          "objective": 0.484139557350085,
+          "attribute_SSE_over_TSS": 0.45270651367463216,
+          "graph_cut_fraction": 0.06286608735090571,
+          "SSE": 2737.8426666005453,
+          "TSS": 6047.7209492246875,
+          "undirected_edge_mass": 10921.187398920041
+        }
+      ],
+      "warnings": [],
+      "optimality": "coordinate local only; nonempty clusters enforced",
+      "objective": 0.484139557350085,
+      "attribute_SSE_over_TSS": 0.45270651367463216,
+      "graph_cut_fraction": 0.06286608735090571,
+      "SSE": 2737.8426666005453,
+      "TSS": 6047.7209492246875,
+      "undirected_edge_mass": 10921.187398920041
+    }
+  }
+]

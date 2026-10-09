@@ -1,0 +1,634 @@
+{
+  "status": "COMPLETED_TIMING_ONLY_PENDING_REVIEW",
+  "seeds": [
+    44001,
+    44002
+  ],
+  "months": [
+    1,
+    12,
+    19,
+    31,
+    36
+  ],
+  "helper_sha256": "1e480da019a50aeda47fd37c7a6871b1d4acdd2288896690d023ca2fb5953ba7",
+  "registration_sha256": "8a94e00e8bfe1fe8823c3411fcf48ce066de578da1142bceb579ced37d7f2415",
+  "diagnostics_sha256": "9bf7a8f08e40cfe16b2d29d144a6bf691b315e8070b1d17551f940b95eb7b4dc",
+  "duration_seconds": 34.040977500000736,
+  "quality_metrics_computed": false,
+  "quality_based_selection": false,
+  "counts": {
+    "feature_hartigan": 8,
+    "generation_static": 32,
+    "generation_temporal": 20,
+    "joint": 128,
+    "kefrin_like50": 32,
+    "kefrine": 128,
+    "kmeans50": 8,
+    "monthly_kmeans20": 100,
+    "spectral": 16
+  },
+  "calibration_optimizer_calls": 420,
+  "calibration_randomized_starts": 10400,
+  "forecasts": [
+    {
+      "possible_joint_alpha": 0.1,
+      "possible_kefrine_beta": 0.25,
+      "randomized_starts": 339200,
+      "optimizer_calls": 15584,
+      "alpha0_noop_calls_not_timed": 608,
+      "rate_forecasts": {
+        "mean": {
+          "components_seconds": {
+            "kmeans50": 7.48859400046058,
+            "feature_hartigan": 0.5188860010821372,
+            "generation_static": 2.8888627998530865,
+            "kefrin_like50": 29.874058401677758,
+            "joint": 17.60312320070807,
+            "kefrine": 283.63524640363175,
+            "spectral": 13.579277999815531,
+            "generation_temporal": 1.1793839992024004,
+            "monthly_kmeans20": 163.5812236972153
+          },
+          "total_seconds": 520.3486565036467
+        },
+        "observed_max": {
+          "components_seconds": {
+            "kmeans50": 9.693632000125945,
+            "feature_hartigan": 0.6249280006159097,
+            "generation_static": 3.6780496009159833,
+            "kefrin_like50": 30.465050401631743,
+            "joint": 22.414671203354374,
+            "kefrine": 295.7466720084194,
+            "spectral": 25.78754000016488,
+            "generation_temporal": 1.3095423998311162,
+            "monthly_kmeans20": 186.84910088405013
+          },
+          "total_seconds": 576.5691864991095
+        }
+      }
+    },
+    {
+      "possible_joint_alpha": 0.1,
+      "possible_kefrine_beta": 0.5,
+      "randomized_starts": 339200,
+      "optimizer_calls": 15584,
+      "alpha0_noop_calls_not_timed": 608,
+      "rate_forecasts": {
+        "mean": {
+          "components_seconds": {
+            "kmeans50": 7.48859400046058,
+            "feature_hartigan": 0.5188860010821372,
+            "generation_static": 2.8888627998530865,
+            "kefrin_like50": 29.874058401677758,
+            "joint": 17.60312320070807,
+            "kefrine": 280.79076160362456,
+            "spectral": 13.579277999815531,
+            "generation_temporal": 1.1793839992024004,
+            "monthly_kmeans20": 163.5812236972153
+          },
+          "total_seconds": 517.5041717036395
+        },
+        "observed_max": {
+          "components_seconds": {
+            "kmeans50": 9.693632000125945,
+            "feature_hartigan": 0.6249280006159097,
+            "generation_static": 3.6780496009159833,
+            "kefrin_like50": 30.465050401631743,
+            "joint": 22.414671203354374,
+            "kefrine": 293.5870528065134,
+            "spectral": 25.78754000016488,
+            "generation_temporal": 1.3095423998311162,
+            "monthly_kmeans20": 186.84910088405013
+          },
+          "total_seconds": 574.4095672972035
+        }
+      }
+    },
+    {
+      "possible_joint_alpha": 0.1,
+      "possible_kefrine_beta": 1.0,
+      "randomized_starts": 313600,
+      "optimizer_calls": 15072,
+      "alpha0_noop_calls_not_timed": 608,
+      "rate_forecasts": {
+        "mean": {
+          "components_seconds": {
+            "kmeans50": 7.48859400046058,
+            "feature_hartigan": 0.5188860010821372,
+            "generation_static": 2.8888627998530865,
+            "kefrin_like50": 29.874058401677758,
+            "joint": 17.60312320070807,
+            "kefrine": 175.84830240265,
+            "spectral": 13.579277999815531,
+            "generation_temporal": 1.1793839992024004,
+            "monthly_kmeans20": 163.5812236972153
+          },
+          "total_seconds": 412.5617125026649
+        },
+        "observed_max": {
+          "components_seconds": {
+            "kmeans50": 9.693632000125945,
+            "feature_hartigan": 0.6249280006159097,
+            "generation_static": 3.6780496009159833,
+            "kefrin_like50": 30.465050401631743,
+            "joint": 22.414671203354374,
+            "kefrine": 183.43911040597595,
+            "spectral": 25.78754000016488,
+            "generation_temporal": 1.3095423998311162,
+            "monthly_kmeans20": 186.84910088405013
+          },
+          "total_seconds": 464.26162489666604
+        }
+      }
+    },
+    {
+      "possible_joint_alpha": 0.1,
+      "possible_kefrine_beta": 2.0,
+      "randomized_starts": 339200,
+      "optimizer_calls": 15584,
+      "alpha0_noop_calls_not_timed": 608,
+      "rate_forecasts": {
+        "mean": {
+          "components_seconds": {
+            "kmeans50": 7.48859400046058,
+            "feature_hartigan": 0.5188860010821372,
+            "generation_static": 2.8888627998530865,
+            "kefrin_like50": 29.874058401677758,
+            "joint": 17.60312320070807,
+            "kefrine": 272.37118880229536,
+            "spectral": 13.579277999815531,
+            "generation_temporal": 1.1793839992024004,
+            "monthly_kmeans20": 163.5812236972153
+          },
+          "total_seconds": 509.08459890231023
+        },
+        "observed_max": {
+          "components_seconds": {
+            "kmeans50": 9.693632000125945,
+            "feature_hartigan": 0.6249280006159097,
+            "generation_static": 3.6780496009159833,
+            "kefrin_like50": 30.465050401631743,
+            "joint": 22.414671203354374,
+            "kefrine": 287.21026240778156,
+            "spectral": 25.78754000016488,
+            "generation_temporal": 1.3095423998311162,
+            "monthly_kmeans20": 186.84910088405013
+          },
+          "total_seconds": 568.0327768984716
+        }
+      }
+    },
+    {
+      "possible_joint_alpha": 0.25,
+      "possible_kefrine_beta": 0.25,
+      "randomized_starts": 339200,
+      "optimizer_calls": 15584,
+      "alpha0_noop_calls_not_timed": 608,
+      "rate_forecasts": {
+        "mean": {
+          "components_seconds": {
+            "kmeans50": 7.48859400046058,
+            "feature_hartigan": 0.5188860010821372,
+            "generation_static": 2.8888627998530865,
+            "kefrin_like50": 29.874058401677758,
+            "joint": 18.947614400298335,
+            "kefrine": 283.63524640363175,
+            "spectral": 13.579277999815531,
+            "generation_temporal": 1.1793839992024004,
+            "monthly_kmeans20": 163.5812236972153
+          },
+          "total_seconds": 521.693147703237
+        },
+        "observed_max": {
+          "components_seconds": {
+            "kmeans50": 9.693632000125945,
+            "feature_hartigan": 0.6249280006159097,
+            "generation_static": 3.6780496009159833,
+            "kefrin_like50": 30.465050401631743,
+            "joint": 24.30514160101302,
+            "kefrine": 295.7466720084194,
+            "spectral": 25.78754000016488,
+            "generation_temporal": 1.3095423998311162,
+            "monthly_kmeans20": 186.84910088405013
+          },
+          "total_seconds": 578.4596568967681
+        }
+      }
+    },
+    {
+      "possible_joint_alpha": 0.25,
+      "possible_kefrine_beta": 0.5,
+      "randomized_starts": 339200,
+      "optimizer_calls": 15584,
+      "alpha0_noop_calls_not_timed": 608,
+      "rate_forecasts": {
+        "mean": {
+          "components_seconds": {
+            "kmeans50": 7.48859400046058,
+            "feature_hartigan": 0.5188860010821372,
+            "generation_static": 2.8888627998530865,
+            "kefrin_like50": 29.874058401677758,
+            "joint": 18.947614400298335,
+            "kefrine": 280.79076160362456,
+            "spectral": 13.579277999815531,
+            "generation_temporal": 1.1793839992024004,
+            "monthly_kmeans20": 163.5812236972153
+          },
+          "total_seconds": 518.8486629032298
+        },
+        "observed_max": {
+          "components_seconds": {
+            "kmeans50": 9.693632000125945,
+            "feature_hartigan": 0.6249280006159097,
+            "generation_static": 3.6780496009159833,
+            "kefrin_like50": 30.465050401631743,
+            "joint": 24.30514160101302,
+            "kefrine": 293.5870528065134,
+            "spectral": 25.78754000016488,
+            "generation_temporal": 1.3095423998311162,
+            "monthly_kmeans20": 186.84910088405013
+          },
+          "total_seconds": 576.3000376948621
+        }
+      }
+    },
+    {
+      "possible_joint_alpha": 0.25,
+      "possible_kefrine_beta": 1.0,
+      "randomized_starts": 313600,
+      "optimizer_calls": 15072,
+      "alpha0_noop_calls_not_timed": 608,
+      "rate_forecasts": {
+        "mean": {
+          "components_seconds": {
+            "kmeans50": 7.48859400046058,
+            "feature_hartigan": 0.5188860010821372,
+            "generation_static": 2.8888627998530865,
+            "kefrin_like50": 29.874058401677758,
+            "joint": 18.947614400298335,
+            "kefrine": 175.84830240265,
+            "spectral": 13.579277999815531,
+            "generation_temporal": 1.1793839992024004,
+            "monthly_kmeans20": 163.5812236972153
+          },
+          "total_seconds": 413.90620370225514
+        },
+        "observed_max": {
+          "components_seconds": {
+            "kmeans50": 9.693632000125945,
+            "feature_hartigan": 0.6249280006159097,
+            "generation_static": 3.6780496009159833,
+            "kefrin_like50": 30.465050401631743,
+            "joint": 24.30514160101302,
+            "kefrine": 183.43911040597595,
+            "spectral": 25.78754000016488,
+            "generation_temporal": 1.3095423998311162,
+            "monthly_kmeans20": 186.84910088405013
+          },
+          "total_seconds": 466.1520952943247
+        }
+      }
+    },
+    {
+      "possible_joint_alpha": 0.25,
+      "possible_kefrine_beta": 2.0,
+      "randomized_starts": 339200,
+      "optimizer_calls": 15584,
+      "alpha0_noop_calls_not_timed": 608,
+      "rate_forecasts": {
+        "mean": {
+          "components_seconds": {
+            "kmeans50": 7.48859400046058,
+            "feature_hartigan": 0.5188860010821372,
+            "generation_static": 2.8888627998530865,
+            "kefrin_like50": 29.874058401677758,
+            "joint": 18.947614400298335,
+            "kefrine": 272.37118880229536,
+            "spectral": 13.579277999815531,
+            "generation_temporal": 1.1793839992024004,
+            "monthly_kmeans20": 163.5812236972153
+          },
+          "total_seconds": 510.4290901019005
+        },
+        "observed_max": {
+          "components_seconds": {
+            "kmeans50": 9.693632000125945,
+            "feature_hartigan": 0.6249280006159097,
+            "generation_static": 3.6780496009159833,
+            "kefrin_like50": 30.465050401631743,
+            "joint": 24.30514160101302,
+            "kefrine": 287.21026240778156,
+            "spectral": 25.78754000016488,
+            "generation_temporal": 1.3095423998311162,
+            "monthly_kmeans20": 186.84910088405013
+          },
+          "total_seconds": 569.9232472961303
+        }
+      }
+    },
+    {
+      "possible_joint_alpha": 0.5,
+      "possible_kefrine_beta": 0.25,
+      "randomized_starts": 339200,
+      "optimizer_calls": 15072,
+      "alpha0_noop_calls_not_timed": 608,
+      "rate_forecasts": {
+        "mean": {
+          "components_seconds": {
+            "kmeans50": 7.48859400046058,
+            "feature_hartigan": 0.5188860010821372,
+            "generation_static": 2.8888627998530865,
+            "kefrin_like50": 29.874058401677758,
+            "joint": 13.2530863994034,
+            "kefrine": 283.63524640363175,
+            "spectral": 13.579277999815531,
+            "generation_temporal": 1.1793839992024004,
+            "monthly_kmeans20": 163.5812236972153
+          },
+          "total_seconds": 515.998619702342
+        },
+        "observed_max": {
+          "components_seconds": {
+            "kmeans50": 9.693632000125945,
+            "feature_hartigan": 0.6249280006159097,
+            "generation_static": 3.6780496009159833,
+            "kefrin_like50": 30.465050401631743,
+            "joint": 17.383010400692,
+            "kefrine": 295.7466720084194,
+            "spectral": 25.78754000016488,
+            "generation_temporal": 1.3095423998311162,
+            "monthly_kmeans20": 186.84910088405013
+          },
+          "total_seconds": 571.5375256964471
+        }
+      }
+    },
+    {
+      "possible_joint_alpha": 0.5,
+      "possible_kefrine_beta": 0.5,
+      "randomized_starts": 339200,
+      "optimizer_calls": 15072,
+      "alpha0_noop_calls_not_timed": 608,
+      "rate_forecasts": {
+        "mean": {
+          "components_seconds": {
+            "kmeans50": 7.48859400046058,
+            "feature_hartigan": 0.5188860010821372,
+            "generation_static": 2.8888627998530865,
+            "kefrin_like50": 29.874058401677758,
+            "joint": 13.2530863994034,
+            "kefrine": 280.79076160362456,
+            "spectral": 13.579277999815531,
+            "generation_temporal": 1.1793839992024004,
+            "monthly_kmeans20": 163.5812236972153
+          },
+          "total_seconds": 513.1541349023348
+        },
+        "observed_max": {
+          "components_seconds": {
+            "kmeans50": 9.693632000125945,
+            "feature_hartigan": 0.6249280006159097,
+            "generation_static": 3.6780496009159833,
+            "kefrin_like50": 30.465050401631743,
+            "joint": 17.383010400692,
+            "kefrine": 293.5870528065134,
+            "spectral": 25.78754000016488,
+            "generation_temporal": 1.3095423998311162,
+            "monthly_kmeans20": 186.84910088405013
+          },
+          "total_seconds": 569.3779064945411
+        }
+      }
+    },
+    {
+      "possible_joint_alpha": 0.5,
+      "possible_kefrine_beta": 1.0,
+      "randomized_starts": 313600,
+      "optimizer_calls": 14560,
+      "alpha0_noop_calls_not_timed": 608,
+      "rate_forecasts": {
+        "mean": {
+          "components_seconds": {
+            "kmeans50": 7.48859400046058,
+            "feature_hartigan": 0.5188860010821372,
+            "generation_static": 2.8888627998530865,
+            "kefrin_like50": 29.874058401677758,
+            "joint": 13.2530863994034,
+            "kefrine": 175.84830240265,
+            "spectral": 13.579277999815531,
+            "generation_temporal": 1.1793839992024004,
+            "monthly_kmeans20": 163.5812236972153
+          },
+          "total_seconds": 408.2116757013602
+        },
+        "observed_max": {
+          "components_seconds": {
+            "kmeans50": 9.693632000125945,
+            "feature_hartigan": 0.6249280006159097,
+            "generation_static": 3.6780496009159833,
+            "kefrin_like50": 30.465050401631743,
+            "joint": 17.383010400692,
+            "kefrine": 183.43911040597595,
+            "spectral": 25.78754000016488,
+            "generation_temporal": 1.3095423998311162,
+            "monthly_kmeans20": 186.84910088405013
+          },
+          "total_seconds": 459.22996409400366
+        }
+      }
+    },
+    {
+      "possible_joint_alpha": 0.5,
+      "possible_kefrine_beta": 2.0,
+      "randomized_starts": 339200,
+      "optimizer_calls": 15072,
+      "alpha0_noop_calls_not_timed": 608,
+      "rate_forecasts": {
+        "mean": {
+          "components_seconds": {
+            "kmeans50": 7.48859400046058,
+            "feature_hartigan": 0.5188860010821372,
+            "generation_static": 2.8888627998530865,
+            "kefrin_like50": 29.874058401677758,
+            "joint": 13.2530863994034,
+            "kefrine": 272.37118880229536,
+            "spectral": 13.579277999815531,
+            "generation_temporal": 1.1793839992024004,
+            "monthly_kmeans20": 163.5812236972153
+          },
+          "total_seconds": 504.73456210100557
+        },
+        "observed_max": {
+          "components_seconds": {
+            "kmeans50": 9.693632000125945,
+            "feature_hartigan": 0.6249280006159097,
+            "generation_static": 3.6780496009159833,
+            "kefrin_like50": 30.465050401631743,
+            "joint": 17.383010400692,
+            "kefrine": 287.21026240778156,
+            "spectral": 25.78754000016488,
+            "generation_temporal": 1.3095423998311162,
+            "monthly_kmeans20": 186.84910088405013
+          },
+          "total_seconds": 563.0011160958093
+        }
+      }
+    },
+    {
+      "possible_joint_alpha": 1.0,
+      "possible_kefrine_beta": 0.25,
+      "randomized_starts": 339200,
+      "optimizer_calls": 15584,
+      "alpha0_noop_calls_not_timed": 608,
+      "rate_forecasts": {
+        "mean": {
+          "components_seconds": {
+            "kmeans50": 7.48859400046058,
+            "feature_hartigan": 0.5188860010821372,
+            "generation_static": 2.8888627998530865,
+            "kefrin_like50": 29.874058401677758,
+            "joint": 22.3657759987982,
+            "kefrine": 283.63524640363175,
+            "spectral": 13.579277999815531,
+            "generation_temporal": 1.1793839992024004,
+            "monthly_kmeans20": 163.5812236972153
+          },
+          "total_seconds": 525.1113093017368
+        },
+        "observed_max": {
+          "components_seconds": {
+            "kmeans50": 9.693632000125945,
+            "feature_hartigan": 0.6249280006159097,
+            "generation_static": 3.6780496009159833,
+            "kefrin_like50": 30.465050401631743,
+            "joint": 27.779074399964884,
+            "kefrine": 295.7466720084194,
+            "spectral": 25.78754000016488,
+            "generation_temporal": 1.3095423998311162,
+            "monthly_kmeans20": 186.84910088405013
+          },
+          "total_seconds": 581.93358969572
+        }
+      }
+    },
+    {
+      "possible_joint_alpha": 1.0,
+      "possible_kefrine_beta": 0.5,
+      "randomized_starts": 339200,
+      "optimizer_calls": 15584,
+      "alpha0_noop_calls_not_timed": 608,
+      "rate_forecasts": {
+        "mean": {
+          "components_seconds": {
+            "kmeans50": 7.48859400046058,
+            "feature_hartigan": 0.5188860010821372,
+            "generation_static": 2.8888627998530865,
+            "kefrin_like50": 29.874058401677758,
+            "joint": 22.3657759987982,
+            "kefrine": 280.79076160362456,
+            "spectral": 13.579277999815531,
+            "generation_temporal": 1.1793839992024004,
+            "monthly_kmeans20": 163.5812236972153
+          },
+          "total_seconds": 522.2668245017296
+        },
+        "observed_max": {
+          "components_seconds": {
+            "kmeans50": 9.693632000125945,
+            "feature_hartigan": 0.6249280006159097,
+            "generation_static": 3.6780496009159833,
+            "kefrin_like50": 30.465050401631743,
+            "joint": 27.779074399964884,
+            "kefrine": 293.5870528065134,
+            "spectral": 25.78754000016488,
+            "generation_temporal": 1.3095423998311162,
+            "monthly_kmeans20": 186.84910088405013
+          },
+          "total_seconds": 579.773970493814
+        }
+      }
+    },
+    {
+      "possible_joint_alpha": 1.0,
+      "possible_kefrine_beta": 1.0,
+      "randomized_starts": 313600,
+      "optimizer_calls": 15072,
+      "alpha0_noop_calls_not_timed": 608,
+      "rate_forecasts": {
+        "mean": {
+          "components_seconds": {
+            "kmeans50": 7.48859400046058,
+            "feature_hartigan": 0.5188860010821372,
+            "generation_static": 2.8888627998530865,
+            "kefrin_like50": 29.874058401677758,
+            "joint": 22.3657759987982,
+            "kefrine": 175.84830240265,
+            "spectral": 13.579277999815531,
+            "generation_temporal": 1.1793839992024004,
+            "monthly_kmeans20": 163.5812236972153
+          },
+          "total_seconds": 417.324365300755
+        },
+        "observed_max": {
+          "components_seconds": {
+            "kmeans50": 9.693632000125945,
+            "feature_hartigan": 0.6249280006159097,
+            "generation_static": 3.6780496009159833,
+            "kefrin_like50": 30.465050401631743,
+            "joint": 27.779074399964884,
+            "kefrine": 183.43911040597595,
+            "spectral": 25.78754000016488,
+            "generation_temporal": 1.3095423998311162,
+            "monthly_kmeans20": 186.84910088405013
+          },
+          "total_seconds": 469.62602809327655
+        }
+      }
+    },
+    {
+      "possible_joint_alpha": 1.0,
+      "possible_kefrine_beta": 2.0,
+      "randomized_starts": 339200,
+      "optimizer_calls": 15584,
+      "alpha0_noop_calls_not_timed": 608,
+      "rate_forecasts": {
+        "mean": {
+          "components_seconds": {
+            "kmeans50": 7.48859400046058,
+            "feature_hartigan": 0.5188860010821372,
+            "generation_static": 2.8888627998530865,
+            "kefrin_like50": 29.874058401677758,
+            "joint": 22.3657759987982,
+            "kefrine": 272.37118880229536,
+            "spectral": 13.579277999815531,
+            "generation_temporal": 1.1793839992024004,
+            "monthly_kmeans20": 163.5812236972153
+          },
+          "total_seconds": 513.8472517004004
+        },
+        "observed_max": {
+          "components_seconds": {
+            "kmeans50": 9.693632000125945,
+            "feature_hartigan": 0.6249280006159097,
+            "generation_static": 3.6780496009159833,
+            "kefrin_like50": 30.465050401631743,
+            "joint": 27.779074399964884,
+            "kefrine": 287.21026240778156,
+            "spectral": 25.78754000016488,
+            "generation_temporal": 1.3095423998311162,
+            "monthly_kmeans20": 186.84910088405013
+          },
+          "total_seconds": 573.3971800950821
+        }
+      }
+    }
+  ],
+  "unmeasured_overhead": [
+    "quality scoring",
+    "bootstrap and sign-flip summaries",
+    "output compression and checkpoints",
+    "resource pauses during full run"
+  ],
+  "limitations": "Mean and observed-max rates from two fixed calibration seeds are engineering estimates, not runtime guarantees; all forecast branches are retained and no method is selected."
+}

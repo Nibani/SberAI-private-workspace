@@ -1,0 +1,9 @@
+{
+  "samples": 2,
+  "errors": [],
+  "adapter": "original_windows_pdh_guard",
+  "affinity": [
+    0
+  ],
+  "priority": 16384
+}

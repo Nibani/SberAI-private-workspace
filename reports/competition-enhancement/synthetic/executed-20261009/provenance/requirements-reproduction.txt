@@ -1,0 +1,7 @@
+# Exact package versions in the original registration; Python 3.10–3.12 recommended.
+numpy==2.2.6
+pandas==2.2.3
+scipy==1.14.1
+scikit-learn==1.5.2
+psutil==6.1.0
+threadpoolctl==3.5.0

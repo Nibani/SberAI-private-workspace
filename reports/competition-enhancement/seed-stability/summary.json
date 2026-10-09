@@ -1,0 +1,91 @@
+{
+  "status": "COMPLETE_20_SEEDS",
+  "planned_seed_count": 20,
+  "completed_seed_count": 20,
+  "seeds": [
+    61001,
+    61002,
+    61003,
+    61004,
+    61005,
+    61006,
+    61007,
+    61008,
+    61009,
+    61010,
+    61011,
+    61012,
+    61013,
+    61014,
+    61015,
+    61016,
+    61017,
+    61018,
+    61019,
+    61020
+  ],
+  "municipalities": 2016,
+  "groups": [
+    {
+      "production_type": 0,
+      "production_type_key": "metro",
+      "municipalities": 338,
+      "mean_agreement": 1.0,
+      "min_agreement": 1.0,
+      "p10_agreement": 1.0,
+      "median_agreement": 1.0,
+      "all_runs_agree_n": 338,
+      "below_0_8_agreement_n": 0
+    },
+    {
+      "production_type": 1,
+      "production_type_key": "industrial",
+      "municipalities": 580,
+      "mean_agreement": 1.0,
+      "min_agreement": 1.0,
+      "p10_agreement": 1.0,
+      "median_agreement": 1.0,
+      "all_runs_agree_n": 580,
+      "below_0_8_agreement_n": 0
+    },
+    {
+      "production_type": 2,
+      "production_type_key": "periphery",
+      "municipalities": 971,
+      "mean_agreement": 1.0,
+      "min_agreement": 1.0,
+      "p10_agreement": 1.0,
+      "median_agreement": 1.0,
+      "all_runs_agree_n": 971,
+      "below_0_8_agreement_n": 0
+    },
+    {
+      "production_type": 3,
+      "production_type_key": "remote",
+      "municipalities": 127,
+      "mean_agreement": 1.0,
+      "min_agreement": 1.0,
+      "p10_agreement": 1.0,
+      "median_agreement": 1.0,
+      "all_runs_agree_n": 127,
+      "below_0_8_agreement_n": 0
+    }
+  ],
+  "overall": {
+    "mean_agreement": 1.0,
+    "min_agreement": 1.0,
+    "p10_agreement": 1.0,
+    "median_agreement": 1.0,
+    "all_runs_agree_n": 2016,
+    "below_0_8_agreement_n": 0
+  },
+  "seed_ari": {
+    "min": 1.0,
+    "mean": 1.0,
+    "max": 1.0
+  },
+  "converged_seed_count": 20,
+  "runtime_seconds": 10.304272700013826,
+  "interpretation": "Additional optimization stability on fixed 2023 X23 and fixed graph. Seed changes KMeans initialization and joint vertex order. Hungarian alignment maximizes overlap with production labels separately for each seed. Agreement is a run frequency, not a probability of economic truth, uncertainty from new data, bootstrap stability, or temporal persistence.",
+  "threshold_note": "below_0_8 is a descriptive diagnostic count, not a calibrated confidence threshold; all municipalities are exported including low agreement."
+}

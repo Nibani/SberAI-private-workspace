@@ -1,0 +1,24 @@
+{
+  "python": "3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\Andreyka\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "platform": "Windows-10-10.0.22621-SP0",
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.14.1",
+    "scikit-learn": "1.5.2",
+    "pandas": "2.2.3",
+    "psutil": "6.1.0",
+    "threadpoolctl": "3.5.0"
+  },
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "slot_id": "teamlead-science-20261009-go-0032",
+  "affinity": [
+    0
+  ],
+  "quality_metrics_computed": false
+}

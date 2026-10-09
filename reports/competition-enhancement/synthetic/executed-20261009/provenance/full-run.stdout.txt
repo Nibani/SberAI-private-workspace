@@ -1,0 +1,124 @@
+{"launcher": "single_cpu_frozen_runner", "affinity": [0], "priority": 16384, "bytecode_disabled": true}
+tune: completed seed 11001 (1/8)
+tune: completed seed 11002 (2/8)
+tune: completed seed 11003 (3/8)
+tune: completed seed 11004 (4/8)
+tune: completed seed 11005 (5/8)
+tune: completed seed 11006 (6/8)
+tune: completed seed 11007 (7/8)
+tune: completed seed 11008 (8/8)
+evaluation: completed seed 22001 (1/32)
+evaluation: completed seed 22002 (2/32)
+evaluation: completed seed 22003 (3/32)
+evaluation: completed seed 22004 (4/32)
+evaluation: completed seed 22005 (5/32)
+evaluation: completed seed 22006 (6/32)
+evaluation: completed seed 22007 (7/32)
+evaluation: completed seed 22008 (8/32)
+evaluation: completed seed 22009 (9/32)
+evaluation: completed seed 22010 (10/32)
+evaluation: completed seed 22011 (11/32)
+evaluation: completed seed 22012 (12/32)
+evaluation: completed seed 22013 (13/32)
+evaluation: completed seed 22014 (14/32)
+evaluation: completed seed 22015 (15/32)
+evaluation: completed seed 22016 (16/32)
+evaluation: completed seed 22017 (17/32)
+evaluation: completed seed 22018 (18/32)
+evaluation: completed seed 22019 (19/32)
+evaluation: completed seed 22020 (20/32)
+evaluation: completed seed 22021 (21/32)
+evaluation: completed seed 22022 (22/32)
+evaluation: completed seed 22023 (23/32)
+evaluation: completed seed 22024 (24/32)
+evaluation: completed seed 22025 (25/32)
+evaluation: completed seed 22026 (26/32)
+evaluation: completed seed 22027 (27/32)
+evaluation: completed seed 22028 (28/32)
+evaluation: completed seed 22029 (29/32)
+evaluation: completed seed 22030 (30/32)
+evaluation: completed seed 22031 (31/32)
+evaluation: completed seed 22032 (32/32)
+{
+  "status": "COMPLETED_SCIENTIFIC_RUN_PENDING_INDEPENDENT_REVIEW",
+  "duration_seconds": 1087.8774764000264,
+  "selected_sha256": "e181a6ad053b63af0cbcb3999cd01273635d7bf0f9fdbd14b98ab7bd40a165cb",
+  "registration_sha256": "8a94e00e8bfe1fe8823c3411fcf48ce066de578da1142bceb579ced37d7f2415",
+  "diagnostics_sha256": "9bf7a8f08e40cfe16b2d29d144a6bf691b315e8070b1d17551f940b95eb7b4dc",
+  "comparisons": [
+    {
+      "comparison": "C1",
+      "mean": 0.2689870081555575,
+      "median": 0.25974634601509267,
+      "ci95_low": 0.24363388462218755,
+      "ci95_high": 0.2949437839418259,
+      "signflip_p": 9.999000099990002e-05,
+      "holm_adjusted_p": 0.00039996000399960006
+    },
+    {
+      "comparison": "C2",
+      "mean": -0.023214568162088306,
+      "median": -0.02700632598090333,
+      "ci95_low": -0.029614189404603284,
+      "ci95_high": -0.01668672470181936,
+      "signflip_p": 9.999000099990002e-05,
+      "holm_adjusted_p": 0.00039996000399960006
+    },
+    {
+      "comparison": "C3",
+      "mean": -0.01318359375,
+      "median": 0.0,
+      "ci95_low": -0.0224609375,
+      "ci95_high": -0.00341796875,
+      "signflip_p": 0.015898410158984102,
+      "holm_adjusted_p": 0.031796820317968204
+    },
+    {
+      "comparison": "C4",
+      "mean": 0.0,
+      "median": 0.0,
+      "ci95_low": -0.0009765625,
+      "ci95_high": 0.0009765625000000002,
+      "signflip_p": 1.0,
+      "holm_adjusted_p": 1
+    }
+  ],
+  "all_evaluation_seeds": [
+    22001,
+    22002,
+    22003,
+    22004,
+    22005,
+    22006,
+    22007,
+    22008,
+    22009,
+    22010,
+    22011,
+    22012,
+    22013,
+    22014,
+    22015,
+    22016,
+    22017,
+    22018,
+    22019,
+    22020,
+    22021,
+    22022,
+    22023,
+    22024,
+    22025,
+    22026,
+    22027,
+    22028,
+    22029,
+    22030,
+    22031,
+    22032
+  ],
+  "resource_samples": 203,
+  "resource_errors": [],
+  "no_2025_outcomes": true,
+  "main_model_changed": false
+}
