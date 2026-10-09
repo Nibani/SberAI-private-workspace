@@ -38,9 +38,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "PROVENANCE.json": {
-      "bytes": 61673,
+      "bytes": 106720,
       "scientific_pin": false,
-      "sha256": "f3eafc97d9d0c08e5cd1a6cdf35dc37b35a7b099188e6e72b19496fd14324750",
+      "sha256": "a58f2f2c8d42287ac2cff3769c4ad37b194ffc292acef4491b7042b7f1c78c4b",
       "source_kind": "EXPORT_METADATA"
     },
     "README.md": {
@@ -434,9 +434,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "docs/index.html": {
-      "bytes": 499727,
+      "bytes": 499725,
       "scientific_pin": false,
-      "sha256": "f8265d900358b516ee93e69cc6aba4f3bd8341fe595ee2929512d54034772fa0",
+      "sha256": "1692cf93a807f3d91f371eaea153255d0301be4d99428d22b2eda93cabb8df9d",
       "source_kind": "CURRENT_LIVE"
     },
     "models/continuous_atlas.json": {
@@ -2128,7 +2128,7 @@
     "reports/round2-cases/abazinsky.json": {
       "bytes": 27773,
       "scientific_pin": false,
-      "sha256": "a7df2d232e93bd171fb9d1b617d20f8f9bee0644716d1f9ad1a1233147a25d59",
+      "sha256": "32bcfae5b021ee3c6630dea218192fbeab10dbcf2bcac2a53fd63f6f97e88036",
       "source_kind": "CURRENT_LIVE"
     },
     "reports/source_alignment.json": {
@@ -3818,9 +3818,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "tests/browser/main_model_regressions.cjs": {
-      "bytes": 28809,
+      "bytes": 29010,
       "scientific_pin": false,
-      "sha256": "b5af63f713d0b8b228c7bd9a21e0817f285b54b1462eb7b9f197167e6e390899",
+      "sha256": "cddfc45272e19cbd6704699be93a86049b43acc150ff608fae58cbf1d9493981",
       "source_kind": "CURRENT_LIVE"
     },
     "tests/browser/map_outline_regressions.cjs": {
@@ -3986,9 +3986,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "web/atlas_theme.css": {
-      "bytes": 36088,
+      "bytes": 36086,
       "scientific_pin": false,
-      "sha256": "0b7eca3b776ec950bb103e4a97cedc36395923493654040389b3a15345c1296d",
+      "sha256": "0def6c1b00a21baf685e9cb9e3130775eba5c4e0ec96e5d201457ca0056b3ccc",
       "source_kind": "CURRENT_LIVE"
     },
     "web/cluster_stability.html": {
@@ -4032,5 +4032,5 @@
   "scientific_pin_count": 132,
   "self_hash": "External EXPORT proof; manifest does not hash itself",
   "state": "BYTE_EXACT_COPY; CURRENT_ACCEPTANCE_UNVERIFIED",
-  "total_bytes": 56979686
+  "total_bytes": 57024930
 }
