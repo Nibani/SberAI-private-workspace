@@ -1,8 +1,0 @@
-{
-  "filename": "synthetic-full-20261009.zip",
-  "sha256": "3f1ab8d4f80d5c97dec769b9c29863883d741b3eb6622100031d7af60ea6b7d0",
-  "bytes": 71697469,
-  "contains_every_raw_output": true,
-  "raw_file_count": 1881,
-  "scope": "All successful outputs and every seed; no raw file or negative result omitted."
-}

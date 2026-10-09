@@ -10,6 +10,7 @@ function block(from, to) {
   return template.slice(start, end);
 }
 const source = block('const workspaceViews=', 'function el(tag,text,cls)') +
+  block('function economicLayer(){', 'function economicProfile(') +
   block('function syncMapControls(){', 'function renderContest(){') +
   block('function syncNeighborControls(){', 'function renderIdentity(){');
 const calls = [], animations = [];
@@ -34,7 +35,15 @@ const document = {body: {dataset: {}}, activeElement: null, handlers: {},
   querySelectorAll(selector) { return selector === '[data-view]' ? tabs : selector === '[data-workspace-panel]' ? panels : []; }};
 let reduced = false;
 const preference = {get matches() { return reduced; }, addEventListener(key, fn) { this.listener = fn; }};
-const context = {console, Map, document, getComputedStyle: () => ({opacity: '.93', transform: 'matrix(1, 0, 0, 1, 0, 2)'}),
+const selectionEvents = [];
+class MockCustomEvent {
+  constructor(type, options = {}) { this.type = type; this.detail = options.detail ?? null; }
+}
+const window = {dispatchEvent(event) {
+  selectionEvents.push({event, identity: nodes['territory-inspector'].textContent, quick: nodes.quick.value});
+  return true;
+}};
+const context = {console, Map, document, window, CustomEvent: MockCustomEvent, getComputedStyle: () => ({opacity: '.93', transform: 'matrix(1, 0, 0, 1, 0, 2)'}),
   matchMedia: () => preference, state: {index: 0, method: 'v12', mapModel: 'v12_types', mapYear: '2024', mapMode: 'relative', exclude: 2, view: 'map'},
   contest: {v12: {}, map_models: {}}, D: {entities: [{id: 'one'}, {id: 'two'}]}, $: id => nodes[id], label: e => e.id, baseNeighbors: () => []};
 for (const name of ['renderIdentity','renderProfile','renderScatter','renderNeighbors','renderTimeline','renderEgo','renderMap','renderMapLegend']) context[name] = () => calls.push(name);
@@ -44,6 +53,9 @@ const run = code => vm.runInContext(code, context), cases = [];
 run('choose(0)');
 assert.equal(nodes.method.value, 'v12'); assert.equal(nodes.quick.value, '0');
 assert.equal(animations.length, 0, 'Initial facts appear without animation'); cases.push('main defaults and immediate initial facts');
+assert.equal(selectionEvents.length, 1, 'Initial choice dispatches one event');
+assert.equal(selectionEvents[0].event.type, 'atlas-selection');
+assert.equal(selectionEvents[0].event.detail.index, 0);
 for (const method of ['profile','consensus','transport']) { run(`selectPeerMethod('${method}')`); assert.equal(context.state.method, 'v12'); }
 assert.equal(nodes.exclude.value, '-1'); cases.push('historical peer modes cannot replace main model');
 run("selectMapModel('frozen'); selectMapModel('other')");
@@ -72,6 +84,14 @@ reduced = true; preference.listener(); const before = animations.length;
 run("choose(0); setWorkspaceView('map'); animatePanel('neighbor-results',180)");
 assert.equal(animations.length, before); assert.equal(nodes['territory-inspector'].textContent, 'one');
 assert.deepEqual(panels.map(n => n.hidden), [false,true,true]); cases.push('reduced motion cancels existing effects and updates state immediately');
+assert.deepEqual(selectionEvents.map(({event}) => event.detail.index), [0,0,0,0,0,0,1,0], 'Initial choice, four peer-method refreshes, rapid reversal and reduced-motion choice each dispatch exactly once');
+for (const {event, identity, quick} of selectionEvents) {
+  assert(event instanceof MockCustomEvent);
+  assert.equal(event.type, 'atlas-selection');
+  assert.equal(identity, context.D.entities[event.detail.index].id, 'Selection event follows the immediate facts update');
+  assert.equal(quick, String(event.detail.index), 'Selection event contains the current selected index');
+}
+cases.push('selection events expose current index after immediate facts in initial, rapid and reduced-motion paths');
 const result = {status: 'PASS', scope: 'Extracted controller functions with deterministic Node DOM and animation mocks; no browser or pixels', cases, calls: calls.length, animations: animations.length};
 if (process.argv[3]) fs.writeFileSync(path.resolve(process.argv[3]), JSON.stringify(result, null, 2) + '\n');
 console.log(JSON.stringify(result));

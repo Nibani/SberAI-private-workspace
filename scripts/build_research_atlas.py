@@ -285,9 +285,9 @@ def read_stability(path: Path | None) -> list[dict] | None:
     return value
 
 
-def encode_payload(payload: dict) -> str:
+def encode_payload(payload: dict, *, canonical: bool = True) -> str:
     """Serialize data safely for a classic HTML script element."""
-    encoded = json.dumps(payload, ensure_ascii=False, separators=(",", ":"), allow_nan=False)
+    encoded = json.dumps(payload, ensure_ascii=False, separators=(",", ":"), allow_nan=False, sort_keys=canonical)
     encoded = encoded.replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
     return encoded.replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
 
@@ -300,7 +300,8 @@ def package_payload(payload: dict, *, compressed: bool = True) -> str:
     packed = gzip.compress(raw.encode("utf-8"), compresslevel=6, mtime=0)
     # gzip's OS byte varies across Python/zlib platforms; fix it for byte reproducibility.
     packed = packed[:9] + b"\xff" + packed[10:]
-    return encode_payload({"encoding": "gzip-base64", "data": base64.b64encode(packed).decode("ascii")})
+    # Keep the public transport framing stable for existing offline readers.
+    return encode_payload({"encoding": "gzip-base64", "data": base64.b64encode(packed).decode("ascii")}, canonical=False)
 
 
 def read_contest(path: Path, entity_ids: set[str], map_path: Path | None = None) -> dict:
@@ -372,6 +373,7 @@ def _render_packaged_atlas(template: str, payload: dict, encoded: str, *,
     for placeholder, source in (
         ("/*__ATLAS_FONTS__*/", ROOT / "web/atlas_fonts.css"),
         ("/*__ATLAS_THEME__*/", ROOT / "web/atlas_theme.css"),
+        ("/*__ATLAS_STORY__*/", ROOT / "web/atlas_story.js"),
         ("<!--__ACCEPTED_RESULTS__-->", ROOT / "web/accepted_results.html"),
         ("<!--__ARCHIVE_RESULTS__-->", ROOT / "web/archive_results.html"),
         ("<!-- PRACTICAL_CASES -->", ROOT / "web/practical_cases.html"),

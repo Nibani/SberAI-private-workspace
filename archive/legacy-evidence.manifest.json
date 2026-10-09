@@ -1,0 +1,2174 @@
+{
+  "schema": "legacy-evidence-v1",
+  "baseline_commit": "0a17136d76e207c9866f7ffd238e6b51ebf7b001",
+  "archive_path": "archive/legacy-evidence.zip",
+  "archive_sha256": "cecccafbeade2970f923e0cf9fe97bf96005914c66056aa394f2db1507789bb8",
+  "archive_bytes": 12299409,
+  "members": {
+    "reports/README.md": {
+      "bytes": 3909,
+      "sha256": "d1e1fbc77c10c92cdcfac64b012bd17e0ee19c3033610b207a0b90daa7fe8a8e"
+    },
+    "reports/cluster-stability-2026-10-07/README.md": {
+      "bytes": 9004,
+      "sha256": "fa4b62a96acbb7e5e230b67ee85d72c1fdf661ae212e6291c3784f4577204ebb"
+    },
+    "reports/cluster-stability-2026-10-07/clusters.csv": {
+      "bytes": 2170,
+      "sha256": "69226a1ec1c05fb5ad831cc479be4e4ee058b4adf98a81ed48b6b75b7ad2e532"
+    },
+    "reports/cluster-stability-2026-10-07/draws.json": {
+      "bytes": 99087,
+      "sha256": "69b05ff936eb5cb61324fc65bf7b987e2a2622524ad6a794a263c19b689b6124"
+    },
+    "reports/cluster-stability-2026-10-07/entities.csv": {
+      "bytes": 425642,
+      "sha256": "7d3dcc02f95581599d13ed5067ed81a18dc712ceb211cdbdcf25025daa9d2f29"
+    },
+    "reports/cluster-stability-2026-10-07/pair-frequency-histograms.csv": {
+      "bytes": 32997,
+      "sha256": "ed99cdd19b50def2452d44670cec7c47fadf6a4abb461865ce9eda797c38844a"
+    },
+    "reports/cluster-stability-2026-10-07/summary.json": {
+      "bytes": 20637,
+      "sha256": "ae91eea766d8f002a5912c87df1b487d12428b8043526fe94555d34e66a01e73"
+    },
+    "reports/competition-enhancement/competitors/official/rubric-official.md": {
+      "bytes": 4038,
+      "sha256": "9391b5527020d47cc05cc3ec7f7008f30e6587f883c583506164b9526d39bbe4"
+    },
+    "reports/competition-enhancement/competitors/official/task-and-weights.md": {
+      "bytes": 6509,
+      "sha256": "3e48ca186f135b12699ab4e325065e8fbc61733f2e37ea963e959a40465ccae6"
+    },
+    "reports/competition-enhancement/competitors/public-head-readme-receipt.json": {
+      "bytes": 15279,
+      "sha256": "d0cecb14e137f20ba1726276dd14ca514502a22851981e132c649f34b8ae10fd"
+    },
+    "reports/competition-enhancement/delivery/ACCESS_KIT.md": {
+      "bytes": 8445,
+      "sha256": "c8cac6555e99bbedd6fb7c462f9b309efd79d2f2a56e17e3bcd437dd3845b5f6"
+    },
+    "reports/competition-enhancement/delivery/AUDIT.md": {
+      "bytes": 10158,
+      "sha256": "5cacb375421af86bfacb0f6d8f18806682e86609413dd7d6a94b1ccc08a446f9"
+    },
+    "reports/competition-enhancement/delivery/PERFORMANCE.md": {
+      "bytes": 8573,
+      "sha256": "4fcde33a7c9216f9e78445207b82583879bc80a4dd87ed8036235e52d54905a3"
+    },
+    "reports/competition-enhancement/delivery/PROVENANCE.md": {
+      "bytes": 6936,
+      "sha256": "1861d7c8780e3b34b992759785f315eb1d9c3c40545abf9127b36a31aefe8334"
+    },
+    "reports/competition-enhancement/delivery/anonymous-access.json": {
+      "bytes": 4462,
+      "sha256": "db253868eb7a46057d5bfe77ddadc12d76fc5e7a27f5709a65160f79d331c3a9"
+    },
+    "reports/competition-enhancement/delivery/archive-controls.json": {
+      "bytes": 2146,
+      "sha256": "75e793058e076ecd7c2f56268696b9eb6591d39decec3f4268afb06e79d39faf"
+    },
+    "reports/competition-enhancement/delivery/build_access_kit.py": {
+      "bytes": 3104,
+      "sha256": "17b166ab72a585a44019e4f4b1ecdb16e7eb2be4aa9401a41434cd0d095ef19a"
+    },
+    "reports/competition-enhancement/delivery/cleanup-new/AUDIT.md": {
+      "bytes": 3502,
+      "sha256": "261d43c871abf35f98a68238302214d94f3ee897731b7ff0d2fef412dc2d30b6"
+    },
+    "reports/competition-enhancement/delivery/cleanup-new/applied.json": {
+      "bytes": 2521,
+      "sha256": "c127b4cc1c6e2f8594ccf179c488a577c62bd1d3103c28e47e4cdc32a583906e"
+    },
+    "reports/competition-enhancement/delivery/cleanup-new/prepared-storage.json": {
+      "bytes": 5179,
+      "sha256": "21622e9df8b10edb544f4e4531e0ef9ed76da347ae428cf987c58339bd3cbff6"
+    },
+    "reports/competition-enhancement/delivery/full-main-check/README.md": {
+      "bytes": 3171,
+      "sha256": "c41f91d2e571a2deb0c88703aed1375497be1113db23adb3112d6100d52a800e"
+    },
+    "reports/competition-enhancement/delivery/full-main-check/files-sha256.json": {
+      "bytes": 559,
+      "sha256": "d64090fda171b8c17efaeb748cc85ef8acc4a3163275fb8c3e5cec46c90fd52a"
+    },
+    "reports/competition-enhancement/delivery/full-main-check/final/resources.jsonl": {
+      "bytes": 187914,
+      "sha256": "51c60dcfa6a7b4420dd4fbbe7d5ae9c1b170610e776092f92d9f25a8ff0a4b07"
+    },
+    "reports/competition-enhancement/delivery/full-main-check/final/run.log": {
+      "bytes": 25464,
+      "sha256": "5a4b8964000db8b810af947dde7d838202d37f27a7189f921ee9ad1c1027e8bf"
+    },
+    "reports/competition-enhancement/delivery/full-main-check/final/summary.json": {
+      "bytes": 39945,
+      "sha256": "a41cbae15af34978282e3aa39f9d487db8444c9d20dbdfa898495e2bfe477f84"
+    },
+    "reports/competition-enhancement/delivery/full-main-check/first/resources.jsonl": {
+      "bytes": 225584,
+      "sha256": "be44652072485a0b69c4bd5d8f7d64eb6cc31a6ed07c76eee57d8dbd8b709200"
+    },
+    "reports/competition-enhancement/delivery/full-main-check/first/run.log": {
+      "bytes": 25243,
+      "sha256": "a44fa1d966166a03c511f98f9cda9cd2c071f2715d4ebaeda9d35576948f86c7"
+    },
+    "reports/competition-enhancement/delivery/full-main-check/first/summary.json": {
+      "bytes": 39959,
+      "sha256": "5e64a5d2df316ee076c58e1e46570ec89b16cac2c90bed4546f0e34103cc8713"
+    },
+    "reports/competition-enhancement/delivery/github-authorized-summary.json": {
+      "bytes": 10124,
+      "sha256": "706018ff2963ca806bf0f4d9b4150ae481afad9d0bb5da630e883cadac56d944"
+    },
+    "reports/competition-enhancement/delivery/performance-arithmetic-check.json": {
+      "bytes": 660,
+      "sha256": "742c96b929bb2b7325dc887bcf20fb19d9af4e6219ca3eb98361d40e8ae42487"
+    },
+    "reports/competition-enhancement/delivery/performance-new/ALGORITHM.md": {
+      "bytes": 3240,
+      "sha256": "ee8c65a628bb01fcefb2817f59f364515d4126e0f1e0fdb5050391b2dc968ef5"
+    },
+    "reports/competition-enhancement/delivery/performance-new/PLAN.md": {
+      "bytes": 5810,
+      "sha256": "54d3a2f98af5294970df9c60cfd78b58e2531f94e5bb8ba0b076aea91a9dfd03"
+    },
+    "reports/competition-enhancement/delivery/performance-new/RESULT.md": {
+      "bytes": 7726,
+      "sha256": "86fd276e38a405c0b1b52c93fbc466f37f8a3c8fa6e6a75b7d475288a62a1494"
+    },
+    "reports/competition-enhancement/delivery/performance-new/accepted-sixNeighbors.js": {
+      "bytes": 979,
+      "sha256": "bd5dbe68361606e72f4809b9648c08049413917cc167f92ddfbb51688d229d0a"
+    },
+    "reports/competition-enhancement/delivery/performance-new/baseline-functions.js": {
+      "bytes": 744,
+      "sha256": "61d808c868bbbcdaa16fdae8409e4e410d22f6cf0452a4411ba68b5ec0d2867d"
+    },
+    "reports/competition-enhancement/delivery/performance-new/baseline-template.html": {
+      "bytes": 107941,
+      "sha256": "19113e5e2a8b21ac786400bc425ba1c86f039ceb9263dde973f8c780fc621429"
+    },
+    "reports/competition-enhancement/delivery/performance-new/candidate-functions.js": {
+      "bytes": 1290,
+      "sha256": "aa41d90c1f234fca84348b025ecfea4e3cf90df71661c0d1737824368ecd1350"
+    },
+    "reports/competition-enhancement/delivery/performance-new/command-result.json": {
+      "bytes": 1204,
+      "sha256": "e0cda8d1b1c3fa8f1b5ac9f27e6f9d7a333be7e1532aacc4d67c924b988eba7a"
+    },
+    "reports/competition-enhancement/delivery/performance-new/integration-six.json": {
+      "bytes": 714,
+      "sha256": "188b5bdd5da906d0067868bca3958e17c4bd9675b499c9fe97ad26160f89bc99"
+    },
+    "reports/competition-enhancement/delivery/performance-new/lead-decision.json": {
+      "bytes": 1015,
+      "sha256": "8b7fd4b5bc5c4e11b65c6ac4ec02e3e82934c3fc388fdf17700e49c0df18e43d"
+    },
+    "reports/competition-enhancement/delivery/performance-new/paired-raw.jsonl": {
+      "bytes": 9726,
+      "sha256": "509e7acee83c38c788b4389c6182d26913dd754e013d80d91430c48d699c2ce1"
+    },
+    "reports/competition-enhancement/delivery/performance-new/plan.json": {
+      "bytes": 3683,
+      "sha256": "074bb6a74557851b8ef663554f23ad608e23d19a8d20bbc27e674d09e17ab02b"
+    },
+    "reports/competition-enhancement/delivery/performance-new/resource-summary.json": {
+      "bytes": 787,
+      "sha256": "ce3c88a9129982e108d17390790b06d200d16d912d7968d806fcfed58e9e984e"
+    },
+    "reports/competition-enhancement/delivery/performance-new/resources.jsonl": {
+      "bytes": 20546,
+      "sha256": "5f3ab3191180f0a08e8cc4a08f156a2081186077e05e2d3fc308122fcb3599db"
+    },
+    "reports/competition-enhancement/delivery/performance-new/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "reports/competition-enhancement/delivery/performance-new/stdout.log": {
+      "bytes": 2565,
+      "sha256": "41158752408eb97d3ede264f1a7cb361b7b4c776009558ea98ac3cf32fdf3604"
+    },
+    "reports/competition-enhancement/delivery/performance-new/summary.json": {
+      "bytes": 3434,
+      "sha256": "5b3a03a2de0a97f509bc2917ba9eb113339b8601a0ef5f48d67d68ed89d927ce"
+    },
+    "reports/competition-enhancement/delivery/prior-decode.cjs": {
+      "bytes": 2595,
+      "sha256": "2073d5dbec12a4e30b20ed00372903a303edda07012734584850f411cb4c480f"
+    },
+    "reports/competition-enhancement/delivery/prior-decode.log": {
+      "bytes": 1433,
+      "sha256": "1f95be0a5f7d53a52e2892c54319364be8da8143a6f7f8b517318f5620835eda"
+    },
+    "reports/competition-enhancement/delivery/prior-performance.json": {
+      "bytes": 1314,
+      "sha256": "32dce37c614545d9e1fb3b7de9f377762eb22f12a3148ce6af92d800a9f2eaeb"
+    },
+    "reports/competition-enhancement/delivery/recovery-verification.json": {
+      "bytes": 868,
+      "sha256": "78a2d8589cc49305ee730f81af1792d6044b4a5f4e4c96fb63a8ffcc75c4f24b"
+    },
+    "reports/competition-enhancement/delivery/source-controls.json": {
+      "bytes": 733,
+      "sha256": "86c4c8da3893176763c5ba48d3aa51c7d4bbb6a6e33457c29c114c690fc61216"
+    },
+    "reports/competition-enhancement/delivery/tracked-manifest.json": {
+      "bytes": 561072,
+      "sha256": "7f0aa5237ecb4fcea431476538b04f94d5be4c654e053456e2411b9797e96d3a"
+    },
+    "reports/competition-enhancement/delivery/tree-audit.json": {
+      "bytes": 119739,
+      "sha256": "d25b7f5788c88575a03f6b6b51d5f26d385713215836ce07b5e9b483074e8a11"
+    },
+    "reports/competition-enhancement/economic_cases/analogue-preregistration.json": {
+      "bytes": 3729,
+      "sha256": "5f9ec3bd9f1ac9fdbdcb0cfa8981919e75d511a6990fa77b0a6ca7b034971b2b"
+    },
+    "reports/competition-enhancement/economic_cases/analogue-split.csv": {
+      "bytes": 5900,
+      "sha256": "4ddc4b29a77fd91b2f4accf6868f95cd1e440eeb4c215a813b8d99374fc5b6e4"
+    },
+    "reports/competition-enhancement/economic_cases/analogue-test-bootstrap.csv": {
+      "bytes": 706509,
+      "sha256": "fc9b0ae3425030972a84d372c74f2c882e7e293bc8b7697a8703a063f75577bc"
+    },
+    "reports/competition-enhancement/economic_cases/analogue-test-by-region.csv": {
+      "bytes": 1750,
+      "sha256": "e55620ed4d384c918f16bec28d4daede3b3c3103c94e17c9341d364e1d8ee535"
+    },
+    "reports/competition-enhancement/economic_cases/analogue-test-leave-one-region-out.csv": {
+      "bytes": 2428,
+      "sha256": "1caea1464960c48af571faa389d9a9c06391ee22a3bd46f65cb327e9fb31ffdb"
+    },
+    "reports/competition-enhancement/economic_cases/analogue-test-predictions.csv": {
+      "bytes": 338852,
+      "sha256": "25f0482fce79e35455e9afe7839b5b38253c0e35319e55641a015923df4773bd"
+    },
+    "reports/competition-enhancement/economic_cases/analogue-test-subsets.csv": {
+      "bytes": 766,
+      "sha256": "f0146d30265ccf84eb80e646e9b622641af750bc76f6f6bb5768903f1b6c6bda"
+    },
+    "reports/competition-enhancement/economic_cases/analogue-test-summary.json": {
+      "bytes": 1268,
+      "sha256": "21f95af304d9746eb3b1ce0db5ff0e34ce0750d709b2f9d6f28d520f8a1cd790"
+    },
+    "reports/competition-enhancement/economic_cases/case-neighbors.csv": {
+      "bytes": 56279,
+      "sha256": "423d0d6c3287a405f5b3797c3ec61256bf48cc13c0d8648dff062d0a9a61017c"
+    },
+    "reports/competition-enhancement/economic_cases/case-values.csv": {
+      "bytes": 6912,
+      "sha256": "7864363169c79208799a206e2b5baed5855c9f02e2fdb35af92fec2c721631a4"
+    },
+    "reports/competition-enhancement/economic_cases/comparison-function.json": {
+      "bytes": 818,
+      "sha256": "a17e4134ab0359aa66c866c4eb13c2e880b7f3f6ea2f2be8d07f3c975902cf3f"
+    },
+    "reports/competition-enhancement/economic_cases/controlled-coverage.csv": {
+      "bytes": 49920,
+      "sha256": "06c2145b7c8c579561c803cafc71e6ca444dde23dff83b8b4fd55067013f7a44"
+    },
+    "reports/competition-enhancement/economic_cases/controlled-description.csv": {
+      "bytes": 1836,
+      "sha256": "62e73010c4978483d46778e3f85b6526057258839f3ae6a99b3242d95395a5d4"
+    },
+    "reports/competition-enhancement/economic_cases/controlled-leave-one-region-out.csv": {
+      "bytes": 43773,
+      "sha256": "e91bd3d79c4048de216fb0ace7699a2b1bd05d12e67be302072192707680c9b7"
+    },
+    "reports/competition-enhancement/economic_cases/identity-predictions.csv": {
+      "bytes": 370979,
+      "sha256": "85c4629dfba40472a36d1afdbbf011105ce5efae145b3edd351072c072485abd"
+    },
+    "reports/competition-enhancement/economic_cases/identity.json": {
+      "bytes": 435,
+      "sha256": "89e04f22713c5f9a6ce07e4e3cdc8f6d64f6ad83f9133417167b34b1f0e9de4e"
+    },
+    "reports/competition-enhancement/economic_cases/run-environment.json": {
+      "bytes": 1675,
+      "sha256": "67a8b1291bbe48474bb5225eecb6acff0ea93947dffe28d8995288096646bc23"
+    },
+    "reports/competition-enhancement/economic_cases/selected-cases.csv": {
+      "bytes": 957,
+      "sha256": "72afd1414171f95a4fd0038b4b73da242737cb7d33502bc95418997a750af7b4"
+    },
+    "reports/competition-enhancement/economic_cases/status.json": {
+      "bytes": 4475,
+      "sha256": "186b1e52f9b4df8a22786e516ac5d23a9e960cb241edebfdaf52b0b03a6ecf99"
+    },
+    "reports/competition-enhancement/four_russias/assignments.csv": {
+      "bytes": 2889390,
+      "sha256": "e590e8e11667a173dfb9ee3f106877aa9015e2eb2cd8fbbfb5d706ef6cf86973"
+    },
+    "reports/competition-enhancement/four_russias/contingency.csv": {
+      "bytes": 37836,
+      "sha256": "1004f9a087d30ab4834d9c2dea8b5699b1b053e5f086274d408352f60c475111"
+    },
+    "reports/competition-enhancement/four_russias/leave-one-region-out.csv": {
+      "bytes": 70434,
+      "sha256": "45c098d10d65438d7aa3163e3fe5f2896160e0f7c7a815ee3073a9f4e9ac0913"
+    },
+    "reports/competition-enhancement/four_russias/sensitivity.csv": {
+      "bytes": 1382,
+      "sha256": "50a8c5cfa552dd51bdcad4e033c057437d82578ab786885951842d571b3dfb23"
+    },
+    "reports/competition-enhancement/four_russias/source-and-limits.json": {
+      "bytes": 1787,
+      "sha256": "feca0d1d91d5b15d4561354f4cbf033960b046c6c74d13fc5df985996f032f59"
+    },
+    "reports/competition-enhancement/four_russias/status.json": {
+      "bytes": 1317,
+      "sha256": "948f7c9b16b887f345b28a38408678a50d3996227342be6327cb0356be680391"
+    },
+    "reports/competition-enhancement/interpretation/artifact-sha256.json": {
+      "bytes": 8197,
+      "sha256": "5d45d68c3e63c18c4d1cf94c9125c02c3f39b87ba6639f7aef55a50991c31c01"
+    },
+    "reports/competition-enhancement/interpretation/economic-findings.md": {
+      "bytes": 18874,
+      "sha256": "e6c43daaefb0f46b239f62c225dfd5311325a84c3202e69e73d14c534280d2ea"
+    },
+    "reports/competition-enhancement/interpretation/provenance/dependency-environment.json": {
+      "bytes": 611,
+      "sha256": "35662550632233df2ecaea66e1e12210d54b57cc3ac0396e496d3490db9d6ec4"
+    },
+    "reports/competition-enhancement/interpretation/provenance/execute-completed.json": {
+      "bytes": 7065,
+      "sha256": "47eb8913844eb6d98e9923aab509e1536f8c2587db8b8a824c10e294c4b7031f"
+    },
+    "reports/competition-enhancement/interpretation/provenance/execute-started.json": {
+      "bytes": 509,
+      "sha256": "1030c56863baf47bc9b219597d8fb770067cbb2f5aeb2bc54ee0eff44ec68afc"
+    },
+    "reports/competition-enhancement/interpretation/provenance/execute.log": {
+      "bytes": 1507,
+      "sha256": "8f6d6de89f4aaedf1b90a3fa71221c30058e60d195dd93f8f79c45b6b909f51a"
+    },
+    "reports/competition-enhancement/interpretation/provenance/monitor.jsonl": {
+      "bytes": 23648,
+      "sha256": "8b1dc5908b21c9abd49ba1d4aa5b87b7fa0b0dd6947bbfa4bd962c4a2db2b384"
+    },
+    "reports/competition-enhancement/interpretation/provenance/prepared.json": {
+      "bytes": 3555,
+      "sha256": "b9bd81d62e2723bd555a3b233cc04c6e7dbce6bb7c4141c8779d5e8414c12e9c"
+    },
+    "reports/competition-enhancement/interpretation/summary.json": {
+      "bytes": 19552,
+      "sha256": "68d24491dcd89c448fa6099f216b16467ab708538d70e25ec8bdc0019e4ef7c1"
+    },
+    "reports/competition-enhancement/interpretation/verification.json": {
+      "bytes": 2404,
+      "sha256": "879e344cbe656520638d14834c048babcb64c415df5ef060884eb56e2e609768"
+    },
+    "reports/competition-enhancement/kefrin/check_equations.py": {
+      "bytes": 20606,
+      "sha256": "b687a1eb3d33fbc70bd61b1f3ec32a10cbee4e70272068faa72a362026fe78ca"
+    },
+    "reports/competition-enhancement/kefrin/checks-v1/checks.json": {
+      "bytes": 48052,
+      "sha256": "901cbee3121fd5fb32161fcb5b76deb80bc1e9ef2b883a5145390defd667fe00"
+    },
+    "reports/competition-enhancement/kefrin/completed-scope.json": {
+      "bytes": 1244,
+      "sha256": "195feb932fb9653153f922441348ba19f42f15c8b8f6253ffce6349c34122280"
+    },
+    "reports/competition-enhancement/manifest.json": {
+      "bytes": 24319,
+      "sha256": "fb28d468f1ba19e4121cfded11a43c5fe3b3d9d7756aa1bb0060b53b893d6d41"
+    },
+    "reports/competition-enhancement/mirkin-input.csv": {
+      "bytes": 1040819,
+      "sha256": "35f01668d7b6cc7295f3652ab822b7ec375e12d97eb13d1850aeb2eb3cb2dfda"
+    },
+    "reports/competition-enhancement/mirkin-summary.csv": {
+      "bytes": 4483,
+      "sha256": "49b131801e3f4031125bd6ee4da885f4016268fc8a20f4ed73186188acf97e41"
+    },
+    "reports/competition-enhancement/mirkin/analysis-spec.json": {
+      "bytes": 10256,
+      "sha256": "ddc35f6111a53ef8714d12596c4b4f1423e9f28e1002eb5e1ccedd0d195096b0"
+    },
+    "reports/competition-enhancement/mirkin/bootstrap-intervals.csv": {
+      "bytes": 3749,
+      "sha256": "eb3e7958a7e5f05b072690b57e1653c902487cb0a3c5a7f90e7d1f16803ed5c5"
+    },
+    "reports/competition-enhancement/mirkin/coverage-by-region.csv": {
+      "bytes": 91318,
+      "sha256": "637dd6f3f93034326de6a2cf22a537400169738b21f3eb5a1b67d05b7e1269f9"
+    },
+    "reports/competition-enhancement/mirkin/coverage.csv": {
+      "bytes": 8449,
+      "sha256": "53f305b604af20cffdee2cf33a887b1878e0573bf7bdd38e75be9e1842b26562"
+    },
+    "reports/competition-enhancement/mirkin/equal-region-weighting.csv": {
+      "bytes": 4688,
+      "sha256": "5dda07daf008c96e31826e03035e7500a061396bf449805fb83f01738e2192c6"
+    },
+    "reports/competition-enhancement/mirkin/leave-one-region-out.csv": {
+      "bytes": 186464,
+      "sha256": "42dcc392a13c28b1993333b7e26e0b9851bcc9e581e0ea1edb37c6642acda160"
+    },
+    "reports/competition-enhancement/mirkin/regional-descriptions.csv": {
+      "bytes": 27953,
+      "sha256": "0cbfcb0856c58518484f8d577c7487bb75c364aa596ee997a83cbad015dc065a"
+    },
+    "reports/competition-enhancement/mirkin/source-and-units.json": {
+      "bytes": 1212,
+      "sha256": "083b1afafa37ffb9649a80a1f87b45bdec0e5792de7f59d8874d92ec45111d40"
+    },
+    "reports/competition-enhancement/mirkin/stability.csv": {
+      "bytes": 17679,
+      "sha256": "6d8a43e2a5c3a3a8d7954e811a2476fa42e98b5718fe9961c3cc4facf501656c"
+    },
+    "reports/competition-enhancement/mirkin/status.json": {
+      "bytes": 2290,
+      "sha256": "bb4855c1c2a2521c820f2d537e18560dcc4984b5db38ef78a4479e4afa12d3ea"
+    },
+    "reports/competition-enhancement/mirkin/thresholds.csv": {
+      "bytes": 12356,
+      "sha256": "437e24465433b23b18cb37565a718f76b67972131886d80433e7b01da17cd459"
+    },
+    "reports/competition-enhancement/mobility/acquisition.json": {
+      "bytes": 1288,
+      "sha256": "0a2dd5697354793b71a739b81585b36bca46cd4cfc188d15de19473c5334318d"
+    },
+    "reports/competition-enhancement/mobility/ambiguous.csv": {
+      "bytes": 2145,
+      "sha256": "cbd742cfbbbaf5e50d157720977eebdc2d03b5f985b3b92b39a6847cf3f2db15"
+    },
+    "reports/competition-enhancement/mobility/join-audit.csv": {
+      "bytes": 127006,
+      "sha256": "b65f09fafa78e12b52c3e0f7ed1e9247e2a281d3ce4312b985efa778955db6d0"
+    },
+    "reports/competition-enhancement/mobility/registry-2024.csv": {
+      "bytes": 487339,
+      "sha256": "935a72a65826c7da41d4d717ae59010c56b3f17282b7b293f6fb3d87c95c4fab"
+    },
+    "reports/competition-enhancement/mobility/source-names-2024.csv": {
+      "bytes": 47316,
+      "sha256": "747d69b710bfe23da4e1dda0d3f380771a00c0775a07e03c12fc79253c5ffcab"
+    },
+    "reports/competition-enhancement/mobility/status.json": {
+      "bytes": 1515,
+      "sha256": "2ade471b7f698a7cf0da8e519da0ba9850560b2f7cad09d41076113f0b7bc31a"
+    },
+    "reports/competition-enhancement/mobility/unmatched.csv": {
+      "bytes": 768,
+      "sha256": "aaa1f5048bd0b10f25fc1e64be4e7488ba1e901dd61d93841dc6d37e8ac7d0f3"
+    },
+    "reports/competition-enhancement/seed-stability/README.md": {
+      "bytes": 11145,
+      "sha256": "ed652ec875b8752e58a2e049543f8403bd34578b06d5943efde3d7c5a5d08750"
+    },
+    "reports/competition-enhancement/seed-stability/aligned_assignments.csv": {
+      "bytes": 104329,
+      "sha256": "444bd07b203bbec00dfae153ef797909881efa7a0c84cab49176bf1c2d1a1189"
+    },
+    "reports/competition-enhancement/seed-stability/artifact_sha256.json": {
+      "bytes": 1733,
+      "sha256": "4b1041ed05f351c6ced532718696876342a2974bf6ec7d9e607da7c34d490090"
+    },
+    "reports/competition-enhancement/seed-stability/assignments.csv": {
+      "bytes": 104329,
+      "sha256": "3269b1acf90e193f9d07b917736d27f71fe2a494e1bbfe310503b63a4c273d9f"
+    },
+    "reports/competition-enhancement/seed-stability/features_2023.npy": {
+      "bytes": 96896,
+      "sha256": "916e501f91aec48d95d0b25a20b654ec61a4256d2f28b0d0dfc5948e2961ecb0"
+    },
+    "reports/competition-enhancement/seed-stability/fits.json": {
+      "bytes": 68113,
+      "sha256": "74019281df1f87ef34016f600bdc636bc84a30ae4f0296dcf714010aa0ff9a76"
+    },
+    "reports/competition-enhancement/seed-stability/group_summary.csv": {
+      "bytes": 301,
+      "sha256": "2f4f3f3b8571e3c3162cb8ff32517c41733ac99f7c975011d292a9016ace7cf6"
+    },
+    "reports/competition-enhancement/seed-stability/input_state.json": {
+      "bytes": 1383,
+      "sha256": "c2a589dc30a2fe0247023a8576973bdbee47213cda0390471ad43afb74d80a7f"
+    },
+    "reports/competition-enhancement/seed-stability/municipality_support.csv": {
+      "bytes": 312743,
+      "sha256": "ce3b9322157ea0240687e8894cb99f2b4f6032bf0f12717ec16c65dd9d718970"
+    },
+    "reports/competition-enhancement/seed-stability/production_graph.npz": {
+      "bytes": 333773,
+      "sha256": "3ef4a1f23fc87a0a5da9a4657a4e02eef166856ccae6262966cfba155207e0a2"
+    },
+    "reports/competition-enhancement/seed-stability/provenance/historical-science-portable-resources.py": {
+      "bytes": 5791,
+      "sha256": "97b1caecbb410933a35fd2dcae5a2a94a5a8e8c8cc75b530ba973ef8dfbbaed3"
+    },
+    "reports/competition-enhancement/seed-stability/provenance/historical-verify-seed-stability.py": {
+      "bytes": 8196,
+      "sha256": "c77343cb4f3cfd59a48a83eb5e81dee2633f862a45669ab76a52ff5d84243442"
+    },
+    "reports/competition-enhancement/seed-stability/provenance/post-run-source-lineage.json": {
+      "bytes": 2225,
+      "sha256": "7b234f81704a0710d82dac9d570e8893cd649da09ce40e7aa05293677d1de6f0"
+    },
+    "reports/competition-enhancement/seed-stability/registration.json": {
+      "bytes": 2927,
+      "sha256": "681e549dc885fb766e999fe9a479c9c0d306ca982e87e63906a7f6a01750a779"
+    },
+    "reports/competition-enhancement/seed-stability/resource-monitor.jsonl": {
+      "bytes": 835,
+      "sha256": "30e7fb4c8b617656fdfca6139baeb0e67e6c2c34a73d6b0baa6477b8eae4d6ee"
+    },
+    "reports/competition-enhancement/seed-stability/resources.json": {
+      "bytes": 135,
+      "sha256": "ab02849c1462e54f418ab7bf4d55ea180b089afed0cdb1454951c74c176353f6"
+    },
+    "reports/competition-enhancement/seed-stability/seed_metrics.csv": {
+      "bytes": 1865,
+      "sha256": "7e074220f0fdb1d5fca40da1e30336e03bc4508cfba1ddb42d00ce94ee6e7f9e"
+    },
+    "reports/competition-enhancement/seed-stability/summary.json": {
+      "bytes": 2499,
+      "sha256": "d5a45c8bedc43519681a2c39cab1cdd3c6c1dca498d826517030f1f3a9317f16"
+    },
+    "reports/competition-enhancement/seed-stability/timing.json": {
+      "bytes": 236,
+      "sha256": "d8f20f1c40a5f82d72f318f00b3fdc5dde309728448f9be66730387d2f9617fa"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/REPORT.md": {
+      "bytes": 10210,
+      "sha256": "14305604f071824a9e5f009a8b7053956d47160c24b94372e7fe9d0592399946"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/TABLES.md": {
+      "bytes": 7667,
+      "sha256": "54094e93db065be6f03d3c6aa0ae36080980890e77c5f2089d7e84271061d96e"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/diagnostics/diagnostics.json": {
+      "bytes": 2240,
+      "sha256": "9bf7a8f08e40cfe16b2d29d144a6bf691b315e8070b1d17551f940b95eb7b4dc"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/diagnostics/exact-fixtures.json": {
+      "bytes": 3457,
+      "sha256": "7cb628d04732c3f9d154817b4b61e42ec8837d395d2c10c7f4cdf92b4b2041eb"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/diagnostics/real-projection.csv": {
+      "bytes": 89486,
+      "sha256": "417b18c00f8e06407f4e410f94b05ecfd8bd40883781e7f0b7f03c460734f8e3"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/diagnostics/resource-monitor.jsonl": {
+      "bytes": 1056,
+      "sha256": "c6ca62dcdf4c1990dac21cf718d4c4863effbdefcd6c7d8ecce660b4ea3a5cea"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/dynamic-means.csv": {
+      "bytes": 151509,
+      "sha256": "8a9e6e51bbfafba85ba7865b701dc851456c1f932bdb4f6eb01fa38be95bf37d"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/environment.json": {
+      "bytes": 1780,
+      "sha256": "3588667594037978539b25fa5f4229be7386217d9293921edb2ab50fe4807514"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/evaluation/checkpoint.json": {
+      "bytes": 418,
+      "sha256": "a2d7a85116bf13b810198460050ba71feaf1646881fb59fd512490f644773af0"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/evaluation/events.csv.gz": {
+      "bytes": 1292269,
+      "sha256": "bd2e03d135941a7434069139074ffc5cbe70a5e8af6580a8f2e02b3a218f5626"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/evaluation/graph-diagnostics.csv": {
+      "bytes": 38996,
+      "sha256": "d6e700bd2cadab2921443a289ccc272c728f5841fb9c778e6c45447e46272718"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/evaluation/static-metrics.csv": {
+      "bytes": 867142,
+      "sha256": "ef711ac1d55b355f350aa3b5ef193fd22b23fd73cbf483306bf43e21b3752b91"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/evaluation/temporal-metrics.csv.gz": {
+      "bytes": 711525,
+      "sha256": "a8ebc787ad8494b041b4d86d42c5fe3f6fd5eeabd1a56ed903c08cbb895aed51"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/report/confidence-intervals.csv": {
+      "bytes": 480,
+      "sha256": "18ef3d4c34788aa5fb5873954a07b71546b7685ee9a2bea64f903d3c9924ad99"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/report/contrasts.csv": {
+      "bytes": 3011,
+      "sha256": "e0c2582a102c8bcd00fc495711a8d3acbc32d62a7790068d3cb9f05a55cc41ca"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/report/mechanistic-comparisons.csv": {
+      "bytes": 3622,
+      "sha256": "90bb7be5800249227a4044c0a5a102b02637a4328591aba8e2855151e89593a8"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/report/summary.csv.gz": {
+      "bytes": 145894,
+      "sha256": "e2907c127e5b9a18c8281b75c404a6ce62d1f0de794dc2984babdd078166b958"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/resource-monitor.jsonl": {
+      "bytes": 84192,
+      "sha256": "c2068698c90d919613d2619db2c8d85346680e69acb6bcbcae26f8e2be329993"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/result.json": {
+      "bytes": 2005,
+      "sha256": "b81064069f535294e0bb4c6b5c047466884050e36370e41c7fcb0110061f3576"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/selected.json": {
+      "bytes": 823,
+      "sha256": "e181a6ad053b63af0cbcb3999cd01273635d7bf0f9fdbd14b98ab7bd40a165cb"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/tune/checkpoint.json": {
+      "bytes": 130,
+      "sha256": "ce0e24726cea06869f298a166cb1bee79c205b4902df753a51a5397c1cbe9c26"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/tune/graph-diagnostics.csv": {
+      "bytes": 6531,
+      "sha256": "9b110d9561b788455c071d6eef7b099efb968938c523974a44ef22ffebb8614d"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/tune/static-metrics.csv": {
+      "bytes": 262852,
+      "sha256": "9d144152e4d78ebb991c03964d1e2576353ad324afa45990f0c5e005baeafb85"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/validation.json": {
+      "bytes": 3457,
+      "sha256": "7cb628d04732c3f9d154817b4b61e42ec8837d395d2c10c7f4cdf92b4b2041eb"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/manifest.json": {
+      "bytes": 8656,
+      "sha256": "b992f778f1eff17aabbb9d53368825b5125ded1c4dc946f6ae7c0b8c8969c551"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/primary-dynamic-means.csv": {
+      "bytes": 1445,
+      "sha256": "95e0d46fd64993fde04660ced88d6dcc1c2ef5de0f2ab64e3584329f8e7e1df8"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/EXECUTION-DECISION.md": {
+      "bytes": 2481,
+      "sha256": "684656c61211fc6eb1ae0286863cb6232a56b1972e294d364d90889e45819650"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/PLAN-original.md": {
+      "bytes": 45721,
+      "sha256": "73d98737ef8dea1a5e40a77ab9a501a84c56005ced6e68827838e2399121d217"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/PREREG-ADDENDUM.md": {
+      "bytes": 18153,
+      "sha256": "74af61276728d01607de3bd6580193ceedd4826f3fb995f124c93396a1837de6"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/artifact-audit.json": {
+      "bytes": 863644,
+      "sha256": "7b89ac54398e1c2bfaf0d976c02f98c99810eb349d16c88f95719a662eb794f7"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/design-original.json": {
+      "bytes": 4677,
+      "sha256": "39132d0f10f00b74e4fc90c93343c5a2a503defcf8a09a8bba519cc730e6db27"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/diagnostics.stdout.txt": {
+      "bytes": 2345,
+      "sha256": "a437ba96c62f5a6d573c623faecd7fc5b24096decc89fd57b71a2b13315ec1e9"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/execution-decision.json": {
+      "bytes": 23186,
+      "sha256": "fdd3c4e321327155566118c787eeff113bbe3d69b63edb94242fcf2e78d65542"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/execution-ledger.json": {
+      "bytes": 4513,
+      "sha256": "b6f98813acca19f0f6efac13d6592836bb1af634e9ccf914bce9eeaab13b5bea"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/full-run.stdout.txt": {
+      "bytes": 3717,
+      "sha256": "0fef3ba90fb51519ac7a788ad10058520997229ca8c20e67e317ecdb66c65750"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/original-calibrate_timing.py": {
+      "bytes": 12691,
+      "sha256": "1e480da019a50aeda47fd37c7a6871b1d4acdd2288896690d023ca2fb5953ba7"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/original-calibration-preregistration.json": {
+      "bytes": 2450,
+      "sha256": "0ce9d26514f8f42f8b3e7bec4d9ffd53c42f43cccda6398e64340688993de984"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/original-launch_registered.py": {
+      "bytes": 1172,
+      "sha256": "fbc826b89e66dc71a5ba88a4b4dccdb6db6fb16aae076e58d807e1f89a83d756"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/packaging-resource-monitor.jsonl": {
+      "bytes": 824,
+      "sha256": "6d8be3af204e5e0a49a266b0e7623c5c0e24fc7f96ad66c9a83b09d914b99131"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/preflight-after-full.json": {
+      "bytes": 23252,
+      "sha256": "224d263197185562b7449548f0db9b23d897104a26963b876a5cfe8ef11849c8"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/preflight-before-full.json": {
+      "bytes": 23252,
+      "sha256": "9b46c707933ed664967d50d795dcab3b3533564bde7faaa75e666dc6030e4619"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/preflight-initial.json": {
+      "bytes": 23173,
+      "sha256": "48cf27514330dbc01f1ef787c8872a3a44f0e67e26b3fab57012fbe5eb531d98"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/raw-manifest.json": {
+      "bytes": 263730,
+      "sha256": "16cdf2d9d440afa3a707ea9571c78eff3a711b077ae4c6fd6eeabc4f2dce9525"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/registration.json": {
+      "bytes": 18741,
+      "sha256": "8a94e00e8bfe1fe8823c3411fcf48ce066de578da1142bceb579ced37d7f2415"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/requirements-reproduction.txt": {
+      "bytes": 183,
+      "sha256": "48d143a07d786ef813948930e542dda0c463e9a4005c6fb7033b4d385aaaa784"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/timing-only-v1.stdout.txt": {
+      "bytes": 246,
+      "sha256": "d369098112cbfefafa7de9bf2584d22e3200147db2da99a4899dd1a6f7c52861"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/raw-archive.json": {
+      "bytes": 311,
+      "sha256": "ea097526fbebe32ae1b156a98e27c7dc2186197978c2e7e0b3d94077a9e2dd42"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/static-ari-means.csv": {
+      "bytes": 2710,
+      "sha256": "cc2f8f01ebabbc9f5469c0f38b4b2815fd809f861a918da266698086ef45d4e5"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/timing-only-v1/environment.json": {
+      "bytes": 704,
+      "sha256": "b04d16ebb198c7e4fe02bd16485df6848062935f3f6e5385dd3868c2c1597d17"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/timing-only-v1/resource-monitor.jsonl": {
+      "bytes": 2872,
+      "sha256": "35d109061396a0f05262c07c681a92259396f771010136e2bfda2a29ac80515a"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/timing-only-v1/result.json": {
+      "bytes": 23191,
+      "sha256": "30e0de730893b171898a5bacd5950e4c937ae99744832311c7245d6eceee1ae8"
+    },
+    "reports/competition-enhancement/synthetic/executed-20261009/timing-only-v1/timings.jsonl": {
+      "bytes": 122773,
+      "sha256": "ab4afe10320b37f47a7bcf369bccbf16bba172b8398bc6da834bd2bf5baf4d7f"
+    },
+    "reports/competition-enhancement/synthetic/registered-v1/PLAN-original.md": {
+      "bytes": 45721,
+      "sha256": "73d98737ef8dea1a5e40a77ab9a501a84c56005ced6e68827838e2399121d217"
+    },
+    "reports/competition-enhancement/synthetic/registered-v1/PREREG-ADDENDUM.md": {
+      "bytes": 18153,
+      "sha256": "74af61276728d01607de3bd6580193ceedd4826f3fb995f124c93396a1837de6"
+    },
+    "reports/competition-enhancement/synthetic/registered-v1/design-original.json": {
+      "bytes": 4677,
+      "sha256": "39132d0f10f00b74e4fc90c93343c5a2a503defcf8a09a8bba519cc730e6db27"
+    },
+    "reports/competition-enhancement/synthetic/registered-v1/registration.json": {
+      "bytes": 18741,
+      "sha256": "8a94e00e8bfe1fe8823c3411fcf48ce066de578da1142bceb579ced37d7f2415"
+    },
+    "reports/contest-v3/README.md": {
+      "bytes": 18624,
+      "sha256": "8dcf0c739305e7257a30bf77265dec3f95cb2be19ff217b9824e4240ed463e99"
+    },
+    "reports/contest-v3/descriptive.json": {
+      "bytes": 155152,
+      "sha256": "c8484442234d1fa3bf0d31aae43ff95a5bb840ab91449552d79f0dc467c537b5"
+    },
+    "reports/contest-v3/evaluation_provenance.json": {
+      "bytes": 565,
+      "sha256": "524ea438e36baa44269221dc2625300cb6b3d6f1369f347ef5e86d5a2ec130a0"
+    },
+    "reports/contest-v3/execution_status.json": {
+      "bytes": 436,
+      "sha256": "f7ead8b2b48987a0e003cd545e983e4b8075a9b37e699903c3e78785f77f14ea"
+    },
+    "reports/contest-v3/municipal_map.json": {
+      "bytes": 9799634,
+      "sha256": "c33dc9b59990d23282ab7def4fa34dfb01f43e7947af8f7c1fabeaf1fa889beb"
+    },
+    "reports/contest-v3/published_partition_metrics.csv": {
+      "bytes": 18308,
+      "sha256": "08e900fa23af47df0a657c5a005af007894cf64761a4ceb9b9f47356e617d81a"
+    },
+    "reports/contest-v3/published_partition_metrics.json": {
+      "bytes": 41685,
+      "sha256": "4063cc3bc81e968ebd11355f324f350d056d7af2ccc0bae0b30619f9c3ddf9de"
+    },
+    "reports/continuous-core-2026-10-06/FINAL_CHECKS.json": {
+      "bytes": 14870,
+      "sha256": "4e740f17c7bd2dcfe332c5e20e426831e97c989832ebab1bde001a9d769b2784"
+    },
+    "reports/continuous-core-2026-10-06/README.md": {
+      "bytes": 3930,
+      "sha256": "49852e6f8a8292c1cf85ac490a9e056be8532a31792f0df022bde0fcf9b435ed"
+    },
+    "reports/continuous-core-2026-10-06/continuous-core.json": {
+      "bytes": 5791,
+      "sha256": "fdb4fcfb6042546277329d7818bd18c69bfbab4034a38b817b55ac54d519e905"
+    },
+    "reports/continuous-core-2026-10-06/independent-review.json": {
+      "bytes": 537,
+      "sha256": "d6dfed849be42e66a18b8c5fbb5dd593e19cb5fc73510aee325e615fbbfb817d"
+    },
+    "reports/continuous-core-2026-10-06/legacy-core.json": {
+      "bytes": 21673,
+      "sha256": "3c1f0c0174931a090832ce4b0c1f249b2da684fc29c9579ad27bcfb49d4f64e1"
+    },
+    "reports/continuous-core-2026-10-06/research/economic_screen/scores.csv": {
+      "bytes": 2795,
+      "sha256": "985b1e5d070193ef7c98e86926a23c99725e2bc8317f8cf50ebf5c30039c4d4e"
+    },
+    "reports/continuous-core-2026-10-06/research/spatial_stress/scores.csv": {
+      "bytes": 1906,
+      "sha256": "619c2cd87272a177699d1300593a45695a2a01c44c2fcdbf56e8c4208045826f"
+    },
+    "reports/data_audit.json": {
+      "bytes": 2525,
+      "sha256": "a49afcf678e705a5b9be9b0ae82ab70c5ed932b919d07bb12ed0fbfdea91b0d4"
+    },
+    "reports/dmon-plateau-2026-09-25/README.md": {
+      "bytes": 1349,
+      "sha256": "727bd7bae491c4f75f21aced365042aa51efbecbb8672f9c396cecc4d36a9536"
+    },
+    "reports/dmon-plateau-2026-09-25/comparison.json": {
+      "bytes": 3784,
+      "sha256": "425c83af709007dc7bd7d0bc42fcb058e25f94c81ca112a7cb32e28cd2b5d5f9"
+    },
+    "reports/dmon-plateau-2026-09-25/dmon-plateau-20260925/metrics.json": {
+      "bytes": 72493,
+      "sha256": "9339dd27a5f2a741f2376418087e51cfdfb879f027aca69f9e2e87080461c777"
+    },
+    "reports/dmon-plateau-2026-09-25/dmon-plateau-20260925/summary.json": {
+      "bytes": 116,
+      "sha256": "1614f7962e6b78cdbc24eb1c06a378f136a3e1ef5df5c0e6550010ea50b84720"
+    },
+    "reports/dmon-plateau-2026-09-25/prefix_comparison.json": {
+      "bytes": 1070,
+      "sha256": "41379de3812dedf25a0277cec4c0565f46f99652cc90684f6779e3f39dc66a67"
+    },
+    "reports/dmon-plateau-2026-09-25/verification.json": {
+      "bytes": 2770,
+      "sha256": "9af5e566020823e74ecdb6540611fa6593963284cd09e667ac45814a503a0607"
+    },
+    "reports/economic-generalization-2026-10-03/README.md": {
+      "bytes": 4541,
+      "sha256": "3f39296e0696938894accc0e9442d0f462cbc415595bfec91b63fabfb08f3a99"
+    },
+    "reports/economic-generalization-2026-10-03/acceptance/control-cohort-audit.json": {
+      "bytes": 1476,
+      "sha256": "f5528f696d97d7bfbcd75a4ace8ccbac2d3b78bd58debdf79e5ff04e6caac80a"
+    },
+    "reports/economic-generalization-2026-10-03/sectors/results.json": {
+      "bytes": 1141533,
+      "sha256": "d24b76cb9428f3915d93f816d23e5674e6888e8d9a3dc58aa8f3a3814d71cb3f"
+    },
+    "reports/experiments/2026-09-23-v2/README.md": {
+      "bytes": 21761,
+      "sha256": "1e5abd19f12f78abf897642ab1dba1f344dcea8966470ef71274559500becdcf"
+    },
+    "reports/experiments/2026-09-23-v2/SHA256.json": {
+      "bytes": 12073,
+      "sha256": "47ba3450ee57c6d5dc07c2f2cc6457c0e2145774f87f2b8917ceb1a065b021eb"
+    },
+    "reports/experiments/2026-09-23-v2/membership_stability.json": {
+      "bytes": 162259,
+      "sha256": "7445703d057831f4e637f9320a6399a8143a3445d63081a78eaa23269a59c127"
+    },
+    "reports/experiments/2026-09-23-v2/screen_metrics.csv": {
+      "bytes": 38094,
+      "sha256": "6eb2163965577398d531555f7bfe436ba31af4346255429de9fcafea8332675b"
+    },
+    "reports/experiments/2026-09-23-v2/screen_metrics.json": {
+      "bytes": 111630,
+      "sha256": "eebfff3fe1414f79c536f66f6534a6d8b7cdf5ff4edabd680784a74cf0f6f086"
+    },
+    "reports/experiments/2026-09-23-v2/screen_partitions.csv.gz": {
+      "bytes": 592874,
+      "sha256": "cc05185c7bd09778e4873707027dd501a098ff8c84769d9b76711653ca594d28"
+    },
+    "reports/experiments/2026-09-23-v2/stability.csv": {
+      "bytes": 3880,
+      "sha256": "2bf6c9a1a8ededb3a7acfa011d3ac5eac401ae274190e4ae456d8ee9aaf0121d"
+    },
+    "reports/experiments/2026-09-23-v2/summary.json": {
+      "bytes": 479,
+      "sha256": "df82abe31fd18f389e24aa0cd86dfcfb3bd69691faa10551b8eafd45b5827497"
+    },
+    "reports/experiments/2026-09-23-v2/validation/confirmation_metrics.json": {
+      "bytes": 1356,
+      "sha256": "8cf6f0dbdd3579398ca982b27479d21bbf38d1d7961926103f99d23654efbc40"
+    },
+    "reports/experiments/2026-09-23-v2/validation/confounding.json": {
+      "bytes": 114,
+      "sha256": "d94d12f354628184f6cbd718234fbbf775a77b094d2591657e7180e53258710f"
+    },
+    "reports/experiments/2026-09-23-v2/validation/external_market_access.json": {
+      "bytes": 1004,
+      "sha256": "7f0bb6e3979ac460b87f7d094645b59d1f6cbe31ea437f672edc30a8026344ef"
+    },
+    "reports/experiments/2026-09-23-v2/validation/frozen_prototypes.json": {
+      "bytes": 51247,
+      "sha256": "95cd20e1fc4239b4d762826708e35a5af4610eb17a909c25cb85f7f78d1b1308"
+    },
+    "reports/experiments/2026-09-23-v2/validation/monthly_assignments.csv": {
+      "bytes": 2038732,
+      "sha256": "af97e247246052ca118c353b034f8b288504fa4a99b9f5b7e10630d657ffc41e"
+    },
+    "reports/experiments/2026-09-23-v2/validation/peer_validation.json": {
+      "bytes": 13276,
+      "sha256": "99fe04d6b7247e693cea76702247293e2ed63509d81f4039cac37638b71b052b"
+    },
+    "reports/experiments/2026-09-23/README.md": {
+      "bytes": 4886,
+      "sha256": "037b9b1f897861b0738716f0173d39a49f3050296f6a86ba13675d00906b8a9f"
+    },
+    "reports/external-national-2026-10-03/README.md": {
+      "bytes": 17519,
+      "sha256": "6198ddeded94146b44bd508868d446d32598b3db9f28b243406789a3ed17a2b0"
+    },
+    "reports/external-national-2026-10-03/cohort-2023.csv": {
+      "bytes": 1276642,
+      "sha256": "dcfcf2ac0af503d696f9492bc8c1bc4e38977cc2bd1b6c12da66463f761d9c62"
+    },
+    "reports/external-national-2026-10-03/coverage-by-region-and-cluster.csv": {
+      "bytes": 68045,
+      "sha256": "0a46c5831c9d93ffeea4a9f3a70e79d8dcafe22d13f49350a0135f7482059f77"
+    },
+    "reports/external-national-2026-10-03/join-audit-2023.csv.gz": {
+      "bytes": 968440,
+      "sha256": "b8e70122f51c540d3906a2ca245d35938fc697ee7eb710a33998004fdfd15c07"
+    },
+    "reports/external-national-2026-10-03/join-audit-2024.csv.gz": {
+      "bytes": 789238,
+      "sha256": "257e69aef06d692e4410688feabf84fd684770c10fddf71a16ca1e336a7b4bf4"
+    },
+    "reports/external-national-2026-10-03/manifest.json": {
+      "bytes": 6233,
+      "sha256": "dc2c95cc0bcc41ec8f1c23c5cc18a0791d9b7371ecbb2a1a32cf4955f601f8f9"
+    },
+    "reports/external-national-2026-10-03/source-audit.json": {
+      "bytes": 6937,
+      "sha256": "a7e9fce8bbe9b429df237e674af795a47e52b0314e94e530970ef968f7d52b2d"
+    },
+    "reports/external-round2/README.md": {
+      "bytes": 6232,
+      "sha256": "9828f1fe0152a4fc3f2dd3c8817a42292a2b93d274b229781256e4a093017d5b"
+    },
+    "reports/external-v4/municipality_bridge.csv": {
+      "bytes": 345432,
+      "sha256": "3898c2201a871cbcc1fca4b5c1f09a7be5ed68583b12338e8bf55cc91e9b5bc5"
+    },
+    "reports/external-v4/results.json": {
+      "bytes": 24839,
+      "sha256": "dcff6537b2c7fc67e889b88a916cff864137f49f522bc9c2a8ab8102e861babc"
+    },
+    "reports/external/altai-2024/README.md": {
+      "bytes": 2754,
+      "sha256": "d7e465ee6b83b06bd235f5797a009092f46d365e28ced26dd5b6ed4dced0aab7"
+    },
+    "reports/external/altai-2024/metadata.json": {
+      "bytes": 1684,
+      "sha256": "aa459a9ce4733a48f4dfffcdbb0cad6a3e4366895b8f82c4f25e4dc474742325"
+    },
+    "reports/external/altai-2024/municipality_bridge.csv": {
+      "bytes": 2887,
+      "sha256": "49aaf9e873b14b5be9e8e0a480094a5ccbe5c5133fcac3ab9fa10df53522b926"
+    },
+    "reports/external/altai-2024/shipments_by_sector.csv": {
+      "bytes": 47459,
+      "sha256": "1be7f453093af1854f78d0ba6f5a93cfc42918481440b1652b76cac2833aa08c"
+    },
+    "reports/external/altai-2024/tourism.csv": {
+      "bytes": 8523,
+      "sha256": "a6bdd567009ea72668cd2dfb2119f5584e2f7bbcaefdc66955d026f1cd46bb21"
+    },
+    "reports/future-outcome-2026-10-04/INPUT_CHECK.json": {
+      "bytes": 686,
+      "sha256": "0d18f9e37d60d74c74dd134f18bdf9f29b772d420897313af84fa22e4aaa3eb5"
+    },
+    "reports/future-outcome-2026-10-04/README.md": {
+      "bytes": 3706,
+      "sha256": "20c8926664b525e3d15da5fe0e855f5bf4024e4f24bf4dbd0257a5445ddf8ea5"
+    },
+    "reports/future-outcome-2026-10-04/context/contract.json": {
+      "bytes": 2984,
+      "sha256": "1954c73a4c2d9fb90b7ade073ca647919a873fa838fb67b6ebacb7b9f37f84fc"
+    },
+    "reports/graph_preparation.json": {
+      "bytes": 8959,
+      "sha256": "57dcab045fc6c4e6b709701273c30dd9759a28d8815d2be2bf845eb987a02386"
+    },
+    "reports/graphs/README.md": {
+      "bytes": 1353,
+      "sha256": "7fc695b0c246105f14d7d99c111697b67b7bc1f51d16ff2e414f0d888c8cf95a"
+    },
+    "reports/graphs/road_2024_2016.npz": {
+      "bytes": 163730,
+      "sha256": "71d169deded54dbe36fb8c0bdd63573b9c073defef41be97acda582d081f1c0a"
+    },
+    "reports/icvi-2026-10-07/README.md": {
+      "bytes": 2910,
+      "sha256": "a7835639e7095a8e115178fc69cb264a833bb72e91460cb4940a423d2ce1683f"
+    },
+    "reports/icvi-2026-10-07/summary.json": {
+      "bytes": 17006,
+      "sha256": "cb32612695878ad4414f1f54229a95ea43cbb4ba67b0eef70199175a3d3d3946"
+    },
+    "reports/model-frontier-2026-10-03/README.md": {
+      "bytes": 13115,
+      "sha256": "da44d6c94c5a1bca640e95489b7d13dee66b96c3aab05e73961eedb76289974b"
+    },
+    "reports/model-frontier-2026-10-03/annual-2024-application.json": {
+      "bytes": 115432,
+      "sha256": "239233e165555f271bc1b3911c55abe0f1265f41d5893e80d887f4dd27358361"
+    },
+    "reports/model-frontier-2026-10-03/constrained/screen.json": {
+      "bytes": 12236,
+      "sha256": "1caf995977ae2ac405157b904f27902dacbf99d19fa952bbf9be7f8beffd56da"
+    },
+    "reports/model-frontier-2026-10-03/current_source_sha256.json": {
+      "bytes": 1279,
+      "sha256": "f18f926e077ff3d219412b7b35a9b4451bac6c8837bfe137cf695f3a4daacd74"
+    },
+    "reports/model-frontier-2026-10-03/denominator/comparisons.json": {
+      "bytes": 31166,
+      "sha256": "ceefff5dcb293674e9030591be78cdef429cf8afd7c6c63090eea33a53e89ffb"
+    },
+    "reports/model-frontier-2026-10-03/denominator/stress.json": {
+      "bytes": 6871,
+      "sha256": "7c98c33dc420f3ae5509f5b8d69737edb208a5596cb9ee9385d2b5825c638706"
+    },
+    "reports/model-frontier-2026-10-03/forward/results.json": {
+      "bytes": 66109,
+      "sha256": "4259d5b637648d0585b1387e6631712001239fe892274980036d0b4a645cd351"
+    },
+    "reports/model-frontier-2026-10-03/forward/summary.json": {
+      "bytes": 3284,
+      "sha256": "5886697e41731adbff09e864822073bb7e2e6b56188e840340f64c7e045982ec"
+    },
+    "reports/model-frontier-2026-10-03/geometry-axis-audit.json": {
+      "bytes": 1558,
+      "sha256": "bfd9362a7d523d2f6fea86ab97599eec22d4a07aca20095fc925af239a5765d1"
+    },
+    "reports/model-frontier-2026-10-03/lineage.json": {
+      "bytes": 1619,
+      "sha256": "980286c82f850f259a5d7588559cf763ad3488a79af0de66fc6f3dec38503c2c"
+    },
+    "reports/model-frontier-2026-10-03/models/verification.json": {
+      "bytes": 841,
+      "sha256": "1989aeb064bcaf0694befac75703464e8115216529e9dd8664bcb4bb3464a148"
+    },
+    "reports/model-frontier-2026-10-03/multiscale_cross_tabs.json": {
+      "bytes": 1348,
+      "sha256": "fc44c8f83ba0ffebdbcaf9b3b63578a76f7988b6dbc01337697dd9ecd92fb4ac"
+    },
+    "reports/model-frontier-2026-10-03/protocol.json": {
+      "bytes": 3234,
+      "sha256": "7c9ed8acdc10d3ae4252fb8613cd1074e8c5cb6aba7dbf0b486c05b4e4840b5d"
+    },
+    "reports/model-frontier-2026-10-03/screen/screen.json": {
+      "bytes": 24918,
+      "sha256": "aa8a06073ceddab656b959810510394a9b544558e455da34af3bb12bede8b98d"
+    },
+    "reports/model-frontier-2026-10-03/source/scripts/verify_frontier_annual_application.py": {
+      "bytes": 5015,
+      "sha256": "7649dcb20bb77a733d62011f4d972220bce7ed24d6a3a999bcfcc5834680beaf"
+    },
+    "reports/model-frontier-2026-10-03/validation/validation.json": {
+      "bytes": 7029,
+      "sha256": "121bbe1b221da51dce9bfb57132edf99ea294229cbb4b073032d6b7f428295ca"
+    },
+    "reports/practical-cases-2026-10-07/analogue_screen.csv": {
+      "bytes": 3981,
+      "sha256": "4e042b8331c8e0cd056731a66803273ffe99dc9184638f7d704c19d887078b66"
+    },
+    "reports/practical-cases-2026-10-07/cases.json": {
+      "bytes": 24433,
+      "sha256": "ef1b34b23609fd4c4fe3eb27c75747def3c40e8d0a827a979fa61a27de521000"
+    },
+    "reports/practical-cases-2026-10-07/group_profiles.csv": {
+      "bytes": 749,
+      "sha256": "0c99728e557757620ccbb9cb69f05acac487d3e477f11d08e80d0a1023477f16"
+    },
+    "reports/practical-cases-2026-10-07/provenance.json": {
+      "bytes": 2655,
+      "sha256": "71cc671d3b2544761132d91a5d93a05977b28c61ccd5ccd4d85b2eaa57eeac79"
+    },
+    "reports/review-2026-09-24/README.md": {
+      "bytes": 1512,
+      "sha256": "f5d4176f4f01fdcb49a53e3465e5620efd3d8987a77451c36eda495b26d3737b"
+    },
+    "reports/review-2026-09-24/verification.json": {
+      "bytes": 3309,
+      "sha256": "9bd89ce6231447c221cc4b5ccd5a4304506760afa258ffbdcb59df34e530b75b"
+    },
+    "reports/round2-2026-09-24/round2-20260924-dmon/metrics.json": {
+      "bytes": 1208140,
+      "sha256": "fbd15d239208f8a4a7b7911e14991669dd1da09e4f884419856dac2985c79ce3"
+    },
+    "reports/round2-2026-09-24/round2-20260924-dmon/summary.json": {
+      "bytes": 109,
+      "sha256": "5a712df97f53540f2eea1e576821962e965e06461928fb5bef145c745a738fa5"
+    },
+    "reports/round2-2026-09-24/round2-20260924-region_control/external_comparison.json": {
+      "bytes": 12881,
+      "sha256": "3d720a14967f35137725efd5e7a15d9eccb8e1edca1050e6a1b90f4a1773563b"
+    },
+    "reports/round2-2026-09-24/round2-20260924-region_control/metrics.json": {
+      "bytes": 27912,
+      "sha256": "af699c940a62c5ecfcd9bd29de5f54dbed79ceb4b8bd81ee01913655bdd999ad"
+    },
+    "reports/round2-2026-09-24/round2-20260924-temporal_grid/temporal_summary.json": {
+      "bytes": 7894,
+      "sha256": "36d1ebf32802665d1dd26a93c323de04591ee2af51933cb95ebb8596eafb5d9c"
+    },
+    "reports/round2-2026-09-24/round2-20260924-temporal_grid/transition_events.csv": {
+      "bytes": 1441208,
+      "sha256": "1caf8328edf4f2a48a296f0114533a05a9f9d8b170e0834f6ee9cc16ef27d8a7"
+    },
+    "reports/round2-2026-09-24/verification.json": {
+      "bytes": 3088,
+      "sha256": "a38e18021d80ed1d7672cc2e612557b1e28e64da01d6f0b453e402b3ffe708b2"
+    },
+    "reports/round2-cases/README.md": {
+      "bytes": 10297,
+      "sha256": "ec96ad95e85fcce8815ea6b795a23b9f2bc6369b713be6c23e3e5cf8f1426843"
+    },
+    "reports/round2-cases/abazinsky.json": {
+      "bytes": 27773,
+      "sha256": "ab5abc79150161727721b4ad27da35f23f3322e65d358f58426c26dc1a0f11e5"
+    },
+    "reports/source_alignment.json": {
+      "bytes": 486,
+      "sha256": "2fce5920dba19f957c5e3c4a50086025d476c0f6dc8782f80263abc1fdd79f05"
+    },
+    "reports/source_manifest.json": {
+      "bytes": 2342,
+      "sha256": "a7f1f381f5a85546fb1071fd6aad90420009ce05a4034b403632ff3190afd1b8"
+    },
+    "reports/technical-acceptance-2026-10-04/DERIVED_EVIDENCE.json": {
+      "bytes": 2565,
+      "sha256": "f8dd424515ed13659101cf8ef446a6af4a39081bbefa415e7c8bfff24514d427"
+    },
+    "reports/technical-acceptance-2026-10-04/FULL_SUITE_DERIVATION.json": {
+      "bytes": 981,
+      "sha256": "bb48f26bab63a958cdf298afb671c05551f33f79c6c2fe6f5c5f33cea5e28581"
+    },
+    "reports/technical-acceptance-2026-10-04/FUTURE_MODULE_REVIEW.md": {
+      "bytes": 3719,
+      "sha256": "9f83f4ad39df683af98ab835b7e7e933f14a3e2a6da1ace726b48238249b4cc1"
+    },
+    "reports/technical-acceptance-2026-10-04/LOCAL_FIX_EVIDENCE.md": {
+      "bytes": 2771,
+      "sha256": "3f1742e03e065ec101c20cf2b2f2c802a45d0dbfc9a8cc3fe9e15521b8b330d8"
+    },
+    "reports/technical-acceptance-2026-10-04/README.md": {
+      "bytes": 2228,
+      "sha256": "40de3113ec9327f28cabbbd935e854b4675beb75536e5a07f595fea616f2fd02"
+    },
+    "reports/technical-acceptance-2026-10-04/SUMMARY_RU.md": {
+      "bytes": 4559,
+      "sha256": "fea962dc424bc3f3faf582aa5d2fc4d07e087db7359c957f0f3c5a8d5070bf05"
+    },
+    "reports/technical-acceptance-2026-10-04/WHITESPACE_POLICY.json": {
+      "bytes": 504,
+      "sha256": "e048a4ec2a8be4b94a4a3c2010674abb7c050128d0c78c1f3f92c9d811c297c7"
+    },
+    "reports/technical-acceptance-2026-10-04/acceptance.json": {
+      "bytes": 20090,
+      "sha256": "f8f9597bc462017f131c520ba6055f5b222d99445558d718ab03576af41196cb"
+    },
+    "reports/technical-acceptance-2026-10-04/external-review-receipt.json": {
+      "bytes": 4137,
+      "sha256": "e73059eebe1891a17b1a2b0515321afbe5371b14b00b8f14225f39cf6f172eae"
+    },
+    "reports/technical-acceptance-2026-10-04/full-suite.json": {
+      "bytes": 28076,
+      "sha256": "4ec2e3c17579fa72933cc6c66695617b4e29432d26008ac59f3f1b94b7c10093"
+    },
+    "reports/technical-acceptance-2026-10-04/full-tests.log": {
+      "bytes": 38859,
+      "sha256": "f48e8ade1aec6d1626fd9e6a14586f74a8af076db393967f5fcdae3415a50491"
+    },
+    "reports/technical-acceptance-2026-10-04/future-module-review.json": {
+      "bytes": 7538,
+      "sha256": "3dad3c1e2abe45faafcbedd3d2bc252da249a9607d9a7d9abb44e10b8dd44b7a"
+    },
+    "reports/technical-acceptance-2026-10-04/integrity-only.json": {
+      "bytes": 4193,
+      "sha256": "034862717aca6d915011460bcda2e7692f57e1e1f06a32f784da1187429ce9e4"
+    },
+    "reports/technical-acceptance-2026-10-04/mq-closure.json": {
+      "bytes": 17741,
+      "sha256": "6cedf43cd4710a537699875d3e72778d4fcddafc694d545db665201ebc0b45a3"
+    },
+    "reports/technical-acceptance-2026-10-04/source-hash-correction.json": {
+      "bytes": 1138,
+      "sha256": "636ac0aab8ab04ca4ece0258f4bd213ac84054bb48e191617cda86385328089b"
+    },
+    "reports/technical-core-2026-10-03/README.md": {
+      "bytes": 8690,
+      "sha256": "ff4c0891b26530f9e6987038ffebd97ff784b109f3596d5bca728219b355b83b"
+    },
+    "reports/technical-core-2026-10-03/acceptance.json": {
+      "bytes": 10520,
+      "sha256": "b5ffece6fe60f51ac38eeb516f5b5238aa44a64f8cbecd3193c6225a0719a232"
+    },
+    "reports/technical-core-2026-10-03/dmon-inference-compatibility.json": {
+      "bytes": 1924,
+      "sha256": "46fe1b6957c58d3b9c2eae6e8814408e7e8a29b86df59933dae02d855a0679b5"
+    },
+    "reports/technical-core-2026-10-03/feature-compatibility.json": {
+      "bytes": 4400,
+      "sha256": "2a754888e7fdefd76558963fbb4e8cb5fbc52f9baebbca1fe35232a432b4c720"
+    },
+    "reports/technical-core-2026-10-03/frontier-review/metric-reference-audit.json": {
+      "bytes": 38550,
+      "sha256": "94e4f1380f3d4872c677465c786e1917781947a7afd6c61817373c8f3c6dcb91"
+    },
+    "reports/technical-core-2026-10-03/joint-refinement/comparisons.json": {
+      "bytes": 48639,
+      "sha256": "763f2fafe231b16c1b423b480fe981844eb35753dfbf24c70027fa79baeaa8df"
+    },
+    "reports/technical-core-2026-10-03/joint-refinement/external_comparison.json": {
+      "bytes": 33023,
+      "sha256": "cee384ae4d2a328c8111b361f50bc731adf6f64ee516bd86c3f05380a9c73da0"
+    },
+    "reports/technical-core-2026-10-03/joint-refinement/labels.json": {
+      "bytes": 336674,
+      "sha256": "1bedf5fbcc5be6897128a35630d1a129752eb53f92c71e47c9d557b5662a306b"
+    },
+    "reports/technical-core-2026-10-03/joint-refinement/manifest.json": {
+      "bytes": 2992,
+      "sha256": "d9c085ef19514fd6c6212fecdf4f570c0725472adf3a83048c722d8099f0ec0f"
+    },
+    "reports/technical-core-2026-10-03/joint-refinement/provenance.json": {
+      "bytes": 4235,
+      "sha256": "700c110ecb9837fcdfc83c20459af8370bf6b82cf2e36a4d02b9789d201764ba"
+    },
+    "reports/technical-core-2026-10-03/kmeans-reproduction.json": {
+      "bytes": 184,
+      "sha256": "001b8bcf9a5db7f442b05252af02f0fd52756a3f25ef5f7d84fc266784310bd5"
+    },
+    "reports/technical-core-2026-10-03/tests.txt": {
+      "bytes": 18928,
+      "sha256": "fb14db62401fb86a56df9713c88933db01646be9c0444c2eca673654f03065f0"
+    },
+    "reports/temporal-core-2026-10-03/README.md": {
+      "bytes": 6075,
+      "sha256": "0a89e3a7573c0ca003012e8b779334f241f7e236e55709df0774df6d3b82bce0"
+    },
+    "reports/temporal-core-2026-10-03/paired-reference/assignments.csv": {
+      "bytes": 67908,
+      "sha256": "ad5bfc2bf0e3238223eb8c9c8f358bbbabf0bb8d72cab1f8fd7a8f03f58b7437"
+    },
+    "reports/v1.2-added-value/README.md": {
+      "bytes": 44272,
+      "sha256": "da3484bf3f0de4a5eca2287c75fa84685ae9d0706f9b4fe82b7a2fa77a55b8ff"
+    },
+    "reports/v1.2-added-value/calibration.csv": {
+      "bytes": 490,
+      "sha256": "eaefd9688b6d030fe3be1a25a3e5e4a3615e11c57f0bf35a13930ee433cbca89"
+    },
+    "reports/v1.2-added-value/contrasts.csv": {
+      "bytes": 33494,
+      "sha256": "b07446bc3fc062741e8428be2a0a4451af6bdc2386cf84882c262f23de6ef733"
+    },
+    "reports/v1.2-added-value/fold_state_diagnostics.csv": {
+      "bytes": 60519,
+      "sha256": "2dd9a3760f6a0f63e11b380a04d12906e04f1d24a239d81efd068bb325fe19e0"
+    },
+    "reports/v1.2-added-value/folds.csv": {
+      "bytes": 4858,
+      "sha256": "f73a2e987656f4c06567e12f9fd7dd5dc04cf482e565adb78ffc54525a77e626"
+    },
+    "reports/v1.2-added-value/models.csv": {
+      "bytes": 2590,
+      "sha256": "5e8fb62730b5c838d19d665b8aad651d93e4e353026fca63a3fea7d4bdd500ce"
+    },
+    "reports/v1.2-added-value/predictions.csv": {
+      "bytes": 1945564,
+      "sha256": "c15e313ed44343cf59126394efb759fc8b4fd33ca7f63994847848eb0a0e54ab"
+    },
+    "reports/v1.2-added-value/summary.json": {
+      "bytes": 7166,
+      "sha256": "ac07547aedcbb6dcd9e645366b133c0b195f711e65cb0e0f80aff45b9b66ed0f"
+    },
+    "reports/v1.2-added-value/windows-state-verification.json": {
+      "bytes": 200004,
+      "sha256": "90453a5525af768775f1b25305312389c2bc50a3fa90363bb46901769f6a1038"
+    },
+    "reports/v1.2-method-ties/README.md": {
+      "bytes": 14888,
+      "sha256": "86919996131f90cdcd1e059c436170be6c831f4386d5dca8b29e6586afda5828"
+    },
+    "reports/v1.2-method-ties/draws.csv": {
+      "bytes": 14775,
+      "sha256": "45c9cf72f190d291dad18c5845b900a876417ce51114ec76c52113ba7cae5cdf"
+    },
+    "reports/v1.2-method-ties/pairwise_icvi.csv": {
+      "bytes": 13423,
+      "sha256": "8a5644faadc9187018dd729a2fb45e40f03c3f3a29b7f1725e26ccf97bf0054a"
+    },
+    "reports/v1.2-method-ties/summary.json": {
+      "bytes": 723,
+      "sha256": "a03f1388aad7771bd2e507f1ea9afc6758e95a0bc74fde5dd2ac7f4315799c88"
+    },
+    "reports/v1.2-method-ties/win_frequency.csv": {
+      "bytes": 459,
+      "sha256": "829aa9d0f152ba6343441e22c8c3d4c04efed1c942025c247862245790f0baf2"
+    },
+    "reports/v1.2/README.md": {
+      "bytes": 6164,
+      "sha256": "e1f9b09e0c3a3c00f55e375fa008ec0ec91f9ae7f0bb37e727ad48d0a8422198"
+    },
+    "reports/v1.2/analogue_comparisons.csv": {
+      "bytes": 430,
+      "sha256": "47c9a6e5dcf2d9d746fa8b737994d2f8069e79cde34d161ab57da417c6406a65"
+    },
+    "reports/v1.2/analogue_comparisons_diagnostic.csv": {
+      "bytes": 319,
+      "sha256": "4f345248349947a36748f235b369bc71ec73eb880d777ab0dd27cdfe4d67dcda"
+    },
+    "reports/v1.2/analogue_predictions.csv": {
+      "bytes": 1600864,
+      "sha256": "9b3cd3a4d2b9b4cc8b2ba6e56853449940f93bb0dfe369f5e6b84d1f7fb02f99"
+    },
+    "reports/v1.2/analogues.csv": {
+      "bytes": 356,
+      "sha256": "e9b1671588409e3e1862e9ad7e0e25ee78fe77b8467789489832102f79d7c65e"
+    },
+    "reports/v1.2/analogues_diagnostic.csv": {
+      "bytes": 525,
+      "sha256": "0197a11c7d6660606d76a8cc1fb445ce2ea63fdb2161cc7eb726ee1bf6e7b3c7"
+    },
+    "reports/v1.2/feature_spaces.csv": {
+      "bytes": 1237,
+      "sha256": "e09e23a3aa21d3b349c1d2361501af4d80b31a56dc5673b3165bacd4cec56f05"
+    },
+    "reports/v1.2/findings_provenance.json": {
+      "bytes": 8480,
+      "sha256": "21bde4a79799498457657b8c956a712f990e046fe74d0d4d2c45c497db6039b7"
+    },
+    "reports/v1.2/k_selection.csv": {
+      "bytes": 956,
+      "sha256": "5194d49a2de3288a6049cb3ea4f0bee7677721e98703e7d7b2f6d605473b548f"
+    },
+    "reports/v1.2/labels.csv": {
+      "bytes": 345473,
+      "sha256": "394a681ebd0898dc41d1fe2479febbb36b7a5cc5d6449147aab14089279c0e71"
+    },
+    "reports/v1.2/leave_one_region_out.csv": {
+      "bytes": 1471,
+      "sha256": "d9c33ccc8624957579557dcee42ead12cd42880fda15bddce19423f92006ee9f"
+    },
+    "reports/v1.2/methods.csv": {
+      "bytes": 3306,
+      "sha256": "55bc4a3cea869a39d78b89c8b6b6959153522a00c9359b122c9e73f553ac6a3b"
+    },
+    "reports/v1.2/model.npz": {
+      "bytes": 6213,
+      "sha256": "4dc64e6c98f8211f0a4add9421506e734287dd5750781b8ced040d9b8761aa19"
+    },
+    "reports/v1.2/monthly_network.csv": {
+      "bytes": 4085,
+      "sha256": "c7c7ae7495c70325ed7da3042d76abfd7526d2f35f3ae52a19b57c4629c7e845"
+    },
+    "reports/v1.2/network_effects.csv": {
+      "bytes": 1942,
+      "sha256": "dc75f8cb13aeb9bf981b642697a4cc2f7e8a71e7d9215344c2b0840c25f0b311"
+    },
+    "reports/v1.2/network_k_sensitivity.csv": {
+      "bytes": 1482,
+      "sha256": "b2d5881a8aed14e115a949fba176641cc928c8ff8975e3078ff9578503b0dd93"
+    },
+    "reports/v1.2/networks.csv": {
+      "bytes": 3343,
+      "sha256": "c87bd4cab9418046b26256db0a7c1f8af8984269bf88b1a470e34f1d51369466"
+    },
+    "reports/v1.2/persistent_changes.csv": {
+      "bytes": 12814,
+      "sha256": "0eb4e986eec8a9e709ed45fc40d3ace75aa13a3b269c4e6e5cc49897976ea6fa"
+    },
+    "reports/v1.2/provenance.json": {
+      "bytes": 3971,
+      "sha256": "3c204b002d69853dae4ed746255d4bf3368c9eccbb0fbb49f947208b66c25ee0"
+    },
+    "reports/v1.2/reclustering_events.csv": {
+      "bytes": 397,
+      "sha256": "162b508ea6f4d9f5d0e94867c82e28976b3e0ff7f4b57cc2b5095fd1213acaac"
+    },
+    "reports/v1.2/strict-region-validation/fold_000.json": {
+      "bytes": 7318,
+      "sha256": "6998ab87dc6fd1eeaad7ecf2624294c61e76ddffca6403a6ad72d2fe4fd6a63f"
+    },
+    "reports/v1.2/strict-region-validation/fold_001.json": {
+      "bytes": 7983,
+      "sha256": "00b937ddf97afdb4208d92d808e02982313635dd6e7d4b20d0481b2f75effa9e"
+    },
+    "reports/v1.2/strict-region-validation/fold_002.json": {
+      "bytes": 7996,
+      "sha256": "7705f708a6ea318ffdbaa25e7c610e4f0fb9b984e1d7b355ef220a3f0d9f1a84"
+    },
+    "reports/v1.2/strict-region-validation/fold_003.json": {
+      "bytes": 7996,
+      "sha256": "fc68b87f9aa141d8af633a1008f46ad03b3f1baacdec0491cd7d2f67510a5f7d"
+    },
+    "reports/v1.2/strict-region-validation/fold_004.json": {
+      "bytes": 7988,
+      "sha256": "31097e34f01069542e63b459fe4b98554f53407ae88bf62fc59cb8cf3d1a191e"
+    },
+    "reports/v1.2/strict-region-validation/fold_005.json": {
+      "bytes": 8008,
+      "sha256": "aa99d4d3b123b83cfd1af43535982867efe9ee548e1f70dd848ed6f97fa3c142"
+    },
+    "reports/v1.2/strict-region-validation/fold_006.json": {
+      "bytes": 7345,
+      "sha256": "76899324bd67c35b3ea66abf642ea88ffa81dc95d160b84df22a25b38790e5d3"
+    },
+    "reports/v1.2/strict-region-validation/fold_007.json": {
+      "bytes": 8005,
+      "sha256": "f4d7b3587d9009b7f6dbf0e69738bb906d935b38ecc83cf34dd5a23fa1c5cfff"
+    },
+    "reports/v1.2/strict-region-validation/fold_008.json": {
+      "bytes": 7991,
+      "sha256": "30152956e1d02977fbe7be2e11ff98e38929aad01f83b202df04b259f7f25008"
+    },
+    "reports/v1.2/strict-region-validation/fold_009.json": {
+      "bytes": 7334,
+      "sha256": "987708627001d77800879d935c86ad7eae47c22a5934c0a204457998b850a73b"
+    },
+    "reports/v1.2/strict-region-validation/fold_010.json": {
+      "bytes": 7984,
+      "sha256": "54f8935698f9d51a0ed64f9380db09267e2505bd2248d9d758e22fc0f379bcba"
+    },
+    "reports/v1.2/strict-region-validation/fold_011.json": {
+      "bytes": 7353,
+      "sha256": "48d44f92f8852feb1f8aa439cd38cf1280645fa33971c982dfba4381a7bc857a"
+    },
+    "reports/v1.2/strict-region-validation/fold_012.json": {
+      "bytes": 7996,
+      "sha256": "41fb07961cc02b93dadaf3f88a8c334cf5e3e8edcbca0bb43f5a13cc2d834d55"
+    },
+    "reports/v1.2/strict-region-validation/fold_013.json": {
+      "bytes": 7998,
+      "sha256": "ad4a44feac7862642d2d63e4c234df943b13b4ecc3f67dc07cde9a24c8aa0130"
+    },
+    "reports/v1.2/strict-region-validation/fold_014.json": {
+      "bytes": 7972,
+      "sha256": "7e3c64316ad7b19e32605a619c0d6a853fbd6c3ba04530c1dc6829c5aa4bf921"
+    },
+    "reports/v1.2/strict-region-validation/fold_015.json": {
+      "bytes": 7352,
+      "sha256": "4a79752f05f7e03c441b810e7600bdefbac15b12994ecccbc5de8b920bbaa426"
+    },
+    "reports/v1.2/strict-region-validation/fold_016.json": {
+      "bytes": 6702,
+      "sha256": "6647bf462ee5f2662e4d1a9b41c691f431a65b1f29c68381b866ff205d5be713"
+    },
+    "reports/v1.2/strict-region-validation/fold_017.json": {
+      "bytes": 7994,
+      "sha256": "9ffcac2f28ad8b1741a487da92001682e92d995a2e624f0d87389e36db1037f5"
+    },
+    "reports/v1.2/strict-region-validation/fold_018.json": {
+      "bytes": 7336,
+      "sha256": "a2692a9d8c483b4202cc1e91b4bf0b39d0e215286e8cdafebb91451782a8c7e1"
+    },
+    "reports/v1.2/strict-region-validation/fold_019.json": {
+      "bytes": 7976,
+      "sha256": "3307d683362c596e54fd471aa54ddf12a73ee8874a1eae693ef8526639878b54"
+    },
+    "reports/v1.2/strict-region-validation/fold_020.json": {
+      "bytes": 7323,
+      "sha256": "29c255775d686d76a34a16a8b20249f0a0f241c3920519bf0d5f29d9201dc059"
+    },
+    "reports/v1.2/strict-region-validation/fold_021.json": {
+      "bytes": 7988,
+      "sha256": "5b14abcc42a2a206a5c66bc74264b766977afaa1b20796de4e5e210eabaa8e1b"
+    },
+    "reports/v1.2/strict-region-validation/fold_022.json": {
+      "bytes": 7989,
+      "sha256": "38997b78de5356f86887af11af180b2265fcad647a419de3383246be0f4e3a72"
+    },
+    "reports/v1.2/strict-region-validation/fold_023.json": {
+      "bytes": 7975,
+      "sha256": "9c57590d28a5d7708b738d7ef797e2bc8407267579144b95efb3db65b8d4b5ff"
+    },
+    "reports/v1.2/strict-region-validation/fold_024.json": {
+      "bytes": 6643,
+      "sha256": "3dfca712643da743783f4b98eb3e5cac7417dedb44ca1bb547b5b3d36d74b0da"
+    },
+    "reports/v1.2/strict-region-validation/fold_025.json": {
+      "bytes": 7995,
+      "sha256": "26f1c3a4468aa601f218baa01b119a65142154c7fa6016052b1d038aa58055e9"
+    },
+    "reports/v1.2/strict-region-validation/fold_026.json": {
+      "bytes": 7989,
+      "sha256": "32675cc87ede12a6e43e8011766e4fa92d553d8e73d0cb1f896c66972df48dd6"
+    },
+    "reports/v1.2/strict-region-validation/fold_027.json": {
+      "bytes": 8004,
+      "sha256": "4a70001ce8bfd6e7372c9f20fab599b856aef83673607a6568ca668e1244cc68"
+    },
+    "reports/v1.2/strict-region-validation/fold_028.json": {
+      "bytes": 7340,
+      "sha256": "7ea74a743caee015cff643885d32e67c0f0cc57f1be9eecd689ccf17f51f95d0"
+    },
+    "reports/v1.2/strict-region-validation/fold_029.json": {
+      "bytes": 7338,
+      "sha256": "207eb3ec8eeb09c20156931da0ed94381db5f838c202a2f55c104cd49b520c95"
+    },
+    "reports/v1.2/strict-region-validation/fold_030.json": {
+      "bytes": 7992,
+      "sha256": "23d4e979927f243b9211a8a8bf60ae488cc35aba85cf1eaafb26aa2dbc28c59c"
+    },
+    "reports/v1.2/strict-region-validation/fold_031.json": {
+      "bytes": 7326,
+      "sha256": "46307f7306f432eec7beb7753b9acbe9932bb2f4642b4226a9d7ddd6d2665a87"
+    },
+    "reports/v1.2/strict-region-validation/fold_032.json": {
+      "bytes": 7979,
+      "sha256": "31d199deeed2e352e53d9c8aa43cbcf3417540e17c161f8cb967c042b43d8e9f"
+    },
+    "reports/v1.2/strict-region-validation/fold_033.json": {
+      "bytes": 7335,
+      "sha256": "b5dd5e9a1c6b559bc443d7d53c40d864173fdeec0c7fb72a49c2b799ef36b638"
+    },
+    "reports/v1.2/strict-region-validation/fold_034.json": {
+      "bytes": 7336,
+      "sha256": "5f7104b07fbd9dd802c4d8df497f18249e1108d350c69859b34f0de6e981c6f9"
+    },
+    "reports/v1.2/strict-region-validation/fold_035.json": {
+      "bytes": 7982,
+      "sha256": "65b016a90100c08fe3f9863e842b14cc9ad693658a06bbb2084806405e5ab028"
+    },
+    "reports/v1.2/strict-region-validation/fold_036.json": {
+      "bytes": 7990,
+      "sha256": "909600584c3a2e0b34ec2ae430a5124802ed34cc3e1e5fbbaf148cb01f64021d"
+    },
+    "reports/v1.2/strict-region-validation/fold_037.json": {
+      "bytes": 7340,
+      "sha256": "483c2e594c266b844d36fa4d243932f1b454c2a9a603af6e6ce7d69562717a1f"
+    },
+    "reports/v1.2/strict-region-validation/fold_038.json": {
+      "bytes": 7966,
+      "sha256": "74ddcbef575abdd491a989abfe9faab8acd270e542530a6e3956be52f03c18c2"
+    },
+    "reports/v1.2/strict-region-validation/fold_039.json": {
+      "bytes": 7317,
+      "sha256": "e60c0e24b41bc424a0a9642b1712d2c199d42245f970a761aa907aebd2688e2d"
+    },
+    "reports/v1.2/strict-region-validation/fold_040.json": {
+      "bytes": 8017,
+      "sha256": "263a688a74fc6219b7880f129c62366db3ca52735cce29f6ae5260a882fb0833"
+    },
+    "reports/v1.2/strict-region-validation/fold_041.json": {
+      "bytes": 6003,
+      "sha256": "e98e8b24392851ced3164c772ac64ea0d6cdc176f349faab75a741f5213f9310"
+    },
+    "reports/v1.2/strict-region-validation/fold_042.json": {
+      "bytes": 7996,
+      "sha256": "259f8cacf0ed22c6830bdf6f963f8c98a5256414661bc156d27d14ac0f9f8109"
+    },
+    "reports/v1.2/strict-region-validation/fold_043.json": {
+      "bytes": 7984,
+      "sha256": "cd6623c5a10dd4e84c15951b76aef38852b5783cbbdf4335441a513e00cc1c9e"
+    },
+    "reports/v1.2/strict-region-validation/fold_044.json": {
+      "bytes": 7333,
+      "sha256": "53b83aab4d0644ba603e0a615208bc3aca6edb0c82a65373c705ff38bb5100d9"
+    },
+    "reports/v1.2/strict-region-validation/fold_045.json": {
+      "bytes": 7339,
+      "sha256": "37a40da070571a0e0fff705b8462d0814917e0605f9acd543466d5dc97990517"
+    },
+    "reports/v1.2/strict-region-validation/fold_046.json": {
+      "bytes": 7987,
+      "sha256": "294297c1926115fcb19e787c39aeaae8a0ead8a6866c00a277fabbfbedd5b076"
+    },
+    "reports/v1.2/strict-region-validation/fold_047.json": {
+      "bytes": 7330,
+      "sha256": "278636b82c867b730ca8b95f7362d40abe5495e852783463f94a86a0a7fe3dba"
+    },
+    "reports/v1.2/strict-region-validation/fold_048.json": {
+      "bytes": 8004,
+      "sha256": "d37295235b299c63290f261ea6ae79fa79921df05c1a9a186f333d8c4aab2a35"
+    },
+    "reports/v1.2/strict-region-validation/fold_049.json": {
+      "bytes": 7325,
+      "sha256": "57a5598264c79266b82cebc8615f6c8d558098123e992e6abcc0bdd4cfd40df9"
+    },
+    "reports/v1.2/strict-region-validation/fold_050.json": {
+      "bytes": 7984,
+      "sha256": "01357e73a80f0d89f3976136a9f4dd61eabca4172904035f87099df84948f8d3"
+    },
+    "reports/v1.2/strict-region-validation/fold_051.json": {
+      "bytes": 7984,
+      "sha256": "3d0a955c1072d10dd7b4dc1c1edfad52de945c704a212a1bea02c69416487b3b"
+    },
+    "reports/v1.2/strict-region-validation/fold_052.json": {
+      "bytes": 7998,
+      "sha256": "a297031337b0b1d0bd30291b7960bfbd2ec54f8e40b42967f0aa236b100d7f2c"
+    },
+    "reports/v1.2/strict-region-validation/fold_053.json": {
+      "bytes": 7922,
+      "sha256": "a774390844ba376c718dc73b26021d5a1042935fdcc8ee14cd59f5e1b38e19d6"
+    },
+    "reports/v1.2/strict-region-validation/fold_054.json": {
+      "bytes": 7991,
+      "sha256": "ebf9c01d0205fb9bb0378de2d2a64f2a3a60be2a34be5779f895a67ff0f518b8"
+    },
+    "reports/v1.2/strict-region-validation/fold_055.json": {
+      "bytes": 7994,
+      "sha256": "009aa86e60282e54a5f49ee74a2de77932cd764375a4814f79cbedd51ecf6826"
+    },
+    "reports/v1.2/strict-region-validation/fold_056.json": {
+      "bytes": 7989,
+      "sha256": "c4301419ac204c2dc17e2b8990cb0ad36f98d798063c5d9caee6fb7dc688a836"
+    },
+    "reports/v1.2/strict-region-validation/fold_057.json": {
+      "bytes": 7328,
+      "sha256": "6e33dc18ab952727592a40ab24bccd3672822675230646d134c657120f9adadd"
+    },
+    "reports/v1.2/strict-region-validation/fold_058.json": {
+      "bytes": 7996,
+      "sha256": "e0b99abf78af0336af463260436f40347c59fcb01c31693ff55b628105fbf4ef"
+    },
+    "reports/v1.2/strict-region-validation/fold_059.json": {
+      "bytes": 7337,
+      "sha256": "690dccb93efc09a89f1f053abf5db630f873644cea7bac9bb3620a411c4b8837"
+    },
+    "reports/v1.2/strict-region-validation/fold_060.json": {
+      "bytes": 7334,
+      "sha256": "bb4e76e4e4f2a04f3dade71facfacb283955dc77de7ef19db454255f6b238e89"
+    },
+    "reports/v1.2/strict-region-validation/fold_061.json": {
+      "bytes": 7972,
+      "sha256": "aa976b7c5991a133d79240f6d7180a613a6f4c853f7ebfc02652b528801a4654"
+    },
+    "reports/v1.2/strict-region-validation/fold_062.json": {
+      "bytes": 7980,
+      "sha256": "6db0c08d905895b80e98ac93324f60f53a5994f6c45c3664d64d1bc0a4c25f03"
+    },
+    "reports/v1.2/strict-region-validation/fold_063.json": {
+      "bytes": 7970,
+      "sha256": "198f6ea8f01a9bc46bc5b871001ac380f1bc725f6ea54c36de7b6e7e13ded348"
+    },
+    "reports/v1.2/strict-region-validation/fold_064.json": {
+      "bytes": 7994,
+      "sha256": "adcb2a0822c9b5bf4312a5a7cab2bbfe3a37a4af8bb844ad264d07f261792ed5"
+    },
+    "reports/v1.2/strict-region-validation/fold_065.json": {
+      "bytes": 7325,
+      "sha256": "901a6f24eea83d1e0c914fd417678abb24ef89275123b8e40b4f32db7c92e7ac"
+    },
+    "reports/v1.2/strict-region-validation/fold_066.json": {
+      "bytes": 7978,
+      "sha256": "17e1057db3b326dfef779c1a6e901baad1a7aa2c00fc23963f2c04f88111f191"
+    },
+    "reports/v1.2/strict-region-validation/fold_067.json": {
+      "bytes": 8035,
+      "sha256": "f53f5bd10a5abcdb7c7d660071a8ee2a4cb0e01c84818f6ef9635e80aa1f4587"
+    },
+    "reports/v1.2/strict-region-validation/fold_068.json": {
+      "bytes": 7986,
+      "sha256": "dbf3bb32df55b9f4cd7df3d09b8387b3d3e3dfd01cf0f600039ba9b6df5eebc5"
+    },
+    "reports/v1.2/strict-region-validation/fold_069.json": {
+      "bytes": 7331,
+      "sha256": "3b6d621476eef4ef762d987bcb3ae167163c090bb47a5b7dbfdabd690b61013a"
+    },
+    "reports/v1.2/strict-region-validation/fold_070.json": {
+      "bytes": 7993,
+      "sha256": "df8fe9b5950385cf8893681a7340d77757df55102519138e450cb059f082e661"
+    },
+    "reports/v1.2/strict-region-validation/fold_071.json": {
+      "bytes": 8015,
+      "sha256": "3758a91ddda3750cd4f153671b3be7aeebc9df2bbb1e2deab89e881d007ab403"
+    },
+    "reports/v1.2/strict-region-validation/fold_072.json": {
+      "bytes": 7991,
+      "sha256": "1643b1a945a80832a16c36eaa8ffc221c0974cb1238260797f8acd7635c11cda"
+    },
+    "reports/v1.2/strict-region-validation/folds.csv": {
+      "bytes": 10306,
+      "sha256": "b0e418b8fe786c0e2ce8e7f87308db7c012cc05a826e4d3e9aed6b95411dc980"
+    },
+    "reports/v1.2/strict-region-validation/heldout_invariance.json": {
+      "bytes": 622,
+      "sha256": "fccd03951affd49df4307b650da15dc787aee6944c56d686d2dd290bb35c3a93"
+    },
+    "reports/v1.2/strict-region-validation/original_regression_only_metrics.csv": {
+      "bytes": 871,
+      "sha256": "2800efa8a394e64955a9c15913af519d96324e9974c82426b6e4bcd7ae2481a3"
+    },
+    "reports/v1.2/strict-region-validation/original_regression_only_predictions.csv": {
+      "bytes": 1291535,
+      "sha256": "29ad7fa37319475138e26756ca65c0bb52f805a533ea339187a0cdf5b8d15c1f"
+    },
+    "reports/v1.2/strict-region-validation/strict_assignments.csv": {
+      "bytes": 225790,
+      "sha256": "f7a2b37d4c273ec2bbc7835a141836f066b8331705e2cb86fa071b214430351e"
+    },
+    "reports/v1.2/strict-region-validation/strict_metrics.csv": {
+      "bytes": 1471,
+      "sha256": "d9c33ccc8624957579557dcee42ead12cd42880fda15bddce19423f92006ee9f"
+    },
+    "reports/v1.2/strict-region-validation/strict_predictions.csv": {
+      "bytes": 1794151,
+      "sha256": "4ff351f29368b17d55741d82cccac4a83756252436bb29109949e63824cfa90b"
+    },
+    "reports/v1.2/strict-region-validation/summary.json": {
+      "bytes": 10027,
+      "sha256": "3dd1a4744a76b2a05385ce1fe6781610eef66e7c69c684d06bff0b7d3e33c0b8"
+    },
+    "reports/v1.2/summary.json": {
+      "bytes": 82005,
+      "sha256": "672c504c770edfb86de617bf37bf8a2739ed79cf27ce1c549105019bf1a3a0e9"
+    },
+    "reports/v1.2/type_dynamics.csv": {
+      "bytes": 1605,
+      "sha256": "4beb69432cd18161f9a9b687925348fd1bbf01bf8c2efb0c7bfdf7057f75d2ff"
+    },
+    "reports/v1.2/type_intervals.csv": {
+      "bytes": 1258,
+      "sha256": "17224a9948d366b2f8903b19a95e63bbb5ac7c325026480d754f6f4d172d9c60"
+    },
+    "reports/v1.2/types.csv": {
+      "bytes": 5388,
+      "sha256": "b00b34525d5d8b5e18d8e544cf0969a3b3f9a925872ff59f6a83f951cf3a223c"
+    },
+    "reports/v1.2/wage_level_comparison.json": {
+      "bytes": 844,
+      "sha256": "a1da6c62f27191d8b9dc564401d23f5ee65d905a9cde2e25510fcd273af19405"
+    }
+  },
+  "retained_paths": [
+    "reports/README.md",
+    "reports/cluster-stability-2026-10-07/README.md",
+    "reports/cluster-stability-2026-10-07/clusters.csv",
+    "reports/cluster-stability-2026-10-07/summary.json",
+    "reports/competition-enhancement/competitors/official/task-and-weights.md",
+    "reports/competition-enhancement/interpretation/economic-findings.md",
+    "reports/competition-enhancement/seed-stability/README.md",
+    "reports/competition-enhancement/synthetic/executed-20261009/REPORT.md",
+    "reports/contest-v3/README.md",
+    "reports/contest-v3/execution_status.json",
+    "reports/contest-v3/municipal_map.json",
+    "reports/continuous-core-2026-10-06/README.md",
+    "reports/continuous-core-2026-10-06/continuous-core.json",
+    "reports/continuous-core-2026-10-06/legacy-core.json",
+    "reports/continuous-core-2026-10-06/research/economic_screen/scores.csv",
+    "reports/continuous-core-2026-10-06/research/spatial_stress/scores.csv",
+    "reports/dmon-plateau-2026-09-25/README.md",
+    "reports/dmon-plateau-2026-09-25/verification.json",
+    "reports/economic-generalization-2026-10-03/README.md",
+    "reports/experiments/2026-09-23-v2/validation/frozen_prototypes.json",
+    "reports/external-national-2026-10-03/README.md",
+    "reports/external-national-2026-10-03/cohort-2023.csv",
+    "reports/external-national-2026-10-03/source-audit.json",
+    "reports/external-round2/README.md",
+    "reports/external-v4/municipality_bridge.csv",
+    "reports/external-v4/results.json",
+    "reports/external/altai-2024/README.md",
+    "reports/external/altai-2024/metadata.json",
+    "reports/future-outcome-2026-10-04/README.md",
+    "reports/graphs/README.md",
+    "reports/graphs/road_2024_2016.npz",
+    "reports/icvi-2026-10-07/README.md",
+    "reports/icvi-2026-10-07/summary.json",
+    "reports/model-frontier-2026-10-03/README.md",
+    "reports/model-frontier-2026-10-03/annual-2024-application.json",
+    "reports/model-frontier-2026-10-03/constrained/screen.json",
+    "reports/model-frontier-2026-10-03/forward/results.json",
+    "reports/model-frontier-2026-10-03/forward/summary.json",
+    "reports/model-frontier-2026-10-03/geometry-axis-audit.json",
+    "reports/model-frontier-2026-10-03/models/verification.json",
+    "reports/model-frontier-2026-10-03/multiscale_cross_tabs.json",
+    "reports/model-frontier-2026-10-03/validation/validation.json",
+    "reports/review-2026-09-24/verification.json",
+    "reports/round2-2026-09-24/round2-20260924-dmon/metrics.json",
+    "reports/round2-2026-09-24/round2-20260924-dmon/summary.json",
+    "reports/round2-2026-09-24/round2-20260924-region_control/external_comparison.json",
+    "reports/round2-2026-09-24/round2-20260924-region_control/metrics.json",
+    "reports/round2-2026-09-24/round2-20260924-temporal_grid/temporal_summary.json",
+    "reports/round2-2026-09-24/round2-20260924-temporal_grid/transition_events.csv",
+    "reports/source_alignment.json",
+    "reports/source_manifest.json",
+    "reports/technical-core-2026-10-03/README.md",
+    "reports/technical-core-2026-10-03/frontier-review/metric-reference-audit.json",
+    "reports/technical-core-2026-10-03/joint-refinement/external_comparison.json",
+    "reports/technical-core-2026-10-03/joint-refinement/manifest.json",
+    "reports/technical-core-2026-10-03/kmeans-reproduction.json",
+    "reports/temporal-core-2026-10-03/README.md",
+    "reports/v1.2-added-value/README.md",
+    "reports/v1.2-added-value/calibration.csv",
+    "reports/v1.2-added-value/contrasts.csv",
+    "reports/v1.2-added-value/folds.csv",
+    "reports/v1.2-added-value/models.csv",
+    "reports/v1.2-added-value/predictions.csv",
+    "reports/v1.2-added-value/summary.json",
+    "reports/v1.2-added-value/windows-state-verification.json",
+    "reports/v1.2-method-ties/README.md",
+    "reports/v1.2-method-ties/draws.csv",
+    "reports/v1.2-method-ties/pairwise_icvi.csv",
+    "reports/v1.2-method-ties/summary.json",
+    "reports/v1.2-method-ties/win_frequency.csv",
+    "reports/v1.2/README.md",
+    "reports/v1.2/analogue_comparisons.csv",
+    "reports/v1.2/analogue_comparisons_diagnostic.csv",
+    "reports/v1.2/analogue_predictions.csv",
+    "reports/v1.2/analogues.csv",
+    "reports/v1.2/analogues_diagnostic.csv",
+    "reports/v1.2/feature_spaces.csv",
+    "reports/v1.2/findings_provenance.json",
+    "reports/v1.2/k_selection.csv",
+    "reports/v1.2/labels.csv",
+    "reports/v1.2/leave_one_region_out.csv",
+    "reports/v1.2/methods.csv",
+    "reports/v1.2/model.npz",
+    "reports/v1.2/monthly_network.csv",
+    "reports/v1.2/network_effects.csv",
+    "reports/v1.2/network_k_sensitivity.csv",
+    "reports/v1.2/networks.csv",
+    "reports/v1.2/persistent_changes.csv",
+    "reports/v1.2/provenance.json",
+    "reports/v1.2/reclustering_events.csv",
+    "reports/v1.2/strict-region-validation/folds.csv",
+    "reports/v1.2/strict-region-validation/heldout_invariance.json",
+    "reports/v1.2/strict-region-validation/original_regression_only_metrics.csv",
+    "reports/v1.2/strict-region-validation/original_regression_only_predictions.csv",
+    "reports/v1.2/strict-region-validation/strict_assignments.csv",
+    "reports/v1.2/strict-region-validation/strict_metrics.csv",
+    "reports/v1.2/strict-region-validation/strict_predictions.csv",
+    "reports/v1.2/strict-region-validation/summary.json",
+    "reports/v1.2/summary.json",
+    "reports/v1.2/type_dynamics.csv",
+    "reports/v1.2/type_intervals.csv",
+    "reports/v1.2/types.csv",
+    "reports/v1.2/wage_level_comparison.json"
+  ],
+  "archived_only_paths": [
+    "reports/cluster-stability-2026-10-07/draws.json",
+    "reports/cluster-stability-2026-10-07/entities.csv",
+    "reports/cluster-stability-2026-10-07/pair-frequency-histograms.csv",
+    "reports/competition-enhancement/competitors/official/rubric-official.md",
+    "reports/competition-enhancement/competitors/public-head-readme-receipt.json",
+    "reports/competition-enhancement/delivery/ACCESS_KIT.md",
+    "reports/competition-enhancement/delivery/AUDIT.md",
+    "reports/competition-enhancement/delivery/PERFORMANCE.md",
+    "reports/competition-enhancement/delivery/PROVENANCE.md",
+    "reports/competition-enhancement/delivery/anonymous-access.json",
+    "reports/competition-enhancement/delivery/archive-controls.json",
+    "reports/competition-enhancement/delivery/build_access_kit.py",
+    "reports/competition-enhancement/delivery/cleanup-new/AUDIT.md",
+    "reports/competition-enhancement/delivery/cleanup-new/applied.json",
+    "reports/competition-enhancement/delivery/cleanup-new/prepared-storage.json",
+    "reports/competition-enhancement/delivery/full-main-check/README.md",
+    "reports/competition-enhancement/delivery/full-main-check/files-sha256.json",
+    "reports/competition-enhancement/delivery/full-main-check/final/resources.jsonl",
+    "reports/competition-enhancement/delivery/full-main-check/final/run.log",
+    "reports/competition-enhancement/delivery/full-main-check/final/summary.json",
+    "reports/competition-enhancement/delivery/full-main-check/first/resources.jsonl",
+    "reports/competition-enhancement/delivery/full-main-check/first/run.log",
+    "reports/competition-enhancement/delivery/full-main-check/first/summary.json",
+    "reports/competition-enhancement/delivery/github-authorized-summary.json",
+    "reports/competition-enhancement/delivery/performance-arithmetic-check.json",
+    "reports/competition-enhancement/delivery/performance-new/ALGORITHM.md",
+    "reports/competition-enhancement/delivery/performance-new/PLAN.md",
+    "reports/competition-enhancement/delivery/performance-new/RESULT.md",
+    "reports/competition-enhancement/delivery/performance-new/accepted-sixNeighbors.js",
+    "reports/competition-enhancement/delivery/performance-new/baseline-functions.js",
+    "reports/competition-enhancement/delivery/performance-new/baseline-template.html",
+    "reports/competition-enhancement/delivery/performance-new/candidate-functions.js",
+    "reports/competition-enhancement/delivery/performance-new/command-result.json",
+    "reports/competition-enhancement/delivery/performance-new/integration-six.json",
+    "reports/competition-enhancement/delivery/performance-new/lead-decision.json",
+    "reports/competition-enhancement/delivery/performance-new/paired-raw.jsonl",
+    "reports/competition-enhancement/delivery/performance-new/plan.json",
+    "reports/competition-enhancement/delivery/performance-new/resource-summary.json",
+    "reports/competition-enhancement/delivery/performance-new/resources.jsonl",
+    "reports/competition-enhancement/delivery/performance-new/stderr.log",
+    "reports/competition-enhancement/delivery/performance-new/stdout.log",
+    "reports/competition-enhancement/delivery/performance-new/summary.json",
+    "reports/competition-enhancement/delivery/prior-decode.cjs",
+    "reports/competition-enhancement/delivery/prior-decode.log",
+    "reports/competition-enhancement/delivery/prior-performance.json",
+    "reports/competition-enhancement/delivery/recovery-verification.json",
+    "reports/competition-enhancement/delivery/source-controls.json",
+    "reports/competition-enhancement/delivery/tracked-manifest.json",
+    "reports/competition-enhancement/delivery/tree-audit.json",
+    "reports/competition-enhancement/economic_cases/analogue-preregistration.json",
+    "reports/competition-enhancement/economic_cases/analogue-split.csv",
+    "reports/competition-enhancement/economic_cases/analogue-test-bootstrap.csv",
+    "reports/competition-enhancement/economic_cases/analogue-test-by-region.csv",
+    "reports/competition-enhancement/economic_cases/analogue-test-leave-one-region-out.csv",
+    "reports/competition-enhancement/economic_cases/analogue-test-predictions.csv",
+    "reports/competition-enhancement/economic_cases/analogue-test-subsets.csv",
+    "reports/competition-enhancement/economic_cases/analogue-test-summary.json",
+    "reports/competition-enhancement/economic_cases/case-neighbors.csv",
+    "reports/competition-enhancement/economic_cases/case-values.csv",
+    "reports/competition-enhancement/economic_cases/comparison-function.json",
+    "reports/competition-enhancement/economic_cases/controlled-coverage.csv",
+    "reports/competition-enhancement/economic_cases/controlled-description.csv",
+    "reports/competition-enhancement/economic_cases/controlled-leave-one-region-out.csv",
+    "reports/competition-enhancement/economic_cases/identity-predictions.csv",
+    "reports/competition-enhancement/economic_cases/identity.json",
+    "reports/competition-enhancement/economic_cases/run-environment.json",
+    "reports/competition-enhancement/economic_cases/selected-cases.csv",
+    "reports/competition-enhancement/economic_cases/status.json",
+    "reports/competition-enhancement/four_russias/assignments.csv",
+    "reports/competition-enhancement/four_russias/contingency.csv",
+    "reports/competition-enhancement/four_russias/leave-one-region-out.csv",
+    "reports/competition-enhancement/four_russias/sensitivity.csv",
+    "reports/competition-enhancement/four_russias/source-and-limits.json",
+    "reports/competition-enhancement/four_russias/status.json",
+    "reports/competition-enhancement/interpretation/artifact-sha256.json",
+    "reports/competition-enhancement/interpretation/provenance/dependency-environment.json",
+    "reports/competition-enhancement/interpretation/provenance/execute-completed.json",
+    "reports/competition-enhancement/interpretation/provenance/execute-started.json",
+    "reports/competition-enhancement/interpretation/provenance/execute.log",
+    "reports/competition-enhancement/interpretation/provenance/monitor.jsonl",
+    "reports/competition-enhancement/interpretation/provenance/prepared.json",
+    "reports/competition-enhancement/interpretation/summary.json",
+    "reports/competition-enhancement/interpretation/verification.json",
+    "reports/competition-enhancement/kefrin/check_equations.py",
+    "reports/competition-enhancement/kefrin/checks-v1/checks.json",
+    "reports/competition-enhancement/kefrin/completed-scope.json",
+    "reports/competition-enhancement/manifest.json",
+    "reports/competition-enhancement/mirkin-input.csv",
+    "reports/competition-enhancement/mirkin-summary.csv",
+    "reports/competition-enhancement/mirkin/analysis-spec.json",
+    "reports/competition-enhancement/mirkin/bootstrap-intervals.csv",
+    "reports/competition-enhancement/mirkin/coverage-by-region.csv",
+    "reports/competition-enhancement/mirkin/coverage.csv",
+    "reports/competition-enhancement/mirkin/equal-region-weighting.csv",
+    "reports/competition-enhancement/mirkin/leave-one-region-out.csv",
+    "reports/competition-enhancement/mirkin/regional-descriptions.csv",
+    "reports/competition-enhancement/mirkin/source-and-units.json",
+    "reports/competition-enhancement/mirkin/stability.csv",
+    "reports/competition-enhancement/mirkin/status.json",
+    "reports/competition-enhancement/mirkin/thresholds.csv",
+    "reports/competition-enhancement/mobility/acquisition.json",
+    "reports/competition-enhancement/mobility/ambiguous.csv",
+    "reports/competition-enhancement/mobility/join-audit.csv",
+    "reports/competition-enhancement/mobility/registry-2024.csv",
+    "reports/competition-enhancement/mobility/source-names-2024.csv",
+    "reports/competition-enhancement/mobility/status.json",
+    "reports/competition-enhancement/mobility/unmatched.csv",
+    "reports/competition-enhancement/seed-stability/aligned_assignments.csv",
+    "reports/competition-enhancement/seed-stability/artifact_sha256.json",
+    "reports/competition-enhancement/seed-stability/assignments.csv",
+    "reports/competition-enhancement/seed-stability/features_2023.npy",
+    "reports/competition-enhancement/seed-stability/fits.json",
+    "reports/competition-enhancement/seed-stability/group_summary.csv",
+    "reports/competition-enhancement/seed-stability/input_state.json",
+    "reports/competition-enhancement/seed-stability/municipality_support.csv",
+    "reports/competition-enhancement/seed-stability/production_graph.npz",
+    "reports/competition-enhancement/seed-stability/provenance/historical-science-portable-resources.py",
+    "reports/competition-enhancement/seed-stability/provenance/historical-verify-seed-stability.py",
+    "reports/competition-enhancement/seed-stability/provenance/post-run-source-lineage.json",
+    "reports/competition-enhancement/seed-stability/registration.json",
+    "reports/competition-enhancement/seed-stability/resource-monitor.jsonl",
+    "reports/competition-enhancement/seed-stability/resources.json",
+    "reports/competition-enhancement/seed-stability/seed_metrics.csv",
+    "reports/competition-enhancement/seed-stability/summary.json",
+    "reports/competition-enhancement/seed-stability/timing.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/TABLES.md",
+    "reports/competition-enhancement/synthetic/executed-20261009/diagnostics/diagnostics.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/diagnostics/exact-fixtures.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/diagnostics/real-projection.csv",
+    "reports/competition-enhancement/synthetic/executed-20261009/diagnostics/resource-monitor.jsonl",
+    "reports/competition-enhancement/synthetic/executed-20261009/dynamic-means.csv",
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/environment.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/evaluation/checkpoint.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/evaluation/events.csv.gz",
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/evaluation/graph-diagnostics.csv",
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/evaluation/static-metrics.csv",
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/evaluation/temporal-metrics.csv.gz",
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/report/confidence-intervals.csv",
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/report/contrasts.csv",
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/report/mechanistic-comparisons.csv",
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/report/summary.csv.gz",
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/resource-monitor.jsonl",
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/result.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/selected.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/tune/checkpoint.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/tune/graph-diagnostics.csv",
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/tune/static-metrics.csv",
+    "reports/competition-enhancement/synthetic/executed-20261009/full-run/validation.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/manifest.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/primary-dynamic-means.csv",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/EXECUTION-DECISION.md",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/PLAN-original.md",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/PREREG-ADDENDUM.md",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/artifact-audit.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/design-original.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/diagnostics.stdout.txt",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/execution-decision.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/execution-ledger.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/full-run.stdout.txt",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/original-calibrate_timing.py",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/original-calibration-preregistration.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/original-launch_registered.py",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/packaging-resource-monitor.jsonl",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/preflight-after-full.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/preflight-before-full.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/preflight-initial.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/raw-manifest.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/registration.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/requirements-reproduction.txt",
+    "reports/competition-enhancement/synthetic/executed-20261009/provenance/timing-only-v1.stdout.txt",
+    "reports/competition-enhancement/synthetic/executed-20261009/raw-archive.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/static-ari-means.csv",
+    "reports/competition-enhancement/synthetic/executed-20261009/timing-only-v1/environment.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/timing-only-v1/resource-monitor.jsonl",
+    "reports/competition-enhancement/synthetic/executed-20261009/timing-only-v1/result.json",
+    "reports/competition-enhancement/synthetic/executed-20261009/timing-only-v1/timings.jsonl",
+    "reports/competition-enhancement/synthetic/registered-v1/PLAN-original.md",
+    "reports/competition-enhancement/synthetic/registered-v1/PREREG-ADDENDUM.md",
+    "reports/competition-enhancement/synthetic/registered-v1/design-original.json",
+    "reports/competition-enhancement/synthetic/registered-v1/registration.json",
+    "reports/contest-v3/descriptive.json",
+    "reports/contest-v3/evaluation_provenance.json",
+    "reports/contest-v3/published_partition_metrics.csv",
+    "reports/contest-v3/published_partition_metrics.json",
+    "reports/continuous-core-2026-10-06/FINAL_CHECKS.json",
+    "reports/continuous-core-2026-10-06/independent-review.json",
+    "reports/data_audit.json",
+    "reports/dmon-plateau-2026-09-25/comparison.json",
+    "reports/dmon-plateau-2026-09-25/dmon-plateau-20260925/metrics.json",
+    "reports/dmon-plateau-2026-09-25/dmon-plateau-20260925/summary.json",
+    "reports/dmon-plateau-2026-09-25/prefix_comparison.json",
+    "reports/economic-generalization-2026-10-03/acceptance/control-cohort-audit.json",
+    "reports/economic-generalization-2026-10-03/sectors/results.json",
+    "reports/experiments/2026-09-23-v2/README.md",
+    "reports/experiments/2026-09-23-v2/SHA256.json",
+    "reports/experiments/2026-09-23-v2/membership_stability.json",
+    "reports/experiments/2026-09-23-v2/screen_metrics.csv",
+    "reports/experiments/2026-09-23-v2/screen_metrics.json",
+    "reports/experiments/2026-09-23-v2/screen_partitions.csv.gz",
+    "reports/experiments/2026-09-23-v2/stability.csv",
+    "reports/experiments/2026-09-23-v2/summary.json",
+    "reports/experiments/2026-09-23-v2/validation/confirmation_metrics.json",
+    "reports/experiments/2026-09-23-v2/validation/confounding.json",
+    "reports/experiments/2026-09-23-v2/validation/external_market_access.json",
+    "reports/experiments/2026-09-23-v2/validation/monthly_assignments.csv",
+    "reports/experiments/2026-09-23-v2/validation/peer_validation.json",
+    "reports/experiments/2026-09-23/README.md",
+    "reports/external-national-2026-10-03/coverage-by-region-and-cluster.csv",
+    "reports/external-national-2026-10-03/join-audit-2023.csv.gz",
+    "reports/external-national-2026-10-03/join-audit-2024.csv.gz",
+    "reports/external-national-2026-10-03/manifest.json",
+    "reports/external/altai-2024/municipality_bridge.csv",
+    "reports/external/altai-2024/shipments_by_sector.csv",
+    "reports/external/altai-2024/tourism.csv",
+    "reports/future-outcome-2026-10-04/INPUT_CHECK.json",
+    "reports/future-outcome-2026-10-04/context/contract.json",
+    "reports/graph_preparation.json",
+    "reports/model-frontier-2026-10-03/current_source_sha256.json",
+    "reports/model-frontier-2026-10-03/denominator/comparisons.json",
+    "reports/model-frontier-2026-10-03/denominator/stress.json",
+    "reports/model-frontier-2026-10-03/lineage.json",
+    "reports/model-frontier-2026-10-03/protocol.json",
+    "reports/model-frontier-2026-10-03/screen/screen.json",
+    "reports/model-frontier-2026-10-03/source/scripts/verify_frontier_annual_application.py",
+    "reports/practical-cases-2026-10-07/analogue_screen.csv",
+    "reports/practical-cases-2026-10-07/cases.json",
+    "reports/practical-cases-2026-10-07/group_profiles.csv",
+    "reports/practical-cases-2026-10-07/provenance.json",
+    "reports/review-2026-09-24/README.md",
+    "reports/round2-2026-09-24/verification.json",
+    "reports/round2-cases/README.md",
+    "reports/round2-cases/abazinsky.json",
+    "reports/technical-acceptance-2026-10-04/DERIVED_EVIDENCE.json",
+    "reports/technical-acceptance-2026-10-04/FULL_SUITE_DERIVATION.json",
+    "reports/technical-acceptance-2026-10-04/FUTURE_MODULE_REVIEW.md",
+    "reports/technical-acceptance-2026-10-04/LOCAL_FIX_EVIDENCE.md",
+    "reports/technical-acceptance-2026-10-04/README.md",
+    "reports/technical-acceptance-2026-10-04/SUMMARY_RU.md",
+    "reports/technical-acceptance-2026-10-04/WHITESPACE_POLICY.json",
+    "reports/technical-acceptance-2026-10-04/acceptance.json",
+    "reports/technical-acceptance-2026-10-04/external-review-receipt.json",
+    "reports/technical-acceptance-2026-10-04/full-suite.json",
+    "reports/technical-acceptance-2026-10-04/full-tests.log",
+    "reports/technical-acceptance-2026-10-04/future-module-review.json",
+    "reports/technical-acceptance-2026-10-04/integrity-only.json",
+    "reports/technical-acceptance-2026-10-04/mq-closure.json",
+    "reports/technical-acceptance-2026-10-04/source-hash-correction.json",
+    "reports/technical-core-2026-10-03/acceptance.json",
+    "reports/technical-core-2026-10-03/dmon-inference-compatibility.json",
+    "reports/technical-core-2026-10-03/feature-compatibility.json",
+    "reports/technical-core-2026-10-03/joint-refinement/comparisons.json",
+    "reports/technical-core-2026-10-03/joint-refinement/labels.json",
+    "reports/technical-core-2026-10-03/joint-refinement/provenance.json",
+    "reports/technical-core-2026-10-03/tests.txt",
+    "reports/temporal-core-2026-10-03/paired-reference/assignments.csv",
+    "reports/v1.2-added-value/fold_state_diagnostics.csv",
+    "reports/v1.2/strict-region-validation/fold_000.json",
+    "reports/v1.2/strict-region-validation/fold_001.json",
+    "reports/v1.2/strict-region-validation/fold_002.json",
+    "reports/v1.2/strict-region-validation/fold_003.json",
+    "reports/v1.2/strict-region-validation/fold_004.json",
+    "reports/v1.2/strict-region-validation/fold_005.json",
+    "reports/v1.2/strict-region-validation/fold_006.json",
+    "reports/v1.2/strict-region-validation/fold_007.json",
+    "reports/v1.2/strict-region-validation/fold_008.json",
+    "reports/v1.2/strict-region-validation/fold_009.json",
+    "reports/v1.2/strict-region-validation/fold_010.json",
+    "reports/v1.2/strict-region-validation/fold_011.json",
+    "reports/v1.2/strict-region-validation/fold_012.json",
+    "reports/v1.2/strict-region-validation/fold_013.json",
+    "reports/v1.2/strict-region-validation/fold_014.json",
+    "reports/v1.2/strict-region-validation/fold_015.json",
+    "reports/v1.2/strict-region-validation/fold_016.json",
+    "reports/v1.2/strict-region-validation/fold_017.json",
+    "reports/v1.2/strict-region-validation/fold_018.json",
+    "reports/v1.2/strict-region-validation/fold_019.json",
+    "reports/v1.2/strict-region-validation/fold_020.json",
+    "reports/v1.2/strict-region-validation/fold_021.json",
+    "reports/v1.2/strict-region-validation/fold_022.json",
+    "reports/v1.2/strict-region-validation/fold_023.json",
+    "reports/v1.2/strict-region-validation/fold_024.json",
+    "reports/v1.2/strict-region-validation/fold_025.json",
+    "reports/v1.2/strict-region-validation/fold_026.json",
+    "reports/v1.2/strict-region-validation/fold_027.json",
+    "reports/v1.2/strict-region-validation/fold_028.json",
+    "reports/v1.2/strict-region-validation/fold_029.json",
+    "reports/v1.2/strict-region-validation/fold_030.json",
+    "reports/v1.2/strict-region-validation/fold_031.json",
+    "reports/v1.2/strict-region-validation/fold_032.json",
+    "reports/v1.2/strict-region-validation/fold_033.json",
+    "reports/v1.2/strict-region-validation/fold_034.json",
+    "reports/v1.2/strict-region-validation/fold_035.json",
+    "reports/v1.2/strict-region-validation/fold_036.json",
+    "reports/v1.2/strict-region-validation/fold_037.json",
+    "reports/v1.2/strict-region-validation/fold_038.json",
+    "reports/v1.2/strict-region-validation/fold_039.json",
+    "reports/v1.2/strict-region-validation/fold_040.json",
+    "reports/v1.2/strict-region-validation/fold_041.json",
+    "reports/v1.2/strict-region-validation/fold_042.json",
+    "reports/v1.2/strict-region-validation/fold_043.json",
+    "reports/v1.2/strict-region-validation/fold_044.json",
+    "reports/v1.2/strict-region-validation/fold_045.json",
+    "reports/v1.2/strict-region-validation/fold_046.json",
+    "reports/v1.2/strict-region-validation/fold_047.json",
+    "reports/v1.2/strict-region-validation/fold_048.json",
+    "reports/v1.2/strict-region-validation/fold_049.json",
+    "reports/v1.2/strict-region-validation/fold_050.json",
+    "reports/v1.2/strict-region-validation/fold_051.json",
+    "reports/v1.2/strict-region-validation/fold_052.json",
+    "reports/v1.2/strict-region-validation/fold_053.json",
+    "reports/v1.2/strict-region-validation/fold_054.json",
+    "reports/v1.2/strict-region-validation/fold_055.json",
+    "reports/v1.2/strict-region-validation/fold_056.json",
+    "reports/v1.2/strict-region-validation/fold_057.json",
+    "reports/v1.2/strict-region-validation/fold_058.json",
+    "reports/v1.2/strict-region-validation/fold_059.json",
+    "reports/v1.2/strict-region-validation/fold_060.json",
+    "reports/v1.2/strict-region-validation/fold_061.json",
+    "reports/v1.2/strict-region-validation/fold_062.json",
+    "reports/v1.2/strict-region-validation/fold_063.json",
+    "reports/v1.2/strict-region-validation/fold_064.json",
+    "reports/v1.2/strict-region-validation/fold_065.json",
+    "reports/v1.2/strict-region-validation/fold_066.json",
+    "reports/v1.2/strict-region-validation/fold_067.json",
+    "reports/v1.2/strict-region-validation/fold_068.json",
+    "reports/v1.2/strict-region-validation/fold_069.json",
+    "reports/v1.2/strict-region-validation/fold_070.json",
+    "reports/v1.2/strict-region-validation/fold_071.json",
+    "reports/v1.2/strict-region-validation/fold_072.json"
+  ],
+  "scope": "Every baseline report byte; no historical scientific result changed. New v4 outputs are separate."
+}

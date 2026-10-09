@@ -1,0 +1,391 @@
+{
+  "scope": "Existing uv PyPI metadata used during lock compilation; no network/download/install or wheel execution",
+  "python": "CPython3.10",
+  "targets": [
+    "Windowsx86_64",
+    "Linuxglibcx86_64"
+  ],
+  "status": "PASS_METADATA_COVERAGE",
+  "packages": [
+    {
+      "package": "et-xmlfile",
+      "version": "2.0.0",
+      "hash_count": 2,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "et_xmlfile-2.0.0-py3-none-any.whl",
+          "sha256": "7a91720bc756843502c3b7504c77b8fe44217c85c537d85037f0f536151b2caa",
+          "source_url": "https://files.pythonhosted.org/packages/c1/8b/5fe2cc11fee489817272089c4203e679c63b570a5aaeb18d852ae3cbba6a/et_xmlfile-2.0.0-py3-none-any.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "et_xmlfile-2.0.0-py3-none-any.whl",
+          "sha256": "7a91720bc756843502c3b7504c77b8fe44217c85c537d85037f0f536151b2caa",
+          "source_url": "https://files.pythonhosted.org/packages/c1/8b/5fe2cc11fee489817272089c4203e679c63b570a5aaeb18d852ae3cbba6a/et_xmlfile-2.0.0-py3-none-any.whl"
+        }
+      }
+    },
+    {
+      "package": "igraph",
+      "version": "0.11.8",
+      "hash_count": 39,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "igraph-0.11.8-cp39-abi3-win_amd64.whl",
+          "sha256": "248831a6162130f16909c1f776cc246b48f692339ea4baca489cad4ed8dc0e13",
+          "source_url": "https://files.pythonhosted.org/packages/b0/17/621d3a59430851a327421fdbec9ec8494d7fadaffc6dfdd42d4a95accbf2/igraph-0.11.8-cp39-abi3-win_amd64.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "igraph-0.11.8-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "e2e3abe641622cd9c95eb152c97caa22e68257a524cc1851a099b066f8f5c5f3",
+          "source_url": "https://files.pythonhosted.org/packages/90/61/ec7edb5233ec2dc3d2129d94211801fb46a1c2b9beec40989707c82271f7/igraph-0.11.8-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        }
+      }
+    },
+    {
+      "package": "joblib",
+      "version": "1.4.2",
+      "hash_count": 2,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "joblib-1.4.2-py3-none-any.whl",
+          "sha256": "06d478d5674cbc267e7496a410ee875abd68e4340feff4490bcb7afb88060ae6",
+          "source_url": "https://files.pythonhosted.org/packages/91/29/df4b9b42f2be0b623cbd5e2140cafcaa2bef0759a00b7b70104dcfe2fb51/joblib-1.4.2-py3-none-any.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "joblib-1.4.2-py3-none-any.whl",
+          "sha256": "06d478d5674cbc267e7496a410ee875abd68e4340feff4490bcb7afb88060ae6",
+          "source_url": "https://files.pythonhosted.org/packages/91/29/df4b9b42f2be0b623cbd5e2140cafcaa2bef0759a00b7b70104dcfe2fb51/joblib-1.4.2-py3-none-any.whl"
+        }
+      }
+    },
+    {
+      "package": "leidenalg",
+      "version": "0.10.2",
+      "hash_count": 34,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "leidenalg-0.10.2-cp38-abi3-win_amd64.whl",
+          "sha256": "4ec2940665fc59e71175fb445e25d11ef0ab7e26f4076b932571eec2e9d05857",
+          "source_url": "https://files.pythonhosted.org/packages/29/2f/f315fca13523f6b7520b810cce942348e37e8e5ea4c39e4eaaeb3541fee0/leidenalg-0.10.2-cp38-abi3-win_amd64.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "leidenalg-0.10.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "c3385462025acd6190ca5cb9df5b1dcf20995a048189a16a293dba2881f47cc0",
+          "source_url": "https://files.pythonhosted.org/packages/48/bb/28343e7f26cbacf355c754ef6be2f1efa8d6233b56a5be89c5bc8caca1d1/leidenalg-0.10.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        }
+      }
+    },
+    {
+      "package": "networkx",
+      "version": "3.4.2",
+      "hash_count": 2,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "networkx-3.4.2-py3-none-any.whl",
+          "sha256": "df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f",
+          "source_url": "https://files.pythonhosted.org/packages/b9/54/dd730b32ea14ea797530a4479b2ed46a6fb250f682a9cfb997e968bf0261/networkx-3.4.2-py3-none-any.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "networkx-3.4.2-py3-none-any.whl",
+          "sha256": "df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f",
+          "source_url": "https://files.pythonhosted.org/packages/b9/54/dd730b32ea14ea797530a4479b2ed46a6fb250f682a9cfb997e968bf0261/networkx-3.4.2-py3-none-any.whl"
+        }
+      }
+    },
+    {
+      "package": "numpy",
+      "version": "2.2.6",
+      "hash_count": 55,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "numpy-2.2.6-cp310-cp310-win_amd64.whl",
+          "sha256": "f0fd6321b839904e15c46e0d257fdd101dd7f530fe03fd6359c1ea63738703f3",
+          "source_url": "https://files.pythonhosted.org/packages/a3/dd/4b822569d6b96c39d1215dbae0582fd99954dcbcf0c1a13c61783feaca3f/numpy-2.2.6-cp310-cp310-win_amd64.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "fc7b73d02efb0e18c000e9ad8b83480dfcd5dfd11065997ed4c6747470ae8915",
+          "source_url": "https://files.pythonhosted.org/packages/b4/63/3de6a34ad7ad6646ac7d2f55ebc6ad439dbbf9c4370017c50cf403fb19b5/numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        }
+      }
+    },
+    {
+      "package": "openpyxl",
+      "version": "3.1.5",
+      "hash_count": 2,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "openpyxl-3.1.5-py2.py3-none-any.whl",
+          "sha256": "5282c12b107bffeef825f4617dc029afaf41d0ea60823bbb665ef3079dc79de2",
+          "source_url": "https://files.pythonhosted.org/packages/c0/da/977ded879c29cbd04de313843e76868e6e13408a94ed6b987245dc7c8506/openpyxl-3.1.5-py2.py3-none-any.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "openpyxl-3.1.5-py2.py3-none-any.whl",
+          "sha256": "5282c12b107bffeef825f4617dc029afaf41d0ea60823bbb665ef3079dc79de2",
+          "source_url": "https://files.pythonhosted.org/packages/c0/da/977ded879c29cbd04de313843e76868e6e13408a94ed6b987245dc7c8506/openpyxl-3.1.5-py2.py3-none-any.whl"
+        }
+      }
+    },
+    {
+      "package": "pandas",
+      "version": "2.2.3",
+      "hash_count": 42,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "pandas-2.2.3-cp310-cp310-win_amd64.whl",
+          "sha256": "56534ce0746a58afaf7942ba4863e0ef81c9c50d3f0ae93e9497d6a41a057645",
+          "source_url": "https://files.pythonhosted.org/packages/31/9e/6ebb433de864a6cd45716af52a4d7a8c3c9aaf3a98368e61db9e69e69a9c/pandas-2.2.3-cp310-cp310-win_amd64.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "pandas-2.2.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "86976a1c5b25ae3f8ccae3a5306e443569ee3c3faf444dfd0f41cda24667ad57",
+          "source_url": "https://files.pythonhosted.org/packages/44/50/7db2cd5e6373ae796f0ddad3675268c8d59fb6076e66f0c339d61cea886b/pandas-2.2.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        }
+      }
+    },
+    {
+      "package": "polars",
+      "version": "1.35.2",
+      "hash_count": 2,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "polars-1.35.2-py3-none-any.whl",
+          "sha256": "5e8057c8289ac148c793478323b726faea933d9776bd6b8a554b0ab7c03db87e",
+          "source_url": "https://files.pythonhosted.org/packages/b4/9a/24e4b890c7ee4358964aa92c4d1865df0e8831f7df6abaa3a39914521724/polars-1.35.2-py3-none-any.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "polars-1.35.2-py3-none-any.whl",
+          "sha256": "5e8057c8289ac148c793478323b726faea933d9776bd6b8a554b0ab7c03db87e",
+          "source_url": "https://files.pythonhosted.org/packages/b4/9a/24e4b890c7ee4358964aa92c4d1865df0e8831f7df6abaa3a39914521724/polars-1.35.2-py3-none-any.whl"
+        }
+      }
+    },
+    {
+      "package": "polars-runtime-32",
+      "version": "1.35.2",
+      "hash_count": 7,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "polars_runtime_32-1.35.2-cp39-abi3-win_amd64.whl",
+          "sha256": "ddc015fac39735592e2e7c834c02193ba4d257bb4c8c7478b9ebe440b0756b84",
+          "source_url": "https://files.pythonhosted.org/packages/dc/40/96a808ca5cc8707894e196315227f04a0c82136b7fb25570bc51ea33b88d/polars_runtime_32-1.35.2-cp39-abi3-win_amd64.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "polars_runtime_32-1.35.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "85dda0994b5dff7f456bb2f4bbd22be9a9e5c5e28670e23fedb13601ec99a46d",
+          "source_url": "https://files.pythonhosted.org/packages/e2/c8/fd9f48dd6b89ae9cff53d896b51d08579ef9c739e46ea87a647b376c8ca2/polars_runtime_32-1.35.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        }
+      }
+    },
+    {
+      "package": "psutil",
+      "version": "6.1.0",
+      "hash_count": 17,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "psutil-6.1.0-cp37-abi3-win_amd64.whl",
+          "sha256": "a8fb3752b491d246034fa4d279ff076501588ce8cbcdbb62c32fd7a377d996be",
+          "source_url": "https://files.pythonhosted.org/packages/11/91/87fa6f060e649b1e1a7b19a4f5869709fbf750b7c8c262ee776ec32f3028/psutil-6.1.0-cp37-abi3-win_amd64.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "psutil-6.1.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "498c6979f9c6637ebc3a73b3f87f9eb1ec24e1ce53a7c5173b8508981614a90b",
+          "source_url": "https://files.pythonhosted.org/packages/58/4d/8245e6f76a93c98aab285a43ea71ff1b171bcd90c9d238bf81f7021fb233/psutil-6.1.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        }
+      }
+    },
+    {
+      "package": "python-dateutil",
+      "version": "2.9.0.post0",
+      "hash_count": 2,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+          "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+          "source_url": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+          "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+          "source_url": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl"
+        }
+      }
+    },
+    {
+      "package": "pytz",
+      "version": "2024.2",
+      "hash_count": 2,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "pytz-2024.2-py2.py3-none-any.whl",
+          "sha256": "31c7c1817eb7fae7ca4b8c7ee50c72f93aa2dd863de768e1ef4245d426aa0725",
+          "source_url": "https://files.pythonhosted.org/packages/11/c3/005fcca25ce078d2cc29fd559379817424e94885510568bc1bc53d7d5846/pytz-2024.2-py2.py3-none-any.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "pytz-2024.2-py2.py3-none-any.whl",
+          "sha256": "31c7c1817eb7fae7ca4b8c7ee50c72f93aa2dd863de768e1ef4245d426aa0725",
+          "source_url": "https://files.pythonhosted.org/packages/11/c3/005fcca25ce078d2cc29fd559379817424e94885510568bc1bc53d7d5846/pytz-2024.2-py2.py3-none-any.whl"
+        }
+      }
+    },
+    {
+      "package": "ruptures",
+      "version": "1.1.10",
+      "hash_count": 26,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "ruptures-1.1.10-cp310-cp310-win_amd64.whl",
+          "sha256": "171fe4f61044a0520e1cd4e429f69242570939700aa4990b3401bf9a8d61aebe",
+          "source_url": "https://files.pythonhosted.org/packages/7e/d3/eb3fb911c23019ac6fdce873a959c63c344780a391ca55355c6fdb088912/ruptures-1.1.10-cp310-cp310-win_amd64.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "ruptures-1.1.10-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "e1a62f024d3714facca48e8859ba2602367af0c7ca1680cffded1cbff7cf264f",
+          "source_url": "https://files.pythonhosted.org/packages/48/8f/36bf50751f11a2b2e81b24b502fbc386c7ae2033a3faf3f7b4502dbdd7fd/ruptures-1.1.10-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl"
+        }
+      }
+    },
+    {
+      "package": "scikit-learn",
+      "version": "1.5.2",
+      "hash_count": 26,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "scikit_learn-1.5.2-cp310-cp310-win_amd64.whl",
+          "sha256": "c15b1ca23d7c5f33cc2cb0a0d6aaacf893792271cddff0edbd6a40e8319bc113",
+          "source_url": "https://files.pythonhosted.org/packages/48/76/154ebda6794faf0b0f3ccb1b5cd9a19f0a63cb9e1f3d2c61b6114002677b/scikit_learn-1.5.2-cp310-cp310-win_amd64.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "scikit_learn-1.5.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "3a686885a4b3818d9e62904d91b57fa757fc2bed3e465c8b177be652f4dd37c8",
+          "source_url": "https://files.pythonhosted.org/packages/4c/1e/a7c7357e704459c7d56a18df4a0bf08669442d1f8878cc0864beccd6306a/scikit_learn-1.5.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        }
+      }
+    },
+    {
+      "package": "scipy",
+      "version": "1.14.1",
+      "hash_count": 33,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "scipy-1.14.1-cp310-cp310-win_amd64.whl",
+          "sha256": "a49f6ed96f83966f576b33a44257d869756df6cf1ef4934f59dd58b25e0327e5",
+          "source_url": "https://files.pythonhosted.org/packages/e7/1c/8daa6df17a945cb1a2a1e3bae3c49643f7b3b94017ff01a4787064f03f84/scipy-1.14.1-cp310-cp310-win_amd64.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "scipy-1.14.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "8e32dced201274bf96899e6491d9ba3e9a5f6b336708656466ad0522d8528f69",
+          "source_url": "https://files.pythonhosted.org/packages/47/78/b0c2c23880dd1e99e938ad49ccfb011ae353758a2dc5ed7ee59baff684c3/scipy-1.14.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        }
+      }
+    },
+    {
+      "package": "six",
+      "version": "1.17.0",
+      "hash_count": 2,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "six-1.17.0-py2.py3-none-any.whl",
+          "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+          "source_url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "six-1.17.0-py2.py3-none-any.whl",
+          "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+          "source_url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl"
+        }
+      }
+    },
+    {
+      "package": "texttable",
+      "version": "1.7.0",
+      "hash_count": 2,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "texttable-1.7.0-py2.py3-none-any.whl",
+          "sha256": "72227d592c82b3d7f672731ae73e4d1f88cd8e2ef5b075a7a7f01a23a3743917",
+          "source_url": "https://files.pythonhosted.org/packages/24/99/4772b8e00a136f3e01236de33b0efda31ee7077203ba5967fcc76da94d65/texttable-1.7.0-py2.py3-none-any.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "texttable-1.7.0-py2.py3-none-any.whl",
+          "sha256": "72227d592c82b3d7f672731ae73e4d1f88cd8e2ef5b075a7a7f01a23a3743917",
+          "source_url": "https://files.pythonhosted.org/packages/24/99/4772b8e00a136f3e01236de33b0efda31ee7077203ba5967fcc76da94d65/texttable-1.7.0-py2.py3-none-any.whl"
+        }
+      }
+    },
+    {
+      "package": "threadpoolctl",
+      "version": "3.5.0",
+      "hash_count": 2,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "threadpoolctl-3.5.0-py3-none-any.whl",
+          "sha256": "56c1e26c150397e58c4926da8eeee87533b1e32bef131bd4bf6a2f45f3185467",
+          "source_url": "https://files.pythonhosted.org/packages/4b/2c/ffbf7a134b9ab11a67b0cf0726453cedd9c5043a4fe7a35d1cefa9a1bcfb/threadpoolctl-3.5.0-py3-none-any.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "threadpoolctl-3.5.0-py3-none-any.whl",
+          "sha256": "56c1e26c150397e58c4926da8eeee87533b1e32bef131bd4bf6a2f45f3185467",
+          "source_url": "https://files.pythonhosted.org/packages/4b/2c/ffbf7a134b9ab11a67b0cf0726453cedd9c5043a4fe7a35d1cefa9a1bcfb/threadpoolctl-3.5.0-py3-none-any.whl"
+        }
+      }
+    },
+    {
+      "package": "tzdata",
+      "version": "2024.2",
+      "hash_count": 2,
+      "coverage": {
+        "windows": {
+          "system": "windows",
+          "filename": "tzdata-2024.2-py2.py3-none-any.whl",
+          "sha256": "a48093786cdcde33cad18c2555e8532f34422074448fbc874186f0abd79565cd",
+          "source_url": "https://files.pythonhosted.org/packages/a6/ab/7e5f53c3b9d14972843a647d8d7a853969a58aecc7559cb3267302c94774/tzdata-2024.2-py2.py3-none-any.whl"
+        },
+        "linux": {
+          "system": "linux",
+          "filename": "tzdata-2024.2-py2.py3-none-any.whl",
+          "sha256": "a48093786cdcde33cad18c2555e8532f34422074448fbc874186f0abd79565cd",
+          "source_url": "https://files.pythonhosted.org/packages/a6/ab/7e5f53c3b9d14972843a647d8d7a853969a58aecc7559cb3267302c94774/tzdata-2024.2-py2.py3-none-any.whl"
+        }
+      }
+    }
+  ]
+}

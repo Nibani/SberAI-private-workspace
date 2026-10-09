@@ -1,0 +1,2 @@
+-r requirements.txt
+ruptures==1.1.10

@@ -1,0 +1,30 @@
+2026-10-09T15:47:49+00:00 Registration saved before fit: 1594 model IDs / 72 regions; 1492 outcome IDs.
+2026-10-09T15:47:49+00:00 Outer fold 1/5
+2026-10-09T15:47:50+00:00 Outer fold 2/5
+2026-10-09T15:47:51+00:00 Outer fold 3/5
+2026-10-09T15:47:52+00:00 Outer fold 4/5
+2026-10-09T15:47:52+00:00 Outer fold 5/5
+2026-10-09T15:47:54+00:00 Five outer folds completed; fitting the fixed full descriptive model.
+2026-10-09T15:47:55+00:00 Full model completed; running the 199 frozen null graphs and endpoint controls.
+2026-10-09T15:49:11+00:00 Fixed seed stability 1/10
+2026-10-09T15:49:11+00:00 Fixed seed stability 2/10
+2026-10-09T15:49:11+00:00 Fixed seed stability 3/10
+2026-10-09T15:49:11+00:00 Fixed seed stability 4/10
+2026-10-09T15:49:11+00:00 Fixed seed stability 5/10
+2026-10-09T15:49:11+00:00 Fixed seed stability 6/10
+2026-10-09T15:49:11+00:00 Fixed seed stability 7/10
+2026-10-09T15:49:11+00:00 Fixed seed stability 8/10
+2026-10-09T15:49:11+00:00 Fixed seed stability 9/10
+2026-10-09T15:49:11+00:00 Fixed seed stability 10/10
+2026-10-09T15:49:11+00:00 Leave-region stability: Республика Башкортостан
+2026-10-09T15:49:11+00:00 Leave-region stability: Санкт-Петербург
+2026-10-09T15:49:11+00:00 Leave-region stability: Свердловская область
+2026-10-09T15:49:12+00:00 Leave-region stability: Нижегородская область
+2026-10-09T15:49:12+00:00 Leave-region stability: Красноярский край
+2026-10-09T15:49:12+00:00 Leave-region stability: Московская область
+2026-10-09T15:49:12+00:00 Leave-region stability: Алтайский край
+2026-10-09T15:49:12+00:00 Leave-region stability: Республика Татарстан
+2026-10-09T15:49:12+00:00 Leave-region stability: Кировская область
+2026-10-09T15:49:12+00:00 Leave-region stability: Пермский край
+2026-10-09T15:49:12+00:00 Computing the six existing ICVI definitions and named TurboMQ.
+2026-10-09T15:49:30+00:00 All required operations completed; recording truthful promotion gates.

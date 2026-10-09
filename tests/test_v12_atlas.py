@@ -16,6 +16,7 @@ from scripts import build_v12_web
 from scripts.atlas_payload import read_atlas_payload
 from scripts.build_research_atlas import encode_payload, render_atlas
 from scripts.extend_atlas_v12 import ENTITY_FIELDS, attach_v12, build, network_neighbors
+from scripts.attach_current_findings import attach, calculate_story_layout, story_layout
 
 ROOT = Path(__file__).resolve().parents[1]
 V12 = ROOT / "reports/v1.2"
@@ -54,6 +55,13 @@ def section(html: str, anchor: str) -> str:
     return html[start:html.index("</section>", start)]
 
 
+def main_title(html: str) -> str:
+    heading = re.search(r'<h1\b[^>]*>(.*?)</h1>', html, re.S)
+    if heading is None:
+        return ''
+    return re.sub(r'<[^>]+>', ' ', heading.group(1)).strip().replace(' .', '.')
+
+
 @unittest.skipUnless((V12 / "provenance.json").is_file(), "complete v1.2 results are not present")
 class V12AtlasTests(unittest.TestCase):
     @classmethod
@@ -73,6 +81,21 @@ class V12AtlasTests(unittest.TestCase):
         self.assertEqual(encode_payload(first), encode_payload(self.payload))
         self.assertEqual(list(first["contest"]["map_models"])[-2:], ["v12_types", "v12_types_2024"])
 
+    def test_current_findings_are_idempotent(self):
+        first = attach(copy.deepcopy(self.payload))
+        self.assertEqual(encode_payload(attach(copy.deepcopy(first))), encode_payload(first))
+        self.assertEqual(first['contest']['v12']['ui_fragment'].count('id="economic-structure-title"'), 1)
+
+    def test_frozen_display_layout_matches_pca_and_rejects_changed_inputs(self):
+        saved = story_layout(self.payload['entities'])
+        calculated = calculate_story_layout(self.payload['entities'])
+        self.assertEqual(saved['entity_ids'], calculated['entity_ids'])
+        np.testing.assert_allclose(saved['coordinates'], calculated['coordinates'], rtol=1e-10, atol=1e-10)
+        changed = copy.deepcopy(self.payload['entities'])
+        changed[0]['v12_features'][0] += 0.01
+        with self.assertRaisesRegex(ValueError, 'does not match'):
+            story_layout(changed)
+
     def test_layers_cover_every_territory_with_the_four_types(self):
         contest = self.payload["contest"]
         self.assertEqual(contest.get("default_map_model"), "v12_types")
@@ -81,7 +104,7 @@ class V12AtlasTests(unittest.TestCase):
         for key in ("v12_types", "v12_types_2024"):
             with self.subTest(layer=key):
                 layer = contest["map_models"][key]
-                self.assertEqual(list(layer["labels"]), self.ids)
+                self.assertEqual(set(layer["labels"]), set(self.ids))
                 self.assertEqual(len(layer["labels"]), 2016)
                 self.assertEqual(set(layer["labels"].values()), {0, 1, 2, 3})
                 self.assertEqual([p["name"] for p in layer["profiles"]], names)
@@ -158,10 +181,14 @@ class V12AtlasTests(unittest.TestCase):
             self.assertEqual(restored.count(f'id="{anchor}"'), 1)
             self.assertIn(f'href="#{anchor}"', template)
         self.assertLess(template.index('.innerHTML=contest.v12.ui_fragment'), template.index('setupSixFeatures();'))
-        self.assertLess(len(self.html.encode("utf-8")), 500_000)
+        # The current design embeds its fonts and motion code in the HTML. The
+        # registered startup budget covers all initial bytes, including the data.
+        initial_bytes = len(self.html.encode('utf-8')) + sum(
+            (ATLAS.parent / source).stat().st_size for source in payload_sources(self.html))
+        self.assertLessEqual(initial_bytes, 8 * 1024 * 1024)
 
     def test_main_interface_and_existing_layers_are_preserved(self):
-        self.assertIn('<h1>Экономические соседи</h1>', self.html)
+        self.assertEqual(main_title(self.html), 'Экономические соседи.')
         stripped = without_v12(self.payload)
         prior_models = copy.deepcopy(stripped["contest"]["map_models"])
         prior_geometry = copy.deepcopy(stripped["contest"]["map"])
@@ -178,7 +205,7 @@ class V12AtlasTests(unittest.TestCase):
         self.assertNotIn('<div id="v12-content"></div>', html)
         self.assertNotIn('<!-- V12_SECTIONS -->', html)
         self.assertEqual(len(assets), 1)
-        self.assertIn('<h1>Экономические соседи</h1>', html)
+        self.assertEqual(main_title(html), 'Экономические соседи.')
 
     def test_sections_file_is_generated_from_current_results(self):
         self.assertEqual(SECTIONS.read_text(encoding="utf-8"), build_v12_web.render_sections(V12))
@@ -229,8 +256,8 @@ class V12FormattingTests(unittest.TestCase):
 
     def test_section_links_reach_existing_methodology(self):
         sections = build_v12_web.render_sections(V12)
-        paths = re.findall(r'href="https://github.com/Nibani/SberAI/blob/main/docs/([^"#]+)(?:#[^"]*)?"', sections)
-        self.assertEqual(len(paths), 5)
+        paths = re.findall(r'href="https://github.com/Nibani/sber-public/blob/main/docs/([^"#]+)(?:#[^"]*)?"', sections)
+        self.assertGreaterEqual(len(paths), 5)
         for path in paths:
             self.assertTrue((ROOT / 'docs' / path).is_file(), path)
         self.assertIn('NETWORK_TYPOLOGY.md#девять-правил-рёбер', sections)

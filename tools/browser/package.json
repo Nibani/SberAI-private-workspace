@@ -1,0 +1,7 @@
+{
+  "name": "sber-atlas-browser-checks",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Pinned browser runtime for local and CI atlas verification",
+  "dependencies": {"playwright": "1.62.1"}
+}

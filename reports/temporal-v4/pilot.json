@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETE",
+  "fixture_seed": 610090001,
+  "seconds": 2.0929999999934807,
+  "segmentations": 768,
+  "records": 24,
+  "purpose": "technical runtime/schema only; not selection or evaluation",
+  "estimated_primary_seconds": 334.8799999989569,
+  "code_sha256": {
+    "sbercluster/temporal_changes.py": "f914ca705494e9978b34d780ad19bb084de4d290d6a77e7dfb8f8b9fcaa3c9cc",
+    "scripts/benchmark_temporal_changes.py": "07e247692574ae7c45879d8ff3c3510dbf0ac47fa9b6ece14afb2b86793ffb0b",
+    "scripts/verify_temporal_changes.py": "19be85532e9cf1b80dc435b2f35afd09bc77670eaeca188139159895188e1ab0",
+    "tests/test_temporal_changes.py": "7eca4d23bf2eee5cea100e4412b5cd516582b3c903dfb735595ad6f5f7c13ff8",
+    "docs/TEMPORAL_CHANGES.md": "31ad988d8d61b044660d90ed85b9c5d0f99e3fc40b061353e58b76d7589690af",
+    "requirements-temporal.txt": "25c7d8d54632d288ebc6bd30c954586366d21e7f06e6a625728eb517c849d76a",
+    "configs/temporal_changes.json": "131f861b1730d7fb0aa1dd622003663935d7e5fdf2657b4083587b41651fb35d"
+  },
+  "deterministic_invariants": {
+    "status": "PASS",
+    "constant_final_features": true,
+    "exact_persistent_shift": true,
+    "raw_calendar_correction": true,
+    "common_shock_preserved_and_relative_removed": true,
+    "evaluation_calibration_isolation": true,
+    "projection_permutation_equivariance": true,
+    "invalid_input_explicit": true,
+    "numeric_tolerance": 1e-13
+  },
+  "max_seconds": 120.0,
+  "timeout_scope": "checked between twelve small cells; Python imports are outside this timer"
+}

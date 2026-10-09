@@ -22,6 +22,8 @@ import time
 import traceback
 import uuid
 
+from scripts.logical_storage import LogicalStorage
+
 ROOT = Path(__file__).resolve().parent
 THREAD_ENV = ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS",
               "NUMEXPR_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "POLARS_MAX_THREADS",
@@ -31,11 +33,13 @@ STORAGE_MANIFEST = "reports/external-national-2026-10-03/manifest.json"
 STORAGE_CONTROL = "reports/economic-generalization-2026-10-03/acceptance/control-cohort-audit.json"
 STORAGE_MANIFEST_SHA256 = "dc2c95cc0bcc41ec8f1c23c5cc18a0791d9b7371ecbb2a1a32cf4955f601f8f9"
 STORAGE_AUDITS = tuple(f"reports/external-national-2026-10-03/join-audit-{year}.csv" for year in (2023, 2024))
-RUNTIME_PHASES = frozenset(("findings", "added_value", "science_units", "atlas_units", "interpretation"))
+RUNTIME_PHASES = frozenset(("logical_storage", "delivery_integrity", "findings", "added_value", "method_ties", "science_units", "atlas_units", "interpretation", "synthetic", "seed_stability", "node_controls", "rebuild", "browser", "current_science"))
 RUNTIME_EXCLUDED = frozenset((".git", ".swarm", ".serena", ".local", "artifacts", "runs", ".venv", "venv"))
 SCIENCE_TESTS = ("test_v12_core", "test_v12_edges", "test_network_conventions",
                  "test_artifact_integrity", "test_v12_findings", "test_v12_results",
-                 "test_added_value")
+                 "test_added_value", "test_method_ties", "test_conditional_profiles",
+                 "test_temporal_changes", "test_logical_storage", "test_verify_delivery",
+                 "test_run_all.JuryRunnerTests") + (("test_run_all.WindowsRunnerTests",) if os.name == "nt" else ())
 ATLAS_TESTS = ("test_atlas_bundle", "test_v12_atlas", "test_render_saved_atlas",
                "test_practical_cases", "test_peer_atlas_coverage",
                "test_continuous_atlas", "test_research_atlas.ResearchAtlasUnitTests")
@@ -49,11 +53,12 @@ if result.skipped:
 sys.exit(0 if result.wasSuccessful() and not result.skipped else 1)
 """
 LIMITATIONS = [
-    "Node проверяет код и переключатели на поддельном DOM; реальный браузер, карта, обрезание текста и скорость сети не проверены.",
+    "Полный запуск включает настоящий Chromium на localhost; quick оставляет браузер и научное воспроизведение UNVERIFIED. Это не сертификация физического мобильного устройства.",
     "Повторяется фиксированный научный рецепт и его проверки; сохранённые сетки выбора модели и все исторические эксперименты не пересчитываются.",
     "Внешняя проверка повторно сверяется по сохранённым донорам, ошибкам, интервалам и хешам; она не становится независимым прогнозом будущего.",
     "Синтетический опыт проверяется по всем сохранённым строкам, контрастам и интервалам; полный повтор обучения запускается отдельно.",
     "Проверка относится к сохранённым данным 2023–2024; внешние исходы 2025 не загружаются.",
+    "Устойчивость выбора метода проверяется по всем 500 сохранённым draws и их арифметике; десять моделей и ICVI заново не обучаются.",
 ]
 
 
@@ -139,7 +144,8 @@ def provenance_inputs(root: Path):
             raise ValueError(f"Противоречие между сохранёнными SHA256: {relative}")
         hashes[relative] = digest
 
-    values = [json.loads(contained(root, p).read_text(encoding="utf-8")) for p in manifests]
+    storage = LogicalStorage(root)
+    values = [storage.read_json(p) for p in manifests]
     findings, summary, strict, added, panel = values
     for name, digest in findings["sha256"].items():
         add(name, digest)
@@ -168,13 +174,13 @@ def provenance_inputs(root: Path):
 
 def logical_storage_scope(root: Path):
     compressed = [name + ".gz" for name in STORAGE_AUDITS]
-    map_path = contained(root, STORAGE_MAP)
-    if not map_path.is_file():
-        if any(contained(root, name).exists() for name in compressed):
+    logical = LogicalStorage(root)
+    if not logical.exists(STORAGE_MAP):
+        if any(logical.exists(name) for name in compressed):
             raise ValueError("Сжатые join-audit присутствуют, но prepared-storage.json отсутствует")
         return {"status": "LEGACY_NOT_APPLICABLE", "files": [],
                 "scope": "Старый комплект: карты хранения и сжатых join-audit нет; logical-storage этап не требуется."}
-    storage = json.loads(map_path.read_text(encoding="utf-8")).get("compressed_storage")
+    storage = logical.read_json(STORAGE_MAP).get("compressed_storage")
     if not isinstance(storage, dict):
         raise ValueError("Карта prepared-storage.json не содержит compressed_storage")
     for name in STORAGE_AUDITS:
@@ -208,19 +214,31 @@ def snapshot_inputs(root: Path, expected: dict, manifests, guard=None, storage=N
         needed += [p.relative_to(root).as_posix() for p in (root / "reports/competition-enhancement" / result_folder).rglob("*")
                    if p.is_file() and "__pycache__" not in p.parts and p.suffix != ".pyc"]
     needed += ["reports/competition-enhancement/mirkin-input.csv", "reports/competition-enhancement/mirkin-summary.csv"]
+    logical = LogicalStorage(root)
+    needed += list(logical.members)
+    if logical.manifests:
+        needed += [*logical.physical_files(), "SCIENTIFIC-SHA256.json"]
+    if (root / "MANIFEST.json").is_file():
+        physical_manifest = logical.read_json("MANIFEST.json")
+        needed += ["MANIFEST.json", *physical_manifest["files"]]
     for name in sorted(set(needed) - observed.keys()):
-        observed[name] = fingerprint(contained(root, name), guard)
+        if guard:
+            guard.before_io()
+        observed[name] = hashlib.sha256(logical.read_bytes(name)).hexdigest()
     return observed
 
 
 def check_inputs(root: Path, expected: dict, guard=None):
     observed, problems = {}, []
+    logical = LogicalStorage(root)
     for relative, wanted in sorted(expected.items()):
         path = contained(root, relative)
-        if not path.is_file():
+        if not logical.exists(relative):
             problems.append(f"Нет нужного файла: {relative}")
             continue
-        observed[relative] = fingerprint(path, guard)
+        if guard:
+            guard.before_io()
+        observed[relative] = fingerprint(path, guard) if path.is_file() else hashlib.sha256(logical.read_bytes(relative)).hexdigest()
         if observed[relative] != wanted:
             problems.append(f"SHA256 не совпал: {relative}")
     if problems:
@@ -256,6 +274,7 @@ def prepare_runtime_copy(root: Path, output: Path, checked: dict, guard=None, ti
             budget.before_io()
             relative_dir = Path(directory).relative_to(root)
             directories[:] = sorted(name for name in directories if name != "__pycache__"
+                                    and name != "node_modules"
                                     and (relative_dir.parts or name not in RUNTIME_EXCLUDED)
                                     and (Path(directory) / name).resolve() != output.resolve())
             for name in directories + sorted(files):
@@ -293,6 +312,12 @@ def prepare_runtime_copy(root: Path, output: Path, checked: dict, guard=None, ti
                                      "source_attributes": getattr(original_stat, "st_file_attributes", None)}
                 if fingerprint(target, budget) != sha or (relative in checked and checked[relative] != sha):
                     raise ValueError(f"SHA256 рабочей копии не совпал: {relative}")
+        # Recreate historical logical paths only in this writable runtime.
+        logical = LogicalStorage(root)
+        restored = logical.materialize(destination)
+        for relative, record in restored.items():
+            if relative not in records:
+                records[relative] = dict(record, archived_source=True)
         missing = set(checked) - records.keys()
         if missing:
             raise ValueError("Рабочая копия пропустила проверенные входы: " + ", ".join(sorted(missing)))
@@ -311,6 +336,8 @@ def check_runtime_sources(root: Path, runtime: Path, records: dict, guard=None):
     check_inputs(root, {name: row["sha256"] for name, row in records.items()}, guard)
     check_inputs(runtime, {name: row["sha256"] for name, row in records.items()}, guard)
     for name, row in records.items():
+        if row.get("archived_source"):
+            continue
         current = contained(root, name).stat()
         if (current.st_mode != row["source_mode"] or
                 getattr(current, "st_file_attributes", None) != row["source_attributes"]):
@@ -457,11 +484,21 @@ class ResourceGuard:
         process.cpu_affinity([self.cpu])
         if os.name == "nt":
             process.nice(self.psutil.IDLE_PRIORITY_CLASS if idle else self.psutil.BELOW_NORMAL_PRIORITY_CLASS)
-            process.ionice(self.psutil.IOPRIO_VERYLOW if idle else self.psutil.IOPRIO_LOW)
+            self.configure_windows_io(process, self.psutil.IOPRIO_VERYLOW if idle else self.psutil.IOPRIO_LOW)
         else:
             process.nice(max(process.nice(), 19 if idle else 10))
             if hasattr(process, "ionice"):
                 process.ionice(self.psutil.IOPRIO_CLASS_IDLE if idle else self.psutil.IOPRIO_CLASS_BE, value=0 if idle else 7)
+
+    @staticmethod
+    def configure_windows_io(process, wanted):
+        # Chromium workers can already inherit the required (or stricter) limit.
+        # Rewriting it during process teardown can deny NtSetInformationProcess.
+        # A denied getter or necessary setter still fails mandatory configuration.
+        if int(process.ionice()) > int(wanted):
+            process.ionice(wanted)
+        if int(process.ionice()) > int(wanted):
+            raise RuntimeError(f"Windows worker IO priority not enforced (pid={process.pid})")
 
     def sample(self):
         if time.monotonic() >= self.next_sample:
@@ -518,6 +555,29 @@ class ResourceGuard:
             self.configure(self.psutil.Process(), idle=True)
             time.sleep(0.1)
 
+    def record_workers(self, tree, high):
+        for process in tree:
+            try:
+                self.stream.write(json.dumps({"event": "worker_limits", "time_utc": utc_now(),
+                    "pid": process.pid, "cpu_affinity": process.cpu_affinity(),
+                    "priority": process.nice(), "io_priority": str(process.ionice()),
+                    "os_threads": process.num_threads(), **self.worker_io(process),
+                    "throttled": high}) + "\n")
+            except self.psutil.NoSuchProcess:
+                pass
+        self.stream.flush()
+
+    def started(self, popen):
+        """Sample/configure the Windows worker while its initial thread is suspended."""
+        try:
+            parent = self.psutil.Process(popen.pid)
+            high = self.high()
+            self.configure(parent, idle=high)
+            self.record_workers([parent], high)
+            self.last_worker_sample = self.last.get("time_utc")
+        except self.psutil.NoSuchProcess:
+            pass
+
     def tick(self, popen):
         try:
             parent = self.psutil.Process(popen.pid)
@@ -531,16 +591,7 @@ class ResourceGuard:
                     pass
             if self.last.get("time_utc") != self.last_worker_sample:
                 self.last_worker_sample = self.last.get("time_utc")
-                for process in tree:
-                    try:
-                        self.stream.write(json.dumps({"event": "worker_limits", "time_utc": utc_now(),
-                            "pid": process.pid, "cpu_affinity": process.cpu_affinity(),
-                            "priority": process.nice(), "io_priority": str(process.ionice()),
-                            "os_threads": process.num_threads(), **self.worker_io(process),
-                            "throttled": high}) + "\n")
-                    except self.psutil.NoSuchProcess:
-                        pass
-                self.stream.flush()
+                self.record_workers(tree, high)
             if high:
                 paused = []
                 try:
@@ -583,8 +634,10 @@ def phases(root: Path, node: str, quick: bool, storage=None):
              "--expected-manifest-sha256", STORAGE_MANIFEST_SHA256, "--control-audit", STORAGE_CONTROL)))
     if not quick:
         result.extend([
+            Phase("delivery_integrity", "Все исторические байты и научные пины", (*py, "-m", "scripts.verify_delivery")),
             Phase("findings", "Научные выводы и все 73 исключаемых региона", (*py, "-m", "scripts.validate_v12_findings", "--check")),
             Phase("added_value", "Добавочная ценность групп: все регионы и исходные допуски", (*py, "-m", "scripts.check_added_value", "--check")),
+            Phase("method_ties", "Арифметика выбора метода по всем 500 сохранённым повторам", (*py, "-m", "scripts.verify_method_ties")),
             Phase("science_units", "Математика, научные таблицы и происхождение данных", (*py, "-c", UNIT_RUNNER, *SCIENCE_TESTS)),
         ])
     result.extend([
@@ -592,8 +645,14 @@ def phases(root: Path, node: str, quick: bool, storage=None):
         Phase("synthetic", "Синтетические режимы: все повторы, контрасты и интервалы", (*py, "-m", "scripts.verify_synthetic_results", "--check")),
         Phase("seed_stability", "Поддержка назначений в 20 повторах оптимизации на тех же данных", (*py, "-m", "scripts.verify_seed_stability")),
         Phase("atlas_units", "Пакет атласа, сохранённые входы и сценарии ошибок", (*py, "-c", UNIT_RUNNER, *(QUICK_TESTS if quick else ATLAS_TESTS))),
-        Phase("node_controls", "Переключатели основной и архивной модели в Node (поддельный DOM)", (node, str(root / "tests/browser/main_model_controls.cjs"), str(root))),
+        Phase("node_controls", "Переключатели основной и архивной модели в Node (поддельный DOM)", (node, "tests/browser/main_model_controls.cjs", ".")),
     ])
+    if not quick:
+        result.extend([
+            Phase("current_science", "Зарегистрированные проверки текущих научных результатов", (*py, "-m", "scripts.verify_current_results")),
+            Phase("rebuild", "Две точные пересборки сохранённого атласа", (*py, "-m", "scripts.verify_delivery", "--rebuild")),
+            Phase("browser", "Настоящий Chromium: функции, геометрия и локальный offline пакет", (*py, "-m", "scripts.check_browser_delivery", "--node", node)),
+        ])
     return result
 
 
@@ -634,13 +693,17 @@ class PhaseProcessGroup:
                 self.close()
                 raise ctypes.WinError(ctypes.get_last_error())
 
-    def attach(self, process):
+    def attach(self, process, before_resume=None):
         self.pid = process.pid
         if os.name == "nt":
             if not self.kernel.AssignProcessToJobObject(self.handle, wintypes.HANDLE(int(process._handle))):
                 raise ctypes.WinError(ctypes.get_last_error())
+            if before_resume:
+                before_resume(process)
             from sbercluster.resources import resume_initial_thread
             resume_initial_thread(process)
+        elif before_resume:
+            before_resume(process)
 
     def close(self):
         if self.handle is not None:
@@ -664,7 +727,7 @@ def run_phase(phase: Phase, root: Path, env: dict, log, guard, timeout: float, e
         process = subprocess.Popen(list(phase.argv), cwd=root, env=env, stdout=log,
                                    stderr=subprocess.STDOUT, shell=False, creationflags=flags,
                                    start_new_session=os.name != "nt")
-        group.attach(process)
+        group.attach(process, before_resume=getattr(guard, "started", None))
         heartbeat = started + 15
         while process.poll() is None:
             if time.monotonic() - started > timeout:
@@ -677,7 +740,7 @@ def run_phase(phase: Phase, root: Path, env: dict, log, guard, timeout: float, e
                 emit(f"    Выполняется {time.monotonic() - started:.0f} с; полный вывод сохраняется в run.log")
                 heartbeat = time.monotonic() + 15
         result = {"key": phase.key, "title": phase.title, "argv": list(phase.argv),
-                  "status": "PASS" if process.returncode == 0 else "FAIL",
+                  "status": "PASS" if process.returncode == 0 else ("UNVERIFIED" if process.returncode == 2 else "FAIL"),
                   "returncode": process.returncode, "seconds": round(time.monotonic() - started, 3)}
         if phase.key == "node_version" and process.returncode == 0:
             log.flush()
@@ -733,16 +796,21 @@ def execute(phases_to_run, root: Path, output: Path, env: dict, guard, summary: 
                 except Exception as error:
                     result.update(status="FAIL", runtime_source_integrity="FAIL", error=str(error))
             summary["phases"].append(result)
+            if uses_copy and phase.key == "browser":
+                browser_output = phase_root / "artifacts/browser-delivery"
+                if browser_output.is_dir():
+                    shutil.copytree(browser_output, output / "browser", dirs_exist_ok=True)
             emit(f"    {result['status']}, {result['seconds']:.1f} с" + (f": {result['error']}" if "error" in result else ""))
             save()
             if phase.key in ("node_version", "logical_storage") and result["status"] != "PASS":
                 break
             if result.get("runtime_source_integrity") == "FAIL":
                 break
-    failed = any(p["status"] != "PASS" for p in summary["phases"])
-    summary["status"] = "FAIL" if failed else ("UNVERIFIED" if summary["mode"] == "quick" else "PASS")
+    failed = any(p["status"] == "FAIL" for p in summary["phases"])
+    incomplete = summary["mode"] == "quick" or any(p["status"] == "UNVERIFIED" for p in summary["phases"])
+    summary["status"] = "FAIL" if failed else ("UNVERIFIED" if incomplete else "PASS")
     save()
-    return 1 if failed else (2 if summary["mode"] == "quick" else 0)
+    return 1 if failed else (2 if incomplete else 0)
 
 
 def output_directory(root: Path, selected: Path | None):
@@ -780,7 +848,11 @@ def main(argv=None):
 
     env.update(TMP=str(output / "tmp"), TEMP=str(output / "tmp"), TMPDIR=str(output / "tmp"),
                PYTHONPATH=os.pathsep.join((str(ROOT / "tests"), str(ROOT))))
+    env.setdefault("PLAYWRIGHT_PATH", str(ROOT / "tools/browser/node_modules/playwright"))
     summary = {"status": "RUNNING", "mode": "quick" if args.quick else "full",
+               "runner_platform_units": {"common": "test_run_all.JuryRunnerTests",
+                   "windows": "REQUIRED" if os.name == "nt" else "NOT_APPLICABLE",
+                   "windows_scope": "Windows read-only file attributes/copytree contract; applicable checks are never skipped"},
                "started_at_utc": utc_now(), "root": str(ROOT), "output": str(output),
                "phases": [], "limitations": LIMITATIONS,
                "resources": {"compute_threads": 1, "cpu_affinity_count": 1,
@@ -798,6 +870,7 @@ def main(argv=None):
         summary["environment"] = dependencies(args.quick)
         resource_log = (output / "resources.jsonl").open("w", encoding="utf-8")
         guard = ResourceGuard(resource_log, strict_gpu=args.strict_gpu_monitoring)
+        summary["legacy_archive"] = LogicalStorage(ROOT).verify()
         report("Проверка нужных файлов и SHA256 из сохранённого происхождения данных…")
         expected, manifests, historical = provenance_inputs(ROOT)
         summary["historical_provenance"] = historical

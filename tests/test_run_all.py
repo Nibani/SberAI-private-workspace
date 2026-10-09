@@ -27,7 +27,7 @@ class QuietGuard:
         pass
 
 
-class JuryRunnerTests(unittest.TestCase):
+class JuryRunnerFixture(unittest.TestCase):
     def setUp(self):
         self.directory = tempfile.TemporaryDirectory(prefix="jury runner spaces ")
         self.addCleanup(self.directory.cleanup)
@@ -48,6 +48,9 @@ class JuryRunnerTests(unittest.TestCase):
                               QuietGuard(), summary, self.messages.append, timeout)
         return code, json.loads((self.output / "summary.json").read_text(encoding="utf-8"))
 
+
+class JuryRunnerTests(JuryRunnerFixture):
+
     def test_success_aggregates_and_preserves_inputs_with_spaces(self):
         phases = [self.command("first", "print('first full output')"),
                   self.command("second", "print('second full output')")]
@@ -62,41 +65,6 @@ class JuryRunnerTests(unittest.TestCase):
         self.assertIn("first full output", log)
         self.assertIn("second full output", log)
         self.assertEqual(runner.check_inputs(self.root, self.expected), self.expected)
-
-    @unittest.skipUnless(os.name == "nt", "The observed read-only copytree failure is Windows-specific")
-    def test_runtime_readonly_copytree_can_overwrite_without_changing_claim(self):
-        report = self.root / "reports/v1.2/analogue_predictions.csv"
-        report.parent.mkdir(parents=True)
-        report.write_bytes(b"identical saved prediction\n")
-        report.chmod(stat.S_IREAD)
-        self.addCleanup(report.chmod, stat.S_IWRITE | stat.S_IREAD)
-        original = report.stat()
-        broken = self.output / "broken-copy"
-        shutil.copytree(report.parent, broken)
-        broken_file = broken / report.name
-        self.addCleanup(broken_file.chmod, stat.S_IWRITE | stat.S_IREAD)
-        with self.assertRaises(PermissionError):
-            broken_file.write_bytes(b"cannot overwrite the copied read-only file")
-        runtime = runner.prepare_runtime_copy(self.root, self.output, self.expected, QuietGuard())
-        code = ("import os,shutil; from pathlib import Path; "
-                "p=Path(os.environ['TMP'])/'fresh-scientific-output'; "
-                "shutil.copytree(Path('reports/v1.2'),p); "
-                "(p/'analogue_predictions.csv').write_bytes(b'recomputed harmless fixture')")
-        summary = {"mode": "full", "phases": []}
-        env = dict(runner.thread_environment(), TMP=str(self.output))
-        status = runner.execute([self.command("findings", code)], self.root, self.output,
-                                env, QuietGuard(), summary, self.messages.append, runtime=runtime)
-        self.assertEqual(status, 0)
-        self.assertEqual((self.output / "fresh-scientific-output" / report.name).read_bytes(),
-                         b"recomputed harmless fixture")
-        self.assertEqual(report.read_bytes(), b"identical saved prediction\n")
-        self.assertEqual(report.stat().st_mode, original.st_mode)
-        self.assertEqual(report.stat().st_file_attributes, original.st_file_attributes)
-        self.assertEqual(summary["phases"][0]["runtime_source_integrity"], "PASS")
-        journal = json.loads((self.output / "runtime-copy.json").read_text(encoding="utf-8"))
-        self.assertEqual(set(journal["files"]), {self.input.name, "reports/v1.2/analogue_predictions.csv"})
-        self.assertEqual(journal["files"]["reports/v1.2/analogue_predictions.csv"]["sha256"],
-                         hashlib.sha256(report.read_bytes()).hexdigest())
 
     def test_runtime_module_command_uses_identical_copy_and_its_pythonpath(self):
         scripts = self.root / "scripts"
@@ -512,6 +480,51 @@ class JuryRunnerTests(unittest.TestCase):
         self.assertIn("error", summary["phases"][0])
         self.assertIn("psutil.AccessDenied", (self.output / "run.log").read_text(encoding="utf-8"))
 
+    def test_verified_inherited_windows_io_limit_needs_no_setter(self):
+        import psutil
+        for actual in (0, 1):
+            with self.subTest(actual=actual):
+                calls = []
+                def ionice(*args):
+                    calls.append(args)
+                    if args:
+                        raise psutil.AccessDenied(pid=2130)
+                    return actual
+                worker = type("InheritedWorker", (), {"pid": 2130, "ionice": staticmethod(ionice)})()
+                runner.ResourceGuard.configure_windows_io(worker, 1)
+                self.assertEqual(calls, [(), ()])
+
+    def test_windows_io_getter_or_necessary_setter_denial_still_fails(self):
+        import psutil
+        for getter_denied in (False, True):
+            with self.subTest(getter_denied=getter_denied):
+                def ionice(*args):
+                    if args or getter_denied:
+                        raise psutil.AccessDenied(pid=2130)
+                    return 2
+                worker = type("DeniedWorker", (), {"pid": 2130, "ionice": staticmethod(ionice)})()
+                with self.assertRaises(psutil.AccessDenied):
+                    runner.ResourceGuard.configure_windows_io(worker, 1)
+
+    def test_windows_io_write_requires_matching_readback(self):
+        for applies in (False, True):
+            with self.subTest(applies=applies):
+                state = {"priority": 2, "writes": []}
+                def ionice(*args):
+                    if args:
+                        state["writes"].append(args[0])
+                        if applies:
+                            state["priority"] = args[0]
+                    return state["priority"]
+                worker = type("ReadbackWorker", (), {"pid": 2130, "ionice": staticmethod(ionice)})()
+                if applies:
+                    runner.ResourceGuard.configure_windows_io(worker, 0)
+                    self.assertEqual(state["priority"], 0)
+                else:
+                    with self.assertRaisesRegex(RuntimeError, "not enforced"):
+                        runner.ResourceGuard.configure_windows_io(worker, 0)
+                self.assertEqual(state["writes"], [0])
+
     def test_gpu_and_vram_pressure_use_the_same_guard_threshold(self):
         guard = object.__new__(runner.ResourceGuard)
         guard.strict_gpu = False
@@ -637,6 +650,43 @@ class JuryRunnerTests(unittest.TestCase):
         self.assertEqual(len(summary["phases"]), 1)
         self.assertEqual(summary["phases"][0]["returncode"], 7)
         self.assertFalse((self.root / "later-was-run").exists())
+
+
+class WindowsRunnerTests(JuryRunnerFixture):
+    @unittest.skipUnless(os.name == "nt", "The observed read-only copytree failure is Windows-specific")
+    def test_runtime_readonly_copytree_can_overwrite_without_changing_claim(self):
+        report = self.root / "reports/v1.2/analogue_predictions.csv"
+        report.parent.mkdir(parents=True)
+        report.write_bytes(b"identical saved prediction\n")
+        report.chmod(stat.S_IREAD)
+        self.addCleanup(report.chmod, stat.S_IWRITE | stat.S_IREAD)
+        original = report.stat()
+        broken = self.output / "broken-copy"
+        shutil.copytree(report.parent, broken)
+        broken_file = broken / report.name
+        self.addCleanup(broken_file.chmod, stat.S_IWRITE | stat.S_IREAD)
+        with self.assertRaises(PermissionError):
+            broken_file.write_bytes(b"cannot overwrite the copied read-only file")
+        runtime = runner.prepare_runtime_copy(self.root, self.output, self.expected, QuietGuard())
+        code = ("import os,shutil; from pathlib import Path; "
+                "p=Path(os.environ['TMP'])/'fresh-scientific-output'; "
+                "shutil.copytree(Path('reports/v1.2'),p); "
+                "(p/'analogue_predictions.csv').write_bytes(b'recomputed harmless fixture')")
+        summary = {"mode": "full", "phases": []}
+        env = dict(runner.thread_environment(), TMP=str(self.output))
+        status = runner.execute([self.command("findings", code)], self.root, self.output,
+                                env, QuietGuard(), summary, self.messages.append, runtime=runtime)
+        self.assertEqual(status, 0)
+        self.assertEqual((self.output / "fresh-scientific-output" / report.name).read_bytes(),
+                         b"recomputed harmless fixture")
+        self.assertEqual(report.read_bytes(), b"identical saved prediction\n")
+        self.assertEqual(report.stat().st_mode, original.st_mode)
+        self.assertEqual(report.stat().st_file_attributes, original.st_file_attributes)
+        self.assertEqual(summary["phases"][0]["runtime_source_integrity"], "PASS")
+        journal = json.loads((self.output / "runtime-copy.json").read_text(encoding="utf-8"))
+        self.assertEqual(set(journal["files"]), {self.input.name, "reports/v1.2/analogue_predictions.csv"})
+        self.assertEqual(journal["files"]["reports/v1.2/analogue_predictions.csv"]["sha256"],
+                         hashlib.sha256(report.read_bytes()).hexdigest())
 
 
 if __name__ == "__main__":

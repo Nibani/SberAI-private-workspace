@@ -195,7 +195,8 @@ def attach_v12(payload: dict, input_dir: Path | str) -> dict:
             hashes[f"{relative}/{wage.name}"] = hashlib.sha256(wage.read_bytes()).hexdigest()
         hashes[config["inputs"]["panel"]] = summary["inputs"]["panel"]["sha256"]
         contest["source_hashes"] = dict(sorted(hashes.items()))
-    return payload
+    from scripts.attach_current_findings import attach
+    return attach(payload)
 
 
 def remove_stale_assets(directory: Path, keep: set[str]) -> list[str]:

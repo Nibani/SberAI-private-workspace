@@ -1,0 +1,16 @@
+{
+  "attempts": [
+    {
+      "failed_attempt": "artifacts/conditional-v4-failed-001",
+      "failed_registration_sha256": "51c2f2f2506beadc5bb5d3b022d5e1b4866d0af91b2bf16d9a5608a4211961d8",
+      "old_runner_sha256": "ef2904682740181efdf908ec149c0f04f66a0eec1892852c9a8d6e63969ad832",
+      "error": "JSON export rejected numpy.bool_ in graph dyadic bound.valid",
+      "correction": "Convert numpy scalar to native JSON scalar; scientific formulas and parameters unchanged",
+      "scientific_parameters_changed": false,
+      "formulas_changed": false,
+      "entire_fixed_experiment_rerun": true
+    }
+  ],
+  "new_runner_sha256": "26a18dcac6e34590a24a653b51b1157c564a949644e612289ffec67867cb0d3e",
+  "old_and_new_config_sha256": "2b769a42e0a281cc315cbd41bb2e8227c0a7ef6ecbe46e325853e2328acbb21d"
+}

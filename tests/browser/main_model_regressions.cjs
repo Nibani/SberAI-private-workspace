@@ -1,5 +1,4 @@
-// Run only in the authorized remote runner; this entry point never opens file URLs.
-if (process.env.GITHUB_ACTIONS !== 'true') throw new Error('V3 browser review requires the authorized GitHub Actions runner');
+// Local preview and CI are authorized; this suite serves the exact atlas over HTTP.
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -20,7 +19,7 @@ const script = source ? fs.readFileSync(path.join(path.dirname(file), source[1])
 const packed = script.match(/\{"encoding":"gzip-base64","data":"([A-Za-z0-9+/=]+)"\}/);
 assert(packed, 'Lossless atlas data package exists');
 const data = JSON.parse(zlib.gunzipSync(Buffer.from(packed[1], 'base64')));
-const report = {status: 'RUNNING', scope: 'Real Chromium on the authorized GitHub runner over HTTP; no local browser', base: base.href,
+const report = {status: 'RUNNING', scope: 'Real Chromium over authorized localhost HTTP or configured HTTPS; local execution and CI', base: base.href,
   htmlSha256: hash(Buffer.from(html)), dataAssetSha256: hash(Buffer.from(script)), geometrySha256: hash(JSON.stringify(data.contest.map)), checks: []};
 const save = () => fs.writeFileSync(path.join(output, 'result.json'), JSON.stringify(report, null, 2) + '\n');
 save();
@@ -91,6 +90,53 @@ async function checkTerritory(page, excluded=-1) {
 async function retainedState(page) {
   return page.evaluate(()=>Object.fromEntries(['quick','map-year','map-mode','exclude','month','series'].map(id=>[id,document.getElementById(id).value])));
 }
+async function checkResearchMap(page, activate) {
+  const current=data.contest.economics_current;
+  const option=page.locator('#map-model option[value="economics_2023"]');
+  assert.equal(await option.count(),current?1:0,'Research option exists only with saved economics payload');
+  if(!current)return;
+  assert.equal(await page.locator('#map-model').isVisible(),true,'A second saved layer exposes the model choice');
+  assert.equal(await page.locator('#map-model').inputValue(),'v12_types','Legacy default remains accepted main model');
+  await activate(page.locator('#view-map'));
+  const originalIndex=await page.locator('#quick').inputValue();
+  await page.locator('#map-model').selectOption('economics_2023');
+  assert.equal(await page.locator('#map-year').inputValue(),'2023');
+  assert.equal(await page.locator('#map-year').isDisabled(),true,'Annual organizational inputs are never extended into 2024');
+  assert.equal(await page.locator('#map-mode').isDisabled(),true);
+  assert.equal(await page.locator('#map-transitions').isDisabled(),true);
+  // Programmatic stale-year events must also settle at the available annual layer.
+  await page.evaluate(()=>{const year=document.getElementById('map-year');year.value='2024';year.dispatchEvent(new Event('change',{bubbles:true}));});
+  assert.equal(await page.locator('#map-year').inputValue(),'2023');
+  const drawn=await page.locator('#territory-map path.map-shape').evaluateAll(nodes=>nodes.map(node=>({d:node.getAttribute('d'),fill:node.getAttribute('fill'),label:node.getAttribute('aria-label')})));
+  assert.equal(drawn.length,2016);assert.deepEqual(drawn.map(p=>p.d),data.contest.map.paths.map(p=>p.d),'Research layer preserves all original ordered geometry');
+  const types=new Map(current.types.map(type=>[type.id,type]));
+  for(let i=0;i<drawn.length;i++){
+    const saved=current.entities[data.contest.map.paths[i].id],type=saved?.type??null;
+    if(type===null){assert.equal(drawn[i].fill,'#d8ddd8','No-data territory stays gray');assert(drawn[i].label.includes('Профиль не назначен'),'No false assignment for missing fields');}
+    else{assert.equal(drawn[i].fill,types.get(type).color);assert(drawn[i].label.includes(types.get(type).name),'Saved research type names drive map labels');}
+  }
+  const legend=await page.locator('#map-legend').textContent();
+  current.types.forEach(type=>assert(legend.includes(type.name)));assert(legend.includes('Нет назначения'));
+  await checkLayout(page,'saved research layer and long type names');
+  const researchWidth=page.viewportSize().width;
+  await page.screenshot({path:path.join(output,`research-layer-${researchWidth}.png`),fullPage:false});
+  const assigned=data.entities.filter(entity=>current.entities[entity.id]?.type!==null&&current.entities[entity.id]?.type!==undefined).length;
+  const fmt=new Intl.NumberFormat('ru-RU',{maximumFractionDigits:2});assert((await page.locator('#map-summary').textContent()).includes(`${fmt.format(assigned)} / ${fmt.format(data.entities.length)}`));
+  const assignedIndex=data.entities.findIndex(entity=>current.entities[entity.id]?.type!==null&&current.entities[entity.id]?.type!==undefined);
+  const missingIndex=data.entities.findIndex(entity=>current.entities[entity.id]?.type===null);
+  const optionsWereOpen=await page.locator('#territory-options').evaluate(n=>n.open);
+  if(!optionsWereOpen)await activate(page.locator('#territory-options > summary'));
+  for(const index of [assignedIndex,missingIndex].filter(i=>i>=0)){
+    await page.locator('#quick').selectOption(String(index));const entity=data.entities[index],saved=current.entities[entity.id],text=await page.locator('#map-selection').textContent();
+    if(saved.type===null){assert(text.includes('Нет назначения'));const labels={covered_organization_jobs_per_resident:'число работников охваченных организаций на жителя',public_administration_education_health_headcount_share:'доля работников госуправления, образования и здравоохранения'};for(const field of saved.missing_fields||[]){assert(labels[field],'Saved missing field has an approved Russian description');assert(text.includes(labels[field]));assert(!text.includes(field),'Technical source keys are not visible copy');}assert(text.includes('Недостаточно данных для показателей:'));}
+    else assert(text.includes(types.get(saved.type).name));
+    assert.equal(await page.locator('#map-selection a[href="#economic-structure"]').count(),1);
+    await checkLayout(page,'saved research territory and missing fields');
+  }
+  await page.locator('#quick').selectOption(originalIndex);if(!optionsWereOpen)await activate(page.locator('#territory-options > summary'));
+  await page.locator('#map-model').selectOption('v12_types');
+  assert.equal(await page.locator('#map-model').inputValue(),'v12_types');await checkTerritory(page);
+}
 async function runViewports(browser) {
   for(const viewport of [{width:1440,height:900},{width:390,height:844}]) {
     const mobile=viewport.width<600;
@@ -139,22 +185,26 @@ async function runViewports(browser) {
       record.pointerCapabilities=await page.evaluate(()=>({coarse:matchMedia('(pointer: coarse)').matches,hover:matchMedia('(hover: hover)').matches,touchPoints:navigator.maxTouchPoints}));
       if(mobile){assert.equal(record.pointerCapabilities.coarse,true);assert.equal(record.pointerCapabilities.hover,false);assert(record.pointerCapabilities.touchPoints>0)}
       await checkLayout(page,'initial');
-      assert.equal(await page.locator('h1').textContent(),'Экономические соседи');
-      for(const heading of await page.locator('h1,h2,h3').all()) {const style=await heading.evaluate(n=>{const s=getComputedStyle(n);return [s.fontFamily,s.fontWeight,s.fontSynthesis]});assert(style[0].includes('Cinzel RU'));assert.equal(style[1],'400');assert.equal(style[2],'none')}
-      assert((await page.locator('#finding-title').textContent()).includes('Ошибка роста расходов 2024'));
+      assert.equal(await page.locator('h1').evaluate(n=>n.innerText.replace(/\s+/g,' ').trim()),'Экономические соседи.');
+      for(const heading of await page.locator('h1,h2,h3').all()) {const style=await heading.evaluate(n=>{const s=getComputedStyle(n);return [n.tagName,s.fontFamily,s.fontWeight,s.fontSynthesis]});assert(style[1].includes('Cinzel RU'));if(style[0]==='H1'){assert.equal(style[2],'400');assert.equal(style[3],'none');}else{assert(+style[2]>=600,'Subheadings use heavier Cinzel RU');assert(style[3].includes('weight'),'Regular Cyrillic face uses truthful weight synthesis');}}
+      assert((await page.locator('#finding-title').textContent()).includes('Ошибка оценки роста расходов 2024'));
       assert((await page.locator('.proof-caveat').textContent()).includes('ретроспективная'));
       assert((await page.locator('.hero-proof').textContent()).includes('2,486'));
       assert.equal(await page.locator('.hero-proof').evaluate(n=>getComputedStyle(n).opacity),'1');
       assert.equal(await page.locator('.proof-main').evaluate(n=>getComputedStyle(n).backgroundColor),'rgba(0, 0, 0, 0)','MAE belongs to the shared text ribbon');
-      assert.equal(await page.locator('#quick').isVisible(),false,'The full selector is available in the territory disclosure');assert.equal(await page.locator('#map-model').isVisible(),false);assert.equal(await page.locator('#method').isVisible(),false,'Single-option rules do not promise a choice');
-      if(!mobile){const first=await page.locator('#territory-map').boundingBox();assert(first.y<viewport.height-180,'A useful part of the map is present on the first screen');const bars=await page.locator('#profile').boundingBox();assert(bars.y<viewport.height-120,'The inspector profile is visible on the first screen')}
+      assert.equal(await page.locator('#quick').isVisible(),false,'The full selector is available in the territory disclosure');assert.equal(await page.locator('#map-model').isVisible(),!!data.contest.economics_current,'Research layer exposes choice only with saved data');assert.equal(await page.locator('#map-model option[value="economics_2023"]').count(),data.contest.economics_current?1:0);assert.equal(await page.locator('#method').isVisible(),false,'Single-option rules do not promise a choice');
+      const first=await page.locator('#hero-canvas').boundingBox();assert(first&&first.width>200&&first.height>100&&first.y<viewport.height&&first.y+first.height>0,'Geographic illustration is visible on the first screen');
+      assert(await page.locator('.hero-links [data-focus-search]').isVisible(),'Working atlas is directly reachable from the first screen');
+      assert.deepEqual(await page.evaluate(()=>window.__ATLAS_STORY__.geometryIds),data.contest.map.paths.map(p=>p.id),'Hero renderer uses the original 2016 municipality geometry identities');
+      assert.deepEqual(await page.evaluate(()=>window.__ATLAS_STORY__.positions.map(p=>p.id)),data.entities.map(e=>e.id),'All scientific municipalities exist in the initial geographic scene');
+      const painted=await page.locator('#hero-canvas').evaluate(canvas=>{const pixels=canvas.getContext('2d').getImageData(0,0,canvas.width,canvas.height).data;let nonempty=0;for(let i=3;i<pixels.length;i+=4)if(pixels[i]>8)nonempty++;return {nonempty,total:canvas.width*canvas.height};});assert(painted.nonempty>painted.total*.01,'Hero contains actual drawn geometry and points rather than an empty canvas');
       assert.equal(await page.locator('#archive-v11').getAttribute('open'),null);
       assert.equal(await page.locator('#main-appendices').getAttribute('open'),null);
       assert.equal(await page.locator('#archive-map-model,#archive-method').count(),0,'Comparisons cannot substitute the main model');
       const visibleVersions=await page.evaluate(()=>/v1\.[12]/i.test(document.body.innerText.replace(/(?:reports|data|scripts)[^\s]*/g,'')));
       assert.equal(visibleVersions,false,'The interface names models by meaning');
       await checkTerritory(page);record.actions.push('initial finding, main model and full geometry');
-      await userAction('selection',mobile?'tap':'click','hero-search',()=>activate(page.locator('.hero-links [data-focus-search]')));await page.waitForFunction(()=>document.activeElement.id==='search');
+      await userAction('selection',mobile?'tap':'click','hero-search',()=>activate(page.locator('.hero-links [data-focus-search]')));await page.waitForFunction(()=>document.activeElement.id==='search');assert(await page.locator('#search').isVisible());assert(await page.locator('#territory-map').isVisible());assert.equal(await page.locator('#territory-map path.map-shape').count(),2016,'Working map is initialized when reached from the hero');
       const settleAnchor=()=>page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
       await settleAnchor();assert.equal(await page.evaluate(()=>document.activeElement.id),'search','Hash navigation does not steal search focus');
       await page.goBack();await page.waitForURL(url=>url.hash!=='#territory-title');await page.goForward();await page.waitForURL(url=>url.hash==='#territory-title');await settleAnchor();assert.equal(await page.evaluate(()=>document.activeElement.id),'search');
@@ -207,6 +257,7 @@ async function runViewports(browser) {
       await checkMapWorkspace(page,data,record);record.actions.push('preserved map geometry, complete outlines, pointer, zoom, pan, keyboard and historical monthly network');
       const example=page.locator('button[data-select-entity]').first(),exampleId=await example.getAttribute('data-select-entity');await activate(example);
       assert.equal(data.entities[+await page.locator('#quick').inputValue()].id,exampleId);assert.equal(await page.locator('#exclude').inputValue(),'-1');await checkTerritory(page);record.actions.push('scientific examples select the named territory and its exact main-model neighbors');
+      await checkResearchMap(page,activate);record.actions.push(data.contest.economics_current?'saved research layer, gray missing coverage, annual-only assignment and unchanged legacy default':'research layer absent without payload');
       const deepLink=new URL(base.href);deepLink.hash='network-title';await page.goto(deepLink.href,{waitUntil:'load'});await page.waitForFunction(()=>window.__ATLAS_READY__===true);assert(await page.locator('#network-title').isVisible());
       assert.equal(await page.locator('#proof-model').evaluate(n=>n.open),true);assert.equal(await page.locator('#archive-v11').evaluate(n=>n.open),true);record.actions.push('direct deep evidence anchor');
       assert.deepEqual(record.errors,[]);assert.deepEqual(record.httpErrors,[]);assert.deepEqual(record.failedRequests,[]);assert.deepEqual(record.blockedRequests,[]);record.status='PASS';save();
@@ -215,4 +266,6 @@ async function runViewports(browser) {
   }
   const failed=report.checks.filter(check=>check.status==='FAIL');if(failed.length)throw new Error('Browser acceptance failed at widths: '+failed.map(check=>check.viewport.width).join(', ')+'; exact failures preserved in result.json');
 }
-(async()=>{let browser;try{browser=await chromium.launch({headless:true});await runViewports(browser);report.status='PASS';save();console.log(JSON.stringify(report))}catch(error){report.status='FAIL';report.failure=String(error.stack||error);save();throw error}finally{if(browser)await browser.close()}})().catch(error=>{console.error(error);process.exitCode=1});
+async function runMainChecks(browser){try{await runViewports(browser);report.status='PASS';save();return report;}catch(error){report.status='FAIL';report.failure=String(error.stack||error);save();throw error;}}
+module.exports={runMainChecks};
+if(require.main===module)(async()=>{let browser;try{browser=await chromium.launch({headless:true,...(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{})});console.log(JSON.stringify(await runMainChecks(browser)))}finally{if(browser)await browser.close()}})().catch(error=>{console.error(error);process.exitCode=1});

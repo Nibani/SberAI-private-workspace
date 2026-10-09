@@ -9,6 +9,8 @@
 /web/index.html
 /.local/
 *.zip
+!/archive/legacy-evidence.zip
+!/archive/temporal-v4-details.zip
 __pycache__/
 *.pyc
 .pytest_cache/
@@ -16,6 +18,8 @@ __pycache__/
 .env
 
 /node_modules/
+/tools/browser/node_modules/
+/.serena/
 
 /.prepare.lock
 /.prepare-*/

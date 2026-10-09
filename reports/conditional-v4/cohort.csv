@@ -1,0 +1,2017 @@
+entity_id,region,model_eligible,outcome_eligible,missing_labor_fields,missing_or_nonpositive_wage23,missing_or_nonpositive_wage24,missing_or_nonpositive_population23,registration_changes
+tid_1,Республика Адыгея,True,True,[],False,False,False,{}
+tid_10,Республика Алтай,True,True,[],False,False,False,{}
+tid_1001,Владимирская область,True,True,[],False,False,False,{}
+tid_1002,Владимирская область,True,True,[],False,False,False,{}
+tid_1003,Владимирская область,True,True,[],False,False,False,{}
+tid_1004,Владимирская область,True,True,[],False,False,False,{}
+tid_1005,Владимирская область,True,True,[],False,False,False,{}
+tid_1006,Владимирская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1007,Волгоградская область,True,True,[],False,False,False,{}
+tid_1008,Волгоградская область,True,True,[],False,False,False,{}
+tid_1009,Волгоградская область,True,True,[],False,False,False,{}
+tid_1010,Волгоградская область,True,True,[],False,False,False,{}
+tid_1011,Волгоградская область,True,True,[],False,False,False,{}
+tid_1012,Волгоградская область,True,True,[],False,False,False,{}
+tid_1013,Волгоградская область,True,True,[],False,False,False,{}
+tid_1014,Волгоградская область,True,True,[],False,False,False,{}
+tid_1015,Волгоградская область,True,True,[],False,False,False,{}
+tid_1016,Волгоградская область,True,True,[],False,False,False,{}
+tid_1017,Волгоградская область,True,True,[],False,False,False,{}
+tid_1018,Волгоградская область,True,True,[],False,False,False,{}
+tid_1019,Волгоградская область,True,True,[],False,False,False,{}
+tid_1020,Волгоградская область,True,True,[],False,False,False,{}
+tid_1021,Волгоградская область,True,True,[],False,False,False,{}
+tid_1023,Волгоградская область,True,True,[],False,False,False,{}
+tid_1024,Волгоградская область,True,True,[],False,False,False,{}
+tid_1025,Волгоградская область,True,True,[],False,False,False,{}
+tid_1026,Волгоградская область,True,True,[],False,False,False,{}
+tid_1027,Волгоградская область,True,True,[],False,False,False,{}
+tid_1028,Волгоградская область,True,True,[],False,False,False,{}
+tid_1029,Волгоградская область,True,True,[],False,False,False,{}
+tid_1030,Волгоградская область,True,True,[],False,False,False,{}
+tid_1031,Волгоградская область,True,True,[],False,False,False,{}
+tid_1032,Волгоградская область,True,True,[],False,False,False,{}
+tid_1033,Волгоградская область,True,True,[],False,False,False,{}
+tid_1034,Волгоградская область,True,True,[],False,False,False,{}
+tid_1035,Волгоградская область,True,True,[],False,False,False,{}
+tid_1036,Волгоградская область,True,True,[],False,False,False,{}
+tid_1037,Волгоградская область,True,True,[],False,False,False,{}
+tid_1038,Волгоградская область,True,True,[],False,False,False,{}
+tid_1039,Волгоградская область,True,True,[],False,False,False,{}
+tid_1040,Волгоградская область,True,True,[],False,False,False,{}
+tid_1041,Волгоградская область,True,True,[],False,False,False,{}
+tid_1044,Волгоградская область,True,True,[],False,False,False,{}
+tid_1047,Вологодская область,True,True,[],False,False,False,{}
+tid_1048,Вологодская область,True,True,[],False,False,False,{}
+tid_1049,Вологодская область,True,True,[],False,False,False,{}
+tid_1051,Вологодская область,True,True,[],False,False,False,{}
+tid_1052,Вологодская область,True,True,[],False,False,False,{}
+tid_1053,Вологодская область,True,True,[],False,False,False,{}
+tid_1054,Вологодская область,True,True,[],False,False,False,{}
+tid_1055,Вологодская область,True,True,[],False,False,False,{}
+tid_1056,Вологодская область,True,True,[],False,False,False,{}
+tid_1057,Вологодская область,True,True,[],False,False,False,{}
+tid_1058,Вологодская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1059,Вологодская область,True,True,[],False,False,False,{}
+tid_1060,Вологодская область,True,True,[],False,False,False,{}
+tid_1061,Вологодская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1062,Вологодская область,True,True,[],False,False,False,{}
+tid_1063,Вологодская область,True,True,[],False,False,False,{}
+tid_1064,Вологодская область,True,True,[],False,False,False,{}
+tid_1065,Вологодская область,True,True,[],False,False,False,{}
+tid_1066,Вологодская область,True,True,[],False,False,False,{}
+tid_1067,Вологодская область,True,True,[],False,False,False,{}
+tid_1068,Вологодская область,True,True,[],False,False,False,{}
+tid_1069,Вологодская область,True,True,[],False,False,False,{}
+tid_1070,Вологодская область,True,True,[],False,False,False,{}
+tid_1071,Вологодская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1072,Вологодская область,True,True,[],False,False,False,{}
+tid_11,Республика Алтай,True,True,[],False,False,False,{}
+tid_1107,Ивановская область,True,True,[],False,False,False,{}
+tid_1108,Ивановская область,True,True,[],False,False,False,{}
+tid_1109,Ивановская область,True,True,[],False,False,False,{}
+tid_1110,Ивановская область,True,True,[],False,False,False,{}
+tid_1111,Ивановская область,True,True,[],False,False,False,{}
+tid_1112,Ивановская область,True,True,[],False,False,False,{}
+tid_1113,Ивановская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1115,Ивановская область,True,True,[],False,False,False,{}
+tid_1116,Ивановская область,True,True,[],False,False,False,{}
+tid_1117,Ивановская область,True,True,[],False,False,False,{}
+tid_1118,Ивановская область,True,True,[],False,False,False,{}
+tid_1119,Ивановская область,True,True,[],False,False,False,{}
+tid_1120,Ивановская область,True,True,[],False,False,False,{}
+tid_1121,Ивановская область,True,True,[],False,False,False,{}
+tid_1122,Ивановская область,True,True,[],False,False,False,{}
+tid_1123,Ивановская область,True,True,[],False,False,False,{}
+tid_1124,Ивановская область,True,True,[],False,False,False,{}
+tid_1125,Ивановская область,True,True,[],False,False,False,{}
+tid_1126,Ивановская область,True,True,[],False,False,False,{}
+tid_1127,Ивановская область,True,True,[],False,False,False,{}
+tid_1128,Ивановская область,True,True,[],False,False,False,{}
+tid_1129,Ивановская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1130,Ивановская область,True,True,[],False,False,False,{}
+tid_1131,Ивановская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1132,Ивановская область,True,True,[],False,False,False,{}
+tid_1133,Ивановская область,True,True,[],False,False,False,{}
+tid_1134,Иркутская область,True,True,[],False,False,False,{}
+tid_1135,Иркутская область,True,True,[],False,False,False,{}
+tid_1136,Иркутская область,True,True,[],False,False,False,{}
+tid_1137,Иркутская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_1138,Иркутская область,True,True,[],False,False,False,{}
+tid_1139,Иркутская область,True,True,[],False,False,False,{}
+tid_1140,Иркутская область,True,True,[],False,False,False,{}
+tid_1141,Иркутская область,True,True,[],False,False,False,{}
+tid_1142,Иркутская область,True,True,[],False,False,False,{}
+tid_1143,Иркутская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1144,Иркутская область,True,True,[],False,False,False,{}
+tid_1146,Иркутская область,True,True,[],False,False,False,{}
+tid_1147,Иркутская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1148,Иркутская область,True,True,[],False,False,False,{}
+tid_1149,Иркутская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1150,Иркутская область,True,True,[],False,False,False,{}
+tid_1151,Иркутская область,True,True,[],False,False,False,{}
+tid_1152,Иркутская область,True,True,[],False,False,False,{}
+tid_1153,Иркутская область,True,True,[],False,False,False,{}
+tid_1154,Иркутская область,True,True,[],False,False,False,{}
+tid_1155,Иркутская область,True,True,[],False,False,False,{}
+tid_1157,Иркутская область,True,True,[],False,False,False,{}
+tid_1158,Иркутская область,True,True,[],False,False,False,{}
+tid_1159,Иркутская область,True,True,[],False,False,False,{}
+tid_1160,Иркутская область,True,True,[],False,False,False,{}
+tid_1161,Иркутская область,True,True,[],False,False,False,{}
+tid_1163,Иркутская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1164,Иркутская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1165,Иркутская область,True,True,[],False,False,False,{}
+tid_1166,Иркутская область,True,True,[],False,False,False,{}
+tid_1167,Иркутская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1168,Иркутская область,True,True,[],False,False,False,{}
+tid_1169,Иркутская область,True,True,[],False,False,False,{}
+tid_1170,Иркутская область,True,True,[],False,False,False,{}
+tid_1171,Иркутская область,True,True,[],False,False,False,{}
+tid_1172,Иркутская область,True,True,[],False,False,False,{}
+tid_1173,Иркутская область,True,True,[],False,False,False,{}
+tid_1174,Иркутская область,True,True,[],False,False,False,{}
+tid_1175,Иркутская область,True,True,[],False,False,False,{}
+tid_1176,Калининградская область,True,True,[],False,False,False,{}
+tid_1178,Калининградская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1179,Калининградская область,True,True,[],False,False,False,{}
+tid_1180,Калининградская область,True,True,[],False,False,False,{}
+tid_1181,Калининградская область,True,True,[],False,False,False,{}
+tid_1184,Калининградская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_1185,Калининградская область,True,True,[],False,False,False,{}
+tid_1186,Калининградская область,True,True,[],False,False,False,{}
+tid_1187,Калининградская область,True,True,[],False,False,False,{}
+tid_1188,Калининградская область,True,True,[],False,False,False,{}
+tid_1189,Калининградская область,True,True,[],False,False,False,{}
+tid_1190,Калининградская область,True,True,[],False,False,False,{}
+tid_1191,Калининградская область,True,True,[],False,False,False,{}
+tid_1192,Калининградская область,True,True,[],False,False,False,{}
+tid_1193,Калининградская область,True,True,[],False,False,False,{}
+tid_1194,Калининградская область,True,True,[],False,False,False,{}
+tid_1195,Калининградская область,True,True,[],False,False,False,{}
+tid_1196,Калининградская область,True,True,[],False,False,False,{}
+tid_1197,Калининградская область,True,True,[],False,False,False,{}
+tid_1198,Калужская область,True,True,[],False,False,False,{}
+tid_12,Республика Алтай,True,True,[],False,False,False,{}
+tid_1200,Калужская область,True,True,[],False,False,False,{}
+tid_1201,Калужская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1203,Калужская область,True,True,[],False,False,False,{}
+tid_1204,Калужская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1205,Калужская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1206,Калужская область,True,True,[],False,False,False,{}
+tid_1207,Калужская область,True,True,[],False,False,False,{}
+tid_1208,Калужская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1209,Калужская область,True,True,[],False,False,False,{}
+tid_1210,Калужская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1211,Калужская область,True,True,[],False,False,False,{}
+tid_1212,Калужская область,True,True,[],False,False,False,{}
+tid_1213,Калужская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1214,Калужская область,True,True,[],False,False,False,{}
+tid_1215,Калужская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1217,Калужская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1218,Калужская область,True,True,[],False,False,False,{}
+tid_1219,Калужская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1220,Калужская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1221,Калужская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1222,Калужская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1223,Калужская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1224,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1225,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1226,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1227,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1228,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1229,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1230,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1231,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1232,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1233,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1234,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1235,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1236,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1237,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1238,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1240,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1241,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1242,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1243,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1244,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1246,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1249,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1250,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1251,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1252,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1253,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1254,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1256,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1257,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_1258,Кировская область,True,True,[],False,False,False,{}
+tid_1259,Кировская область,True,True,[],False,False,False,{}
+tid_1260,Кировская область,True,True,[],False,False,False,{}
+tid_1261,Кировская область,True,True,[],False,False,False,{}
+tid_1262,Кировская область,True,True,[],False,False,False,{}
+tid_1264,Кировская область,True,True,[],False,False,False,{}
+tid_1265,Кировская область,True,True,[],False,False,False,{}
+tid_1266,Кировская область,True,True,[],False,False,False,{}
+tid_1267,Кировская область,True,True,[],False,False,False,{}
+tid_1268,Кировская область,True,True,[],False,False,False,{}
+tid_1269,Кировская область,True,True,[],False,False,False,{}
+tid_1270,Кировская область,True,True,[],False,False,False,{}
+tid_1271,Кировская область,True,True,[],False,False,False,{}
+tid_1272,Кировская область,True,True,[],False,False,False,{}
+tid_1273,Кировская область,True,True,[],False,False,False,{}
+tid_1274,Кировская область,True,True,[],False,False,False,{}
+tid_1275,Кировская область,True,True,[],False,False,False,{}
+tid_1276,Кировская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1277,Кировская область,True,True,[],False,False,False,{}
+tid_1278,Кировская область,True,True,[],False,False,False,{}
+tid_1279,Кировская область,True,True,[],False,False,False,{}
+tid_1280,Кировская область,True,True,[],False,False,False,{}
+tid_1281,Кировская область,True,True,[],False,False,False,{}
+tid_1282,Кировская область,True,True,[],False,False,False,{}
+tid_1284,Кировская область,True,True,[],False,False,False,{}
+tid_1285,Кировская область,True,True,[],False,False,False,{}
+tid_1286,Кировская область,True,True,[],False,False,False,{}
+tid_1287,Кировская область,True,True,[],False,False,False,{}
+tid_1288,Кировская область,True,True,[],False,False,False,{}
+tid_1289,Кировская область,True,True,[],False,False,False,{}
+tid_1290,Кировская область,True,True,[],False,False,False,{}
+tid_1291,Кировская область,True,True,[],False,False,False,{}
+tid_1292,Кировская область,True,True,[],False,False,False,{}
+tid_1293,Кировская область,True,True,[],False,False,False,{}
+tid_1294,Кировская область,True,True,[],False,False,False,{}
+tid_1295,Кировская область,True,True,[],False,False,False,{}
+tid_1296,Кировская область,True,True,[],False,False,False,{}
+tid_1297,Кировская область,True,True,[],False,False,False,{}
+tid_1298,Кировская область,True,True,[],False,False,False,{}
+tid_1299,Кировская область,True,True,[],False,False,False,{}
+tid_13,Республика Алтай,True,True,[],False,False,False,{}
+tid_1300,Кировская область,True,True,[],False,False,False,{}
+tid_1301,Кировская область,True,True,[],False,False,False,{}
+tid_1302,Кировская область,True,True,[],False,False,False,{}
+tid_1303,Костромская область,True,True,[],False,False,False,{}
+tid_1304,Костромская область,True,True,[],False,False,False,{}
+tid_1305,Костромская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1306,Костромская область,True,True,[],False,False,False,{}
+tid_1308,Костромская область,True,True,[],False,False,False,{}
+tid_1309,Костромская область,True,True,[],False,False,False,{}
+tid_1310,Костромская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1311,Костромская область,True,True,[],False,False,False,{}
+tid_1312,Костромская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1313,Костромская область,True,True,[],False,False,False,{}
+tid_1314,Костромская область,True,True,[],False,False,False,{}
+tid_1315,Костромская область,True,True,[],False,False,False,{}
+tid_1316,Костромская область,True,True,[],False,False,False,{}
+tid_1317,Костромская область,True,True,[],False,False,False,{}
+tid_1319,Костромская область,True,True,[],False,False,False,{}
+tid_1320,Костромская область,True,True,[],False,False,False,{}
+tid_1321,Костромская область,True,True,[],False,False,False,{}
+tid_1322,Костромская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1323,Костромская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1324,Костромская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1325,Костромская область,True,True,[],False,False,False,{}
+tid_1326,Костромская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1327,Костромская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1328,Костромская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1329,Костромская область,True,True,[],False,False,False,{}
+tid_1330,Костромская область,True,True,[],False,False,False,{}
+tid_1331,Костромская область,True,True,[],False,False,False,{}
+tid_1333,Курганская область,True,True,[],False,False,False,{}
+tid_1334,Курганская область,True,True,[],False,False,False,{}
+tid_1335,Курганская область,True,True,[],False,False,False,{}
+tid_1336,Курганская область,True,True,[],False,False,False,{}
+tid_1337,Курганская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1338,Курганская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1339,Курганская область,True,True,[],False,False,False,{}
+tid_1340,Курганская область,True,True,[],False,False,False,{}
+tid_1341,Курганская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1343,Курганская область,True,True,[],False,False,False,{}
+tid_1344,Курганская область,True,True,[],False,False,False,{}
+tid_1345,Курганская область,True,True,[],False,False,False,{}
+tid_1346,Курганская область,True,True,[],False,False,False,{}
+tid_1347,Курганская область,True,True,[],False,False,False,{}
+tid_1348,Курганская область,True,True,[],False,False,False,{}
+tid_1349,Курганская область,True,True,[],False,False,False,{}
+tid_1350,Курганская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1351,Курганская область,True,True,[],False,False,False,{}
+tid_1352,Курганская область,True,True,[],False,False,False,{}
+tid_1353,Курганская область,True,True,[],False,False,False,{}
+tid_1355,Курганская область,True,True,[],False,False,False,{}
+tid_1356,Курганская область,True,True,[],False,False,False,{}
+tid_1357,Курганская область,True,True,[],False,False,False,{}
+tid_1358,Курганская область,True,True,[],False,False,False,{}
+tid_1392,Ленинградская область,True,True,[],False,False,False,{}
+tid_1393,Ленинградская область,True,True,[],False,False,False,{}
+tid_1394,Ленинградская область,True,True,[],False,False,False,{}
+tid_1395,Ленинградская область,True,True,[],False,False,False,{}
+tid_1396,Ленинградская область,True,True,[],False,False,False,{}
+tid_1397,Ленинградская область,True,True,[],False,False,False,{}
+tid_1398,Ленинградская область,True,True,[],False,False,False,{}
+tid_1399,Ленинградская область,True,True,[],False,False,False,{}
+tid_14,Республика Алтай,True,True,[],False,False,False,{}
+tid_1400,Ленинградская область,True,True,[],False,False,False,{}
+tid_1401,Ленинградская область,True,True,[],False,False,False,{}
+tid_1402,Ленинградская область,True,True,[],False,False,False,{}
+tid_1403,Ленинградская область,True,True,[],False,False,False,{}
+tid_1404,Ленинградская область,True,True,[],False,False,False,{}
+tid_1405,Ленинградская область,True,True,[],False,False,False,{}
+tid_1406,Ленинградская область,True,True,[],False,False,False,{}
+tid_1407,Ленинградская область,True,True,[],False,False,False,{}
+tid_1408,Ленинградская область,True,True,[],False,False,False,{}
+tid_1409,Ленинградская область,True,True,[],False,False,False,{}
+tid_1410,Липецкая область,True,True,[],False,False,False,{}
+tid_1411,Липецкая область,True,True,[],False,False,False,{}
+tid_1412,Липецкая область,True,False,[],False,True,False,{}
+tid_1413,Липецкая область,True,True,[],False,False,False,{}
+tid_1414,Липецкая область,True,True,[],False,False,False,{}
+tid_1415,Липецкая область,True,True,[],False,False,False,{}
+tid_1416,Липецкая область,True,False,[],False,True,False,{}
+tid_1417,Липецкая область,True,True,[],False,False,False,{}
+tid_1419,Липецкая область,True,True,[],False,False,False,{}
+tid_1420,Липецкая область,False,False,"[""public_administration_education_health_headcount_share""]",False,True,False,{}
+tid_1421,Липецкая область,False,False,"[""covered_organization_jobs_per_resident""]",False,False,True,{}
+tid_1422,Липецкая область,True,True,[],False,False,False,{}
+tid_1423,Липецкая область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1425,Липецкая область,False,False,"[""public_administration_education_health_headcount_share""]",False,True,False,{}
+tid_1426,Липецкая область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1427,Липецкая область,True,True,[],False,False,False,{}
+tid_1428,Липецкая область,True,True,[],False,False,False,{}
+tid_1429,Липецкая область,True,True,[],False,False,False,{}
+tid_1430,Магаданская область,True,True,[],False,False,False,{}
+tid_1431,Магаданская область,False,False,"[""covered_organization_jobs_per_resident""]",False,False,True,{}
+tid_1438,Магаданская область,False,False,"[""covered_organization_jobs_per_resident""]",False,False,True,{}
+tid_1439,Московская область,True,True,[],False,False,False,{}
+tid_1440,Московская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1443,Московская область,True,True,[],False,False,False,{}
+tid_1444,Московская область,True,True,[],False,False,False,{}
+tid_1445,Московская область,True,True,[],False,False,False,{}
+tid_1446,Московская область,True,True,[],False,False,False,{}
+tid_1447,Московская область,True,True,[],False,False,False,{}
+tid_1448,Московская область,True,True,[],False,False,False,{}
+tid_1449,Московская область,True,True,[],False,False,False,{}
+tid_1453,Московская область,True,True,[],False,False,False,{}
+tid_1454,Московская область,True,True,[],False,False,False,{}
+tid_1456,Московская область,True,True,[],False,False,False,{}
+tid_1457,Московская область,True,True,[],False,False,False,{}
+tid_1459,Московская область,True,True,[],False,False,False,{}
+tid_1461,Московская область,True,True,[],False,False,False,{}
+tid_1463,Московская область,True,True,[],False,False,False,{}
+tid_1464,Московская область,True,True,[],False,False,False,{}
+tid_1465,Московская область,True,True,[],False,False,False,{}
+tid_1467,Московская область,True,True,[],False,False,False,{}
+tid_1468,Московская область,True,True,[],False,False,False,{}
+tid_1472,Московская область,True,True,[],False,False,False,{}
+tid_1473,Московская область,True,True,[],False,False,False,{}
+tid_1474,Московская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1475,Московская область,True,True,[],False,False,False,{}
+tid_1477,Московская область,True,True,[],False,False,False,{}
+tid_1478,Московская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1480,Московская область,True,True,[],False,False,False,{}
+tid_1481,Московская область,True,True,[],False,False,False,{}
+tid_1483,Московская область,True,True,[],False,False,False,{}
+tid_1484,Московская область,True,True,[],False,False,False,{}
+tid_1486,Московская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1488,Московская область,True,True,[],False,False,False,{}
+tid_1489,Московская область,True,True,[],False,False,False,{}
+tid_1490,Московская область,True,True,[],False,False,False,{}
+tid_1491,Московская область,True,True,[],False,False,False,{}
+tid_1492,Московская область,True,True,[],False,False,False,{}
+tid_1493,Московская область,True,True,[],False,False,False,{}
+tid_1494,Московская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1495,Московская область,True,True,[],False,False,False,{}
+tid_1496,Московская область,True,True,[],False,False,False,{}
+tid_15,Республика Алтай,True,True,[],False,False,False,{}
+tid_1500,Московская область,True,True,[],False,False,False,{}
+tid_1501,Московская область,True,True,[],False,False,False,{}
+tid_1504,Московская область,True,True,[],False,False,False,{}
+tid_1506,Мурманская область,True,True,[],False,False,False,{}
+tid_1507,Мурманская область,True,True,[],False,False,False,{}
+tid_1508,Мурманская область,True,True,[],False,False,False,{}
+tid_1509,Мурманская область,True,True,[],False,False,False,{}
+tid_1510,Мурманская область,True,True,[],False,False,False,{}
+tid_1511,Мурманская область,True,True,[],False,False,False,{}
+tid_1512,Мурманская область,True,True,[],False,False,False,{}
+tid_1518,Мурманская область,True,True,[],False,False,False,{}
+tid_1519,Мурманская область,True,True,[],False,False,False,{}
+tid_1520,Мурманская область,True,True,[],False,False,False,{}
+tid_1521,Мурманская область,True,True,[],False,False,False,{}
+tid_1522,Мурманская область,True,True,[],False,False,False,{}
+tid_1523,Нижегородская область,True,True,[],False,False,False,{}
+tid_1525,Нижегородская область,True,True,[],False,False,False,{}
+tid_1526,Нижегородская область,True,True,[],False,False,False,{}
+tid_1527,Нижегородская область,True,True,[],False,False,False,{}
+tid_1528,Нижегородская область,True,True,[],False,False,False,{}
+tid_1529,Нижегородская область,True,True,[],False,False,False,{}
+tid_1530,Нижегородская область,True,True,[],False,False,False,{}
+tid_1532,Нижегородская область,True,True,[],False,False,False,{}
+tid_1533,Нижегородская область,True,True,[],False,False,False,{}
+tid_1534,Нижегородская область,True,True,[],False,False,False,{}
+tid_1535,Нижегородская область,True,True,[],False,False,False,{}
+tid_1536,Нижегородская область,True,True,[],False,False,False,{}
+tid_1537,Нижегородская область,True,True,[],False,False,False,{}
+tid_1539,Нижегородская область,True,True,[],False,False,False,{}
+tid_1540,Нижегородская область,True,True,[],False,False,False,{}
+tid_1541,Нижегородская область,True,True,[],False,False,False,{}
+tid_1542,Нижегородская область,True,True,[],False,False,False,{}
+tid_1543,Нижегородская область,True,True,[],False,False,False,{}
+tid_1544,Нижегородская область,True,True,[],False,False,False,{}
+tid_1545,Нижегородская область,True,True,[],False,False,False,{}
+tid_1546,Нижегородская область,True,True,[],False,False,False,{}
+tid_1547,Нижегородская область,True,True,[],False,False,False,{}
+tid_1548,Нижегородская область,True,True,[],False,False,False,{}
+tid_1549,Нижегородская область,True,True,[],False,False,False,{}
+tid_1550,Нижегородская область,True,True,[],False,False,False,{}
+tid_1551,Нижегородская область,True,True,[],False,False,False,{}
+tid_1552,Нижегородская область,True,True,[],False,False,False,{}
+tid_1553,Нижегородская область,True,True,[],False,False,False,{}
+tid_1554,Нижегородская область,True,True,[],False,False,False,{}
+tid_1555,Нижегородская область,True,True,[],False,False,False,{}
+tid_1556,Нижегородская область,True,True,[],False,False,False,{}
+tid_1557,Нижегородская область,True,True,[],False,False,False,{}
+tid_1558,Нижегородская область,True,True,[],False,False,False,{}
+tid_1559,Нижегородская область,True,True,[],False,False,False,{}
+tid_1560,Нижегородская область,True,True,[],False,False,False,{}
+tid_1561,Нижегородская область,True,True,[],False,False,False,{}
+tid_1562,Нижегородская область,True,True,[],False,False,False,{}
+tid_1563,Нижегородская область,True,True,[],False,False,False,{}
+tid_1564,Нижегородская область,True,True,[],False,False,False,{}
+tid_1565,Нижегородская область,True,True,[],False,False,False,{}
+tid_1566,Нижегородская область,True,True,[],False,False,False,{}
+tid_1567,Нижегородская область,True,True,[],False,False,False,{}
+tid_1568,Нижегородская область,True,True,[],False,False,False,{}
+tid_1569,Нижегородская область,True,True,[],False,False,False,{}
+tid_1570,Нижегородская область,True,True,[],False,False,False,{}
+tid_1571,Нижегородская область,True,True,[],False,False,False,{}
+tid_1572,Нижегородская область,True,True,[],False,False,False,{}
+tid_1573,Нижегородская область,True,True,[],False,False,False,{}
+tid_1574,Нижегородская область,True,True,[],False,False,False,{}
+tid_1575,Новгородская область,True,True,[],False,False,False,{}
+tid_1577,Новгородская область,True,True,[],False,False,False,{}
+tid_1578,Новгородская область,True,True,[],False,False,False,{}
+tid_1579,Новгородская область,True,True,[],False,False,False,{}
+tid_1580,Новгородская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1581,Новгородская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1582,Новгородская область,True,True,[],False,False,False,{}
+tid_1583,Новгородская область,True,True,[],False,False,False,{}
+tid_1584,Новгородская область,True,True,[],False,False,False,{}
+tid_1585,Новгородская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1586,Новгородская область,True,True,[],False,False,False,{}
+tid_1587,Новгородская область,True,True,[],False,False,False,{}
+tid_1588,Новгородская область,True,True,[],False,False,False,{}
+tid_1589,Новгородская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1590,Новгородская область,True,True,[],False,False,False,{}
+tid_1591,Новгородская область,True,True,[],False,False,False,{}
+tid_1592,Новгородская область,True,True,[],False,False,False,{}
+tid_1593,Новгородская область,True,True,[],False,False,False,{}
+tid_1594,Новгородская область,True,True,[],False,False,False,{}
+tid_1595,Новгородская область,True,True,[],False,False,False,{}
+tid_1596,Новгородская область,True,True,[],False,False,False,{}
+tid_1597,Новосибирская область,True,False,[],False,True,False,{}
+tid_1598,Новосибирская область,True,False,[],False,True,False,{}
+tid_1599,Новосибирская область,True,False,[],False,True,False,{}
+tid_16,Республика Алтай,True,True,[],False,False,False,{}
+tid_1600,Новосибирская область,True,False,[],False,True,False,{}
+tid_1601,Новосибирская область,True,False,[],False,True,False,{}
+tid_1602,Новосибирская область,True,False,[],False,True,False,{}
+tid_1603,Новосибирская область,True,False,[],False,True,False,{}
+tid_1604,Новосибирская область,True,False,[],False,True,False,{}
+tid_1605,Новосибирская область,True,False,[],False,True,False,{}
+tid_1606,Новосибирская область,True,False,[],False,True,False,{}
+tid_1607,Новосибирская область,True,False,[],False,True,False,{}
+tid_1608,Новосибирская область,True,False,[],False,True,False,{}
+tid_1609,Новосибирская область,True,False,[],False,True,False,{}
+tid_1610,Новосибирская область,True,False,[],False,True,False,{}
+tid_1611,Новосибирская область,True,False,[],False,True,False,{}
+tid_1612,Новосибирская область,True,False,[],False,True,False,{}
+tid_1613,Новосибирская область,True,False,[],False,True,False,{}
+tid_1614,Новосибирская область,True,False,[],False,True,False,{}
+tid_1615,Новосибирская область,True,False,[],False,True,False,{}
+tid_1616,Новосибирская область,True,False,[],False,True,False,{}
+tid_1617,Новосибирская область,True,False,[],False,True,False,{}
+tid_1618,Новосибирская область,True,False,[],False,True,False,{}
+tid_1619,Новосибирская область,True,False,[],False,True,False,{}
+tid_1620,Новосибирская область,True,False,[],False,True,False,{}
+tid_1621,Новосибирская область,True,False,[],False,True,False,{}
+tid_1622,Новосибирская область,True,False,[],False,True,False,{}
+tid_1623,Новосибирская область,True,False,[],False,True,False,{}
+tid_1624,Новосибирская область,True,False,[],False,True,False,{}
+tid_1625,Новосибирская область,True,False,[],False,True,False,{}
+tid_1626,Новосибирская область,True,False,[],False,True,False,{}
+tid_1627,Новосибирская область,True,False,[],False,True,False,{}
+tid_1628,Новосибирская область,True,False,[],False,True,False,{}
+tid_1629,Новосибирская область,True,False,[],False,True,False,{}
+tid_1630,Новосибирская область,True,False,[],False,True,False,{}
+tid_1631,Новосибирская область,True,False,[],False,True,False,{}
+tid_1632,Омская область,True,True,[],False,False,False,{}
+tid_1633,Омская область,True,True,[],False,False,False,{}
+tid_1634,Омская область,True,True,[],False,False,False,{}
+tid_1635,Омская область,True,True,[],False,False,False,{}
+tid_1636,Омская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1637,Омская область,True,True,[],False,False,False,{}
+tid_1638,Омская область,True,True,[],False,False,False,{}
+tid_1639,Омская область,True,True,[],False,False,False,{}
+tid_1640,Омская область,True,True,[],False,False,False,{}
+tid_1641,Омская область,True,True,[],False,False,False,{}
+tid_1642,Омская область,True,True,[],False,False,False,{}
+tid_1643,Омская область,True,True,[],False,False,False,{}
+tid_1644,Омская область,True,True,[],False,False,False,{}
+tid_1645,Омская область,True,True,[],False,False,False,{}
+tid_1646,Омская область,True,True,[],False,False,False,{}
+tid_1647,Омская область,True,True,[],False,False,False,{}
+tid_1648,Омская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1649,Омская область,True,True,[],False,False,False,{}
+tid_1650,Омская область,True,True,[],False,False,False,{}
+tid_1651,Омская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1652,Омская область,True,True,[],False,False,False,{}
+tid_1653,Омская область,True,True,[],False,False,False,{}
+tid_1654,Омская область,True,True,[],False,False,False,{}
+tid_1655,Омская область,True,True,[],False,False,False,{}
+tid_1656,Омская область,True,True,[],False,False,False,{}
+tid_1657,Омская область,True,True,[],False,False,False,{}
+tid_1658,Омская область,True,True,[],False,False,False,{}
+tid_1659,Омская область,True,True,[],False,False,False,{}
+tid_1660,Омская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1661,Омская область,True,True,[],False,False,False,{}
+tid_1662,Омская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1663,Омская область,True,True,[],False,False,False,{}
+tid_1664,Омская область,True,True,[],False,False,False,{}
+tid_1665,Оренбургская область,True,True,[],False,False,False,{}
+tid_1666,Оренбургская область,True,True,[],False,False,False,{}
+tid_1667,Оренбургская область,True,True,[],False,False,False,{}
+tid_1668,Оренбургская область,True,True,[],False,False,False,{}
+tid_1669,Оренбургская область,True,True,[],False,False,False,{}
+tid_167,Кабардино-Балкарская Республика,True,True,[],False,False,False,{}
+tid_1670,Оренбургская область,True,True,[],False,False,False,{}
+tid_1671,Оренбургская область,True,True,[],False,False,False,{}
+tid_1672,Оренбургская область,True,True,[],False,False,False,{}
+tid_1673,Оренбургская область,True,True,[],False,False,False,{}
+tid_1674,Оренбургская область,True,True,[],False,False,False,{}
+tid_1675,Оренбургская область,True,True,[],False,False,False,{}
+tid_1676,Оренбургская область,True,True,[],False,False,False,{}
+tid_1678,Оренбургская область,True,True,[],False,False,False,{}
+tid_1679,Оренбургская область,True,True,[],False,False,False,{}
+tid_168,Кабардино-Балкарская Республика,True,True,[],False,False,False,{}
+tid_1680,Оренбургская область,True,True,[],False,False,False,{}
+tid_1681,Оренбургская область,True,True,[],False,False,False,{}
+tid_1682,Оренбургская область,True,True,[],False,False,False,{}
+tid_1683,Оренбургская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1685,Оренбургская область,True,True,[],False,False,False,{}
+tid_1686,Оренбургская область,True,True,[],False,False,False,{}
+tid_1687,Оренбургская область,True,True,[],False,False,False,{}
+tid_1688,Оренбургская область,True,True,[],False,False,False,{}
+tid_1689,Оренбургская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_169,Кабардино-Балкарская Республика,True,True,[],False,False,False,{}
+tid_1690,Оренбургская область,True,True,[],False,False,False,{}
+tid_1691,Оренбургская область,True,True,[],False,False,False,{}
+tid_1692,Оренбургская область,True,True,[],False,False,False,{}
+tid_1693,Оренбургская область,True,True,[],False,False,False,{}
+tid_1694,Оренбургская область,True,True,[],False,False,False,{}
+tid_1696,Оренбургская область,True,True,[],False,False,False,{}
+tid_1697,Оренбургская область,True,True,[],False,False,False,{}
+tid_1698,Оренбургская область,True,True,[],False,False,False,{}
+tid_1699,Оренбургская область,True,True,[],False,False,False,{}
+tid_17,Республика Алтай,True,True,[],False,False,False,{}
+tid_1700,Оренбургская область,True,True,[],False,False,False,{}
+tid_1701,Оренбургская область,True,True,[],False,False,False,{}
+tid_1702,Оренбургская область,True,True,[],False,False,False,{}
+tid_1703,Оренбургская область,True,True,[],False,False,False,{}
+tid_1704,Оренбургская область,True,True,[],False,False,False,{}
+tid_1705,Оренбургская область,True,True,[],False,False,False,{}
+tid_1706,Оренбургская область,True,True,[],False,False,False,{}
+tid_1707,Орловская область,True,True,[],False,False,False,{}
+tid_1708,Орловская область,True,True,[],False,False,False,{}
+tid_1709,Орловская область,True,True,[],False,False,False,{}
+tid_1710,Орловская область,True,True,[],False,False,False,{}
+tid_1711,Орловская область,True,True,[],False,False,False,{}
+tid_1712,Орловская область,True,True,[],False,False,False,{}
+tid_1714,Орловская область,True,True,[],False,False,False,{}
+tid_1715,Орловская область,True,True,[],False,False,False,{}
+tid_1717,Орловская область,True,True,[],False,False,False,{}
+tid_1718,Орловская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1719,Орловская область,True,True,[],False,False,False,{}
+tid_1722,Орловская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1724,Орловская область,True,True,[],False,False,False,{}
+tid_1725,Орловская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1726,Орловская область,True,True,[],False,False,False,{}
+tid_1727,Орловская область,True,True,[],False,False,False,{}
+tid_1728,Орловская область,True,True,[],False,False,False,{}
+tid_173,Кабардино-Балкарская Республика,True,True,[],False,False,False,{}
+tid_1730,Орловская область,True,True,[],False,False,False,{}
+tid_1731,Орловская область,True,True,[],False,False,False,{}
+tid_1732,Орловская область,True,True,[],False,False,False,{}
+tid_1733,Орловская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1737,Пензенская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1738,Пензенская область,True,True,[],False,False,False,{}
+tid_1739,Пензенская область,True,True,[],False,False,False,{}
+tid_1740,Пензенская область,True,True,[],False,False,False,{}
+tid_1741,Пензенская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1742,Пензенская область,True,True,[],False,False,False,{}
+tid_1743,Пензенская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1744,Пензенская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1745,Пензенская область,True,True,[],False,False,False,{}
+tid_1746,Пензенская область,True,True,[],False,False,False,{}
+tid_1747,Пензенская область,True,True,[],False,False,False,{}
+tid_1749,Пензенская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1750,Пензенская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1751,Пензенская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1752,Пензенская область,True,True,[],False,False,False,{}
+tid_1753,Пензенская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1754,Пензенская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1755,Пензенская область,True,True,[],False,False,False,{}
+tid_1756,Пензенская область,True,True,[],False,False,False,{}
+tid_1757,Пензенская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1758,Пензенская область,True,True,[],False,False,False,{}
+tid_1759,Пензенская область,True,True,[],False,False,False,{}
+tid_1760,Пензенская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1761,Пензенская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1762,Пензенская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1764,Псковская область,True,True,[],False,False,False,{}
+tid_1765,Псковская область,True,True,[],False,False,False,{}
+tid_1766,Псковская область,True,True,[],False,False,False,{}
+tid_1768,Псковская область,True,True,[],False,False,False,{}
+tid_1769,Псковская область,True,True,[],False,False,False,{}
+tid_1770,Псковская область,True,True,[],False,False,False,{}
+tid_1771,Псковская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1773,Псковская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1774,Псковская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1775,Псковская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1776,Псковская область,True,True,[],False,False,False,{}
+tid_1777,Псковская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1778,Псковская область,True,True,[],False,False,False,{}
+tid_1780,Псковская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1781,Псковская область,True,True,[],False,False,False,{}
+tid_1782,Псковская область,True,True,[],False,False,False,{}
+tid_1783,Псковская область,True,True,[],False,False,False,{}
+tid_1784,Псковская область,True,True,[],False,False,False,{}
+tid_1785,Псковская область,True,True,[],False,False,False,{}
+tid_1786,Псковская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1787,Псковская область,True,True,[],False,False,False,{}
+tid_1788,Псковская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_18,Республика Алтай,True,True,[],False,False,False,{}
+tid_181,Республика Калмыкия,True,True,[],False,False,False,{}
+tid_184,Республика Калмыкия,True,True,[],False,False,False,{}
+tid_1845,Рязанская область,True,False,[],False,True,False,{}
+tid_1846,Рязанская область,True,False,[],False,True,False,{}
+tid_1848,Рязанская область,True,False,[],False,True,False,{}
+tid_1849,Рязанская область,False,False,"[""public_administration_education_health_headcount_share""]",False,True,False,{}
+tid_185,Республика Калмыкия,True,True,[],False,False,False,{}
+tid_1850,Рязанская область,False,False,"[""public_administration_education_health_headcount_share""]",False,True,False,{}
+tid_1851,Рязанская область,False,False,"[""public_administration_education_health_headcount_share""]",False,True,False,{}
+tid_1852,Рязанская область,True,False,[],False,True,False,{}
+tid_1853,Рязанская область,True,False,[],False,True,False,{}
+tid_1854,Рязанская область,False,False,"[""public_administration_education_health_headcount_share""]",False,True,False,{}
+tid_1855,Рязанская область,False,False,"[""public_administration_education_health_headcount_share""]",False,True,False,{}
+tid_1856,Рязанская область,True,False,[],False,True,False,{}
+tid_1857,Рязанская область,False,False,"[""public_administration_education_health_headcount_share""]",False,True,False,{}
+tid_1858,Рязанская область,False,False,"[""public_administration_education_health_headcount_share""]",False,True,False,{}
+tid_1859,Рязанская область,False,False,"[""public_administration_education_health_headcount_share""]",False,True,False,{}
+tid_1860,Рязанская область,False,False,"[""public_administration_education_health_headcount_share""]",False,True,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1861,Рязанская область,True,False,[],False,True,False,{}
+tid_1862,Рязанская область,True,False,[],False,True,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_1863,Рязанская область,False,False,"[""public_administration_education_health_headcount_share""]",False,True,False,{}
+tid_1864,Рязанская область,False,False,"[""public_administration_education_health_headcount_share""]",False,True,False,{}
+tid_1865,Рязанская область,False,False,"[""public_administration_education_health_headcount_share""]",False,True,False,{}
+tid_1868,Рязанская область,True,False,[],False,True,False,{}
+tid_1869,Рязанская область,True,False,[],False,True,False,{}
+tid_1870,Рязанская область,False,False,"[""public_administration_education_health_headcount_share""]",False,True,False,{}
+tid_1871,Рязанская область,False,False,"[""public_administration_education_health_headcount_share""]",False,True,False,{}
+tid_1872,Рязанская область,True,False,[],False,True,False,{}
+tid_1873,Рязанская область,True,False,[],False,True,False,{}
+tid_1874,Самарская область,True,True,[],False,False,False,{}
+tid_1875,Самарская область,True,True,[],False,False,False,{}
+tid_1876,Самарская область,True,True,[],False,False,False,{}
+tid_1877,Самарская область,True,True,[],False,False,False,{}
+tid_1878,Самарская область,True,True,[],False,False,False,{}
+tid_1879,Самарская область,True,True,[],False,False,False,{}
+tid_188,Республика Калмыкия,True,True,[],False,False,False,{}
+tid_1880,Самарская область,True,True,[],False,False,False,{}
+tid_1881,Самарская область,True,True,[],False,False,False,{}
+tid_1883,Самарская область,True,True,[],False,False,False,{}
+tid_1884,Самарская область,True,True,[],False,False,False,{}
+tid_1885,Самарская область,True,True,[],False,False,False,{}
+tid_1886,Самарская область,True,True,[],False,False,False,{}
+tid_1887,Самарская область,True,True,[],False,False,False,{}
+tid_1888,Самарская область,True,True,[],False,False,False,{}
+tid_1889,Самарская область,True,True,[],False,False,False,{}
+tid_1890,Самарская область,True,True,[],False,False,False,{}
+tid_1891,Самарская область,True,True,[],False,False,False,{}
+tid_1892,Самарская область,True,True,[],False,False,False,{}
+tid_1893,Самарская область,True,True,[],False,False,False,{}
+tid_1894,Самарская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1895,Самарская область,True,True,[],False,False,False,{}
+tid_1896,Самарская область,True,True,[],False,False,False,{}
+tid_1897,Самарская область,True,True,[],False,False,False,{}
+tid_1898,Самарская область,True,True,[],False,False,False,{}
+tid_1899,Самарская область,True,True,[],False,False,False,{}
+tid_19,Республика Алтай,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1900,Самарская область,True,True,[],False,False,False,{}
+tid_1901,Самарская область,True,True,[],False,False,False,{}
+tid_1902,Самарская область,True,True,[],False,False,False,{}
+tid_1903,Самарская область,True,True,[],False,False,False,{}
+tid_1904,Самарская область,True,True,[],False,False,False,{}
+tid_1905,Самарская область,True,True,[],False,False,False,{}
+tid_1906,Самарская область,True,True,[],False,False,False,{}
+tid_1907,Самарская область,True,True,[],False,False,False,{}
+tid_1908,Самарская область,True,True,[],False,False,False,{}
+tid_1909,Самарская область,True,True,[],False,False,False,{}
+tid_191,Республика Калмыкия,True,True,[],False,False,False,{}
+tid_1910,Самарская область,True,True,[],False,False,False,{}
+tid_1912,Саратовская область,True,True,[],False,False,False,{}
+tid_1915,Саратовская область,True,True,[],False,False,False,{}
+tid_1916,Саратовская область,True,True,[],False,False,False,{}
+tid_1917,Саратовская область,True,True,[],False,False,False,{}
+tid_1918,Саратовская область,True,True,[],False,False,False,{}
+tid_1919,Саратовская область,True,True,[],False,False,False,{}
+tid_1920,Саратовская область,True,True,[],False,False,False,{}
+tid_1921,Саратовская область,True,True,[],False,False,False,{}
+tid_1922,Саратовская область,True,True,[],False,False,False,{}
+tid_1923,Саратовская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1924,Саратовская область,True,True,[],False,False,False,{}
+tid_1925,Саратовская область,True,True,[],False,False,False,{}
+tid_1926,Саратовская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1927,Саратовская область,True,True,[],False,False,False,{}
+tid_1928,Саратовская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1929,Саратовская область,True,True,[],False,False,False,{}
+tid_1930,Саратовская область,True,True,[],False,False,False,{}
+tid_1931,Саратовская область,True,True,[],False,False,False,{}
+tid_1932,Саратовская область,True,True,[],False,False,False,{}
+tid_1933,Саратовская область,True,True,[],False,False,False,{}
+tid_1934,Саратовская область,True,True,[],False,False,False,{}
+tid_1935,Саратовская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1936,Саратовская область,True,True,[],False,False,False,{}
+tid_1937,Саратовская область,True,True,[],False,False,False,{}
+tid_1938,Саратовская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1939,Саратовская область,True,True,[],False,False,False,{}
+tid_194,Карачаево-Черкесская Республика,True,True,[],False,False,False,{}
+tid_1940,Саратовская область,True,True,[],False,False,False,{}
+tid_1941,Саратовская область,True,True,[],False,False,False,{}
+tid_1942,Саратовская область,True,True,[],False,False,False,{}
+tid_1943,Саратовская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1944,Саратовская область,True,True,[],False,False,False,{}
+tid_1945,Саратовская область,True,True,[],False,False,False,{}
+tid_1947,Саратовская область,True,True,[],False,False,False,{}
+tid_1948,Саратовская область,True,True,[],False,False,False,{}
+tid_1949,Саратовская область,True,True,[],False,False,False,{}
+tid_195,Карачаево-Черкесская Республика,True,True,[],False,False,False,{}
+tid_1950,Саратовская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1951,Саратовская область,True,True,[],False,False,False,{}
+tid_1952,Саратовская область,True,True,[],False,False,False,{}
+tid_1954,Сахалинская область,True,True,[],False,False,False,{}
+tid_1955,Сахалинская область,True,True,[],False,False,False,{}
+tid_1956,Сахалинская область,True,True,[],False,False,False,{}
+tid_1957,Сахалинская область,True,True,[],False,False,False,{}
+tid_1958,Сахалинская область,True,True,[],False,False,False,{}
+tid_1959,Сахалинская область,True,True,[],False,False,False,{}
+tid_196,Карачаево-Черкесская Республика,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1960,Сахалинская область,True,True,[],False,False,False,{}
+tid_1961,Сахалинская область,True,True,[],False,False,False,{}
+tid_1962,Сахалинская область,True,True,[],False,False,False,{}
+tid_1963,Сахалинская область,True,True,[],False,False,False,{}
+tid_1965,Сахалинская область,True,True,[],False,False,False,{}
+tid_1966,Сахалинская область,True,True,[],False,False,False,{}
+tid_1967,Сахалинская область,True,True,[],False,False,False,{}
+tid_1968,Сахалинская область,True,True,[],False,False,False,{}
+tid_1969,Сахалинская область,True,True,[],False,False,False,{}
+tid_1970,Сахалинская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1971,Свердловская область,True,True,[],False,False,False,{}
+tid_1972,Свердловская область,True,True,[],False,False,False,{}
+tid_1973,Свердловская область,True,True,[],False,False,False,{}
+tid_1974,Свердловская область,True,True,[],False,False,False,{}
+tid_1975,Свердловская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1976,Свердловская область,True,True,[],False,False,False,{}
+tid_1977,Свердловская область,True,True,[],False,False,False,{}
+tid_1978,Свердловская область,True,True,[],False,False,False,{}
+tid_1979,Свердловская область,True,True,[],False,False,False,{}
+tid_198,Карачаево-Черкесская Республика,True,True,[],False,False,False,{}
+tid_1980,Свердловская область,True,True,[],False,False,False,{}
+tid_1981,Свердловская область,True,True,[],False,False,False,{}
+tid_1982,Свердловская область,True,True,[],False,False,False,{}
+tid_1983,Свердловская область,True,True,[],False,False,False,{}
+tid_1984,Свердловская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1985,Свердловская область,True,True,[],False,False,False,{}
+tid_1986,Свердловская область,True,True,[],False,False,False,{}
+tid_1987,Свердловская область,True,True,[],False,False,False,{}
+tid_1988,Свердловская область,True,True,[],False,False,False,{}
+tid_1989,Свердловская область,True,True,[],False,False,False,{}
+tid_1990,Свердловская область,True,True,[],False,False,False,{}
+tid_1991,Свердловская область,True,True,[],False,False,False,{}
+tid_1992,Свердловская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1993,Свердловская область,True,True,[],False,False,False,{}
+tid_1994,Свердловская область,True,True,[],False,False,False,{}
+tid_1995,Свердловская область,True,True,[],False,False,False,{}
+tid_1996,Свердловская область,True,True,[],False,False,False,{}
+tid_1997,Свердловская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_1999,Свердловская область,True,True,[],False,False,False,{}
+tid_2,Республика Адыгея,True,True,[],False,False,False,{}
+tid_20,Республика Алтай,True,True,[],False,False,False,{}
+tid_2000,Свердловская область,True,True,[],False,False,False,{}
+tid_2001,Свердловская область,True,True,[],False,False,False,{}
+tid_2002,Свердловская область,True,True,[],False,False,False,{}
+tid_2004,Свердловская область,True,True,[],False,False,False,{}
+tid_2005,Свердловская область,True,True,[],False,False,False,{}
+tid_2006,Свердловская область,True,True,[],False,False,False,{}
+tid_2007,Свердловская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2008,Свердловская область,True,True,[],False,False,False,{}
+tid_2009,Свердловская область,True,True,[],False,False,False,{}
+tid_201,Карачаево-Черкесская Республика,True,True,[],False,False,False,{}
+tid_2010,Свердловская область,True,True,[],False,False,False,{}
+tid_2011,Свердловская область,True,True,[],False,False,False,{}
+tid_2012,Свердловская область,True,True,[],False,False,False,{}
+tid_2015,Свердловская область,True,True,[],False,False,False,{}
+tid_2017,Свердловская область,True,True,[],False,False,False,{}
+tid_2018,Свердловская область,True,True,[],False,False,False,{}
+tid_2019,Свердловская область,True,True,[],False,False,False,{}
+tid_2021,Свердловская область,True,True,[],False,False,False,{}
+tid_2022,Свердловская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2023,Свердловская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2024,Свердловская область,True,True,[],False,False,False,{}
+tid_2025,Свердловская область,True,True,[],False,False,False,{}
+tid_2027,Свердловская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2028,Свердловская область,True,True,[],False,False,False,{}
+tid_203,Карачаево-Черкесская Республика,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2030,Свердловская область,True,True,[],False,False,False,{}
+tid_2031,Свердловская область,True,True,[],False,False,False,{}
+tid_2032,Свердловская область,True,True,[],False,False,False,{}
+tid_2033,Свердловская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2034,Свердловская область,True,True,[],False,False,False,{}
+tid_2035,Свердловская область,True,True,[],False,False,False,{}
+tid_2036,Свердловская область,True,True,[],False,False,False,{}
+tid_2037,Свердловская область,True,True,[],False,False,False,{}
+tid_2039,Свердловская область,True,True,[],False,False,False,{}
+tid_204,Карачаево-Черкесская Республика,True,True,[],False,False,False,{}
+tid_2040,Свердловская область,True,True,[],False,False,False,{}
+tid_2041,Свердловская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2042,Свердловская область,True,True,[],False,False,False,{}
+tid_2043,Свердловская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2044,Смоленская область,True,True,[],False,False,False,{}
+tid_2045,Смоленская область,True,True,[],False,False,False,{}
+tid_2046,Смоленская область,True,True,[],False,False,False,{}
+tid_2047,Смоленская область,True,True,[],False,False,False,{}
+tid_2048,Смоленская область,True,True,[],False,False,False,{}
+tid_2049,Смоленская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_205,Карачаево-Черкесская Республика,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2050,Смоленская область,True,True,[],False,False,False,{}
+tid_2051,Смоленская область,True,True,[],False,False,False,{}
+tid_2052,Смоленская область,True,True,[],False,False,False,{}
+tid_2053,Смоленская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2054,Смоленская область,True,True,[],False,False,False,{}
+tid_2055,Смоленская область,True,True,[],False,False,False,{}
+tid_2056,Смоленская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2057,Смоленская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2058,Смоленская область,True,True,[],False,False,False,{}
+tid_2059,Смоленская область,True,True,[],False,False,False,{}
+tid_206,Республика Карелия,True,True,[],False,False,False,{}
+tid_2060,Смоленская область,True,True,[],False,False,False,{}
+tid_2061,Смоленская область,True,True,[],False,False,False,{}
+tid_2062,Смоленская область,True,True,[],False,False,False,{}
+tid_2063,Смоленская область,True,True,[],False,False,False,{}
+tid_2064,Смоленская область,True,True,[],False,False,False,{}
+tid_2065,Смоленская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2066,Смоленская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2067,Смоленская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2068,Смоленская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2069,Смоленская область,True,True,[],False,False,False,{}
+tid_207,Республика Карелия,True,True,[],False,False,False,{}
+tid_2070,Смоленская область,True,True,[],False,False,False,{}
+tid_2072,Тамбовская область,True,True,[],False,False,False,{}
+tid_2073,Тамбовская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2074,Тамбовская область,True,True,[],False,False,False,{}
+tid_2075,Тамбовская область,True,True,[],False,False,False,{}
+tid_2076,Тамбовская область,True,True,[],False,False,False,{}
+tid_2077,Тамбовская область,True,True,[],False,False,False,{}
+tid_2078,Тамбовская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2079,Тамбовская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_208,Республика Карелия,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2080,Тамбовская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2081,Тамбовская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2082,Тамбовская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2085,Тамбовская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2087,Тамбовская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2088,Тамбовская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2089,Тамбовская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_209,Республика Карелия,True,True,[],False,False,False,{}
+tid_2090,Тамбовская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2091,Тамбовская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2093,Тамбовская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2094,Тамбовская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2095,Тамбовская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2096,Тамбовская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2098,Тамбовская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_21,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_210,Республика Карелия,True,True,[],False,False,False,{}
+tid_2100,Тамбовская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2101,Тверская область,True,False,[],False,True,False,{}
+tid_2105,Тверская область,False,False,"[""public_administration_education_health_headcount_share""]",False,True,False,{}
+tid_2108,Тверская область,True,False,[],False,True,False,{}
+tid_2109,Тверская область,True,False,[],False,True,False,{}
+tid_211,Республика Карелия,True,True,[],False,False,False,{}
+tid_2110,Тверская область,True,False,[],False,True,False,{}
+tid_2111,Тверская область,True,False,[],False,True,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2112,Тверская область,True,False,[],False,True,False,{}
+tid_2113,Тверская область,True,False,[],False,True,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2114,Тверская область,True,False,[],False,True,False,{}
+tid_2116,Тверская область,True,False,[],False,True,False,{}
+tid_2117,Тверская область,True,False,[],False,True,False,{}
+tid_2118,Тверская область,True,False,[],False,True,False,{}
+tid_2119,Тверская область,True,False,[],False,True,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_212,Республика Карелия,True,True,[],False,False,False,{}
+tid_2120,Тверская область,True,False,[],False,True,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2121,Тверская область,True,False,[],False,True,False,{}
+tid_2122,Тверская область,True,False,[],False,True,False,{}
+tid_2124,Тверская область,True,False,[],False,True,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2125,Тверская область,True,False,[],False,True,False,{}
+tid_2126,Тверская область,True,False,[],False,True,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2127,Тверская область,True,False,[],False,True,False,{}
+tid_2128,Тверская область,True,False,[],False,True,False,{}
+tid_2129,Тверская область,True,False,[],False,True,False,{}
+tid_213,Республика Карелия,True,True,[],False,False,False,{}
+tid_2130,Тверская область,True,False,[],False,True,False,{}
+tid_2131,Тверская область,True,False,[],False,True,False,{}
+tid_2132,Тверская область,True,False,[],False,True,False,{}
+tid_2133,Тверская область,True,False,[],False,True,False,{}
+tid_2134,Тверская область,True,False,[],False,True,False,{}
+tid_2136,Тверская область,True,False,[],False,True,False,{}
+tid_2137,Тверская область,True,False,[],False,True,False,{}
+tid_2138,Тверская область,True,False,[],False,True,False,{}
+tid_2139,Тверская область,True,False,[],False,True,False,{}
+tid_214,Республика Карелия,True,True,[],False,False,False,{}
+tid_2140,Тверская область,True,False,[],False,True,False,{}
+tid_2142,Тверская область,True,False,[],False,True,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2143,Тверская область,True,False,[],False,True,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2144,Томская область,True,True,[],False,False,False,{}
+tid_2145,Томская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2146,Томская область,True,True,[],False,False,False,{}
+tid_2148,Томская область,True,True,[],False,False,False,{}
+tid_2149,Томская область,True,True,[],False,False,False,{}
+tid_215,Республика Карелия,True,True,[],False,False,False,{}
+tid_2150,Томская область,True,True,[],False,False,False,{}
+tid_2151,Томская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2152,Томская область,True,True,[],False,False,False,{}
+tid_2153,Томская область,True,True,[],False,False,False,{}
+tid_2154,Томская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2155,Томская область,True,True,[],False,False,False,{}
+tid_2156,Томская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2157,Томская область,True,True,[],False,False,False,{}
+tid_2158,Томская область,True,True,[],False,False,False,{}
+tid_2159,Томская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_216,Республика Карелия,True,True,[],False,False,False,{}
+tid_2160,Томская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2161,Томская область,True,True,[],False,False,False,{}
+tid_2162,Томская область,True,True,[],False,False,False,{}
+tid_2163,Томская область,True,True,[],False,False,False,{}
+tid_2164,Тульская область,True,True,[],False,False,False,{}
+tid_2165,Тульская область,True,True,[],False,False,False,{}
+tid_2167,Тульская область,True,True,[],False,False,False,{}
+tid_2168,Тульская область,True,True,[],False,False,False,{}
+tid_2169,Тульская область,True,True,[],False,False,False,{}
+tid_217,Республика Карелия,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2171,Тульская область,True,True,[],False,False,False,{}
+tid_2172,Тульская область,True,True,[],False,False,False,{}
+tid_2173,Тульская область,True,True,[],False,False,False,{}
+tid_2174,Тульская область,True,True,[],False,False,False,{}
+tid_2175,Тульская область,True,True,[],False,False,False,{}
+tid_2176,Тульская область,True,True,[],False,False,False,{}
+tid_2177,Тульская область,True,True,[],False,False,False,{}
+tid_2178,Тульская область,True,True,[],False,False,False,{}
+tid_2179,Тульская область,True,True,[],False,False,False,{}
+tid_218,Республика Карелия,True,True,[],False,False,False,{}
+tid_2180,Тульская область,True,True,[],False,False,False,{}
+tid_2181,Тульская область,True,True,[],False,False,False,{}
+tid_2182,Тульская область,True,True,[],False,False,False,{}
+tid_2183,Тульская область,True,True,[],False,False,False,{}
+tid_2184,Тульская область,True,True,[],False,False,False,{}
+tid_2185,Тульская область,True,True,[],False,False,False,{}
+tid_2186,Тульская область,True,True,[],False,False,False,{}
+tid_2187,Тульская область,True,True,[],False,False,False,{}
+tid_2188,Тульская область,True,True,[],False,False,False,{}
+tid_2189,Тульская область,True,True,[],False,False,False,{}
+tid_219,Республика Карелия,True,True,[],False,False,False,{}
+tid_2190,Тюменская область,True,True,[],False,False,False,{}
+tid_2191,Тюменская область,True,True,[],False,False,False,{}
+tid_2192,Тюменская область,True,True,[],False,False,False,{}
+tid_2193,Тюменская область,True,True,[],False,False,False,{}
+tid_2194,Тюменская область,True,True,[],False,False,False,{}
+tid_2195,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2196,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2197,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2198,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2199,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_22,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_220,Республика Карелия,True,True,[],False,False,False,{}
+tid_2200,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2201,Тюменская область,True,True,[],False,False,False,{}
+tid_2202,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2203,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2204,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2205,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2206,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2207,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2208,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_221,Республика Карелия,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2210,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2211,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2212,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2213,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2215,Тюменская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2216,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2217,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2218,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2219,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_222,Республика Карелия,True,True,[],False,False,False,{}
+tid_2220,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2221,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2222,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2223,Ханты-Мансийский автономный округ — Югра,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2224,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2225,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2226,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2227,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2228,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2229,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_223,Республика Карелия,True,True,[],False,False,False,{}
+tid_2230,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2231,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2232,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2233,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2234,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2235,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2236,Ханты-Мансийский автономный округ — Югра,True,True,[],False,False,False,{}
+tid_2237,Ханты-Мансийский автономный округ — Югра,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2238,Ямало-Ненецкий автономный округ,True,True,[],False,False,False,{}
+tid_224,Республика Коми,True,True,[],False,False,False,{}
+tid_2241,Ямало-Ненецкий автономный округ,True,True,[],False,False,False,{}
+tid_2242,Ямало-Ненецкий автономный округ,True,True,[],False,False,False,{}
+tid_2243,Ямало-Ненецкий автономный округ,True,True,[],False,False,False,{}
+tid_2244,Ямало-Ненецкий автономный округ,True,True,[],False,False,False,{}
+tid_2245,Ямало-Ненецкий автономный округ,True,True,[],False,False,False,{}
+tid_2248,Ямало-Ненецкий автономный округ,True,True,[],False,False,False,{}
+tid_2249,Ямало-Ненецкий автономный округ,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_225,Республика Коми,True,True,[],False,False,False,{}
+tid_2250,Ямало-Ненецкий автономный округ,True,True,[],False,False,False,{}
+tid_2251,Ульяновская область,True,True,[],False,False,False,{}
+tid_2252,Ульяновская область,True,True,[],False,False,False,{}
+tid_2253,Ульяновская область,True,True,[],False,False,False,{}
+tid_2254,Ульяновская область,True,True,[],False,False,False,{}
+tid_2255,Ульяновская область,True,True,[],False,False,False,{}
+tid_2256,Ульяновская область,True,True,[],False,False,False,{}
+tid_2257,Ульяновская область,True,True,[],False,False,False,{}
+tid_2258,Ульяновская область,True,True,[],False,False,False,{}
+tid_2259,Ульяновская область,True,True,[],False,False,False,{}
+tid_226,Республика Коми,True,True,[],False,False,False,"{""municipal_district_type"": [""городской округ"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2260,Ульяновская область,True,True,[],False,False,False,{}
+tid_2262,Ульяновская область,True,True,[],False,False,False,{}
+tid_2264,Ульяновская область,True,True,[],False,False,False,{}
+tid_2265,Ульяновская область,True,True,[],False,False,False,{}
+tid_2266,Ульяновская область,True,True,[],False,False,False,{}
+tid_2267,Ульяновская область,True,True,[],False,False,False,{}
+tid_2268,Ульяновская область,True,True,[],False,False,False,{}
+tid_2269,Ульяновская область,True,True,[],False,False,False,{}
+tid_227,Республика Коми,True,True,[],False,False,False,{}
+tid_2270,Ульяновская область,True,True,[],False,False,False,{}
+tid_2271,Ульяновская область,True,True,[],False,False,False,{}
+tid_2272,Ульяновская область,True,True,[],False,False,False,{}
+tid_2274,Ульяновская область,True,True,[],False,False,False,{}
+tid_2275,Челябинская область,True,True,[],False,False,False,{}
+tid_2276,Челябинская область,True,True,[],False,False,False,{}
+tid_2278,Челябинская область,True,True,[],False,False,False,{}
+tid_2279,Челябинская область,True,True,[],False,False,False,{}
+tid_228,Республика Коми,True,True,[],False,False,False,"{""municipal_district_type"": [""городской округ"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_2280,Челябинская область,True,True,[],False,False,False,{}
+tid_2281,Челябинская область,True,True,[],False,False,False,{}
+tid_2282,Челябинская область,True,True,[],False,False,False,{}
+tid_2286,Челябинская область,True,True,[],False,False,False,{}
+tid_2287,Челябинская область,True,True,[],False,False,False,{}
+tid_2288,Челябинская область,True,True,[],False,False,False,{}
+tid_2289,Челябинская область,True,True,[],False,False,False,{}
+tid_229,Республика Коми,True,False,[],False,True,False,{}
+tid_2292,Челябинская область,True,True,[],False,False,False,{}
+tid_2293,Челябинская область,True,True,[],False,False,False,{}
+tid_2294,Челябинская область,True,True,[],False,False,False,{}
+tid_2295,Челябинская область,True,True,[],False,False,False,{}
+tid_2296,Челябинская область,True,True,[],False,False,False,{}
+tid_2297,Челябинская область,True,True,[],False,False,False,{}
+tid_2298,Челябинская область,True,True,[],False,False,False,{}
+tid_2299,Челябинская область,True,True,[],False,False,False,{}
+tid_23,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_230,Республика Коми,True,True,[],False,False,False,{}
+tid_2300,Челябинская область,True,True,[],False,False,False,{}
+tid_2301,Челябинская область,True,True,[],False,False,False,{}
+tid_2302,Челябинская область,True,True,[],False,False,False,{}
+tid_2303,Челябинская область,True,True,[],False,False,False,{}
+tid_2304,Челябинская область,True,True,[],False,False,False,{}
+tid_2305,Челябинская область,True,True,[],False,False,False,{}
+tid_2307,Челябинская область,True,True,[],False,False,False,{}
+tid_2308,Челябинская область,True,True,[],False,False,False,{}
+tid_2309,Челябинская область,True,True,[],False,False,False,{}
+tid_231,Республика Коми,True,True,[],False,False,False,{}
+tid_2310,Челябинская область,True,True,[],False,False,False,{}
+tid_2311,Челябинская область,True,True,[],False,False,False,{}
+tid_2312,Челябинская область,True,True,[],False,False,False,{}
+tid_2314,Челябинская область,True,True,[],False,False,False,{}
+tid_2315,Челябинская область,True,True,[],False,False,False,{}
+tid_2316,Челябинская область,True,True,[],False,False,False,{}
+tid_2317,Челябинская область,True,True,[],False,False,False,{}
+tid_2318,Ярославская область,True,True,[],False,False,False,{}
+tid_232,Республика Коми,True,True,[],False,False,False,{}
+tid_2320,Ярославская область,True,True,[],False,False,False,{}
+tid_2321,Ярославская область,True,True,[],False,False,False,{}
+tid_2322,Ярославская область,True,True,[],False,False,False,{}
+tid_2323,Ярославская область,True,True,[],False,False,False,{}
+tid_2324,Ярославская область,True,True,[],False,False,False,{}
+tid_2325,Ярославская область,True,True,[],False,False,False,{}
+tid_2326,Ярославская область,True,True,[],False,False,False,{}
+tid_2327,Ярославская область,True,True,[],False,False,False,{}
+tid_2328,Ярославская область,True,True,[],False,False,False,{}
+tid_2329,Ярославская область,True,True,[],False,False,False,{}
+tid_233,Республика Коми,True,True,[],False,False,False,{}
+tid_2330,Ярославская область,True,True,[],False,False,False,{}
+tid_2332,Ярославская область,True,True,[],False,False,False,{}
+tid_2333,Ярославская область,True,True,[],False,False,False,{}
+tid_2334,Ярославская область,True,True,[],False,False,False,{}
+tid_2335,Ярославская область,True,True,[],False,False,False,{}
+tid_2336,Ярославская область,True,True,[],False,False,False,{}
+tid_2337,Ярославская область,True,True,[],False,False,False,{}
+tid_2338,Еврейская автономная область,True,True,[],False,False,False,{}
+tid_2339,Еврейская автономная область,True,True,[],False,False,False,{}
+tid_234,Республика Коми,True,True,[],False,False,False,{}
+tid_2340,Еврейская автономная область,True,True,[],False,False,False,{}
+tid_2341,Еврейская автономная область,True,True,[],False,False,False,{}
+tid_2342,Еврейская автономная область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2343,Еврейская автономная область,True,True,[],False,False,False,{}
+tid_2344,Чукотский автономный округ,True,True,[],False,False,False,{}
+tid_2345,Чукотский автономный округ,True,True,[],False,False,False,{}
+tid_2348,Чукотский автономный округ,True,True,[],False,False,False,{}
+tid_2349,Чукотский автономный округ,True,True,[],False,False,False,{}
+tid_235,Республика Коми,True,True,[],False,False,False,{}
+tid_2351,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2352,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2353,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2354,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2355,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2356,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2357,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2358,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2359,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_236,Республика Коми,True,True,[],False,False,False,{}
+tid_2360,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2361,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2362,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2363,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2364,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2365,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2366,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2367,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2368,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2369,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_237,Республика Коми,True,True,[],False,False,False,{}
+tid_2370,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2371,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2372,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2373,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2374,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2375,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2376,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2377,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2378,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2379,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_238,Республика Коми,True,True,[],False,False,False,{}
+tid_2380,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2381,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2382,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2383,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2384,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2385,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2386,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2387,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2388,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2389,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_239,Республика Коми,True,True,[],False,False,False,{}
+tid_2390,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2391,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2392,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2393,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2395,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2398,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2399,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_240,Республика Коми,True,True,[],False,False,False,{}
+tid_2400,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2401,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2402,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2403,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2404,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2405,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2406,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2407,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2408,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2409,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_241,Республика Коми,True,True,[],False,False,False,{}
+tid_2410,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2411,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2412,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2416,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_242,Республика Коми,True,True,[],False,False,False,{}
+tid_2422,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2423,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2424,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2425,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2426,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2427,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2428,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2429,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_243,Республика Коми,True,True,[],False,False,False,{}
+tid_2430,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2431,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2432,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2433,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2434,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2435,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2436,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2437,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2439,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2440,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2441,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2442,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2443,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2444,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2445,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2446,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2447,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2449,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2450,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2451,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2452,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2453,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2454,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2455,Санкт-Петербург,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2456,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2457,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2458,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2459,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2460,Санкт-Петербург,True,True,[],False,False,False,{}
+tid_2461,Санкт-Петербург,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2462,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2463,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2464,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2465,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2466,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2467,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2468,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2469,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2470,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2471,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2472,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2473,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2474,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2475,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2476,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2477,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2478,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2479,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2480,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2481,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2482,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2483,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2484,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2485,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2486,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2487,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2488,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2489,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2490,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2491,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2492,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2493,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2494,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2495,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2496,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2497,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2498,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2499,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_25,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_2500,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2501,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2502,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2503,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2504,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2505,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2506,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2507,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2508,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2509,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2510,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2511,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2512,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2513,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2514,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2515,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2516,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2517,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2518,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2519,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2520,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2521,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2522,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2523,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2524,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2525,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2526,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2527,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2528,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2529,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2530,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2531,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2532,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2533,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2534,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2535,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2536,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2537,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2538,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2539,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2540,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2541,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2542,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2543,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2544,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2545,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2546,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2547,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2548,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2549,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2550,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2551,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2552,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2553,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2554,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2555,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2556,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2557,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2558,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2559,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2560,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2561,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2562,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2563,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2564,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2565,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2566,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2567,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2568,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2569,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2570,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2571,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2572,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2573,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2574,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2575,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2576,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2577,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2578,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2579,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2580,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2581,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2582,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2583,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2584,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2585,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2586,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2587,Москва,True,True,[],False,False,False,{}
+tid_2588,Москва,True,True,[],False,False,False,{}
+tid_2589,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2590,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2591,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2592,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2593,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2595,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2596,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2597,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2598,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2599,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_26,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_2600,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2601,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2602,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2604,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2605,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2606,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2607,Москва,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_2618,Костромская область,True,True,[],False,False,False,"{""municipal_district_type"": [""городской округ"", ""муниципальный округ""], ""year_from"": [""2019"", ""2024""], ""year_to"": [""2024"", ""9999""], ""change_id_from"": [""union_1"", """"]}"
+tid_2619,Ярославская область,True,True,[],False,False,False,{}
+tid_2620,Пермский край,True,True,[],False,False,False,{}
+tid_2621,Пермский край,True,True,[],False,False,False,{}
+tid_2644,Московская область,True,True,[],False,False,False,{}
+tid_2646,Калужская область,True,True,[],False,False,False,{}
+tid_2647,Калужская область,True,True,[],False,False,False,{}
+tid_2648,Московская область,True,True,[],False,False,False,{}
+tid_2649,Московская область,True,True,[],False,False,False,{}
+tid_2651,Московская область,True,True,[],False,False,False,{}
+tid_2652,Московская область,True,True,[],False,False,False,{}
+tid_269,Республика Марий Эл,True,True,[],False,False,False,{}
+tid_27,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_270,Республика Марий Эл,True,True,[],False,False,False,{}
+tid_271,Республика Марий Эл,True,True,[],False,False,False,{}
+tid_2710,Тверская область,True,False,[],False,True,False,{}
+tid_272,Республика Марий Эл,True,True,[],False,False,False,{}
+tid_273,Республика Марий Эл,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_274,Республика Марий Эл,True,True,[],False,False,False,{}
+tid_275,Республика Марий Эл,True,True,[],False,False,False,{}
+tid_276,Республика Марий Эл,True,True,[],False,False,False,{}
+tid_277,Республика Марий Эл,True,True,[],False,False,False,{}
+tid_278,Республика Марий Эл,True,True,[],False,False,False,{}
+tid_279,Республика Марий Эл,True,True,[],False,False,False,{}
+tid_28,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_280,Республика Марий Эл,True,True,[],False,False,False,{}
+tid_2808,Московская область,True,True,[],False,False,False,{}
+tid_2809,Пермский край,True,True,[],False,False,False,{}
+tid_281,Республика Марий Эл,True,True,[],False,False,False,{}
+tid_2813,Московская область,True,True,[],False,False,False,{}
+tid_2814,Московская область,True,True,[],False,False,False,{}
+tid_282,Республика Марий Эл,True,True,[],False,False,False,{}
+tid_283,Республика Марий Эл,True,True,[],False,False,False,{}
+tid_284,Республика Марий Эл,True,True,[],False,False,False,{}
+tid_285,Республика Марий Эл,True,True,[],False,False,False,{}
+tid_287,Республика Мордовия,True,True,[],False,False,False,{}
+tid_2872,Ямало-Ненецкий автономный округ,True,True,[],False,False,False,{}
+tid_2876,Ставропольский край,True,True,[],False,False,False,{}
+tid_2879,Ямало-Ненецкий автономный округ,True,True,[],False,False,False,{}
+tid_288,Республика Мордовия,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_2880,Ямало-Ненецкий автономный округ,True,True,[],False,False,False,{}
+tid_2881,Ставропольский край,True,True,[],False,False,False,{}
+tid_2882,Ямало-Ненецкий автономный округ,True,True,[],False,False,False,{}
+tid_2883,Тверская область,True,False,[],False,True,False,{}
+tid_2884,Тверская область,True,False,[],False,True,False,{}
+tid_2885,Пермский край,True,True,[],False,False,False,{}
+tid_2886,Пермский край,True,True,[],False,False,False,{}
+tid_2887,Саратовская область,True,True,[],False,False,False,{}
+tid_289,Республика Мордовия,True,True,[],False,False,False,{}
+tid_29,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_290,Республика Мордовия,True,True,[],False,False,False,{}
+tid_292,Республика Мордовия,True,True,[],False,False,False,{}
+tid_293,Республика Мордовия,True,True,[],False,False,False,{}
+tid_294,Республика Мордовия,True,True,[],False,False,False,{}
+tid_295,Республика Мордовия,True,True,[],False,False,False,{}
+tid_296,Республика Мордовия,True,True,[],False,False,False,{}
+tid_297,Республика Мордовия,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_298,Республика Мордовия,True,True,[],False,False,False,{}
+tid_3,Республика Адыгея,True,True,[],False,False,False,{}
+tid_30,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_300,Республика Мордовия,True,True,[],False,False,False,{}
+tid_3005,Нижегородская область,True,True,[],False,False,False,{}
+tid_3007,Кемеровская область,False,False,"[""covered_organization_jobs_per_resident""]",False,True,True,{}
+tid_3009,Тамбовская область,True,True,[],False,False,False,{}
+tid_301,Республика Мордовия,True,True,[],False,False,False,{}
+tid_3011,Челябинская область,True,True,[],False,False,False,{}
+tid_3012,Челябинская область,True,True,[],False,False,False,{}
+tid_3013,Московская область,True,True,[],False,False,False,{}
+tid_302,Республика Мордовия,True,True,[],False,False,False,{}
+tid_303,Республика Мордовия,True,True,[],False,False,False,{}
+tid_304,Республика Мордовия,True,True,[],False,False,False,{}
+tid_305,Республика Мордовия,True,True,[],False,False,False,{}
+tid_306,Республика Мордовия,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_307,Республика Мордовия,True,True,[],False,False,False,{}
+tid_308,Республика Мордовия,True,True,[],False,False,False,{}
+tid_309,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_31,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_312,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_314,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_316,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_317,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_318,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_319,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_32,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_320,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_321,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_323,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_324,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_325,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_326,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_327,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_329,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_33,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_330,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_331,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_332,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_333,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_334,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_335,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_336,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_337,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_338,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_339,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_34,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_340,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_341,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_342,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_343,Республика Саха (Якутия),True,True,[],False,False,False,{}
+tid_345,Республика Северная Осетия — Алания,True,False,[],False,True,False,{}
+tid_346,Республика Северная Осетия — Алания,True,False,[],False,True,False,{}
+tid_347,Республика Северная Осетия — Алания,True,False,[],False,True,False,{}
+tid_348,Республика Северная Осетия — Алания,True,False,[],False,True,False,{}
+tid_349,Республика Северная Осетия — Алания,True,False,[],False,True,False,{}
+tid_35,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_351,Республика Северная Осетия — Алания,True,False,[],False,True,False,{}
+tid_352,Республика Северная Осетия — Алания,True,False,[],False,True,False,{}
+tid_354,Республика Татарстан,True,True,[],False,False,False,{}
+tid_355,Республика Татарстан,True,True,[],False,False,False,{}
+tid_356,Республика Татарстан,True,True,[],False,False,False,{}
+tid_357,Республика Татарстан,True,True,[],False,False,False,{}
+tid_358,Республика Татарстан,True,True,[],False,False,False,{}
+tid_359,Республика Татарстан,True,True,[],False,False,False,{}
+tid_36,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_360,Республика Татарстан,True,True,[],False,False,False,{}
+tid_361,Республика Татарстан,True,True,[],False,False,False,{}
+tid_362,Республика Татарстан,True,True,[],False,False,False,{}
+tid_363,Республика Татарстан,True,True,[],False,False,False,{}
+tid_364,Республика Татарстан,True,True,[],False,False,False,{}
+tid_365,Республика Татарстан,True,True,[],False,False,False,{}
+tid_366,Республика Татарстан,True,True,[],False,False,False,{}
+tid_367,Республика Татарстан,True,True,[],False,False,False,{}
+tid_368,Республика Татарстан,True,True,[],False,False,False,{}
+tid_369,Республика Татарстан,True,True,[],False,False,False,{}
+tid_37,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_370,Республика Татарстан,True,True,[],False,False,False,{}
+tid_371,Республика Татарстан,True,True,[],False,False,False,{}
+tid_372,Республика Татарстан,True,True,[],False,False,False,{}
+tid_373,Республика Татарстан,True,True,[],False,False,False,{}
+tid_374,Республика Татарстан,True,True,[],False,False,False,{}
+tid_375,Республика Татарстан,True,True,[],False,False,False,{}
+tid_376,Республика Татарстан,True,True,[],False,False,False,{}
+tid_377,Республика Татарстан,True,True,[],False,False,False,{}
+tid_378,Республика Татарстан,True,True,[],False,False,False,{}
+tid_379,Республика Татарстан,True,True,[],False,False,False,{}
+tid_38,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_380,Республика Татарстан,True,True,[],False,False,False,{}
+tid_381,Республика Татарстан,True,True,[],False,False,False,{}
+tid_382,Республика Татарстан,True,True,[],False,False,False,{}
+tid_383,Республика Татарстан,True,True,[],False,False,False,{}
+tid_384,Республика Татарстан,True,True,[],False,False,False,{}
+tid_385,Республика Татарстан,True,True,[],False,False,False,{}
+tid_386,Республика Татарстан,True,True,[],False,False,False,{}
+tid_387,Республика Татарстан,True,True,[],False,False,False,{}
+tid_388,Республика Татарстан,True,True,[],False,False,False,{}
+tid_39,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_390,Республика Татарстан,True,True,[],False,False,False,{}
+tid_391,Республика Татарстан,True,True,[],False,False,False,{}
+tid_392,Республика Татарстан,True,True,[],False,False,False,{}
+tid_393,Республика Татарстан,True,True,[],False,False,False,{}
+tid_395,Республика Татарстан,True,True,[],False,False,False,{}
+tid_396,Республика Татарстан,True,True,[],False,False,False,{}
+tid_397,Республика Татарстан,True,True,[],False,False,False,{}
+tid_398,Республика Татарстан,True,True,[],False,False,False,{}
+tid_4,Республика Адыгея,True,True,[],False,False,False,{}
+tid_40,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_401,Республика Тыва,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_402,Республика Тыва,True,True,[],False,False,False,{}
+tid_403,Республика Тыва,True,True,[],False,False,False,{}
+tid_404,Республика Тыва,True,True,[],False,False,False,{}
+tid_405,Республика Тыва,True,True,[],False,False,False,{}
+tid_408,Республика Тыва,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_41,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_410,Республика Тыва,True,True,[],False,False,False,{}
+tid_413,Республика Тыва,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_414,Республика Тыва,True,True,[],False,False,False,{}
+tid_416,Республика Тыва,True,True,[],False,False,False,{}
+tid_418,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_419,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_42,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_420,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_421,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_422,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_423,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_424,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_425,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_428,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_429,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_43,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_430,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_431,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_432,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_433,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_434,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_435,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_436,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_437,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_438,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_44,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_440,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_441,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_442,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_443,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_444,Удмуртская Республика,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_445,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_446,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_447,Удмуртская Республика,True,True,[],False,False,False,{}
+tid_448,Республика Хакасия,True,True,[],False,False,False,{}
+tid_449,Республика Хакасия,True,True,[],False,False,False,{}
+tid_45,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_450,Республика Хакасия,True,True,[],False,False,False,{}
+tid_451,Республика Хакасия,True,True,[],False,False,False,{}
+tid_452,Республика Хакасия,True,True,[],False,False,False,{}
+tid_453,Республика Хакасия,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_455,Республика Хакасия,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_456,Республика Хакасия,True,True,[],False,False,False,{}
+tid_457,Республика Хакасия,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_458,Республика Хакасия,True,True,[],False,False,False,{}
+tid_459,Республика Хакасия,True,True,[],False,False,False,{}
+tid_46,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_460,Республика Хакасия,True,True,[],False,False,False,{}
+tid_47,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_478,Чувашская Республика,True,True,[],False,False,False,{}
+tid_479,Чувашская Республика,True,True,[],False,False,False,{}
+tid_48,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_480,Чувашская Республика,True,True,[],False,False,False,{}
+tid_481,Чувашская Республика,True,True,[],False,False,False,{}
+tid_482,Чувашская Республика,True,True,[],False,False,False,{}
+tid_484,Чувашская Республика,True,True,[],False,False,False,{}
+tid_485,Чувашская Республика,True,True,[],False,False,False,{}
+tid_486,Чувашская Республика,True,True,[],False,False,False,{}
+tid_487,Чувашская Республика,True,True,[],False,False,False,{}
+tid_489,Чувашская Республика,True,True,[],False,False,False,{}
+tid_49,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_490,Чувашская Республика,True,True,[],False,False,False,{}
+tid_491,Чувашская Республика,True,True,[],False,False,False,{}
+tid_492,Чувашская Республика,True,True,[],False,False,False,{}
+tid_493,Чувашская Республика,True,True,[],False,False,False,{}
+tid_494,Чувашская Республика,True,True,[],False,False,False,{}
+tid_495,Чувашская Республика,True,True,[],False,False,False,{}
+tid_496,Чувашская Республика,True,True,[],False,False,False,{}
+tid_497,Чувашская Республика,True,True,[],False,False,False,{}
+tid_498,Чувашская Республика,True,True,[],False,False,False,{}
+tid_499,Чувашская Республика,True,True,[],False,False,False,{}
+tid_5,Республика Адыгея,True,True,[],False,False,False,{}
+tid_50,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_501,Чувашская Республика,True,True,[],False,False,False,{}
+tid_502,Чувашская Республика,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_503,Чувашская Республика,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_504,Алтайский край,True,True,[],False,False,False,{}
+tid_505,Алтайский край,True,True,[],False,False,False,{}
+tid_506,Алтайский край,True,True,[],False,False,False,{}
+tid_507,Алтайский край,True,True,[],False,False,False,{}
+tid_508,Алтайский край,True,True,[],False,False,False,{}
+tid_509,Алтайский край,True,True,[],False,False,False,{}
+tid_51,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_510,Алтайский край,True,True,[],False,False,False,{}
+tid_511,Алтайский край,True,True,[],False,False,False,{}
+tid_512,Алтайский край,True,True,[],False,False,False,{}
+tid_515,Алтайский край,True,True,[],False,False,False,{}
+tid_516,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_517,Алтайский край,True,True,[],False,False,False,{}
+tid_518,Алтайский край,True,True,[],False,False,False,{}
+tid_519,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_52,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_520,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_521,Алтайский край,True,True,[],False,False,False,{}
+tid_522,Алтайский край,True,True,[],False,False,False,{}
+tid_523,Алтайский край,True,True,[],False,False,False,{}
+tid_524,Алтайский край,True,True,[],False,False,False,{}
+tid_525,Алтайский край,True,True,[],False,False,False,{}
+tid_527,Алтайский край,True,True,[],False,False,False,{}
+tid_528,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_529,Алтайский край,True,True,[],False,False,False,{}
+tid_53,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_530,Алтайский край,True,True,[],False,False,False,{}
+tid_531,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_532,Алтайский край,True,True,[],False,False,False,{}
+tid_533,Алтайский край,True,True,[],False,False,False,{}
+tid_534,Алтайский край,True,True,[],False,False,False,{}
+tid_535,Алтайский край,True,True,[],False,False,False,{}
+tid_536,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_537,Алтайский край,True,True,[],False,False,False,{}
+tid_538,Алтайский край,True,True,[],False,False,False,{}
+tid_539,Алтайский край,True,True,[],False,False,False,{}
+tid_54,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_540,Алтайский край,True,True,[],False,False,False,{}
+tid_541,Алтайский край,True,True,[],False,False,False,{}
+tid_542,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_543,Алтайский край,True,True,[],False,False,False,{}
+tid_544,Алтайский край,True,True,[],False,False,False,{}
+tid_545,Алтайский край,True,True,[],False,False,False,{}
+tid_546,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_547,Алтайский край,True,True,[],False,False,False,{}
+tid_548,Алтайский край,True,True,[],False,False,False,{}
+tid_549,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_55,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_550,Алтайский край,True,True,[],False,False,False,{}
+tid_552,Алтайский край,True,True,[],False,False,False,{}
+tid_553,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_554,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_555,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_556,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_557,Алтайский край,True,True,[],False,False,False,{}
+tid_558,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_559,Алтайский край,True,True,[],False,False,False,{}
+tid_56,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_560,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_561,Алтайский край,True,True,[],False,False,False,{}
+tid_562,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_563,Алтайский край,True,True,[],False,False,False,{}
+tid_564,Алтайский край,True,True,[],False,False,False,{}
+tid_565,Алтайский край,True,True,[],False,False,False,{}
+tid_566,Алтайский край,True,True,[],False,False,False,{}
+tid_567,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_568,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_569,Алтайский край,True,True,[],False,False,False,{}
+tid_57,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_570,Алтайский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_571,Алтайский край,True,True,[],False,False,False,{}
+tid_572,Алтайский край,True,True,[],False,False,False,{}
+tid_574,Забайкальский край,True,True,[],False,False,False,{}
+tid_578,Забайкальский край,True,True,[],False,False,False,{}
+tid_579,Забайкальский край,True,True,[],False,False,False,{}
+tid_58,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_580,Забайкальский край,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_581,Забайкальский край,True,True,[],False,False,False,{}
+tid_582,Забайкальский край,True,True,[],False,False,False,{}
+tid_583,Забайкальский край,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_584,Забайкальский край,True,True,[],False,False,False,{}
+tid_585,Забайкальский край,True,True,[],False,False,False,{}
+tid_586,Забайкальский край,True,True,[],False,False,False,{}
+tid_587,Забайкальский край,True,True,[],False,False,False,{}
+tid_588,Забайкальский край,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_589,Забайкальский край,True,True,[],False,False,False,{}
+tid_59,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_591,Забайкальский край,True,True,[],False,False,False,{}
+tid_592,Забайкальский край,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_593,Забайкальский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_594,Забайкальский край,True,True,[],False,False,False,{}
+tid_595,Забайкальский край,True,True,[],False,False,False,{}
+tid_598,Забайкальский край,True,True,[],False,False,False,{}
+tid_599,Забайкальский край,True,True,[],False,False,False,{}
+tid_6,Республика Адыгея,True,True,[],False,False,False,{}
+tid_60,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_600,Забайкальский край,True,True,[],False,False,False,{}
+tid_601,Забайкальский край,True,True,[],False,False,False,{}
+tid_602,Забайкальский край,True,True,[],False,False,False,{}
+tid_603,Забайкальский край,True,True,[],False,False,False,{}
+tid_604,Забайкальский край,True,True,[],False,False,False,{}
+tid_605,Забайкальский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_606,Забайкальский край,True,True,[],False,False,False,{}
+tid_607,Забайкальский край,True,True,[],False,False,False,{}
+tid_608,Камчатский край,True,True,[],False,False,False,{}
+tid_61,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_612,Камчатский край,True,True,[],False,False,False,{}
+tid_613,Камчатский край,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_614,Камчатский край,True,True,[],False,False,False,{}
+tid_615,Камчатский край,True,True,[],False,False,False,{}
+tid_616,Камчатский край,True,True,[],False,False,False,{}
+tid_618,Камчатский край,True,True,[],False,False,False,{}
+tid_619,Камчатский край,True,True,[],False,False,False,{}
+tid_62,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_621,Камчатский край,True,True,[],False,False,False,{}
+tid_63,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_65,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_66,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_666,Красноярский край,True,True,[],False,False,False,{}
+tid_667,Красноярский край,True,True,[],False,False,False,{}
+tid_668,Красноярский край,True,True,[],False,False,False,{}
+tid_669,Красноярский край,True,True,[],False,False,False,{}
+tid_67,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_670,Красноярский край,True,True,[],False,False,False,{}
+tid_671,Красноярский край,True,True,[],False,False,False,{}
+tid_674,Красноярский край,True,True,[],False,False,False,{}
+tid_675,Красноярский край,True,True,[],False,False,False,{}
+tid_676,Красноярский край,True,True,[],False,False,False,{}
+tid_677,Красноярский край,True,True,[],False,False,False,{}
+tid_678,Красноярский край,True,True,[],False,False,False,{}
+tid_679,Красноярский край,True,True,[],False,False,False,{}
+tid_68,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_680,Красноярский край,True,True,[],False,False,False,{}
+tid_683,Красноярский край,True,True,[],False,False,False,{}
+tid_685,Красноярский край,True,True,[],False,False,False,{}
+tid_686,Красноярский край,True,True,[],False,False,False,{}
+tid_687,Красноярский край,True,True,[],False,False,False,{}
+tid_689,Красноярский край,True,True,[],False,False,False,{}
+tid_69,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_690,Красноярский край,True,True,[],False,False,False,{}
+tid_691,Красноярский край,True,True,[],False,False,False,{}
+tid_692,Красноярский край,True,True,[],False,False,False,{}
+tid_693,Красноярский край,True,True,[],False,False,False,{}
+tid_694,Красноярский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_695,Красноярский край,True,True,[],False,False,False,{}
+tid_696,Красноярский край,True,True,[],False,False,False,{}
+tid_697,Красноярский край,True,True,[],False,False,False,{}
+tid_698,Красноярский край,True,True,[],False,False,False,{}
+tid_699,Красноярский край,True,True,[],False,False,False,{}
+tid_7,Республика Адыгея,True,True,[],False,False,False,{}
+tid_70,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_701,Красноярский край,True,True,[],False,False,False,{}
+tid_702,Красноярский край,True,True,[],False,False,False,{}
+tid_703,Красноярский край,True,True,[],False,False,False,{}
+tid_704,Красноярский край,True,True,[],False,False,False,{}
+tid_705,Красноярский край,True,True,[],False,False,False,{}
+tid_706,Красноярский край,True,True,[],False,False,False,{}
+tid_708,Красноярский край,True,True,[],False,False,False,{}
+tid_71,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_710,Красноярский край,True,True,[],False,False,False,{}
+tid_711,Красноярский край,True,True,[],False,False,False,{}
+tid_712,Красноярский край,True,True,[],False,False,False,{}
+tid_713,Красноярский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_714,Красноярский край,True,True,[],False,False,False,{}
+tid_715,Красноярский край,True,True,[],False,False,False,{}
+tid_716,Красноярский край,True,True,[],False,False,False,{}
+tid_717,Красноярский край,True,True,[],False,False,False,{}
+tid_718,Красноярский край,True,True,[],False,False,False,{}
+tid_719,Красноярский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_72,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_720,Красноярский край,True,True,[],False,False,False,{}
+tid_721,Красноярский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_722,Красноярский край,True,True,[],False,False,False,{}
+tid_723,Красноярский край,True,True,[],False,False,False,{}
+tid_725,Красноярский край,True,True,[],False,False,False,{}
+tid_726,Красноярский край,True,True,[],False,False,False,{}
+tid_727,Пермский край,True,True,[],False,False,False,{}
+tid_73,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_731,Пермский край,True,True,[],False,False,False,{}
+tid_734,Пермский край,True,True,[],False,False,False,{}
+tid_735,Пермский край,True,True,[],False,False,False,{}
+tid_736,Пермский край,True,True,[],False,False,False,{}
+tid_737,Пермский край,True,True,[],False,False,False,{}
+tid_738,Пермский край,True,True,[],False,False,False,{}
+tid_739,Пермский край,True,True,[],False,False,False,{}
+tid_74,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_741,Пермский край,True,True,[],False,False,False,{}
+tid_742,Пермский край,True,True,[],False,False,False,{}
+tid_743,Пермский край,True,True,[],False,False,False,{}
+tid_744,Пермский край,True,True,[],False,False,False,{}
+tid_745,Пермский край,True,True,[],False,False,False,{}
+tid_746,Пермский край,True,True,[],False,False,False,{}
+tid_747,Пермский край,True,True,[],False,False,False,{}
+tid_748,Пермский край,True,True,[],False,False,False,{}
+tid_749,Пермский край,True,True,[],False,False,False,{}
+tid_75,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_751,Пермский край,True,True,[],False,False,False,{}
+tid_752,Пермский край,True,True,[],False,False,False,{}
+tid_753,Пермский край,True,True,[],False,False,False,{}
+tid_754,Пермский край,True,True,[],False,False,False,{}
+tid_755,Пермский край,True,True,[],False,False,False,{}
+tid_756,Пермский край,True,True,[],False,False,False,{}
+tid_757,Пермский край,True,True,[],False,False,False,{}
+tid_758,Пермский край,True,True,[],False,False,False,{}
+tid_76,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_760,Пермский край,True,True,[],False,False,False,{}
+tid_761,Пермский край,True,True,[],False,False,False,{}
+tid_763,Пермский край,True,True,[],False,False,False,{}
+tid_764,Пермский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_765,Пермский край,True,True,[],False,False,False,{}
+tid_766,Пермский край,True,True,[],False,False,False,{}
+tid_767,Пермский край,True,True,[],False,False,False,{}
+tid_769,Пермский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_77,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_770,Пермский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_771,Пермский край,True,True,[],False,False,False,{}
+tid_773,Пермский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_774,Пермский край,True,True,[],False,False,False,{}
+tid_775,Приморский край,True,True,[],False,False,False,{}
+tid_776,Приморский край,True,True,[],False,False,False,{}
+tid_777,Приморский край,True,True,[],False,False,False,{}
+tid_778,Приморский край,True,True,[],False,False,False,{}
+tid_779,Приморский край,True,True,[],False,False,False,{}
+tid_78,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_780,Приморский край,True,True,[],False,False,False,{}
+tid_781,Приморский край,True,True,[],False,False,False,{}
+tid_782,Приморский край,True,True,[],False,False,False,{}
+tid_783,Приморский край,True,True,[],False,False,False,{}
+tid_784,Приморский край,True,True,[],False,False,False,{}
+tid_785,Приморский край,True,True,[],False,False,False,{}
+tid_787,Приморский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_788,Приморский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_789,Приморский край,True,True,[],False,False,False,{}
+tid_79,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_790,Приморский край,True,True,[],False,False,False,{}
+tid_791,Приморский край,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_792,Приморский край,True,True,[],False,False,False,{}
+tid_793,Приморский край,True,True,[],False,False,False,{}
+tid_794,Приморский край,True,True,[],False,False,False,{}
+tid_795,Приморский край,True,True,[],False,False,False,{}
+tid_796,Приморский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_797,Приморский край,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_798,Приморский край,True,True,[],False,False,False,{}
+tid_799,Приморский край,True,True,[],False,False,False,{}
+tid_8,Республика Адыгея,True,True,[],False,False,False,{}
+tid_80,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_800,Приморский край,True,True,[],False,False,False,{}
+tid_801,Приморский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_802,Приморский край,True,True,[],False,False,False,{}
+tid_803,Приморский край,True,True,[],False,False,False,{}
+tid_804,Приморский край,True,True,[],False,False,False,{}
+tid_805,Приморский край,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_806,Приморский край,True,True,[],False,False,False,{}
+tid_807,Приморский край,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_808,Приморский край,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_809,Ставропольский край,True,True,[],False,False,False,{}
+tid_81,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_810,Ставропольский край,True,False,[],False,True,False,"{""municipal_district_type"": [""городской округ"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_811,Ставропольский край,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,"{""municipal_district_type"": [""городской округ"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_812,Ставропольский край,True,True,[],False,False,False,{}
+tid_813,Ставропольский край,True,True,[],False,False,False,{}
+tid_814,Ставропольский край,True,False,[],False,True,False,"{""municipal_district_type"": [""городской округ"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_815,Ставропольский край,True,False,[],False,True,False,"{""municipal_district_type"": [""городской округ"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_817,Ставропольский край,True,False,[],False,True,False,"{""municipal_district_type"": [""городской округ"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_818,Ставропольский край,True,True,[],False,False,False,{}
+tid_819,Ставропольский край,True,False,[],False,True,False,"{""municipal_district_type"": [""городской округ"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_82,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_820,Ставропольский край,True,True,[],False,False,False,{}
+tid_821,Ставропольский край,True,False,[],False,True,False,"{""municipal_district_type"": [""городской округ"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_822,Ставропольский край,True,False,[],False,True,False,"{""municipal_district_type"": [""городской округ"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_823,Ставропольский край,True,False,[],False,True,False,"{""municipal_district_type"": [""городской округ"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_824,Ставропольский край,True,True,[],False,False,False,{}
+tid_825,Ставропольский край,True,False,[],False,True,False,"{""municipal_district_type"": [""городской округ"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_826,Ставропольский край,True,True,[],False,False,False,{}
+tid_827,Ставропольский край,True,True,[],False,False,False,{}
+tid_828,Ставропольский край,True,True,[],False,False,False,{}
+tid_829,Ставропольский край,True,True,[],False,False,False,{}
+tid_83,Республика Башкортостан,True,True,[],False,False,False,{}
+tid_830,Ставропольский край,True,True,[],False,False,False,{}
+tid_831,Ставропольский край,True,True,[],False,False,False,{}
+tid_832,Ставропольский край,True,True,[],False,False,False,{}
+tid_833,Ставропольский край,True,True,[],False,False,False,{}
+tid_834,Ставропольский край,True,True,[],False,False,False,{}
+tid_835,Ставропольский край,True,True,[],False,False,False,{}
+tid_836,Ставропольский край,True,True,[],False,False,False,{}
+tid_838,Ставропольский край,True,True,[],False,False,False,{}
+tid_839,Ставропольский край,True,True,[],False,False,False,{}
+tid_840,Ставропольский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_841,Ставропольский край,True,True,[],False,False,False,{}
+tid_842,Хабаровский край,True,True,[],False,False,False,{}
+tid_843,Хабаровский край,True,True,[],False,False,False,{}
+tid_844,Хабаровский край,True,True,[],False,False,False,{}
+tid_846,Хабаровский край,True,True,[],False,False,False,{}
+tid_847,Хабаровский край,True,True,[],False,False,False,{}
+tid_848,Хабаровский край,True,True,[],False,False,False,{}
+tid_849,Хабаровский край,True,True,[],False,False,False,{}
+tid_851,Хабаровский край,True,True,[],False,False,False,{}
+tid_852,Хабаровский край,True,True,[],False,False,False,{}
+tid_853,Хабаровский край,True,True,[],False,False,False,{}
+tid_854,Хабаровский край,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_855,Хабаровский край,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_856,Хабаровский край,True,True,[],False,False,False,{}
+tid_857,Хабаровский край,True,True,[],False,False,False,{}
+tid_859,Хабаровский край,True,True,[],False,False,False,{}
+tid_860,Хабаровский край,True,True,[],False,False,False,{}
+tid_870,Амурская область,True,True,[],False,False,False,{}
+tid_871,Амурская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_872,Амурская область,True,True,[],False,False,False,{}
+tid_873,Амурская область,True,True,[],False,False,False,{}
+tid_874,Амурская область,True,True,[],False,False,False,{}
+tid_875,Амурская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_876,Амурская область,True,True,[],False,False,False,{}
+tid_877,Амурская область,True,True,[],False,False,False,{}
+tid_878,Амурская область,True,True,[],False,False,False,{}
+tid_879,Амурская область,True,True,[],False,False,False,{}
+tid_880,Амурская область,True,True,[],False,False,False,{}
+tid_881,Амурская область,True,True,[],False,False,False,{}
+tid_882,Амурская область,True,True,[],False,False,False,{}
+tid_883,Амурская область,True,True,[],False,False,False,{}
+tid_884,Амурская область,True,True,[],False,False,False,{}
+tid_885,Амурская область,True,True,[],False,False,False,{}
+tid_886,Амурская область,True,True,[],False,False,False,{}
+tid_888,Амурская область,True,True,[],False,False,False,{}
+tid_889,Амурская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_890,Архангельская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_891,Архангельская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_892,Архангельская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_895,Архангельская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_896,Архангельская область,False,False,"[""covered_organization_jobs_per_resident"", ""public_administration_education_health_headcount_share""]",True,True,True,{}
+tid_897,Архангельская область,True,True,[],False,False,False,{}
+tid_898,Архангельская область,True,True,[],False,False,False,{}
+tid_899,Архангельская область,False,False,"[""public_administration_education_health_headcount_share""]",False,False,False,{}
+tid_9,Республика Адыгея,True,True,[],False,False,False,{}
+tid_900,Архангельская область,True,True,[],False,False,False,{}
+tid_901,Архангельская область,True,True,[],False,False,False,{}
+tid_902,Архангельская область,True,True,[],False,False,False,{}
+tid_903,Архангельская область,True,True,[],False,False,False,{}
+tid_904,Архангельская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_905,Архангельская область,True,True,[],False,False,False,{}
+tid_907,Архангельская область,True,True,[],False,False,False,{}
+tid_908,Архангельская область,True,True,[],False,False,False,{}
+tid_909,Архангельская область,True,True,[],False,False,False,{}
+tid_911,Архангельская область,True,True,[],False,False,False,{}
+tid_912,Архангельская область,True,True,[],False,False,False,"{""municipal_district_type"": [""муниципальный район"", ""муниципальный округ""], ""year_from"": [""2018"", ""2024""], ""year_to"": [""2024"", ""9999""]}"
+tid_913,Архангельская область,True,True,[],False,False,False,{}
+tid_914,Архангельская область,True,True,[],False,False,False,{}
+tid_915,Архангельская область,True,True,[],False,False,False,{}
+tid_916,Ненецкий автономный округ,True,True,[],False,False,False,{}
+tid_917,Ненецкий автономный округ,True,True,[],False,False,False,{}
+tid_918,Астраханская область,True,True,[],False,False,False,{}
+tid_920,Астраханская область,True,True,[],False,False,False,{}
+tid_922,Астраханская область,True,True,[],False,False,False,{}
+tid_923,Астраханская область,True,True,[],False,False,False,{}
+tid_924,Астраханская область,True,True,[],False,False,False,{}
+tid_925,Астраханская область,True,True,[],False,False,False,{}
+tid_926,Астраханская область,True,True,[],False,False,False,{}
+tid_927,Астраханская область,True,True,[],False,False,False,{}
+tid_928,Астраханская область,True,True,[],False,False,False,{}
+tid_929,Астраханская область,True,True,[],False,False,False,{}
+tid_930,Астраханская область,True,True,[],False,False,False,{}
+tid_986,Владимирская область,True,True,[],False,False,False,{}
+tid_987,Владимирская область,True,True,[],False,False,False,{}
+tid_988,Владимирская область,True,True,[],False,False,False,{}
+tid_989,Владимирская область,True,True,[],False,False,False,{}
+tid_991,Владимирская область,True,True,[],False,False,False,{}
+tid_992,Владимирская область,True,True,[],False,False,False,{}
+tid_993,Владимирская область,True,True,[],False,False,False,{}
+tid_994,Владимирская область,True,True,[],False,False,False,{}
+tid_995,Владимирская область,True,True,[],False,False,False,{}
+tid_996,Владимирская область,True,True,[],False,False,False,{}
+tid_998,Владимирская область,True,True,[],False,False,False,{}
+tid_999,Владимирская область,True,True,[],False,False,False,{}

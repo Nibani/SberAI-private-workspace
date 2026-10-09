@@ -1,8 +1,0 @@
-{
-  "timing_seed": 61001,
-  "first_fit_seconds": 0.48069590001250617,
-  "setup_seconds": 3.129972299997462,
-  "forecast_20_seeds_seconds": 12.743890300247585,
-  "maximum_forecast_seconds": 600,
-  "decision": "CONTINUE_ALL_20"
-}
