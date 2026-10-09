@@ -40,7 +40,7 @@
     "PROVENANCE.json": {
       "bytes": 106720,
       "scientific_pin": false,
-      "sha256": "a58f2f2c8d42287ac2cff3769c4ad37b194ffc292acef4491b7042b7f1c78c4b",
+      "sha256": "08b8ed8447bbd87c76a35f28eecfb5392c6cf4ec9b8d521be66a5384b0ce5dc2",
       "source_kind": "EXPORT_METADATA"
     },
     "README.md": {
@@ -434,9 +434,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "docs/index.html": {
-      "bytes": 499725,
+      "bytes": 499672,
       "scientific_pin": false,
-      "sha256": "1692cf93a807f3d91f371eaea153255d0301be4d99428d22b2eda93cabb8df9d",
+      "sha256": "e34a5addce52d359f505157deaebec678eca225cc51e393573dc305520605cd1",
       "source_kind": "CURRENT_LIVE"
     },
     "models/continuous_atlas.json": {
@@ -2128,7 +2128,7 @@
     "reports/round2-cases/abazinsky.json": {
       "bytes": 27773,
       "scientific_pin": false,
-      "sha256": "32bcfae5b021ee3c6630dea218192fbeab10dbcf2bcac2a53fd63f6f97e88036",
+      "sha256": "ab5abc79150161727721b4ad27da35f23f3322e65d358f58426c26dc1a0f11e5",
       "source_kind": "CURRENT_LIVE"
     },
     "reports/source_alignment.json": {
@@ -3986,9 +3986,9 @@
       "source_kind": "CURRENT_LIVE"
     },
     "web/atlas_theme.css": {
-      "bytes": 36086,
+      "bytes": 36033,
       "scientific_pin": false,
-      "sha256": "0def6c1b00a21baf685e9cb9e3130775eba5c4e0ec96e5d201457ca0056b3ccc",
+      "sha256": "858c75c863669514e7282fa9669d70971a0cb5d8ba667477acdc9a4d70cdcc33",
       "source_kind": "CURRENT_LIVE"
     },
     "web/cluster_stability.html": {
@@ -4032,5 +4032,5 @@
   "scientific_pin_count": 132,
   "self_hash": "External EXPORT proof; manifest does not hash itself",
   "state": "BYTE_EXACT_COPY; CURRENT_ACCEPTANCE_UNVERIFIED",
-  "total_bytes": 57024930
+  "total_bytes": 57024824
 }

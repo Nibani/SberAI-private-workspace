@@ -173,11 +173,11 @@
       },
       "docs/index.html": {
         "c4_sha256": "29dc2c6bcfecfef58ffe940cfd0305830b67ed0278d6b5bc6de66130b8f82389",
-        "current_sha256": "1692cf93a807f3d91f371eaea153255d0301be4d99428d22b2eda93cabb8df9d"
+        "current_sha256": "e34a5addce52d359f505157deaebec678eca225cc51e393573dc305520605cd1"
       },
       "reports/round2-cases/abazinsky.json": {
         "c4_sha256": "6dcfbe28fbdfe26d90d5d63308ce49703f11b1ebb55e81653bd3c2368718555e",
-        "current_sha256": "32bcfae5b021ee3c6630dea218192fbeab10dbcf2bcac2a53fd63f6f97e88036"
+        "current_sha256": "ab5abc79150161727721b4ad27da35f23f3322e65d358f58426c26dc1a0f11e5"
       },
       "run_all.py": {
         "c4_sha256": "685cd0c0a7c1ed1576c1bc04d60308761b68a6ea0922ebf63164c41f492ad1f4",
@@ -197,7 +197,7 @@
       },
       "web/atlas_theme.css": {
         "c4_sha256": "9ee02e69b6ed23ce86d8efb98decfff503adbafe10ca531b71918b8a70f611b9",
-        "current_sha256": "0def6c1b00a21baf685e9cb9e3130775eba5c4e0ec96e5d201457ca0056b3ccc"
+        "current_sha256": "858c75c863669514e7282fa9669d70971a0cb5d8ba667477acdc9a4d70cdcc33"
       },
       "web/research_template.html": {
         "c4_sha256": "e65a3744eccb4142ea9d1a9b4bec090aaa791ad4916bb76212471e5d778ccca1",
@@ -223,7 +223,7 @@
   "ci_old_live_sha256": "a7bdcf280bfbec5fc938a6071eb7e8da28facbd3c6c7af1967347edb91f19e6f",
   "ci_override_sha256": "c21219befc94f5916f95eea688b887ad930bda58c7745c50cf66c8a5a2f193b8",
   "controller_certification": "NOT_REQUIRED; NO_ACCEPTED_CLAIM",
-  "exported_at_utc": "2026-10-09T01:57:17.689563+00:00",
+  "exported_at_utc": "2026-10-09T02:08:26.464378+00:00",
   "future_explicit_seed_rerun_limitation": "The original registered seed producer is unchanged and uses its historical Windows PDH guard. That producer does not implement the later VRAM gate; no future seed rerun resource guarantee is asserted. Saved seed verification does not fit models. The current synthetic reproduction wrapper has a separate guard revision.",
   "kind": "PRIVATE_NIBANI_SBER_PUBLIC",
   "owner_frozen_receipt": {
@@ -300,7 +300,7 @@
       "docs/images/round2-region-control.png": "d00e0c9cb6dd69bbfd7557cb16119e432ab4b064ad3518087215bf3ab77ab35a",
       "docs/images/round2-temporal.png": "0c66f470ec1228d626d7614d4805afc9a7f9979e3674fbec2edcc5324e5773dd",
       "docs/images/stability.png": "7379411491056425a4cdd2cf3935c90195098135151f49df34e2034b27fe83da",
-      "docs/index.html": "1692cf93a807f3d91f371eaea153255d0301be4d99428d22b2eda93cabb8df9d",
+      "docs/index.html": "e34a5addce52d359f505157deaebec678eca225cc51e393573dc305520605cd1",
       "models/continuous_atlas.json": "6000163eb591530a6cb8135c6e3c3c0bd5e8f1ee17f7b2eaa92b38304b5bae38",
       "reports/README.md": "d1e1fbc77c10c92cdcfac64b012bd17e0ee19c3033610b207a0b90daa7fe8a8e",
       "reports/cluster-stability-2026-10-07/README.md": "fa4b62a96acbb7e5e230b67ee85d72c1fdf661ae212e6291c3784f4577204ebb",
@@ -582,7 +582,7 @@
       "reports/round2-2026-09-24/round2-20260924-temporal_grid/transition_events.csv": "1caf8328edf4f2a48a296f0114533a05a9f9d8b170e0834f6ee9cc16ef27d8a7",
       "reports/round2-2026-09-24/verification.json": "a38e18021d80ed1d7672cc2e612557b1e28e64da01d6f0b453e402b3ffe708b2",
       "reports/round2-cases/README.md": "ec96ad95e85fcce8815ea6b795a23b9f2bc6369b713be6c23e3e5cf8f1426843",
-      "reports/round2-cases/abazinsky.json": "32bcfae5b021ee3c6630dea218192fbeab10dbcf2bcac2a53fd63f6f97e88036",
+      "reports/round2-cases/abazinsky.json": "ab5abc79150161727721b4ad27da35f23f3322e65d358f58426c26dc1a0f11e5",
       "reports/source_alignment.json": "2fce5920dba19f957c5e3c4a50086025d476c0f6dc8782f80263abc1fdd79f05",
       "reports/source_manifest.json": "a7f1f381f5a85546fb1071fd6aad90420009ce05a4034b403632ff3190afd1b8",
       "reports/technical-acceptance-2026-10-04/DERIVED_EVIDENCE.json": "f8dd424515ed13659101cf8ef446a6af4a39081bbefa415e7c8bfff24514d427",
@@ -892,7 +892,7 @@
       "web/archive_results.html": "9481f264a69c193b431ffbdb7dcd85e12d4630a46d9aa507f869118169a15455",
       "web/atlas_fonts.css": "d45464c14bf154ff2879e30042022f8e281ca1349c9fdb4f2e8725b5263b93ea",
       "web/atlas_map.css": "e8f862214683993acc1974a07adea9f48f424cc056a70cb7d126930d55e31642",
-      "web/atlas_theme.css": "0def6c1b00a21baf685e9cb9e3130775eba5c4e0ec96e5d201457ca0056b3ccc",
+      "web/atlas_theme.css": "858c75c863669514e7282fa9669d70971a0cb5d8ba667477acdc9a4d70cdcc33",
       "web/cluster_stability.html": "710001e2fa9f72987f9fdd40666071bc5a110232266df51c05103da6842953c9",
       "web/font_licenses.html": "c21bf616066ef348a0654ee09ddbb06947249400554bf1ec37e9745bc65a17a0",
       "web/icvi_results.html": "bddd27a19dfe73b7d23b9e059f152392ca1628eb32e51de7587051aa5e7b05d8",
@@ -938,7 +938,7 @@
         "precompression_receipt_sha256": "516e63ace28d5384641978e2806699db317a56594ae8768cfcc950b508e64bb4"
       }
     ],
-    "receipt_sha256": "ebcb571fa2552f6fa587bbe7a739b1f39724f5bcd8c77058059610e268bfe53f",
+    "receipt_sha256": "32cdd3f394f0cb77a0c809d9c6d08aacb4ff8ff504a65e5edb588b3e07c6605b",
     "scientific_acceptance": "UNVERIFIED; frozen bytes are not quality acceptance",
     "seed_lineage": {
       "lineage": {
@@ -981,7 +981,7 @@
   "pages": "NOT_DEPLOYED_BY_EXPORTER",
   "scientific_fitting_executed": false,
   "seed_lineage_review": "PASS_REPORTED_BY_ROOT; scientific quality acceptance separate",
-  "selection_sha256": "5862be2acaa4df65a736dd212f3ed51790b708a336e679c73c641e28d87b1588",
+  "selection_sha256": "5c56480ffcfc14ba716db9a13444f5db57a508cf98442cb4e8e5132f4fef8bad",
   "sole_author": "Nibani",
   "tools_sha256": {
     "export_candidate.py": "917c09b30cfeabbc6a47d804f949389892587b4315d8ce9b05e3f490c58a7713",

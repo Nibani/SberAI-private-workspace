@@ -1,7 +1,7 @@
 {
   "source": {
     "file": "docs/index.html",
-    "sha256": "1692cf93a807f3d91f371eaea153255d0301be4d99428d22b2eda93cabb8df9d",
+    "sha256": "e34a5addce52d359f505157deaebec678eca225cc51e393573dc305520605cd1",
     "payload_encoding": "gzip-base64",
     "entities": 2016
   },
