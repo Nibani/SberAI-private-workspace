@@ -1,0 +1,13 @@
+{
+  "inputs": {
+    "data/v12/panel.csv.gz": "953ba39d152f0f4192ebbabc8edfa0684683c3a4a3d8c147f0978cf6f1798784",
+    "reports/v1.2/model.npz": "4dc64e6c98f8211f0a4add9421506e734287dd5750781b8ced040d9b8761aa19",
+    "reports/v1.2/labels.csv": "394a681ebd0898dc41d1fe2479febbb36b7a5cc5d6449147aab14089279c0e71",
+    "configs/v12.json": "68776f61ab2c6c24ae84b1de72d0945c49f1891572cf89634e58803f6b222151"
+  },
+  "reference_cohort_ids_sha256": "c98567439d8e08659a62828925a8da6b1e9cc7ce97922c5f53fa213034f1f9d3",
+  "projection_transform": "Pinned v12 scaler, first12 median reference, monthly cohort median shift; six coordinates. Unchanged monthly labels; corrected baseline only.",
+  "legacy_level_reference_reconstructed_from_pinned_panel": true,
+  "cp_transform": "New train2023 frozen log-intensity median/IQR/sqrt5 and calendar; absolute and transductive relative channels.",
+  "scope": "2016 fixed canonical IDs,24 observed months2023-2024; historical2024 reused; no real event labels."
+}

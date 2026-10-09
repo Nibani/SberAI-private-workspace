@@ -4,14 +4,7 @@
   "seed": 1729,
   "execution": {
     "allow_clustering": true,
-    "threads": 2,
-    "resource_profile": {
-      "cpu_hard_cap_percent": 20,
-      "memory_limit_bytes": 1073741824,
-      "gpu": false,
-      "system_monitor_ceiling_percent": 70,
-      "sample_interval_seconds": 1
-    }
+    "threads": 2
   },
   "data_contract": {
     "identity_mode": "source_territory_id",

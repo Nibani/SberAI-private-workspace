@@ -12,9 +12,10 @@ from .data import audit_and_prepare
 from .features import make_slices, validate_contract
 from .graph import knn_graph
 from .io import write_json, sha256
+from .input_contracts import validate_prepared_panel
 from .metrics import all_metrics
 from .dynamics import transitions
-from .models import require_execution, fit_static, fit_temporal
+from .models import require_execution, fit_static, fit_temporal, temporal_scope
 
 
 def plan(cfg, root):
@@ -25,8 +26,11 @@ def plan(cfg, root):
         blockers.append(str(exc))
     if not cfg["execution"]["allow_clustering"]:
         blockers.append("Clustering is disabled in the current configuration")
-    if cfg["data_contract"]["stable_territories_verified"] is not True:
-        blockers.append("Temporal coupling: boundary review required (annual registry, Chechnya caveat, 2024 coverage)")
+    if 'leiden_temporal' in cfg['clustering']['methods']:
+        try:
+            temporal_scope(cfg)
+        except ValueError as exc:
+            blockers.append(str(exc))
     if cfg["validation"]["mq_definition"] is None:
         blockers.append("MQ definition unavailable; cannot claim all required metrics complete")
     return {"status": "prepared_not_run", "model_training_executed": False, "blockers": blockers,
@@ -38,20 +42,31 @@ def plan(cfg, root):
 def run(cfg, root, execute):
     # First operation, before reading data or importing optional fit backends.
     require_execution(cfg, execute)
+    root = Path(root)
     started = perf_counter()
     validate_contract(cfg)
-    if "leiden_temporal" in cfg["clustering"]["methods"] and not cfg["data_contract"]["stable_territories_verified"]:
-        raise ValueError("Remove temporal method for static pilot, or complete boundary review before executing any fit")
+    methods = cfg['clustering']['methods']
+    if (not isinstance(methods, (list, tuple)) or not methods
+            or any(not isinstance(method, str) or method not in
+                   ('kmeans', 'ward', 'leiden_static', 'leiden_temporal') for method in methods)
+            or len(set(methods)) != len(methods)):
+        raise ValueError('Expected distinct supported clustering methods')
+    if 'leiden_temporal' in methods:
+        temporal_scope(cfg)
     panel_path = root / "data/processed/panel.csv"
     panel = pd.read_csv(panel_path, dtype={"entity_id": str, "period": str})
     manifest = json.loads((panel_path.parent / "manifest.json").read_text(encoding="utf-8"))
     if sha256(panel_path) != manifest["panel_sha256"]:
         raise ValueError("Prepared panel hash changed; re-audit first")
-    if manifest["identity_mode"] != cfg["data_contract"]["identity_mode"]:
-        raise ValueError("Panel identity mode does not match validated contract")
+    validate_prepared_panel(panel, manifest, cfg)
     slices, scaler = make_slices(panel, cfg)
-    if cfg.get("run_periods"):
-        requested = set(cfg["run_periods"])
+    if cfg.get("run_periods") is not None:
+        periods = cfg['run_periods']
+        if (not isinstance(periods, (list, tuple)) or not periods
+                or any(not isinstance(period, str) for period in periods)
+                or len(set(periods)) != len(periods)):
+            raise ValueError('run_periods must contain distinct requested months')
+        requested = set(periods)
         if not requested.issubset({s[0] for s in slices}):
             raise ValueError("Requested period absent from panel")
         slices = [s for s in slices if s[0] in requested]
@@ -65,6 +80,12 @@ def run(cfg, root, execute):
     run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
     out = root / "runs" / run_id
     out.mkdir(parents=True, exist_ok=False)
+    from .research import tracked_run
+    with tracked_run(out, stage='cli'):
+        return _run_created(cfg, root, out, run_id, panel_path, slices, scaler, started)
+
+
+def _run_created(cfg, root, out, run_id, panel_path, slices, scaler, started):
     try:
         commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, text=True, stderr=subprocess.DEVNULL).strip()
     except (OSError, subprocess.CalledProcessError):
@@ -110,6 +131,8 @@ def run(cfg, root, execute):
     write_json(out / "timings.json", {"stages": timings, "total_seconds": perf_counter() - started})
     pd.DataFrame(partitions).to_csv(out / "partitions.csv", index=False)
     write_json(out / "status.json", {"status": "completed", "MQ_complete": False,
+        "partition_metrics_complete": all(row.get('status') != 'undefined' for row in metrics),
+        "undefined_partitions": sum(row.get('status') == 'undefined' for row in metrics),
         "economic_interpretation_verified": False, "competition_ready": False})
     return {"run": str(out), "status": "computed_not_economically_validated"}
 

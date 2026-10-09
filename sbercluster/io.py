@@ -50,3 +50,49 @@ def read_export(path):
     d["period"] = canonical_period(d["period"])
     d["value"] = pd.to_numeric(d["value"], errors="raise")
     return d
+
+
+def code_revision(root):
+    """Describe a Git checkout or a source archive without inventing a clean state."""
+    import os
+    import subprocess
+    try:
+        commit = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=root, text=True, stderr=subprocess.DEVNULL).strip()
+        dirty = bool(subprocess.check_output(['git', 'status', '--porcelain'], cwd=root, text=True, stderr=subprocess.DEVNULL).strip())
+        return {'git_commit': commit, 'git_worktree_modified': dirty, 'revision_source': 'git'}
+    except (OSError, subprocess.CalledProcessError):
+        return {'git_commit': os.environ.get('SOURCE_REVISION') or None,
+                'git_worktree_modified': None, 'revision_source': 'source_archive; module hashes are authoritative'}
+
+
+def read_verified_artifact(directory, relative, manifest_name="SHA256.json"):
+    """Read exactly the bytes bound by an archive's checksum manifest.
+
+    The checked bytes are returned to the parser, avoiding a second read that
+    could consume different content. The manifest itself is the trust anchor
+    from the versioned source archive, not an authenticity signature.
+    """
+    directory = Path(directory).resolve()
+    relative_path = Path(relative)
+    if relative_path.is_absolute() or ".." in relative_path.parts:
+        raise ValueError("Artifact path must stay inside the archive")
+    path = (directory / relative_path).resolve()
+    if not path.is_relative_to(directory):
+        raise ValueError("Artifact path escaped the archive")
+    def unique_object(pairs):
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError("Duplicate manifest field: " + key)
+            result[key] = value
+        return result
+    manifest = json.loads((directory / manifest_name).read_bytes(), object_pairs_hook=unique_object)
+    key = relative_path.as_posix()
+    expected = manifest.get(key) if isinstance(manifest, dict) else None
+    if (not isinstance(expected, str) or len(expected) != 64
+            or any(c not in "0123456789abcdef" for c in expected)):
+        raise ValueError("Missing or invalid artifact fingerprint: " + key)
+    raw = path.read_bytes()
+    if hashlib.sha256(raw).hexdigest() != expected:
+        raise ValueError("Published artifact fingerprint differs: " + key)
+    return raw

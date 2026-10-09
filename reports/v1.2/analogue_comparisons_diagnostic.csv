@@ -1,0 +1,3 @@
+better,baseline,n,unit,mae_difference_pp,ci_low,ci_high
+network_analogues_same_region,region_median_leave_one_out,2011,percentage_point,-0.16409914309384033,-0.25260368422758495,-0.085853624953008009
+network_analogues,random_same_type,2011,percentage_point,-0.27983957763008321,-0.38557129790337819,-0.1840044704829229

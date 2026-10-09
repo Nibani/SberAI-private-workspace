@@ -1,0 +1,20 @@
+{
+  "region": "Алтайский край",
+  "heldout_rows": 65,
+  "totals_multiplier": 17,
+  "share_columns_rolled": 2,
+  "train_state_sha256_before": "e217673afc5a5d5d4e01173bf5f4deb601a0ba8a559340722820345536f7751b",
+  "train_state_sha256_after": "e217673afc5a5d5d4e01173bf5f4deb601a0ba8a559340722820345536f7751b",
+  "train_state_unchanged": true,
+  "heldout_attributes_changed": true,
+  "checked": [
+    "structure_center",
+    "iqr_scale",
+    "monthly_log_total_center",
+    "train_attributes",
+    "train_graph_csr",
+    "train_type_labels",
+    "train_centroids",
+    "train_only_naming"
+  ]
+}

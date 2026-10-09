@@ -1,0 +1,35 @@
+{
+  "revision": "conditional-v4",
+  "protocol_path": "configs/conditional_profiles.protocol.md",
+  "protocol_sha256": "5310933e84f7e40e5b3c0387fdcfede9f62b12b8b70f01467324cba928336e08",
+  "seed": 20261009,
+  "ridge_alpha": 10,
+  "k": 4,
+  "n_init": 20,
+  "graph_alpha": 0.5,
+  "max_sweeps": 50,
+  "neighbors": 15,
+  "null_draws": 199,
+  "null_seed": 20261109,
+  "bootstrap_draws": 1999,
+  "bootstrap_seed": 20261209,
+  "runtime_seconds": 3600,
+  "inputs": {
+    "panel": "data/v12/panel.csv.gz",
+    "cohort2023": "reports/external-national-2026-10-03/cohort-2023.csv",
+    "cohort2024": "data/economic-2024.csv",
+    "receipt": "data/economic-2024-receipt.json",
+    "bridge": "reports/external-v4/municipality_bridge.csv"
+  },
+  "cohort2024_sha256": "0c26468eb64f2ed21d16d71faef998f9cdb3a9e69960a7c016737d402b262a07",
+  "mechanical_choices": {
+    "conditional_basis": "independently standardized logTOTAL and raw logTOTAL square, train only",
+    "continuous7": "unweighted median/IQR residual and labor coordinates; block weights only in clustering",
+    "regional_grand_mean": "own reference region across municipalities and all 12 months, separately per channel; national fallback below 10 nodes",
+    "canonical_order": "ascending observed median jobs/resident, O/P/Q share, then five percentage residuals; raw label tie break",
+    "unknown_status": "municipal_district_type indicators; empty or unseen heldout type has zero dummy effects and explicit flag",
+    "quartile_ties": "np.quantile linear thresholds and searchsorted side=right",
+    "null_sources": "common positive-outdegree sources; relabeling strata preserve their degree",
+    "loro_sources": "remove both region endpoints, intersect source sets of G/static/all199nulls, renormalize remaining degree; fewer than20sources yields UNDETERMINED/null"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "file": "panel.csv.gz",
+  "sha256": "953ba39d152f0f4192ebbabc8edfa0684683c3a4a3d8c147f0978cf6f1798784",
+  "rows": 48384,
+  "entities": 2016,
+  "months": 24,
+  "columns": [
+    "entity_id",
+    "territory_id",
+    "name",
+    "region",
+    "period",
+    "total_rub",
+    "health_pct",
+    "marketplaces_pct",
+    "horeca_pct",
+    "food_pct",
+    "transport_pct"
+  ],
+  "source": "СберИндекс, потребительские безналичные расходы по МО (CC BY-SA 4.0); значения скопированы из опубликованного пакета атласа без изменений",
+  "derivation": "python -m scripts.export_panel; совпадает для атласа v1.1 и v1.2, поскольку ряды МО не менялись",
+  "units": {
+    "total_rub": "модельная оценка средних месячных безналичных расходов жителя МО, руб.",
+    "*_pct": "отношение категории к общему показателю, %; категории не обязаны давать 100%"
+  }
+}

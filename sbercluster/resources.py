@@ -3,7 +3,8 @@ from __future__ import annotations
 import ctypes as ct
 from ctypes import wintypes as wt
 import math
-import subprocess
+import os
+from pathlib import Path
 import uuid
 import psutil
 
@@ -32,8 +33,8 @@ class CPULimit(ct.Structure):
 
 
 class WindowsJob:
-    def __init__(self, cpu_percent=20, memory_bytes=1024**3):
-        if not 0 < cpu_percent <= 70 or not 0 < memory_bytes <= psutil.virtual_memory().total * .7:
+    def __init__(self, cpu_percent, memory_bytes):
+        if not 0 < cpu_percent <= 100 or not 0 < memory_bytes <= psutil.virtual_memory().total:
             raise ValueError('Invalid resource limit')
         self.k = ct.WinDLL('kernel32', use_last_error=True)
         self.k.CreateJobObjectW.argtypes = [ct.c_void_p, wt.LPCWSTR]
@@ -83,7 +84,7 @@ class WindowsJob:
             self.handle = None
 
 
-def verify_worker_job(name):
+def verify_worker_job(name, expected_cpu_percent, expected_memory_bytes):
     """Refuse the internal worker entry point unless attached to the named supervisor job."""
     if not name or not name.startswith('Local\\SberCluster-'):
         raise PermissionError('Missing resource supervisor job')
@@ -105,8 +106,10 @@ def verify_worker_job(name):
         for kind, value in [(15, cpu), (9, memory)]:
             if not k.QueryInformationJobObject(handle, kind, ct.byref(value), ct.sizeof(value), None):
                 raise ct.WinError(ct.get_last_error())
-        if (cpu.ControlFlags != 5 or cpu.CpuRate != 2000 or memory.JobMemoryLimit != 1024**3
-                or memory.ProcessMemoryLimit != 1024**3 or memory.BasicLimitInformation.LimitFlags & 0x2300 != 0x2300):
+        if (cpu.ControlFlags != 5 or cpu.CpuRate != round(expected_cpu_percent * 100)
+                or memory.JobMemoryLimit != expected_memory_bytes
+                or memory.ProcessMemoryLimit != expected_memory_bytes
+                or memory.BasicLimitInformation.LimitFlags & 0x2300 != 0x2300):
             raise PermissionError('Worker resource limits differ from the required profile')
     finally:
         k.CloseHandle(handle)
@@ -142,8 +145,69 @@ class CounterItem(ct.Structure):
     _fields_ = [('name', wt.LPWSTR), ('value', CounterValue)]
 
 
+class NVMLMemory(ct.Structure):
+    _fields_ = [('total', ct.c_ulonglong), ('free', ct.c_ulonglong), ('used', ct.c_ulonglong)]
+
+
+class NVMLUtilization(ct.Structure):
+    _fields_ = [('gpu', ct.c_uint), ('memory', ct.c_uint)]
+
+
+class NvidiaLoad:
+    """Persistent read-only NVML queries avoid spawning nvidia-smi per sample.
+
+    https://docs.nvidia.com/deploy/nvml-api/api/group__nvmlDeviceQueries.html
+    Unsupported or missing readings raise: no missing measurement becomes zero.
+    """
+    def __init__(self):
+        library = Path(os.environ['SystemRoot']) / 'System32' / 'nvml.dll'
+        self.api = ct.CDLL(str(library))
+        self.initialized = False
+        signatures = {
+            'nvmlInit_v2': [], 'nvmlShutdown': [],
+            'nvmlDeviceGetCount_v2': [ct.POINTER(ct.c_uint)],
+            'nvmlDeviceGetHandleByIndex_v2': [ct.c_uint, ct.POINTER(ct.c_void_p)],
+            'nvmlDeviceGetMemoryInfo': [ct.c_void_p, ct.POINTER(NVMLMemory)],
+            'nvmlDeviceGetUtilizationRates': [ct.c_void_p, ct.POINTER(NVMLUtilization)],
+        }
+        for name, args in signatures.items():
+            fn = getattr(self.api, name); fn.argtypes = args; fn.restype = ct.c_int
+        self.check(self.api.nvmlInit_v2()); self.initialized = True
+        try:
+            count = ct.c_uint(); self.check(self.api.nvmlDeviceGetCount_v2(ct.byref(count)))
+            if count.value == 0: raise RuntimeError('No NVIDIA device available for monitoring')
+            self.devices = []
+            for index in range(count.value):
+                handle = ct.c_void_p()
+                self.check(self.api.nvmlDeviceGetHandleByIndex_v2(index, ct.byref(handle)))
+                self.devices.append(handle)
+        except BaseException:
+            self.close(); raise
+
+    @staticmethod
+    def check(code):
+        if code: raise RuntimeError(f'NVML measurement failed: {code}')
+
+    def sample(self):
+        values = []
+        for handle in self.devices:
+            memory, utilization = NVMLMemory(), NVMLUtilization()
+            self.check(self.api.nvmlDeviceGetMemoryInfo(handle, ct.byref(memory)))
+            self.check(self.api.nvmlDeviceGetUtilizationRates(handle, ct.byref(utilization)))
+            if not 0 <= memory.used <= memory.total or memory.total == 0 or utilization.gpu > 100:
+                raise RuntimeError('Invalid NVML measurement')
+            values.append({'gpu_percent': float(utilization.gpu),
+                           'vram_percent': memory.used / memory.total * 100})
+        return values
+
+    def close(self):
+        if self.initialized:
+            self.api.nvmlShutdown(); self.initialized = False
+
+
 class SystemLoad:
     def __init__(self):
+        self.gpu = NvidiaLoad()
         self.p = ct.WinDLL('pdh')
         self.p.PdhOpenQueryW.argtypes = [wt.LPCWSTR, ct.c_size_t, ct.POINTER(wt.HANDLE)]
         self.p.PdhAddEnglishCounterW.argtypes = [wt.HANDLE, wt.LPCWSTR, ct.c_size_t, ct.POINTER(wt.HANDLE)]
@@ -184,26 +248,34 @@ class SystemLoad:
             disks[item.name] = max(0., min(100., 100 - item.value.value))
         if not disks:
             raise RuntimeError('No physical disk counters available')
-        raw = subprocess.check_output(['nvidia-smi', '--query-gpu=utilization.gpu,memory.used,memory.total',
-                                      '--format=csv,noheader,nounits'], text=True, timeout=.5)
-        gpus = []
-        for line in raw.strip().splitlines():
-            usage, used, total = map(float, line.split(','))
-            gpus.append({'gpu_percent': usage, 'vram_percent': used / total * 100})
-        if not gpus:
-            raise RuntimeError('GPU monitoring unavailable')
-        return {'cpu_percent': psutil.cpu_percent(), 'ram_percent': psutil.virtual_memory().percent,
+        gpus = self.gpu.sample()
+        memory = psutil.virtual_memory()
+        # available includes reclaimable standby/cache memory. Counting all cached
+        # pages as pressure would stop useful work while Windows can still reclaim them.
+        ram_percent = memory_pressure_percent(memory.total, memory.available)
+        return {'cpu_percent': psutil.cpu_percent(), 'ram_percent': ram_percent,
+                'ram_available_bytes': memory.available,
+                'ram_measurement': 'total_minus_available_includes_reclaimable_cache',
                 'disk_active_percent': disks, 'gpus': gpus}
 
     def close(self):
+        if getattr(self, 'gpu', None):
+            self.gpu.close()
         if self.query:
             self.p.PdhCloseQuery(self.query)
             self.query = None
 
 
-def limit_breaches(sample, ceiling=70):
+def limit_breaches(sample, ceiling):
     measured = {'cpu': sample['cpu_percent'], 'ram': sample['ram_percent']}
     measured.update({f'disk:{name}': value for name, value in sample['disk_active_percent'].items()})
     for i, gpu in enumerate(sample['gpus']):
         measured.update({f'gpu:{i}': gpu['gpu_percent'], f'vram:{i}': gpu['vram_percent']})
     return {name: value for name, value in measured.items() if not math.isfinite(value) or value > ceiling}
+
+
+def memory_pressure_percent(total, available):
+    """Measure physical-memory pressure excluding available/reclaimable pages."""
+    if not 0 <= available <= total or total <= 0:
+        raise ValueError('Invalid total/available memory measurement')
+    return (total - available) / total * 100

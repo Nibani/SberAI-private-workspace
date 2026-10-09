@@ -1,0 +1,1187 @@
+{
+  "scope": "synthetic calibrated profile segmentation; retrospective real observations; no economic ground truth",
+  "status": "COMPLETE",
+  "cells": [
+    {
+      "channel": "absolute",
+      "cell": "N0_iid",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.0,
+      "false_persistent_object_fraction_ci95": [
+        0.0,
+        0.0
+      ],
+      "all_recall": null,
+      "all_recall_ci95": null,
+      "persistent_recall": null,
+      "persistent_recall_ci95": null,
+      "all_precision": null,
+      "all_precision_ci95": null,
+      "persistent_precision": null,
+      "persistent_precision_ci95": null,
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.0,
+      "false_boundaries_per_object_year_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_effect_norm": null,
+      "mean_effect_norm_ci95": null,
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": true,
+      "fpr_gate": true
+    },
+    {
+      "channel": "absolute",
+      "cell": "N1_ar05",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.001953125,
+      "false_persistent_object_fraction_ci95": [
+        0.00048828125,
+        0.00390625
+      ],
+      "all_recall": null,
+      "all_recall_ci95": null,
+      "persistent_recall": null,
+      "persistent_recall_ci95": null,
+      "all_precision": 0.0,
+      "all_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_precision": 0.0,
+      "persistent_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.0009765625,
+      "false_boundaries_per_object_year_ci95": [
+        0.000244140625,
+        0.001953125
+      ],
+      "mean_effect_norm": 3.2282352966585934,
+      "mean_effect_norm_ci95": [
+        3.0577448313480606,
+        3.374915092205232
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": true,
+      "fpr_gate": true
+    },
+    {
+      "channel": "absolute",
+      "cell": "N2_season_ar05",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.001953125,
+      "false_persistent_object_fraction_ci95": [
+        0.00048828125,
+        0.00390625
+      ],
+      "all_recall": null,
+      "all_recall_ci95": null,
+      "persistent_recall": null,
+      "persistent_recall_ci95": null,
+      "all_precision": 0.0,
+      "all_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_precision": 0.0,
+      "persistent_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.0009765625,
+      "false_boundaries_per_object_year_ci95": [
+        0.000244140625,
+        0.001953125
+      ],
+      "mean_effect_norm": 3.2282352966585934,
+      "mean_effect_norm_ci95": [
+        3.0577448313480606,
+        3.374915092205232
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": true,
+      "fpr_gate": true
+    },
+    {
+      "channel": "absolute",
+      "cell": "N3_common_shift2",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.05615234375,
+      "false_persistent_object_fraction_ci95": [
+        0.04638671875,
+        0.06640625
+      ],
+      "all_recall": 0.14013671875,
+      "all_recall_ci95": [
+        0.12548828125,
+        0.15478515625
+      ],
+      "persistent_recall": 0.14013671875,
+      "persistent_recall_ci95": [
+        0.12548828125,
+        0.15478515625
+      ],
+      "all_precision": 0.705171130952381,
+      "all_precision_ci95": [
+        0.6561382378472221,
+        0.7532133556547618
+      ],
+      "persistent_precision": 0.7095858134920635,
+      "persistent_precision_ci95": [
+        0.6615634300595238,
+        0.7565849764384921
+      ],
+      "mean_absolute_onset_error": 0.23857886904761905,
+      "mean_absolute_onset_error_ci95": [
+        0.18782211061507934,
+        0.29122054811507936
+      ],
+      "persistent_mean_absolute_onset_error": 0.23857886904761905,
+      "persistent_mean_absolute_onset_error_ci95": [
+        0.18782211061507934,
+        0.29122054811507936
+      ],
+      "false_boundaries_per_object_year": 0.02880859375,
+      "false_boundaries_per_object_year_ci95": [
+        0.023681640625,
+        0.0341796875
+      ],
+      "mean_effect_norm": 3.348906223061402,
+      "mean_effect_norm_ci95": [
+        3.3204005827508385,
+        3.377735012054028
+      ],
+      "representative_failures": 4,
+      "representative_cp_upper95": 0.13733988081254384,
+      "null_cell": false,
+      "fpr_gate": true
+    },
+    {
+      "channel": "absolute",
+      "cell": "N4_spike4",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.001953125,
+      "false_persistent_object_fraction_ci95": [
+        0.00048828125,
+        0.00390625
+      ],
+      "all_recall": null,
+      "all_recall_ci95": null,
+      "persistent_recall": null,
+      "persistent_recall_ci95": null,
+      "all_precision": 0.0,
+      "all_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_precision": 0.0,
+      "persistent_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.0009765625,
+      "false_boundaries_per_object_year_ci95": [
+        0.000244140625,
+        0.001953125
+      ],
+      "mean_effect_norm": 3.2282352966585934,
+      "mean_effect_norm_ci95": [
+        3.0577448313480606,
+        3.374915092205232
+      ],
+      "representative_failures": 1,
+      "representative_cp_upper95": 0.07198975489470942,
+      "null_cell": true,
+      "fpr_gate": false
+    },
+    {
+      "channel": "absolute",
+      "cell": "N5_boundary_null",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.001953125,
+      "false_persistent_object_fraction_ci95": [
+        0.00048828125,
+        0.00390625
+      ],
+      "all_recall": null,
+      "all_recall_ci95": null,
+      "persistent_recall": null,
+      "persistent_recall_ci95": null,
+      "all_precision": 0.0,
+      "all_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_precision": 0.0,
+      "persistent_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.0009765625,
+      "false_boundaries_per_object_year_ci95": [
+        0.000244140625,
+        0.001953125
+      ],
+      "mean_effect_norm": 3.2282352966585934,
+      "mean_effect_norm_ci95": [
+        3.0577448313480606,
+        3.374915092205232
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": true,
+      "fpr_gate": true
+    },
+    {
+      "channel": "absolute",
+      "cell": "P025",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.001953125,
+      "false_persistent_object_fraction_ci95": [
+        0.00048828125,
+        0.00390625
+      ],
+      "all_recall": 0.0,
+      "all_recall_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_recall": 0.0,
+      "persistent_recall_ci95": [
+        0.0,
+        0.0
+      ],
+      "all_precision": 0.0,
+      "all_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_precision": 0.0,
+      "persistent_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.0009765625,
+      "false_boundaries_per_object_year_ci95": [
+        0.000244140625,
+        0.001953125
+      ],
+      "mean_effect_norm": 3.2282352966585934,
+      "mean_effect_norm_ci95": [
+        3.0577448313480606,
+        3.374915092205232
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": false,
+      "fpr_gate": true
+    },
+    {
+      "channel": "absolute",
+      "cell": "P05",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.00244140625,
+      "false_persistent_object_fraction_ci95": [
+        0.00048828125,
+        0.0048828125
+      ],
+      "all_recall": 0.0,
+      "all_recall_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_recall": 0.0,
+      "persistent_recall_ci95": [
+        0.0,
+        0.0
+      ],
+      "all_precision": 0.0,
+      "all_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_precision": 0.0,
+      "persistent_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.00146484375,
+      "false_boundaries_per_object_year_ci95": [
+        0.00048828125,
+        0.002685546875
+      ],
+      "mean_effect_norm": 3.2554699521911883,
+      "mean_effect_norm_ci95": [
+        3.0716788776318533,
+        3.4521302136595815
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": false,
+      "fpr_gate": true
+    },
+    {
+      "channel": "absolute",
+      "cell": "P1",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.0029296875,
+      "false_persistent_object_fraction_ci95": [
+        0.0009765625,
+        0.00537109375
+      ],
+      "all_recall": 0.001953125,
+      "all_recall_ci95": [
+        0.0,
+        0.005859375
+      ],
+      "persistent_recall": 0.001953125,
+      "persistent_recall_ci95": [
+        0.0,
+        0.005859375
+      ],
+      "all_precision": 0.125,
+      "all_precision_ci95": [
+        0.0,
+        0.4
+      ],
+      "persistent_precision": 0.14285714285714285,
+      "persistent_precision_ci95": [
+        0.0,
+        0.5
+      ],
+      "mean_absolute_onset_error": 0.0,
+      "mean_absolute_onset_error_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_mean_absolute_onset_error": 0.0,
+      "persistent_mean_absolute_onset_error_ci95": [
+        0.0,
+        0.0
+      ],
+      "false_boundaries_per_object_year": 0.001708984375,
+      "false_boundaries_per_object_year_ci95": [
+        0.000732421875,
+        0.0029296875
+      ],
+      "mean_effect_norm": 3.287069152512343,
+      "mean_effect_norm_ci95": [
+        3.153242149243898,
+        3.4541348444284643
+      ],
+      "representative_failures": 1,
+      "representative_cp_upper95": 0.07198975489470942,
+      "null_cell": false,
+      "fpr_gate": true
+    },
+    {
+      "channel": "absolute",
+      "cell": "P2",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.01171875,
+      "false_persistent_object_fraction_ci95": [
+        0.0078125,
+        0.01611328125
+      ],
+      "all_recall": 0.12109375,
+      "all_recall_ci95": [
+        0.09765625,
+        0.14453125
+      ],
+      "persistent_recall": 0.12109375,
+      "persistent_recall_ci95": [
+        0.09765625,
+        0.14453125
+      ],
+      "all_precision": 0.7243589743589743,
+      "all_precision_ci95": [
+        0.6190476190476191,
+        0.8185233918128654
+      ],
+      "persistent_precision": 0.7339743589743589,
+      "persistent_precision_ci95": [
+        0.6289308176100628,
+        0.8299319727891156
+      ],
+      "mean_absolute_onset_error": 0.22348484848484845,
+      "mean_absolute_onset_error_ci95": [
+        0.11627906976744186,
+        0.34146341463414637
+      ],
+      "persistent_mean_absolute_onset_error": 0.22348484848484845,
+      "persistent_mean_absolute_onset_error_ci95": [
+        0.11627906976744186,
+        0.34146341463414637
+      ],
+      "false_boundaries_per_object_year": 0.006103515625,
+      "false_boundaries_per_object_year_ci95": [
+        0.004150390625,
+        0.00830078125
+      ],
+      "mean_effect_norm": 3.2961490898004016,
+      "mean_effect_norm_ci95": [
+        3.2361214490987344,
+        3.35715072383486
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": false,
+      "fpr_gate": true
+    },
+    {
+      "channel": "absolute",
+      "cell": "P6_return",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.001953125,
+      "false_persistent_object_fraction_ci95": [
+        0.00048828125,
+        0.00390625
+      ],
+      "all_recall": 0.0,
+      "all_recall_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_recall": 0.0,
+      "persistent_recall_ci95": [
+        0.0,
+        0.0
+      ],
+      "all_precision": 0.0,
+      "all_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_precision": 0.0,
+      "persistent_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.0009765625,
+      "false_boundaries_per_object_year_ci95": [
+        0.000244140625,
+        0.001953125
+      ],
+      "mean_effect_norm": 3.2282352966585934,
+      "mean_effect_norm_ci95": [
+        3.0577448313480606,
+        3.374915092205232
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": false,
+      "fpr_gate": true
+    },
+    {
+      "channel": "absolute",
+      "cell": "C3_short_censored",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.0029296875,
+      "false_persistent_object_fraction_ci95": [
+        0.0009765625,
+        0.00537109375
+      ],
+      "all_recall": 0.009765625,
+      "all_recall_ci95": [
+        0.001953125,
+        0.017578125
+      ],
+      "persistent_recall": null,
+      "persistent_recall_ci95": null,
+      "all_precision": 0.4090909090909091,
+      "all_precision_ci95": [
+        0.125,
+        0.7083333333333334
+      ],
+      "persistent_precision": 0.0,
+      "persistent_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_absolute_onset_error": 0.0,
+      "mean_absolute_onset_error_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.001708984375,
+      "false_boundaries_per_object_year_ci95": [
+        0.000732421875,
+        0.0029296875
+      ],
+      "mean_effect_norm": 3.8828119558817105,
+      "mean_effect_norm_ci95": [
+        3.4767469961255077,
+        4.299101062639166
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": false,
+      "fpr_gate": true
+    },
+    {
+      "channel": "relative",
+      "cell": "N0_iid",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.0,
+      "false_persistent_object_fraction_ci95": [
+        0.0,
+        0.0
+      ],
+      "all_recall": null,
+      "all_recall_ci95": null,
+      "persistent_recall": null,
+      "persistent_recall_ci95": null,
+      "all_precision": null,
+      "all_precision_ci95": null,
+      "persistent_precision": null,
+      "persistent_precision_ci95": null,
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.0,
+      "false_boundaries_per_object_year_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_effect_norm": null,
+      "mean_effect_norm_ci95": null,
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": true,
+      "fpr_gate": true
+    },
+    {
+      "channel": "relative",
+      "cell": "N1_ar05",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.00146484375,
+      "false_persistent_object_fraction_ci95": [
+        0.0,
+        0.00341796875
+      ],
+      "all_recall": null,
+      "all_recall_ci95": null,
+      "persistent_recall": null,
+      "persistent_recall_ci95": null,
+      "all_precision": 0.0,
+      "all_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_precision": 0.0,
+      "persistent_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.0009765625,
+      "false_boundaries_per_object_year_ci95": [
+        0.000244140625,
+        0.001953125
+      ],
+      "mean_effect_norm": 3.3956463804845116,
+      "mean_effect_norm_ci95": [
+        3.092145718241661,
+        3.7246027010656806
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": true,
+      "fpr_gate": true
+    },
+    {
+      "channel": "relative",
+      "cell": "N2_season_ar05",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.00146484375,
+      "false_persistent_object_fraction_ci95": [
+        0.0,
+        0.00341796875
+      ],
+      "all_recall": null,
+      "all_recall_ci95": null,
+      "persistent_recall": null,
+      "persistent_recall_ci95": null,
+      "all_precision": 0.0,
+      "all_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_precision": 0.0,
+      "persistent_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.0009765625,
+      "false_boundaries_per_object_year_ci95": [
+        0.000244140625,
+        0.001953125
+      ],
+      "mean_effect_norm": 3.3956463804845116,
+      "mean_effect_norm_ci95": [
+        3.092145718241661,
+        3.7246027010656806
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": true,
+      "fpr_gate": true
+    },
+    {
+      "channel": "relative",
+      "cell": "N3_common_shift2",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.00146484375,
+      "false_persistent_object_fraction_ci95": [
+        0.0,
+        0.00341796875
+      ],
+      "all_recall": null,
+      "all_recall_ci95": null,
+      "persistent_recall": null,
+      "persistent_recall_ci95": null,
+      "all_precision": 0.0,
+      "all_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_precision": 0.0,
+      "persistent_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.0009765625,
+      "false_boundaries_per_object_year_ci95": [
+        0.000244140625,
+        0.001953125
+      ],
+      "mean_effect_norm": 3.3956463804845116,
+      "mean_effect_norm_ci95": [
+        3.092145718241661,
+        3.7246027010656806
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": true,
+      "fpr_gate": true
+    },
+    {
+      "channel": "relative",
+      "cell": "N4_spike4",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.0009765625,
+      "false_persistent_object_fraction_ci95": [
+        0.0,
+        0.00244140625
+      ],
+      "all_recall": null,
+      "all_recall_ci95": null,
+      "persistent_recall": null,
+      "persistent_recall_ci95": null,
+      "all_precision": 0.0,
+      "all_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_precision": 0.0,
+      "persistent_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.000732421875,
+      "false_boundaries_per_object_year_ci95": [
+        0.0,
+        0.001708984375
+      ],
+      "mean_effect_norm": 3.4872324245699615,
+      "mean_effect_norm_ci95": [
+        3.320981736851305,
+        3.650293161657147
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": true,
+      "fpr_gate": true
+    },
+    {
+      "channel": "relative",
+      "cell": "N5_boundary_null",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.00146484375,
+      "false_persistent_object_fraction_ci95": [
+        0.0,
+        0.00341796875
+      ],
+      "all_recall": null,
+      "all_recall_ci95": null,
+      "persistent_recall": null,
+      "persistent_recall_ci95": null,
+      "all_precision": 0.0,
+      "all_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_precision": 0.0,
+      "persistent_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.0009765625,
+      "false_boundaries_per_object_year_ci95": [
+        0.000244140625,
+        0.001953125
+      ],
+      "mean_effect_norm": 3.4696937919696214,
+      "mean_effect_norm_ci95": [
+        3.1205618667458954,
+        3.7509172545979457
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": true,
+      "fpr_gate": true
+    },
+    {
+      "channel": "relative",
+      "cell": "P025",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.0,
+      "false_persistent_object_fraction_ci95": [
+        0.0,
+        0.0
+      ],
+      "all_recall": 0.0,
+      "all_recall_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_recall": 0.0,
+      "persistent_recall_ci95": [
+        0.0,
+        0.0
+      ],
+      "all_precision": 0.0,
+      "all_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_precision": null,
+      "persistent_precision_ci95": null,
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.000244140625,
+      "false_boundaries_per_object_year_ci95": [
+        0.0,
+        0.000732421875
+      ],
+      "mean_effect_norm": 3.7725771524669294,
+      "mean_effect_norm_ci95": [
+        3.7725771524669294,
+        3.7725771524669294
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": false,
+      "fpr_gate": true
+    },
+    {
+      "channel": "relative",
+      "cell": "P05",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.0,
+      "false_persistent_object_fraction_ci95": [
+        0.0,
+        0.0
+      ],
+      "all_recall": 0.0,
+      "all_recall_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_recall": 0.0,
+      "persistent_recall_ci95": [
+        0.0,
+        0.0
+      ],
+      "all_precision": 0.0,
+      "all_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_precision": null,
+      "persistent_precision_ci95": null,
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.000244140625,
+      "false_boundaries_per_object_year_ci95": [
+        0.0,
+        0.000732421875
+      ],
+      "mean_effect_norm": 3.8185069461487084,
+      "mean_effect_norm_ci95": [
+        3.8185069461487084,
+        3.8185069461487084
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": false,
+      "fpr_gate": true
+    },
+    {
+      "channel": "relative",
+      "cell": "P1",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.00048828125,
+      "false_persistent_object_fraction_ci95": [
+        0.0,
+        0.00146484375
+      ],
+      "all_recall": 0.0,
+      "all_recall_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_recall": 0.0,
+      "persistent_recall_ci95": [
+        0.0,
+        0.0
+      ],
+      "all_precision": 0.0,
+      "all_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_precision": 0.0,
+      "persistent_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.00048828125,
+      "false_boundaries_per_object_year_ci95": [
+        0.0,
+        0.001220703125
+      ],
+      "mean_effect_norm": 3.4851390374877984,
+      "mean_effect_norm_ci95": [
+        3.057416228403693,
+        3.9128618465719036
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": false,
+      "fpr_gate": true
+    },
+    {
+      "channel": "relative",
+      "cell": "P2",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.00537109375,
+      "false_persistent_object_fraction_ci95": [
+        0.00244140625,
+        0.0087890625
+      ],
+      "all_recall": 0.02734375,
+      "all_recall_ci95": [
+        0.013671875,
+        0.041015625
+      ],
+      "persistent_recall": 0.02734375,
+      "persistent_recall_ci95": [
+        0.013671875,
+        0.041015625
+      ],
+      "all_precision": 0.5476190476190477,
+      "all_precision_ci95": [
+        0.35294117647058826,
+        0.75
+      ],
+      "persistent_precision": 0.5714285714285714,
+      "persistent_precision_ci95": [
+        0.3684210526315789,
+        0.7727272727272727
+      ],
+      "mean_absolute_onset_error": 0.11538461538461539,
+      "mean_absolute_onset_error_ci95": [
+        0.0,
+        0.3
+      ],
+      "persistent_mean_absolute_onset_error": 0.11538461538461539,
+      "persistent_mean_absolute_onset_error_ci95": [
+        0.0,
+        0.3
+      ],
+      "false_boundaries_per_object_year": 0.0029296875,
+      "false_boundaries_per_object_year_ci95": [
+        0.00146484375,
+        0.004638671875
+      ],
+      "mean_effect_norm": 3.2579934545249785,
+      "mean_effect_norm_ci95": [
+        3.1839986289588253,
+        3.3405766626553373
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": false,
+      "fpr_gate": true
+    },
+    {
+      "channel": "relative",
+      "cell": "P6_return",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.0009765625,
+      "false_persistent_object_fraction_ci95": [
+        0.0,
+        0.00244140625
+      ],
+      "all_recall": 0.0009765625,
+      "all_recall_ci95": [
+        0.0,
+        0.0029296875
+      ],
+      "persistent_recall": 0.0009765625,
+      "persistent_recall_ci95": [
+        0.0,
+        0.0029296875
+      ],
+      "all_precision": 0.3333333333333333,
+      "all_precision_ci95": [
+        0.0,
+        1.0
+      ],
+      "persistent_precision": 0.3333333333333333,
+      "persistent_precision_ci95": [
+        0.0,
+        1.0
+      ],
+      "mean_absolute_onset_error": 1.0,
+      "mean_absolute_onset_error_ci95": [
+        1.0,
+        1.0
+      ],
+      "persistent_mean_absolute_onset_error": 1.0,
+      "persistent_mean_absolute_onset_error_ci95": [
+        1.0,
+        1.0
+      ],
+      "false_boundaries_per_object_year": 0.00048828125,
+      "false_boundaries_per_object_year_ci95": [
+        0.0,
+        0.001220703125
+      ],
+      "mean_effect_norm": 3.4008360952401913,
+      "mean_effect_norm_ci95": [
+        3.2472404962622394,
+        3.648648079597627
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": false,
+      "fpr_gate": true
+    },
+    {
+      "channel": "relative",
+      "cell": "C3_short_censored",
+      "status": "COMPLETE",
+      "n_seeds": 64,
+      "c": 4,
+      "false_persistent_object_fraction": 0.0,
+      "false_persistent_object_fraction_ci95": [
+        0.0,
+        0.0
+      ],
+      "all_recall": 0.0,
+      "all_recall_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_recall": null,
+      "persistent_recall_ci95": null,
+      "all_precision": 0.0,
+      "all_precision_ci95": [
+        0.0,
+        0.0
+      ],
+      "persistent_precision": null,
+      "persistent_precision_ci95": null,
+      "mean_absolute_onset_error": null,
+      "mean_absolute_onset_error_ci95": null,
+      "persistent_mean_absolute_onset_error": null,
+      "persistent_mean_absolute_onset_error_ci95": null,
+      "false_boundaries_per_object_year": 0.000244140625,
+      "false_boundaries_per_object_year_ci95": [
+        0.0,
+        0.000732421875
+      ],
+      "mean_effect_norm": 4.224089796181045,
+      "mean_effect_norm_ci95": [
+        4.224089796181045,
+        4.224089796181045
+      ],
+      "representative_failures": 0,
+      "representative_cp_upper95": 0.04572970233076245,
+      "null_cell": false,
+      "fpr_gate": true
+    }
+  ],
+  "synthetic_promotion_gate": "FAIL",
+  "economic_ground_truth": false,
+  "prospective_monitoring_validated": false,
+  "uncertainty": "10000 percentile bootstrap over64 root seeds; additionally one randomly selected representative object per seed/cell and one-sided95% Clopper-Pearson FPR upper bound; per-cell not simultaneous and not real-world FWER",
+  "stop": "One frozen primary min_size=3 run. No min_size grid, extra model, changed seeds or outcome-driven threshold. m6 sensitivity and broader stresses are deferred before any fit, not selectively omitted after outcomes.",
+  "deterministic_invariants": {
+    "status": "PASS",
+    "constant_final_features": true,
+    "exact_persistent_shift": true,
+    "raw_calendar_correction": true,
+    "common_shock_preserved_and_relative_removed": true,
+    "evaluation_calibration_isolation": true,
+    "projection_permutation_equivariance": true,
+    "invalid_input_explicit": true,
+    "numeric_tolerance": 1e-13
+  },
+  "real_correction": {
+    "n_entities": 2016,
+    "n_months": 24,
+    "retrospective": true,
+    "constant_fixture_historical_graph_false_flags": 48,
+    "constant_fixture_corrected_projection_flags": 0,
+    "projection_disagreements": 48,
+    "actual_persistent_projection_changes": 93,
+    "historical_actual_persistent_flags": 109,
+    "cp": {
+      "absolute": {
+        "entities_with_persistent_candidates": 1429,
+        "boundaries": 1647,
+        "status": "RETROSPECTIVE_RESEARCH_CANDIDATE"
+      },
+      "relative": {
+        "entities_with_persistent_candidates": 292,
+        "boundaries": 429,
+        "status": "RETROSPECTIVE_RESEARCH_CANDIDATE"
+      }
+    },
+    "economic_ground_truth": false,
+    "interpretation": "Projected boundary crossings and fitted profile segments; no confirmed economic transitions."
+  },
+  "runtime_seconds": 330.64100000000326,
+  "selected": {
+    "absolute": 4,
+    "relative": 4
+  },
+  "registration_sha256": "d40aa5bc7bb48dfec679a54899d6b6ed1829e380e9524183ef7b28da5dcc556e",
+  "selected_sha256": "e969b5609872c67232ce77a4124897d0245c76b2cde06fa2dfadc91ab82d1adb"
+}

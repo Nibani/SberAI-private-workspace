@@ -1,0 +1,5 @@
+predictor,n,unit,mae_pp,median_ae_pp
+network_analogues,2016,percentage_point,2.4862427544747998,1.8363000255436255
+random_same_region,2016,percentage_point,2.701280872242211,2.0752286016561214
+region_median_leave_one_out,2016,percentage_point,2.627673669299238,2.0065216200401794
+national_median,2016,percentage_point,3.0261850627100162,2.4187694277274518

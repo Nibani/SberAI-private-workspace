@@ -1,0 +1,7 @@
+region_sizes_of,regions,municipalities,noise,simulations,draws,boot_t_rate_0.05,boot_t_rate_0.00625,percentile_rate_0.05,percentile_rate_0.00625
+log_wage,73,1830,normal,1000,2000,0.04,0.002,0.055,0.005
+log_wage,73,1830,t3,1000,2000,0.057,0.004,0.067,0.007
+log_wage,73,1830,skewed,1000,2000,0.059,0.01,0.068,0.017
+mining_share,48,290,normal,1000,2000,0.04,0.003,0.066,0.006
+mining_share,48,290,t3,1000,2000,0.046,0.005,0.067,0.012
+mining_share,48,290,skewed,1000,2000,0.046,0.005,0.067,0.01

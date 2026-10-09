@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "constant_final_features": true,
+  "exact_persistent_shift": true,
+  "raw_calendar_correction": true,
+  "common_shock_preserved_and_relative_removed": true,
+  "evaluation_calibration_isolation": true,
+  "projection_permutation_equivariance": true,
+  "invalid_input_explicit": true,
+  "numeric_tolerance": 1e-13
+}

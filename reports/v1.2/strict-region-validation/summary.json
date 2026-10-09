@@ -1,0 +1,259 @@
+{
+  "historical_recipe_source_commit": "c7905a3",
+  "input_sha256": {
+    "configs/v12.json": "68776f61ab2c6c24ae84b1de72d0945c49f1891572cf89634e58803f6b222151",
+    "data/v12/panel.csv.gz": "953ba39d152f0f4192ebbabc8edfa0684683c3a4a3d8c147f0978cf6f1798784",
+    "reports/external-national-2026-10-03/cohort-2023.csv": "dcfcf2ac0af503d696f9492bc8c1bc4e38977cc2bd1b6c12da66463f761d9c62",
+    "reports/external-v4/municipality_bridge.csv": "3898c2201a871cbcc1fca4b5c1f09a7be5ed68583b12338e8bf55cc91e9b5bc5",
+    "reports/v1.2/labels.csv": "394a681ebd0898dc41d1fe2479febbb36b7a5cc5d6449147aab14089279c0e71",
+    "sbercluster/panel.py": "e39bdd4eed13c106866b598cbbedfd79c42d3628798b930b06565230fa077383",
+    "sbercluster/joint.py": "33732d5133814e3f5794338343420abb6104494b356998e071c249b9672d9fb1",
+    "sbercluster/graph.py": "b3b8a68077646b42c8bcb63a0a6b7679bd74504715aae6e4a5b06e7aa838dcd5",
+    "sbercluster/typology.py": "4fb1c3798694af7071553b600c99e30b93f82d44c77fa306ee342d6ac172ebfc",
+    "sbercluster/attributed.py": "2c52bff34d8ee0a095a807475461bda50ba395c31020c07bfc67df9d4fbc4414",
+    "scripts/run_v12.py": "a3ffa38b92a7cdd0683ab16dc04d4de14e27986ff8f3ef6c18017544d1217bd9"
+  },
+  "script_sha256": "fd22e625fda09436904e2f657fc8d31b6e06e43ce8dab165b129298261f10c58",
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.14.1",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.5.2"
+  },
+  "recipe": {
+    "alpha": 0.5,
+    "K": 4,
+    "graph_k": 15,
+    "seed": 1729,
+    "kmeans_n_init": 50,
+    "max_sweeps": 200,
+    "heldout_assignment": "nearest train centroid; no heldout graph",
+    "months": "2023-01..2023-12",
+    "selection_status": "fixed historical globally selected recipe; not nested selection"
+  },
+  "cohort": {
+    "entities": 2016,
+    "regions_total": 73,
+    "regions_evaluated": 73,
+    "predicted_entities": 2016
+  },
+  "strict_metrics": [
+    {
+      "indicator": "log_wage",
+      "n": 1830,
+      "regions": 73,
+      "types": 0.43023490138697784,
+      "types_mae": 0.19985721040184048,
+      "municipal_type": 0.18882904242429255,
+      "municipal_type_mae": 0.2430759964449938,
+      "municipal_type_and_types": 0.46298953009484944,
+      "municipal_type_and_types_mae": 0.19450070320856186,
+      "municipal_type_original_zero": 0.18882904242429255,
+      "unseen_admin_category_n": 0
+    },
+    {
+      "indicator": "agri_share",
+      "n": 1052,
+      "regions": 71,
+      "types": 0.13689697861679107,
+      "types_mae": 0.06785695194253819,
+      "municipal_type": 0.06751441978380857,
+      "municipal_type_mae": 0.07222063294280406,
+      "municipal_type_and_types": 0.1467205239106879,
+      "municipal_type_and_types_mae": 0.06723788275228754,
+      "municipal_type_original_zero": 0.06913937740303322,
+      "unseen_admin_category_n": 2
+    },
+    {
+      "indicator": "manuf_share",
+      "n": 995,
+      "regions": 72,
+      "types": 0.0030092025598739136,
+      "types_mae": 0.11212117843756236,
+      "municipal_type": 0.03480444435028507,
+      "municipal_type_mae": 0.11090679206142606,
+      "municipal_type_and_types": 0.042037860471841326,
+      "municipal_type_and_types_mae": 0.1103523679994956,
+      "municipal_type_original_zero": 0.03480444435028507,
+      "unseen_admin_category_n": 0
+    },
+    {
+      "indicator": "public_share",
+      "n": 1627,
+      "regions": 73,
+      "types": 0.08628636903940634,
+      "types_mae": 0.12453611624717505,
+      "municipal_type": 0.09359692841847989,
+      "municipal_type_mae": 0.12409142389655638,
+      "municipal_type_and_types": 0.1123797827596239,
+      "municipal_type_and_types_mae": 0.12194498655874861,
+      "municipal_type_original_zero": 0.09359692841847989,
+      "unseen_admin_category_n": 0
+    },
+    {
+      "indicator": "log_pop",
+      "n": 1797,
+      "regions": 72,
+      "types": 0.36897551040089427,
+      "types_mae": 0.6205930652265038,
+      "municipal_type": 0.25033118431501966,
+      "municipal_type_mae": 0.6759747149942339,
+      "municipal_type_and_types": 0.505636668382744,
+      "municipal_type_and_types_mae": 0.5610003182426021,
+      "municipal_type_original_zero": 0.25033118431501966,
+      "unseen_admin_category_n": 0
+    },
+    {
+      "indicator": "log_jobs_per_res",
+      "n": 1797,
+      "regions": 72,
+      "types": 0.11174223143649131,
+      "types_mae": 0.3249609514143026,
+      "municipal_type": -0.012219778178201635,
+      "municipal_type_mae": 0.32823788381069,
+      "municipal_type_and_types": 0.08600453741895386,
+      "municipal_type_and_types_mae": 0.31761733212506454,
+      "municipal_type_original_zero": -0.012219778178201635,
+      "unseen_admin_category_n": 0
+    },
+    {
+      "indicator": "market_access",
+      "n": 2004,
+      "regions": 73,
+      "types": 0.19076258290333536,
+      "types_mae": 74.81878112078458,
+      "municipal_type": 0.05493901483785746,
+      "municipal_type_mae": 85.12751541067018,
+      "municipal_type_and_types": 0.15266797861038373,
+      "municipal_type_and_types_mae": 77.33509722709023,
+      "municipal_type_original_zero": 0.05493901483785746,
+      "unseen_admin_category_n": 0
+    },
+    {
+      "indicator": "mining_share",
+      "n": 290,
+      "regions": 48,
+      "types": 0.11255938299367707,
+      "types_mae": 0.11324724963761516,
+      "municipal_type": -0.04763199935070528,
+      "municipal_type_mae": 0.13314424536051803,
+      "municipal_type_and_types": 0.08392208803884416,
+      "municipal_type_and_types_mae": 0.11559489206165283,
+      "municipal_type_original_zero": -0.04116584722970784,
+      "unseen_admin_category_n": 2
+    }
+  ],
+  "original_regression_only_metrics": [
+    {
+      "indicator": "log_wage",
+      "n": 1830,
+      "regions": 73,
+      "types": 0.42988424618976884,
+      "types_mae": 0.19844801347336785,
+      "municipal_type": 0.18882904242429255,
+      "municipal_type_mae": 0.2430759964449938
+    },
+    {
+      "indicator": "agri_share",
+      "n": 1052,
+      "regions": 71,
+      "types": 0.1435833382596684,
+      "types_mae": 0.06784019967268586,
+      "municipal_type": 0.06913937740303322,
+      "municipal_type_mae": 0.07206086753753184
+    },
+    {
+      "indicator": "manuf_share",
+      "n": 995,
+      "regions": 72,
+      "types": 0.00013092237630041303,
+      "types_mae": 0.11231450879697923,
+      "municipal_type": 0.03480444435028507,
+      "municipal_type_mae": 0.11090679206142606
+    },
+    {
+      "indicator": "mining_share",
+      "n": 290,
+      "regions": 48,
+      "types": 0.12736631828732647,
+      "types_mae": 0.11316059432635737,
+      "municipal_type": -0.04116584722970784,
+      "municipal_type_mae": 0.13212641212154425
+    },
+    {
+      "indicator": "public_share",
+      "n": 1627,
+      "regions": 73,
+      "types": 0.08118696208232723,
+      "types_mae": 0.12494450178158419,
+      "municipal_type": 0.09359692841847989,
+      "municipal_type_mae": 0.12409142389655638
+    },
+    {
+      "indicator": "log_pop",
+      "n": 1797,
+      "regions": 72,
+      "types": 0.3663247611141134,
+      "types_mae": 0.6207385721274505,
+      "municipal_type": 0.25033118431501966,
+      "municipal_type_mae": 0.6759747149942339
+    },
+    {
+      "indicator": "log_jobs_per_res",
+      "n": 1797,
+      "regions": 72,
+      "types": 0.11252472465245089,
+      "types_mae": 0.3245306654129308,
+      "municipal_type": -0.012219778178201635,
+      "municipal_type_mae": 0.32823788381069
+    },
+    {
+      "indicator": "market_access",
+      "n": 2004,
+      "regions": 73,
+      "types": 0.23142957844741507,
+      "types_mae": 73.43691392379141,
+      "municipal_type": 0.05493901483785746,
+      "municipal_type_mae": 85.12751541067018
+    }
+  ],
+  "type_agreement_with_global_labels": 0.970734126984127,
+  "ari_with_global_labels": 0.9156572971085263,
+  "converged_folds": 73,
+  "invariance": {
+    "region": "Алтайский край",
+    "heldout_rows": 65,
+    "totals_multiplier": 17,
+    "share_columns_rolled": 2,
+    "train_state_sha256_before": "e217673afc5a5d5d4e01173bf5f4deb601a0ba8a559340722820345536f7751b",
+    "train_state_sha256_after": "e217673afc5a5d5d4e01173bf5f4deb601a0ba8a559340722820345536f7751b",
+    "train_state_unchanged": true,
+    "heldout_attributes_changed": true,
+    "checked": [
+      "structure_center",
+      "iqr_scale",
+      "monthly_log_total_center",
+      "train_attributes",
+      "train_graph_csr",
+      "train_type_labels",
+      "train_centroids",
+      "train_only_naming"
+    ]
+  },
+  "admin_baseline": "same finite-outcome cohort; OLS train fit; unseen category uses train outcome mean. Original zero prediction is retained separately. Combined model uses type-only prediction for unseen administrative category.",
+  "agreement_interpretation": "Agreement of inductive nearest-centroid heldout assignment with full-panel graph labels; assignment rule also differs, so this is not pure retraining stability.",
+  "naming_external_rosstat_used": false,
+  "neutral_descriptions": {
+    "metro": "Высокие расходы и высокая доля общепита",
+    "industrial": "Промежуточные расходы среди оставшихся групп",
+    "periphery": "Низкие расходы среди оставшихся групп",
+    "remote": "Низкая доля маркетплейсов среди оставшихся групп"
+  },
+  "runtime_seconds": 41.835092799999984,
+  "limitations": [
+    "Hyperparameters historically selected using global data, including 2024 criteria; no nested selection performed",
+    "External outcome complete-case cohorts differ by indicator; mining is sparse",
+    "One-worker deterministic fixed recipe; no uncertainty intervals recomputed",
+    "All 24 months are parsed by panel reader, then only 2023 enters fitting; no 2025 data read"
+  ]
+}

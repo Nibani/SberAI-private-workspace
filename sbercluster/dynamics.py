@@ -5,12 +5,21 @@ from .metrics import aligned_stability
 
 
 def transitions(ids_before, labels_before, ids_after, labels_after):
+    for ids, labels in [(ids_before, labels_before), (ids_after, labels_after)]:
+        values = np.asarray(labels)
+        if values.ndim != 1 or len(ids) != len(values):
+            raise ValueError("One label is required for each entity ID")
+        if not all(isinstance(value, str) and value.strip() for value in ids):
+            raise ValueError("Entity IDs must be nonempty strings")
+        if values.dtype.kind not in 'iu' and len(values):
+            raise ValueError("Cluster labels must be integers")
     a, b = dict(zip(ids_before, labels_before)), dict(zip(ids_after, labels_after))
     if len(a) != len(ids_before) or len(b) != len(ids_after):
         raise ValueError("Duplicate entity IDs")
     common = sorted(a.keys() & b.keys())
     if not common:
-        return {"common_n": 0, "events": [], "ARI": None, "matched_churn": None}
+        return {"common_n": 0, "entered": len(b), "exited": len(a),
+                "events": [], "ARI": None, "matched_churn": None}
     ua, ub = sorted({a[i] for i in common}), sorted({b[i] for i in common})
     table = np.zeros((len(ua), len(ub)), dtype=int)
     ia, ib = {v:i for i,v in enumerate(ua)}, {v:i for i,v in enumerate(ub)}

@@ -1,0 +1,13 @@
+.git
+.serena
+.swarm
+.local
+.venv
+venv
+artifacts
+runs
+node_modules
+**/node_modules
+**/__pycache__
+**/*.pyc
+.env
